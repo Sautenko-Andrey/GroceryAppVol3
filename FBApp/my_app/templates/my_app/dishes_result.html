@@ -1,0 +1,48 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12">
+            <img src="{{dish_pic.img.url}}" class="img-fluid rounded-start" alt="Ошибка изображения!">
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12">
+            <h5>Чтобы приготовить <b>{{user_dish_name}}</b><u> на {{user_count_persons}} порции</u> Вы потратите:</h5>
+            <br>
+            <table class="table table-success table-striped-columns">
+                <thead>
+                <tr align="center">
+                    <th scope="col">#</th>
+                    <th scope="col">Маркет</th>
+                    <th scope="col">Цена</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr align="center">
+                    <th scope="row">1</th>
+                    <td>АТБ</td>
+                    <td>{{value_result_atb}} грн</td>
+                </tr>
+                <tr align="center">
+                    <th scope="row">2</th>
+                    <td>ЕКО</td>
+                    <td>{{value_result_eko}} грн</td>
+                </tr>
+                <tr align="center">
+                    <th scope="row">3</th>
+                    <td>VARUS</td>
+                    <td>{{value_result_varus}} грн</td>
+                </tr>
+                </tbody>
+            </table>
+            <a class="btn btn-outline-danger" href="{% url 'home' %}" role="button"><h1>Поищем еще что-то?</h1></a>
+        </div>
+    </div>
+</div>
+{% endblock %}

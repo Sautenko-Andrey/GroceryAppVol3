@@ -1,0 +1,160 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+{% for info in content %}
+<div class="main-page-style-blue">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 col-md-6 col-sm-6">
+            </div>
+            <div class="col-xl-6 col-md-6 col-sm-6" align="right">
+                <!--<h5>$ {{usd_value_nbu}} (НБУ)</h5>-->
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+                <h1><b>{{info.title}}</b></h1>
+                <h6><b>{{info.under_title}}</b></h6>
+                <br>
+                <br>
+                <h6>Выберите способ поиска товара :</h6>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
+            </div>
+            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
+                <!--<h4><a class="btn btn-outline-info" href="{% url 'search_by_photo' %}" role="button">ПО ФОТО</a>
+                    &emsp;&emsp;<a class="btn btn-outline-info" href="{% url 'get_item_name' %}" role="button">ПО
+                        НАЗВАНИЮ</a>
+                </h4>-->
+
+                <!--здесь вставляем новую крутую кнопку-->
+                <h4><a class="btn_neon_style_for_button" href="{% url 'search_by_photo' %}">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    по фото
+                </a>
+                    <a class="btn_neon_style_for_button" href="{% url 'get_item_name' %}">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        по названию
+                    </a>
+                </h4>
+
+                <!--здесь конец новой кнопки-->
+
+            </div>
+            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
+            </div>
+            <!--что-то вставить -->
+            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <div class="card">
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <h5 align="left">{{info.text_on_page}}</h5>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <h4><b>Популярные супермаркеты</b></h4>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://www.atbmarket.com/" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h4>
+            </div>
+
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://shop.silpo.ua" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h4>
+            </div>
+
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://varus.ua" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h4>
+            </div>
+
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://novus.online/" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h4>
+            </div>
+
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://auchan.ua/" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h4>
+            </div>
+
+            <div class="btn-group">
+                <h4><a class="btn btn-light" href="https://www.eko.com.ua/" target=”_blank” role="button"><b><img
+                        src="{% static 'my_app/images/ecomarket.png' %}"> Эко-Маркет</b></a></h4>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<!--<script src="{% static 'my_app/js/script.js' %}"></script>-->
+
+{% endfor %}
+{% endblock %}

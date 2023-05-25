@@ -1,0 +1,156 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+{% block content %}
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12">
+            <div class="alert alert-info" role="alert">
+                <p class="lead" align="center">Список Ваших покупок
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor"
+                         class="bi bi-card-checklist" viewBox="0 0 16 16">
+                        <path d="M14.5 3a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h13zm-13-1A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13z"/>
+                        <path d="M7 5.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 1 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0zM7 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5zm-1.496-.854a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0l-.5-.5a.5.5 0 0 1 .708-.708l.146.147 1.146-1.147a.5.5 0 0 1 .708 0z"/>
+                    </svg>
+                </p>
+            </div>
+            <hr class="border border-info border-3 opacity-75">
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <div class="card text-bg-light mb-3" style="max-width: 32rem;">
+                <div class="card-header" align="center"><b>Добавляем товар в список покупок</b></div>
+                <form method="post">
+                    {% csrf_token %}
+
+                    <div class="card-body">
+                        <h5 align="center"><label class="form-label" for="{{form.product_name.id_for_label}}">{{form.product_name.label}}:</label>{{form.product_name}}
+                        </h5>
+                        <div class="form-error">{{form.product_name.errors}}</div>
+                        <br>
+                        <h5 align="center"><label class="form-label" for="{{form.amount.id_for_label}}">{{form.amount.label}}:</label>{{form.amount}}
+                        </h5>
+                        <div class="form-error">{{form.amount.errors}}</div>
+                        <br>
+                        <h5 align="center">
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.atb_choice.id_for_label}}">{{form.atb_choice.label}}&ensp;</label>{{form.atb_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.eko_choice.id_for_label}}">{{form.eko_choice.label}}&ensp;</label>{{form.eko_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.varus_choice.id_for_label}}">{{form.varus_choice.label}}&ensp;</label>{{form.varus_choice}}&emsp;
+                            <div class="form-error">{{form.atb_choice.errors}}</div>
+                            <div class="form-error">{{form.eko_choice.errors}}</div>
+                            <div class="form-error">{{form.varus_choice.errors}}</div>
+                        </h5>
+                        <br>
+                        <h5 align="center">
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.silpo_choice.id_for_label}}">{{form.silpo_choice.label}}&ensp;</label>{{form.silpo_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.ashan_choice.id_for_label}}">{{form.ashan_choice.label}}&ensp;</label>{{form.ashan_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.novus_choice.id_for_label}}">{{form.novus_choice.label}}&ensp;</label>{{form.novus_choice}}&emsp;
+                            <div class="form-error">{{form.silpo_choice.errors}}</div>
+                            <div class="form-error">{{form.ashan_choice.errors}}</div>
+                            <div class="form-error">{{form.novus_choice.errors}}</div>
+                        </h5>
+                        <br>
+                        <h5>
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.metro_choice.id_for_label}}">{{form.metro_choice.label}}&ensp;</label>{{form.metro_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.nash_kray_choice.id_for_label}}">{{form.nash_kray_choice.label}}&ensp;</label>{{form.nash_kray_choice}}&emsp;
+                            <label class="form-label-set-markets markets-text-color"
+                                   for="{{form.fozzy_choice.id_for_label}}">{{form.fozzy_choice.label}}&ensp;</label>{{form.fozzy_choice}}&emsp;
+                            <div class="form-error">{{form.metro_choice.errors}}</div>
+                            <div class="form-error">{{form.nash_kray_choice.errors}}</div>
+                            <div class="form-error">{{form.fozzy_choice.errors}}</div>
+                        </h5>
+                        <br>
+                        <h5 align="center">
+                            <button type="submit" class="custom-btn btn-3"><span>Добавить товар в список</span></button>
+                            <!--<button type="submit" class="btn btn-outline-danger">добавить товар в список</button>-->
+                        </h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <div class="card text-bg-light mb-3 " style="max-width: 32rem;">
+                <div class="card-header" align="center"><b>Добалено в список</b></div>
+
+                <table class="table countLines">
+                    {% for info in user_item_info %}
+                    <tbody>
+                    <tr>
+                        <th scope="row"></th>
+                        <td><samp><b>{{info.product_name}}</b></samp></td>
+                        <td><samp><b>{{info.amount}}</b></samp></td>
+                        {% endfor %}
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--<h4><a class="btn btn-outline-danger" href="{% url 'resultsofsets' %}" role="button">ПОСЧИТАТЬ СТОИМОСТЬ</a>-->
+            <!--Кастомизированная кнопка-->
+            <a class="custom-btn btn-12" href="{% url 'resultsofsets' %}"><span>Нажми!</span><span>Посчитать</span></a>
+            <!--конец кастомизированной кнопки-->
+            <h4>
+                <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                         class="bi bi-question-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                        <path d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"/>
+                    </svg>
+                </button>
+                <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+                     id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header" align="center">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel"><b>Нужна помощь?</b></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body" align="left">
+                        <h5>&emsp;<b>1)</b> <samp>Для того, чтобы создать список покупок, в первую очередь в колонке
+                            слева в поле <kbd>Название
+                                товара</kbd> укажите название продукта, который хотите добавить в список.</samp></h5>
+                        <h5>&emsp;<b>2)</b> <samp>Затем укажите необоходимое количество товара в поле
+                            <kbd>Количество</kbd>.
+                            Например, если вы хотите добавить в список покупок 3 кг лука, то в поле так и пишите:
+                            <kbd>3 кг</kbd>. Иле же Вы хотите добавить 700 грамм мяса, то можно указать :
+                            <kbd>700 гр</kbd>. В этом поле можно прописывать любую размерность, т.е. в штуках, кг, гр,
+                            пачках и т.д.
+                        </samp></h5>
+                        <h5>&emsp;<b>3)</b> <samp>Третьим шагом будет выбор маркетов(или одного маркета), где вы хотите
+                            посмотреть
+                            цены на продукт. Для того, чтобы выбрать нужный маркет, просто поставьте галочку рядом с
+                            названием маркета.</samp></h5>
+                        <h5>&emsp;<b>4)</b> <samp>Теперь можно нажать кнопку <kbd>добавить товар в список</kbd>, и
+                            выбранный
+                            товар добавится в список, который вы увидите в правой колонке с названием <kbd>Добавлено в
+                                список.</kbd></samp></h5>
+                        <h5>&emsp;<b>5)</b> <samp>Теперь можно добавить сколько угодно покупок в Ваш список точно таким
+                            же путем.
+                            Когда Вы заврешите формировнаие списка товаров, просто нажмите кнопку <kbd>ПОСЧИТАТЬ
+                                СТОИМОСТЬ</kbd> и немного подождав, перед Вами откроется вся необходимая
+                            информация.</samp></h5>
+                    </div>
+                </div>
+            </h4>
+
+        </div>
+    </div>
+    <hr class="border border-info border-3 opacity-75">
+</div>
+
+{% endblock %}
+
+

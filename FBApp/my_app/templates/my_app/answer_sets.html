@@ -1,0 +1,114 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <div class="alert alert-info" role="alert">
+                <h4><b>ВАШ ВЫБОР
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                         class="bi bi-cart" viewBox="0 0 16 16">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                </b></h4>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        {% for product in products_set %}
+        {% if products_set|length == 1 %}
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            {% elif products_set|length == 2 %}
+            <div class="col-xl-6 col-md-6 col-sm-6" align="center">
+                {% elif products_set|length == 3 %}
+                <div class="col-xl-4 col-md-4 col-sm-4" align="center">
+                    {% elif products_set|length > 3 %}
+                    <div class="col-xl-3 col-md-3 col-sm-3" align="center">
+                        {% endif %}
+                        <div class="card" style="width: 16rem;">
+                            <div class="card-body">
+                                {% for key,value in product.items %}
+                                <h5 class="card-title">{{key}}</h5>
+                                <img src="{{value.19.picture.url}}" class="card-img-top" alt="Error">
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Количество: {{value.0}}</li>
+                                {% if value.1 %}
+                                <li class="list-group-item">АТБ: {{value.10}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.2 %}
+                                <li class="list-group-item">ЭКО: {{value.11}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.3 %}
+                                <li class="list-group-item">Varus: {{value.12}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.4 %}
+                                <li class="list-group-item">Сильпо: {{value.13}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.5 %}
+                                <li class="list-group-item">Ашан: {{value.14}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.6 %}
+                                <li class="list-group-item">Novus: {{value.15}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.7 %}
+                                <li class="list-group-item">Metro: {{value.16}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.8 %}
+                                <li class="list-group-item">Наш Край: {{value.17}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                {% if value.9 %}
+                                <li class="list-group-item">Fozzy: {{value.18}} грн</li>
+                                {% else %}
+                                {% endif %}
+                                <!--определяем лучшую цену!-->
+                                {% if value.1 or value.2 %}
+                                <li class="list-group-item black-red-style"><b>Лучшая цена в {{value.20}}</b></li>
+                                {% else %}
+                                {% endif %}
+                            </ul>
+                            <br>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <div class="alert alert-info" role="alert">
+                <h5>Просмотрели цены? Нажмите, чтобы закончить работу с наборами
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                         class="bi bi-fast-forward" viewBox="0 0 16 16">
+                        <path d="M6.804 8 1 4.633v6.734L6.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                        <path d="M14.804 8 9 4.633v6.734L14.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                    </svg>
+                    <a class="btn btn-outline-danger"
+                       href="{% url 'thanks_set' %}"
+                       role="button">ЗАВЕРШИТЬ</a>
+                </h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

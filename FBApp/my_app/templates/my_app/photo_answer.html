@@ -1,0 +1,151 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">ВАШ СНИМОК
+                        <b><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                             class="bi bi-camera" viewBox="0 0 16 16">
+                            <path d="M15 12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h1.172a3 3 0 0 0 2.12-.879l.83-.828A1 1 0 0 1 6.827 3h2.344a1 1 0 0 1 .707.293l.828.828A3 3 0 0 0 12.828 5H14a1 1 0 0 1 1 1v6zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"/>
+                            <path d="M8 11a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7zM3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z"/>
+                        </svg></b>
+                    </h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                    <p><img class="user-image-style" src="{{data.image.url}}"></p>
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <h5><b>ИНФОРМАЦИЯ О ТОВАРЕ :</b></h5>
+            <h5><u>{{nn_answer}}</u></h5>
+
+
+        </div>
+    </div>
+</div>-->
+
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <br>
+                        <br>
+                        <img src="{{data.image.url}}" class="img-fluid rounded-start" alt="Ошибка изображения!">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h4 class="card-title">ЦЕНЫ НА ТОВАР :</h4>
+                            <h5 class="card-text"><b><u>{{nn_answer}}</u></b></h5>
+                            <table class="table table-bordered border-info">
+                                <thead align="center">
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Магазин</th>
+                                    <th scope="col">Цена</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td><h5><a href="https://www.atbmarket.com/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h5></td>
+                                    <td>{{price_from_site_atb}} грн </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td><h5><a href="https://shop.silpo.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h5></td>
+                                    <td>{{price_from_site_silpo}} грн </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td><h5><a href="https://varus.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h5></td>
+                                    <td>{{price_from_site_varus}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td><h5><a href="https://www.instagram.com/semya_sever/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h5></td>
+                                    <td>{{price_from_site_novus}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td><h5><a href="https://chudo-market.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h5></td>
+                                    <td>{{price_from_site_ashan}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td><h5><a href="https://www.eko.com.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/ecomarket.png' %}"> ЭКО-Маркет</b></a></h5>
+                                    </td>
+                                    <td>{{price_from_site_eko}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">7</th>
+                                    <td><h5><a href="https://www.eko.com.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/metro.png' %}"> METRO</b></a></h5>
+                                    </td>
+                                    <td>{{price_from_site_metro}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">8</th>
+                                    <td><h5><a href="https://www.eko.com.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/nash_kray.png' %}"> Наш Край</b></a></h5>
+                                    </td>
+                                    <td>{{price_from_site_nash_kray}} грн</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">9</th>
+                                    <td><h5><a href="https://www.eko.com.ua/" target="_blank"><b><img
+                                            src="{% static 'my_app/images/fozzy.png' %}"> Fozzy</b></a></h5>
+                                    </td>
+                                    <td>{{price_from_site_fozzy}} грн</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+            <div class="card text-bg-light">
+                <div class="card-header">
+                    <p><b>Информация о товаре</b></p>
+                </div>
+                <div class="card-body">
+                    <blockquote class="blockquote mb-0">
+                        <h5 align="left">{{item_image_for_user.description | linebreaks}}</h5>
+                        <h5><b>ИСКАТЬ ЕЩЕ
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="24" fill="currentColor"
+                                 class="bi bi-fast-forward" viewBox="0 0 16 16">
+                                <path d="M6.804 8 1 4.633v6.734L6.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C.713 12.69 0 12.345 0 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                                <path d="M14.804 8 9 4.633v6.734L14.804 8Zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C8.713 12.69 8 12.345 8 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692Z"/>
+                            </svg>
+                        </b><a class="btn btn-danger" href="{% url 'thanksforvisit' %}" role="button">OK</a></h5>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,79 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-6 col-md-6 col-sm-12" align="left">
+            <br>
+            <br>
+            <br>
+            <h6 class="shadow p-3 mb-5 bg-body rounded">Введите в форме ниже <i><u>название блюда</u></i>, которое хотите приготовить,
+                а так же на какое количество людей,
+                и мы с удовольствием <b>посчитаем для Вас его себестоимость!</b></h6>
+            <br>
+
+
+
+            <div class="card text-bg-light mb-3 " style="max-width: 32rem;">
+                <div class="card-header" align="center"><b>Поиск блюда</b></div>
+                <form method="post">
+                    {% csrf_token %}
+                    {% for f in form %}
+                    <div class="card-body">
+                        <p class="card-text" align="center"><label class="form-label" for="{{f.id_for_label}}">{{f.label}}:</label>
+                            {{f}}
+                        </p>
+                        <div class="form-error">{{f.errors}}</div>
+                        {% endfor %}
+                        <br>
+                        <h5 align="center">
+                            <button type="submit">поиск</button>
+                        </h5>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-xl-6 col-md-6 col-sm-12" align="center">
+        <img src="{% static 'my_app/images/salad4.jpeg' %}">
+    </div>
+</div>
+</div>
+
+<!--
+<div id="bg-spinner">
+    <div id="position-spinner">
+        <span id="spinner"></span>
+    </div>
+</div>-->
+
+{% endblock %}
+
+<!--jqery -->
+<!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+30JUSyEXlq6GSYGSHk7tPXikyn57ogEvDej/m4=" crossorigin="anonymous"></script>
+
+
+<script>
+    jQuery(function ($) {
+        $(document).ajaxSend(function () {
+            $('#bg-spinner').fadeIn(500);
+        });
+
+        $('#btn-send').click(function () {
+            $.ajax({
+                type: 'GET',
+                success: function (data) {
+                    var d = $.parseJSON(data);
+                    alert(d.Test);
+                }
+            }).done(function() {
+                setTimeout(function () {
+                    $('#bg-spinner').fadeOut(500);
+                }, 700);
+            });
+        });
+    });
+</script>-->

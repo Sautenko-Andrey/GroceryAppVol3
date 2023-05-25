@@ -1,0 +1,36 @@
+{% extends 'my_app/base.html' %}
+
+{% block content %}
+
+{% for row in info %}
+<div class="site-policy-style-grey">
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12" align="left">
+                <br>
+                <div class="card">
+                    <div class="card-header">
+                        <h5 align="center"><b>Условия использования</b></h5>
+                    </div>
+                    <div class="card-body">
+                        <blockquote class="blockquote mb-0">
+                            <h5>{{row.terms_of_use | linebreaks}}</h5>
+                            <br>
+                            <footer class="blockquote-footer">С уважением <cite title="Source Title">GroceryApp</cite></footer>
+                        </blockquote>
+                    </div>
+                </div>
+
+
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <br>
+</div>
+<br>
+
+{% endblock %}

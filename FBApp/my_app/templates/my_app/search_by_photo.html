@@ -1,0 +1,42 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+{% block content %}
+<div class="search_by_photo_style">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-md-4 col-sm-12" align="left">
+            </div>
+
+            <div class="col-xl-4 col-md-4 col-sm-12" align="left">
+                <form action="{% url 'search_by_photo' %}" method="post" class="from_left"
+                      enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div class="form-error">{{form.non_filed_errors}}</div>
+                    {% for f in form %}
+                    <h5><label class="form-label" for="{{f.id_for_label}}"><b>Загрузите фото товара:</b></label>{{f}}
+                    </h5>
+                    <div class="form-error">{{f.errors}}</div>
+                    {% endfor %}
+                    <h6 align="right">
+                        <button type="submit" class="btn btn-outline-info"><b>Поиск</b></button>
+                    </h6>
+                </form>
+            </div>
+
+            <div class="col-xl-4 col-md-4 col-sm-12" align="left">
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
