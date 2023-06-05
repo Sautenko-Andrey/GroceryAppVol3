@@ -729,14 +729,12 @@ get_beer_Carlsberg_Pilsner_05l_jb = tag.create_tag(ItemsPicsFromNet, 234)
 #     return ItemsPicsFromNet.objects.get(pk=2)
 
 
-# InfoAboutDishes
 # ТЕГИ ДЛЯ БЛЮД
-
 '''Тег , возвращающий информацю о борще украинском'''
-get_borsh_ukr_info = tag.create_tag(InfoAboutDishes, 1)
+get_borsh_ukr_info = tag.create_tag(AvailableDishes, 1)
 
 '''Тег , возвращающий информацю о варениках с картошкой'''
-get_vareniki_s_kartoshkoy_info = tag.create_tag(InfoAboutDishes, 2)
+get_vareniki_s_kartoshkoy_info = tag.create_tag(AvailableDishes, 2)
 
 
 # ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА
@@ -760,9 +758,12 @@ def get_product_set_from_data_base():
 
 
 # ТЕГ ДЛЯ ДОСУТПА КО ВСЕМ СУПЕРМАРКЕТАМ
-'''С помощбю этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
+'''С помощью этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
 get_all_markets = mul_tag.create_tag(RelevantMarkets)
 # @register.simple_tag()
 # def get_all_markets():
 #     '''С помощбю этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
 #     return RelevantMarkets.objects.all()
+
+
+

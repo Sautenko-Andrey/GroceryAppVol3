@@ -232,3 +232,8 @@ BEER_OBOLON_PREMIUM_EXTRA_BREW_SVITLE_05_L_JB = 'Пиво Оболонь Premium
 BEER_LVIVSKE_SVITLE_048_L_JB = 'Пиво Львівське світле 4,3% 0,48 л жб'
 BEER_CARLSBERG_PREMIUM_PILSNER_SVITLE_05_L_JB = 'Пиво Carlsberg Premium Pilsner світле фільтроване з/б 5% 0.5 л жб'
 BEER_CARLSBERG_PILSNER_05_L_JB = 'Пиво Carlsberg Pilsner 0.5 л жб'
+
+
+#НАЗВАНИЯ БЛЮД
+RED_BORSH = 'борщ украинский'
+VARENIKI_KARTOSHKA = 'вареники с картошкой'

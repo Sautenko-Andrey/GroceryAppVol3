@@ -707,18 +707,18 @@ class RefersForRNN:
 
     def get_text(self):
         # загрузка обучающего текста
-        obolon_premium_extra_11_text = self.add_new_item('pivo_obolon_extra(1.1).txt')
-        hetman_sagaydachniy_07_text = self.add_new_item('vodka_hetman(0.7).txt')
+        obolon_premium_extra_11_text = self.add_new_item('pivo_obolon_extra_1_1_l.txt')
+        hetman_sagaydachniy_07_text = self.add_new_item('vodka_hetman_0_7_l.txt')
         coffee_aroma_gold_classic_100gr_text = self.add_new_item('coffee_aroma_gold_classic_100gr.txt')
         apple_golden_text = self.add_new_item('apple_golden.txt')
-        coca_cola_2l_text = self.add_new_item('coca_cola.txt')
+        coca_cola_2l_text = self.add_new_item('coca_cola_2l.txt')
         KOMO_paprikash_text = self.add_new_item('furnaced_cheese_KOMO_paprikash.txt')
         garlik_text = self.add_new_item('garlik.txt')
         kent_8_text = self.add_new_item('kent_8.txt')
         tea_minutka_40_p_black_text = self.add_new_item('tea_minutka_40_packs_black.txt')
         oil_shedriy_dar_850_text = self.add_new_item('oil_shedriy_dar_850.txt')
         onion_text = self.add_new_item('onion.txt')
-        fairy_text = self.add_new_item('fairy.txt')
+        fairy_text = self.add_new_item('fairy_limon.txt')
         apple_black_prince_text = self.add_new_item('apple_black_prince.txt')
         gorchica_kolos_text = self.add_new_item('gorchica_kolos.txt')
         smetana_stolica_smaky_20_400_text = self.add_new_item('smetana_stolica_smaky_20jir_400g.txt')
@@ -841,9 +841,9 @@ class RefersForRNN:
         beer_ppb_bochkove_svitle_2l_plastic_text = self.add_new_item('beer_ppb_bochkove_svitle_2l_plastic.txt')
         beer_ppb_zakarpatske_originalne_svitle_2l_plastic_text = self.add_new_item(
             'beer_ppb_zakarpatske_originalne_svitle_2l_plastic.txt')
-        beer_zibert_svitle_05_l_banochnoe_text = self.add_new_item('beer_zibert_svitle_05_l_banochnoe.txt')
+        beer_zibert_svitle_05_l_banochnoe_text = self.add_new_item('beer_zibert_svitle_05_l_jb.txt')
         yogurt_fanni_1_5_240gr_v_banke_text = self.add_new_item('yogurt_fanni_1_5_240gr_v_banke.txt')
-        kefir_slviya_2_5_850gr_v_pakete_text = self.add_new_item('kefir_slviya_2_5_850gr_v_pakete.txt')
+        kefir_slviya_2_5_850gr_v_pakete_text = self.add_new_item('kefir_slaviya_2_5_850gr_v_pakete.txt')
         beer_obolon_kievske_rozlivne_svitle_195l_plastic_text = self.add_new_item(
             'beer_obolon_kievske_rozlivne_svitle_195l_plastic.txt')
         beer_chernigivske_light_svitle_2l_plastic_text = self.add_new_item(

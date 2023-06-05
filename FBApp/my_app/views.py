@@ -334,6 +334,47 @@ class DishesResult(MutualContext, ListView):
         return Dishes.objects.latest('time_create')
 
 
+class DishesSet(MutualContext, CreateView):
+    '''Класс, для страницы, на которой пользователь будет выбирать
+    интересующее его блюдо.'''
+
+    form_class = SearchDishesForm
+    template_name = 'my_app/dishes_set.html'
+    success_url = reverse_lazy('dish_info')
+
+class DishesSetResult(MutualContext, ListView):
+    '''Страница для отображения результатов по блюдам'''
+    model = Dishes
+    template_name = 'my_app/dishes_set_result.html'
+    context_object_name = 'info'
+
+    def what_dish(self):
+        user_dish = self.get_queryset().dish_name
+        user_count = self.get_queryset().count_persons
+
+        return user_dish, user_count
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context_dict = super().get_context_data(**kwargs)
+
+        context_dict['user_dish_name'] = self.what_dish()[0]
+        context_dict['user_count_persons'] = self.what_dish()[1]
+        if self.what_dish()[0] == 'борщ украинский':
+            context_dict['dish_info'] = get_borsh_ukr_info
+        elif self.what_dish()[0] == 'вареники с картошкой':
+            context_dict['dish_info'] = get_vareniki_s_kartoshkoy_info
+
+        mutual_context_dict = self.get_user_context(title='Цена блюда')
+        return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
+
+    def get_queryset(self):
+        '''На странице будем отображать только одну единственную запись,
+        которая была добавлена самой последней'''
+
+        return Dishes.objects.latest('time_create')
+
+
+
 class ProductsSet(MutualContext, CreateView):
     '''Класс-обработчик для страницы , на которой пользователь
     может собирать продуктовые наборы, вручную написав их в форме заполнения'''
@@ -495,7 +536,7 @@ class UserRegistration(MutualContext, CreateView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
         context_dict['all_relevant_markets'] = get_all_markets
-        context_dict['total'] = 150
+        #context_dict['total'] = 150
         mutual_context_dict = self.get_user_context(title='Регистрация')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
 

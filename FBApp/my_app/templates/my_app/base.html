@@ -38,6 +38,10 @@
                                    href="{% url 'search_dishes' %}"><b>блюда</b></a>
                             </li>
                             <li class="nav-item">
+                                <a class="navbar-brand white-oranje-style" aria-current="page"
+                                   href="{% url 'available_dishes_set' %}"><b>блюда2</b></a>
+                            </li>
+                            <li class="nav-item">
                                 {% if request.user.is_authenticated %}
                                 <a class="navbar-brand white-oranje-style" aria-current="page"
                                    href="{% url 'items_set' %}"><b>наборы</b></a>

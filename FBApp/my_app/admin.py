@@ -50,6 +50,20 @@ class RelevantMarketsAdmin(admin.ModelAdmin):
     list_display = ('market_name',)
     list_display_links = ('market_name',)
 
+class AvailableDishesAdmin(admin.ModelAdmin):
+    list_display = ('dish_name', 'dish_description', 'get_html_photo')
+    list_display_links = ('dish_name', )
+
+    def get_html_photo(self,object):
+        return mark_safe(f'<img src="{object.image.url}" width=50>')
+
+class AvailableDishesAdmin2(admin.ModelAdmin):
+    list_display = ('dish_name', 'dish_description', 'get_html_photo')
+    list_display_links = ('dish_name', )
+
+    def get_html_photo(self,object):
+        return mark_safe(f'<img src="{object.image.url}" width=50>')
+
 
 
 admin.site.register(MainPage, MainPageAdmin)
@@ -61,3 +75,5 @@ admin.site.register(Dishes,DishesAdmin)
 admin.site.register(InfoAboutDishes,InfoAboutDishesAdmin)
 admin.site.register(SetOfProducts,SetOfProductsAdmin)
 admin.site.register(RelevantMarkets,RelevantMarketsAdmin)
+admin.site.register(AvailableDishes,AvailableDishesAdmin)
+admin.site.register(AvailableDishes2,AvailableDishesAdmin2)

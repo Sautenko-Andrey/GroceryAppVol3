@@ -132,6 +132,37 @@ class RelevantMarkets(models.Model):
         verbose_name = 'Досутпные супермаркеты'
         verbose_name_plural= 'Досутпные супермаркеты'
 
+class AvailableDishes(models.Model):
+    '''Модель, хранящая все доступные пользователю готовые блюда.'''
+
+
+    dish_name = models.CharField(max_length=100, verbose_name="Название блюда")
+    dish_description = models.TextField(blank=False, verbose_name="Описание")
+    image = models.ImageField(verbose_name='Изображение блюда')
+
+    class Meta:
+        verbose_name='Досутпные блюда'
+        verbose_name_plural='Досутпные блюда'
+
+class AvailableDishes2(models.Model):
+    '''Модель, хранящая все доступные пользователю готовые блюда.'''
+
+    BORSH = 'BORSH'
+    VARENIKI_S_KARTOSHKOY = 'VAR_K'
+
+    DISH_CHOICES = [
+        (BORSH,'Борщ украинский'),
+        (VARENIKI_S_KARTOSHKOY,'Вареники с картошкой')
+    ]
+
+    dish_name = models.CharField(max_length=5,choices=DISH_CHOICES)
+    dish_description = models.TextField(blank=False, verbose_name="Описание")
+    image = models.ImageField(verbose_name='Изображение блюда')
+
+    class Meta:
+        verbose_name='Досутпные блюда'
+        verbose_name_plural='Досутпные блюда'
+
 
 
 

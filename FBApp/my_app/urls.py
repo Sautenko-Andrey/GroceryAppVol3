@@ -21,6 +21,8 @@ urlpatterns=[
     path('registration/',UserRegistration.as_view(),name='registr'),
     path('login/',LoginUser.as_view(),name='login'),
     path('logout/',logout_user,name='logout'),
+    path('available_dishes/',DishesSet.as_view(),name='available_dishes_set'),
+    path('your_dish_price/',DishesSetResult.as_view(),name='dish_info'),
 
 
     #url для REST API

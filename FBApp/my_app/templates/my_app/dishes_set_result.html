@@ -1,0 +1,23 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <h5>Информация о блюде</h5>
+
+            <h5>{{user_dish_name}}</h5>
+            <h5>{{user_count_persons}}</h5>
+            <div class="col-xl-6 col-md-6 col-sm-12">
+                <img src="{{dish_info.image.url}}" class="img-fluid rounded-start" alt="Ошибка изображения!">
+            </div>
+            <h5>{{dish_info.dish_description}}</h5>
+
+        </div>
+    </div>
+</div>
+
+{% endblock %}
