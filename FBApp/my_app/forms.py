@@ -46,7 +46,7 @@ class SearchDishesForm(forms.ModelForm):
         (VARENIKI_S_KARTOSHKOY, 'Вареники с картошкой')
     ]
 
-    dish_name=forms.ChoiceField(label='Название блюда',widget=forms.TextInput(attrs={'class':'form-input-dish'}),choices=DISH_CHOICES)
+    dish_name = forms.ChoiceField(label='Название блюда',choices=DISH_CHOICES)
     count_persons=forms.CharField(label='Количество людей',widget=forms.NumberInput(attrs={'class':'form-input-count'}))
     class Meta:
         model=Dishes

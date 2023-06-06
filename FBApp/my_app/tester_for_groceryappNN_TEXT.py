@@ -541,5 +541,19 @@ class TesterForGroceryAppText:
             return BEER_CARLSBERG_PREMIUM_PILSNER_SVITLE_05_L_JB
         elif np.argmax(result) == 233:
             return BEER_CARLSBERG_PILSNER_05_L_JB
+        elif np.argmax(result) == 234:
+            return BANANA
+        elif np.argmax(result) == 235:
+            return ORANGE
+        elif np.argmax(result) == 236:
+            return KIWI
+        elif np.argmax(result) == 237:
+            return COCONUT
+        elif np.argmax(result) == 238:
+            return GRAPEFRUIT
+        elif np.argmax(result) == 239:
+            return POMEGRANATE
+        elif np.argmax(result) == 240:
+            return MANGO
 
 

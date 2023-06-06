@@ -723,6 +723,27 @@ get_beer_Carlsberg_Premium_Pilsner_svitle_05l_jb = tag.create_tag(ItemsPicsFromN
 '''Тэг,возвращающий информацию о "Пиво Carlsberg Pilsner 0.5 л"'''
 get_beer_Carlsberg_Pilsner_05l_jb = tag.create_tag(ItemsPicsFromNet, 234)
 
+'''Тэг,возвращающий информацию о "Банан, кг"'''
+get_banana = tag.create_tag(ItemsPicsFromNet, 235)
+
+'''Тэг,возвращающий информацию о "Апельсин, кг"'''
+get_orange = tag.create_tag(ItemsPicsFromNet, 236)
+
+'''Тэг,возвращающий информацию о "Киви, кг"'''
+get_kiwi = tag.create_tag(ItemsPicsFromNet, 237)
+
+'''Тэг,возвращающий информацию о "Кокос"'''
+get_coconut = tag.create_tag(ItemsPicsFromNet, 238)
+
+'''Тэг,возвращающий информацию о "Грейпфрут"'''
+get_grapefruit = tag.create_tag(ItemsPicsFromNet, 239)
+
+'''Тэг,возвращающий информацию о "Гранат, кг"'''
+get_pomegranate = tag.create_tag(ItemsPicsFromNet, 240)
+
+'''Тэг,возвращающий информацию о "Манго, кг"'''
+get_mango = tag.create_tag(ItemsPicsFromNet, 241)
+
 # @register.simple_tag()
 # def get_obolon_premium():
 #     '''Тэг, возвращающий информацию о пиве "Оболонь Прмиум 1,1 л из БД"'''

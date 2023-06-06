@@ -686,6 +686,21 @@ class ContextSupervisor:
             result = self.getting_prices('beer_Carlsberg_Premium_Pilsner_svitle_05_l_jb',get_beer_Carlsberg_Premium_Pilsner_svitle_05l_jb)
         elif nn_respond == BEER_CARLSBERG_PILSNER_05_L_JB:
             result = self.getting_prices('beer_Carlsberg_Pilsner_05_l_jb',get_beer_Carlsberg_Pilsner_05l_jb)
+        elif nn_respond == BANANA:
+            result = self.getting_prices(self.NO_PRICES,get_banana)
+        elif nn_respond == ORANGE:
+            result = self.getting_prices(self.NO_PRICES,get_orange)
+        elif nn_respond == KIWI:
+            result = self.getting_prices(self.NO_PRICES,get_kiwi)
+        elif nn_respond == COCONUT:
+            result = self.getting_prices(self.NO_PRICES,get_coconut)
+        elif nn_respond == GRAPEFRUIT:
+            result = self.getting_prices(self.NO_PRICES,get_grapefruit)
+        elif nn_respond == POMEGRANATE:
+            result = self.getting_prices(self.NO_PRICES,get_pomegranate)
+        elif nn_respond == MANGO:
+            result = self.getting_prices(self.NO_PRICES,get_mango)
+
         else:
             result = self.getting_prices('apple_golden',get_apple_golden)
 
@@ -1008,6 +1023,13 @@ class RefersForRNN:
         beer_lvivske__svitle_048_l_jb_text = self.add_new_item('beer_lvivske__svitle_048_l_jb.txt')
         beer_carlsberg_premium_pilsner_05_l_jb_text = self.add_new_item('beer_carlsberg_premium_pilsner_05_l_jb.txt')
         beer_carlsberg_pilsner_05_l_jb_text = self.add_new_item('beer_carlsberg_pilsner_05_l_jb.txt')
+        banana_text = self.add_new_item('banana.txt')
+        orange_text = self.add_new_item('orange.txt')
+        kiwi_text = self.add_new_item('kiwi.txt')
+        coconut_text = self.add_new_item('coconut.txt')
+        grapefruit_text = self.add_new_item('grapefruit.txt')
+        pomegranate_text = self.add_new_item('pomegranate.txt')
+        mango_text = self.add_new_item('mango.txt')
 
         # объед. обучающие выборки:
         texts = obolon_premium_extra_11_text + hetman_sagaydachniy_07_text \
@@ -1108,7 +1130,8 @@ class RefersForRNN:
                 + beer_5_0_OriginalPills_svitle_05_l_jb_text + beer_5_0_Original_Lager_svitle_05_l_jb_text + beer_5_0_Original_Weiss_svitle_nefilter_05_l_jb_text \
                 + beer_fahnen_brau_svitle_05_l_jb_text + beer_gosser_light_svitle_05_l_jb_text + beer_holland_import_svitle_033_l_jb_text \
                 + beer_holsten_pilsener_048_l_jb_text + beer_obolon_premium_extra_brew_svitle_05_l_jb_text + beer_lvivske__svitle_048_l_jb_text \
-                + beer_carlsberg_premium_pilsner_05_l_jb_text + beer_carlsberg_pilsner_05_l_jb_text
+                + beer_carlsberg_premium_pilsner_05_l_jb_text + beer_carlsberg_pilsner_05_l_jb_text + banana_text + orange_text\
+                + kiwi_text + coconut_text + grapefruit_text + pomegranate_text + mango_text
 
         # подсчитываем кол-во выборок
         count_obolon_premium_extra_11_text = len(obolon_premium_extra_11_text)
@@ -1378,6 +1401,13 @@ class RefersForRNN:
         count_beer_lvivske__svitle_048_l_jb_text = len(beer_lvivske__svitle_048_l_jb_text)
         count_beer_carlsberg_premium_pilsner_05_l_jb_text = len(beer_carlsberg_premium_pilsner_05_l_jb_text)
         count_beer_carlsberg_pilsner_05_l_jb_text = len(beer_carlsberg_pilsner_05_l_jb_text)
+        count_banana_text = len(banana_text)
+        count_orange_text = len(orange_text)
+        count_kiwi_text = len(kiwi_text)
+        count_coconut_text = len(coconut_text)
+        count_grapefruit_text = len(grapefruit_text)
+        count_pomegranate_text = len(pomegranate_text)
+        count_mango_text = len(mango_text)
 
         return texts, count_obolon_premium_extra_11_text, count_hetman_sagaydachniy_07_text, \
             count_coffee_aroma_gold_classic_100gr_text, count_apple_golden_text, count_coca_cola_2l_text, \
@@ -1474,12 +1504,6 @@ class RefersForRNN:
             count_beer_karpackiePils_svitle_05_l_jb_text, count_beer_5_0_OriginalPills_svitle_05_l_jb_text, count_beer_5_0_Original_Lager_svitle_05_l_jb_text, \
             count_beer_5_0_Original_Weiss_svitle_nefilter_05_l_jb_text, count_beer_fahnen_brau_svitle_05_l_jb_text, count_beer_gosser_light_svitle_05_l_jb_text, \
             count_beer_holland_import_svitle_033_l_jb_text, count_beer_holsten_pilsener_048_l_jb_text, count_beer_obolon_premium_extra_brew_svitle_05_l_jb_text, \
-            count_beer_lvivske__svitle_048_l_jb_text, count_beer_carlsberg_premium_pilsner_05_l_jb_text, count_beer_carlsberg_pilsner_05_l_jb_text
-
-
-
-
-
-
-
-
+            count_beer_lvivske__svitle_048_l_jb_text, count_beer_carlsberg_premium_pilsner_05_l_jb_text,\
+            count_beer_carlsberg_pilsner_05_l_jb_text,count_banana_text,count_orange_text,count_kiwi_text,\
+            count_coconut_text, count_grapefruit_text, count_pomegranate_text, count_mango_text
