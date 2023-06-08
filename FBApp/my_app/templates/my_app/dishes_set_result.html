@@ -9,12 +9,12 @@
         <div class="col-xl-6 col-md-6 col-sm-6" align="center">
             <br>
             <br>
-            <img src="{{dish_info.image.url}}" class="img-fluid rounded-start" alt="Ошибка изображения!"
-                 title="{{user_dish_name}}">
+            <img src="{{item_info_for_user.image.url}}" class="img-fluid rounded-start" alt="Ошибка изображения!"
+                 title="{{nn_answer}}">
         </div>
         <div class="col-xl-6 col-md-6 col-sm-6" align="center">
             <div class="alert alert-info" role="alert">
-                <h5>Блюдо : <b>{{user_dish_name}} &emsp;
+                <h5>Блюдо : <b>{{nn_answer}} &emsp;
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-people" viewBox="0 0 16 16">
@@ -124,7 +124,7 @@
                          data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <div class="alert alert-light" role="alert">
-                                <h5 align="left">{{dish_info.dish_description}}</h5>
+                                <h5 align="left">{{item_info_for_user.dish_description}}</h5>
                             </div>
                         </div>
                     </div>

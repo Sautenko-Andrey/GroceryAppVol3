@@ -351,18 +351,31 @@ class DishesSetResult(MutualContext, ListView):
     def what_dish(self):
         user_dish = self.get_queryset().dish_name
         user_count = self.get_queryset().count_persons
-
         return user_dish, user_count
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
 
-        context_dict['user_dish_name'] = self.what_dish()[0]
-        context_dict['user_count_persons'] = self.what_dish()[1]
-        if self.what_dish()[0] == 'борщ украинский':
-            context_dict['dish_info'] = get_borsh_ukr_info
-        elif self.what_dish()[0] == 'вареники с картошкой':
-            context_dict['dish_info'] = get_vareniki_s_kartoshkoy_info
+        context_dict['nn_answer'] = self.what_dish()[0]
+        # подключение класса, который формирует контекст (цены + инфо о товаре)
+        item_context = ContextSupervisor(context_dict['nn_answer'])
+
+        # подключение класса, который формирует контекст (цены + инфо о товаре)
+        context_dict['user_count_persons'] = self.what_dish()[1]   #количество порций
+
+        # подключение тега для отображения информации о товаре (изображение и текст)
+        context_dict['item_info_for_user'] = item_context.info
+
+        # подключение цен товара
+        context_dict['price_from_site_atb'] = item_context.atb_price
+        context_dict['price_from_site_eko'] = item_context.eko_price
+        context_dict['price_from_site_varus'] = item_context.varus_price
+        context_dict['price_from_site_silpo'] = item_context.silpo_price
+        context_dict['price_from_site_ashan'] = item_context.ashan_price
+        context_dict['price_from_site_novus'] = item_context.novus_price
+        context_dict['price_from_site_metro'] = item_context.metro_price
+        context_dict['price_from_site_nash_kray'] = item_context.nk_price
+        context_dict['price_from_site_fozzy'] = item_context.fozzy_price
 
         mutual_context_dict = self.get_user_context(title='Цена блюда')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))

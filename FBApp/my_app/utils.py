@@ -701,6 +701,14 @@ class ContextSupervisor:
         elif nn_respond == MANGO:
             result = self.getting_prices(self.NO_PRICES,get_mango)
 
+        #тут подключаются блюда
+        elif nn_respond == RED_BORSH:
+            result = self.getting_prices(self.NO_PRICES, get_borsh_ukr_info)
+        elif nn_respond == VARENIKI_KARTOSHKA:
+            result = self.getting_prices(self.NO_PRICES, get_vareniki_s_kartoshkoy_info)
+
+        #------------------------------------конец подключения блюд------------------------
+
         else:
             result = self.getting_prices('apple_golden',get_apple_golden)
 
@@ -1507,3 +1515,10 @@ class RefersForRNN:
             count_beer_lvivske__svitle_048_l_jb_text, count_beer_carlsberg_premium_pilsner_05_l_jb_text,\
             count_beer_carlsberg_pilsner_05_l_jb_text,count_banana_text,count_orange_text,count_kiwi_text,\
             count_coconut_text, count_grapefruit_text, count_pomegranate_text, count_mango_text
+
+
+# class DishContentCreator(ContextSupervisor):
+#
+#     def make_content(self, user_choice):
+#         if user_choice==BORSH_UKR:
+#             result = self.getting_prices()

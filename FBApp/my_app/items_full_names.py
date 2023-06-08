@@ -239,6 +239,8 @@ COCONUT = 'Кокос'
 GRAPEFRUIT = 'Грейпфрут, кг'
 POMEGRANATE = 'Гранат, кг'
 MANGO = 'Манго'
+#BORSH_UKR = 'Борщ украинский'
+#VARENIKI_POTATO = 'Вареники с картошкой'
 
 
 
