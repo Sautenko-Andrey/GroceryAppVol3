@@ -72,6 +72,7 @@ class ProductParserVol2:
 
         #время задержки при парсинге 5 секунд
         waiting_time = 5
+        spec_waiting_time_for_metro = 15
 
         #номера индексов магазинов в списке с ценами по порядку
         atb_index = 0
@@ -91,7 +92,7 @@ class ProductParserVol2:
                 self.driver.get(url)
                 try:
                     self.atb_price = self.driver.find_element(self.SELECTOR, self.ATB_REGULAR_DIV_CLASS).text
-                    self.driver.implicitly_wait(waiting_time)
+                    self.driver.implicitly_wait(spec_waiting_time_for_metro)
                     self.atb_price = price_updating_data(self.atb_price)
                     results[atb_index] = self.atb_price
                 except Exception as ex:
@@ -186,7 +187,7 @@ class ProductParserVol2:
                 self.driver.get(url)
                 try:
                     self.metro_price = self.driver.find_element(self.SELECTOR,self.METRO_REGULAR_DIV_CLASS).text
-                    self.driver.implicitly_wait(waiting_time)
+                    self.driver.implicitly_wait(spec_waiting_time_for_metro)
                     results[metro_index] = float(self.metro_price[:5])
                 except Exception as ex:
                     print(ex)
@@ -442,7 +443,10 @@ class ProductParserVol2:
         return self.prices_parsing(['https://www.atbmarket.com/product/voda-6-l-karpatska-dzerelna-negazovana',
                 'https://eko.zakaz.ua/uk/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
                 'https://varus.ua/voda-vygoda-negazirovannaya-vygoda-6-l',
+                'https://shop.silpo.ua/product/voda-mineralna-karpatska-dzherelna-negazovana-440815',
+                'https://auchan.ua/ua/voda-karpats-ka-dzherel-na-6-l-775207/',
                 'https://novus.online/product/voda-pitna-dzerelna-negazovana-marka-promo-6l',
+                'https://metro.zakaz.ua/ru/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
                 'https://shop.nashkraj.ua/kovel/product/19345-min-voda-prozora-6l-vershina-yakosti',
                 'https://fozzyshop.ua/ru/voda-mineralnaya-negazirovannaya/12847-voda-pitevaya-prozora-artezianskaya-n-gaz-4820029431014.html'])
 
@@ -451,8 +455,10 @@ class ProductParserVol2:
         return self.prices_parsing(['https://www.atbmarket.com/product/okist-lembergmit-svinacij-oholodzenij-vakupak',
                 'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000535086/',
                 'https://varus.ua/lopatka-svinaya-vesovaya',
+                'https://shop.silpo.ua/product/svyniacha-lopatka-fermerska-757767',
                 'https://novus.online/product/lopatka-svinna-na-kistocci-vag',
                 'https://metro.zakaz.ua/uk/products/m-iaso--metro28500400000000/',
+                'https://shop.nashkraj.ua/kovel/product/28508-svinina-okholodzhena-lopatka',
                 'https://fozzyshop.ua/ru/svinina/11242-svinaya-lopatka-bez-kosti-2732700.html'])
 
     def potato_parser(self):
@@ -460,6 +466,7 @@ class ProductParserVol2:
         return self.prices_parsing(['https://www.atbmarket.com/product/kartopla-1-gat',
                 'https://eko.zakaz.ua/uk/products/ovochi-kartoplia--ekomarket00000000667970/',
                 'https://varus.ua/kartoplya-1-gatunok-vag',
+                'https://shop.silpo.ua/product/kartoplia-bila-myta-460748',
                 'https://novus.online/product/kartopla-rozeva-vag',
                 'https://metro.zakaz.ua/uk/products/ovochi-kartoplia--metro28013500000000/',
                 'https://fozzyshop.ua/ru/ovoshhi/64754-kartoshka-belaya-2782970.html'])
@@ -479,6 +486,7 @@ class ProductParserVol2:
         return self.prices_parsing(['https://www.atbmarket.com/product/borosno-1-kg-hutorok-psenicne-visij-gatunok',
                 'https://eko.zakaz.ua/uk/products/boroshno-khutorok-1000g-ukrayina--04820101710204/',
                 'https://varus.ua/boroshno-pshenichne-vigoda-1-kg',
+                'https://shop.silpo.ua/product/boroshno-kyivmlyn-v-g-210259',
                 'https://novus.online/product/borosno-psenicne-marka-promo-1kg',
                 'https://metro.zakaz.ua/uk/products/boroshno-metro-shef-1000g--04820019601656/',
                 'https://shop.nashkraj.ua/kovel/product/57341-boroshno-pshenichne-v-g',
@@ -499,6 +507,7 @@ class ProductParserVol2:
         return self.prices_parsing(['https://www.atbmarket.com/product/smetana-300-g-agotinska-15-pstakan',
                 'https://eko.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
                 'https://varus.ua/smetana-yagotinska-15-450g',
+                'https://shop.silpo.ua/product/smetana-yagotynska-15-908738',
                 'https://novus.online/product/smetana-15-yahotyn-stakan-300h',
                 'https://metro.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
                 'https://fozzyshop.ua/ru/smetana/98665-smetana-yagotinske-15-stakan-0250014899583.html'])

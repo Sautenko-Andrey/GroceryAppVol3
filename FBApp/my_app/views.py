@@ -361,21 +361,21 @@ class DishesSetResult(MutualContext, ListView):
         item_context = ContextSupervisor(context_dict['nn_answer'])
 
         # подключение класса, который формирует контекст (цены + инфо о товаре)
-        context_dict['user_count_persons'] = self.what_dish()[1]   #количество порций
+        context_dict['user_count_persons'] = int(self.what_dish()[1])   #количество порций
 
         # подключение тега для отображения информации о товаре (изображение и текст)
         context_dict['item_info_for_user'] = item_context.info
 
         # подключение цен товара
-        context_dict['price_from_site_atb'] = item_context.atb_price
-        context_dict['price_from_site_eko'] = item_context.eko_price
-        context_dict['price_from_site_varus'] = item_context.varus_price
-        context_dict['price_from_site_silpo'] = item_context.silpo_price
-        context_dict['price_from_site_ashan'] = item_context.ashan_price
-        context_dict['price_from_site_novus'] = item_context.novus_price
-        context_dict['price_from_site_metro'] = item_context.metro_price
-        context_dict['price_from_site_nash_kray'] = item_context.nk_price
-        context_dict['price_from_site_fozzy'] = item_context.fozzy_price
+        context_dict['price_from_site_atb'] = round(item_context.atb_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_eko'] = round(item_context.eko_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_varus'] = round(item_context.varus_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_silpo'] = round(item_context.silpo_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_ashan'] = round(item_context.ashan_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_novus'] = round(item_context.novus_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],2)
 
         mutual_context_dict = self.get_user_context(title='Цена блюда')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))

@@ -31,8 +31,8 @@ def price_updating_data(price:float) -> float:
     '''Функция для корректировки отображения нестандартных записей цен на сайтах'''
 
     #делаем проверку, что аргумент price является вещественным числом
-    if type(price) != float:
-        raise TypeError("Argument price for function 'price_updating_data' must be float")
+    #if type(price) != float:
+        #raise TypeError("Argument price for function 'price_updating_data' must be float")
 
     price = price[:5]
     try:
@@ -703,9 +703,9 @@ class ContextSupervisor:
 
         #тут подключаются блюда
         elif nn_respond == RED_BORSH:
-            result = self.getting_prices(self.NO_PRICES, get_borsh_ukr_info)
+            result = self.getting_prices('borsh_red', get_borsh_ukr_info)
         elif nn_respond == VARENIKI_KARTOSHKA:
-            result = self.getting_prices(self.NO_PRICES, get_vareniki_s_kartoshkoy_info)
+            result = self.getting_prices('veriniki_potato', get_vareniki_s_kartoshkoy_info)
 
         #------------------------------------конец подключения блюд------------------------
 
