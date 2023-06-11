@@ -239,9 +239,31 @@ COCONUT = 'Кокос'
 GRAPEFRUIT = 'Грейпфрут, кг'
 POMEGRANATE = 'Гранат, кг'
 MANGO = 'Манго'
-#BORSH_UKR = 'Борщ украинский'
-#VARENIKI_POTATO = 'Вареники с картошкой'
-
+POTATO = 'Картошка, кг'
+TOMATO = 'Помидоры, кг'
+CUCUMBER = 'Огурцы, кг'
+KABACHKI = 'Кабачки, кг'
+RED_BOLG_PAPPER = 'Красный болгарский перец, кг'
+YELLOW_BOLG_PAPPER = 'Желтый болгарский перец, кг'
+ASPARAGUS = 'Спаржа'
+BROCCOLI = 'Брокколи'
+CAPTAIN_MORGAN_SPICED_GOLD_1L = 'Напиток ромовый Captain Morgan Spiced Gold 1 литр'
+BELLS_ORIGINAL_07L = "Виски Bells's Original 0.7 л"
+MARTINI_ASTI_BILE_075L = 'Вино игристое Martini Asti белое 0,75 л'
+JAMESON_IRISH_WHISKEY_07L = 'Виски Jameson Irish Whiskey 0.7 л'
+BELLS_ORIGINAL_1L = "Виски Bells's Original 1 л"
+CAPTAIN_MORGAN_SPICED_GOLD_05L = 'Напиток ромовый Captain Morgan Spiced Gold 0.5 л'
+JAMESON_IRISH_WHISKEY_05L = 'Виски Jameson Irish Whiskey 0.5 л'
+JW_RED_LABEL_05L = 'Виски Johnie Walker Red Label 0.5 л'
+BELLS_SPICED_07L = "Виски Bells's Spiced 0.7 л"
+BALLANTINES_FINEST_07L = 'Виски Ballantines Finest 0.7 л'
+JACK_DANILES_07L = "Виски Jack Daniel's old N7 tennesi 0.7 л"
+JACK_DANILES_1L = "Виски Jack Daniel's old N7 tennesi 1 л"
+JIM_BEAM_WHITE_07L = "Бурбон Jim Beam White 0.7 л"
+BORJOMI_SILNOGAZ_05L = "Минеральная вода Borjomi сильногазированная 0,5 л"
+MORSHINSKAYA_NEGAZ_15L = "Минеральная вода Морщинская негазированная 1,5 л"
+MORSHINSKAYA_LOW_GAZ_15L = "Минеральная вода Морщинская слабогазированная 1,5 л"
+MORSHINSKAYA_HIGH_GAZ_15L = "Минеральная вода Морщинская сильногазированная 1,5 л"
 
 
 #НАЗВАНИЯ БЛЮД

@@ -19,17 +19,6 @@ class TesterForGroceryAppText:
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
 
-    def add_new_item(self,path_tail: str):
-        '''Функция для предвариетльной обработки обучающего текстового набора для НС'''
-
-        # загрузка обучающего текста
-        path = f'/home/andrey/grocery_data/ALL_TEXT_VARIANTS/{path_tail}'
-        with open(path, 'r', encoding='utf-8') as f:
-            item_text = f.readlines()
-        # убираем первый невидимый символ
-        item_text[0] = item_text[0].replace('\ufeff', '')
-        return item_text
-
     def prepearing_data(self):
         '''Подготавливаем текст'''
         get_text_data = RefersForRNN()
@@ -555,5 +544,56 @@ class TesterForGroceryAppText:
             return POMEGRANATE
         elif np.argmax(result) == 240:
             return MANGO
+        elif np.argmax(result) == 241:
+            return POTATO
+        elif np.argmax(result) == 242:
+            return TOMATO
+        elif np.argmax(result) == 243:
+            return CUCUMBER
+        elif np.argmax(result) == 244:
+            return KABACHKI
+        elif np.argmax(result) == 245:
+            return RED_BOLG_PAPPER
+        elif np.argmax(result) == 246:
+            return YELLOW_BOLG_PAPPER
+        elif np.argmax(result) == 247:
+            return ASPARAGUS
+        elif np.argmax(result) == 248:
+            return BROCCOLI
+        elif np.argmax(result) == 249:
+            return CAPTAIN_MORGAN_SPICED_GOLD_1L
+        elif np.argmax(result) == 250:
+            return BELLS_ORIGINAL_07L
+        elif np.argmax(result) == 251:
+            return MARTINI_ASTI_BILE_075L
+        elif np.argmax(result) == 252:
+            return JAMESON_IRISH_WHISKEY_07L
+        elif np.argmax(result) == 253:
+            return BELLS_ORIGINAL_1L
+        elif np.argmax(result) == 254:
+            return CAPTAIN_MORGAN_SPICED_GOLD_05L
+        elif np.argmax(result) == 255:
+            return JAMESON_IRISH_WHISKEY_05L
+        elif np.argmax(result) == 256:
+            return JW_RED_LABEL_05L
+        elif np.argmax(result) == 257:
+            return BELLS_SPICED_07L
+        elif np.argmax(result) == 258:
+            return BALLANTINES_FINEST_07L
+        elif np.argmax(result) == 259:
+            return JACK_DANILES_07L
+        elif np.argmax(result) == 260:
+            return JACK_DANILES_1L
+        elif np.argmax(result) == 261:
+            return JIM_BEAM_WHITE_07L
+        elif np.argmax(result) == 262:
+            return BORJOMI_SILNOGAZ_05L
+        elif np.argmax(result) == 263:
+            return MORSHINSKAYA_NEGAZ_15L
+        elif np.argmax(result) == 264:
+            return MORSHINSKAYA_LOW_GAZ_15L
+        elif np.argmax(result) == 265:
+            return MORSHINSKAYA_HIGH_GAZ_15L
+
 
 

@@ -744,6 +744,83 @@ get_pomegranate = tag.create_tag(ItemsPicsFromNet, 240)
 '''Тэг,возвращающий информацию о "Манго, кг"'''
 get_mango = tag.create_tag(ItemsPicsFromNet, 241)
 
+'''Тэг,возвращающий информацию о "Картошка, кг"'''
+get_potato = tag.create_tag(ItemsPicsFromNet, 242)
+
+'''Тэг,возвращающий информацию о "Помидоры, кг"'''
+get_tomato = tag.create_tag(ItemsPicsFromNet, 243)
+
+'''Тэг,возвращающий информацию о "Огурцы, кг"'''
+get_cucumber = tag.create_tag(ItemsPicsFromNet, 244)
+
+'''Тэг,возвращающий информацию о "Кабачки, кг"'''
+get_kabachki = tag.create_tag(ItemsPicsFromNet, 245)
+
+'''Тэг,возвращающий информацию о "Красный болгарский перец, кг"'''
+get_red_bolg_papper = tag.create_tag(ItemsPicsFromNet, 246)
+
+'''Тэг,возвращающий информацию о "Желтый болгарский перец, кг"'''
+get_yellow_bolg_papper = tag.create_tag(ItemsPicsFromNet, 247)
+
+'''Тэг,возвращающий информацию о "Спаржа"'''
+get_asparagus = tag.create_tag(ItemsPicsFromNet, 248)
+
+'''Тэг,возвращающий информацию о "Брокколи"'''
+get_broccoli = tag.create_tag(ItemsPicsFromNet, 249)
+
+'''Тэг,возвращающий информацию о "Напиток ромовый Captain Morgan Spiced Gold 1 литр"'''
+get_captain_morgan_spiced_gold_1_l = tag.create_tag(ItemsPicsFromNet, 250)
+
+'''Тэг,возвращающий информацию о "Виски Bell's Original 0,7 л"'''
+get_bells_original_07_l = tag.create_tag(ItemsPicsFromNet, 251)
+
+'''Тэг,возвращающий информацию о "Вино игристое Martini Asti белое 0,75 л"'''
+get_martini_asti_bile_075_l = tag.create_tag(ItemsPicsFromNet, 252)
+
+'''Тэг,возвращающий информацию о "Виски Jameson Irish Whiskey 0.7 л"'''
+get_jameson_irish_whiskey_075_l = tag.create_tag(ItemsPicsFromNet, 253)
+
+'''Тэг,возвращающий информацию о "Виски Bell's Original 1 л"'''
+get_bells_original_1_l = tag.create_tag(ItemsPicsFromNet, 254)
+
+'''Тэг,возвращающий информацию о "Напиток ромовый Captain Morgan Spiced Gold 0.5 л"'''
+get_captain_morgan_spiced_gold_05_l = tag.create_tag(ItemsPicsFromNet, 255)
+
+'''Тэг,возвращающий информацию о "Виски Jameson Irish Whiskey 0.5 л"'''
+get_jameson_irish_whiskey_05_l = tag.create_tag(ItemsPicsFromNet, 256)
+
+'''Тэг,возвращающий информацию о "Виски JW Red Label 0.5 л"'''
+get_jw_red_label_05_l = tag.create_tag(ItemsPicsFromNet, 257)
+
+'''Тэг,возвращающий информацию о "Виски Bell's Spiced 0.7 л"'''
+get_bells_spiced_07_l = tag.create_tag(ItemsPicsFromNet, 258)
+
+'''Тэг,возвращающий информацию о "Виски Ballantines Finest 0.7 л"'''
+get_ballantines_finest_07_l = tag.create_tag(ItemsPicsFromNet, 259)
+
+'''Тэг,возвращающий информацию о "Виски Jack Daniel's old n.7 tennesi 0.7 л"'''
+get_jack_daniels_07_l = tag.create_tag(ItemsPicsFromNet, 260)
+
+'''Тэг,возвращающий информацию о "Виски Jack Daniel's old n.7 tennesi 1 л"'''
+get_jack_daniels_1_l = tag.create_tag(ItemsPicsFromNet, 261)
+
+'''Тэг,возвращающий информацию о "Бурбон Jim Beam White 0.7 л"'''
+get_jim_beam_white_07_l = tag.create_tag(ItemsPicsFromNet, 262)
+
+'''Тэг,возвращающий информацию о "Минеральная вода Borjomi сильногазированная 0,5 л"'''
+get_borjomi_silnogaz_05_l = tag.create_tag(ItemsPicsFromNet, 263)
+
+'''Тэг,возвращающий информацию о "Минеральная вода Морщинская негазированная 1,5 л"'''
+get_morshinskaya_negaz_15_l = tag.create_tag(ItemsPicsFromNet, 264)
+
+'''Тэг,возвращающий информацию о "Минеральная вода Морщинская слабогазированная 1,5 л"'''
+get_morshinskaya_low_gaz_15_l = tag.create_tag(ItemsPicsFromNet, 265)
+
+'''Тэг,возвращающий информацию о "Минеральная вода Морщинская сильногазированная 1,5 л"'''
+get_morshinskaya_high_gaz_15_l = tag.create_tag(ItemsPicsFromNet, 266)
+
+
+
 # @register.simple_tag()
 # def get_obolon_premium():
 #     '''Тэг, возвращающий информацию о пиве "Оболонь Прмиум 1,1 л из БД"'''

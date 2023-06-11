@@ -700,6 +700,57 @@ class ContextSupervisor:
             result = self.getting_prices(self.NO_PRICES,get_pomegranate)
         elif nn_respond == MANGO:
             result = self.getting_prices(self.NO_PRICES,get_mango)
+        elif nn_respond == POTATO:
+            result = self.getting_prices(self.NO_PRICES, get_potato)
+        elif nn_respond == TOMATO:
+            result = self.getting_prices(self.NO_PRICES, get_tomato)
+        elif nn_respond == CUCUMBER:
+            result = self.getting_prices(self.NO_PRICES, get_cucumber)
+        elif nn_respond == KABACHKI:
+            result = self.getting_prices(self.NO_PRICES, get_kabachki)
+        elif nn_respond == RED_BOLG_PAPPER:
+            result = self.getting_prices(self.NO_PRICES, get_red_bolg_papper)
+        elif nn_respond == YELLOW_BOLG_PAPPER:
+            result = self.getting_prices(self.NO_PRICES, get_yellow_bolg_papper)
+        elif nn_respond == ASPARAGUS:
+            result = self.getting_prices(self.NO_PRICES, get_asparagus)
+        elif nn_respond == BROCCOLI:
+            result = self.getting_prices(self.NO_PRICES, get_broccoli)
+        elif nn_respond == CAPTAIN_MORGAN_SPICED_GOLD_1L:
+            result = self.getting_prices(self.NO_PRICES, get_captain_morgan_spiced_gold_1_l)
+        elif nn_respond == BELLS_ORIGINAL_07L:
+            result = self.getting_prices(self.NO_PRICES, get_bells_original_07_l)
+        elif nn_respond == MARTINI_ASTI_BILE_075L:
+            result = self.getting_prices(self.NO_PRICES, get_martini_asti_bile_075_l)
+        elif nn_respond == JAMESON_IRISH_WHISKEY_07L:
+            result = self.getting_prices(self.NO_PRICES, get_jameson_irish_whiskey_075_l)
+        elif nn_respond == BELLS_ORIGINAL_1L:
+            result = self.getting_prices(self.NO_PRICES, get_bells_original_1_l)
+        elif nn_respond == CAPTAIN_MORGAN_SPICED_GOLD_05L:
+            result = self.getting_prices(self.NO_PRICES, get_captain_morgan_spiced_gold_05_l)
+        elif nn_respond == JAMESON_IRISH_WHISKEY_05L:
+            result = self.getting_prices(self.NO_PRICES, get_jameson_irish_whiskey_05_l)
+        elif nn_respond == JW_RED_LABEL_05L:
+            result = self.getting_prices(self.NO_PRICES, get_jw_red_label_05_l)
+        elif nn_respond == BELLS_SPICED_07L:
+            result = self.getting_prices(self.NO_PRICES, get_bells_spiced_07_l)
+        elif nn_respond == BALLANTINES_FINEST_07L:
+            result = self.getting_prices(self.NO_PRICES, get_ballantines_finest_07_l)
+        elif nn_respond == JACK_DANILES_07L:
+            result = self.getting_prices(self.NO_PRICES, get_jack_daniels_07_l)
+        elif nn_respond == JACK_DANILES_1L:
+            result = self.getting_prices(self.NO_PRICES, get_jack_daniels_1_l)
+        elif nn_respond == JIM_BEAM_WHITE_07L:
+            result = self.getting_prices(self.NO_PRICES, get_jim_beam_white_07_l)
+        elif nn_respond == BORJOMI_SILNOGAZ_05L:
+            result = self.getting_prices(self.NO_PRICES, get_borjomi_silnogaz_05_l)
+        elif nn_respond == MORSHINSKAYA_NEGAZ_15L:
+            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_negaz_15_l)
+        elif nn_respond == MORSHINSKAYA_LOW_GAZ_15L:
+            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_low_gaz_15_l)
+        elif nn_respond == MORSHINSKAYA_HIGH_GAZ_15L:
+            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_high_gaz_15_l)
+
 
         #тут подключаются блюда
         elif nn_respond == RED_BORSH:
@@ -1038,6 +1089,31 @@ class RefersForRNN:
         grapefruit_text = self.add_new_item('grapefruit.txt')
         pomegranate_text = self.add_new_item('pomegranate.txt')
         mango_text = self.add_new_item('mango.txt')
+        potato_text = self.add_new_item('potato.txt')
+        tomato_text = self.add_new_item('tomatos.txt')
+        cucumber_text = self.add_new_item('cucmbers.txt')
+        kabachki_text = self.add_new_item('vegetable_marrow.txt')
+        red_bolg_papper_text = self.add_new_item('red_papper.txt')
+        yellow_bolg_papper_text = self.add_new_item('yellow_papper.txt')
+        asparagus_text = self.add_new_item('asparagus.txt')
+        broccoli_text = self.add_new_item('broccoli.txt')
+        captain_morgan_spiced_gold_1_l_text = self.add_new_item('captain_morgan_spiced_gold_1l.txt')
+        bells_original_07_l_text = self.add_new_item('bells_original_07_l.txt')
+        martini_asti_white_075_l_text = self.add_new_item('martini_asti_white_075_l.txt')
+        jameson_irish_whiskey_075_l_text = self.add_new_item('jameson_07_l.txt')
+        bells_original_1_l_text = self.add_new_item('bells_original_1_l.txt')
+        captain_morgan_spiced_gold_05_l_text = self.add_new_item('captain_morgan_spiced_gold_05l.txt')
+        jameson_05_l_text = self.add_new_item('jameson_05_l.txt')
+        jw_red_label_05_l_text = self.add_new_item('jw_red_label_05_l.txt')
+        bells_spiced_07_l_text = self.add_new_item('bells_spiced_07_l.txt')
+        ballantines_finest_07_l_text = self.add_new_item('ballantines_finest_07_l.txt')
+        jack_daniels_07_l_text = self.add_new_item('jack_daniels_07_l.txt')
+        jack_daniels_1_l_text = self.add_new_item('jack_daniels_1_l.txt')
+        jim_beam_white_07_l_text = self.add_new_item('jim_beam_white_07_l.txt')
+        borjomi_silnogaz_05_l = self.add_new_item('mineral_water_borjomi_05_l_silnogaz.txt')
+        morshinskaya_negaz_15_l_text = self.add_new_item('mineral_water_morshinska_negaz_15_l.txt')
+        morshinskaya_low_gaz_15_l_text = self.add_new_item('mineral_water_morshinska_low_gaz_15_l.txt')
+        morshinskaya_high_gaz_15_l_text = self.add_new_item('mineral_water_morshinska_high_gaz_15_l.txt')
 
         # объед. обучающие выборки:
         texts = obolon_premium_extra_11_text + hetman_sagaydachniy_07_text \
@@ -1139,7 +1215,13 @@ class RefersForRNN:
                 + beer_fahnen_brau_svitle_05_l_jb_text + beer_gosser_light_svitle_05_l_jb_text + beer_holland_import_svitle_033_l_jb_text \
                 + beer_holsten_pilsener_048_l_jb_text + beer_obolon_premium_extra_brew_svitle_05_l_jb_text + beer_lvivske__svitle_048_l_jb_text \
                 + beer_carlsberg_premium_pilsner_05_l_jb_text + beer_carlsberg_pilsner_05_l_jb_text + banana_text + orange_text\
-                + kiwi_text + coconut_text + grapefruit_text + pomegranate_text + mango_text
+                + kiwi_text + coconut_text + grapefruit_text + pomegranate_text + mango_text + potato_text + tomato_text\
+                + cucumber_text + kabachki_text + red_bolg_papper_text + yellow_bolg_papper_text + asparagus_text + broccoli_text\
+                + captain_morgan_spiced_gold_1_l_text + bells_original_07_l_text + martini_asti_white_075_l_text\
+                + jameson_irish_whiskey_075_l_text + bells_original_1_l_text + captain_morgan_spiced_gold_05_l_text\
+                + jameson_05_l_text + jw_red_label_05_l_text + bells_spiced_07_l_text + ballantines_finest_07_l_text\
+                + jack_daniels_07_l_text + jack_daniels_1_l_text + jim_beam_white_07_l_text + borjomi_silnogaz_05_l\
+                + morshinskaya_negaz_15_l_text + morshinskaya_low_gaz_15_l_text + morshinskaya_high_gaz_15_l_text
 
         # подсчитываем кол-во выборок
         count_obolon_premium_extra_11_text = len(obolon_premium_extra_11_text)
@@ -1416,6 +1498,31 @@ class RefersForRNN:
         count_grapefruit_text = len(grapefruit_text)
         count_pomegranate_text = len(pomegranate_text)
         count_mango_text = len(mango_text)
+        count_potato_text = len(potato_text)
+        count_tomato_text = len(tomato_text)
+        count_cucumber_text = len(cucumber_text)
+        count_kabachki_text = len(kabachki_text)
+        count_red_bolg_papper_text = len(red_bolg_papper_text)
+        count_yellow_bolg_papper_text = len(yellow_bolg_papper_text)
+        count_asparagus_text = len(asparagus_text)
+        count_broccoli_text = len(broccoli_text)
+        count_captain_morgan_spiced_gold_1_l_text = len(captain_morgan_spiced_gold_1_l_text)
+        count_bells_original_07_l_text = len(bells_original_07_l_text)
+        count_martini_asti_white_075_l_text = len(martini_asti_white_075_l_text)
+        count_jameson_irish_whiskey_075_l_text = len(jameson_irish_whiskey_075_l_text)
+        count_bells_original_1_l_text = len(bells_original_1_l_text)
+        count_captain_morgan_spiced_gold_05_l_text = len(captain_morgan_spiced_gold_05_l_text)
+        count_jameson_05_l_text = len(jameson_05_l_text)
+        count_jw_red_label_05_l_text = len(jw_red_label_05_l_text)
+        count_bells_spiced_07_l_text = len(bells_spiced_07_l_text)
+        count_ballantines_finest_07_l_text = len(ballantines_finest_07_l_text)
+        count_jack_daniels_07_l_text = len(jack_daniels_07_l_text)
+        count_jack_daniels_1_l_text = len(jack_daniels_1_l_text)
+        count_get_jim_beam_white_07_l_text = len(jim_beam_white_07_l_text)
+        count_borjomi_silnogaz_05_l = len(borjomi_silnogaz_05_l)
+        count_morshinskaya_negaz_15_l_text = len(morshinskaya_negaz_15_l_text)
+        count_morshinskaya_low_gaz_15_l_text = len(morshinskaya_low_gaz_15_l_text)
+        count_morshinskaya_high_gaz_15_l_text = len(morshinskaya_high_gaz_15_l_text)
 
         return texts, count_obolon_premium_extra_11_text, count_hetman_sagaydachniy_07_text, \
             count_coffee_aroma_gold_classic_100gr_text, count_apple_golden_text, count_coca_cola_2l_text, \
@@ -1514,11 +1621,10 @@ class RefersForRNN:
             count_beer_holland_import_svitle_033_l_jb_text, count_beer_holsten_pilsener_048_l_jb_text, count_beer_obolon_premium_extra_brew_svitle_05_l_jb_text, \
             count_beer_lvivske__svitle_048_l_jb_text, count_beer_carlsberg_premium_pilsner_05_l_jb_text,\
             count_beer_carlsberg_pilsner_05_l_jb_text,count_banana_text,count_orange_text,count_kiwi_text,\
-            count_coconut_text, count_grapefruit_text, count_pomegranate_text, count_mango_text
-
-
-# class DishContentCreator(ContextSupervisor):
-#
-#     def make_content(self, user_choice):
-#         if user_choice==BORSH_UKR:
-#             result = self.getting_prices()
+            count_coconut_text, count_grapefruit_text, count_pomegranate_text, count_mango_text, count_potato_text,\
+            count_tomato_text,count_cucumber_text,count_kabachki_text,count_red_bolg_papper_text,count_yellow_bolg_papper_text,\
+            count_asparagus_text,count_broccoli_text, count_captain_morgan_spiced_gold_1_l_text, count_bells_original_07_l_text,\
+            count_martini_asti_white_075_l_text, count_jameson_irish_whiskey_075_l_text, count_bells_original_1_l_text,\
+            count_captain_morgan_spiced_gold_05_l_text,count_jameson_05_l_text,count_jw_red_label_05_l_text,count_bells_spiced_07_l_text,\
+            count_ballantines_finest_07_l_text, count_jack_daniels_07_l_text, count_jack_daniels_1_l_text, count_get_jim_beam_white_07_l_text,\
+            count_borjomi_silnogaz_05_l, count_morshinskaya_negaz_15_l_text, count_morshinskaya_low_gaz_15_l_text, count_morshinskaya_high_gaz_15_l_text

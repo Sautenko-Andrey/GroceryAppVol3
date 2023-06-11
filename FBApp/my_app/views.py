@@ -366,16 +366,19 @@ class DishesSetResult(MutualContext, ListView):
         # подключение тега для отображения информации о товаре (изображение и текст)
         context_dict['item_info_for_user'] = item_context.info
 
+        #округление до 2 знаков после запятой
+        round_num = 2
+
         # подключение цен товара
-        context_dict['price_from_site_atb'] = round(item_context.atb_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_eko'] = round(item_context.eko_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_varus'] = round(item_context.varus_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_silpo'] = round(item_context.silpo_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_ashan'] = round(item_context.ashan_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_novus'] = round(item_context.novus_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],2)
-        context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],2)
+        context_dict['price_from_site_atb'] = round(item_context.atb_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_eko'] = round(item_context.eko_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_varus'] = round(item_context.varus_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_silpo'] = round(item_context.silpo_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_ashan'] = round(item_context.ashan_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_novus'] = round(item_context.novus_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],round_num)
 
         mutual_context_dict = self.get_user_context(title='Цена блюда')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
@@ -549,7 +552,6 @@ class UserRegistration(MutualContext, CreateView):
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
         context_dict['all_relevant_markets'] = get_all_markets
-        #context_dict['total'] = 150
         mutual_context_dict = self.get_user_context(title='Регистрация')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
 
