@@ -264,6 +264,21 @@ BORJOMI_SILNOGAZ_05L = "Минеральная вода Borjomi сильнога
 MORSHINSKAYA_NEGAZ_15L = "Минеральная вода Морщинская негазированная 1,5 л"
 MORSHINSKAYA_LOW_GAZ_15L = "Минеральная вода Морщинская слабогазированная 1,5 л"
 MORSHINSKAYA_HIGH_GAZ_15L = "Минеральная вода Морщинская сильногазированная 1,5 л"
+NASH_SIK_APPLE_GRAPE_02L = 'Нектар Наш Сік яблуко-виноград 200 гр'
+NASH_SIK_APPLE_CARROT_02L = 'Сік Наш Сік яблуко-морква 200 гр'
+NASH_SIK_ORANGE_02L = 'Нектар Наш Сік апельсин 200 гр'
+NASH_SIK_MULTIFRUKT_02L = 'Нектар Наш Сік мультифрукт 200 гр'
+NASH_SIK_APPLE_PEACH_02L = 'Сік Наш Сік яблуко-персик 200 гр'
+NASH_SIK_PEAR_APPLE_02L = 'Сік Наш Сік груша-яблуко 200 гр'
+NASH_SIK_MULTIVITAMIN_02L = 'Сік Наш Сік мультивітамін 200 гр'
+NASH_SIK_APPLE_02L = 'Сік Наш Сік яблучний 200 гр'
+NASH_SIK_APPLE_STRAWBERRY_02L = 'Сік Наш Сік яблуко-полуниця 200 гр'
+NON_STOP_ORIGINAL_025L = 'Енергетичний напій Non Stop Original 250 мл'
+NON_STOP_ORIGINAL_05L = 'Енергетичний напій Non Stop Original 500 мл'
+NON_STOP_JUNGLE_025L = 'Енергетичний напій Non Stop Jungle 250 мл'
+NON_STOP_BOOST_05L = 'Енергетичний напій Non Stop Boost 500 мл'
+NON_STOP_ULTRA_05L = 'Енергетичний напій Non Stop Ultra 500 мл'
+NON_STOP_BOOST_025L = 'Енергетичний напій Non Stop Boost 250 мл'
 
 
 #НАЗВАНИЯ БЛЮД

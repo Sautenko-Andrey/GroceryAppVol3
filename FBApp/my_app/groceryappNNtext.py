@@ -29,7 +29,7 @@ class GroceryAppText:
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 266
+    ITEMS_AMOUNT = 281
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -37,7 +37,7 @@ class GroceryAppText:
         self.model = keras.Sequential([
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),  # 128
-            LSTM(120),  # 64
+            LSTM(130),  # 64
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 
@@ -51,7 +51,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=50, batch_size=50)
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=55, batch_size=50)
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 

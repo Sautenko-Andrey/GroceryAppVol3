@@ -750,6 +750,38 @@ class ContextSupervisor:
             result = self.getting_prices(self.NO_PRICES, get_morshinskaya_low_gaz_15_l)
         elif nn_respond == MORSHINSKAYA_HIGH_GAZ_15L:
             result = self.getting_prices(self.NO_PRICES, get_morshinskaya_high_gaz_15_l)
+        elif nn_respond == NASH_SIK_APPLE_GRAPE_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_grape_02_l)
+        elif nn_respond == NASH_SIK_APPLE_CARROT_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_carrot_02_l)
+        elif nn_respond == NASH_SIK_ORANGE_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_orange_02_l)
+        elif nn_respond == NASH_SIK_MULTIFRUKT_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_multifrukt_02_l)
+        elif nn_respond == NASH_SIK_APPLE_PEACH_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_peach_02_l)
+        elif nn_respond == NASH_SIK_PEAR_APPLE_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_pear_apple_02_l)
+        elif nn_respond == NASH_SIK_MULTIVITAMIN_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_multivitamin_02_l)
+        elif nn_respond == NASH_SIK_APPLE_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_02_l)
+        elif nn_respond == NASH_SIK_APPLE_STRAWBERRY_02L:
+            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_strawberry_02_l)
+        elif nn_respond == NON_STOP_ORIGINAL_025L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_original_025_l)
+        elif nn_respond == NON_STOP_ORIGINAL_05L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_original_05_l)
+        elif nn_respond == NON_STOP_JUNGLE_025L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_jungle_025_l)
+        elif nn_respond == NON_STOP_BOOST_05L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_boost_05_l)
+        elif nn_respond == NON_STOP_ULTRA_05L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_ultra_05_l)
+        elif nn_respond == NON_STOP_BOOST_025L:
+            result = self.getting_prices(self.NO_PRICES, get_non_stop_boost_025_l)
+
+
 
 
         #тут подключаются блюда
@@ -1114,6 +1146,21 @@ class RefersForRNN:
         morshinskaya_negaz_15_l_text = self.add_new_item('mineral_water_morshinska_negaz_15_l.txt')
         morshinskaya_low_gaz_15_l_text = self.add_new_item('mineral_water_morshinska_low_gaz_15_l.txt')
         morshinskaya_high_gaz_15_l_text = self.add_new_item('mineral_water_morshinska_high_gaz_15_l.txt')
+        nash_sik_apple_grape_02_l_text = self.add_new_item('juice_nash_sik_apple_grape_02_l.txt')
+        nash_sik_apple_carrot_02_l_text = self.add_new_item('juice_nash_sik_apple_carrot_02_l.txt')
+        nash_sik_orange_02_l_text = self.add_new_item('juice_nash_sik_orange_02_l.txt')
+        nash_sik_multifrukt_02_l_text = self.add_new_item('juice_nash_sik_multifrukt_02_l.txt')
+        nash_sik_apple_peach_02_l_text = self.add_new_item('juice_nash_sik_apple_peach_02_l.txt')
+        nash_sik_pear_apple_02_l_text = self.add_new_item('juice_nash_sik_pear_apple_02_l.txt')
+        nash_sik_multivitamin_02_l_text = self.add_new_item('juice_nash_sik_multivitamin_02_l.txt')
+        nash_sik_apple_02_l_text = self.add_new_item('juice_nash_sik_apple_02_l.txt')
+        nash_sik_apple_strawberry_02_l_text = self.add_new_item('juice_nash_sik_apple_strawberry_02_l.txt')
+        non_stop_original_025_l_text = self.add_new_item('non_stop_original_025.txt')
+        non_stop_original_05_l_text = self.add_new_item('non_stop_original_05_l.txt')
+        non_stop_jungle_025_l_text = self.add_new_item('non_stop_jungle_025.txt')
+        non_stop_boost_05_l_text = self.add_new_item('non_stop_boost_05_l.txt')
+        non_stop_ultra_05_l_text = self.add_new_item('non_stop_ultra_05_l.txt')
+        non_stop_boost_025_l_text = self.add_new_item('non_stop_boost_025_l.txt')
 
         # объед. обучающие выборки:
         texts = obolon_premium_extra_11_text + hetman_sagaydachniy_07_text \
@@ -1221,7 +1268,11 @@ class RefersForRNN:
                 + jameson_irish_whiskey_075_l_text + bells_original_1_l_text + captain_morgan_spiced_gold_05_l_text\
                 + jameson_05_l_text + jw_red_label_05_l_text + bells_spiced_07_l_text + ballantines_finest_07_l_text\
                 + jack_daniels_07_l_text + jack_daniels_1_l_text + jim_beam_white_07_l_text + borjomi_silnogaz_05_l\
-                + morshinskaya_negaz_15_l_text + morshinskaya_low_gaz_15_l_text + morshinskaya_high_gaz_15_l_text
+                + morshinskaya_negaz_15_l_text + morshinskaya_low_gaz_15_l_text + morshinskaya_high_gaz_15_l_text\
+                + nash_sik_apple_grape_02_l_text + nash_sik_apple_carrot_02_l_text + nash_sik_orange_02_l_text + nash_sik_multifrukt_02_l_text\
+                + nash_sik_apple_peach_02_l_text + nash_sik_pear_apple_02_l_text + nash_sik_multivitamin_02_l_text + nash_sik_apple_02_l_text\
+                + nash_sik_apple_strawberry_02_l_text + non_stop_original_025_l_text + non_stop_original_05_l_text + non_stop_jungle_025_l_text\
+                + non_stop_boost_05_l_text + non_stop_ultra_05_l_text + non_stop_boost_025_l_text
 
         # подсчитываем кол-во выборок
         count_obolon_premium_extra_11_text = len(obolon_premium_extra_11_text)
@@ -1523,6 +1574,21 @@ class RefersForRNN:
         count_morshinskaya_negaz_15_l_text = len(morshinskaya_negaz_15_l_text)
         count_morshinskaya_low_gaz_15_l_text = len(morshinskaya_low_gaz_15_l_text)
         count_morshinskaya_high_gaz_15_l_text = len(morshinskaya_high_gaz_15_l_text)
+        count_nash_sik_apple_grape_02_l_text = len(nash_sik_apple_grape_02_l_text)
+        count_nash_sik_apple_carrot_02_l_text = len(nash_sik_apple_carrot_02_l_text)
+        count_nash_sik_orange_02_l_text = len(nash_sik_orange_02_l_text)
+        count_nash_sik_multifrukt_02_l_text = len(nash_sik_multifrukt_02_l_text)
+        count_nash_sik_apple_peach_02_l_text = len(nash_sik_apple_peach_02_l_text)
+        count_nash_sik_pear_apple_02_l_text = len(nash_sik_pear_apple_02_l_text)
+        count_nash_sik_multivitamin_02_l_text = len(nash_sik_multivitamin_02_l_text)
+        count_nash_sik_apple_02_l_text = len(nash_sik_apple_02_l_text)
+        count_nash_sik_apple_strawberry_02_l_text = len(nash_sik_apple_strawberry_02_l_text)
+        count_non_stop_original_025_l_text = len(non_stop_original_025_l_text)
+        count_non_stop_original_05_l_text = len(non_stop_original_05_l_text)
+        count_non_stop_jungle_025_l_text = len(non_stop_jungle_025_l_text)
+        count_non_stop_boost_05_l_text = len(non_stop_boost_05_l_text)
+        count_non_stop_ultra_05_l_text = len(non_stop_ultra_05_l_text)
+        count_non_stop_boost_025_l_text = len(non_stop_boost_025_l_text)
 
         return texts, count_obolon_premium_extra_11_text, count_hetman_sagaydachniy_07_text, \
             count_coffee_aroma_gold_classic_100gr_text, count_apple_golden_text, count_coca_cola_2l_text, \
@@ -1627,4 +1693,9 @@ class RefersForRNN:
             count_martini_asti_white_075_l_text, count_jameson_irish_whiskey_075_l_text, count_bells_original_1_l_text,\
             count_captain_morgan_spiced_gold_05_l_text,count_jameson_05_l_text,count_jw_red_label_05_l_text,count_bells_spiced_07_l_text,\
             count_ballantines_finest_07_l_text, count_jack_daniels_07_l_text, count_jack_daniels_1_l_text, count_get_jim_beam_white_07_l_text,\
-            count_borjomi_silnogaz_05_l, count_morshinskaya_negaz_15_l_text, count_morshinskaya_low_gaz_15_l_text, count_morshinskaya_high_gaz_15_l_text
+            count_borjomi_silnogaz_05_l, count_morshinskaya_negaz_15_l_text, count_morshinskaya_low_gaz_15_l_text, count_morshinskaya_high_gaz_15_l_text,\
+            count_nash_sik_apple_grape_02_l_text,count_nash_sik_apple_carrot_02_l_text, count_nash_sik_orange_02_l_text,\
+            count_nash_sik_multifrukt_02_l_text,count_nash_sik_apple_peach_02_l_text,count_nash_sik_pear_apple_02_l_text,\
+            count_nash_sik_multivitamin_02_l_text, count_nash_sik_apple_02_l_text, count_nash_sik_apple_strawberry_02_l_text,\
+            count_non_stop_original_025_l_text, count_non_stop_original_05_l_text, count_non_stop_jungle_025_l_text,\
+            count_non_stop_boost_05_l_text, count_non_stop_ultra_05_l_text,count_non_stop_boost_025_l_text

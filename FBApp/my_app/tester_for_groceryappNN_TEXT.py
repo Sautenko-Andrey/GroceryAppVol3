@@ -594,6 +594,36 @@ class TesterForGroceryAppText:
             return MORSHINSKAYA_LOW_GAZ_15L
         elif np.argmax(result) == 265:
             return MORSHINSKAYA_HIGH_GAZ_15L
+        elif np.argmax(result) == 266:
+            return NASH_SIK_APPLE_GRAPE_02L
+        elif np.argmax(result) == 267:
+            return NASH_SIK_APPLE_CARROT_02L
+        elif np.argmax(result) == 268:
+            return NASH_SIK_ORANGE_02L
+        elif np.argmax(result) == 269:
+            return NASH_SIK_MULTIFRUKT_02L
+        elif np.argmax(result) == 270:
+            return NASH_SIK_APPLE_PEACH_02L
+        elif np.argmax(result) == 271:
+            return NASH_SIK_PEAR_APPLE_02L
+        elif np.argmax(result) == 272:
+            return NASH_SIK_MULTIVITAMIN_02L
+        elif np.argmax(result) == 273:
+            return NASH_SIK_APPLE_02L
+        elif np.argmax(result) == 274:
+            return NASH_SIK_APPLE_STRAWBERRY_02L
+        elif np.argmax(result) == 275:
+            return NON_STOP_ORIGINAL_025L
+        elif np.argmax(result) == 276:
+            return NON_STOP_ORIGINAL_05L
+        elif np.argmax(result) == 277:
+            return NON_STOP_JUNGLE_025L
+        elif np.argmax(result) == 278:
+            return NON_STOP_BOOST_05L
+        elif np.argmax(result) == 279:
+            return NON_STOP_ULTRA_05L
+        elif np.argmax(result) == 280:
+            return NON_STOP_BOOST_025L
 
 
 

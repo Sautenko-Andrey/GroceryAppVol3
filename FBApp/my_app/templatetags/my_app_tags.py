@@ -819,6 +819,51 @@ get_morshinskaya_low_gaz_15_l = tag.create_tag(ItemsPicsFromNet, 265)
 '''Тэг,возвращающий информацию о "Минеральная вода Морщинская сильногазированная 1,5 л"'''
 get_morshinskaya_high_gaz_15_l = tag.create_tag(ItemsPicsFromNet, 266)
 
+'''Тэг,возвращающий информацию о "Нектар Наш Сік яблуко-виноград 200 грам"'''
+get_nash_sik_apple_grape_02_l = tag.create_tag(ItemsPicsFromNet, 267)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік яблуко-морква 200 грам"'''
+get_nash_sik_apple_carrot_02_l = tag.create_tag(ItemsPicsFromNet, 268)
+
+'''Тэг,возвращающий информацию о "Нектар Наш Сік апельсин 200 грам"'''
+get_nash_sik_orange_02_l = tag.create_tag(ItemsPicsFromNet, 269)
+
+'''Тэг,возвращающий информацию о "Нектар Наш Сік мультифрукт 200 грам"'''
+get_nash_sik_multifrukt_02_l = tag.create_tag(ItemsPicsFromNet, 270)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік яблуко-персик 200 грам"'''
+get_nash_sik_apple_peach_02_l = tag.create_tag(ItemsPicsFromNet, 271)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік груша-яблуко 200 грам"'''
+get_nash_sik_pear_apple_02_l = tag.create_tag(ItemsPicsFromNet, 272)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік мультивітамін 200 грам"'''
+get_nash_sik_multivitamin_02_l = tag.create_tag(ItemsPicsFromNet, 273)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік яблучний 200 грам"'''
+get_nash_sik_apple_02_l = tag.create_tag(ItemsPicsFromNet, 274)
+
+'''Тэг,возвращающий информацию о "Сік Наш Сік яблуко-полуниця 200 грам"'''
+get_nash_sik_apple_strawberry_02_l = tag.create_tag(ItemsPicsFromNet, 275)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Original 250 мл"'''
+get_non_stop_original_025_l = tag.create_tag(ItemsPicsFromNet, 276)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Original 500 мл"'''
+get_non_stop_original_05_l = tag.create_tag(ItemsPicsFromNet, 277)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Jungle 250 мл"'''
+get_non_stop_jungle_025_l = tag.create_tag(ItemsPicsFromNet, 278)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Boost 500 мл"'''
+get_non_stop_boost_05_l = tag.create_tag(ItemsPicsFromNet, 279)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Ultra 500 мл"'''
+get_non_stop_ultra_05_l = tag.create_tag(ItemsPicsFromNet, 280)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Boost 250 мл"'''
+get_non_stop_boost_025_l = tag.create_tag(ItemsPicsFromNet, 281)
+
 
 
 # @register.simple_tag()
