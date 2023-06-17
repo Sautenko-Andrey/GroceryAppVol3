@@ -1,5 +1,6 @@
 import json
 from .templatetags.my_app_tags import *
+
 from .items_full_names import *
 
 try:
@@ -687,101 +688,145 @@ class ContextSupervisor:
         elif nn_respond == BEER_CARLSBERG_PILSNER_05_L_JB:
             result = self.getting_prices('beer_Carlsberg_Pilsner_05_l_jb',get_beer_Carlsberg_Pilsner_05l_jb)
         elif nn_respond == BANANA:
-            result = self.getting_prices(self.NO_PRICES,get_banana)
+            result = self.getting_prices('banana',get_banana)
         elif nn_respond == ORANGE:
-            result = self.getting_prices(self.NO_PRICES,get_orange)
+            result = self.getting_prices('orange',get_orange)
         elif nn_respond == KIWI:
-            result = self.getting_prices(self.NO_PRICES,get_kiwi)
+            result = self.getting_prices('kiwi',get_kiwi)
         elif nn_respond == COCONUT:
-            result = self.getting_prices(self.NO_PRICES,get_coconut)
+            result = self.getting_prices('coconut',get_coconut)
         elif nn_respond == GRAPEFRUIT:
-            result = self.getting_prices(self.NO_PRICES,get_grapefruit)
+            result = self.getting_prices('grapefruit',get_grapefruit)
         elif nn_respond == POMEGRANATE:
-            result = self.getting_prices(self.NO_PRICES,get_pomegranate)
+            result = self.getting_prices('pomegranate',get_pomegranate)
         elif nn_respond == MANGO:
-            result = self.getting_prices(self.NO_PRICES,get_mango)
+            result = self.getting_prices('mango',get_mango)
         elif nn_respond == POTATO:
-            result = self.getting_prices(self.NO_PRICES, get_potato)
+            result = self.getting_prices('potato', get_potato)
         elif nn_respond == TOMATO:
-            result = self.getting_prices(self.NO_PRICES, get_tomato)
+            result = self.getting_prices('tomato', get_tomato)
         elif nn_respond == CUCUMBER:
-            result = self.getting_prices(self.NO_PRICES, get_cucumber)
+            result = self.getting_prices('cucumber', get_cucumber)
         elif nn_respond == KABACHKI:
-            result = self.getting_prices(self.NO_PRICES, get_kabachki)
+            result = self.getting_prices('kabachki', get_kabachki)
         elif nn_respond == RED_BOLG_PAPPER:
-            result = self.getting_prices(self.NO_PRICES, get_red_bolg_papper)
+            result = self.getting_prices('red_bolgar_papper', get_red_bolg_papper)
         elif nn_respond == YELLOW_BOLG_PAPPER:
-            result = self.getting_prices(self.NO_PRICES, get_yellow_bolg_papper)
+            result = self.getting_prices('yellow_bolgar_papper', get_yellow_bolg_papper)
         elif nn_respond == ASPARAGUS:
-            result = self.getting_prices(self.NO_PRICES, get_asparagus)
+            result = self.getting_prices('asparagus', get_asparagus)
         elif nn_respond == BROCCOLI:
-            result = self.getting_prices(self.NO_PRICES, get_broccoli)
+            result = self.getting_prices('brokoli', get_broccoli)
         elif nn_respond == CAPTAIN_MORGAN_SPICED_GOLD_1L:
-            result = self.getting_prices(self.NO_PRICES, get_captain_morgan_spiced_gold_1_l)
+            result = self.getting_prices('captain_morgan_spiced_gold_1_l', get_captain_morgan_spiced_gold_1_l)
         elif nn_respond == BELLS_ORIGINAL_07L:
-            result = self.getting_prices(self.NO_PRICES, get_bells_original_07_l)
+            result = self.getting_prices('bells_original_07_l', get_bells_original_07_l)
         elif nn_respond == MARTINI_ASTI_BILE_075L:
-            result = self.getting_prices(self.NO_PRICES, get_martini_asti_bile_075_l)
+            result = self.getting_prices('martini_asti_white_075_l', get_martini_asti_bile_075_l)
         elif nn_respond == JAMESON_IRISH_WHISKEY_07L:
-            result = self.getting_prices(self.NO_PRICES, get_jameson_irish_whiskey_075_l)
+            result = self.getting_prices('jameson_07_l', get_jameson_irish_whiskey_075_l)
         elif nn_respond == BELLS_ORIGINAL_1L:
-            result = self.getting_prices(self.NO_PRICES, get_bells_original_1_l)
+            result = self.getting_prices('bells_original_1_l', get_bells_original_1_l)
         elif nn_respond == CAPTAIN_MORGAN_SPICED_GOLD_05L:
-            result = self.getting_prices(self.NO_PRICES, get_captain_morgan_spiced_gold_05_l)
+            result = self.getting_prices('captain_morgan_spiced_gold_05_l', get_captain_morgan_spiced_gold_05_l)
         elif nn_respond == JAMESON_IRISH_WHISKEY_05L:
-            result = self.getting_prices(self.NO_PRICES, get_jameson_irish_whiskey_05_l)
+            result = self.getting_prices('jameson_05_l', get_jameson_irish_whiskey_05_l)
         elif nn_respond == JW_RED_LABEL_05L:
-            result = self.getting_prices(self.NO_PRICES, get_jw_red_label_05_l)
+            result = self.getting_prices('jw_red_label_05_l', get_jw_red_label_05_l)
         elif nn_respond == BELLS_SPICED_07L:
-            result = self.getting_prices(self.NO_PRICES, get_bells_spiced_07_l)
+            result = self.getting_prices('bells_spiced_07_l', get_bells_spiced_07_l)
         elif nn_respond == BALLANTINES_FINEST_07L:
-            result = self.getting_prices(self.NO_PRICES, get_ballantines_finest_07_l)
+            result = self.getting_prices('ballantines_finest_07_l', get_ballantines_finest_07_l)
         elif nn_respond == JACK_DANILES_07L:
-            result = self.getting_prices(self.NO_PRICES, get_jack_daniels_07_l)
+            result = self.getting_prices('jack_daniels_07_l', get_jack_daniels_07_l)
         elif nn_respond == JACK_DANILES_1L:
-            result = self.getting_prices(self.NO_PRICES, get_jack_daniels_1_l)
+            result = self.getting_prices('jack_daniels_1_l', get_jack_daniels_1_l)
         elif nn_respond == JIM_BEAM_WHITE_07L:
-            result = self.getting_prices(self.NO_PRICES, get_jim_beam_white_07_l)
+            result = self.getting_prices('jim_beam_white_07_l', get_jim_beam_white_07_l)
         elif nn_respond == BORJOMI_SILNOGAZ_05L:
-            result = self.getting_prices(self.NO_PRICES, get_borjomi_silnogaz_05_l)
+            result = self.getting_prices('borjomi_05_l', get_borjomi_silnogaz_05_l)
         elif nn_respond == MORSHINSKAYA_NEGAZ_15L:
-            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_negaz_15_l)
+            result = self.getting_prices('morshinska_negaz_15_l', get_morshinskaya_negaz_15_l)
         elif nn_respond == MORSHINSKAYA_LOW_GAZ_15L:
-            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_low_gaz_15_l)
+            result = self.getting_prices('morshinska_lowgaz_15_l', get_morshinskaya_low_gaz_15_l)
         elif nn_respond == MORSHINSKAYA_HIGH_GAZ_15L:
-            result = self.getting_prices(self.NO_PRICES, get_morshinskaya_high_gaz_15_l)
+            result = self.getting_prices('morshinska_highgaz_15_l', get_morshinskaya_high_gaz_15_l)
         elif nn_respond == NASH_SIK_APPLE_GRAPE_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_grape_02_l)
+            result = self.getting_prices('nash_sik_apple_grape_02_l', get_nash_sik_apple_grape_02_l)
         elif nn_respond == NASH_SIK_APPLE_CARROT_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_carrot_02_l)
+            result = self.getting_prices('nash_sik_apple_carrot_02_l', get_nash_sik_apple_carrot_02_l)
         elif nn_respond == NASH_SIK_ORANGE_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_orange_02_l)
+            result = self.getting_prices('nash_sik_orange_02_l', get_nash_sik_orange_02_l)
         elif nn_respond == NASH_SIK_MULTIFRUKT_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_multifrukt_02_l)
+            result = self.getting_prices('nash_sik_multifrukt_02_l', get_nash_sik_multifrukt_02_l)
         elif nn_respond == NASH_SIK_APPLE_PEACH_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_peach_02_l)
+            result = self.getting_prices('nash_sik_apple_peach_02_l', get_nash_sik_apple_peach_02_l)
         elif nn_respond == NASH_SIK_PEAR_APPLE_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_pear_apple_02_l)
+            result = self.getting_prices('nash_sik_pear_apple_02_l', get_nash_sik_pear_apple_02_l)
         elif nn_respond == NASH_SIK_MULTIVITAMIN_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_multivitamin_02_l)
+            result = self.getting_prices('nash_sik_multivitamin_02_l', get_nash_sik_multivitamin_02_l)
         elif nn_respond == NASH_SIK_APPLE_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_02_l)
+            result = self.getting_prices('nash_sik_apple_02_l', get_nash_sik_apple_02_l)
         elif nn_respond == NASH_SIK_APPLE_STRAWBERRY_02L:
-            result = self.getting_prices(self.NO_PRICES, get_nash_sik_apple_strawberry_02_l)
+            result = self.getting_prices('nash_sik_apple_strawberry_02_l', get_nash_sik_apple_strawberry_02_l)
         elif nn_respond == NON_STOP_ORIGINAL_025L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_original_025_l)
+            result = self.getting_prices('non_stop_original_025_l', get_non_stop_original_025_l)
         elif nn_respond == NON_STOP_ORIGINAL_05L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_original_05_l)
+            result = self.getting_prices('non_stop_original_05_l', get_non_stop_original_05_l)
         elif nn_respond == NON_STOP_JUNGLE_025L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_jungle_025_l)
+            result = self.getting_prices('non_stop_jungle_025_l', get_non_stop_jungle_025_l)
         elif nn_respond == NON_STOP_BOOST_05L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_boost_05_l)
+            result = self.getting_prices('non_stop_boost_05_l', get_non_stop_boost_05_l)
         elif nn_respond == NON_STOP_ULTRA_05L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_ultra_05_l)
+            result = self.getting_prices('non_stop_ultra_05_l', get_non_stop_ultra_05_l)
         elif nn_respond == NON_STOP_BOOST_025L:
-            result = self.getting_prices(self.NO_PRICES, get_non_stop_boost_025_l)
-
-
+            result = self.getting_prices('non_stop_boost_025_l', get_non_stop_boost_025_l)
+        elif nn_respond == BURN_CLASSIC_025L:
+            result = self.getting_prices('burn_classic_025_l', get_burn_classic_025_l)
+        elif nn_respond == BURN_CLASSIC_05L:
+            result = self.getting_prices('burn_classic_05_l', get_burn_classic_05_l)
+        elif nn_respond == BURN_MANGO_025L:
+            result = self.getting_prices('burn_mango_025_l', get_burn_mango_025_l)
+        elif nn_respond == BURN_APPLE_KIWI_05L:
+            result = self.getting_prices('burn_apple_kiwi_05_l', get_burn_apple_kiwi_05_l)
+        elif nn_respond == BURN_DARK_ENERGY_025L:
+            result = self.getting_prices('burn_dark_energy_025_l', get_burn_dark_energy_025_l)
+        elif nn_respond == RED_BULL_025L:
+            result = self.getting_prices('red_bull_025_l', get_red_bull_025_l)
+        elif nn_respond == RED_BULL_0355L:
+            result = self.getting_prices('red_bull_0355_l', get_red_bull_0355_l)
+        elif nn_respond == RED_BULL_0473L:
+            result = self.getting_prices('red_bull_0473_l', get_red_bull_0473_l)
+        elif nn_respond == RED_BULL_0591L:
+            result = self.getting_prices('red_bull_0591_l', get_red_bull_0591_l)
+        elif nn_respond == RED_BULL_SUGAR_FREE_025L:
+            result = self.getting_prices('red_bull_sugar_free_025_l', get_red_bull_sugar_free_025_l)
+        elif nn_respond == RED_BULL_RED_EDITION_CAVUN_025L:
+            result = self.getting_prices('red_bull_red_edition_cavun_025_l', get_red_bull_red_edition_cavun_025_l)
+        elif nn_respond == RED_BULL_YELLOW_EDITION_TROPIC_FRUITS_025L:
+            result = self.getting_prices('red_bull_yellow_edition_tropic_fruits_025_l', get_red_bull_yellow_edition_tropic_fruits_025_l)
+        elif nn_respond == MONSTER_0355L:
+            result = self.getting_prices('monster_0355_l', get_monster_0355_l)
+        elif nn_respond == MONSTER_THE_DOCTOR_0355L:
+            result = self.getting_prices('monster_the_doctor_0355_l', get_monster_the_doctor_0355_l)
+        elif nn_respond == MONSTER_ULTRA_ZERO_0355L:
+            result = self.getting_prices('monster_ultra_zero_0355_l', get_monster_ultra_zero_0355_l)
+        elif nn_respond == MONSTER_JUICED_0355L:
+            result = self.getting_prices('monster_juiced_0355_l', get_monster_juiced_0355_l)
+        elif nn_respond == PIT_BULL_COFFEE_025L:
+            result = self.getting_prices('pit_bull_coffee_0250_l', get_pit_bull_coffee_025_l)
+        elif nn_respond == PIT_BULL_POWER_025L:
+            result = self.getting_prices('pit_bull_power_0250_l', get_pit_bull_power_025_l)
+        elif nn_respond == PIT_BULL_X_025L:
+            result = self.getting_prices('pit_bull_X_0250_l', get_pit_bull_x_025_l)
+        elif nn_respond == PIT_BULL_EXTRA_VITAMIN_C_025L:
+            result = self.getting_prices('pit_bull_extra_vitamin_c_0250_l', get_pit_bull_extra_vitamin_c_025_l)
+        elif nn_respond == PIT_BULL_025L:
+            result = self.getting_prices('pit_bull_0250_l', get_pit_bull_025_l)
+        elif nn_respond == MACCOFFEE_GOLD_ROZCHIN_SOFT_PACK_60_GR:
+            result = self.getting_prices('maccoffee_gold_rozch_soft_pack_60_gr', get_maccoffee_gold_rozch_soft_pack_60_gr)
+        elif nn_respond == NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR:
+            result = self.getting_prices('nescafe_gold_rozch_soft_pack_120_gr', get_nescafe_gold_rozch_soft_pack_120_gr)
 
 
         #тут подключаются блюда
@@ -1161,6 +1206,29 @@ class RefersForRNN:
         non_stop_boost_05_l_text = self.add_new_item('non_stop_boost_05_l.txt')
         non_stop_ultra_05_l_text = self.add_new_item('non_stop_ultra_05_l.txt')
         non_stop_boost_025_l_text = self.add_new_item('non_stop_boost_025_l.txt')
+        burn_classic_025_l_text = self.add_new_item('burn_classic_025.txt')
+        burn_classic_05_l_text = self.add_new_item('burn_classic_05_l.txt')
+        burn_mango_025_l_text = self.add_new_item('burn_mango_025_l.txt')
+        burn_apple_kiwi_05_l_text = self.add_new_item('burn_apple_kiwi_05_l.txt')
+        burn_dark_energy_025_l_text = self.add_new_item('burn_dark_energy_025_l.txt')
+        red_bull_025_l_text = self.add_new_item('red_bull_025_l.txt')
+        red_bull_0355_l_text = self.add_new_item('red_bull_0355_l.txt')
+        red_bull_0473_l_text = self.add_new_item('red_bull_0473_l.txt')
+        red_bull_0591_l_text = self.add_new_item('red_bull_0591_l.txt')
+        red_bull_sugar_free_025_l_text = self.add_new_item('red_bull_sugar_free_025_l.txt')
+        red_bull_red_edition_cavun_025_l_text = self.add_new_item('red_bull_red_edition_cavun_025_l.txt')
+        red_bull_yellow_edition_tropic_fruits_025_l_text = self.add_new_item('red_bull_yellow_edition_tropic_fruits_025_l.txt')
+        monster_0355_l_text = self.add_new_item('monster_energy_0355_l.txt')
+        monster_the_doctor_0355_l_text = self.add_new_item('monster_the_doctor_0355_l.txt')
+        monster_ultra_zero_0355_l_text = self.add_new_item('monster_ultra_zero_0355_l.txt')
+        monster_juiced_0355_l_text = self.add_new_item('monster_juiced_0355_l.txt')
+        pit_bull_coffee_025_l_text = self.add_new_item('pit_bull_coffee_025.txt')
+        pit_bull_power_025_l_text = self.add_new_item('pit_bull_power_025.txt')
+        pit_bull_x_025_l_text = self.add_new_item('pit_bull_x_025.txt')
+        pit_bull_extra_vitamin_c_025_l_text = self.add_new_item('pit_bull_extra_vitamin_c_025.txt')
+        pit_bull_025_l_text = self.add_new_item('pit_bull_025.txt')
+        maccoffee_gold_rozch_soft_pack_60_gr_text = self.add_new_item('maccoffee_gold_rozchin_soft_pack_60_gr.txt')
+        nescafe_gold_rozch_soft_pack_120_gr_text = self.add_new_item('nescafe_gold_rozchin_soft_pack_120_gr.txt')
 
         # объед. обучающие выборки:
         texts = obolon_premium_extra_11_text + hetman_sagaydachniy_07_text \
@@ -1272,7 +1340,13 @@ class RefersForRNN:
                 + nash_sik_apple_grape_02_l_text + nash_sik_apple_carrot_02_l_text + nash_sik_orange_02_l_text + nash_sik_multifrukt_02_l_text\
                 + nash_sik_apple_peach_02_l_text + nash_sik_pear_apple_02_l_text + nash_sik_multivitamin_02_l_text + nash_sik_apple_02_l_text\
                 + nash_sik_apple_strawberry_02_l_text + non_stop_original_025_l_text + non_stop_original_05_l_text + non_stop_jungle_025_l_text\
-                + non_stop_boost_05_l_text + non_stop_ultra_05_l_text + non_stop_boost_025_l_text
+                + non_stop_boost_05_l_text + non_stop_ultra_05_l_text + non_stop_boost_025_l_text + burn_classic_025_l_text\
+                + burn_classic_05_l_text + burn_mango_025_l_text + burn_apple_kiwi_05_l_text + burn_dark_energy_025_l_text\
+                + red_bull_025_l_text + red_bull_0355_l_text + red_bull_0473_l_text + red_bull_0591_l_text + red_bull_sugar_free_025_l_text\
+                + red_bull_red_edition_cavun_025_l_text + red_bull_yellow_edition_tropic_fruits_025_l_text + monster_0355_l_text\
+                + monster_the_doctor_0355_l_text + monster_ultra_zero_0355_l_text + monster_juiced_0355_l_text + pit_bull_coffee_025_l_text\
+                + pit_bull_power_025_l_text + pit_bull_x_025_l_text + pit_bull_extra_vitamin_c_025_l_text + pit_bull_025_l_text\
+                + maccoffee_gold_rozch_soft_pack_60_gr_text + nescafe_gold_rozch_soft_pack_120_gr_text
 
         # подсчитываем кол-во выборок
         count_obolon_premium_extra_11_text = len(obolon_premium_extra_11_text)
@@ -1589,6 +1663,29 @@ class RefersForRNN:
         count_non_stop_boost_05_l_text = len(non_stop_boost_05_l_text)
         count_non_stop_ultra_05_l_text = len(non_stop_ultra_05_l_text)
         count_non_stop_boost_025_l_text = len(non_stop_boost_025_l_text)
+        count_burn_classic_025_l_text = len(burn_classic_025_l_text)
+        count_burn_classic_05_l_text = len(burn_classic_05_l_text)
+        count_burn_mango_025_l_text = len(burn_mango_025_l_text)
+        count_burn_apple_kiwi_05_l_text = len(burn_apple_kiwi_05_l_text)
+        count_burn_dark_energy_025_l_text = len(burn_dark_energy_025_l_text)
+        count_red_bull_025_l_text = len(red_bull_025_l_text)
+        count_red_bull_0355_l_text = len(red_bull_0355_l_text)
+        count_red_bull_0473_l_text = len(red_bull_0473_l_text)
+        count_red_bull_0591_l_text = len(red_bull_0591_l_text)
+        count_red_bull_sugar_free_025_l_text = len(red_bull_sugar_free_025_l_text)
+        count_red_bull_red_edition_cavun_025_l_text = len(red_bull_red_edition_cavun_025_l_text)
+        count_red_bull_yellow_edition_tropic_fruits_025_l_text = len(red_bull_yellow_edition_tropic_fruits_025_l_text)
+        count_monster_0355_l_text = len(monster_0355_l_text)
+        count_monster_the_doctor_0355_l_text = len(monster_the_doctor_0355_l_text)
+        count_monster_ultra_zero_0355_l_text = len(monster_ultra_zero_0355_l_text)
+        count_monster_juiced_0355_l_text = len(monster_juiced_0355_l_text)
+        count_pit_bull_coffee_025_l_text = len(pit_bull_coffee_025_l_text)
+        count_pit_bull_power_025_l_text = len(pit_bull_power_025_l_text)
+        count_pit_bull_x_025_l_text = len(pit_bull_x_025_l_text)
+        count_pit_bull_extra_vitamin_c_025_l_text = len(pit_bull_extra_vitamin_c_025_l_text)
+        count_pit_bull_025_l_text = len(pit_bull_025_l_text)
+        count_maccoffee_gold_rozch_soft_pack_60_gr_text = len(maccoffee_gold_rozch_soft_pack_60_gr_text)
+        count_nescafe_gold_rozch_soft_pack_120_gr_text = len(nescafe_gold_rozch_soft_pack_120_gr_text)
 
         return texts, count_obolon_premium_extra_11_text, count_hetman_sagaydachniy_07_text, \
             count_coffee_aroma_gold_classic_100gr_text, count_apple_golden_text, count_coca_cola_2l_text, \
@@ -1698,4 +1795,10 @@ class RefersForRNN:
             count_nash_sik_multifrukt_02_l_text,count_nash_sik_apple_peach_02_l_text,count_nash_sik_pear_apple_02_l_text,\
             count_nash_sik_multivitamin_02_l_text, count_nash_sik_apple_02_l_text, count_nash_sik_apple_strawberry_02_l_text,\
             count_non_stop_original_025_l_text, count_non_stop_original_05_l_text, count_non_stop_jungle_025_l_text,\
-            count_non_stop_boost_05_l_text, count_non_stop_ultra_05_l_text,count_non_stop_boost_025_l_text
+            count_non_stop_boost_05_l_text, count_non_stop_ultra_05_l_text,count_non_stop_boost_025_l_text,count_burn_classic_025_l_text,\
+            count_burn_classic_05_l_text,count_burn_mango_025_l_text,count_burn_apple_kiwi_05_l_text,count_burn_dark_energy_025_l_text,\
+            count_red_bull_025_l_text,count_red_bull_0355_l_text,count_red_bull_0473_l_text,count_red_bull_0591_l_text,count_red_bull_sugar_free_025_l_text,\
+            count_red_bull_red_edition_cavun_025_l_text,count_red_bull_yellow_edition_tropic_fruits_025_l_text,count_monster_0355_l_text,\
+            count_monster_the_doctor_0355_l_text,count_monster_ultra_zero_0355_l_text,count_monster_juiced_0355_l_text,\
+            count_pit_bull_coffee_025_l_text,count_pit_bull_power_025_l_text,count_pit_bull_x_025_l_text,count_pit_bull_extra_vitamin_c_025_l_text,\
+            count_pit_bull_025_l_text,count_maccoffee_gold_rozch_soft_pack_60_gr_text,count_nescafe_gold_rozch_soft_pack_120_gr_text

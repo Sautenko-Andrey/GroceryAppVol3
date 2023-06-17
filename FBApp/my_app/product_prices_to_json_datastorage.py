@@ -1426,6 +1426,638 @@ all_products_names = [
         "metro": parser.beer_Carlsberg_Pilsner_05_l_jb_parser()[6],
         "fozzy": parser.beer_Carlsberg_Pilsner_05_l_jb_parser()[8]
     }},
+
+    {'banana': {
+        "atb": parser.banana_parser()[0],
+        "eko": parser.banana_parser()[1],
+        "varus": parser.banana_parser()[2],
+        "silpo": parser.banana_parser()[3],
+        "novus": parser.banana_parser()[5],
+        "metro": parser.banana_parser()[6],
+        "nash_kray": parser.banana_parser()[7],
+        "fozzy": parser.banana_parser()[8]
+    }},
+
+    {'orange': {
+        "atb": parser.orange_parser()[0],
+        "eko": parser.orange_parser()[1],
+        "varus": parser.orange_parser()[2],
+        "silpo": parser.orange_parser()[3],
+        "novus": parser.orange_parser()[5],
+        "metro": parser.orange_parser()[6],
+        "nash_kray": parser.orange_parser()[7],
+        "fozzy": parser.orange_parser()[8]
+    }},
+
+    {'kiwi': {
+        "atb": parser.kiwi_parser()[0],
+        "eko": parser.kiwi_parser()[1],
+        "varus": parser.kiwi_parser()[2],
+        "silpo": parser.kiwi_parser()[3],
+        "metro": parser.kiwi_parser()[6],
+        "nash_kray": parser.kiwi_parser()[7],
+        "fozzy": parser.kiwi_parser()[8]
+    }},
+
+    {'coconut': {
+        "atb": parser.coconut_parser()[0],
+        "varus": parser.coconut_parser()[2],
+        "silpo": parser.coconut_parser()[3],
+        "metro": parser.coconut_parser()[6],
+        "nash_kray": parser.coconut_parser()[7],
+        "fozzy": parser.coconut_parser()[8]
+    }},
+
+    {'grapefruit': {
+        "atb": parser.grapefruit_parser()[0],
+        "eko": parser.grapefruit_parser()[1],
+        "varus": parser.grapefruit_parser()[2],
+        "silpo": parser.grapefruit_parser()[3],
+        "novus": parser.grapefruit_parser()[5],
+        "metro": parser.grapefruit_parser()[6],
+        "nash_kray": parser.grapefruit_parser()[7],
+        "fozzy": parser.grapefruit_parser()[8]
+    }},
+
+    {'pomegranate': {
+        "atb": parser.pomegranate_parser()[0],
+        "eko": parser.pomegranate_parser()[1],
+        "varus": parser.pomegranate_parser()[2],
+        "silpo": parser.pomegranate_parser()[3],
+        "metro": parser.pomegranate_parser()[6],
+        "fozzy": parser.pomegranate_parser()[8]
+    }},
+
+    {'mango': {
+        "atb": parser.pomegranate_parser()[0],
+        "eko": parser.pomegranate_parser()[1],
+        "varus": parser.pomegranate_parser()[2],
+        "silpo": parser.pomegranate_parser()[3],
+        "metro": parser.pomegranate_parser()[6],
+        "fozzy": parser.pomegranate_parser()[8]
+    }},
+
+    {'tomato': {
+        "atb": parser.tomato_parser()[0],
+        "eko": parser.tomato_parser()[1],
+        "varus": parser.tomato_parser()[2],
+        "metro": parser.tomato_parser()[6],
+        "nash_kray": parser.tomato_parser()[7],
+        "fozzy": parser.tomato_parser()[8]
+    }},
+
+    {'cucumber': {
+        "atb": parser.cucumber_parser()[0],
+        "eko": parser.cucumber_parser()[1],
+        "varus": parser.cucumber_parser()[2],
+        "silpo": parser.cucumber_parser()[3],
+        "novus": parser.cucumber_parser()[5],
+        "metro": parser.cucumber_parser()[6],
+        "nash_kray": parser.cucumber_parser()[7],
+        "fozzy": parser.cucumber_parser()[8]
+    }},
+
+    {'kabachki': {
+        "atb": parser.kabachki_parser()[0],
+        "eko": parser.kabachki_parser()[1],
+        "varus": parser.kabachki_parser()[2],
+        "silpo": parser.kabachki_parser()[3],
+        "novus": parser.kabachki_parser()[5],
+        "metro": parser.kabachki_parser()[6],
+        "nash_kray": parser.kabachki_parser()[7],
+        "fozzy": parser.kabachki_parser()[8]
+    }},
+
+    {'red_bolgar_papper': {
+        "atb": parser.red_bolg_papper_parser()[0],
+        "eko": parser.red_bolg_papper_parser()[1],
+        "silpo": parser.red_bolg_papper_parser()[3],
+        "novus": parser.red_bolg_papper_parser()[5],
+        "metro": parser.red_bolg_papper_parser()[6],
+        "nash_kray": parser.red_bolg_papper_parser()[7],
+        "fozzy": parser.red_bolg_papper_parser()[8]
+    }},
+
+    {'yellow_bolgar_papper': {
+        "atb": parser.yellow_bolg_papper_parser()[0],
+        "silpo": parser.yellow_bolg_papper_parser()[3],
+        "novus": parser.yellow_bolg_papper_parser()[5],
+        "metro": parser.yellow_bolg_papper_parser()[6],
+        "nash_kray": parser.yellow_bolg_papper_parser()[7],
+        "fozzy": parser.yellow_bolg_papper_parser()[8]
+    }},
+
+    {'asparagus': {
+        "atb": parser.asparagus_parser()[0],
+        "varus": parser.asparagus_parser()[2],
+        "silpo": parser.asparagus_parser()[3],
+        "novus": parser.asparagus_parser()[5],
+        "metro": parser.asparagus_parser()[6],
+        "fozzy": parser.asparagus_parser()[8]
+    }},
+
+    {'brokoli': {
+        "silpo": parser.brokoli_parser()[3],
+        "novus": parser.brokoli_parser()[5],
+        "nash_kray": parser.brokoli_parser()[7],
+        "fozzy": parser.brokoli_parser()[8]
+    }},
+
+    {'captain_morgan_spiced_gold_1_l': {
+        "eko": parser.captain_morgan_spiced_gold_1L_parser()[1],
+        "varus": parser.captain_morgan_spiced_gold_1L_parser()[2],
+        "silpo": parser.captain_morgan_spiced_gold_1L_parser()[3],
+        "metro": parser.captain_morgan_spiced_gold_1L_parser()[6],
+        "fozzy": parser.captain_morgan_spiced_gold_1L_parser()[8]
+    }},
+
+    {'captain_morgan_spiced_gold_05_l': {
+        "atb": parser.captain_morgan_spiced_gold_05L_parser()[0],
+        "eko": parser.captain_morgan_spiced_gold_05L_parser()[1],
+        "varus": parser.captain_morgan_spiced_gold_05L_parser()[2],
+        "silpo": parser.captain_morgan_spiced_gold_05L_parser()[3],
+        "metro": parser.captain_morgan_spiced_gold_05L_parser()[6],
+        "nash_kray": parser.captain_morgan_spiced_gold_05L_parser()[7],
+        "fozzy": parser.captain_morgan_spiced_gold_05L_parser()[8]
+    }},
+
+    {'bells_original_07_l': {
+        "atb": parser.bells_original_07L_parser()[0],
+        "eko": parser.bells_original_07L_parser()[1],
+        "varus": parser.bells_original_07L_parser()[2],
+        "silpo": parser.bells_original_07L_parser()[3],
+        "novus": parser.bells_original_07L_parser()[5],
+        "metro": parser.bells_original_07L_parser()[6],
+        "nash_kray": parser.bells_original_07L_parser()[7],
+        "fozzy": parser.bells_original_07L_parser()[8]
+    }},
+
+    {'bells_original_1_l': {
+        "eko": parser.bells_original_1L_parser()[1],
+        "varus": parser.bells_original_1L_parser()[2],
+        "silpo": parser.bells_original_1L_parser()[3],
+        "novus": parser.bells_original_1L_parser()[5],
+        "metro": parser.bells_original_1L_parser()[6],
+        "fozzy": parser.bells_original_1L_parser()[8]
+    }},
+
+    {'bells_spiced_07_l': {
+        "eko": parser.bells_spiced_07L_parser()[1],
+        "varus": parser.bells_spiced_07L_parser()[2],
+        "silpo": parser.bells_spiced_07L_parser()[3],
+        "novus": parser.bells_spiced_07L_parser()[5],
+        "metro": parser.bells_spiced_07L_parser()[6],
+        "fozzy": parser.bells_spiced_07L_parser()[8]
+    }},
+
+    {'martini_asti_white_075_l': {
+        "atb": parser.martini_asti_bile_075_L_parser()[0],
+        "varus": parser.martini_asti_bile_075_L_parser()[2],
+        "silpo": parser.martini_asti_bile_075_L_parser()[3],
+        "ashan": parser.martini_asti_bile_075_L_parser()[4],
+        "novus": parser.martini_asti_bile_075_L_parser()[5],
+        "metro": parser.martini_asti_bile_075_L_parser()[6],
+        "fozzy": parser.martini_asti_bile_075_L_parser()[8]
+    }},
+
+    {'jameson_07_l': {
+        "atb": parser.jameson_07_L_parser()[0],
+        "varus": parser.jameson_07_L_parser()[2],
+        "silpo": parser.jameson_07_L_parser()[3],
+        "ashan": parser.jameson_07_L_parser()[4],
+        "novus": parser.jameson_07_L_parser()[5],
+        "metro": parser.jameson_07_L_parser()[6],
+        "nash_kray": parser.jameson_07_L_parser()[7],
+        "fozzy": parser.jameson_07_L_parser()[8]
+    }},
+
+    {'jameson_05_l': {
+        "varus": parser.jameson_07_L_parser()[2],
+        "silpo": parser.jameson_07_L_parser()[3],
+        "ashan": parser.jameson_07_L_parser()[4],
+        "novus": parser.jameson_07_L_parser()[5],
+        "metro": parser.jameson_07_L_parser()[6],
+        "nash_kray": parser.jameson_07_L_parser()[7]
+    }},
+
+    {'jw_red_label_05_l': {
+        "atb": parser.jw_red_label_05_L_parser()[0],
+        "eko": parser.jw_red_label_05_L_parser()[1],
+        "varus": parser.jw_red_label_05_L_parser()[2],
+        "silpo": parser.jw_red_label_05_L_parser()[3],
+        "ashan": parser.jw_red_label_05_L_parser()[4],
+        "novus": parser.jw_red_label_05_L_parser()[5],
+        "metro": parser.jw_red_label_05_L_parser()[6],
+        "nash_kray": parser.jw_red_label_05_L_parser()[7],
+        "fozzy": parser.jw_red_label_05_L_parser()[8]
+    }},
+
+    {'ballantines_finest_07_l': {
+        "varus": parser.ballantines_finest_07_L_parser()[2],
+        "silpo": parser.ballantines_finest_07_L_parser()[3],
+        "ashan": parser.ballantines_finest_07_L_parser()[4],
+        "novus": parser.ballantines_finest_07_L_parser()[5],
+        "metro": parser.ballantines_finest_07_L_parser()[6],
+        "fozzy": parser.ballantines_finest_07_L_parser()[8]
+    }},
+
+    {'jack_daniels_07_l': {
+        "eko": parser.jack_daniels_07_L_parser()[1],
+        "varus": parser.jack_daniels_07_L_parser()[2],
+        "novus": parser.jack_daniels_07_L_parser()[5],
+        "metro": parser.jack_daniels_07_L_parser()[6],
+        "nash_kray": parser.jack_daniels_07_L_parser()[7],
+        "fozzy": parser.jack_daniels_07_L_parser()[8]
+    }},
+
+    {'jack_daniels_1_l': {
+        "varus": parser.jack_daniels_1_L_parser()[2],
+        "silpo": parser.jack_daniels_1_L_parser()[3],
+        "novus": parser.jack_daniels_1_L_parser()[5],
+        "metro": parser.jack_daniels_1_L_parser()[6],
+        "fozzy": parser.jack_daniels_1_L_parser()[8]
+    }},
+
+    {'jim_beam_white_07_l': {
+        "atb": parser.jim_beam_white_07L_parser()[0],
+        "varus": parser.jim_beam_white_07L_parser()[2],
+        "silpo": parser.jim_beam_white_07L_parser()[3],
+        "ashan": parser.jim_beam_white_07L_parser()[4],
+        "novus": parser.jim_beam_white_07L_parser()[5],
+        "metro": parser.jim_beam_white_07L_parser()[6],
+        "fozzy": parser.jim_beam_white_07L_parser()[8]
+    }},
+
+    {'borjomi_05_l': {
+        "varus": parser.jim_beam_white_07L_parser()[2]
+    }},
+
+    {'morshinska_negaz_15_l': {
+        "atb": parser.morshinska_negaz_15L_parser()[0],
+        "eko": parser.morshinska_negaz_15L_parser()[1],
+        "varus": parser.morshinska_negaz_15L_parser()[2],
+        "silpo": parser.morshinska_negaz_15L_parser()[3],
+        "ashan": parser.morshinska_negaz_15L_parser()[4],
+        "novus": parser.morshinska_negaz_15L_parser()[5],
+        "nash_kray": parser.morshinska_negaz_15L_parser()[7],
+        "fozzy": parser.morshinska_negaz_15L_parser()[8]
+    }},
+
+    {'morshinska_lowgaz_15_l': {
+        "atb": parser.morshinska_lowgaz_15L_parser()[0],
+        "eko": parser.morshinska_lowgaz_15L_parser()[1],
+        "varus": parser.morshinska_lowgaz_15L_parser()[2],
+        "silpo": parser.morshinska_lowgaz_15L_parser()[3],
+        "ashan": parser.morshinska_lowgaz_15L_parser()[4],
+        "novus": parser.morshinska_lowgaz_15L_parser()[5],
+        "nash_kray": parser.morshinska_lowgaz_15L_parser()[7],
+        "fozzy": parser.morshinska_lowgaz_15L_parser()[8]
+    }},
+
+    {'morshinska_highgaz_15_l': {
+        "atb": parser.morshinska_highgaz_15L_parser()[0],
+        "eko": parser.morshinska_highgaz_15L_parser()[1],
+        "varus": parser.morshinska_highgaz_15L_parser()[2],
+        "silpo": parser.morshinska_highgaz_15L_parser()[3],
+        "ashan": parser.morshinska_highgaz_15L_parser()[4],
+        "novus": parser.morshinska_highgaz_15L_parser()[5],
+        "nash_kray": parser.morshinska_highgaz_15L_parser()[7],
+        "fozzy": parser.morshinska_highgaz_15L_parser()[8]
+    }},
+
+    {'nash_sik_apple_grape_02_l': {
+        "silpo": parser.nash_sik_apple_grape_02L_parser()[3],
+        "ashan": parser.nash_sik_apple_grape_02L_parser()[4],
+        "novus": parser.nash_sik_apple_grape_02L_parser()[5],
+        "fozzy": parser.nash_sik_apple_grape_02L_parser()[8]
+    }},
+
+    {'nash_sik_apple_carrot_02_l': {
+        "atb": parser.nash_sik_apple_carrot_02L_parser()[0],
+        "varus": parser.nash_sik_apple_carrot_02L_parser()[2],
+        "ashan": parser.nash_sik_apple_carrot_02L_parser()[4],
+        "novus": parser.nash_sik_apple_carrot_02L_parser()[5],
+        "fozzy": parser.nash_sik_apple_carrot_02L_parser()[8]
+    }},
+
+    {'nash_sik_orange_02_l': {
+        "varus": parser.nash_sik_orange_02L_parser()[2],
+        "novus": parser.nash_sik_orange_02L_parser()[5],
+        "fozzy": parser.nash_sik_orange_02L_parser()[8]
+    }},
+
+    {'nash_sik_multifrukt_02_l': {
+        "atb": parser.nash_sik_multifrukt_02L_parser()[0],
+        "varus": parser.nash_sik_multifrukt_02L_parser()[2],
+        "silpo": parser.nash_sik_multifrukt_02L_parser()[3],
+        "novus": parser.nash_sik_multifrukt_02L_parser()[5],
+        "metro": parser.nash_sik_multifrukt_02L_parser()[6],
+        "fozzy": parser.nash_sik_multifrukt_02L_parser()[8]
+    }},
+
+    {'nash_sik_apple_peach_02_l': {
+        "atb": parser.nash_sik_apple_peach_02L_parser()[0],
+        "varus": parser.nash_sik_apple_peach_02L_parser()[2],
+        "silpo": parser.nash_sik_apple_peach_02L_parser()[3],
+        "novus": parser.nash_sik_apple_peach_02L_parser()[5]
+    }},
+
+    {'nash_sik_pear_apple_02_l': {
+        "varus": parser.nash_sik_pear_apple_02L_parser()[2],
+        "silpo": parser.nash_sik_pear_apple_02L_parser()[3],
+        "novus": parser.nash_sik_pear_apple_02L_parser()[5]
+    }},
+
+    {'nash_sik_multivitamin_02_l': {
+        "varus": parser.nash_sik_multivitamin_02L_parser()[2],
+        "silpo": parser.nash_sik_multivitamin_02L_parser()[3],
+        "ashan": parser.nash_sik_multivitamin_02L_parser()[4],
+        "novus": parser.nash_sik_multivitamin_02L_parser()[5],
+        "fozzy": parser.nash_sik_multivitamin_02L_parser()[8]
+    }},
+
+    {'nash_sik_apple_02_l': {
+        "atb": parser.nash_sik_apple_02L_parser()[0],
+        "varus": parser.nash_sik_apple_02L_parser()[2],
+        "silpo": parser.nash_sik_apple_02L_parser()[3],
+        "ashan": parser.nash_sik_apple_02L_parser()[4],
+        "novus": parser.nash_sik_apple_02L_parser()[5],
+        "metro": parser.nash_sik_apple_02L_parser()[6],
+        "fozzy": parser.nash_sik_apple_02L_parser()[8]
+    }},
+
+    {'nash_sik_apple_strawberry_02_l': {
+        "varus": parser.nash_sik_apple_strawberry_02L_parser()[2],
+        "silpo": parser.nash_sik_apple_strawberry_02L_parser()[3],
+        "novus": parser.nash_sik_apple_strawberry_02L_parser()[5],
+        "metro": parser.nash_sik_apple_strawberry_02L_parser()[6],
+        "fozzy": parser.nash_sik_apple_strawberry_02L_parser()[8]
+    }},
+
+    {'non_stop_original_025_l': {
+        "atb": parser.non_stop_original_025L_parser()[0],
+        "eko": parser.non_stop_original_025L_parser()[1],
+        "varus": parser.non_stop_original_025L_parser()[2],
+        "silpo": parser.non_stop_original_025L_parser()[3],
+        "ashan": parser.non_stop_original_025L_parser()[4],
+        "novus": parser.non_stop_original_025L_parser()[5],
+        "metro": parser.non_stop_original_025L_parser()[6],
+        "fozzy": parser.non_stop_original_025L_parser()[8]
+    }},
+
+    {'non_stop_original_05_l': {
+        "atb": parser.non_stop_original_05L_parser()[0],
+        "varus": parser.non_stop_original_05L_parser()[2],
+        "silpo": parser.non_stop_original_05L_parser()[3],
+        "ashan": parser.non_stop_original_05L_parser()[4],
+        "novus": parser.non_stop_original_05L_parser()[5],
+        "metro": parser.non_stop_original_05L_parser()[6],
+        "fozzy": parser.non_stop_original_05L_parser()[8]
+    }},
+
+    {'non_stop_jungle_025_l': {
+        "eko": parser.non_stop_jungle_025L_parser()[1],
+        "varus": parser.non_stop_jungle_025L_parser()[2],
+        "silpo": parser.non_stop_jungle_025L_parser()[3],
+        "ashan": parser.non_stop_jungle_025L_parser()[4],
+        "novus": parser.non_stop_jungle_025L_parser()[5],
+        "metro": parser.non_stop_jungle_025L_parser()[6],
+        "fozzy": parser.non_stop_jungle_025L_parser()[8]
+    }},
+
+    {'non_stop_boost_05_l': {
+        "eko": parser.non_stop_boost_05L_parser()[1],
+        "varus": parser.non_stop_boost_05L_parser()[2],
+        "silpo": parser.non_stop_boost_05L_parser()[3],
+        "ashan": parser.non_stop_boost_05L_parser()[4],
+        "novus": parser.non_stop_boost_05L_parser()[5],
+        "metro": parser.non_stop_boost_05L_parser()[6],
+        "fozzy": parser.non_stop_boost_05L_parser()[8]
+    }},
+
+    {'non_stop_ultra_05_l': {
+        "eko": parser.non_stop_ultra_05L_parser()[1],
+        "varus": parser.non_stop_ultra_05L_parser()[2],
+        "silpo": parser.non_stop_ultra_05L_parser()[3],
+        "metro": parser.non_stop_ultra_05L_parser()[6],
+        "fozzy": parser.non_stop_ultra_05L_parser()[8]
+    }},
+
+    {'non_stop_boost_025_l': {
+        "eko": parser.non_stop_boost_025L_parser()[1],
+        "varus": parser.non_stop_boost_025L_parser()[2],
+        "silpo": parser.non_stop_boost_025L_parser()[3],
+        "metro": parser.non_stop_boost_025L_parser()[6],
+        "fozzy": parser.non_stop_boost_025L_parser()[8]
+    }},
+
+    {'burn_classic_025_l': {
+        "eko": parser.burn_classic_025L_parser()[1],
+        "varus": parser.burn_classic_025L_parser()[2],
+        "silpo": parser.burn_classic_025L_parser()[3],
+        "ashan": parser.burn_classic_025L_parser()[4],
+        "novus": parser.burn_classic_025L_parser()[5],
+        "metro": parser.burn_classic_025L_parser()[6],
+        "fozzy": parser.burn_classic_025L_parser()[8]
+    }},
+
+    {'burn_classic_05_l': {
+        "atb": parser.burn_classic_05L_parser()[0],
+        "eko": parser.burn_classic_05L_parser()[1],
+        "varus": parser.burn_classic_05L_parser()[2],
+        "silpo": parser.burn_classic_05L_parser()[3],
+        "ashan": parser.burn_classic_05L_parser()[4],
+        "novus": parser.burn_classic_05L_parser()[5],
+        "metro": parser.burn_classic_05L_parser()[6],
+        "fozzy": parser.burn_classic_05L_parser()[8]
+    }},
+
+    {'burn_mango_025_l': {
+        "eko": parser.burn_mango_025L_parser()[1],
+        "varus": parser.burn_mango_025L_parser()[2],
+        "silpo": parser.burn_mango_025L_parser()[3],
+        "novus": parser.burn_mango_025L_parser()[5],
+        "fozzy": parser.burn_mango_025L_parser()[8]
+    }},
+
+    {'burn_apple_kiwi_05_l': {
+        "eko": parser.burn_apple_kiwi_05L_parser()[1],
+        "varus": parser.burn_apple_kiwi_05L_parser()[2],
+        "silpo": parser.burn_apple_kiwi_05L_parser()[3],
+        "ashan": parser.burn_apple_kiwi_05L_parser()[4],
+        "novus": parser.burn_apple_kiwi_05L_parser()[5],
+        "metro": parser.burn_apple_kiwi_05L_parser()[6],
+        "fozzy": parser.burn_apple_kiwi_05L_parser()[8]
+    }},
+
+    {'burn_dark_energy_025_l': {
+        "eko": parser.burn_dark_energy_025L_parser()[1],
+        "varus": parser.burn_dark_energy_025L_parser()[2],
+        "silpo": parser.burn_dark_energy_025L_parser()[3],
+        "novus": parser.burn_dark_energy_025L_parser()[5]
+    }},
+
+    {'red_bull_025_l': {
+        "atb": parser.red_bull_025L_parser()[0],
+        "silpo": parser.red_bull_025L_parser()[3],
+        "ashan": parser.red_bull_025L_parser()[4],
+        "novus": parser.red_bull_025L_parser()[5],
+        "metro": parser.red_bull_025L_parser()[6],
+        "fozzy": parser.red_bull_025L_parser()[8]
+    }},
+
+    {'red_bull_0355_l': {
+        "atb": parser.red_bull_0355L_parser()[0],
+        "varus": parser.red_bull_0355L_parser()[2],
+        "silpo": parser.red_bull_0355L_parser()[3],
+        "ashan": parser.red_bull_0355L_parser()[4],
+        "novus": parser.red_bull_0355L_parser()[5],
+        "metro": parser.red_bull_0355L_parser()[6],
+        "fozzy": parser.red_bull_0355L_parser()[8]
+    }},
+
+    {'red_bull_0473_l': {
+        "atb": parser.red_bull_0473L_parser()[0],
+        "varus": parser.red_bull_0473L_parser()[2],
+        "silpo": parser.red_bull_0473L_parser()[3],
+        "ashan": parser.red_bull_0473L_parser()[4],
+        "novus": parser.red_bull_0473L_parser()[5],
+        "metro": parser.red_bull_0473L_parser()[6],
+        "fozzy": parser.red_bull_0473L_parser()[8]
+    }},
+
+    {'red_bull_0591_l': {
+        "varus": parser.red_bull_0591L_parser()[2],
+        "silpo": parser.red_bull_0591L_parser()[3],
+        "novus": parser.red_bull_0591L_parser()[5],
+        "fozzy": parser.red_bull_0591L_parser()[8]
+    }},
+
+    {'red_bull_sugar_free_025_l': {
+        "varus": parser.red_bull_sugar_free_025L_parser()[2],
+        "silpo": parser.red_bull_sugar_free_025L_parser()[3],
+        "ashan": parser.red_bull_sugar_free_025L_parser()[4],
+        "novus": parser.red_bull_sugar_free_025L_parser()[5],
+        "metro": parser.red_bull_sugar_free_025L_parser()[6],
+        "fozzy": parser.red_bull_sugar_free_025L_parser()[8]
+    }},
+
+    {'red_bull_red_edition_cavun_025_l': {
+        "varus": parser.red_bull_red_edition_cavun_025L_parser()[2],
+        "silpo": parser.red_bull_red_edition_cavun_025L_parser()[3],
+        "novus": parser.red_bull_red_edition_cavun_025L_parser()[5],
+        "fozzy": parser.red_bull_red_edition_cavun_025L_parser()[8]
+    }},
+
+    {'red_bull_yellow_edition_tropic_fruits_025_l': {
+        "varus": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[2],
+        "silpo": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[3],
+        "ashan": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[4],
+        "novus": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[5],
+        "metro": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[6],
+        "fozzy": parser.red_bull_yellow_edition_tropic_fruits_025L_parser()[8]
+    }},
+
+    {'monster_0355_l': {
+        "eko": parser.monster_0355L_parser()[1],
+        "silpo": parser.monster_0355L_parser()[3],
+        "ashan": parser.monster_0355L_parser()[4],
+        "novus": parser.monster_0355L_parser()[5],
+        "metro": parser.monster_0355L_parser()[6],
+        "nash_kray": parser.monster_0355L_parser()[7],
+        "fozzy": parser.monster_0355L_parser()[8]
+    }},
+
+    {'monster_the_doctor_0355_l': {
+        "eko": parser.monster_the_doctor_0355L_parser()[1],
+        "varus": parser.monster_the_doctor_0355L_parser()[2],
+        "silpo": parser.monster_the_doctor_0355L_parser()[3],
+        "ashan": parser.monster_the_doctor_0355L_parser()[4],
+        "novus": parser.monster_the_doctor_0355L_parser()[5],
+        "metro": parser.monster_the_doctor_0355L_parser()[6],
+        "nash_kray": parser.monster_the_doctor_0355L_parser()[7],
+        "fozzy": parser.monster_the_doctor_0355L_parser()[8]
+    }},
+
+    {'monster_ultra_zero_0355_l': {
+        "eko": parser.monster_ultra_zero_0355L_parser()[1],
+        "varus": parser.monster_ultra_zero_0355L_parser()[2],
+        "silpo": parser.monster_ultra_zero_0355L_parser()[3],
+        "ashan": parser.monster_ultra_zero_0355L_parser()[4],
+        "novus": parser.monster_ultra_zero_0355L_parser()[5],
+        "metro": parser.monster_ultra_zero_0355L_parser()[6],
+        "nash_kray": parser.monster_ultra_zero_0355L_parser()[7],
+        "fozzy": parser.monster_ultra_zero_0355L_parser()[8]
+    }},
+
+    {'monster_juiced_0355_l': {
+        "eko": parser.monster_juiced_0355L_parser()[1],
+        "varus": parser.monster_juiced_0355L_parser()[2],
+        "silpo": parser.monster_juiced_0355L_parser()[3],
+        "novus": parser.monster_juiced_0355L_parser()[5],
+        "metro": parser.monster_juiced_0355L_parser()[6],
+        "nash_kray": parser.monster_juiced_0355L_parser()[7],
+        "fozzy": parser.monster_juiced_0355L_parser()[8]
+    }},
+
+    {'pit_bull_coffee_0250_l': {
+        "atb": parser.pit_bull_coffee_250L_parser()[0],
+        "eko": parser.pit_bull_coffee_250L_parser()[1],
+        "silpo": parser.pit_bull_coffee_250L_parser()[3],
+        "novus": parser.pit_bull_coffee_250L_parser()[5],
+        "fozzy": parser.pit_bull_coffee_250L_parser()[8]
+    }},
+
+    {'pit_bull_power_0250_l': {
+        "atb": parser.pit_bull_power_250L_parser()[0],
+        "eko": parser.pit_bull_power_250L_parser()[1],
+        "varus": parser.pit_bull_power_250L_parser()[2],
+        "silpo": parser.pit_bull_power_250L_parser()[3],
+        "novus": parser.pit_bull_power_250L_parser()[5],
+        "metro": parser.pit_bull_power_250L_parser()[6],
+        "fozzy": parser.pit_bull_power_250L_parser()[8]
+    }},
+
+    {'pit_bull_X_0250_l': {
+        "eko": parser.pit_bull_X_250L_parser()[1],
+        "varus": parser.pit_bull_X_250L_parser()[2],
+        "silpo": parser.pit_bull_X_250L_parser()[3],
+        "novus": parser.pit_bull_X_250L_parser()[5],
+        "fozzy": parser.pit_bull_X_250L_parser()[8]
+    }},
+
+    {'pit_bull_extra_vitamin_c_0250_l': {
+        "eko": parser.pit_bull_extra_vitamin_C_250L_parser()[1],
+        "varus": parser.pit_bull_extra_vitamin_C_250L_parser()[2],
+        "silpo": parser.pit_bull_extra_vitamin_C_250L_parser()[3],
+        "metro": parser.pit_bull_extra_vitamin_C_250L_parser()[6],
+        "fozzy": parser.pit_bull_extra_vitamin_C_250L_parser()[8]
+    }},
+
+    {'pit_bull_0250_l': {
+        "varus": parser.pit_bull_250L_parser()[2],
+        "ashan": parser.pit_bull_250L_parser()[4]
+    }},
+
+    {'maccoffee_gold_rozch_soft_pack_60_gr': {
+        "silpo": parser.maccoffee_gold_rozch_soft_pack_60_gr_parser()[3],
+        "fozzy": parser.maccoffee_gold_rozch_soft_pack_60_gr_parser()[8]
+    }},
+
+    {'nescafe_gold_rozch_soft_pack_120_gr': {
+        "varus": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[2],
+        "silpo": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[3],
+        "ashan": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[4],
+        "novus": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[5],
+        "metro": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[6],
+        "fozzy": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[8]
+    }},
+
+
+
+
+
+
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
                 + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)

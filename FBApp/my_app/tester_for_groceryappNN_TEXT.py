@@ -624,6 +624,53 @@ class TesterForGroceryAppText:
             return NON_STOP_ULTRA_05L
         elif np.argmax(result) == 280:
             return NON_STOP_BOOST_025L
+        elif np.argmax(result) == 281:
+            return BURN_CLASSIC_025L
+        elif np.argmax(result) == 282:
+            return BURN_CLASSIC_05L
+        elif np.argmax(result) == 283:
+            return BURN_MANGO_025L
+        elif np.argmax(result) == 284:
+            return BURN_APPLE_KIWI_05L
+        elif np.argmax(result) == 285:
+            return BURN_DARK_ENERGY_025L
+        elif np.argmax(result) == 286:
+            return RED_BULL_025L
+        elif np.argmax(result) == 287:
+            return RED_BULL_0355L
+        elif np.argmax(result) == 288:
+            return RED_BULL_0473L
+        elif np.argmax(result) == 289:
+            return RED_BULL_0591L
+        elif np.argmax(result) == 290:
+            return RED_BULL_SUGAR_FREE_025L
+        elif np.argmax(result) == 291:
+            return RED_BULL_RED_EDITION_CAVUN_025L
+        elif np.argmax(result) == 292:
+            return RED_BULL_YELLOW_EDITION_TROPIC_FRUITS_025L
+        elif np.argmax(result) == 293:
+            return MONSTER_0355L
+        elif np.argmax(result) == 294:
+            return MONSTER_THE_DOCTOR_0355L
+        elif np.argmax(result) == 295:
+            return MONSTER_ULTRA_ZERO_0355L
+        elif np.argmax(result) == 296:
+            return MONSTER_JUICED_0355L
+        elif np.argmax(result) == 297:
+            return PIT_BULL_COFFEE_025L
+        elif np.argmax(result) == 298:
+            return PIT_BULL_POWER_025L
+        elif np.argmax(result) == 299:
+            return PIT_BULL_X_025L
+        elif np.argmax(result) == 300:
+            return PIT_BULL_EXTRA_VITAMIN_C_025L
+        elif np.argmax(result) == 301:
+            return PIT_BULL_025L
+        elif np.argmax(result) == 302:
+            return MACCOFFEE_GOLD_ROZCHIN_SOFT_PACK_60_GR
+        elif np.argmax(result) == 303:
+            return NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR
+
 
 
 

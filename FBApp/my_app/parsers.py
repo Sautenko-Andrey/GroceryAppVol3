@@ -2202,9 +2202,770 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/pivo-bezalkogolnoe/100275-pivo-carlsberg-pilsner-svetloe-bezalkogolnoe-zh-b-250014915207.html'
         ])
 
+    def banana_parser(self):
+        ''' Парсер для Банан, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/banan-1-gat',
+            'https://eko.zakaz.ua/uk/products/frukt-banan--ekomarket00000000640016/',
+            'https://varus.ua/banan-vag',
+            'https://shop.silpo.ua/product/banan-32485',
+            'https://novus.online/product/banan-vag',
+            'https://metro.zakaz.ua/uk/products/frukt-banan--metro28896500000000/',
+            'https://shop.nashkraj.ua/kovel/product/12811-banan-vag',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11745-banan-2732485.html'
+        ])
 
+    def orange_parser(self):
+        ''' Парсер для Апельсин, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/apelsin-vag-1-gat',
+            'https://eko.zakaz.ua/uk/products/frukt-tsitrus--ekomarket00000000640018/',
+            'https://varus.ua/apelsin-vag',
+            'https://shop.silpo.ua/product/apelsyn-32546',
+            'https://novus.online/product/apelsin-velikij-vag',
+            'https://metro.zakaz.ua/uk/products/frukt-tsitrus--metro28251600000000/',
+            'https://shop.nashkraj.ua/kovel/product/85-apelsini-elitniy-vag',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/15494-apelsin-2732546.html'
+        ])
 
+    def kiwi_parser(self):
+        ''' Парсер для Киви, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kivi-u-kosiku-2-gat',
+            'https://eko.zakaz.ua/uk/products/frukt-kivi--ekomarket00000026000121/',
+            'https://varus.ua/kivi-vag',
+            'https://shop.silpo.ua/product/kivi-vagovyi-134544',
+            'https://metro.zakaz.ua/uk/products/frukt-kivi--metro24273421010170/',
+            'https://shop.nashkraj.ua/kovel/product/268330-kivi-koshik-sht',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11769-kivi-2701162.html'
+        ])
 
+    def coconut_parser(self):
+        ''' Парсер для Кокос, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kokos',
+            'https://varus.ua/kokos-sht',
+            'https://shop.silpo.ua/product/kokos-32555',
+            'https://metro.zakaz.ua/uk/products/frukt-kokos-400g--metro23280040000090/',
+            'https://shop.nashkraj.ua/kovel/product/12766-kokos-sht',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11773-kokos-0250000398267.html'
+        ])
+
+    def grapefruit_parser(self):
+        ''' Парсер для Грейпфрут, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/grejpfrut-1gat',
+            'https://eko.zakaz.ua/uk/products/frukt-tsitrus--ekomarket00000000640019/',
+            'https://varus.ua/grejpfrut-pav-vesovoj',
+            'https://shop.silpo.ua/product/greipfrut-par-757483',
+            'https://novus.online/product/grejpfrut-rozevij-vag',
+            'https://metro.zakaz.ua/uk/products/frukt-tsitrus--metro28251800000000/',
+            'https://shop.nashkraj.ua/kovel/product/91461-greypfrut-vag',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11757-grejpfrut-2732549.html'
+        ])
+
+    def pomegranate_parser(self):
+        ''' Парсер для Гранат, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/granat-1gat',
+            'https://eko.zakaz.ua/uk/products/frukt-granat--ekomarket00000000641224/',
+            'https://varus.ua/granat-peru-sht',
+            'https://shop.silpo.ua/product/granat-24',
+            'https://metro.zakaz.ua/uk/products/frukt-granat-turechchina--metro28551300000000/',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11725-granat-2700024.html'
+        ])
+
+    def mango_parser(self):
+        ''' Парсер для Манго, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/mango-vag-1-gat',
+            'https://varus.ua/mango-vag',
+            'https://shop.silpo.ua/product/mango-49207',
+            'https://novus.online/product/mango-dribnij-st-kalibr-a',
+            'https://metro.zakaz.ua/uk/products/frukt-mango-300g--metro23280060000070/',
+            'https://shop.nashkraj.ua/kovel/product/20996-mango-sht',
+            'https://fozzyshop.ua/ru/frukty-i-yagody/11780-mango-0250000443066.html'
+        ])
+
+    def tomato_parser(self):
+        ''' Парсер для Помидор, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/tomati-teplicni-1-gatunok',
+            'https://eko.zakaz.ua/uk/products/ovochi-pomidor--ekomarket00000000666302/',
+            'https://varus.ua/pomidor-krasnye-vesovoy',
+            'https://metro.zakaz.ua/uk/products/ovochi-pomidor--metro28594900000000/',
+            'https://shop.nashkraj.ua/kovel/product/220502-pomidor-gilka-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/11543-pomidor-2732589.html'
+        ])
+
+    def cucumber_parser(self):
+        ''' Парсер для Огурец, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/ogirki-1-gat',
+            'https://eko.zakaz.ua/uk/products/ovochi-ogirki-ukrayina--ekomarket00000000677120/',
+            'https://varus.ua/ogirok-teplichniy-1-gatunok-vag',
+            'https://shop.silpo.ua/product/ogirok-ekstra-142342',
+            'https://novus.online/product/ogirok-vag',
+            'https://metro.zakaz.ua/uk/products/ovochi-ogirki--metro28700400000000/',
+            'https://shop.nashkraj.ua/kovel/product/260827-ogirki-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/11535-ogurec-ekstra-2707093.html'
+        ])
+
+    def kabachki_parser(self):
+        ''' Парсер для Кабачки, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kabacki-1-gat',
+            'https://eko.zakaz.ua/uk/products/ovochi-kabachki--ekomarket00000000640011/',
+            'https://varus.ua/kabachki-1-gatunok-importni-vag',
+            'https://shop.silpo.ua/product/kabachok-51600',
+            'https://novus.online/product/kabacki-vag',
+            'https://metro.zakaz.ua/uk/products/ovochi-kabachki--metro28267900000000/',
+            'https://shop.nashkraj.ua/kovel/product/13272-kabachok-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/11497-kabachok-2734196.html'
+        ])
+
+    def red_bolg_papper_parser(self):
+        ''' Парсер для Красный болгарский перец, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/perec-solodkij-cervonij-1-gat',
+            'https://eko.zakaz.ua/uk/products/paprika-perets--ekomarket00000000640043/',
+            'https://shop.silpo.ua/product/perets-chervonyi-32887',
+            'https://novus.online/product/perec-cervonij-import-vag',
+            'https://metro.zakaz.ua/uk/products/ovochi-perets--metro28330300000000/',
+            'https://shop.nashkraj.ua/kovel/product/141302-perets-chervoniy-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/11539-perec-krasnyj-2732887.html'
+        ])
+
+    def yellow_bolg_papper_parser(self):
+        ''' Парсер для Желтый болгарский перец, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/perec-solodkij-zovtij-1-gat',
+            'https://shop.silpo.ua/product/perets-zhovtyi-32885',
+            'https://novus.online/product/perec-zovtij-import-vag',
+            'https://metro.zakaz.ua/uk/products/ovochi-perets--metro28252900000000/',
+            'https://shop.nashkraj.ua/kovel/product/39168-perets-zhovtiy-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/11538-perec-zheltyj-2732885.html'
+        ])
+
+    def asparagus_parser(self):
+        ''' Парсер для Спаржа'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/sparza-zelena-250g',
+            'https://varus.ua/sparzha-vag',
+            'https://shop.silpo.ua/product/sparzha-zelena-sparzha-volyni-907134',
+            'https://novus.online/product/sparzha-zelena-250h',
+            'https://metro.zakaz.ua/uk/products/ovochi-sparzha-bez-tm-330g-ukrayina--04820235480042/',
+            'https://fozzyshop.ua/ru/ovoshhi/78181-sparzha-zelenaya-otechestvennaya-0250008047099.html'
+        ])
+
+    def brokoli_parser(self):
+        ''' Парсер для Броколі'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kapusta-brokoli-import-448399',
+            'https://novus.online/product/kapusta-brokkoli-vag',
+            'https://shop.nashkraj.ua/kovel/product/42671-kapusta-brokoli-vag',
+            'https://fozzyshop.ua/ru/ovoshhi/47051-kapusta-brokkoli-2733955.html'
+        ])
+
+    def captain_morgan_spiced_gold_1L_parser(self):
+        ''' Парсер для Captain Morgan Spiced Gold 1 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/rom-kapitan-morgan-1000ml-velikobritaniia--05000299223055/',
+            'https://varus.ua/rom-oridzhinal-spaysed-gold-kepten-morgan-1l-35-1',
+            'https://shop.silpo.ua/product/napii-na-osnovi-romu-captain-morgan-spiced-gold-3920',
+            'https://metro.zakaz.ua/uk/products/rom-kapitan-morgan-1000ml-velikobritaniia--05000299223055/',
+            'https://fozzyshop.ua/ru/rom/2643-rom-saritan-morgan-spiced-gold-0087000006867.html'
+        ])
+
+    def captain_morgan_spiced_gold_05L_parser(self):
+        ''' Парсер для Captain Morgan Spiced Gold 0.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05l-captain-morgan-original-spiced-gold-alkogolnij-na-osnovi-romu-35',
+            'https://eko.zakaz.ua/uk/products/rom-kapitan-morgan-500ml-velikobritaniia--05000281025360/',
+            'https://varus.ua/rom-oridzhinal-spaysed-gold-kepten-morgan-0-5l-35-1',
+            'https://shop.silpo.ua/product/napii-na-osnovi-romu-captain-morgan-spiced-gold-437392',
+            'https://metro.zakaz.ua/uk/products/rom-kapitan-morgan-500ml-velikobritaniia--05000281025360/',
+            'https://shop.nashkraj.ua/kovel/product/151020-napiy-alko-captain-morgan-0-5l-35',
+            'https://fozzyshop.ua/ru/rom/2623-rom-captain-morgan-spiced-gold-5000281025360.html'
+        ])
+
+    def bells_original_07L_parser(self):
+        ''' Парсер для Bells original 0.7 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/nabir-viski-07l-bells-original-40-stakan',
+            'https://eko.zakaz.ua/uk/products/viski-bells-700ml-velikobritaniia--05000387905634/',
+            'https://varus.ua/viski-bell-s-original-kupazhovaniy-40-0-7-l',
+            'https://shop.silpo.ua/product/viski-bell-s-original-400773',
+            'https://novus.online/product/viski-bells-40-07l',
+            'https://metro.zakaz.ua/uk/products/viski-bells-700ml-velikobritaniia--05000387905474/',
+            'https://shop.nashkraj.ua/kovel/product/201687-viski-bells-0-7l-original-40',
+            'https://fozzyshop.ua/ru/viski/1789-viski-bells-original-5000387905474.html'
+        ])
+
+    def bells_original_1L_parser(self):
+        ''' Парсер для Bells original 1 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/viski-bells-1000ml-velikobritaniia--05000387905504/',
+            'https://varus.ua/viski-bell-s-original-kupazhovaniy-40-1-l',
+            'https://shop.silpo.ua/product/viski-bell-s-original-329999',
+            'https://novus.online/product/viski-bells-original-40-1l',
+            'https://metro.zakaz.ua/uk/products/viski-bells-1000ml-velikobritaniia--05000387905504/',
+            'https://fozzyshop.ua/ru/viski/1788-viski-bells-original-5000387905504.html'
+        ])
+
+    def bells_spiced_07L_parser(self):
+        ''' Парсер для Bells spiced 0.7 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/viski-bells-700ml-velikobritaniia--05000387906907/',
+            'https://varus.ua/viski-bell-s-spiced-kupazhovaniy-35-0-7-l',
+            'https://shop.silpo.ua/product/viski-bell-s-spiced-676597',
+            'https://novus.online/product/napij-35-07-alkogolnij-bells-spiced',
+            'https://metro.zakaz.ua/uk/products/viski-bells-700ml-velikobritaniia--05000387906907/',
+            'https://fozzyshop.ua/ru/viski/37653-viski-bells-spiced-5000387906907.html'
+        ])
+
+    def martini_asti_bile_075_L_parser(self):
+        ''' Парсер для Martini Asti White 0.75 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/vino-075l-igriste-martini-asti-docg-bile-solodke',
+            'https://varus.ua/vino-igriste-martini-asti-bile-solodke-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-martini-asti-7-5-14013',
+            'https://auchan.ua/ua/vino-igristoe-martini-asti-beloe-sladkoe-7-5-0-75-l-1042149/',
+            'https://novus.online/product/vino-igriste-martini-asti-dolce-docg-75-075l',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-martini-750ml-italiia--08000570435402/',
+            'https://fozzyshop.ua/ru/vina-igristye/1448-vino-igristoe-martini-asti-beloe-polusladkoe-8000570435402.html'
+        ])
+
+    def jameson_07_L_parser(self):
+        ''' Парсер для Jameson 0.7 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/viski-07-l-jameson-40-ob-skbut',
+            'https://varus.ua/viski-jameson-irish-whiskey-kupazhovaniy-40-0-7-l',
+            'https://shop.silpo.ua/product/viski-jameson-58113',
+            'https://auchan.ua/ua/viski-jameson-40-0-7-l-1044212/',
+            'https://novus.online/product/viski-jameson-40-07l',
+            'https://metro.zakaz.ua/uk/products/viski-dzheimson-700ml-irlandiia--05011007003005/',
+            'https://shop.nashkraj.ua/kovel/product/77970-viski-jameson-0-7l-6-rokiv-40',
+            'https://fozzyshop.ua/ru/viski/1822-viski-jameson-5011007003005.html'
+        ])
+
+    def jameson_05_L_parser(self):
+        ''' Парсер для Jameson 0.5 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/viski-jameson-irish-whiskey-kupazhovaniy-40-0-5-l',
+            'https://shop.silpo.ua/product/viski-jameson-501438',
+            'https://auchan.ua/ua/viski-jameson-40-0-5-l-1044218/',
+            'https://novus.online/product/viski-jameson-05l',
+            'https://metro.zakaz.ua/uk/products/viski-dzheimson-500ml-irlandiia--05011007015534/',
+            'https://shop.nashkraj.ua/kovel/product/168713-viski-jameson-0-5l-40'
+        ])
+
+    def jw_red_label_05_L_parser(self):
+        ''' Парсер для JW Red Label 0.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/viski-05l-johnnie-walker-red-label-40',
+            'https://eko.zakaz.ua/uk/products/viski-dzhoni-uoker-500ml-velikobritaniia--05000267014401/',
+            'https://varus.ua/viski-johnnie-walker-red-label-kupazhovaniy-4-roki-vitrimki-40-0-5-l',
+            'https://shop.silpo.ua/product/viski-johnnie-walker-red-label-10026',
+            'https://auchan.ua/ua/viski-johnnie-walker-red-label-0-5-l-1175194/',
+            'https://novus.online/product/viski-johnnie-walker-red-label-40-05l',
+            'https://metro.zakaz.ua/uk/products/viski-dzhoni-uoker-500ml-velikobritaniia--05000267014401/',
+            'https://shop.nashkraj.ua/kovel/product/11791-viski-johnnie-walker-0-5l-red-lable-40',
+            'https://fozzyshop.ua/ru/viski/1804-viski-johnnie-walker-red-label-5000267014401.html'
+        ])
+
+    def ballantines_finest_07_L_parser(self):
+        ''' Парсер для Ballantines Finest 0.7 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/viski-ballantines-finest-kupazhovaniy-40-0-7-l',
+            'https://shop.silpo.ua/product/viski-ballantine-s-finest-40-605400',
+            'https://auchan.ua/ua/viski-ballantine-s-finest-40-0-7-l-1044248/',
+            'https://novus.online/product/viski-40-07l-sotlandskij-kupazovanij-ballantines-finest',
+            'https://metro.zakaz.ua/uk/products/viski-balantains-700ml-velikobritaniia--05010106113127/',
+            'https://fozzyshop.ua/ru/viski/23665-viski-ballantine-s-finest-ballantajns-fajnest-40-5010106113127.html'
+        ])
+
+    def jack_daniels_07_L_parser(self):
+        ''' Парсер для Jack Daniels 0.7 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/viski-dzhek-deniels-700ml-ssha--05099873089798/',
+            'https://varus.ua/viski-jack-daniel-s-old-no-7-tennessi-40-0-7-l',
+            'https://novus.online/product/viski-jack-daniels-40-07l',
+            'https://metro.zakaz.ua/uk/products/viski-dzhek-deniels-700ml-ssha--05099873089798/',
+            'https://shop.nashkraj.ua/kovel/product/130552-viski-jackdaniel-s-0-7l-40',
+            'https://fozzyshop.ua/ru/viski/1714-viski-jack-daniels-5099873089798.html'
+        ])
+
+    def jack_daniels_1_L_parser(self):
+        ''' Парсер для Jack Daniels 1 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/viski-jack-daniel-s-old-no-7-tennessi-40-1-l',
+            'https://shop.silpo.ua/product/viski-jack-daniels-4103',
+            'https://novus.online/product/viski-jack-daniels-40-1l',
+            'https://metro.zakaz.ua/uk/products/viski-dzhek-deniels-1000ml-ssha--05099873045367/',
+            'https://fozzyshop.ua/ru/viski/1801-viski-jack-daniels-5099873045367.html'
+        ])
+
+    def jim_beam_white_07L_parser(self):
+        ''' Парсер для Jim Beam White 0.7 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/viski-07-l-jim-beam-white-40-ob-skbut',
+            'https://varus.ua/burbon-jim-beam-white-4-roki-vitrimki-40-1-l-1',
+            'https://shop.silpo.ua/product/viski-jim-beam-4101',
+            'https://auchan.ua/ua/viski-jim-beam-white-4-goda-vyderzhki-40-0-7-l-1167255/',
+            'https://novus.online/product/viski-jim-beam-white-bourbon-40-4r07l',
+            'https://metro.zakaz.ua/uk/products/viski-dzhim-bim-700ml-ssha--05010196091008/',
+            'https://fozzyshop.ua/ru/viski/49834-viski-jim-beam-white-5010196091008.html'
+        ])
+
+    def borjomi_05L_parser(self):
+        ''' Парсер для Borjomi 0.5 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/voda-mineralna-borzhomi-0-5l'
+        ])
+
+    def morshinska_negaz_15L_parser(self):
+        ''' Парсер для Моршинська негазована 1.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/voda-15l-morsinska-mineralna-negazovana',
+            'https://eko.zakaz.ua/uk/products/voda-morshinska-1500ml--04820017000024/',
+            'https://varus.ua/voda-negazovana-morshinska-1-5l-ukraina',
+            'https://shop.silpo.ua/product/voda-mineralna-morshynska-negazovana-16649',
+            'https://auchan.ua/ua/voda-morshins-ka-negazirovannaja-1-5-l-244183/',
+            'https://novus.online/product/voda-negazovana-morsinska-15l',
+            'https://shop.nashkraj.ua/kovel/product/5971-min-voda-morshinska-1-5l-n-g-pet',
+            'https://fozzyshop.ua/ru/voda-mineralnaya-negazirovannaya/12796-voda-mineralnaya-morshinska-n-gaz-4820017000024.html'
+        ])
+
+    def morshinska_lowgaz_15L_parser(self):
+        ''' Парсер для Моршинська слабогазована 1.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/voda-15l-morsinska-mineralna-slabogazovana',
+            'https://eko.zakaz.ua/uk/products/voda-morshinska-1500ml--04820017000253/',
+            'https://varus.ua/voda-slabogazovana-morshinska-1-5l-ukraina',
+            'https://shop.silpo.ua/product/voda-mineralna-morshynska-slabogazovana-39465',
+            'https://auchan.ua/ua/voda-morshins-ka-slabogazirovannaja-1-5-l-244182/',
+            'https://novus.online/product/voda-slabogazovana-morsinska-15l',
+            'https://shop.nashkraj.ua/kovel/product/5973-min-voda-morshinska-1-5l-sl-g-pet',
+            'https://fozzyshop.ua/ru/voda-mineralnaya-gazirovannaya/12802-voda-mineralnaya-morshinska-sl-gaz-4820017000253.html'
+        ])
+
+    def morshinska_highgaz_15L_parser(self):
+        ''' Парсер для Моршинська сильногазована 1.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/voda-15l-morsinska-mineralna-silnogazovana',
+            'https://eko.zakaz.ua/uk/products/voda-morshinska-1500ml--04820017000055/',
+            'https://varus.ua/voda-gazovana-morshinska-1-5l-ukraina',
+            'https://shop.silpo.ua/product/voda-mineralna-morshynska-sylnogazovana-36629',
+            'https://auchan.ua/ua/voda-sil-nogazirovannaja-morshins-ka-1-5-l-236162/',
+            'https://novus.online/product/voda-gazovana-morsinska-15l',
+            'https://shop.nashkraj.ua/kovel/product/5972-min-voda-morshinska-1-5l-s-g-pet',
+            'https://fozzyshop.ua/ru/voda-mineralnaya-gazirovannaya/12800-voda-mineralnaya-morshinska-s-gaz-4820017000055.html'
+        ])
+
+    def nash_sik_apple_grape_02L_parser(self):
+        ''' Парсер для Наш Сік яблуко-виноград 0.2 литр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/nektar-nash-sik-iabluchno-vynogradnyi-osvitlenyi-819228',
+            'https://auchan.ua/ua/nektar-jabloko-vinograd-nash-sik-t-p-200ml-689606/',
+            'https://novus.online/product/sik-nas-sik-vinogradabluko-osvitlenij-02l',
+            'https://fozzyshop.ua/ru/soki-i-nektary/77031-nektar-nash-sik-yablochno-vinogradnyj-osvetlennyj-4820192262750.html'
+        ])
+
+    def nash_sik_apple_carrot_02L_parser(self):
+        ''' Парсер для Наш Сік яблуко-морква 0.2 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/sik-200-ml-nas-sik-okzdh-ablucno-morkvanij',
+            'https://varus.ua/sok-nash-sok-yabloko-i-morkov-0-2-l',
+            'https://auchan.ua/ua/sok-morkovno-jablochnyj-s-mjakot-ju-nash-sik-t-p-0-2l-692707/',
+            'https://novus.online/product/sik-nas-sik-morkvaabluko-z-makittu-02l',
+            'https://fozzyshop.ua/ru/soki-i-nektary/3936-sok-nash-sik-yablochno-morkovnyj-s-myakotyu-02l-4820016250628.html'
+        ])
+
+    def nash_sik_orange_02L_parser(self):
+        ''' Парсер для Наш Сік апельсин 0.2 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/nektar-apelsinovij-okzdh-nash-sik-02l',
+            'https://novus.online/product/nektar-nash-sik-apelsyn-02-l-tp',
+            'https://fozzyshop.ua/ru/soki-i-nektary/103135-nektar-nash-sik-apelsinovyj-0250015069428.html'
+        ])
+
+    def nash_sik_multifrukt_02L_parser(self):
+        ''' Парсер для Наш Сік мультіфрукт 0.2 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/nektar-02-l-okzdh-nas-sik-multifruktovij-tropicna-seria',
+            'https://varus.ua/nektar-nash-sok-multifrukt-0-2-l',
+            'https://shop.silpo.ua/product/nektar-nash-sik-multyfruktovyi-584524',
+            'https://novus.online/product/sik-nas-sik-multifrukt-02l',
+            'https://metro.zakaz.ua/uk/products/nektar-nash-sik-200ml-ukrayina--04820016252738/',
+            'https://fozzyshop.ua/ru/soki-i-nektary/43153-nektar-nash-sik-multifruktovyj-4820016252738.html'
+        ])
+
+    def nash_sik_apple_peach_02L_parser(self):
+        ''' Парсер для Наш Сік яблуко-персик 0.2 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/sik-200-ml-okzdh-nas-sik-ablucno-persikovij-z-makottu-tetpa-pak',
+            'https://varus.ua/sik-nash-sik-yabluchno-persikovij-z-myakottyu-200-ml',
+            'https://shop.silpo.ua/product/sik-nash-sik-iabluchno-persykovyi-z-m-iakottiu-913808',
+            'https://novus.online/product/sik-nas-sik-persik-z-makittu-02l'
+        ])
+
+    def nash_sik_pear_apple_02L_parser(self):
+        ''' Парсер для Наш Сік груша-яблуко 0.2 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/sok-nash-sok-yabloko-i-grusha-0-2-l',
+            'https://shop.silpo.ua/product/sik-nash-sik-iabluchno-grushevyi-917284',
+            'https://novus.online/product/cik-nas-sik-grusevo-ablucnij-02l',
+        ])
+
+    def nash_sik_multivitamin_02L_parser(self):
+        ''' Парсер для Наш Сік мультівітамін 0.2 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/sok-nash-sok-multivitamin-0-2-l',
+            'https://shop.silpo.ua/product/sik-nash-sik-multyvitaminnyi-z-m-iakottiu-70244',
+            'https://auchan.ua/ua/sok-s-mjakot-ju-nash-sik-mul-tivitamin-0-2-l-244161/',
+            'https://novus.online/product/sik-nas-sik-multivitaminnij-z-makittu-02l',
+            'https://fozzyshop.ua/ru/soki-i-nektary/3971-sok-nash-sik-multivitaminnyj-s-myakotyu-4820016250604.html'
+        ])
+
+    def nash_sik_apple_02L_parser(self):
+        ''' Парсер для Наш Сік яблуко 0.2 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/nektar-200-ml-nas-sik-abluko-vinograd',
+            'https://varus.ua/sok-nash-sok-yablochnyy-0-2-l',
+            'https://shop.silpo.ua/product/sik-nash-sik-iabluchnyi-osvitlenyi-819226',
+            'https://auchan.ua/ua/sok-osvetlennyj-vosstanovlennyj-jablochnyj-nash-sik-t-p-200ml-692770/',
+            'https://novus.online/product/sik-nas-sik-abluko-osvitlenij-02l',
+            'https://metro.zakaz.ua/uk/products/sik-nash-sik-200ml--04820192263092/',
+            'https://fozzyshop.ua/ru/soki-i-nektary/77029-sok-nash-sik-yablochnyj-osvetlennyj-4820192262668.html'
+        ])
+
+    def nash_sik_apple_strawberry_02L_parser(self):
+        ''' Парсер для Наш Сік яблуко-клубника 0.2 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/sok-nash-sok-yabloko-i-klubnika-0-2-l',
+            'https://shop.silpo.ua/product/sik-nash-sik-iabluchno-polunychnyi-z-m-iakottiu-155458',
+            'https://novus.online/product/sik-nas-sik-polunicno-ablucnij-z-makittu-02l',
+            'https://metro.zakaz.ua/uk/products/sik-nash-sik-200ml-ukrayina--04820003680872/',
+            'https://fozzyshop.ua/soki-i-nektary/3964-sok-nash-sik-yablochno-klubnichnyj-s-myakotyu-4820016250833.html'
+        ])
+
+    def non_stop_original_025L_parser(self):
+        ''' Парсер для Non-Stop Original 0.25 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-250-ml-non-stop-bezalkogolnij-energeticnij-silnogazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-non-stop-250ml--04820097890317/',
+            'https://varus.ua/napiy-energetichniy-non-stop-0-25l-zh-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-229390',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-non-stop-0-25l-689123/',
+            'https://novus.online/product/napij-energeticnij-non-stop-025l',
+            'https://metro.zakaz.ua/uk/products/energetik-non-stop-ukrayina--04820252120969/',
+            'https://fozzyshop.ua/bezalkogolnye/13173-napitok-energeticheskij-non-stop-4820074180608.html'
+        ])
+
+    def non_stop_original_05L_parser(self):
+        ''' Парсер для Non-Stop Original 0.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05l-non-stop-bezalkogolnij-energeticnij-silnogazovanij',
+            'https://varus.ua/napiy-energetichniy-non-stop-0-5l-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-sylnogazovanyi-319269',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-original-non-stop-zh-b-0-5l-689179/',
+            'https://novus.online/product/napij-energeticnij-non-stop-zalizna-banka-05l',
+            'https://metro.zakaz.ua/uk/products/energetik-non-stop-ukrayina--04820252121188/',
+            'https://fozzyshop.ua/bezalkogolnye/13176-napitok-energeticheskij-non-stop-4820097890324.html'
+        ])
+
+    def non_stop_jungle_025L_parser(self):
+        ''' Парсер для Non-Stop Jungle 0.25 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-non-stop-250ml--04820097897224/',
+            'https://varus.ua/napiy-energetichniy-dzhingl-non-stop-0-25-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-jungle-evolution-fresh-z-b-838902',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-jevoljushn-fresh-jungle-non-stop-zh-b-0-25l-689214/',
+            'https://novus.online/product/napij-energeticnij-non-stop-jungle-025l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-non-stop-250ml--04820252120983/',
+            'https://fozzyshop.ua/bezalkogolnye/83579-napitok-energetich-non-stop-jungle-evolyushn-fresh-zh-b-4820097897224.html'
+        ])
+
+    def non_stop_boost_05L_parser(self):
+        ''' Парсер для Non-Stop Boost 0.5 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-non-stop-500ml--04820097899167/',
+            'https://varus.ua/napiy-energetichniy-bust-non-stop-0-5-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-boost-bezalkogolnyi-sylnogazovanyi-z-b-836170',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-boost-non-stop-zh-b-0-5l-689144/',
+            'https://novus.online/product/napij-energeticnij-non-stop-boost-05l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-non-stop-500ml--04820097899167/',
+            'https://fozzyshop.ua/bezalkogolnye/83580-napitok-energeticheskij-non-stop-boost-bezalkogolnyj-silnogazirovannyj-zh-b-4820097899167.html'
+        ])
+
+    def non_stop_ultra_05L_parser(self):
+        ''' Парсер для Non-Stop Ultra 0.5 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-non-stop-500ml--04820097899952/',
+            'https://varus.ua/napij-energetichnij-ultra-non-stop-05-l',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-ultra-bezalkogolnyi-sylnogazovanyi-z-b-912964',
+            'https://metro.zakaz.ua/uk/products/energetik-non-stop-500ml--04820097899952/',
+            'https://fozzyshop.ua/bezalkogolnye/100302-napitok-energeticheskij-non-stop-ultra-silnogazirovannyj-250015027732.html'
+        ])
+
+    def non_stop_boost_025L_parser(self):
+        ''' Парсер для Non-Stop Boost 0.25 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/ukrayina--04820252120020/',
+            'https://varus.ua/napij-energetichnij-non-stop-boost-bezalkogolnij-silnogazovanij-250-ml',
+            'https://shop.silpo.ua/product/napii-energetychnyi-non-stop-boost-bezalkogolnyi-sylnogazovanyi-z-b-921763',
+            'https://metro.zakaz.ua/uk/products/ukrayina--04820252120020/',
+            'https://fozzyshop.ua/bezalkogolnye/101187-napitok-energeticheskij-non-stop-boost-silnogazirovannyj-b-a-0250015135697.html'
+        ])
+
+    def burn_classic_025L_parser(self):
+        ''' Парсер для Burn Classic 0.25 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-born-250ml--05060466511019/',
+            'https://varus.ua/napiy-energetichniy-bern-0-25l-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-burn-original-bezalkogolnyi-735013',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-original-burn-zh-b-250ml-689165/',
+            'https://novus.online/product/napij-klasicnij-energeticnij-bezalkogolnij-burn-025l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-born-250ml--05060466511026/',
+            'https://fozzyshop.ua/bezalkogolnye/47528-napitok-energeticheskij-burn-original-bezalkogolnyj-zh-b-5060466511019.html'
+        ])
+
+    def burn_classic_05L_parser(self):
+        ''' Парсер для Burn Classic 0.5 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05l-burn-energeticnij',
+            'https://eko.zakaz.ua/uk/products/energetik-born-500ml--05060466510951/',
+            'https://varus.ua/napiy-energetichniy-bern-0-5l',
+            'https://shop.silpo.ua/product/napii-energetychnyi-burn-original-bezalkogolnyi-735014',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-original-burn-zh-b-500ml-689172/',
+            'https://novus.online/product/napij-klasicnij-energeticnij-bezalkogolnij-burn-05l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-born-500ml--05060466510968/',
+            'https://fozzyshop.ua/bezalkogolnye/47529-napitok-energeticheskij-burn-original-bezalkogolnyj-zh-b-5060466510951.html'
+        ])
+
+    def burn_mango_025L_parser(self):
+        ''' Парсер для Burn Mango 0.25 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-born-250ml--05060466519602/',
+            'https://varus.ua/napiy-energetichniy-bern-mango-0-25l-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-burn-mango-bezalkogolnyi-800735',
+            'https://novus.online/product/napij-energeticnij-bezalkogolnij-burn-mango-025l-zb',
+            'https://fozzyshop.ua/bezalkogolnye/63964-napitok-energeticheskij-burn-mango-b-alk-zh-b-5060466519602.html'
+        ])
+
+    def burn_apple_kiwi_05L_parser(self):
+        ''' Парсер для Burn Apple Kiwi 0.5 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-born-500ml--05060466510982/',
+            'https://varus.ua/napiy-energetichniy-bezalkogolniy-silnogazovaniy-apple-kiwi-burn-zb-500ml',
+            'https://shop.silpo.ua/product/napii-energetychnyi-burn-apple-kivi-bezalkogolnyi-739062',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-apple-kiwi-burn-zh-b-500ml-689130/',
+            'https://novus.online/product/napij-abluko-kivi-energeticnij-bezalkogolnij-burn-05l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-born-250ml--05060466511057/',
+            'https://fozzyshop.ua/bezalkogolnye/47558-napitok-energeticheskij-burn-apple-kivi-bezalkogolnyj-zh-b-5060466510982.html'
+        ])
+
+    def burn_dark_energy_025L_parser(self):
+        ''' Парсер для Burn Dark Energy 0.25 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-born-250ml--05060608749898/',
+            'https://varus.ua/napiy-energetichniy-burn-dark-energy-250-ml',
+            'https://shop.silpo.ua/product/napii-energetychnyi-burn-dark-energy-bezalkogolnyi-z-b-883079',
+            'https://novus.online/product/napiy-enerhetychnyy-bezalkoholnyy-burn-dark-energy-025l-zb'
+        ])
+
+    def red_bull_025L_parser(self):
+        ''' Парсер для Red Bull 0.25 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-250-ml-red-bull-energeticnij',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-229392',
+            'https://auchan.ua/ua/jenergichnyj-napitok-red-bull-250-ml-1043829/',
+            'https://novus.online/product/napij-energeticnij-red-bull-025l',
+            'https://metro.zakaz.ua/uk/products/energetik-red-bul-250ml-avstriia--09002490100070/',
+            'https://fozzyshop.ua/bezalkogolnye/13179-napitok-energeticheskij-red-bull-9002490219178.html'
+        ])
+
+    def red_bull_0355L_parser(self):
+        ''' Парсер для Red Bull 0.355 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-355-ml-red-bull-energeticnij-zb',
+            'https://varus.ua/napiy-energetichniy-red-bull-0-355l-zh-b',
+            'https://shop.silpo.ua/product/napii-red-bull-energetychnyi-314708',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-s-taurinom-energy-drink-red-bull-zh-b-355ml-689200/',
+            'https://novus.online/product/napij-energeticnij-red-bull-0355l',
+            'https://metro.zakaz.ua/uk/products/energetik-red-bul-355ml-avstriia--09002490206413/',
+            'https://fozzyshop.ua/bezalkogolnye/42602-napitok-energeticheskij-red-bull-9002490206000.html'
+        ])
+
+    def red_bull_0473L_parser(self):
+        ''' Парсер для Red Bull 0.473 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-473-ml-red-bull-energeticnij',
+            'https://varus.ua/napiy-energetichniy-red-bull-0-473l-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-392086',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-s-taurinom-energy-drink-red-bull-zh-b-473ml-689207/',
+            'https://novus.online/product/napij-energeticnij-red-bull-0473l',
+            'https://metro.zakaz.ua/uk/products/napii-red-bul-473ml-avstriia--09002490212100/',
+            'https://fozzyshop.ua/bezalkogolnye/13187-napitok-energeticheskij-red-bull-9002490212100.html'
+        ])
+
+    def red_bull_0591L_parser(self):
+        ''' Парсер для Red Bull 0.591 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-energetichniy-red-bull-0-591l-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-505442',
+            'https://novus.online/product/napij-energeticnij-red-bull-0591l',
+            'https://fozzyshop.ua/bezalkogolnye/42603-napitok-energeticheskij-red-bull-9002490220310.html'
+        ])
+
+    def red_bull_sugar_free_025L_parser(self):
+        ''' Парсер для Red Bull Sugar Free 0.25 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-energetichniy-bez-cukru-red-bull-0-25l-zh-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-bez-tsukru-310713',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-red-bull-bezalkogol-nyj-sugarfree-250-ml-735486/',
+            'https://novus.online/product/napij-energeticnij-red-bull-bez-cukru-zalizna-banka-025l',
+            'https://metro.zakaz.ua/uk/products/napii-red-bul-250ml--metro00000090162800/',
+            'https://fozzyshop.ua/bezalkogolnye/81818-napitok-energeticheskij-red-bull-bez-sakhara-90162664.html'
+        ])
+
+    def red_bull_red_edition_cavun_025L_parser(self):
+        ''' Парсер для Red Bull Red Edition зі смаком кавуна 0.25 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-energetichniy-red-bull-summer-edition-kavun-250-ml',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-smak-kavuna-z-b-817030',
+            'https://novus.online/product/napiy-enerhetychnyy-red-bull-melon-025l-zb',
+            'https://fozzyshop.ua/bezalkogolnye/95085-napitok-energeticheskij-red-bull-vkus-arbuza-zh-b-90448874.html'
+        ])
+
+    def red_bull_yellow_edition_tropic_fruits_025L_parser(self):
+        ''' Парсер для Red Bull Yellow Edition зі смаком тропічних фруктів 0.25 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-energetichniy-tropik-red-bull-0-25l',
+            'https://shop.silpo.ua/product/napii-energetychnyi-red-bull-zi-smakom-tropichnykh-fruktiv-z-b-608317',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-tropical-the-yellow-edition-red-bull-zh-b-250ml-689186/',
+            'https://novus.online/product/napij-energeticnij-red-bull-litna-seria-tropikal-250ml',
+            'https://metro.zakaz.ua/uk/products/energetik-red-bul-250ml-avstriia--09002490228491/',
+            'https://fozzyshop.ua/bezalkogolnye/42604-napitok-energeticheskij-redbull-vkus-tropich-fruk-zhb-9002490231521.html'
+        ])
+
+    def monster_0355L_parser(self):
+        ''' Парсер для Monster 0.355 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-monster-355ml--05060517886721/',
+            'https://shop.silpo.ua/product/napii-energetychnyi-monster-energy-bezalkogolnyi-sylnogazovanyi-772340',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-bezalkogol-nyj-sil-nogazirovannyj-monster-energy-zh-b-335ml-689158/',
+            'https://novus.online/product/napij-energeticnij-silnogazovanij-monster-energy-355ml',
+            'https://metro.zakaz.ua/uk/products/energetik-monster-355ml--05060517886738/',
+            'https://shop.nashkraj.ua/kovel/product/282172-napiy-monster-energe-0-355l-b-a-s-g-zh-b',
+            'https://fozzyshop.ua/bezalkogolnye/57259-napitok-energeticheskij-monster-energy-b-a-sil-g-zhb-5060517886721.html'
+        ])
+
+    def monster_the_doctor_0355L_parser(self):
+        ''' Парсер для Monster The Doctor 0.355 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-monster-355ml--05060639122929/',
+            'https://varus.ua/napij-bezalkogolnij-monster-enerdzhi-doctor-0355l-zh-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-monster-energy-the-doctor-bezalkogolnyi-sylnogazovanyi-815697',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-jenergeticheskij-the-doctor-monster-energy-zh-b-335ml-688927/',
+            'https://novus.online/product/napij-energeticnij-monster-energy-the-doctor-0355l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-monster-355ml-niderlandi--05060639122936/',
+            'https://shop.nashkraj.ua/kovel/product/357450-napiy-monster-0-355l-energy-the-doctor',
+            'https://fozzyshop.ua/bezalkogolnye/74542-napitok-energeticheskij-monster-energy-the-doctor-bezalkogolnyj-zh-b-5060639122929.html'
+        ])
+
+    def monster_ultra_zero_0355L_parser(self):
+        ''' Парсер для Monster Ultra Zero 0.355 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-monster-355ml--05060639128778/',
+            'https://varus.ua/napiy-energetichniy-zero-monster-enerdzhi-0-355-z-b',
+            'https://shop.silpo.ua/product/napii-energetychnyi-monster-energy-ultra-bezalkogolnyi-z-b-842232',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-jenergeticheskij-ultra-monster-energy-zh-b-355ml-688934/',
+            'https://novus.online/product/napij-energeticnij-silnogazovanij-monster-energy-ultra-0355ml-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-monster-355ml-niderlandi--05060639128754/',
+            'https://shop.nashkraj.ua/kovel/product/402003-napiy-monster-0-355l-energy-ultra-zero-zh',
+            'https://fozzyshop.ua/bezalkogolnye/93515-napitok-energeticheskij-monster-energy-ultra-bezalkogolnyj-zh-b-5060639128778.html'
+        ])
+
+    def monster_juiced_0355L_parser(self):
+        ''' Парсер для Monster Juiced 0.355 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-monster-355ml--05060751213062/',
+            'https://varus.ua/napiy-energetichniy-mango-loko-monster-0-355l-zhb',
+            'https://shop.silpo.ua/product/napii-energetychnyi-monster-energy-mango-loco-bezalkogolnyi-z-b-890962',
+            'https://novus.online/product/napiy-monster-energy-manho-0355l-zb',
+            'https://metro.zakaz.ua/uk/products/energetik-355ml--05060751213079/',
+            'https://shop.nashkraj.ua/kovel/product/478134-napiy-monster-0-355l-energy-mango-loco',
+            'https://fozzyshop.ua/bezalkogolnye/101370-napitok-energeticheskij-monster-energy-mangoloco-b-a-0250014621771.html'
+        ])
+
+    def pit_bull_coffee_250L_parser(self):
+        ''' Парсер для Pit Bull Coffee 0.250 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-250-ml-pit-bull-zi-smakom-kavi-enepgeticnij-bezalkogolnij-zb',
+            'https://eko.zakaz.ua/uk/products/ukrayina--04820252121775/',
+            'https://shop.silpo.ua/product/napii-energetychnyi-bezalkogolnyi-sylnogazovanyi-pit-bull-coffee-z-b-921761',
+            'https://novus.online/product/napiy-enerhetychnyy-pit-bull-powe-kava-025l-zb',
+            'https://fozzyshop.ua/bezalkogolnye/101185-napitok-energeticheskij-pit-bull-coffee-silnogazirovannyj-b-a-0250015135703.html'
+        ])
+
+    def pit_bull_power_250L_parser(self):
+        ''' Парсер для Pit Bull Power 0.250 литр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-250-ml-pit-bull-power-enepgeticnij-bezalkogolnij-zb',
+            'https://eko.zakaz.ua/uk/products/ukrayina--04820252121751/',
+            'https://varus.ua/napij-energetichnij-pit-bull-power-bezalkogolnij-silnogazovanij-250-ml',
+            'https://shop.silpo.ua/product/napii-energetychnyi-bezalkogolnyi-sylnogazovanyi-pit-bull-power-z-b-921762',
+            'https://novus.online/product/napiy-enerhetychnyy-pit-bull-power-025l-zb',
+            'https://metro.zakaz.ua/uk/products/ukrayina--04820252121751/',
+            'https://fozzyshop.ua/bezalkogolnye/101186-napitok-energeticheskij-pit-bull-power-silnogazirovannyj-b-a-0250015135710.html'
+        ])
+
+    def pit_bull_X_250L_parser(self):
+        ''' Парсер для Pit Bull X 0.250 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-pit-bul-250ml--04820097897804/',
+            'https://varus.ua/napiy-bezalkogolniy-energetichniy-pit-bul-iks-0-25l',
+            'https://shop.silpo.ua/product/napii-energetychnyi-pit-bull-kh-bezalkogolnyi-sylnogazovanyi-z-b-788834',
+            'https://novus.online/product/napij-energeticnij-bezalkogolnij-pit-bul-h-250ml-zb',
+            'https://fozzyshop.ua/bezalkogolnye/77893-napitok-energeticheskij-pit-bull-kh-bezalkogolnyj-silnogazirovannyj-zh-b-4820097897804.html'
+        ])
+
+    def pit_bull_extra_vitamin_C_250L_parser(self):
+        ''' Парсер для Pit Bull Extra Vitamin C 0.250 литр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/energetik-pit-bul-250ml--04820097898986/',
+            'https://varus.ua/napiy-energetichniy-ekstra-vitamin-s-pit-bul-0-25l-zhb',
+            'https://shop.silpo.ua/product/napii-energetychnyi-pit-bull-extra-vitamin-c-z-b-856489',
+            'https://metro.zakaz.ua/uk/products/energetik-pit-bul-250ml--04820097898986/',
+            'https://fozzyshop.ua/bezalkogolnye/93516-napitok-energeticheskij-pit-bull-extra-vitamin-c-zh-b-4820097898986.html'
+        ])
+
+    def pit_bull_250L_parser(self):
+        ''' Парсер для Pit Bull 0.250 литр'''
+        return self.prices_parsing([
+            'https://varus.ua/napij-energetichnij-pit-bull-coffee-bezalkogolnij-silnogazovanij-250-ml',
+            'https://auchan.ua/ua/napitok-jenergeticheskij-sil-nogazirovannyj-pit-bull-250-ml-735507/',
+        ])
+
+    def maccoffee_gold_rozch_soft_pack_60_gr_parser(self):
+        ''' Парсер для MacCoffee GOLD розчинна чорна у м'якій упаковці 60 гр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-maccoffee-gold-naturalna-d-p-851695',
+            'https://fozzyshop.ua/kofe-rastvorimyj/90180-kofe-rastvorimyj-maccoffee-gold-naturalnyj-d-p-8887290146104.html'
+        ])
+
+    def nescafe_gold_rozch_soft_pack_120_gr_parser(self):
+        ''' Парсер для Nescafe GOLD розчинна чорна у м'якій упаковці 120 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/kava-rozchinna-sublimovana-nescafe-gold-120-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-663485',
+            'https://auchan.ua/ua/kofe-rastvorimyj-nescafe-gold-100-g-503789/',
+            'https://novus.online/product/kava-naturalna-rozcinna-neskafe-gold-maka-upakovka-120g',
+            'https://metro.zakaz.ua/uk/products/kava-neskafe-120g--07613035524811/',
+            'https://fozzyshop.ua/kofe-rastvorimyj/12542-kofe-nescafe-gold-140g-7613035524811.html'
+        ])
 
 
 

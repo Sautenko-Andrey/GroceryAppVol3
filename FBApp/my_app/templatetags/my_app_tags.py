@@ -864,6 +864,74 @@ get_non_stop_ultra_05_l = tag.create_tag(ItemsPicsFromNet, 280)
 '''Тэг,возвращающий информацию о "Енергетичний напій Non Stop Boost 250 мл"'''
 get_non_stop_boost_025_l = tag.create_tag(ItemsPicsFromNet, 281)
 
+'''Тэг,возвращающий информацию о "Енергетичний напій Burn Classic 250 мл"'''
+get_burn_classic_025_l = tag.create_tag(ItemsPicsFromNet, 282)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Burn Classic 500 мл"'''
+get_burn_classic_05_l = tag.create_tag(ItemsPicsFromNet, 283)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Burn Mango 500 мл"'''
+get_burn_mango_025_l = tag.create_tag(ItemsPicsFromNet, 284)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Burn Apple-Kiwi 500 мл"'''
+get_burn_apple_kiwi_05_l = tag.create_tag(ItemsPicsFromNet, 285)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Burn dark energy 250 мл"'''
+get_burn_dark_energy_025_l = tag.create_tag(ItemsPicsFromNet, 286)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull 250 мл"'''
+get_red_bull_025_l = tag.create_tag(ItemsPicsFromNet, 287)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull 355 мл"'''
+get_red_bull_0355_l = tag.create_tag(ItemsPicsFromNet, 288)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull 473 мл"'''
+get_red_bull_0473_l = tag.create_tag(ItemsPicsFromNet, 289)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull 591 мл"'''
+get_red_bull_0591_l = tag.create_tag(ItemsPicsFromNet, 290)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull Sugar Free 250 мл"'''
+get_red_bull_sugar_free_025_l = tag.create_tag(ItemsPicsFromNet, 291)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull Red Edition зі смаком кавуна 250 мл"'''
+get_red_bull_red_edition_cavun_025_l = tag.create_tag(ItemsPicsFromNet, 292)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Red Bull Yellow Edition зі смаком тропічних фруктів 250 мл"'''
+get_red_bull_yellow_edition_tropic_fruits_025_l = tag.create_tag(ItemsPicsFromNet, 293)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Monster 355 мл"'''
+get_monster_0355_l = tag.create_tag(ItemsPicsFromNet, 294)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Monster The Doctor 355 мл"'''
+get_monster_the_doctor_0355_l = tag.create_tag(ItemsPicsFromNet, 295)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Monster Ultra Zero 355 мл"'''
+get_monster_ultra_zero_0355_l = tag.create_tag(ItemsPicsFromNet, 296)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Monster Juiced 355 мл"'''
+get_monster_juiced_0355_l = tag.create_tag(ItemsPicsFromNet, 297)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Pit Bull Coffee 250 мл"'''
+get_pit_bull_coffee_025_l = tag.create_tag(ItemsPicsFromNet, 298)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Pit Bull Power 250 мл"'''
+get_pit_bull_power_025_l = tag.create_tag(ItemsPicsFromNet, 299)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Pit Bull X 250 мл"'''
+get_pit_bull_x_025_l = tag.create_tag(ItemsPicsFromNet, 300)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Pit Bull Extra Vitamin C 250 мл"'''
+get_pit_bull_extra_vitamin_c_025_l = tag.create_tag(ItemsPicsFromNet, 301)
+
+'''Тэг,возвращающий информацию о "Енергетичний напій Pit Bull 250 мл"'''
+get_pit_bull_025_l = tag.create_tag(ItemsPicsFromNet, 302)
+
+'''Тэг,возвращающий информацию о "Кава розчинна MacCoffee Gold натуральна д/п, 60г"'''
+get_maccoffee_gold_rozch_soft_pack_60_gr = tag.create_tag(ItemsPicsFromNet, 303)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold м`яка упаковка, 120г"'''
+get_nescafe_gold_rozch_soft_pack_120_gr = tag.create_tag(ItemsPicsFromNet, 304)
 
 
 # @register.simple_tag()
