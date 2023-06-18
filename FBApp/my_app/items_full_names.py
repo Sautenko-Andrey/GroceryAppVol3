@@ -302,6 +302,13 @@ PIT_BULL_EXTRA_VITAMIN_C_025L = 'Енергетичний напій Pit Bull Ex
 PIT_BULL_025L = 'Енергетичний напій Pit Bull 250 мл'
 MACCOFFEE_GOLD_ROZCHIN_SOFT_PACK_60_GR = 'Кава розчинна MacCoffee Gold натуральна д/п, 60г'
 NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR = 'Кава розчинна Nescafe Gold м`яка упаковка, 120г'
+GRANO_DORADO_GOLD_SOFT_P_130GR = 'Кава розчинна Grano Dorado Gold, 130г'
+NESCAFE_CLASSIC_SOFT_P_60GR = 'Кава розчинна Nescafe Classic, 60г'
+CHORNA_CARTA_GOLD_SOFT_P_400GR = 'Кава розчинна Чорна карта GOLD пакет, 400г'
+BOUNTY_SMALL = 'Батончик Bounty з м`якоттю кокоса в молочному шоколаді, 57г'
+BOUNTY_BIG = 'Батончик Bounty Trio з м`якоттю кокоса в молочному шоколаді, 85г'
+MARS_SMALL = 'Батончик Mars з нугою і карамеллю в молочному шоколаді, 51г'
+MARS_BIG = 'Батончик Mars нуга/карамель в молочному шоколаді, 70г'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

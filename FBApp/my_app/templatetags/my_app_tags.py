@@ -933,6 +933,27 @@ get_maccoffee_gold_rozch_soft_pack_60_gr = tag.create_tag(ItemsPicsFromNet, 303)
 '''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold м`яка упаковка, 120г"'''
 get_nescafe_gold_rozch_soft_pack_120_gr = tag.create_tag(ItemsPicsFromNet, 304)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Grano Dorado Gold, 130г"'''
+get_grano_dorado_gold_soft_pack_130_gr = tag.create_tag(ItemsPicsFromNet, 305)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Classic, 60г"'''
+get_nescafe_classic_soft_pack_60_gr = tag.create_tag(ItemsPicsFromNet, 306)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Чорна карта GOLD пакет, 400г"'''
+get_chorna_carta_gold_soft_pack_400_gr = tag.create_tag(ItemsPicsFromNet, 307)
+
+'''Тэг,возвращающий информацию о "Батончик Bounty з м`якоттю кокоса в молочному шоколаді, 57г"'''
+get_bounty_small = tag.create_tag(ItemsPicsFromNet, 308)
+
+'''Тэг,возвращающий информацию о "Батончик Bounty з м`якоттю кокоса в молочному шоколаді, 85г"'''
+get_bounty_big = tag.create_tag(ItemsPicsFromNet, 309)
+
+'''Тэг,возвращающий информацию о "Батончик Mars з нугою і карамеллю в молочному шоколаді, 51г"'''
+get_mars_small = tag.create_tag(ItemsPicsFromNet, 310)
+
+'''Тэг,возвращающий информацию о "Батончик Mars нуга/карамель в молочному шоколаді, 70г"'''
+get_mars_big = tag.create_tag(ItemsPicsFromNet, 311)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

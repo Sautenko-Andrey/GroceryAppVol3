@@ -671,6 +671,20 @@ class TesterForGroceryAppText:
             return MACCOFFEE_GOLD_ROZCHIN_SOFT_PACK_60_GR
         elif np.argmax(result) == 303:
             return NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR
+        elif np.argmax(result) == 304:
+            return GRANO_DORADO_GOLD_SOFT_P_130GR
+        elif np.argmax(result) == 305:
+            return NESCAFE_CLASSIC_SOFT_P_60GR
+        elif np.argmax(result) == 306:
+            return CHORNA_CARTA_GOLD_SOFT_P_400GR
+        elif np.argmax(result) == 307:
+            return BOUNTY_SMALL
+        elif np.argmax(result) == 308:
+            return BOUNTY_BIG
+        elif np.argmax(result) == 309:
+            return MARS_SMALL
+        elif np.argmax(result) == 310:
+            return MARS_BIG
 
 
 

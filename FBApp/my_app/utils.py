@@ -922,6 +922,20 @@ class ContextSupervisor:
                                          get_maccoffee_gold_rozch_soft_pack_60_gr)
         elif nn_respond == NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR:
             result = self.getting_prices('nescafe_gold_rozch_soft_pack_120_gr', get_nescafe_gold_rozch_soft_pack_120_gr)
+        elif nn_respond == GRANO_DORADO_GOLD_SOFT_P_130GR:
+            result = self.getting_prices(self.NO_PRICES, get_grano_dorado_gold_soft_pack_130_gr)
+        elif nn_respond == NESCAFE_CLASSIC_SOFT_P_60GR:
+            result = self.getting_prices(self.NO_PRICES, get_nescafe_classic_soft_pack_60_gr)
+        elif nn_respond == CHORNA_CARTA_GOLD_SOFT_P_400GR:
+            result = self.getting_prices(self.NO_PRICES, get_chorna_carta_gold_soft_pack_400_gr)
+        elif nn_respond == BOUNTY_SMALL:
+            result = self.getting_prices(self.NO_PRICES, get_bounty_small)
+        elif nn_respond == BOUNTY_BIG:
+            result = self.getting_prices(self.NO_PRICES, get_bounty_big)
+        elif nn_respond == MARS_SMALL:
+            result = self.getting_prices(self.NO_PRICES, get_mars_small)
+        elif nn_respond == MARS_BIG:
+            result = self.getting_prices(self.NO_PRICES, get_mars_big)
 
 
         # тут подключаются блюда
@@ -939,6 +953,7 @@ class ContextSupervisor:
 
 
 class RefersForRNN:
+    '''Класс для подготовки текстовых файлов перед обучением НС.'''
 
     def add_new_item(self, path_tail: str):
         '''Функция для предвариетльной обработки обучающего текстового набора для НС'''
