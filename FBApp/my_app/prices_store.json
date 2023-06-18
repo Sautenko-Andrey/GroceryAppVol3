@@ -9,7 +9,7 @@
   "coca_cola_2l": {
     "atb": 44.9,
     "eko": 45.9,
-    "varus": 40.3,
+    "varus": 45.7,
     "silpo": 45.74,
     "ashan": 42.4,
     "novus": 45.29,
@@ -19,7 +19,7 @@
   },
   "garlik": {
     "atb": 99.95,
-    "eko": 109.0,
+    "eko": 99.0,
     "varus": 98.9,
     "silpo": 9.9,
     "novus": 89.99,
@@ -55,7 +55,7 @@
   },
   "oil_shedriy_dar_raf_850": {
     "atb": 61.86,
-    "eko": 72.39,
+    "eko": 66.9,
     "varus": 0,
     "silpo": 51.99,
     "ashan": 57.5,
@@ -75,7 +75,7 @@
   "onion": {
     "atb": 48.95,
     "eko": 69.9,
-    "varus": 48.9,
+    "varus": 44.9,
     "silpo": 7.0,
     "novus": 0,
     "metro": 66.9,
@@ -96,7 +96,7 @@
   "limon": {
     "atb": 79.95,
     "eko": 84.9,
-    "varus": 57.5,
+    "varus": 52.8,
     "silpo": 5.6,
     "novus": 0,
     "metro": 64.91,
@@ -144,7 +144,7 @@
   "cabbage": {
     "atb": 25.69,
     "eko": 21.9,
-    "varus": 48.9,
+    "varus": 44.9,
     "silpo": 3.7,
     "novus": 49.99,
     "metro": 33.18,
@@ -225,7 +225,7 @@
   "beet": {
     "atb": 6.95,
     "eko": 8.9,
-    "varus": 6.2,
+    "varus": 7.9,
     "silpo": 0.64,
     "novus": 0,
     "metro": 10.9,
@@ -233,7 +233,7 @@
   },
   "four": {
     "atb": 20.2,
-    "eko": 22.69,
+    "eko": 20.9,
     "varus": 14.9,
     "silpo": 18.99,
     "novus": 16.29,
@@ -243,8 +243,8 @@
   },
   "oil_for_dish": {
     "atb": 46.9,
-    "eko": 64.5,
-    "varus": 49.9,
+    "eko": 56.9,
+    "varus": 53.3,
     "novus": 58.49,
     "metro": 46.9,
     "nash_kray": 49.99,
@@ -508,7 +508,7 @@
   },
   "beer_persha_brovarna_zakarpatske_svitle_05_l_glass": {
     "eko": 26.85,
-    "varus": 25.9,
+    "varus": 38.6,
     "silpo": 30.19,
     "ashan": 28.2,
     "novus": 30.99,
@@ -535,7 +535,7 @@
     "ashan": 0,
     "metro": 38.45,
     "nash_kray": 39.0,
-    "fozzy": 35.29
+    "fozzy": 0
   },
   "beer_slavutich_ice_mix_lime_05_l_glass": {
     "varus": 37.4,
@@ -552,13 +552,13 @@
   },
   "beer_krusovice_svitle_05_l_glass": {
     "eko": 45.85,
-    "varus": 239.0,
+    "varus": 0,
     "silpo": 38.19,
     "ashan": 35.1,
     "novus": 39.99,
     "metro": 38.13,
     "nash_kray": 41.5,
-    "fozzy": 35.0
+    "fozzy": 0
   },
   "beer_heineken_svitle_05_l_glass": {
     "eko": 39.9,
@@ -576,11 +576,11 @@
     "novus": 37.99,
     "metro": 40.28,
     "nash_kray": 39.8,
-    "fozzy": 35.1
+    "fozzy": 0
   },
   "beer_hike_premium_svitle_05_l_glass": {
     "eko": 35.49,
-    "varus": 25.5,
+    "varus": 38.6,
     "silpo": 33.99,
     "ashan": 24.9,
     "novus": 33.99,
@@ -610,7 +610,7 @@
     "ashan": 39.8,
     "novus": 42.99,
     "metro": 43.09,
-    "fozzy": 32.7
+    "fozzy": 0
   },
   "beer_yachmenniy_kolos_svitle_05_l_glass": {
     "fozzy": 23.9
@@ -623,7 +623,7 @@
     "fozzy": 0
   },
   "beer_chaika_dniprovska_svitle_05_l_glass": {
-    "eko": 28.9,
+    "eko": 37.59,
     "silpo": 29.99,
     "novus": 27.99,
     "metro": 29.91,
@@ -637,7 +637,7 @@
     "fozzy": 27.19
   },
   "beer_uman_waissburg_1_l_svitle_plastic": {
-    "varus": 36.5,
+    "varus": 38.6,
     "ashan": 0,
     "novus": 51.99,
     "fozzy": 54.25
@@ -797,7 +797,7 @@
     "metro": 25.81
   },
   "yogurt_fanni_lisovi_yagodi_1_5_240gr_stakan": {
-    "varus": 12.3,
+    "varus": 11.7,
     "silpo": 27.99
   },
   "beer_obolon_kievskoe_razlivnoe_svetloe_195l": {
@@ -807,7 +807,7 @@
     "metro": 65.77
   },
   "beer_chernigivske_light_svitle_2l_plastic": {
-    "atb": 72.9,
+    "atb": 0,
     "silpo": 56.99,
     "metro": 77.53
   },
@@ -851,7 +851,7 @@
     "metro": 42.66
   },
   "beer_chernigivske_svitle_05_l_jb": {
-    "ashan": 0,
+    "ashan": 25.2,
     "novus": 28.19,
     "fozzy": 27.8
   },
@@ -949,7 +949,7 @@
   },
   "beer_heineken_svitle_05_l_jb": {
     "eko": 39.9,
-    "varus": 53.9,
+    "varus": 45.3,
     "silpo": 36.99,
     "ashan": 42.9,
     "novus": 53.99,
@@ -976,7 +976,7 @@
   },
   "beer_bavaria_svitle_nonalcohol_05_l_jb": {
     "eko": 35.65,
-    "varus": 39.5
+    "varus": 0
   },
   "beer_edelburg_lager_05_l_jb": {
     "eko": 25.9,
@@ -1002,7 +1002,7 @@
     "silpo": 65.99,
     "novus": 39.99,
     "metro": 0,
-    "fozzy": 0
+    "fozzy": 63.3
   },
   "beer_halne_jasne_pelne_05_l_jb": {
     "eko": 39.9,
@@ -1078,7 +1078,7 @@
   },
   "beer_clausthaler_original_nonalco_05_l_jb": {
     "eko": 37.25,
-    "varus": 30.9,
+    "varus": 29.9,
     "metro": 36.94
   },
   "beer_clausthaler_lemon_nonalco_05_l_jb": {
@@ -1189,7 +1189,7 @@
   },
   "beer_obolon_svitle_05_l_jb": {
     "eko": 24.65,
-    "varus": 235.0,
+    "varus": 20.9,
     "silpo": 25.99,
     "novus": 25.99,
     "metro": 25.7,
@@ -1210,7 +1210,7 @@
     "fozzy": 0
   },
   "beer_ppb_zakarpatske_origin_svitle_05_l_jb": {
-    "eko": 27.99,
+    "eko": 30.69,
     "varus": 29.9,
     "silpo": 23.99,
     "novus": 29.99,
@@ -1270,14 +1270,14 @@
   },
   "beer_teteriv_hmilna_vishnya_napivtemne_05_l_jb": {
     "eko": 35.9,
-    "varus": 37.6,
+    "varus": 39.1,
     "silpo": 37.99,
     "ashan": 43.5,
     "novus": 32.99,
     "nash_kray": 34.99
   },
   "beer_grotwerg_svitle_05_l_jb": {
-    "varus": 32.9
+    "varus": 31.2
   },
   "beer_holland_import_svitle_05_l_jb": {
     "eko": 27.9,
@@ -1294,7 +1294,7 @@
     "varus": 38.9
   },
   "beer_guinness_draught_temne_044_l_jb": {
-    "varus": 99.9,
+    "varus": 38.6,
     "silpo": 119.9,
     "ashan": 113.1,
     "metro": 128.4,
@@ -1307,7 +1307,7 @@
     "fozzy": 48.9
   },
   "beer_warsteinerPremiumVerum_svitle_05_l_jb": {
-    "varus": 86.9,
+    "varus": 82.9,
     "silpo": 86.99
   },
   "beer_dab_temne_05_l_jb": {
@@ -1322,7 +1322,7 @@
     "fozzy": 48.9
   },
   "beer_klosterkellerWeissbierChina_nefilter_svitle_05_l_jb": {
-    "varus": 32.9
+    "varus": 29.9
   },
   "beer_karpackiePils_svitle_05_l_jb": {
     "varus": 34.9
@@ -1358,7 +1358,7 @@
     "silpo": 28.99
   },
   "beer_Lvivske_svitle_48_l_jb": {
-    "varus": 25.8,
+    "varus": 31.1,
     "silpo": 24.99,
     "metro": 26.89,
     "nash_kray": 25.9
@@ -1368,7 +1368,7 @@
     "silpo": 37.49
   },
   "beer_Carlsberg_Pilsner_05_l_jb": {
-    "varus": 38.6,
+    "varus": 37.4,
     "silpo": 37.99,
     "metro": 40.28,
     "fozzy": 40.1
@@ -1394,7 +1394,7 @@
     "fozzy": 48.9
   },
   "kiwi": {
-    "atb": 76.9,
+    "atb": 84.9,
     "eko": 89.9,
     "varus": 110.9,
     "silpo": 14.9,
@@ -1423,7 +1423,7 @@
   "pomegranate": {
     "atb": 174.9,
     "eko": 149.0,
-    "varus": 39.9,
+    "varus": 19.9,
     "silpo": 17.9,
     "metro": 176.7,
     "fozzy": 169.9
@@ -1431,7 +1431,7 @@
   "mango": {
     "atb": 174.9,
     "eko": 149.0,
-    "varus": 40.9,
+    "varus": 19.9,
     "silpo": 17.9,
     "metro": 176.7,
     "fozzy": 169.9
@@ -1439,7 +1439,7 @@
   "tomato": {
     "atb": 65.89,
     "eko": 74.9,
-    "varus": 34.4,
+    "varus": 56.9,
     "metro": 67.5,
     "nash_kray": 77.99,
     "fozzy": 72.66
@@ -1457,9 +1457,9 @@
   "kabachki": {
     "atb": 49.95,
     "eko": 69.9,
-    "varus": 39.9,
+    "varus": 49.9,
     "silpo": 5.5,
-    "novus": 70.59,
+    "novus": 0,
     "metro": 67.5,
     "nash_kray": 59.99,
     "fozzy": 74.9
@@ -1483,7 +1483,7 @@
   },
   "asparagus": {
     "atb": 97.9,
-    "varus": 299.9,
+    "varus": 1.6,
     "silpo": 159.0,
     "novus": 169.0,
     "metro": 140.3,
@@ -1497,7 +1497,7 @@
   },
   "captain_morgan_spiced_gold_1_l": {
     "eko": 469.9,
-    "varus": 589.0,
+    "varus": 429.8,
     "silpo": 469.0,
     "metro": 0,
     "fozzy": 469.0
@@ -1514,7 +1514,7 @@
   "bells_original_07_l": {
     "atb": 401.9,
     "eko": 299.9,
-    "varus": 139.9,
+    "varus": 319.0,
     "silpo": 299.0,
     "novus": 329.0,
     "metro": 388.9,
@@ -1523,7 +1523,7 @@
   },
   "bells_original_1_l": {
     "eko": 399.9,
-    "varus": 589.0,
+    "varus": 491.8,
     "silpo": 639.0,
     "novus": 499.0,
     "metro": 0,
@@ -1531,7 +1531,7 @@
   },
   "bells_spiced_07_l": {
     "eko": 539.6,
-    "varus": 319.0,
+    "varus": 139.9,
     "silpo": 319.0,
     "novus": 394.0,
     "metro": 419.9,
@@ -1539,7 +1539,7 @@
   },
   "martini_asti_white_075_l": {
     "atb": 432.5,
-    "varus": 161.1,
+    "varus": 215.4,
     "silpo": 369.0,
     "ashan": 379.0,
     "novus": 431.0,
@@ -1585,7 +1585,7 @@
   },
   "jack_daniels_07_l": {
     "eko": 942.5,
-    "varus": 699.4,
+    "varus": 636.0,
     "novus": 749.0,
     "metro": 748.9,
     "nash_kray": 73.0,
@@ -1600,7 +1600,7 @@
   },
   "jim_beam_white_07_l": {
     "atb": 735.0,
-    "varus": 214.0,
+    "varus": 699.0,
     "silpo": 679.0,
     "ashan": 559.0,
     "novus": 819.0,
@@ -1608,12 +1608,12 @@
     "fozzy": 494.0
   },
   "borjomi_05_l": {
-    "varus": 214.0
+    "varus": 699.0
   },
   "morshinska_negaz_15_l": {
     "atb": 20.3,
     "eko": 20.3,
-    "varus": 19.9,
+    "varus": 12.1,
     "silpo": 18.29,
     "ashan": 18.5,
     "novus": 18.39,
@@ -1623,7 +1623,7 @@
   "morshinska_lowgaz_15_l": {
     "atb": 20.3,
     "eko": 20.3,
-    "varus": 0,
+    "varus": 12.1,
     "silpo": 18.29,
     "ashan": 18.5,
     "novus": 18.39,
@@ -1633,7 +1633,7 @@
   "morshinska_highgaz_15_l": {
     "atb": 20.3,
     "eko": 20.3,
-    "varus": 19.9,
+    "varus": 15.3,
     "silpo": 18.29,
     "ashan": 18.5,
     "novus": 18.39,
@@ -1673,7 +1673,7 @@
     "novus": 12.99
   },
   "nash_sik_pear_apple_02_l": {
-    "varus": 11.3,
+    "varus": 12.1,
     "silpo": 13.99,
     "novus": 12.99
   },
@@ -1689,14 +1689,251 @@
     "varus": 11.8,
     "silpo": 12.29,
     "ashan": 11.9,
-    "novus": 12.99,
+    "novus": 0,
     "metro": 114.3,
     "fozzy": 13.4
+  },
+  "nash_sik_apple_strawberry_02_l": {
+    "varus": 12.1,
+    "silpo": 11.59,
+    "novus": 13.99,
+    "metro": 110.1,
+    "fozzy": 12.2
+  },
+  "non_stop_original_025_l": {
+    "atb": 21.2,
+    "eko": 25.75,
+    "varus": 20.5,
+    "silpo": 23.19,
+    "ashan": 20.9,
+    "novus": 21.99,
+    "metro": 539.8,
+    "fozzy": 20.9
+  },
+  "non_stop_original_05_l": {
+    "atb": 31.7,
+    "varus": 30.6,
+    "silpo": 34.59,
+    "ashan": 31.3,
+    "novus": 31.99,
+    "metro": 811.0,
+    "fozzy": 34.6
+  },
+  "non_stop_jungle_025_l": {
+    "eko": 25.75,
+    "varus": 22.9,
+    "silpo": 18.99,
+    "ashan": 21.2,
+    "novus": 21.99,
+    "metro": 549.7,
+    "fozzy": 17.9
+  },
+  "non_stop_boost_05_l": {
+    "eko": 38.49,
+    "varus": 31.9,
+    "silpo": 27.59,
+    "ashan": 31.2,
+    "novus": 31.99,
+    "metro": 33.8,
+    "fozzy": 31.9
+  },
+  "non_stop_ultra_05_l": {
+    "eko": 38.49,
+    "varus": 31.9,
+    "silpo": 27.59,
+    "metro": 33.8,
+    "fozzy": 31.2
+  },
+  "non_stop_boost_025_l": {
+    "eko": 25.75,
+    "varus": 23.9,
+    "silpo": 19.99,
+    "metro": 24.73,
+    "fozzy": 17.9
+  },
+  "burn_classic_025_l": {
+    "eko": 32.9,
+    "varus": 33.4,
+    "silpo": 35.74,
+    "ashan": 33.7,
+    "novus": 35.99,
+    "metro": 226.6,
+    "fozzy": 34.8
+  },
+  "burn_classic_05_l": {
+    "atb": 55.5,
+    "eko": 69.05,
+    "varus": 53.5,
+    "silpo": 55.54,
+    "ashan": 49.3,
+    "novus": 53.99,
+    "metro": 323.8,
+    "fozzy": 49.3
+  },
+  "burn_mango_025_l": {
+    "eko": 32.9,
+    "varus": 43.9,
+    "silpo": 41.4,
+    "novus": 41.99,
+    "fozzy": 35.2
+  },
+  "burn_apple_kiwi_05_l": {
+    "eko": 69.05,
+    "varus": 54.5,
+    "silpo": 58.57,
+    "ashan": 52.0,
+    "novus": 58.99,
+    "metro": 226.6,
+    "fozzy": 52.0
+  },
+  "burn_dark_energy_025_l": {
+    "eko": 46.89,
+    "varus": 43.9,
+    "silpo": 38.37,
+    "novus": 42.99
+  },
+  "red_bull_025_l": {
+    "atb": 40.9,
+    "silpo": 41.0,
+    "ashan": 36.6,
+    "novus": 41.99,
+    "metro": 43.42,
+    "fozzy": 41.0
+  },
+  "red_bull_0355_l": {
+    "atb": 54.8,
+    "varus": 55.7,
+    "silpo": 59.58,
+    "ashan": 55.8,
+    "novus": 58.99,
+    "metro": 61.45,
+    "fozzy": 55.7
+  },
+  "red_bull_0473_l": {
+    "atb": 67.9,
+    "varus": 65.7,
+    "silpo": 67.99,
+    "ashan": 67.8,
+    "novus": 67.99,
+    "metro": 74.41,
+    "fozzy": 67.8
+  },
+  "red_bull_0591_l": {
+    "varus": 103.0,
+    "silpo": 99.98,
+    "novus": 99.99,
+    "fozzy": 103.4
+  },
+  "red_bull_sugar_free_025_l": {
+    "varus": 41.8,
+    "silpo": 46.45,
+    "ashan": 41.9,
+    "novus": 45.99,
+    "metro": 46.33,
+    "fozzy": 41.8
+  },
+  "red_bull_red_edition_cavun_025_l": {
+    "varus": 45.9,
+    "silpo": 50.09,
+    "novus": 47.99,
+    "fozzy": 41.8
+  },
+  "red_bull_yellow_edition_tropic_fruits_025_l": {
+    "varus": 45.9,
+    "silpo": 46.85,
+    "ashan": 33.4,
+    "novus": 46.99,
+    "metro": 46.33,
+    "fozzy": 48.2
+  },
+  "monster_0355_l": {
+    "eko": 44.9,
+    "silpo": 60.59,
+    "ashan": 47.4,
+    "novus": 61.99,
+    "metro": 614.5,
+    "nash_kray": 62.8,
+    "fozzy": 39.9
+  },
+  "monster_the_doctor_0355_l": {
+    "eko": 66.19,
+    "varus": 60.5,
+    "silpo": 55.54,
+    "ashan": 47.9,
+    "novus": 61.99,
+    "metro": 614.5,
+    "nash_kray": 62.8,
+    "fozzy": 39.9
+  },
+  "monster_ultra_zero_0355_l": {
+    "eko": 66.19,
+    "varus": 55.5,
+    "silpo": 62.61,
+    "ashan": 49.0,
+    "novus": 61.99,
+    "metro": 614.5,
+    "nash_kray": 62.8,
+    "fozzy": 39.9
+  },
+  "monster_juiced_0355_l": {
+    "eko": 44.9,
+    "varus": 60.5,
+    "silpo": 60.59,
+    "novus": 61.99,
+    "metro": 614.5,
+    "nash_kray": 62.8,
+    "fozzy": 39.9
+  },
+  "pit_bull_coffee_0250_l": {
+    "atb": 15.4,
+    "eko": 22.39,
+    "silpo": 16.19,
+    "novus": 19.49,
+    "fozzy": 17.4
+  },
+  "pit_bull_power_0250_l": {
+    "atb": 15.4,
+    "eko": 21.45,
+    "varus": 14.8,
+    "silpo": 15.69,
+    "novus": 19.49,
+    "metro": 20.41,
+    "fozzy": 17.4
+  },
+  "pit_bull_X_0250_l": {
+    "eko": 21.45,
+    "varus": 19.9,
+    "silpo": 16.19,
+    "novus": 19.49,
+    "fozzy": 19.3
+  },
+  "pit_bull_extra_vitamin_c_0250_l": {
+    "eko": 22.19,
+    "varus": 19.9,
+    "silpo": 18.29,
+    "metro": 20.09,
+    "fozzy": 18.0
+  },
+  "pit_bull_0250_l": {
+    "varus": 14.8,
+    "ashan": 17.91
+  },
+  "maccoffee_gold_rozch_soft_pack_60_gr": {
+    "silpo": 74.49,
+    "fozzy": 78.2
+  },
+  "nescafe_gold_rozch_soft_pack_120_gr": {
+    "varus": 154.0,
+    "silpo": 149.0,
+    "ashan": 152.1,
+    "novus": 129.0,
+    "metro": 0,
+    "fozzy": 151.3
   },
   "borsh_red": {
     "atb": 32.025166666666664,
     "eko": 34.992777777777775,
-    "varus": 36.044444444444444,
+    "varus": 35.672777777777775,
     "silpo": 32.98111111111111,
     "novus": 6.540833333333334,
     "metro": 35.20144444444444,
@@ -1704,8 +1941,8 @@
   },
   "veriniki_potato": {
     "atb": 9.793,
-    "eko": 18.1722,
-    "varus": 15.9608,
+    "eko": 17.953000000000003,
+    "varus": 15.7668,
     "silpo": 17.500100000000003,
     "novus": 11.9901,
     "metro": 19.020000000000003,

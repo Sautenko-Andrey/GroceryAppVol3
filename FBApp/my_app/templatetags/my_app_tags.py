@@ -977,4 +977,11 @@ get_all_markets = mul_tag.create_tag(RelevantMarkets)
 #     return RelevantMarkets.objects.all()
 
 
+#ТЕГ для доступа ко всем ссылкам на файлы для обучения RNN
+@register.simple_tag()
+def get_texts_refers_from_DB():
+    '''Сбор всех ссылок на текстовые файлы для обучения RNN'''
+    return AllTextsStorage.objects.all()
+
+
 

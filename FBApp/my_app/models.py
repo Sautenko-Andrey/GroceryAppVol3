@@ -1,14 +1,15 @@
 from django.db import models
 from django.contrib.auth.models import User
 
+
 class MainPage(models.Model):
     '''Модель для контента главной страницы приложения.
     Применяется заголовок, подзаголовок,текст и брендовый значок приложения.'''
 
     title = models.CharField(max_length=100)
-    under_title=models.CharField(max_length=100,null=True)
+    under_title = models.CharField(max_length=100, null=True)
     text_on_page = models.TextField(blank=True)
-    main_logo=models.ImageField(upload_to='media/%Y/%m/%d/',null=True)
+    main_logo = models.ImageField(upload_to='media/%Y/%m/%d/', null=True)
 
     class Meta:
         verbose_name = 'Контент главной страницы'
@@ -19,20 +20,21 @@ class SitePolitics(models.Model):
     '''Модель пользовательских соглашений,
     включающая "Условия пользования", "Политику конфиденциальности" и "Поилитку cookie".'''
 
-    terms_of_use=models.TextField()
-    privacy_policy=models.TextField()
-    cookie_policy=models.TextField()
+    terms_of_use = models.TextField()
+    privacy_policy = models.TextField()
+    cookie_policy = models.TextField()
 
     class Meta:
-        verbose_name='Пользовательские соглашения'
-        verbose_name_plural='Пользовательские соглашения'
+        verbose_name = 'Пользовательские соглашения'
+        verbose_name_plural = 'Пользовательские соглашения'
+
 
 class UserPhotoUpload(models.Model):
     """Модель, которая будет сохранять в базе данных
     загруженные пользователем изображения товара,
     для дальнейшей их обработки и дообучения НС"""
 
-    user_image=models.ImageField(null=True)
+    user_image = models.ImageField(null=True)
 
     class Meta:
         verbose_name = 'Изображение пользователя'
@@ -44,7 +46,7 @@ class UserItemNameUpload_2(models.Model):
     загруженные пользователем названия товара,
     для дальнейшей их обработки и дообучения НС"""
 
-    user_item_name=models.CharField(max_length=100)
+    user_item_name = models.CharField(max_length=100)
     time_create = models.DateTimeField(auto_now_add=True)
 
     class Meta:
@@ -54,8 +56,8 @@ class UserItemNameUpload_2(models.Model):
 
 class UserPhotoUploadModel_2(models.Model):
     "Рабочая модель для пользовательских фотографий 2-я!!!"
-    image=models.ImageField(null=True, upload_to='photos/user/')
-    time_create=models.DateTimeField(auto_now_add=True)
+    image = models.ImageField(null=True, upload_to='photos/user/')
+    time_create = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         verbose_name = 'Фото пользователя2'
@@ -70,54 +72,55 @@ class ItemsPicsFromNet(models.Model):
     Т.е. тут просто будут храниться изображения продуктов и напитков,
     которые я скачаю из сети.'''
 
-    item_name=models.CharField(max_length=150, null=True)
-    picture=models.ImageField()
-    description=models.TextField(null=True)
+    item_name = models.CharField(max_length=150, null=True)
+    picture = models.ImageField()
+    description = models.TextField(null=True)
+
     class Meta:
         verbose_name = 'Изображения из сети'
         verbose_name_plural = 'Изображения из сети'
 
 
 class Dishes(models.Model):
-    dish_name=models.CharField(max_length=100)
-    count_persons=models.CharField(max_length=2)
-    time_create=models.DateTimeField(auto_now_add=True, null=True)
+    dish_name = models.CharField(max_length=100)
+    count_persons = models.CharField(max_length=2)
+    time_create = models.DateTimeField(auto_now_add=True, null=True)
 
     class Meta:
-        verbose_name='Поиск блюд'
-        verbose_name_plural='Поиск блюд'
+        verbose_name = 'Поиск блюд'
+        verbose_name_plural = 'Поиск блюд'
+
 
 class SetOfProducts(models.Model):
-    product_name=models.CharField(max_length=150)
-    amount=models.CharField(max_length=20)
-    request_time=models.DateTimeField(auto_now_add=True)
-    atb_choice=models.BooleanField(null=True)
-    eko_choice=models.BooleanField(null=True)
-    varus_choice=models.BooleanField(null=True)
-    silpo_choice=models.BooleanField(null=True)
-    ashan_choice=models.BooleanField(null=True)
-    novus_choice=models.BooleanField(null=True)
-    metro_choice=models.BooleanField(null=True)
-    nash_kray_choice=models.BooleanField(null=True)
-    fozzy_choice=models.BooleanField(null=True)
-    owner=models.IntegerField(blank=False)
+    product_name = models.CharField(max_length=150)
+    amount = models.CharField(max_length=20)
+    request_time = models.DateTimeField(auto_now_add=True)
+    atb_choice = models.BooleanField(null=True)
+    eko_choice = models.BooleanField(null=True)
+    varus_choice = models.BooleanField(null=True)
+    silpo_choice = models.BooleanField(null=True)
+    ashan_choice = models.BooleanField(null=True)
+    novus_choice = models.BooleanField(null=True)
+    metro_choice = models.BooleanField(null=True)
+    nash_kray_choice = models.BooleanField(null=True)
+    fozzy_choice = models.BooleanField(null=True)
+    owner = models.IntegerField(blank=False)
 
     def __str__(self):
         return self.product_name
 
-
     class Meta:
-        verbose_name='Набор продуктов'
-        verbose_name_plural='Набор продуктов'
+        verbose_name = 'Набор продуктов'
+        verbose_name_plural = 'Набор продуктов'
+
 
 class InfoAboutDishes(models.Model):
     '''Модель дляадминистратора сайта,
      которая хранит информацию о доступных для поиска блюдах .
      Добавлять инфу можно через админ-панель.'''
 
-    name=models.CharField(max_length=100,verbose_name='Название блюда')
-    img=models.ImageField(verbose_name='Изображение блюда')
-
+    name = models.CharField(max_length=100, verbose_name='Название блюда')
+    img = models.ImageField(verbose_name='Изображение блюда')
 
     class Meta:
         verbose_name = 'Информация о блюдах'
@@ -126,23 +129,24 @@ class InfoAboutDishes(models.Model):
 
 class RelevantMarkets(models.Model):
     '''Модель для добавления маркетов'''
-    market_name=models.CharField(max_length=25,verbose_name='Название маркета')
+    market_name = models.CharField(max_length=25, verbose_name='Название маркета')
 
     class Meta:
         verbose_name = 'Досутпные супермаркеты'
-        verbose_name_plural= 'Досутпные супермаркеты'
+        verbose_name_plural = 'Досутпные супермаркеты'
+
 
 class AvailableDishes(models.Model):
     '''Модель, хранящая все доступные пользователю готовые блюда.'''
-
 
     dish_name = models.CharField(max_length=100, verbose_name="Название блюда")
     dish_description = models.TextField(blank=False, verbose_name="Описание")
     image = models.ImageField(verbose_name='Изображение блюда')
 
     class Meta:
-        verbose_name='Досутпные блюда'
-        verbose_name_plural='Досутпные блюда'
+        verbose_name = 'Досутпные блюда'
+        verbose_name_plural = 'Досутпные блюда'
+
 
 class AvailableDishes2(models.Model):
     '''Модель, хранящая все доступные пользователю готовые блюда.'''
@@ -151,21 +155,27 @@ class AvailableDishes2(models.Model):
     VARENIKI_S_KARTOSHKOY = 'VAR_K'
 
     DISH_CHOICES = [
-        (BORSH,'Борщ украинский'),
-        (VARENIKI_S_KARTOSHKOY,'Вареники с картошкой')
+        (BORSH, 'Борщ украинский'),
+        (VARENIKI_S_KARTOSHKOY, 'Вареники с картошкой')
     ]
 
-    dish_name = models.CharField(max_length=5,choices=DISH_CHOICES)
+    dish_name = models.CharField(max_length=5, choices=DISH_CHOICES)
     dish_description = models.TextField(blank=False, verbose_name="Описание")
     image = models.ImageField(verbose_name='Изображение блюда')
 
     class Meta:
-        verbose_name='Досутпные блюда'
-        verbose_name_plural='Досутпные блюда'
+        verbose_name = 'Досутпные блюда'
+        verbose_name_plural = 'Досутпные блюда'
 
 
+class AllTextsStorage(models.Model):
+    '''Модель, хранящая названия текстовых файлов для
+    для обучения RNN'''
 
+    item_name = models.CharField(max_length=100, verbose_name='Название товара')
+    item_text_file = models.CharField(max_length=50, verbose_name='Файл')
 
-
-
-
+    class Meta:
+        verbose_name = 'Тексты для обучения RNN'
+        verbose_name_plural = 'Тексты для обучения RNN'
+        ordering = ['id']

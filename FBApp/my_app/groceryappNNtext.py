@@ -66,7 +66,8 @@ class GroceryAppText:
         """Функция загрузки обучающей выборки для каждой позиции товара"""
         #создаем єкземпляр класса RefersForRNN:
         all_text_data = RefersForRNN()
-        return all_text_data.get_text()
+        #return all_text_data.get_text()
+        return all_text_data.get_text_from_DB()
 
 
     def converted_data(self):
@@ -96,7 +97,8 @@ class GroceryAppText:
 
         result= []
         for i in range(items):
-            data_list = [make_list(items, i) * self.upload_data()[i + 1] for x in range(1)]
+            #data_list = [make_list(items, i) * self.upload_data()[i + 1] for x in range(1)]
+            data_list = [make_list(items, i) * self.upload_data()[1][i] for x in range(1)]
             for j in data_list:
                 for k in j:
                     result.append(k)

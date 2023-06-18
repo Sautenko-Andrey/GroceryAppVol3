@@ -22,7 +22,8 @@ class TesterForGroceryAppText:
     def prepearing_data(self):
         '''Подготавливаем текст'''
         get_text_data = RefersForRNN()
-        texts = get_text_data.get_text()[0]
+        #texts = get_text_data.get_text()[0]
+        texts = get_text_data.get_text_from_DB()[0]
         return texts
 
     def create_tokenizer(self):
