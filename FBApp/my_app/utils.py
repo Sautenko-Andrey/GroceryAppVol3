@@ -936,6 +936,44 @@ class ContextSupervisor:
             result = self.getting_prices(self.NO_PRICES, get_mars_small)
         elif nn_respond == MARS_BIG:
             result = self.getting_prices(self.NO_PRICES, get_mars_big)
+        elif nn_respond == NUTS_STRAWBERRY:
+            result = self.getting_prices(self.NO_PRICES, get_nuts_strawberry)
+        elif nn_respond == NUTS_SMALL:
+            result = self.getting_prices(self.NO_PRICES, get_nuts_small)
+        elif nn_respond == NUTS_KING_SIZE:
+            result = self.getting_prices(self.NO_PRICES, get_nuts_king_size)
+        elif nn_respond == SNICKERS_SMALL:
+            result = self.getting_prices(self.NO_PRICES, get_snickers_small)
+        elif nn_respond == SNICKERS_SUPER:
+            result = self.getting_prices(self.NO_PRICES, get_snickers_super)
+        elif nn_respond == SNICKERS_CREAMY_PEANUT_BUTTER:
+            result = self.getting_prices(self.NO_PRICES, get_snickers_creamy_peanut_butter)
+        elif nn_respond == SNICKERS_CREAMY_PEANUT_BUTTER_SMALL:
+            result = self.getting_prices(self.NO_PRICES, get_snickers_creamy_peanut_butter_small)
+        elif nn_respond == TWIX_PECHIVO_KARAMEL_50GR:
+            result = self.getting_prices(self.NO_PRICES, get_twix_pechivo_karamel_50gr)
+        elif nn_respond == TWIX_EXTRA_PECHIVO_KARAMEL_75GR:
+            result = self.getting_prices(self.NO_PRICES, get_twix_extra_pechivo_karamel_75gr)
+        elif nn_respond == VODKA_ABSOLUT_05L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_05l)
+        elif nn_respond == VODKA_ABSOLUT_1L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_1l)
+        elif nn_respond == VODKA_ABSOLUT_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_07l)
+        elif nn_respond == VODKA_ABSOLUT_LIME_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_lime_07l)
+        elif nn_respond == VODKA_ABSOLUT_GRAPEFRUIT_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_grapefruit_07l)
+        elif nn_respond == VODKA_ABSOLUT_ELYX_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_elyx_07l)
+        elif nn_respond == VODKA_ABSOLUT_CITRON_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_citron_07l)
+        elif nn_respond == VODKA_ABSOLUT_KURANT_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_kurant_07l)
+        elif nn_respond == VODKA_ABSOLUT_WATERMELON_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_watermelon_07l)
+        elif nn_respond == VODKA_ABSOLUT_MANDARIN_07L:
+            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_mandarin_07l)
 
 
         # тут подключаются блюда

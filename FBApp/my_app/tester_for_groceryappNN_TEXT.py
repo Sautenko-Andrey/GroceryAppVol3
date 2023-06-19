@@ -685,6 +685,44 @@ class TesterForGroceryAppText:
             return MARS_SMALL
         elif np.argmax(result) == 310:
             return MARS_BIG
+        elif np.argmax(result) == 311:
+            return NUTS_STRAWBERRY
+        elif np.argmax(result) == 312:
+            return NUTS_SMALL
+        elif np.argmax(result) == 313:
+            return NUTS_KING_SIZE
+        elif np.argmax(result) == 314:
+            return SNICKERS_SMALL
+        elif np.argmax(result) == 315:
+            return SNICKERS_SUPER
+        elif np.argmax(result) == 316:
+            return SNICKERS_CREAMY_PEANUT_BUTTER
+        elif np.argmax(result) == 317:
+            return SNICKERS_CREAMY_PEANUT_BUTTER_SMALL
+        elif np.argmax(result) == 318:
+            return TWIX_PECHIVO_KARAMEL_50GR
+        elif np.argmax(result) == 319:
+            return TWIX_EXTRA_PECHIVO_KARAMEL_75GR
+        elif np.argmax(result) == 320:
+            return VODKA_ABSOLUT_05L
+        elif np.argmax(result) == 321:
+            return VODKA_ABSOLUT_1L
+        elif np.argmax(result) == 322:
+            return VODKA_ABSOLUT_07L
+        elif np.argmax(result) == 323:
+            return VODKA_ABSOLUT_LIME_07L
+        elif np.argmax(result) == 324:
+            return VODKA_ABSOLUT_GRAPEFRUIT_07L
+        elif np.argmax(result) == 325:
+            return VODKA_ABSOLUT_ELYX_07L
+        elif np.argmax(result) == 326:
+            return VODKA_ABSOLUT_CITRON_07L
+        elif np.argmax(result) == 327:
+            return VODKA_ABSOLUT_KURANT_07L
+        elif np.argmax(result) == 328:
+            return VODKA_ABSOLUT_WATERMELON_07L
+        elif np.argmax(result) == 329:
+            return VODKA_ABSOLUT_MANDARIN_07L
 
 
 

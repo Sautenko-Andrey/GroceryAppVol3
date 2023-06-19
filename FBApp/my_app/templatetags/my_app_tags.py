@@ -954,6 +954,63 @@ get_mars_small = tag.create_tag(ItemsPicsFromNet, 310)
 '''Тэг,возвращающий информацию о "Батончик Mars нуга/карамель в молочному шоколаді, 70г"'''
 get_mars_big = tag.create_tag(ItemsPicsFromNet, 311)
 
+'''Тэг,возвращающий информацию о "Батончик Nuts Strawberry, 42 г"'''
+get_nuts_strawberry = tag.create_tag(ItemsPicsFromNet, 312)
+
+'''Тэг,возвращающий информацию о "Батончик Nuts шоколадний, 42г"'''
+get_nuts_small = tag.create_tag(ItemsPicsFromNet, 313)
+
+'''Тэг,возвращающий информацию о "Батончик Nuts King size шоколадний, 60г"'''
+get_nuts_king_size = tag.create_tag(ItemsPicsFromNet, 314)
+
+'''Тэг,возвращающий информацию о "Батончик Snickers з арахісом у молочному шоколаді, 50г"'''
+get_snickers_small = tag.create_tag(ItemsPicsFromNet, 315)
+
+'''Тэг,возвращающий информацию о "Батончик Snickers Super з арахісом в молочному шоколаді, 112,5г"'''
+get_snickers_super = tag.create_tag(ItemsPicsFromNet, 316)
+
+'''Тэг,возвращающий информацию о "Батончик Snickers з арахісовим маслом, 54,75г"'''
+get_snickers_creamy_peanut_butter = tag.create_tag(ItemsPicsFromNet, 317)
+
+'''Тэг,возвращающий информацию о "Батончик Snickers з арахісовим маслом, 36,5г"'''
+get_snickers_creamy_peanut_butter_small = tag.create_tag(ItemsPicsFromNet, 318)
+
+'''Тэг,возвращающий информацию о "Батончик Twix з печивом і карамеллю в молочному шоколаді, 50г"'''
+get_twix_pechivo_karamel_50gr = tag.create_tag(ItemsPicsFromNet, 319)
+
+'''Тэг,возвращающий информацию о "Батончик Twix Extra печиво-карамель в молочному шоколаді, 75г"'''
+get_twix_extra_pechivo_karamel_75gr = tag.create_tag(ItemsPicsFromNet, 320)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut, 0,5л"'''
+get_vodka_absolut_05l = tag.create_tag(ItemsPicsFromNet, 321)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut, 1 л"'''
+get_vodka_absolut_1l = tag.create_tag(ItemsPicsFromNet, 322)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut, 0,7л"'''
+get_vodka_absolut_07l = tag.create_tag(ItemsPicsFromNet, 323)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Lime, 0,7л"'''
+get_vodka_absolut_lime_07l = tag.create_tag(ItemsPicsFromNet, 324)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Grapefruit, 0,7л"'''
+get_vodka_absolut_grapefruit_07l = tag.create_tag(ItemsPicsFromNet, 325)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Elyx, 0,7л"'''
+get_vodka_absolut_elyx_07l = tag.create_tag(ItemsPicsFromNet, 326)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Citron, 0,7л"'''
+get_vodka_absolut_citron_07l = tag.create_tag(ItemsPicsFromNet, 327)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Kurant, 0,7л"'''
+get_vodka_absolut_kurant_07l = tag.create_tag(ItemsPicsFromNet, 328)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Watermelon, 0,7л"'''
+get_vodka_absolut_watermelon_07l = tag.create_tag(ItemsPicsFromNet, 329)
+
+'''Тэг,возвращающий информацию о "Горілка Absolut Mandarin, 0,7л"'''
+get_vodka_absolut_mandarin_07l = tag.create_tag(ItemsPicsFromNet, 330)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():
