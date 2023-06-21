@@ -73,7 +73,7 @@ all_products_names = [
         "atb": parser.apple_golden_parcer()[0],
         "eko": parser.apple_golden_parcer()[1],
         "varus": parser.apple_golden_parcer()[2],
-        "silpo": parser.apple_golden_parcer()[3],
+        "silpo": parser.apple_golden_parcer()[3] * silpo_correct_price,
         "metro": parser.apple_golden_parcer()[6],
         "nash_kray": parser.apple_golden_parcer()[7],
         "fozzy": parser.apple_golden_parcer()[8]
@@ -114,7 +114,7 @@ all_products_names = [
         "atb": parser.onion_parcer()[0],
         "eko": parser.onion_parcer()[1],
         "varus": parser.onion_parcer()[2],
-        "silpo": parser.onion_parcer()[3],
+        "silpo": parser.onion_parcer()[3] * silpo_correct_price,
         "novus": parser.onion_parcer()[5],
         "metro": parser.onion_parcer()[6],
         "nash_kray": parser.onion_parcer()[7],
@@ -124,7 +124,7 @@ all_products_names = [
         "atb": parser.apple_black_prince_parcer()[0],
         "eko": parser.apple_black_prince_parcer()[1],
         "varus": parser.apple_black_prince_parcer()[2],
-        "silpo": parser.apple_black_prince_parcer()[3],
+        "silpo": parser.apple_black_prince_parcer()[3] * silpo_correct_price,
         "metro": parser.apple_black_prince_parcer()[6],
         "fozzy": parser.apple_black_prince_parcer()[8]
     }},
@@ -135,7 +135,7 @@ all_products_names = [
         "atb": parser.limon_parcer()[0],
         "eko": parser.limon_parcer()[1],
         "varus": parser.limon_parcer()[2],
-        "silpo": parser.limon_parcer()[3],
+        "silpo": parser.limon_parcer()[3] * silpo_correct_price,
         "novus": parser.limon_parcer()[5],
         "metro": parser.limon_parcer()[6],
         "nash_kray": parser.limon_parcer()[7],
@@ -173,7 +173,7 @@ all_products_names = [
         "atb": parser.carrot_parcer()[0],
         "eko": parser.carrot_parcer()[1],
         "varus": parser.carrot_parcer()[2],
-        "silpo": parser.carrot_parcer()[3],
+        "silpo": parser.carrot_parcer()[3] * silpo_correct_price,
         "novus": parser.carrot_parcer()[5],
         "metro": parser.carrot_parcer()[6],
         "nash_kray": parser.carrot_parcer()[7],
@@ -183,7 +183,7 @@ all_products_names = [
         "atb": parser.cabbage_parcer()[0],
         "eko": parser.cabbage_parcer()[1],
         "varus": parser.cabbage_parcer()[2],
-        "silpo": parser.cabbage_parcer()[3],
+        "silpo": parser.cabbage_parcer()[3] * silpo_correct_price,
         "novus": parser.cabbage_parcer()[5],
         "metro": parser.cabbage_parcer()[6],
         "nash_kray": parser.cabbage_parcer()[7],
@@ -193,7 +193,7 @@ all_products_names = [
         "atb": parser.egg_parcer()[0],
         "eko": parser.egg_parcer()[1],
         "varus": parser.egg_parcer()[2],
-        "silpo": parser.egg_parcer()[3],
+        "silpo": parser.egg_parcer()[3] * silpo_correct_price,
         "ashan": parser.egg_parcer()[4],
         "novus": parser.egg_parcer()[5],
         "metro": parser.egg_parcer()[6],
@@ -245,7 +245,7 @@ all_products_names = [
         "atb": parser.pork_lopatka_parser()[0],
         "eko": parser.pork_lopatka_parser()[1],
         "varus": parser.pork_lopatka_parser()[2],
-        "silpo": parser.pork_lopatka_parser()[3],
+        "silpo": parser.pork_lopatka_parser()[3] * silpo_correct_price,
         "novus": parser.pork_lopatka_parser()[5],
         "metro": parser.pork_lopatka_parser()[6],
         "nash_kray": parser.pork_lopatka_parser()[7],
@@ -255,7 +255,7 @@ all_products_names = [
         "atb": parser.potato_parser()[0],
         "eko": parser.potato_parser()[1],
         "varus": parser.potato_parser()[2],
-        "silpo": parser.pork_lopatka_parser()[3],
+        "silpo": parser.pork_lopatka_parser()[3] * silpo_correct_price,
         "novus": parser.potato_parser()[5],
         "metro": parser.potato_parser()[6],
         "fozzy": parser.potato_parser()[8]
@@ -264,7 +264,7 @@ all_products_names = [
         "atb": parser.beet_parser()[0],
         "eko": parser.beet_parser()[1],
         "varus": parser.beet_parser()[2],
-        "silpo": parser.beet_parser()[3],
+        "silpo": parser.beet_parser()[3] * silpo_correct_price,
         "novus": parser.beet_parser()[5],
         "metro": parser.beet_parser()[6],
         "fozzy": parser.beet_parser()[8]
@@ -321,7 +321,7 @@ all_products_names = [
         "atb": parser.apple_gala_parser()[0],
         "eko": parser.apple_gala_parser()[1],
         "varus": parser.apple_gala_parser()[2],
-        "silpo": parser.apple_gala_parser()[3],
+        "silpo": parser.apple_gala_parser()[3] * silpo_correct_price,
         "novus": parser.apple_gala_parser()[5],
         "metro": parser.apple_gala_parser()[6],
         "fozzy": parser.apple_gala_parser()[8]
@@ -1431,7 +1431,7 @@ all_products_names = [
         "atb": parser.banana_parser()[0],
         "eko": parser.banana_parser()[1],
         "varus": parser.banana_parser()[2],
-        "silpo": parser.banana_parser()[3],
+        "silpo": parser.banana_parser()[3] * silpo_correct_price,
         "novus": parser.banana_parser()[5],
         "metro": parser.banana_parser()[6],
         "nash_kray": parser.banana_parser()[7],
@@ -1442,7 +1442,7 @@ all_products_names = [
         "atb": parser.orange_parser()[0],
         "eko": parser.orange_parser()[1],
         "varus": parser.orange_parser()[2],
-        "silpo": parser.orange_parser()[3],
+        "silpo": parser.orange_parser()[3] * silpo_correct_price,
         "novus": parser.orange_parser()[5],
         "metro": parser.orange_parser()[6],
         "nash_kray": parser.orange_parser()[7],
@@ -1453,7 +1453,7 @@ all_products_names = [
         "atb": parser.kiwi_parser()[0],
         "eko": parser.kiwi_parser()[1],
         "varus": parser.kiwi_parser()[2],
-        "silpo": parser.kiwi_parser()[3],
+        "silpo": parser.kiwi_parser()[3] * silpo_correct_price,
         "metro": parser.kiwi_parser()[6],
         "nash_kray": parser.kiwi_parser()[7],
         "fozzy": parser.kiwi_parser()[8]
@@ -1462,7 +1462,7 @@ all_products_names = [
     {'coconut': {
         "atb": parser.coconut_parser()[0],
         "varus": parser.coconut_parser()[2],
-        "silpo": parser.coconut_parser()[3],
+        "silpo": parser.coconut_parser()[3] * silpo_correct_price,
         "metro": parser.coconut_parser()[6],
         "nash_kray": parser.coconut_parser()[7],
         "fozzy": parser.coconut_parser()[8]
@@ -1472,7 +1472,7 @@ all_products_names = [
         "atb": parser.grapefruit_parser()[0],
         "eko": parser.grapefruit_parser()[1],
         "varus": parser.grapefruit_parser()[2],
-        "silpo": parser.grapefruit_parser()[3],
+        "silpo": parser.grapefruit_parser()[3] * silpo_correct_price,
         "novus": parser.grapefruit_parser()[5],
         "metro": parser.grapefruit_parser()[6],
         "nash_kray": parser.grapefruit_parser()[7],
@@ -1483,7 +1483,7 @@ all_products_names = [
         "atb": parser.pomegranate_parser()[0],
         "eko": parser.pomegranate_parser()[1],
         "varus": parser.pomegranate_parser()[2],
-        "silpo": parser.pomegranate_parser()[3],
+        "silpo": parser.pomegranate_parser()[3] * silpo_correct_price,
         "metro": parser.pomegranate_parser()[6],
         "fozzy": parser.pomegranate_parser()[8]
     }},
@@ -1510,7 +1510,7 @@ all_products_names = [
         "atb": parser.cucumber_parser()[0],
         "eko": parser.cucumber_parser()[1],
         "varus": parser.cucumber_parser()[2],
-        "silpo": parser.cucumber_parser()[3],
+        "silpo": parser.cucumber_parser()[3] * silpo_correct_price,
         "novus": parser.cucumber_parser()[5],
         "metro": parser.cucumber_parser()[6],
         "nash_kray": parser.cucumber_parser()[7],
@@ -1521,7 +1521,7 @@ all_products_names = [
         "atb": parser.kabachki_parser()[0],
         "eko": parser.kabachki_parser()[1],
         "varus": parser.kabachki_parser()[2],
-        "silpo": parser.kabachki_parser()[3],
+        "silpo": parser.kabachki_parser()[3] * silpo_correct_price,
         "novus": parser.kabachki_parser()[5],
         "metro": parser.kabachki_parser()[6],
         "nash_kray": parser.kabachki_parser()[7],
@@ -1531,7 +1531,7 @@ all_products_names = [
     {'red_bolgar_papper': {
         "atb": parser.red_bolg_papper_parser()[0],
         "eko": parser.red_bolg_papper_parser()[1],
-        "silpo": parser.red_bolg_papper_parser()[3],
+        "silpo": parser.red_bolg_papper_parser()[3] * silpo_correct_price,
         "novus": parser.red_bolg_papper_parser()[5],
         "metro": parser.red_bolg_papper_parser()[6],
         "nash_kray": parser.red_bolg_papper_parser()[7],
@@ -1540,7 +1540,7 @@ all_products_names = [
 
     {'yellow_bolgar_papper': {
         "atb": parser.yellow_bolg_papper_parser()[0],
-        "silpo": parser.yellow_bolg_papper_parser()[3],
+        "silpo": parser.yellow_bolg_papper_parser()[3] * silpo_correct_price,
         "novus": parser.yellow_bolg_papper_parser()[5],
         "metro": parser.yellow_bolg_papper_parser()[6],
         "nash_kray": parser.yellow_bolg_papper_parser()[7],
@@ -2051,6 +2051,422 @@ all_products_names = [
         "novus": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[5],
         "metro": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[6],
         "fozzy": parser.nescafe_gold_rozch_soft_pack_120_gr_parser()[8]
+    }},
+
+    {'grano_dorado_gold_rozch_soft_pack_130_gr': {
+        "fozzy": parser.grano_dorado_gold_soft_pack_130_gr_parser()[8]
+    }},
+
+    {'nescafe_classic_soft_pack_60_gr': {
+        "eko": parser.nescafe_classic_soft_pack_60_gr_parser()[1],
+        "varus": parser.nescafe_classic_soft_pack_60_gr_parser()[2],
+        "silpo": parser.nescafe_classic_soft_pack_60_gr_parser()[3],
+        "ashan": parser.nescafe_classic_soft_pack_60_gr_parser()[4],
+        "novus": parser.nescafe_classic_soft_pack_60_gr_parser()[5],
+        "metro": parser.nescafe_classic_soft_pack_60_gr_parser()[6],
+        "fozzy": parser.nescafe_classic_soft_pack_60_gr_parser()[8]
+    }},
+
+    {'chorna_karta_gold_soft_pack_400_gr': {
+        "silpo": parser.chorna_karta_gold_soft_pack_400_gr_parser()[3],
+        "ashan": parser.chorna_karta_gold_soft_pack_400_gr_parser()[4],
+        "novus": parser.chorna_karta_gold_soft_pack_400_gr_parser()[5],
+        "fozzy": parser.chorna_karta_gold_soft_pack_400_gr_parser()[8]
+    }},
+
+    {'bounty_57gr': {
+        "atb": parser.bounty_small_gr_parser()[0],
+        "eko": parser.bounty_small_gr_parser()[1],
+        "varus": parser.bounty_small_gr_parser()[2],
+        "silpo": parser.bounty_small_gr_parser()[3],
+        "ashan": parser.bounty_small_gr_parser()[4],
+        "novus": parser.bounty_small_gr_parser()[5],
+        "metro": parser.bounty_small_gr_parser()[6],
+        "nash_kray": parser.bounty_small_gr_parser()[7],
+        "fozzy": parser.bounty_small_gr_parser()[8]
+    }},
+
+    {'bounty_85gr': {
+        "atb": parser.bounty_big_gr_parser()[0],
+        "eko": parser.bounty_big_gr_parser()[1],
+        "varus": parser.bounty_big_gr_parser()[2],
+        "silpo": parser.bounty_big_gr_parser()[3],
+        "ashan": parser.bounty_big_gr_parser()[4],
+        "novus": parser.bounty_big_gr_parser()[5],
+        "metro": parser.bounty_big_gr_parser()[6],
+        "fozzy": parser.bounty_big_gr_parser()[8]
+    }},
+
+    {'mars_51gr': {
+        "eko": parser.mars_51gr_parser()[1],
+        "varus": parser.mars_51gr_parser()[2],
+        "silpo": parser.mars_51gr_parser()[3],
+        "metro": parser.mars_51gr_parser()[6],
+        "nash_kray": parser.mars_51gr_parser()[7],
+        "fozzy": parser.mars_51gr_parser()[8]
+    }},
+
+    {'mars_70gr': {
+        "atb": parser.mars_70gr_parser()[0],
+        "eko": parser.mars_70gr_parser()[1],
+        "varus": parser.mars_70gr_parser()[2],
+        "silpo": parser.mars_70gr_parser()[3],
+        "novus": parser.mars_70gr_parser()[5],
+        "metro": parser.mars_70gr_parser()[6],
+        "nash_kray": parser.mars_70gr_parser()[7],
+        "fozzy": parser.mars_70gr_parser()[8]
+    }},
+
+    {'nuts_strawberry': {
+        "eko": parser.nuts_strawberry_parser()[1],
+        "varus": parser.nuts_strawberry_parser()[2],
+        "silpo": parser.nuts_strawberry_parser()[3],
+        "ashan": parser.nuts_strawberry_parser()[4],
+        "metro": parser.nuts_strawberry_parser()[6],
+        "fozzy": parser.nuts_strawberry_parser()[8]
+    }},
+
+    {'nuts_42gr': {
+        "eko": parser.nuts_42gr_parser()[1],
+        "varus": parser.nuts_42gr_parser()[2],
+        "silpo": parser.nuts_42gr_parser()[3],
+        "ashan": parser.nuts_42gr_parser()[4],
+        "novus": parser.nuts_42gr_parser()[5],
+        "metro": parser.nuts_42gr_parser()[6],
+        "nash_kray": parser.nuts_42gr_parser()[7],
+        "fozzy": parser.nuts_42gr_parser()[8]
+    }},
+
+    {'nuts_king_size_60gr': {
+        "eko": parser.nuts_king_size_60gr_parser()[1],
+        "varus": parser.nuts_king_size_60gr_parser()[2],
+        "ashan": parser.nuts_king_size_60gr_parser()[4],
+        "novus": parser.nuts_king_size_60gr_parser()[5],
+        "metro": parser.nuts_king_size_60gr_parser()[6],
+        "nash_kray": parser.nuts_king_size_60gr_parser()[7],
+        "fozzy": parser.nuts_king_size_60gr_parser()[8]
+    }},
+
+    {'snickers_50gr': {
+        "atb": parser.snickers_50gr_parser()[0],
+        "eko": parser.snickers_50gr_parser()[1],
+        "varus": parser.snickers_50gr_parser()[2],
+        "silpo": parser.snickers_50gr_parser()[3],
+        "ashan": parser.snickers_50gr_parser()[4],
+        "novus": parser.snickers_50gr_parser()[5],
+        "metro": parser.snickers_50gr_parser()[6],
+        "nash_kray": parser.snickers_50gr_parser()[7],
+        "fozzy": parser.snickers_50gr_parser()[8]
+    }},
+
+    {'snickers_super_112_5gr': {
+        "atb": parser.snickers_super_112_5gr_parser()[0],
+        "varus": parser.snickers_super_112_5gr_parser()[2],
+        "silpo": parser.snickers_super_112_5gr_parser()[3],
+        "ashan": parser.snickers_super_112_5gr_parser()[4],
+        "novus": parser.snickers_super_112_5gr_parser()[5],
+        "metro": parser.snickers_super_112_5gr_parser()[6],
+        "nash_kray": parser.snickers_super_112_5gr_parser()[7],
+        "fozzy": parser.snickers_super_112_5gr_parser()[8]
+    }},
+
+    {'snickers_creamy_peanut_butter_54_75gr': {
+        "atb": parser.snickers_creamy_peanut_butter_54_75gr_parser()[0],
+        "eko": parser.snickers_creamy_peanut_butter_54_75gr_parser()[1],
+        "varus": parser.snickers_creamy_peanut_butter_54_75gr_parser()[2],
+        "silpo": parser.snickers_creamy_peanut_butter_54_75gr_parser()[3],
+        "ashan": parser.snickers_creamy_peanut_butter_54_75gr_parser()[4],
+        "metro": parser.snickers_creamy_peanut_butter_54_75gr_parser()[6],
+        "nash_kray": parser.snickers_creamy_peanut_butter_54_75gr_parser()[7],
+        "fozzy": parser.snickers_creamy_peanut_butter_54_75gr_parser()[8]
+    }},
+
+    {'snickers_creamy_peanut_butter_36_5gr': {
+        "varus": parser.snickers_creamy_peanut_butter_36_5gr_parser()[2],
+        "silpo": parser.snickers_creamy_peanut_butter_36_5gr_parser()[3],
+        "ashan": parser.snickers_creamy_peanut_butter_36_5gr_parser()[4],
+        "metro": parser.snickers_creamy_peanut_butter_36_5gr_parser()[6],
+        "nash_kray": parser.snickers_creamy_peanut_butter_36_5gr_parser()[7],
+        "fozzy": parser.snickers_creamy_peanut_butter_36_5gr_parser()[8]
+    }},
+
+    {'twix_50gr': {
+        "atb": parser.twix_50gr_parser()[0],
+        "eko": parser.twix_50gr_parser()[1],
+        "varus": parser.twix_50gr_parser()[2],
+        "silpo": parser.twix_50gr_parser()[3],
+        "ashan": parser.twix_50gr_parser()[4],
+        "novus": parser.twix_50gr_parser()[5],
+        "metro": parser.twix_50gr_parser()[6],
+        "nash_kray": parser.twix_50gr_parser()[7],
+        "fozzy": parser.twix_50gr_parser()[8]
+    }},
+
+    {'twix_75gr': {
+        "atb": parser.twix_75gr_parser()[0],
+        "eko": parser.twix_75gr_parser()[1],
+        "varus": parser.twix_75gr_parser()[2],
+        "silpo": parser.twix_75gr_parser()[3],
+        "ashan": parser.twix_75gr_parser()[4],
+        "novus": parser.twix_75gr_parser()[5],
+        "metro": parser.twix_75gr_parser()[6],
+        "nash_kray": parser.twix_75gr_parser()[7],
+        "fozzy": parser.twix_75gr_parser()[8]
+    }},
+
+    {'vodka_absolut_05l': {
+        "eko": parser.vodka_absolut_05l_parser()[1],
+        "varus": parser.vodka_absolut_05l_parser()[2],
+        "silpo": parser.vodka_absolut_05l_parser()[3],
+        "ashan": parser.vodka_absolut_05l_parser()[4],
+        "novus": parser.vodka_absolut_05l_parser()[5],
+        "metro": parser.vodka_absolut_05l_parser()[6],
+        "nash_kray": parser.vodka_absolut_05l_parser()[7],
+        "fozzy": parser.vodka_absolut_05l_parser()[8]
+    }},
+
+    {'vodka_absolut_1l': {
+        "varus": parser.vodka_absolut_1l_parser()[2],
+        "silpo": parser.vodka_absolut_1l_parser()[3],
+        "ashan": parser.vodka_absolut_1l_parser()[4],
+        "novus": parser.vodka_absolut_1l_parser()[5],
+        "metro": parser.vodka_absolut_1l_parser()[6],
+        "fozzy": parser.vodka_absolut_1l_parser()[8]
+    }},
+
+    {'vodka_absolut_07l': {
+        "varus": parser.vodka_absolut_07l_parser()[2],
+        "silpo": parser.vodka_absolut_07l_parser()[3],
+        "ashan": parser.vodka_absolut_07l_parser()[4],
+        "novus": parser.vodka_absolut_07l_parser()[5],
+        "metro": parser.vodka_absolut_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_lime_07l': {
+        "eko": parser.vodka_absolut_lime_07l_parser()[1],
+        "silpo": parser.vodka_absolut_lime_07l_parser()[3],
+        "ashan": parser.vodka_absolut_lime_07l_parser()[4],
+        "novus": parser.vodka_absolut_lime_07l_parser()[5],
+        "metro": parser.vodka_absolut_lime_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_lime_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_grapefruit_07l': {
+        "silpo": parser.vodka_absolut_grapefruit_07l_parser()[3],
+        "ashan": parser.vodka_absolut_grapefruit_07l_parser()[4],
+        "novus": parser.vodka_absolut_grapefruit_07l_parser()[5],
+        "metro": parser.vodka_absolut_grapefruit_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_grapefruit_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_elyx_07l': {
+        "ashan": parser.vodka_absolut_elyx_07l_parser()[4],
+        "fozzy": parser.vodka_absolut_elyx_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_citron_07l': {
+        "varus": parser.vodka_absolut_citron_07l_parser()[2],
+        "silpo": parser.vodka_absolut_citron_07l_parser()[3],
+        "ashan": parser.vodka_absolut_citron_07l_parser()[4],
+        "novus": parser.vodka_absolut_citron_07l_parser()[5],
+        "metro": parser.vodka_absolut_citron_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_citron_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_kurant_07l': {
+        "silpo": parser.vodka_absolut_kurant_07l_parser()[3],
+        "ashan": parser.vodka_absolut_kurant_07l_parser()[4],
+        "novus": parser.vodka_absolut_kurant_07l_parser()[5],
+        "metro": parser.vodka_absolut_kurant_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_kurant_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_watermelon_07l': {
+        "silpo": parser.vodka_absolut_watermelon_07l_parser()[3],
+        "ashan": parser.vodka_absolut_watermelon_07l_parser()[4],
+        "novus": parser.vodka_absolut_watermelon_07l_parser()[5],
+        "metro": parser.vodka_absolut_watermelon_07l_parser()[6],
+        "fozzy": parser.vodka_absolut_watermelon_07l_parser()[8]
+    }},
+
+    {'vodka_absolut_mandarin_07l': {
+        "silpo": parser.vodka_absolut_mandarin_07l_parser()[3],
+        "novus": parser.vodka_absolut_mandarin_07l_parser()[5],
+        "fozzy": parser.vodka_absolut_mandarin_07l_parser()[8]
+    }},
+
+    {'vodka_finland_05l': {
+        "atb": parser.vodka_finland_05l_parser()[0],
+        "eko": parser.vodka_finland_05l_parser()[1],
+        "silpo": parser.vodka_finland_05l_parser()[3],
+        "ashan": parser.vodka_finland_05l_parser()[4],
+        "novus": parser.vodka_finland_05l_parser()[5],
+        "metro": parser.vodka_finland_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_05l_parser()[7],
+        "fozzy": parser.vodka_finland_05l_parser()[8]
+    }},
+
+    {'vodka_finland_07l': {
+        "eko": parser.vodka_finland_07l_parser()[1],
+        "varus": parser.vodka_finland_07l_parser()[2],
+        "silpo": parser.vodka_finland_07l_parser()[3],
+        "ashan": parser.vodka_finland_07l_parser()[4],
+        "novus": parser.vodka_finland_07l_parser()[5],
+        "metro": parser.vodka_finland_07l_parser()[6],
+        "fozzy": parser.vodka_finland_07l_parser()[8]
+    }},
+
+    {'vodka_finland_1l': {
+        "eko": parser.vodka_finland_1l_parser()[1],
+        "varus": parser.vodka_finland_1l_parser()[2],
+        "silpo": parser.vodka_finland_1l_parser()[3],
+        "ashan": parser.vodka_finland_1l_parser()[4],
+        "novus": parser.vodka_finland_1l_parser()[5],
+        "metro": parser.vodka_finland_1l_parser()[6],
+        "fozzy": parser.vodka_finland_1l_parser()[8]
+    }},
+
+    {'vodka_finland_redberry_05l': {
+        "varus": parser.vodka_finland_redberry_05l_parser()[2],
+        "silpo": parser.vodka_finland_redberry_05l_parser()[3],
+        "ashan": parser.vodka_finland_redberry_05l_parser()[4],
+        "metro": parser.vodka_finland_redberry_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_redberry_05l_parser()[7],
+        "fozzy": parser.vodka_finland_redberry_05l_parser()[8]
+    }},
+
+    {'vodka_finland_redberry_1l': {
+        "silpo": parser.vodka_finland_redberry_1l_parser()[3],
+        "novus": parser.vodka_finland_redberry_1l_parser()[5],
+    }},
+
+    {'vodka_finland_cranberry_05l': {
+        "atb": parser.vodka_finland_cranberry_05l_parser()[0],
+        "eko": parser.vodka_finland_cranberry_05l_parser()[1],
+        "silpo": parser.vodka_finland_cranberry_05l_parser()[3],
+        "ashan": parser.vodka_finland_cranberry_05l_parser()[4],
+        "novus": parser.vodka_finland_cranberry_05l_parser()[5],
+        "metro": parser.vodka_finland_cranberry_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_cranberry_05l_parser()[7],
+        "fozzy": parser.vodka_finland_cranberry_05l_parser()[8]
+    }},
+
+    {'vodka_finland_cranberry_1l': {
+        "eko": parser.vodka_finland_cranberry_1l_parser()[1],
+        "silpo": parser.vodka_finland_cranberry_1l_parser()[3],
+        "novus": parser.vodka_finland_cranberry_1l_parser()[5],
+        "metro": parser.vodka_finland_cranberry_1l_parser()[6],
+        "fozzy": parser.vodka_finland_cranberry_1l_parser()[8]
+    }},
+
+    {'vodka_finland_grapefruit_05l': {
+        "eko": parser.vodka_finland_grapefruit_05l_parser()[1],
+        "varus": parser.vodka_finland_grapefruit_05l_parser()[2],
+        "silpo": parser.vodka_finland_grapefruit_05l_parser()[3],
+        "ashan": parser.vodka_finland_grapefruit_05l_parser()[4],
+        "novus": parser.vodka_finland_grapefruit_05l_parser()[5],
+        "metro": parser.vodka_finland_grapefruit_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_grapefruit_05l_parser()[7],
+        "fozzy": parser.vodka_finland_grapefruit_05l_parser()[8]
+    }},
+
+    {'vodka_finland_lime_05l': {
+        "eko": parser.vodka_finland_lime_05l_parser()[1],
+        "varus": parser.vodka_finland_lime_05l_parser()[2],
+        "silpo": parser.vodka_finland_lime_05l_parser()[3],
+        "ashan": parser.vodka_finland_lime_05l_parser()[4],
+        "novus": parser.vodka_finland_lime_05l_parser()[5],
+        "metro": parser.vodka_finland_lime_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_lime_05l_parser()[7],
+        "fozzy": parser.vodka_finland_lime_05l_parser()[8]
+    }},
+
+    {'vodka_finland_coconut_05l': {
+        "eko": parser.vodka_finland_coconut_05l_parser()[1],
+        "silpo": parser.vodka_finland_coconut_05l_parser()[3],
+        "ashan": parser.vodka_finland_coconut_05l_parser()[4],
+        "novus": parser.vodka_finland_coconut_05l_parser()[5],
+        "metro": parser.vodka_finland_coconut_05l_parser()[6],
+        "nash_kray": parser.vodka_finland_coconut_05l_parser()[7],
+        "fozzy": parser.vodka_finland_coconut_05l_parser()[8]
+    }},
+
+    {'vodka_finland_blackcurrant_05l': {
+        "varus": parser.vodka_finland_blackcurrant_05l_parser()[2],
+        "silpo": parser.vodka_finland_blackcurrant_05l_parser()[3],
+        "fozzy": parser.vodka_finland_blackcurrant_05l_parser()[8]
+    }},
+
+    {'vodka_finland_lime_1l': {
+        "silpo": parser.vodka_finland_lime_1l_parser()[3],
+        "novus": parser.vodka_finland_lime_1l_parser()[5],
+        "metro": parser.vodka_finland_lime_1l_parser()[6],
+        "fozzy": parser.vodka_finland_lime_1l_parser()[8]
+    }},
+
+    {'vodka_finland_blackcurrant_1l': {
+        "silpo": parser.vodka_finland_blackcurrant_1l_parser()[3],
+        "novus": parser.vodka_finland_blackcurrant_1l_parser()[5],
+        "metro": parser.vodka_finland_blackcurrant_1l_parser()[6],
+        "fozzy": parser.vodka_finland_blackcurrant_1l_parser()[8]
+    }},
+
+    {'vodka_finland_grapefruit_1l': {
+        "silpo": parser.vodka_finland_grapefruit_1l_parser()[3],
+        "novus": parser.vodka_finland_grapefruit_1l_parser()[5],
+        "metro": parser.vodka_finland_grapefruit_1l_parser()[6],
+        "fozzy": parser.vodka_finland_grapefruit_1l_parser()[8]
+    }},
+
+    {'vodka_finland_white_175l': {
+        "novus": parser.vodka_finland_grapefruit_1l_parser()[5],
+        "fozzy": parser.vodka_finland_grapefruit_1l_parser()[8]
+    }},
+
+    {'nemiroff_delicat_05l': {
+        "atb": parser.vodka_nemiroff_delicat_soft_05l_parser()[0],
+        "eko": parser.vodka_nemiroff_delicat_soft_05l_parser()[1],
+        "silpo": parser.vodka_nemiroff_delicat_soft_05l_parser()[3],
+        "novus": parser.vodka_nemiroff_delicat_soft_05l_parser()[5],
+        "metro": parser.vodka_nemiroff_delicat_soft_05l_parser()[6],
+        "nash_kray": parser.vodka_nemiroff_delicat_soft_05l_parser()[7],
+        "fozzy": parser.vodka_nemiroff_delicat_soft_05l_parser()[8]
+    }},
+
+    {'nemiroff_shtof_05l': {
+        "atb": parser.vodka_nemiroff_shtof_05l_parser()[0],
+        "eko": parser.vodka_nemiroff_shtof_05l_parser()[1],
+        "varus": parser.vodka_nemiroff_shtof_05l_parser()[2],
+        "silpo": parser.vodka_nemiroff_shtof_05l_parser()[3],
+        "novus": parser.vodka_nemiroff_shtof_05l_parser()[5],
+        "metro": parser.vodka_nemiroff_shtof_05l_parser()[6],
+        "fozzy": parser.vodka_nemiroff_shtof_05l_parser()[8]
+    }},
+
+    {'nemiroff_ukr_pshen_05l': {
+        "atb": parser.vodka_nemiroff_ukr_pshen_05l_parser()[0],
+        "eko": parser.vodka_nemiroff_ukr_pshen_05l_parser()[1],
+        "varus": parser.vodka_nemiroff_ukr_pshen_05l_parser()[2],
+        "silpo": parser.vodka_nemiroff_ukr_pshen_05l_parser()[3],
+        "novus": parser.vodka_nemiroff_ukr_pshen_05l_parser()[5],
+        "fozzy": parser.vodka_nemiroff_ukr_pshen_05l_parser()[8]
+    }},
+
+    {'nemiroff_delux_05l': {
+        "varus": parser.vodka_nemiroff_delux_05l_parser()[2],
+        "silpo": parser.vodka_nemiroff_delux_05l_parser()[3],
+        "ashan": parser.vodka_nemiroff_delux_05l_parser()[4],
+        "novus": parser.vodka_nemiroff_delux_05l_parser()[5],
+        "nash_kray": parser.vodka_nemiroff_delux_05l_parser()[7],
+        "fozzy": parser.vodka_nemiroff_delux_05l_parser()[8]
+    }},
+
+    {'nemiroff_lex_05l': {
+        "eko": parser.vodka_nemiroff_lex_05l_parser()[1],
+        "silpo": parser.vodka_nemiroff_lex_05l_parser()[3],
+        "novus": parser.vodka_nemiroff_lex_05l_parser()[5],
+        "fozzy": parser.vodka_nemiroff_lex_05l_parser()[8]
     }},
 
 

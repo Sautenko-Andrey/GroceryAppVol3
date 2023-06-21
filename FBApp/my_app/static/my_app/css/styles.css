@@ -523,6 +523,17 @@ div.posts_style {
     color: #CC0000;
 }
 
+.out-of-stoke {
+    color: grey;
+
+}
+
+.out-of-stoke:hover {
+    color: #3F4137;
+}
+
+
+
 .black_text {
     color: #000000;
 }

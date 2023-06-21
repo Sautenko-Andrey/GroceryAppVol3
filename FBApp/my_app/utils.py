@@ -923,57 +923,97 @@ class ContextSupervisor:
         elif nn_respond == NESCAFE_GOLD_ROZCH_SOFT_PACK_120_GR:
             result = self.getting_prices('nescafe_gold_rozch_soft_pack_120_gr', get_nescafe_gold_rozch_soft_pack_120_gr)
         elif nn_respond == GRANO_DORADO_GOLD_SOFT_P_130GR:
-            result = self.getting_prices(self.NO_PRICES, get_grano_dorado_gold_soft_pack_130_gr)
+            result = self.getting_prices('grano_dorado_gold_rozch_soft_pack_130_gr', get_grano_dorado_gold_soft_pack_130_gr)
         elif nn_respond == NESCAFE_CLASSIC_SOFT_P_60GR:
-            result = self.getting_prices(self.NO_PRICES, get_nescafe_classic_soft_pack_60_gr)
+            result = self.getting_prices('nescafe_classic_soft_pack_60_gr', get_nescafe_classic_soft_pack_60_gr)
         elif nn_respond == CHORNA_CARTA_GOLD_SOFT_P_400GR:
-            result = self.getting_prices(self.NO_PRICES, get_chorna_carta_gold_soft_pack_400_gr)
+            result = self.getting_prices('chorna_karta_gold_soft_pack_400_gr', get_chorna_carta_gold_soft_pack_400_gr)
         elif nn_respond == BOUNTY_SMALL:
-            result = self.getting_prices(self.NO_PRICES, get_bounty_small)
+            result = self.getting_prices('bounty_57gr', get_bounty_small)
         elif nn_respond == BOUNTY_BIG:
-            result = self.getting_prices(self.NO_PRICES, get_bounty_big)
+            result = self.getting_prices('bounty_85gr', get_bounty_big)
         elif nn_respond == MARS_SMALL:
-            result = self.getting_prices(self.NO_PRICES, get_mars_small)
+            result = self.getting_prices('mars_51gr', get_mars_small)
         elif nn_respond == MARS_BIG:
-            result = self.getting_prices(self.NO_PRICES, get_mars_big)
+            result = self.getting_prices('mars_70gr', get_mars_big)
         elif nn_respond == NUTS_STRAWBERRY:
-            result = self.getting_prices(self.NO_PRICES, get_nuts_strawberry)
+            result = self.getting_prices('nuts_strawberry', get_nuts_strawberry)
         elif nn_respond == NUTS_SMALL:
-            result = self.getting_prices(self.NO_PRICES, get_nuts_small)
+            result = self.getting_prices('nuts_42gr', get_nuts_small)
         elif nn_respond == NUTS_KING_SIZE:
-            result = self.getting_prices(self.NO_PRICES, get_nuts_king_size)
+            result = self.getting_prices('nuts_king_size_60gr', get_nuts_king_size)
         elif nn_respond == SNICKERS_SMALL:
-            result = self.getting_prices(self.NO_PRICES, get_snickers_small)
+            result = self.getting_prices('snickers_50gr', get_snickers_small)
         elif nn_respond == SNICKERS_SUPER:
-            result = self.getting_prices(self.NO_PRICES, get_snickers_super)
+            result = self.getting_prices('snickers_super_112_5gr', get_snickers_super)
         elif nn_respond == SNICKERS_CREAMY_PEANUT_BUTTER:
-            result = self.getting_prices(self.NO_PRICES, get_snickers_creamy_peanut_butter)
+            result = self.getting_prices('snickers_creamy_peanut_butter_54_75gr', get_snickers_creamy_peanut_butter)
         elif nn_respond == SNICKERS_CREAMY_PEANUT_BUTTER_SMALL:
-            result = self.getting_prices(self.NO_PRICES, get_snickers_creamy_peanut_butter_small)
+            result = self.getting_prices('snickers_creamy_peanut_butter_36_5gr', get_snickers_creamy_peanut_butter_small)
         elif nn_respond == TWIX_PECHIVO_KARAMEL_50GR:
-            result = self.getting_prices(self.NO_PRICES, get_twix_pechivo_karamel_50gr)
+            result = self.getting_prices('twix_50gr', get_twix_pechivo_karamel_50gr)
         elif nn_respond == TWIX_EXTRA_PECHIVO_KARAMEL_75GR:
-            result = self.getting_prices(self.NO_PRICES, get_twix_extra_pechivo_karamel_75gr)
+            result = self.getting_prices('twix_75gr', get_twix_extra_pechivo_karamel_75gr)
         elif nn_respond == VODKA_ABSOLUT_05L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_05l)
+            result = self.getting_prices('vodka_absolut_05l', get_vodka_absolut_05l)
         elif nn_respond == VODKA_ABSOLUT_1L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_1l)
+            result = self.getting_prices('vodka_absolut_1l', get_vodka_absolut_1l)
         elif nn_respond == VODKA_ABSOLUT_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_07l)
+            result = self.getting_prices('vodka_absolut_07l', get_vodka_absolut_07l)
         elif nn_respond == VODKA_ABSOLUT_LIME_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_lime_07l)
+            result = self.getting_prices('vodka_absolut_lime_07l', get_vodka_absolut_lime_07l)
         elif nn_respond == VODKA_ABSOLUT_GRAPEFRUIT_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_grapefruit_07l)
+            result = self.getting_prices('vodka_absolut_grapefruit_07l', get_vodka_absolut_grapefruit_07l)
         elif nn_respond == VODKA_ABSOLUT_ELYX_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_elyx_07l)
+            result = self.getting_prices('vodka_absolut_elyx_07l', get_vodka_absolut_elyx_07l)
         elif nn_respond == VODKA_ABSOLUT_CITRON_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_citron_07l)
+            result = self.getting_prices('vodka_absolut_citron_07l', get_vodka_absolut_citron_07l)
         elif nn_respond == VODKA_ABSOLUT_KURANT_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_kurant_07l)
+            result = self.getting_prices('vodka_absolut_kurant_07l', get_vodka_absolut_kurant_07l)
         elif nn_respond == VODKA_ABSOLUT_WATERMELON_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_watermelon_07l)
+            result = self.getting_prices('vodka_absolut_watermelon_07l', get_vodka_absolut_watermelon_07l)
         elif nn_respond == VODKA_ABSOLUT_MANDARIN_07L:
-            result = self.getting_prices(self.NO_PRICES, get_vodka_absolut_mandarin_07l)
+            result = self.getting_prices('vodka_absolut_mandarin_07l', get_vodka_absolut_mandarin_07l)
+        elif nn_respond == VODKA_FINLAND_05L:
+            result = self.getting_prices('vodka_finland_05l', get_vodka_finland_05l)
+        elif nn_respond == VODKA_FINLAND_07L:
+            result = self.getting_prices('vodka_finland_07l', get_vodka_finland_07l)
+        elif nn_respond == VODKA_FINLAND_1L:
+            result = self.getting_prices('vodka_finland_1l', get_vodka_finland_1l)
+        elif nn_respond == VODKA_FINLAND_REDBERRY_05L:
+            result = self.getting_prices('vodka_finland_redberry_05l', get_vodka_finland_redberry_05l)
+        elif nn_respond == VODKA_FINLAND_REDBERRY_1L:
+            result = self.getting_prices('vodka_finland_redberry_1l', get_vodka_finland_redberry_1l)
+        elif nn_respond == VODKA_FINLAND_CRANBERRY_05L:
+            result = self.getting_prices('vodka_finland_cranberry_05l', get_vodka_finland_cranberry_05l)
+        elif nn_respond == VODKA_FINLAND_CRANBERRY_1L:
+            result = self.getting_prices('vodka_finland_cranberry_1l', get_vodka_finland_cranberry_1l)
+        elif nn_respond == VODKA_FINLAND_GRAPEFRUIT_05L:
+            result = self.getting_prices('vodka_finland_grapefruit_05l', get_vodka_finland_grapefruit_05l)
+        elif nn_respond == VODKA_FINLAND_LIME_05L:
+            result = self.getting_prices('vodka_finland_lime_05l', get_vodka_finland_lime_05l)
+        elif nn_respond == VODKA_FINLAND_COCONUT_05L:
+            result = self.getting_prices('vodka_finland_coconut_05l', get_vodka_finland_coconut_05l)
+        elif nn_respond == VODKA_FINLAND_BLACKCURRANT_05L:
+            result = self.getting_prices('vodka_finland_blackcurrant_05l', get_vodka_finland_blackcurrant_05l)
+        elif nn_respond == VODKA_FINLAND_LIME_1L:
+            result = self.getting_prices('vodka_finland_lime_1l', get_vodka_finland_lime_1l)
+        elif nn_respond == VODKA_FINLAND_BLACKCURRANT_1L:
+            result = self.getting_prices('vodka_finland_blackcurrant_1l', get_vodka_finland_blackcurrant_1l)
+        elif nn_respond == VODKA_FINLAND_GRAPEFRUIT_1L:
+            result = self.getting_prices('vodka_finland_grapefruit_1l', get_vodka_finland_grapefruit_1l)
+        elif nn_respond == VODKA_FINLAND_WHITE_175L:
+            result = self.getting_prices('vodka_finland_white_175l', get_vodka_finland_white_175l)
+        elif nn_respond == VODKA_NEMIROFF_DELIKAT_SOFT_05L:
+            result = self.getting_prices('nemiroff_delicat_05l', get_vodka_nemiroff_delikat_soft_05l)
+        elif nn_respond == VODKA_NEMIROFF_SHTOF_05L:
+            result = self.getting_prices('nemiroff_shtof_05l', get_vodka_nemiroff_shtof_05l)
+        elif nn_respond == VODKA_NEMIROFF_UKR_PSHEN_05L:
+            result = self.getting_prices('nemiroff_ukr_pshen_05l', get_vodka_nemiroff_ukr_pshen_05l)
+        elif nn_respond == VODKA_NEMIROFF_DELUX_05L:
+            result = self.getting_prices('nemiroff_delux_05l', get_vodka_nemiroff_delux_05l)
+        elif nn_respond == VODKA_NEMIROFF_LEX_05L:
+            result = self.getting_prices('nemiroff_lex_05l', get_vodka_nemiroff_lex_05l)
 
 
         # тут подключаются блюда

@@ -33,45 +33,83 @@
                         <div class="card" style="width: 16rem;">
                             <div class="card-body">
                                 {% for key,value in product.items %}
-                                <h5 class="card-title">{{key}}</h5>
+                                <h5 class="card-title"><b>{{key}}</b></h5>
                                 <img src="{{value.19.picture.url}}" class="card-img-top" alt="Error">
                             </div>
                             <ul class="list-group list-group-flush">
-                                <li class="list-group-item">Количество: {{value.0}}</li>
+                                <li class="list-group-item"><b>Количество: {{value.0}}</b></li>
                                 {% if value.1 %}
-                                <li class="list-group-item">АТБ: {{value.10}} грн</li>
+                                {% if value.10 == 0 %}
+                                <li class="list-group-item out-of-stoke">АТБ: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">АТБ: {{value.10}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.2 %}
-                                <li class="list-group-item">ЭКО: {{value.11}} грн</li>
+                                {% if value.11 == 0 %}
+                                <li class="list-group-item out-of-stoke">ЭКО: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">ЭКО: {{value.11}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.3 %}
-                                <li class="list-group-item">Varus: {{value.12}} грн</li>
+                                {% if value.12 == 0 %}
+                                <li class="list-group-item out-of-stoke">Varus: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Varus: {{value.12}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.4 %}
-                                <li class="list-group-item">Сильпо: {{value.13}} грн</li>
+                                {% if value.13 == 0 %}
+                                <li class="list-group-item out-of-stoke">Сильпо: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Сильпо: {{value.13}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.5 %}
-                                <li class="list-group-item">Ашан: {{value.14}} грн</li>
+                                <!--начало нового -->
+                                {% if value.14 == 0 %}
+                                <li class="list-group-item out-of-stoke">Ашан: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Ашан: {{value.14}} грн</li>
+                                {% endif %}
+                                <!--конец нового-->
                                 {% else %}
                                 {% endif %}
                                 {% if value.6 %}
-                                <li class="list-group-item">Novus: {{value.15}} грн</li>
+                                {% if value.15 == 0 %}
+                                <li class="list-group-item out-of-stoke">Novus: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Novus: {{value.15}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.7 %}
-                                <li class="list-group-item">Metro: {{value.16}} грн</li>
+                                {% if value.16 == 0 %}
+                                <li class="list-group-item out-of-stoke">Metro: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Metro: {{value.16}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.8 %}
-                                <li class="list-group-item">Наш Край: {{value.17}} грн</li>
+                                {% if value.17 == 0 %}
+                                <li class="list-group-item out-of-stoke">Наш Край: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Наш Край: {{value.17}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 {% if value.9 %}
-                                <li class="list-group-item">Fozzy: {{value.18}} грн</li>
+                                {% if value.18 == 0 %}
+                                <li class="list-group-item out-of-stoke">Fozzy: нет в наличии</li>
+                                {% else %}
+                                <li class="list-group-item black-red-style">Fozzy: {{value.18}} грн</li>
+                                {% endif %}
                                 {% else %}
                                 {% endif %}
                                 <!--определяем лучшую цену!-->

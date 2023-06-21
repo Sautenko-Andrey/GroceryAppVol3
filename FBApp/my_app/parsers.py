@@ -2967,6 +2967,516 @@ class ProductParserVol2:
             'https://fozzyshop.ua/kofe-rastvorimyj/12542-kofe-nescafe-gold-140g-7613035524811.html'
         ])
 
+    def grano_dorado_gold_soft_pack_130_gr_parser(self):
+        ''' Парсер для Grano Dorado GOLD розчинна чорна у м'якій упаковці 130 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/85692-kofe-rastvorimyj-grano-dorado-gold-4820017296069.html'
+        ])
+
+    def nescafe_classic_soft_pack_60_gr_parser(self):
+        ''' Парсер для Nescafe Classic розчинна чорна у м'якій упаковці 60 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-60g--07613035585881/',
+            'https://varus.ua/kava-naturalna-rozchinna-granulovana-nescafe-classic-60-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-classic-granulovana-100-naturalna-667662',
+            'https://auchan.ua/ua/kofe-rastvorimyj-nescafe-classic-60-g-503659/',
+            'https://novus.online/product/kava-naturalna-rozcinna-neskafe-klasik-maka-upakovka-60g',
+            'https://metro.zakaz.ua/uk/products/kava-neskafe-60g--07613035585881/',
+            'https://fozzyshop.ua/kofe-rastvorimyj/12667-kofe-rastvorimyj-nescafe-classic-7613035585881.html'
+        ])
+
+    def chorna_karta_gold_soft_pack_400_gr_parser(self):
+        ''' Парсер для Чорна карта Gold розчинна чорна у м'якій упаковці 400 гр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-chernaia-karta-paket-650455',
+            'https://auchan.ua/ua/kofe-rastvorimyj-chorna-karta-gold-400-g-509883/',
+            'https://novus.online/product/kava-rozcinna-corna-karta-gold-paket-400g',
+            'https://fozzyshop.ua/kofe-rastvorimyj/24028-kofe-rastvorimyj-chernaya-karta-paket-8718868866394.html'
+        ])
+
+    def bounty_small_gr_parser(self):
+        ''' Парсер для Bounty 57 грамм'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-57g-mars-bounty',
+            'https://eko.zakaz.ua/uk/products/batonchik-baunti-57g-niderlandi--00058496813048/',
+            'https://varus.ua/batonchik-bounty-shokoladnyy-s-kokosom-55-g',
+            'https://shop.silpo.ua/product/batonchyk-bounty-z-m-iakottiu-kokosu-u-molochnomu-shokoladi-597388',
+            'https://auchan.ua/ua/batonchik-bounty-57-g-215729/',
+            'https://novus.online/product/batoncik-bounty-v-molocno-sokoladnij-glazuri-ta-kokosovou-nacinkou-57g',
+            'https://metro.zakaz.ua/uk/products/batonchik-baunti-57g--04011100977624/',
+            'https://shop.nashkraj.ua/kovel/product/207698-batonchik-bounty-57g',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/15610-batonchik-bounty-s-myakotyu-kokosa-v-molochnom-shokolade-40111216.html'
+        ])
+
+    def bounty_big_gr_parser(self):
+        ''' Парсер для Bounty 85 грамм'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-85-mars-bounty-trio-molocnij-sokolad',
+            'https://eko.zakaz.ua/uk/products/batonchik-baunti-85g--04011100038653/',
+            'https://varus.ua/batonchik-bounty-trio-shokoladnyy-s-kokosom-88-5-g',
+            'https://shop.silpo.ua/product/batonchyk-bounty-trio-z-m-iakottiu-kokosu-u-molochnomu-shokoladi-597389',
+            'https://auchan.ua/ua/batonchik-bounty-trio-85-g-236148/',
+            'https://novus.online/product/batoncik-bounty-triov-molocno-sokoladnij-glazuri-ta-kokosovou-nacinkou-855g',
+            'https://metro.zakaz.ua/uk/products/batonchik-baunti-85g--04011100038653/',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/15608-batonchik-bounty-trio-s-myakotyu-kokosa-v-molochnom-shokolade-4011100038653.html'
+        ])
+
+    def mars_51gr_parser(self):
+        ''' Парсер для Mars 51 грамм'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/batonchik-mars-51g--05000159502931/',
+            'https://varus.ua/batonchik-mars-shokoladnyy-s-nugoy-i-karamelyu-51-g',
+            'https://shop.silpo.ua/product/batonchyk-mars-z-nugoiu-ta-karamelliu-u-molochnomu-shokoladi-719198',
+            'https://metro.zakaz.ua/uk/products/batonchik-mars-51g--05000159502931/',
+            'https://shop.nashkraj.ua/kovel/product/228489-batonchik-mars-51g-nuga-ta-karamel',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/43707-batonchik-mars-s-nugoj-i-karamelyu-v-molochn-shokolad-5000159502931.html'
+        ])
+
+    def mars_70gr_parser(self):
+        ''' Парсер для Mars 70 грамм'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-70g-mars-2-z-nugou-i-karamellu-vkritij-molocnim-sokoladom',
+            'https://eko.zakaz.ua/uk/products/batonchik-mars-70g--05000159408301/',
+            'https://varus.ua/batonchik-mars-shokoladnyy-s-nugoy-i-karamelyu-2-h-35-g',
+            'https://shop.silpo.ua/product/batonchyk-mars-nuga-karamel-u-molochnomu-shokoladi-659822',
+            'https://novus.online/product/batoncik-mars2-z-nugou-ta-karamellu-70g',
+            'https://metro.zakaz.ua/uk/products/batonchik-mars-70g--05000159408301/',
+            'https://shop.nashkraj.ua/kovel/product/228490-batonchik-mars-70g-nuga-ta-karamel',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/37601-batonchik-mars-nuga-karamel-v-molochnom-shokolade-5000159408301.html'
+        ])
+
+    def nuts_strawberry_parser(self):
+        ''' Парсер для Nuts Strawberry'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/batonchik-nats-42g--08593893780576/',
+            'https://varus.ua/batonchik-nuts-strawberry-42-g',
+            'https://shop.silpo.ua/product/batonchyk-nuts-strawberry-911321',
+            'https://auchan.ua/ua/batonchik-nestle-nuts-strawberry-s-klubnichnym-vkusom-42-g-1176093/',
+            'https://metro.zakaz.ua/uk/products/batonchik-nats-42g--08593893780576/',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/98861-batonchik-nuts-strawberry-0250014951250.html'
+        ])
+
+    def nuts_42gr_parser(self):
+        ''' Парсер для Nuts 42 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/batonchik-nats-42g--08593893745841/',
+            'https://varus.ua/batonchik-nuts-shokoladnyy-s-lesnymi-orehami-42-g',
+            'https://shop.silpo.ua/product/batonchyk-nuts-shokoladnyi-638804',
+            'https://auchan.ua/ua/batonchik-nestle-nuts-47-g-609588/',
+            'https://novus.online/product/batoncik-sokoladnij-nuts-single-42g',
+            'https://metro.zakaz.ua/uk/products/batonchik-nats-42g--08593893745841/',
+            'https://shop.nashkraj.ua/kovel/product/230685-batonchik-nuts-42g-oridzhinal',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/27584-batonchik-nuts-shokoladnyj-8593893745841.html'
+        ])
+
+    def nuts_king_size_60gr_parser(self):
+        ''' Парсер для Nuts King Size 60 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/batonchik-nats-60g--08593893745865/',
+            'https://varus.ua/batonchik-nuts-king-size-shokoladnyy-s-lesnymi-orehami-60-g',
+            'https://auchan.ua/ua/batonchik-nestle-nuts-king-60-g-609623/',
+            'https://novus.online/product/batoncik-sokoladnij-nuts-king-size-60g',
+            'https://metro.zakaz.ua/uk/products/batonchik-nats-60g--08593893745865/',
+            'https://shop.nashkraj.ua/kovel/product/235550-batonchik-nuts-60g-king',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/27583-batonchik-nuts-king-size-shokoladnyj-8593893745865.html'
+        ])
+
+    def snickers_50gr_parser(self):
+        ''' Парсер для Snickers 50 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-50g-mars-snickers',
+            'https://eko.zakaz.ua/uk/products/batonchik-snikers-50g--05000159461122/',
+            'https://varus.ua/batonchik-snickers-shokoladnyy-s-nugoy-karamelyu-i-arahisom-50-g',
+            'https://shop.silpo.ua/product/batonchyk-snickers-z-arakhisom-u-molochnomu-shokoladi-597390',
+            'https://auchan.ua/ua/batonchik-snickers-50-g-215728/',
+            'https://novus.online/product/batoncik-snickers-50g',
+            'https://metro.zakaz.ua/uk/products/batonchik-snikers-50-5g--04607065001445/',
+            'https://shop.nashkraj.ua/kovel/product/207700-batonchik-snickers-50g',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/15622-batonchik-snickers-s-arakhisom-v-molochnom-shokolade-5000159461122.html'
+        ])
+
+    def snickers_super_112_5gr_parser(self):
+        ''' Парсер для Snickers Super 112.5 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-1125g-mars-snickers-super1',
+            'https://varus.ua/batonchik-snickers-super-shokoladnyy-s-nugoy-karamelyu-i-arahisom-112-5-g',
+            'https://shop.silpo.ua/product/batonchyk-snickers-super-z-arakhisom-u-molochnomu-shokoladi-664167',
+            'https://auchan.ua/ua/batonchik-snickers-super-1-239043/',
+            'https://novus.online/product/batoncik-snickers-super-1-1125g',
+            'https://metro.zakaz.ua/uk/products/batonchik-snikers-112-50g--05900951261060/',
+            'https://shop.nashkraj.ua/kovel/product/228367-batonchik-snickers-super1-112-5g',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/28997-batonchik-snickers-super-s-arakhisom-v-molochnom-shokolade-5900951261060.html'
+        ])
+
+    def snickers_creamy_peanut_butter_54_75gr_parser(self):
+        ''' Парсер для Snickers Creamy Peanut Butter 54_75 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-5475g-mars-snickers-creamy-z-arahisovim-maslom',
+            'https://eko.zakaz.ua/uk/products/54-75g--05900951286612/',
+            'https://varus.ua/batonchik-snickers-creamy-peanut-butter-shokoladnyy-s-arahisovoy-pastoy-karamelyu-i-arahisom-3-h-18-25-g',
+            'https://shop.silpo.ua/product/batonchyk-snickers-z-arakhisovym-maslom-847012',
+            'https://auchan.ua/ua/batonchik-snickers-creamy-peanut-butter-54-75-g-616194/',
+            'https://metro.zakaz.ua/uk/products/54-75g--05900951286612/',
+            'https://shop.nashkraj.ua/kovel/product/425809-batonchik-snickers-54-75g-creamy-arakh-mas',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/84955-batonchik-snickers-s-arakhisovym-maslom-5900951286612.html'
+        ])
+
+    def snickers_creamy_peanut_butter_36_5gr_parser(self):
+        ''' Парсер для Snickers Creamy Peanut Butter 36_5 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/batonchik-snickers-creamy-peanut-butter-shokoladnyy-s-arahisovoy-pastoy-karamelyu-i-arahisom-2-h-18-25-g',
+            'https://shop.silpo.ua/product/batonchyk-snickers-z-arakhisovym-maslom-847011',
+            'https://auchan.ua/ua/batonchik-snickers-creamy-peanut-butter-36-5-g-616187/',
+            'https://metro.zakaz.ua/uk/products/batonchik-snikers-36-5g--05900951283963/',
+            'https://shop.nashkraj.ua/kovel/product/426614-batonchik-snickers-36-5g-creamy-arakh-masl',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/84954-batonchik-snickers-s-arakhisovym-maslom-5900951283963.html'
+        ])
+
+    def twix_50gr_parser(self):
+        ''' Парсер для Twix 50 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/batoncik-50g-mars-twix',
+            'https://eko.zakaz.ua/uk/products/batonchik-tviks-50g--05000159459228/',
+            'https://varus.ua/batonchik-twix-shokoladnyy-s-pechenem-i-karamelyu-75-g',
+            'https://shop.silpo.ua/product/batonchyk-twix-z-pechyvom-ta-karamelliu-u-molochnomu-shokoladi-597393',
+            'https://auchan.ua/ua/batonchik-twix-50-g-215730/',
+            'https://novus.online/product/batoncik-twix-50g',
+            'https://metro.zakaz.ua/uk/products/batonchik-tviks-50g--05000159459228/',
+            'https://shop.nashkraj.ua/kovel/product/207701-batonchik-twix-50g-molochniy-shokolad',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/15627-batonchik-twix-s-pechenem-i-karamelyu-v-molochnom-shokolade-5000159459228.html'
+        ])
+
+    def twix_75gr_parser(self):
+        ''' Парсер для Twix 75 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/pecivo-75g-mars-twix-ekstra',
+            'https://eko.zakaz.ua/uk/products/batonchik-tviks-75g--05900951028502/',
+            'https://varus.ua/batonchik-twix-xtra-shokoladnyy-s-pechenem-i-karamelyu-75-g',
+            'https://shop.silpo.ua/product/batonchyk-twix-extra-pechyvo-i-karamel-u-molochnomu-shokoladi-659819',
+            'https://auchan.ua/ua/batonchik-twix-extra-75-g-236149/',
+            'https://novus.online/product/batoncik-twix-xtra-u-molocnomu-sokoladi-75g',
+            'https://metro.zakaz.ua/uk/products/batonchik-tviks-75g--05900951028502/',
+            'https://shop.nashkraj.ua/kovel/product/228493-batonchik-twix-75g-ekstra-u-molochn-shokol',
+            'https://fozzyshop.ua/shokolad-i-batonchiki/28999-batonchik-twix-extra-pechene-karamel-v-molochnom-shokolade-5900951028502.html'
+        ])
+
+    def vodka_absolut_05l_parser(self):
+        ''' Парсер для водка Absolut 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-absoliut-500ml-shvetsiia--07312040017072/',
+            'https://varus.ua/gorilka-absolut-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-absolut-28285',
+            'https://auchan.ua/ua/vodka-absolut-40-0-5-l-28285-1074421/',
+            'https://novus.online/product/gorilka-absolut-gol-40-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-500ml-shvetsiia--07312040017072/',
+            'https://shop.nashkraj.ua/kovel/product/21963-gorilka-absolut-0-5l-40',
+            'https://fozzyshop.ua/vodka/1898-vodka-absolut-7312040017072.html'
+        ])
+
+    def vodka_absolut_1l_parser(self):
+        ''' Парсер для водка Absolut 1 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-absolut-40-1-l',
+            'https://shop.silpo.ua/product/gorilka-absolut-31808',
+            'https://auchan.ua/ua/vodka-absolut-40-1l-1047284/',
+            'https://novus.online/product/gorilka-absolut-gol-40-1l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-1000ml-shvetsiia--07312040017034/',
+            'https://fozzyshop.ua/vodka/1923-vodka-absolut-7312040550326.html'
+        ])
+
+    def vodka_absolut_07l_parser(self):
+        ''' Парсер для водка Absolut 0.7 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-absolut-40-0-7-l',
+            'https://shop.silpo.ua/product/gorilka-absolut-40-439155',
+            'https://auchan.ua/ua/vodka-40-absolut-0-7-l-1249591/',
+            'https://novus.online/product/gorilka-absolut-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml-shvetsiia--07312040017010/',
+            'https://fozzyshop.ua/vodka/1840-vodka-absolut-40-7312040017683.html'
+        ])
+
+    def vodka_absolut_lime_07l_parser(self):
+        ''' Парсер для водка Absolut Lime 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-absoliut-700ml--07312040551668/',
+            'https://shop.silpo.ua/product/gorilka-absolut-lime-794090',
+            'https://auchan.ua/ua/vodka-absolut-lime-40-700-ml-887542/',
+            'https://novus.online/product/gorilka-absolut-lime-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml--07312040551668/',
+            'https://fozzyshop.ua/vodka/73354-vodka-absolut-lime-7312040551668.html'
+        ])
+
+    def vodka_absolut_grapefruit_07l_parser(self):
+        ''' Парсер для водка Absolut Grapefruit 0.7 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-absolut-grapefruit-794091',
+            'https://auchan.ua/ua/vodka-absolut-grapefruit-40-700-ml-887535/',
+            'https://novus.online/product/gorilka-absolut-grapefruit-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml--07312040552153/',
+            'https://fozzyshop.ua/vodka/73353-vodka-absolut-grapefruit-7312040552153.html'
+        ])
+
+    def vodka_absolut_elyx_07l_parser(self):
+        ''' Парсер для водка Absolut Elyx 0.7 л'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/vodka-absolut-elyx-42-3-700-ml-887570/',
+            'https://fozzyshop.ua/vodka/36500-vodka-absolut-elyx-423-7312040217014.html'
+        ])
+
+    def vodka_absolut_citron_07l_parser(self):
+        ''' Парсер для водка Absolut Citron 0.7 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-absolut-citron-40-0-7-l',
+            'https://shop.silpo.ua/product/gorilka-absolut-citron-455671',
+            'https://auchan.ua/ua/vodka-absolut-sitron-40-700-ml-1164939/',
+            'https://novus.online/product/gorilka-absolut-citron-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml-shvetsiia--07312040090709/',
+            'https://fozzyshop.ua/vodka/1841-vodka-absolut-citron-7312040090709.html'
+        ])
+
+    def vodka_absolut_kurant_07l_parser(self):
+        ''' Парсер для водка Absolut Kurant 0.7 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-absolut-kurant-40-439153',
+            'https://auchan.ua/ua/vodka-absolut-kurant-40-700-ml-1164945/',
+            'https://novus.online/product/gorilka-40-absolut-surgant-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml-shvetsiia--07312040020706/',
+            'https://fozzyshop.ua/vodka/1842-vodka-absolut-kurant-40-7312040020706.html'
+        ])
+
+    def vodka_absolut_watermelon_07l_parser(self):
+        ''' Парсер для водка Absolut Watermelon 0.7 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-absolut-watermelon-857471',
+            'https://auchan.ua/ua/vodka-absolut-watermelon-38-700-ml-887556/',
+            'https://novus.online/product/horilka-absolut-watermelon-38-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-absoliut-700ml--07312040552726/',
+            'https://fozzyshop.ua/vodka/93433-vodka-absolut-watermelon-7312040552726.html'
+        ])
+
+    def vodka_absolut_mandarin_07l_parser(self):
+        ''' Парсер для водка Absolut Mandarin 0.7 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-absolut-mandarin-459689',
+            'https://novus.online/product/gorilka-40-absolut-mandrin-07l',
+            'https://fozzyshop.ua/vodka/1843-vodka-absolut-mandarin-7312040050703.html'
+        ])
+
+    def vodka_finland_05l_parser(self):
+        ''' Парсер для водка Finland 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-finlandia-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--06412709021271/',
+            'https://shop.silpo.ua/product/gorilka-finlandia-37541',
+            'https://auchan.ua/ua/vodka-finlandia-40-0-5-l-1074606/',
+            'https://novus.online/product/gorilka-finlandia-40-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--06412709021271/',
+            'https://shop.nashkraj.ua/kovel/product/22549-gorilka-finlandia-0-5l-40',
+            'https://fozzyshop.ua/vodka/2036-vodka-finlandia-6412709021271.html'
+        ])
+
+    def vodka_finland_07l_parser(self):
+        ''' Парсер для водка Finland 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-700ml-finliandiia--06412709021776/',
+            'https://varus.ua/gorilka-finlandia-40-0-7-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-216183',
+            'https://auchan.ua/ua/vodka-finlandia-40-0-7l-1047865/',
+            'https://novus.online/product/gorilka-finlandia-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-700ml-finliandiia--06412709021776/',
+            'https://fozzyshop.ua/vodka/2058-vodka-finlandia-6412709021776.html'
+        ])
+
+    def vodka_finland_1l_parser(self):
+        ''' Парсер для водка Finland 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--06412700021027/',
+            'https://varus.ua/gorilka-finlandia-40-1-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-9112',
+            'https://auchan.ua/ua/vodka-finlandia-40-1l-1047871/',
+            'https://novus.online/product/gorilka-finlandia-40-1l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--06412700021027/',
+            'https://fozzyshop.ua/vodka/16366-vodka-finlandia-6412700021027.html'
+        ])
+
+    def vodka_finland_redberry_05l_parser(self):
+        ''' Парсер для водка Finland Redberry 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-finlandia-redberry-37-5-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-chervona-iagoda-241997',
+            'https://auchan.ua/ua/vodka-finlandia-kljukva-37-5-0-5-l-48335-1074601/',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873002223/',
+            'https://shop.nashkraj.ua/kovel/product/176253-napiy-alk-finlandia-0-5l-redberry-37-5',
+            'https://fozzyshop.ua/vodka/2038-vodka-finlandia-redberry-5099873002223.html'
+        ])
+
+    def vodka_finland_redberry_1l_parser(self):
+        ''' Парсер для водка Finland Redberry 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-finlandia-chervona-iagoda-255607',
+            'https://novus.online/product/gorilka-finlandia-redberri-40-1l',
+        ])
+
+    def vodka_finland_cranberry_05l_parser(self):
+        ''' Парсер для водка Finland Cranberry 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-finlandia-cranberry-375',
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873001950/',
+            'https://shop.silpo.ua/product/gorilka-finlandia-zhuravlyna-47723',
+            'https://auchan.ua/ua/vodka-finlandia-kljukva-37-5-0-5-l-1074591/',
+            'https://novus.online/product/gorilka-finlandia-zuravlina-bila-375-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873001950/',
+            'https://shop.nashkraj.ua/kovel/product/176251-napiy-alk-finlandia-0-5l-cranberry-37-5',
+            'https://fozzyshop.ua/vodka/2059-vodka-finlandia-cranberry-5099873001950.html'
+        ])
+
+    def vodka_finland_cranberry_1l_parser(self):
+        ''' Парсер для водка Finland Cranberry 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--05099873001929/',
+            'https://shop.silpo.ua/product/gorilka-finlandia-zhuravlyna-14267',
+            'https://novus.online/product/gorilka-finlandia-zuravlina-bila-375-1l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--05099873001929/',
+            'https://fozzyshop.ua/vodka/2037-vodka-finlandia-cranberry-5099873001929.html'
+        ])
+
+    def vodka_finland_grapefruit_05l_parser(self):
+        ''' Парсер для водка Finland Grapefruit 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873002025/',
+            'https://varus.ua/gorilka-finlandia-grapefruit-37-5-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-grapefruit-462536',
+            'https://auchan.ua/ua/vodka-finlandia-grejpfrut-37-5-0-5-l-1164152/',
+            'https://novus.online/product/gorilka-finlandia-grejpfrut-375-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873002025/',
+            'https://shop.nashkraj.ua/kovel/product/176252-napiy-alk-finlandia-0-5l-grapefruit37-5',
+            'https://fozzyshop.ua/vodka/1656-vodka-finlandia-grapefruit-5099873002025.html'
+        ])
+
+    def vodka_finland_lime_05l_parser(self):
+        ''' Парсер для водка Finland Lime 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873002094/',
+            'https://varus.ua/gorilka-finlandia-lime-37-5-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-lime-506519',
+            'https://auchan.ua/ua/vodka-finlandia-lajm-37-5-0-5-l-1074596/',
+            'https://novus.online/product/gorilka-finlandia-lajm-375-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml-finliandiia--05099873002094/',
+            'https://shop.nashkraj.ua/kovel/product/176250-napiy-alk-finlandia-0-5l-lime-37-5',
+            'https://fozzyshop.ua/vodka/26676-vodka-finlandia-lime-5099873002094.html'
+        ])
+
+    def vodka_finland_coconut_05l_parser(self):
+        ''' Парсер для водка Finland Coconut 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-finliandiia-500ml--05099873012321/',
+            'https://shop.silpo.ua/product/gorilka-finlandia-coconut-792144',
+            'https://auchan.ua/ua/vodka-finlandia-kokos-37-5-0-5-l-1074586/',
+            'https://novus.online/product/gorilka-finlandia-coconut-375-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-500ml--05099873012321/',
+            'https://shop.nashkraj.ua/kovel/product/306225-gorilka-finlandia-0-5l-coconut-37-5',
+            'https://fozzyshop.ua/vodka/60397-vodka-finlandia-coconut-5099873012321.html'
+        ])
+
+    def vodka_finland_blackcurrant_05l_parser(self):
+        ''' Парсер для водка Finland Blackcurrant 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-finlandia-balckcurrant-37-5-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-finlandia-blackcurrant-590064',
+            'https://fozzyshop.ua/vodka/23817-vodka-finlandia-blackcurrant-5099873001899.html'
+        ])
+
+    def vodka_finland_lime_1l_parser(self):
+        ''' Парсер для водка Finland Lime 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-finlandia-lime-506521',
+            'https://novus.online/product/gorilka-finlandia-lime-375-1l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--05099873002063/',
+            'https://fozzyshop.ua/vodka/37666-vodka-finlandia-lime-5099873002063.html'
+        ])
+
+    def vodka_finland_blackcurrant_1l_parser(self):
+        ''' Парсер для водка Finland Blackcurrant 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-finlandia-blackcurrant-590063',
+            'https://novus.online/product/gorilka-finlandia-vodka-blackcurrant-375-10l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--05099873001875/',
+            'https://fozzyshop.ua/vodka/26675-vodka-finlandia-blackcurrant-5099873001875.html'
+        ])
+
+    def vodka_finland_grapefruit_1l_parser(self):
+        ''' Парсер для водка Finland Grapefruit 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-finlandia-grapefruit-462537',
+            'https://novus.online/product/gorilka-finlandia-grejpfrut-375-1l',
+            'https://metro.zakaz.ua/uk/products/gorilka-finliandiia-1000ml-finliandiia--05099873001998/',
+            'https://fozzyshop.ua/vodka/37665-vodka-finlandia-grapefruit-5099873001998.html'
+        ])
+
+    def vodka_finland_white_175l_parser(self):
+        ''' Парсер для водка Finland White 1.75 л'''
+        return self.prices_parsing([
+            'https://novus.online/product/gorilka-finlandia-40-175l',
+            'https://fozzyshop.ua/vodka/92594-vodka-finlandia-belaya-6412709021103.html'
+        ])
+
+    def vodka_nemiroff_delicat_soft_05l_parser(self):
+        ''' Парсер для водка Nemiroff Delicat Soft 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-nemiroff-delikat-maka-osobliva-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-nemiroff-500ml--04820181420437/',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-delikat-m-iaka-413758',
+            'https://novus.online/product/gorilka-nemiroff-delikat-40-stof-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-nemiroff-500ml-ukrayina--04607805950095/',
+            'https://shop.nashkraj.ua/kovel/product/142666-gorilka-nemiroff-0-5l-delikat-shtof-40',
+            'https://fozzyshop.ua/vodka/26688-vodka-nemiroff-delikat-myagkaya-4820181420437.html'
+        ])
+
+    def vodka_nemiroff_shtof_05l_parser(self):
+        ''' Парсер для водка Nemiroff Штоф 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-nemiroff-osobliva-stof-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-nemiroff-500ml-ukrayina--04820181420611/',
+            'https://varus.ua/gorilka-nemiroff-original-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-osoblyva-shtof-1132',
+            'https://novus.online/product/gorilka-nemiroff-original-40-stof-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-nemiroff-500ml-ukrayina--04607805950019/',
+            'https://fozzyshop.ua/vodka/26691-vodka-nemiroff-osobaya-shtof-4820181420611.html'
+        ])
+
+    def vodka_nemiroff_ukr_pshen_05l_parser(self):
+        ''' Парсер для водка Nemiroff Українська пшенична 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05-l-nemiroff-psenica-ukrainska-vidbirna-osobliva-stof-40-ob-skbut',
+            'https://eko.zakaz.ua/uk/products/gorilka-nemiroff-500ml-ukrayina--04820181420741/',
+            'https://varus.ua/gorilka-nemiroff-nemirivska-pshenicya-ukrainska-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-ukrainska-pshenytsia-plaska-137397',
+            'https://novus.online/product/gorilka-nemiroff-psenicna-ukrainska-vidbirna-40-ploska-05l',
+            'https://fozzyshop.ua/vodka/16333-vodka-nemiroff-ukrainskaya-pshenica-ploskaya-butylka-4820181420710.html'
+        ])
+
+    def vodka_nemiroff_delux_05l_parser(self):
+        ''' Парсер для водка Nemiroff Де Люкс 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-nemiroff-de-luxe-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-de-luxe-765322',
+            'https://auchan.ua/ua/vodka-nemiroff-de-luxe-500-ml-958918/',
+            'https://novus.online/product/gorilka-osobliva-nemiroff-de-luks-40-05l',
+            'https://shop.nashkraj.ua/kovel/product/275553-gorilka-nemiroff-0-5lpremium-de-luxe-40',
+            'https://fozzyshop.ua/vodka/64172-vodka-nemiroff-de-lyuks-4820181424886.html'
+        ])
+
+    def vodka_nemiroff_lex_05l_parser(self):
+        ''' Парсер для водка Nemiroff Lex 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-nemiroff-500ml-ukrayina--04820181420550/',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-lex-152875',
+            'https://novus.online/product/gorilka-nemiroff-lexx-40-05l',
+            'https://fozzyshop.ua/vodka/26689-vodka-nemiroff-lex-4820181420550.html'
+        ])
+
+
+
 
 
 

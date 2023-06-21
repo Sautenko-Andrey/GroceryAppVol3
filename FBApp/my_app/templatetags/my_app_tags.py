@@ -1011,6 +1011,66 @@ get_vodka_absolut_watermelon_07l = tag.create_tag(ItemsPicsFromNet, 329)
 '''Тэг,возвращающий информацию о "Горілка Absolut Mandarin, 0,7л"'''
 get_vodka_absolut_mandarin_07l = tag.create_tag(ItemsPicsFromNet, 330)
 
+'''Тэг,возвращающий информацию о "Горілка Finlandia, 0,5л"'''
+get_vodka_finland_05l = tag.create_tag(ItemsPicsFromNet, 331)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia, 0,7л"'''
+get_vodka_finland_07l = tag.create_tag(ItemsPicsFromNet, 332)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia, 1л"'''
+get_vodka_finland_1l = tag.create_tag(ItemsPicsFromNet, 333)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Redberry, 0.5 л"'''
+get_vodka_finland_redberry_05l = tag.create_tag(ItemsPicsFromNet, 334)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Redberry, 1 л"'''
+get_vodka_finland_redberry_1l = tag.create_tag(ItemsPicsFromNet, 335)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Cranberry, 0.5 л"'''
+get_vodka_finland_cranberry_05l = tag.create_tag(ItemsPicsFromNet, 336)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Cranberry, 1 л"'''
+get_vodka_finland_cranberry_1l = tag.create_tag(ItemsPicsFromNet, 337)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Grapefruit, 0.5 л"'''
+get_vodka_finland_grapefruit_05l = tag.create_tag(ItemsPicsFromNet, 338)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Lime, 0.5 л"'''
+get_vodka_finland_lime_05l = tag.create_tag(ItemsPicsFromNet, 339)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Coconut, 0.5 л"'''
+get_vodka_finland_coconut_05l = tag.create_tag(ItemsPicsFromNet, 340)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Blackcurrant, 0.5 л"'''
+get_vodka_finland_blackcurrant_05l = tag.create_tag(ItemsPicsFromNet, 341)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Lime, 1 л"'''
+get_vodka_finland_lime_1l = tag.create_tag(ItemsPicsFromNet, 342)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Blackcurrant, 1 л"'''
+get_vodka_finland_blackcurrant_1l = tag.create_tag(ItemsPicsFromNet, 343)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Grapefruit, 1 л"'''
+get_vodka_finland_grapefruit_1l = tag.create_tag(ItemsPicsFromNet, 344)
+
+'''Тэг,возвращающий информацию о "Горілка Finlandia Grapefruit, 1.75 л"'''
+get_vodka_finland_white_175l = tag.create_tag(ItemsPicsFromNet, 345)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Delikat м'яка, 0,5л"'''
+get_vodka_nemiroff_delikat_soft_05l = tag.create_tag(ItemsPicsFromNet, 346)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Штоф особлива, 0,5л"'''
+get_vodka_nemiroff_shtof_05l = tag.create_tag(ItemsPicsFromNet, 347)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff українська пшениця, 0,5л"'''
+get_vodka_nemiroff_ukr_pshen_05l = tag.create_tag(ItemsPicsFromNet, 348)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Де Люкс, 0,5л"'''
+get_vodka_nemiroff_delux_05l = tag.create_tag(ItemsPicsFromNet, 349)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Lex, 0,5л"'''
+get_vodka_nemiroff_lex_05l = tag.create_tag(ItemsPicsFromNet, 350)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

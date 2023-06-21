@@ -723,6 +723,46 @@ class TesterForGroceryAppText:
             return VODKA_ABSOLUT_WATERMELON_07L
         elif np.argmax(result) == 329:
             return VODKA_ABSOLUT_MANDARIN_07L
+        elif np.argmax(result) == 330:
+            return VODKA_FINLAND_05L
+        elif np.argmax(result) == 331:
+            return VODKA_FINLAND_07L
+        elif np.argmax(result) == 332:
+            return VODKA_FINLAND_1L
+        elif np.argmax(result) == 333:
+            return VODKA_FINLAND_REDBERRY_05L
+        elif np.argmax(result) == 334:
+            return VODKA_FINLAND_REDBERRY_1L
+        elif np.argmax(result) == 335:
+            return VODKA_FINLAND_CRANBERRY_05L
+        elif np.argmax(result) == 336:
+            return VODKA_FINLAND_CRANBERRY_1L
+        elif np.argmax(result) == 337:
+            return VODKA_FINLAND_GRAPEFRUIT_05L
+        elif np.argmax(result) == 338:
+            return VODKA_FINLAND_LIME_05L
+        elif np.argmax(result) == 339:
+            return VODKA_FINLAND_COCONUT_05L
+        elif np.argmax(result) == 340:
+            return VODKA_FINLAND_BLACKCURRANT_05L
+        elif np.argmax(result) == 341:
+            return VODKA_FINLAND_LIME_1L
+        elif np.argmax(result) == 342:
+            return VODKA_FINLAND_BLACKCURRANT_1L
+        elif np.argmax(result) == 343:
+            return VODKA_FINLAND_GRAPEFRUIT_1L
+        elif np.argmax(result) == 344:
+            return VODKA_FINLAND_WHITE_175L
+        elif np.argmax(result) == 345:
+            return VODKA_NEMIROFF_DELIKAT_SOFT_05L
+        elif np.argmax(result) == 346:
+            return VODKA_NEMIROFF_SHTOF_05L
+        elif np.argmax(result) == 347:
+            return VODKA_NEMIROFF_UKR_PSHEN_05L
+        elif np.argmax(result) == 348:
+            return VODKA_NEMIROFF_DELUX_05L
+        elif np.argmax(result) == 349:
+            return VODKA_NEMIROFF_LEX_05L
 
 
 
