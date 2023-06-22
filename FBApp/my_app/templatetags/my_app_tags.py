@@ -1071,6 +1071,54 @@ get_vodka_nemiroff_delux_05l = tag.create_tag(ItemsPicsFromNet, 349)
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Lex, 0,5л"'''
 get_vodka_nemiroff_lex_05l = tag.create_tag(ItemsPicsFromNet, 350)
 
+'''Тэг,возвращающий информацию о "Шампанське АЗШВ Артемівське біле напівсолодке, 0,75л"'''
+get_artemivske_bile_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 351)
+
+'''Тэг,возвращающий информацию о "Шампанське АЗШВ Артемівське рожеве напівсухе, 0,75л"'''
+get_artemivske_roj_napivsuh_075l = tag.create_tag(ItemsPicsFromNet, 352)
+
+'''Тэг,возвращающий информацию о "Шампанське АЗШВ Артемівське біле брют, 0,75л"'''
+get_artemivske_bile_brut_075l = tag.create_tag(ItemsPicsFromNet, 353)
+
+'''Тэг,возвращающий информацию о "Шампанське АЗШВ Артемівське коллекційне напівсухе, 0,75л"'''
+get_artemivske_coll_napivsuh_075l = tag.create_tag(ItemsPicsFromNet, 354)
+
+'''Тэг,возвращающий информацию о "Шампанське АЗШВ Артемівське червоне напівсолодке, 0,75л"'''
+get_artemivske_cherv_napivsuh_075l = tag.create_tag(ItemsPicsFromNet, 355)
+
+'''Тэг,возвращающий информацию о "Шампанське Bagrationi біле напівсолодке, 0,75л"'''
+get_bagrationi_bile_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 356)
+
+'''Тэг,возвращающий информацию о "Шампанське Bagrationi біле напівсухе, 0,75л"'''
+get_bagrationi_bile_napivsuh_075l = tag.create_tag(ItemsPicsFromNet, 357)
+
+'''Тэг,возвращающий информацию о "Шампанське Bagrationi біле брют, 0,75л"'''
+get_bagrationi_bile_brut_075l = tag.create_tag(ItemsPicsFromNet, 358)
+
+'''Тэг,возвращающий информацию о "Шампанське Bagrationi рожеве напівсолодке, 0,75л"'''
+get_bagrationi_rojeve_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 359)
+
+'''Тэг,возвращающий информацию о "Шампанське Bagrationi Gold напівсолодке, 0,75л"'''
+get_bagrationi_gold_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 360)
+
+'''Тэг,возвращающий информацию о "Шампанське Bolgrad біле брют, 0,75л"'''
+get_bolgrad_bile_brut_075l = tag.create_tag(ItemsPicsFromNet, 361)
+
+'''Тэг,возвращающий информацию о "Шампанське Bolgrad біле напівсолодке, 0,75л"'''
+get_bolgrad_bile_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 362)
+
+'''Тэг,возвращающий информацию о "Шампанське Bolgrad Nectar біле солодке, 0,75л"'''
+get_bolgrad_nectar_bile_solodke_075l = tag.create_tag(ItemsPicsFromNet, 363)
+
+'''Тэг,возвращающий информацию о "Шампанське Французький Бульвар біле напівсухе, 0,75л"'''
+get_fran_bulv_bile_napivsuh_075l = tag.create_tag(ItemsPicsFromNet, 364)
+
+'''Тэг,возвращающий информацию о "Шампанське Французький Бульвар біле брют, 0,75л"'''
+get_fran_bulv_bile_brut_075l = tag.create_tag(ItemsPicsFromNet, 365)
+
+'''Тэг,возвращающий информацию о "Шампанське Французький Бульвар біле напівсолодке, 0,75л"'''
+get_fran_bulv_bile_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 366)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

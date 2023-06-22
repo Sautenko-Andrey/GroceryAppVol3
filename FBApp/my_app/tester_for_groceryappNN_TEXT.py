@@ -763,6 +763,38 @@ class TesterForGroceryAppText:
             return VODKA_NEMIROFF_DELUX_05L
         elif np.argmax(result) == 349:
             return VODKA_NEMIROFF_LEX_05L
+        elif np.argmax(result) == 350:
+            return SHAMP_ARTEMIVSKE_BILE_NAPIVSOLOD
+        elif np.argmax(result) == 351:
+            return SHAMP_ARTEMIVSKE_ROJEVE_NAPIVSUHE
+        elif np.argmax(result) == 352:
+            return SHAMP_ARTEMIVSKE_BILE_BRUT
+        elif np.argmax(result) == 353:
+            return SHAMP_ARTEMIVSKE_COLLECT_NAPIVSUHE
+        elif np.argmax(result) == 354:
+            return SHAMP_ARTEMIVSKE_CHERVONE_NAPIVSOLOD
+        elif np.argmax(result) == 355:
+            return SHAMP_BAGRATIONI_BILE_NAPIVSOLOD
+        elif np.argmax(result) == 356:
+            return SHAMP_BAGRATIONI_BILE_NAPIVSUHE
+        elif np.argmax(result) == 357:
+            return SHAMP_BAGRATIONI_BILE_BRUT
+        elif np.argmax(result) == 358:
+            return SHAMP_BAGRATIONI_ROJ_NAPIVSOLOD
+        elif np.argmax(result) == 359:
+            return SHAMP_BAGRATIONI_GOLD_NAPIVSOLOD
+        elif np.argmax(result) == 360:
+            return SHAMP_BOLGRAD_BILE_BRUT
+        elif np.argmax(result) == 361:
+            return SHAMP_BOLGRAD_BILE_NAPIVSOLOD
+        elif np.argmax(result) == 362:
+            return SHAMP_BOLGRAD_NECTAR_BILE_SOLODKE
+        elif np.argmax(result) == 363:
+            return SHAMP_FRAN_BULV_BILE_NAPIVSUHE
+        elif np.argmax(result) == 364:
+            return SHAMP_FRAN_BULV_BILE_BRUT
+        elif np.argmax(result) == 365:
+            return SHAMP_FRAN_BULV_BILE_NAPIVSOLOD
 
 
 

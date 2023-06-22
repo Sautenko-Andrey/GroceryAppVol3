@@ -3475,6 +3475,152 @@ class ProductParserVol2:
             'https://fozzyshop.ua/vodka/26689-vodka-nemiroff-lex-4820181420550.html'
         ])
 
+    def artemivske_bile_napivsolodke_parser(self):
+        ''' Парсер для шампанського Артемівське біле напівсолодке'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/vino-075-l-igriste-artwinery-artemivske-bile-vitrimane-napivsolodke-10-135',
+            'https://eko.zakaz.ua/uk/products/vino-igriste-azshv-750ml-ukrayina--04820003353332/',
+            'https://varus.ua/vino-igriste-artemivske-bile-napivsolodke-chorna-etiketka-0-75-l',
+            'https://auchan.ua/ua/vino-igristoe-artemovskoe-beloe-polusladkoe-10-13-5-750-ml-957748/',
+            'https://novus.online/product/vino-igriste-artemivske-bile-napivsolodke-135-075l-2',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-azshv-750ml-ukrayina--04820003350539/',
+            'https://shop.nashkraj.ua/kovel/product/20274-vino-igr-artemivske-0-75l-b-n-sol-13-5',
+            'https://fozzyshop.ua/shampanskoe/1491-shampanskoe-azshv-artemovskoe-beloe-polusladkoe-4820003353332.html'
+        ])
+
+    def artemivske_rojeve_napivsuhe_parser(self):
+        ''' Парсер для шампанського Артемівське рожеве напівсухе'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-artemivske-rozheve-napivsuhe-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-azshv-artemivske-rozheve-napivsukhe-329581',
+            'https://auchan.ua/ua/vino-igristoe-artemovskoe-rozovoe-polusuhoe-10-13-5-750-ml-957778/',
+            'https://novus.online/product/vino-igriste-artemivske-rozeve-napivsuhe-135-075l',
+            'https://fozzyshop.ua/shampanskoe/1500-shampanskoe-azshv-artemovskoe-rozovoe-polusukhoe-4820003350171.html'
+        ])
+
+    def artemivske_bile_brut_parser(self):
+        ''' Парсер для шампанського Артемівське біле брют'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/vino-075-l-artwinery-artemivske-igriste-vitrimane-bile-brut-100-135',
+            'https://eko.zakaz.ua/uk/products/vino-igriste-artemivske-750ml--04820236722462/',
+            'https://varus.ua/vino-igriste-artemivske-bile-bryut-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-azshv-artemivske-bile-briut-333666',
+            'https://auchan.ua/ua/vino-igristoe-artemovskoe-beloe-brjut-10-13-5-750-ml-957754/',
+            'https://novus.online/product/vino-igriste-artemivske-bile-brut-135-075l',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-azshv-750ml-ukrayina--04820003350478/',
+            'https://shop.nashkraj.ua/kovel/product/22962-vino-igr-artemivske-0-75-l-b-bryut-13-5',
+            'https://fozzyshop.ua/shampanskoe/1499-shampanskoe-azshv-artemovskoe-beloe-bryut-4820003353363.html'
+        ])
+
+    def artemivske_coll_napivsuhe_parser(self):
+        ''' Парсер для шампанського Артемівське коллекційне напівсухе'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/shampanskoe/1492-shampanskoe-azshv-artemovskoe-kollekc-polusukhoe-4820003353424.html'
+        ])
+
+    def artemivske_chervone_napivsolodke_parser(self):
+        ''' Парсер для шампанського Артемівське червоне напівсолодке'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-artemivske-chervone-napivsolodke-0-75-l',
+            'https://auchan.ua/ua/vino-igristoe-artemovskoe-krasnoe-polusladkoe-10-13-5-750-ml-957784/',
+            'https://novus.online/product/vino-igriste-azsv-cervone-napivsolodke-135-075l',
+            'https://fozzyshop.ua/shampanskoe/1493-shampanskoe-azshv-artemovskoe-krasnoe-polusladkoe-4820003350041.html'
+        ])
+
+    def bagrationi_bile_napivsolodke_parser(self):
+        ''' Парсер для шампанського Bagrationi біле напівсолодке'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-bagrationi-classic-bile-napivsolodke-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-bagrationi-1882-bile-napivsolodke-217114',
+            'https://novus.online/product/vino-igriste-bagrationi-semi-sweet-white-12-075l',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-bagrationi-750ml-gruziia--04860069010107/',
+            'https://fozzyshop.ua/shampanskoe/1503-shampanskoe-bagrationi-beloe-polusladkoe-4860069010107.html'
+        ])
+
+    def bagrationi_bile_napivsuhe_parser(self):
+        ''' Парсер для шампанського Bagrationi біле напівсухе'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-bagrationi-classic-bile-napivsuhe-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-bagrationi-1882-bile-napivsukhe-217117',
+            'https://novus.online/product/vino-igriste-bagrationi-semi-dry-white-12-075l',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-bagrationi-750ml-gruziia--04860069010053/',
+            'https://fozzyshop.ua/shampanskoe/1504-shampanskoe-bagrationi-beloe-polusukhoe-4860069010053.html'
+        ])
+
+    def bagrationi_bile_brut_parser(self):
+        ''' Парсер для шампанського Bagrationi біле брют'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-bagrationi-brut-bile-bryut-0-75-l',
+            'https://shop.silpo.ua/product/vyno-igryste-bagrationi-1882-bile-briut-217101',
+            'https://novus.online/product/vino-igriste-bagrationi-brut-white-12-075l',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-bagrationi-750ml-gruziia--04860069010084/',
+            'https://fozzyshop.ua/shampanskoe/1502-shampanskoe-bagrationi-beloe-bryut-4860069010084.html'
+        ])
+
+    def bagrationi_roj_napivsolod_parser(self):
+        ''' Парсер для шампанського Bagrationi рожеве напівсолодке'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/shampanskoe/1506-shampanskoe-bagrationi-polusladkoe-rozovoe-4860069010138.html'
+        ])
+
+    def bagrationi_gold_napivsolodke_parser(self):
+        ''' Парсер для шампанського Bagrationi Gold напівсолодке'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/shampanskoe/1505-shampanskoe-bagrationi-gold-polusladkoe-beloe-4860069010022.html'
+        ])
+
+    def bolgrad_bile_brut_parser(self):
+        ''' Парсер для шампанського Bolgrad біле брют'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-bolgrad-brut-classic-igristoe-11-5-0-75-l',
+            'https://shop.silpo.ua/product/shampanske-bolgrad-classic-bile-briut-556640',
+            'https://fozzyshop.ua/shampanskoe/1470-shampanskoe-bolgrad-beloe-bryut-4820013031671.html'
+        ])
+
+    def bolgrad_bile_napivsolodke_parser(self):
+        ''' Парсер для шампанського Bolgrad біле напівсолодке'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/sampanske-ukraini-075l-bolgrad-bile-napivsolodke-105-125',
+            'https://varus.ua/vino-igriste-bolgrad-classic-bile-napivsolodke-0-75-l',
+            'https://shop.silpo.ua/product/shampanske-bolgrad-classic-bile-napivsolodke-556637',
+            'https://fozzyshop.ua/shampanskoe/1471-shampanskoe-bolgrad-beloe-polusladkoe-4820013031688.html'
+        ])
+
+    def bolgrad_nektar_bile_solodke_parser(self):
+        ''' Парсер для шампанського Bolgrad Нектар біле солодке'''
+        return self.prices_parsing([
+            'https://varus.ua/vino-igriste-bolgrad-nectar-bile-solodke-0-75-l',
+            'https://fozzyshop.ua/shampanskoe/1469-shampanskoe-bolgrad-nectar-beloe-sladkoe-4820013031695.html'
+        ])
+
+    def fran_bulvar_bile_napivsuhe_parser(self):
+        ''' Парсер для шампанського Французький Бульвар Біле напівсухе'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/vino-igriste-frantsuzkii-bulvar-750ml-ukrayina--04820004382157/',
+            'https://shop.silpo.ua/product/shampanske-frantsuzkyi-bulvar-bile-napivsukhe-329835',
+            'https://metro.zakaz.ua/uk/products/vino-igriste-frantsuzkii-bulvar-750ml-ukrayina--04820004382157/',
+            'https://fozzyshop.ua/shampanskoe/1585-shampanskoe-francuzskij-bulvar-beloe-polusukhoe-4820004382157.html'
+        ])
+
+    def fran_bulvar_bile_brut_parser(self):
+        ''' Парсер для шампанського Французький Бульвар Біле брют'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/igriste-shampanske-frantsuzkii-bulvar-750ml-ukrayina--04820004382133/',
+            'https://shop.silpo.ua/product/shampanske-frantsuzkyi-bulvar-bile-briut-329833',
+            'https://metro.zakaz.ua/uk/products/igriste-shampanske-frantsuzkii-bulvar-750ml-ukrayina--04820004382133/',
+            'https://fozzyshop.ua/shampanskoe/1584-shampanskoe-francuzskij-bulvar-beloe-bryut-4820004382133.html'
+        ])
+
+    def fran_bulvar_bile_napivsolod_parser(self):
+        ''' Парсер для шампанського Французький Бульвар Біле напівсолодке'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/igriste-shampanske-frantsuzkii-bulvar-750ml-ukrayina--04820004383345/',
+            'https://shop.silpo.ua/product/vyno-igryste-frantsuzkyi-bulvar-bile-napivsolodke-7362',
+            'https://metro.zakaz.ua/uk/products/igriste-shampanske-frantsuzkii-bulvar-750ml-ukrayina--04820004383345/',
+            'https://fozzyshop.ua/shampanskoe/1593-shampanskoe-francuzskij-bulvar-beloe-polusladkoe-4820004380283.html'
+        ])
+
+
 
 
 

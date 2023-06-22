@@ -2469,6 +2469,119 @@ all_products_names = [
         "fozzy": parser.vodka_nemiroff_lex_05l_parser()[8]
     }},
 
+    {'artemivske_bile_napivsolodke': {
+        "atb": parser.artemivske_bile_napivsolodke_parser()[0],
+        "eko": parser.artemivske_bile_napivsolodke_parser()[1],
+        "varus": parser.artemivske_bile_napivsolodke_parser()[2],
+        "ashan": parser.artemivske_bile_napivsolodke_parser()[4],
+        "novus": parser.artemivske_bile_napivsolodke_parser()[5],
+        "metro": parser.artemivske_bile_napivsolodke_parser()[6],
+        "nash_kray": parser.artemivske_bile_napivsolodke_parser()[7],
+        "fozzy": parser.artemivske_bile_napivsolodke_parser()[8]
+    }},
+
+    {'artemivske_rojeve_napivsuhe': {
+        "varus": parser.artemivske_rojeve_napivsuhe_parser()[2],
+        "silpo": parser.artemivske_rojeve_napivsuhe_parser()[3],
+        "ashan": parser.artemivske_rojeve_napivsuhe_parser()[4],
+        "novus": parser.artemivske_rojeve_napivsuhe_parser()[5],
+        "fozzy": parser.artemivske_rojeve_napivsuhe_parser()[8]
+    }},
+
+    {'artemivske_bile_brut': {
+        "atb": parser.artemivske_bile_brut_parser()[0],
+        "eko": parser.artemivske_bile_brut_parser()[1],
+        "varus": parser.artemivske_bile_brut_parser()[2],
+        "silpo": parser.artemivske_bile_brut_parser()[3],
+        "ashan": parser.artemivske_bile_brut_parser()[4],
+        "novus": parser.artemivske_bile_brut_parser()[5],
+        "metro": parser.artemivske_bile_brut_parser()[6],
+        "nash_kray": parser.artemivske_bile_brut_parser()[7],
+        "fozzy": parser.artemivske_bile_brut_parser()[8]
+    }},
+
+    {'artemivske_coll_napivsuhe': {
+        "fozzy": parser.artemivske_coll_napivsuhe_parser()[8]
+    }},
+
+    {'artemivske_chervone_napivsolodke': {
+        "varus": parser.artemivske_chervone_napivsolodke_parser()[2],
+        "ashan": parser.artemivske_chervone_napivsolodke_parser()[4],
+        "novus": parser.artemivske_chervone_napivsolodke_parser()[5],
+        "fozzy": parser.artemivske_chervone_napivsolodke_parser()[8]
+    }},
+
+    {'bagrationi_bile_napivsolodke': {
+        "varus": parser.bagrationi_bile_napivsolodke_parser()[2],
+        "silpo": parser.bagrationi_bile_napivsolodke_parser()[3],
+        "novus": parser.bagrationi_bile_napivsolodke_parser()[5],
+        "metro": parser.bagrationi_bile_napivsolodke_parser()[6],
+        "fozzy": parser.bagrationi_bile_napivsolodke_parser()[8]
+    }},
+
+    {'bagrationi_bile_napivsuhe': {
+        "varus": parser.bagrationi_bile_napivsuhe_parser()[2],
+        "silpo": parser.bagrationi_bile_napivsuhe_parser()[3],
+        "novus": parser.bagrationi_bile_napivsuhe_parser()[5],
+        "metro": parser.bagrationi_bile_napivsuhe_parser()[6],
+        "fozzy": parser.bagrationi_bile_napivsuhe_parser()[8]
+    }},
+
+    {'bagrationi_bile_brut': {
+        "varus": parser.bagrationi_bile_brut_parser()[2],
+        "silpo": parser.bagrationi_bile_brut_parser()[3],
+        "novus": parser.bagrationi_bile_brut_parser()[5],
+        "metro": parser.bagrationi_bile_brut_parser()[6],
+        "fozzy": parser.bagrationi_bile_brut_parser()[8]
+    }},
+
+    {'bagrationi_roj_napivsolodke': {
+        "fozzy": parser.bagrationi_roj_napivsolod_parser()[8]
+    }},
+
+    {'bagrationi_gold_napivsolodke': {
+        "fozzy": parser.bagrationi_gold_napivsolodke_parser()[8]
+    }},
+
+    {'bolgrad_bile_brut': {
+        "varus": parser.bolgrad_bile_brut_parser()[2],
+        "silpo": parser.bolgrad_bile_brut_parser()[3],
+        "fozzy": parser.bolgrad_bile_brut_parser()[8]
+    }},
+
+    {'bolgrad_bile_napivsolodke': {
+        "atb": parser.bolgrad_bile_napivsolodke_parser()[0],
+        "varus": parser.bolgrad_bile_napivsolodke_parser()[2],
+        "silpo": parser.bolgrad_bile_napivsolodke_parser()[3],
+        "fozzy": parser.bolgrad_bile_napivsolodke_parser()[8]
+    }},
+
+    {'bolgrad_nectar_bile_solodke': {
+        "varus": parser.bolgrad_nektar_bile_solodke_parser()[2],
+        "fozzy": parser.bolgrad_nektar_bile_solodke_parser()[8]
+    }},
+
+    {'fran_bulvar_bile_napivsuhe': {
+        "eko": parser.fran_bulvar_bile_napivsuhe_parser()[1],
+        "silpo": parser.fran_bulvar_bile_napivsuhe_parser()[3],
+        "metro": parser.fran_bulvar_bile_napivsuhe_parser()[6],
+        "fozzy": parser.fran_bulvar_bile_napivsuhe_parser()[8]
+    }},
+
+    {'fran_bulvar_bile_brut': {
+        "eko": parser.fran_bulvar_bile_brut_parser()[1],
+        "silpo": parser.fran_bulvar_bile_brut_parser()[3],
+        "metro": parser.fran_bulvar_bile_brut_parser()[6],
+        "fozzy": parser.fran_bulvar_bile_brut_parser()[8]
+    }},
+
+    {'fran_bulvar_bile_napivsolodke': {
+        "eko": parser.fran_bulvar_bile_napivsolod_parser()[1],
+        "silpo": parser.fran_bulvar_bile_napivsolod_parser()[3],
+        "metro": parser.fran_bulvar_bile_napivsolod_parser()[6],
+        "fozzy": parser.fran_bulvar_bile_napivsolod_parser()[8]
+    }},
+
 
 
 

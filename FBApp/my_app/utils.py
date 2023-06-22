@@ -1014,6 +1014,38 @@ class ContextSupervisor:
             result = self.getting_prices('nemiroff_delux_05l', get_vodka_nemiroff_delux_05l)
         elif nn_respond == VODKA_NEMIROFF_LEX_05L:
             result = self.getting_prices('nemiroff_lex_05l', get_vodka_nemiroff_lex_05l)
+        elif nn_respond == SHAMP_ARTEMIVSKE_BILE_NAPIVSOLOD:
+            result = self.getting_prices('artemivske_bile_napivsolodke', get_artemivske_bile_napivsolod_075l)
+        elif nn_respond == SHAMP_ARTEMIVSKE_ROJEVE_NAPIVSUHE:
+            result = self.getting_prices('artemivske_rojeve_napivsuhe', get_artemivske_roj_napivsuh_075l)
+        elif nn_respond == SHAMP_ARTEMIVSKE_BILE_BRUT:
+            result = self.getting_prices('artemivske_bile_brut', get_artemivske_bile_brut_075l)
+        elif nn_respond == SHAMP_ARTEMIVSKE_COLLECT_NAPIVSUHE:
+            result = self.getting_prices('artemivske_coll_napivsuhe', get_artemivske_coll_napivsuh_075l)
+        elif nn_respond == SHAMP_ARTEMIVSKE_CHERVONE_NAPIVSOLOD:
+            result = self.getting_prices('artemivske_chervone_napivsolodke', get_artemivske_cherv_napivsuh_075l)
+        elif nn_respond == SHAMP_BAGRATIONI_BILE_NAPIVSOLOD:
+            result = self.getting_prices('bagrationi_bile_napivsolodke', get_bagrationi_bile_napivsolod_075l)
+        elif nn_respond == SHAMP_BAGRATIONI_BILE_NAPIVSUHE:
+            result = self.getting_prices('bagrationi_bile_napivsuhe', get_bagrationi_bile_napivsuh_075l)
+        elif nn_respond == SHAMP_BAGRATIONI_BILE_BRUT:
+            result = self.getting_prices('bagrationi_bile_brut', get_bagrationi_bile_brut_075l)
+        elif nn_respond == SHAMP_BAGRATIONI_ROJ_NAPIVSOLOD:
+            result = self.getting_prices('bagrationi_roj_napivsolodke', get_bagrationi_rojeve_napivsolod_075l)
+        elif nn_respond == SHAMP_BAGRATIONI_GOLD_NAPIVSOLOD:
+            result = self.getting_prices('bagrationi_gold_napivsolodke', get_bagrationi_gold_napivsolod_075l)
+        elif nn_respond == SHAMP_BOLGRAD_BILE_BRUT:
+            result = self.getting_prices('bolgrad_bile_brut', get_bolgrad_bile_brut_075l)
+        elif nn_respond == SHAMP_BOLGRAD_BILE_NAPIVSOLOD:
+            result = self.getting_prices('bolgrad_bile_napivsolodke', get_bolgrad_bile_napivsolod_075l)
+        elif nn_respond == SHAMP_BOLGRAD_NECTAR_BILE_SOLODKE:
+            result = self.getting_prices('bolgrad_nectar_bile_solodke', get_bolgrad_nectar_bile_solodke_075l)
+        elif nn_respond == SHAMP_FRAN_BULV_BILE_NAPIVSUHE:
+            result = self.getting_prices('fran_bulvar_bile_napivsuhe', get_fran_bulv_bile_napivsuh_075l)
+        elif nn_respond == SHAMP_FRAN_BULV_BILE_BRUT:
+            result = self.getting_prices('fran_bulvar_bile_brut', get_fran_bulv_bile_brut_075l)
+        elif nn_respond == SHAMP_FRAN_BULV_BILE_NAPIVSOLOD:
+            result = self.getting_prices('fran_bulvar_bile_napivsolodke', get_fran_bulv_bile_napivsolod_075l)
 
 
         # тут подключаются блюда
