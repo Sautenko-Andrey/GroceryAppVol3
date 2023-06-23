@@ -12,8 +12,15 @@ class ProductParserVol2:
 
     SELECTOR = By.CSS_SELECTOR
     ATB_REGULAR_DIV_CLASS = '[class="product-price__top"]'
-    EKO_REGULAR_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
-    EKO_DISCOUNT_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title Price__value_discount"]'
+
+    #старые div у эко
+    #EKO_REGULAR_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+    #EKO_DISCOUNT_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title Price__value_discount"]'
+
+    #новые div у эко
+    EKO_NEW_REGULAR_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
+    EKO_NEW_DISCOUNT_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
+
     VARUS_REGULAR_DIV_CLASS = '[class="sf-price__regular"]'
     VARUS_SPECIAL_DIV_CLASS = '[class="sf-price__special"]'
     VARUS_DISCOUNT_DIV_CLASS = '[class="jsx-161433026 Price__value_title Price__value_discount"]'
@@ -22,7 +29,12 @@ class ProductParserVol2:
     ASHAN_DIV_CLASS='[class="productDetails_price_actual__12u8E"]'
     NOVUS_DIV_CLASS='[class="product-card__price-current h4"]'
     NOVUS_SPECIAL_DIV_CLASS='[class="product-card__price-current h4 product-card__price-current_red"]'
-    METRO_REGULAR_DIV_CLASS='[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+
+    #старый div метро
+    #METRO_REGULAR_DIV_CLASS='[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+    #новый div метро
+    NEW_METRO_REGULEAR_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
+
     NASH_KRAY_DIV_CLASS='[class="nice_price"]'
     FOZZY_REGULAR_DIV_CLASS='[class="current-price"]'
 
@@ -101,14 +113,14 @@ class ProductParserVol2:
                 # парсим цену ЭКО
                 self.driver.get(url)
                 try:
-                    self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_REGULAR_DIV_CLASS).text
+                    self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_NEW_REGULAR_DIV).text
                     # self.driver.implicitly_wait(5)
                     results[eko_index] = float(self.eko_price[:5])   #берем только первые 5 символов включая точку
                 except Exception as ex:
                     print(ex)
                     if ex:
                         try:
-                            self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_DISCOUNT_DIV_CLASS).text
+                            self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_NEW_DISCOUNT_DIV).text
                             self.driver.implicitly_wait(waiting_time)
                             results[eko_index] = float(self.eko_price[:5]) #берем только первые 5 символов включая точку
                         except Exception as ex:
@@ -186,7 +198,7 @@ class ProductParserVol2:
                 #парсим цену Метро
                 self.driver.get(url)
                 try:
-                    self.metro_price = self.driver.find_element(self.SELECTOR,self.METRO_REGULAR_DIV_CLASS).text
+                    self.metro_price = self.driver.find_element(self.SELECTOR,self.NEW_METRO_REGULEAR_DIV).text
                     self.driver.implicitly_wait(spec_waiting_time_for_metro)
                     results[metro_index] = float(self.metro_price[:5])
                 except Exception as ex:

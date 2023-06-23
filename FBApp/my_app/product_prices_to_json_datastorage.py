@@ -193,12 +193,12 @@ all_products_names = [
         "atb": parser.egg_parcer()[0],
         "eko": parser.egg_parcer()[1],
         "varus": parser.egg_parcer()[2],
-        "silpo": parser.egg_parcer()[3] * silpo_correct_price,
+        "silpo": parser.egg_parcer()[3],
         "ashan": parser.egg_parcer()[4],
         "novus": parser.egg_parcer()[5],
         "metro": parser.egg_parcer()[6],
         "nash_kray": parser.egg_parcer()[7],
-        "fozzy": parser.egg_parcer()[8]
+        "fozzy": parser.egg_parcer()[8] * silpo_correct_price
     }},
     {'mayonez_detsk_shedro_67%': {
         "atb": parser.mayonez_detsk_shedro_67_parcer()[0],
@@ -248,14 +248,14 @@ all_products_names = [
         "silpo": parser.pork_lopatka_parser()[3] * silpo_correct_price,
         "novus": parser.pork_lopatka_parser()[5],
         "metro": parser.pork_lopatka_parser()[6],
-        "nash_kray": parser.pork_lopatka_parser()[7],
+        "nash_kray": parser.pork_lopatka_parser()[7] * silpo_correct_price,
         "fozzy": parser.pork_lopatka_parser()[8]
     }},
     {'potato': {
         "atb": parser.potato_parser()[0],
         "eko": parser.potato_parser()[1],
         "varus": parser.potato_parser()[2],
-        "silpo": parser.pork_lopatka_parser()[3] * silpo_correct_price,
+        "silpo": parser.pork_lopatka_parser()[3],
         "novus": parser.potato_parser()[5],
         "metro": parser.potato_parser()[6],
         "fozzy": parser.potato_parser()[8]
