@@ -37,7 +37,7 @@ class GroceryAppText:
         self.model = keras.Sequential([
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),  # 128
-            LSTM(150),  # 64
+            LSTM(175),  # 64
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 
@@ -51,7 +51,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=55, batch_size=50)
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=60, batch_size=50)
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 

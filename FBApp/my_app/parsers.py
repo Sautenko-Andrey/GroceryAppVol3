@@ -19,7 +19,8 @@ class ProductParserVol2:
 
     #новые div у эко
     EKO_NEW_REGULAR_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
-    EKO_NEW_DISCOUNT_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
+    EKO_NEW_DISCOUNT_DIV = '[class="jsx-906554f8658dceda Price__value_title Price__value_discount"]'
+
 
     VARUS_REGULAR_DIV_CLASS = '[class="sf-price__regular"]'
     VARUS_SPECIAL_DIV_CLASS = '[class="sf-price__special"]'
@@ -104,7 +105,7 @@ class ProductParserVol2:
                 self.driver.get(url)
                 try:
                     self.atb_price = self.driver.find_element(self.SELECTOR, self.ATB_REGULAR_DIV_CLASS).text
-                    self.driver.implicitly_wait(spec_waiting_time_for_metro)
+                    self.driver.implicitly_wait(waiting_time)
                     self.atb_price = price_updating_data(self.atb_price)
                     results[atb_index] = self.atb_price
                 except Exception as ex:
@@ -199,7 +200,7 @@ class ProductParserVol2:
                 self.driver.get(url)
                 try:
                     self.metro_price = self.driver.find_element(self.SELECTOR,self.NEW_METRO_REGULEAR_DIV).text
-                    self.driver.implicitly_wait(spec_waiting_time_for_metro)
+                    self.driver.implicitly_wait(waiting_time)
                     results[metro_index] = float(self.metro_price[:5])
                 except Exception as ex:
                     print(ex)
