@@ -2609,6 +2609,58 @@ all_products_names = [
         "fozzy": parser.koblevo_extra_old_8_parser()[8]
     }},
 
+    {'shabo_vsop_5': {
+        "atb": parser.shabo_vsop_5_parser()[0],
+        "eko": parser.shabo_vsop_5_parser()[1],
+        "varus": parser.shabo_vsop_5_parser()[2],
+        "silpo": parser.shabo_vsop_5_parser()[3],
+        "metro": parser.shabo_vsop_5_parser()[6],
+        "nash_kray": parser.shabo_vsop_5_parser()[7],
+        "fozzy": parser.shabo_vsop_5_parser()[8]
+    }},
+
+    {'shabo_vs_3': {
+        "atb": parser.shabo_vs_3_parser()[0],
+        "eko": parser.shabo_vs_3_parser()[1],
+        "varus": parser.shabo_vs_3_parser()[2],
+        "silpo": parser.shabo_vs_3_parser()[3],
+        "novus": parser.shabo_vs_3_parser()[5],
+        "metro": parser.shabo_vs_3_parser()[6],
+        "nash_kray": parser.shabo_vs_3_parser()[7],
+        "fozzy": parser.shabo_vs_3_parser()[8]
+    }},
+
+    {'shabo_1788_4': {
+        "atb": parser.shabo_1788_4_parser()[0],
+        "eko": parser.shabo_1788_4_parser()[1],
+        "varus": parser.shabo_1788_4_parser()[2],
+        "silpo": parser.shabo_1788_4_parser()[3],
+        "novus": parser.shabo_1788_4_parser()[5],
+        "metro": parser.shabo_1788_4_parser()[6],
+        "fozzy": parser.shabo_1788_4_parser()[8]
+    }},
+
+    {'shabo_1788_reserv': {
+        "fozzy": parser.shabo_1788_reserv_parser()[8]
+    }},
+
+    {'shabo_vs_reserv': {
+        "varus": parser.shabo_vs_reserv_parser()[2],
+        "silpo": parser.shabo_vs_reserv_parser()[3],
+        "novus": parser.shabo_vs_reserv_parser()[5],
+        "metro": parser.shabo_vs_reserv_parser()[6],
+        "fozzy": parser.shabo_vs_reserv_parser()[8]
+    }},
+
+    {'shabo_vsop_reserv': {
+        "atb": parser.shabo_vsop_reserv_parser()[0],
+        "eko": parser.shabo_vsop_reserv_parser()[1],
+        "silpo": parser.shabo_vsop_reserv_parser()[3],
+        "novus": parser.shabo_vsop_reserv_parser()[5],
+        "metro": parser.shabo_vsop_reserv_parser()[6],
+        "fozzy": parser.shabo_vsop_reserv_parser()[8]
+    }},
+
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
                 + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)

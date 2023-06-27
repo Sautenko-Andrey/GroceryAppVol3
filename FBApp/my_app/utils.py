@@ -1053,17 +1053,17 @@ class ContextSupervisor:
         elif nn_respond == BRENDI_KOBLEVO_RESERVE_EXTRA_OLD_8_YEARS_05L:
             result = self.getting_prices('koblevo_extra_old_8', get_brendi_koblevo_reserve_extra_old_8_years)
         elif nn_respond == SHABO_VSOP_5:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_vsop_5)
+            result = self.getting_prices('shabo_vsop_5', get_shabo_vsop_5)
         elif nn_respond == SHABO_VS_3:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_vs_3)
+            result = self.getting_prices('shabo_vs_3', get_shabo_vs_3)
         elif nn_respond == SHABO_1788_4:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_1788_4)
+            result = self.getting_prices('shabo_1788_4', get_shabo_1788_4)
         elif nn_respond == SHABO_1788_RESERV:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_1788_reserv)
+            result = self.getting_prices('shabo_1788_reserv', get_shabo_1788_reserv)
         elif nn_respond == SHABO_VS_RESERV:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_vs_reserv)
+            result = self.getting_prices('shabo_vs_reserv', get_shabo_vs_reserv)
         elif nn_respond == SHABO_VSOP_RESERV:
-            result = self.getting_prices(self.NO_PRICES, get_shabo_vsop_reserv)
+            result = self.getting_prices('shabo_vsop_reserv', get_shabo_vsop_reserv)
         elif nn_respond == AZNAURI_3:
             result = self.getting_prices(self.NO_PRICES, get_aznauri_3)
         elif nn_respond == AZNAURI_5:

@@ -3667,6 +3667,71 @@ class ProductParserVol2:
             'https://novus.online/product/brendi-koblevo-rezerv-ekstra-old-marochnyy-8-rokiv-40-05l',
             'https://fozzyshop.ua/konyak-brendi-armanyak/93442-brendi-koblevo-reserve-extra-old-8-let-4820182221095.html'
         ])
+    
+    def shabo_vsop_5_parser(self):
+        ''' Парсер для коньяк Shabo VSOP 5*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05l-sabo-vsop-5-zirok-40',
+            'https://eko.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400809/',
+            'https://varus.ua/konyak-shabo-vsop-5-zvezd-0-5-l',
+            'https://shop.silpo.ua/product/koniak-shabo-vsop-5-zirok-352655',
+            'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400809/',
+            'https://shop.nashkraj.ua/kovel/product/53042-konyak-shabo-0-5l-5-vsop-40',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2160-konyak-shabo-vsop-5-zvezd-4820070400809.html'
+        ])
+    
+    def shabo_vs_3_parser(self):
+        ''' Парсер для коньяк Shabo VS 3*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05l-sabo-vs-3-zirki-40',
+            'https://eko.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400816/',
+            'https://varus.ua/konyak-shabo-vs-3-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-shabo-vs-3-zirky-352656',
+            'https://novus.online/product/konak-sabo-vsordinarnij-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400816/',
+            'https://shop.nashkraj.ua/kovel/product/53037-konyak-shabo-0-5l-3-vs-40',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2427-konyak-shabo-vs-3-zvezdy-4820070400816.html'
+        ])
+    
+    def shabo_1788_4_parser(self):
+        ''' Парсер для коньяк Shabo 1788 4*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05l-sabo-1788-4-zirki-40',
+            'https://eko.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400793/',
+            'https://varus.ua/konyak-shabo-1788-4-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-shabo-1788-4-zirky-352657',
+            'https://novus.online/product/konak-sabo-1788-ordspecnajm40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400793/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2159-konyak-shabo-1788-4-zvezdy-4820070400793.html'
+        ])
+    
+    def shabo_1788_reserv_parser(self):
+        ''' Парсер для коньяк Shabo 1788 reserv'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/konyak-brendi-armanyak/36521-konyak-shabo-rezerv-1788-4820070404364.html'
+        ])
+    
+    def shabo_vs_reserv_parser(self):
+        ''' Парсер для коньяк Shabo VS reserv'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-shabo-reserve-vs-3-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-shabo-rezerv-v-s-674749',
+            'https://novus.online/product/konak-ukraini-sabo-rezerv-vs-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404340/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/36520-konyak-shabo-rezerv-vs-4820070404340.html'
+        ])
+    
+    def shabo_vsop_reserv_parser(self):
+        ''' Парсер для коньяк Shabo VSOP reserv'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-025-l-shabo-reserve-5-zirok-40',
+            'https://eko.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404388/',
+            'https://shop.silpo.ua/product/koniak-shabo-rezerv-v-s-o-p-674751',
+            'https://novus.online/product/konak-ukraini-sabo-rezerv-vsop-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404388/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/36522-konyak-shabo-rezerv-vsop-4820070404388.html'
+        ])
+
 
 
 
