@@ -3633,6 +3633,40 @@ class ProductParserVol2:
             'https://fozzyshop.ua/shampanskoe/1593-shampanskoe-francuzskij-bulvar-beloe-polusladkoe-4820004380283.html'
         ])
 
+    def stariy_kaheti_3_parser(self):
+        ''' Парсер для коньяк Старий Кахеті 3 зірки'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-staryy-kaheti-3-zvezdy-0-5-l',
+            'https://novus.online/product/konak-starij-kaheti-3-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-starii-kakheti-500ml-gruziia--04860013080514/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2397-konyak-staryj-kakheti-3-zvezdy-4860013080514.html'
+        ])
+
+    def stariy_kaheti_5_parser(self):
+        ''' Парсер для коньяк Старий Кахеті 5 зірки'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-staryy-kaheti-5-zvezd-0-5-l',
+            'https://novus.online/product/konak-starij-kaheti-5-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-starii-kakheti-500ml-gruziia--04860013080538/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2401-konyak-staryj-kakheti-5-zvezdy-4860013080538.html'
+        ])
+
+    def stariy_kaheti_4_parser(self):
+        ''' Парсер для коньяк Старий Кахеті 4 зірки'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-staryy-kaheti-4-zvezdy-0-5-l',
+            'https://novus.online/product/konak-starij-kaheti-4-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-starii-kakheti-500ml-gruziia--04860013080521/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2399-konyak-staryj-kakheti-4-zvezdy-4860013080521.html'
+        ])
+
+    def koblevo_extra_old_8_parser(self):
+        ''' Парсер для бренді Коблево Extra Old 8 років'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/brendi-koblevo-500ml-ukrayina--04820182221095/',
+            'https://novus.online/product/brendi-koblevo-rezerv-ekstra-old-marochnyy-8-rokiv-40-05l',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/93442-brendi-koblevo-reserve-extra-old-8-let-4820182221095.html'
+        ])
 
 
 

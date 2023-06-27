@@ -795,6 +795,57 @@ class TesterForGroceryAppText:
             return SHAMP_FRAN_BULV_BILE_BRUT
         elif np.argmax(result) == 365:
             return SHAMP_FRAN_BULV_BILE_NAPIVSOLOD
+        elif np.argmax(result) == 366:
+            return STARIY_KOHETI_3
+        elif np.argmax(result) == 367:
+            return STARIY_KOHETI_5
+        elif np.argmax(result) == 368:
+            return STARIY_KOHETI_4
+        elif np.argmax(result) == 369:
+            return BRENDI_KOBLEVO_RESERVE_EXTRA_OLD_8_YEARS_05L
+        elif np.argmax(result) == 370:
+            return SHABO_VSOP_5
+        elif np.argmax(result) == 371:
+            return SHABO_VS_3
+        elif np.argmax(result) == 372:
+            return SHABO_1788_4
+        elif np.argmax(result) == 373:
+            return SHABO_1788_RESERV
+        elif np.argmax(result) == 374:
+            return SHABO_VS_RESERV
+        elif np.argmax(result) == 375:
+            return SHABO_VSOP_RESERV
+        elif np.argmax(result) == 376:
+            return AZNAURI_3
+        elif np.argmax(result) == 377:
+            return AZNAURI_5
+        elif np.argmax(result) == 378:
+            return AZNAURI_4
+        elif np.argmax(result) == 379:
+            return AZNAURI_BLACK_BARREL_5
+        elif np.argmax(result) == 380:
+            return ADJARI_3
+        elif np.argmax(result) == 381:
+            return ADJARI_5
+        elif np.argmax(result) == 382:
+            return ADJARI_4
+        elif np.argmax(result) == 383:
+            return HENNESY_VS
+        elif np.argmax(result) == 384:
+            return HENNESY_VSOP
+        elif np.argmax(result) == 385:
+            return ALEXX_GOLD_VSOP
+        elif np.argmax(result) == 386:
+            return ALEXX_SILVER_VS
+        elif np.argmax(result) == 387:
+            return ARARAT_5
+        elif np.argmax(result) == 388:
+            return ARARAT_AHTAMAR_10
+        elif np.argmax(result) == 389:
+            return ARARAT_3
+        elif np.argmax(result) == 390:
+            return ARARAT_NAIRI_10
+
 
 
 

@@ -1046,6 +1046,56 @@ class ContextSupervisor:
             result = self.getting_prices('fran_bulvar_bile_brut', get_fran_bulv_bile_brut_075l)
         elif nn_respond == SHAMP_FRAN_BULV_BILE_NAPIVSOLOD:
             result = self.getting_prices('fran_bulvar_bile_napivsolodke', get_fran_bulv_bile_napivsolod_075l)
+        elif nn_respond == STARIY_KOHETI_3:
+            result = self.getting_prices('stariy_kaheti_3', get_stariy_koheti_3)
+        elif nn_respond == STARIY_KOHETI_5:
+            result = self.getting_prices('stariy_kaheti_5', get_stariy_koheti_5)
+        elif nn_respond == BRENDI_KOBLEVO_RESERVE_EXTRA_OLD_8_YEARS_05L:
+            result = self.getting_prices('koblevo_extra_old_8', get_brendi_koblevo_reserve_extra_old_8_years)
+        elif nn_respond == SHABO_VSOP_5:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_vsop_5)
+        elif nn_respond == SHABO_VS_3:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_vs_3)
+        elif nn_respond == SHABO_1788_4:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_1788_4)
+        elif nn_respond == SHABO_1788_RESERV:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_1788_reserv)
+        elif nn_respond == SHABO_VS_RESERV:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_vs_reserv)
+        elif nn_respond == SHABO_VSOP_RESERV:
+            result = self.getting_prices(self.NO_PRICES, get_shabo_vsop_reserv)
+        elif nn_respond == AZNAURI_3:
+            result = self.getting_prices(self.NO_PRICES, get_aznauri_3)
+        elif nn_respond == AZNAURI_5:
+            result = self.getting_prices(self.NO_PRICES, get_aznauri_5)
+        elif nn_respond == AZNAURI_4:
+            result = self.getting_prices(self.NO_PRICES, get_aznauri_4)
+        elif nn_respond == AZNAURI_BLACK_BARREL_5:
+            result = self.getting_prices(self.NO_PRICES, get_aznauri_black_barrel_5)
+        elif nn_respond == ADJARI_3:
+            result = self.getting_prices(self.NO_PRICES, get_adjari_3)
+        elif nn_respond == ADJARI_5:
+            result = self.getting_prices(self.NO_PRICES, get_adjari_5)
+        elif nn_respond == ADJARI_4:
+            result = self.getting_prices(self.NO_PRICES, get_adjari_4)
+        elif nn_respond == HENNESY_VS:
+            result = self.getting_prices(self.NO_PRICES, get_hennesy_vs)
+        elif nn_respond == HENNESY_VSOP:
+            result = self.getting_prices(self.NO_PRICES, get_hennesy_vsop)
+        elif nn_respond == ALEXX_GOLD_VSOP:
+            result = self.getting_prices(self.NO_PRICES, get_alexx_gold_vsop)
+        elif nn_respond == ALEXX_SILVER_VS:
+            result = self.getting_prices(self.NO_PRICES, get_alexx_silver_vs)
+        elif nn_respond == ARARAT_5:
+            result = self.getting_prices(self.NO_PRICES, get_ararat_5)
+        elif nn_respond == ARARAT_AHTAMAR_10:
+            result = self.getting_prices(self.NO_PRICES, get_ararat_ahtamar_10)
+        elif nn_respond == ARARAT_3:
+            result = self.getting_prices(self.NO_PRICES, get_ararat_3)
+        elif nn_respond == ARARAT_NAIRI_10:
+            result = self.getting_prices(self.NO_PRICES, get_ararat_nairi_20)
+        elif nn_respond == STARIY_KOHETI_4:
+            result = self.getting_prices('stariy_kaheti_4', get_stariy_koheti_4)
 
 
         # тут подключаются блюда

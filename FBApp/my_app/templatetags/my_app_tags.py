@@ -1119,6 +1119,81 @@ get_fran_bulv_bile_brut_075l = tag.create_tag(ItemsPicsFromNet, 365)
 '''Тэг,возвращающий информацию о "Шампанське Французький Бульвар біле напівсолодке, 0,75л"'''
 get_fran_bulv_bile_napivsolod_075l = tag.create_tag(ItemsPicsFromNet, 366)
 
+'''Тэг,возвращающий информацию о "Коньяк Старий Кахеті 3 зірки, 0,5л"'''
+get_stariy_koheti_3 = tag.create_tag(ItemsPicsFromNet, 370)                   #смещение индекса товара
+
+'''Тэг,возвращающий информацию о "Коньяк Старий Кахеті 3 зірки, 0,5л"'''
+get_stariy_koheti_5 = tag.create_tag(ItemsPicsFromNet, 371)
+
+'''Тэг,возвращающий информацию о "Коньяк Старий Кахеті 4 зірки, 0,5л"'''
+get_stariy_koheti_4 = tag.create_tag(ItemsPicsFromNet, 372)
+
+'''Тэг,возвращающий информацию о "Бренді Коблево Reserve Extra Old 8 років, 0,5л"'''
+get_brendi_koblevo_reserve_extra_old_8_years = tag.create_tag(ItemsPicsFromNet, 373)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо VSOP' 5 зірок, 0,5л"'''
+get_shabo_vsop_5 = tag.create_tag(ItemsPicsFromNet, 374)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо VS' 3 зірки, 0,5л"'''
+get_shabo_vs_3 = tag.create_tag(ItemsPicsFromNet, 375)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо 1788' 4 зірки, 0,5л"'''
+get_shabo_1788_4 = tag.create_tag(ItemsPicsFromNet, 376)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо 1788' резерв, 0,5л"'''
+get_shabo_1788_reserv = tag.create_tag(ItemsPicsFromNet, 377)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо VS' резерв, 0,5л"'''
+get_shabo_vs_reserv = tag.create_tag(ItemsPicsFromNet, 378)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Шабо VSOP' резерв, 0,5л"'''
+get_shabo_vsop_reserv = tag.create_tag(ItemsPicsFromNet, 379)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Азнаурі' 3 зірки, 0,5л"'''
+get_aznauri_3 = tag.create_tag(ItemsPicsFromNet, 380)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Азнаурі' 5 зірок, 0,5л"'''
+get_aznauri_5 = tag.create_tag(ItemsPicsFromNet, 381)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Азнаурі' 4 зірки, 0,5л"'''
+get_aznauri_4 = tag.create_tag(ItemsPicsFromNet, 382)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Азнаурі' 4 зірки, 0,5л"'''
+get_aznauri_black_barrel_5 = tag.create_tag(ItemsPicsFromNet, 383)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Adjari' 3 зірки, 0,5л"'''
+get_adjari_3 = tag.create_tag(ItemsPicsFromNet, 384)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Adjari' 5 зірок, 0,5л"'''
+get_adjari_5 = tag.create_tag(ItemsPicsFromNet, 385)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Adjari' 4 зірки, 0,5л"'''
+get_adjari_4 = tag.create_tag(ItemsPicsFromNet, 386)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Hennesy' в подарунковій упаковці, 0,5л"'''
+get_hennesy_vs = tag.create_tag(ItemsPicsFromNet, 387)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Hennesy VSOP' в подарунковій упаковці, 0,5л"'''
+get_hennesy_vsop = tag.create_tag(ItemsPicsFromNet, 388)
+
+'''Тэг,возвращающий информацию о "Коньяк 'AleXX Gold VSOP' в тубусі, 0,5л"'''
+get_alexx_gold_vsop = tag.create_tag(ItemsPicsFromNet, 389)
+
+'''Тэг,возвращающий информацию о "Коньяк 'AleXX Silver VS' в тубусі, 0,5л"'''
+get_alexx_silver_vs = tag.create_tag(ItemsPicsFromNet, 390)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Ararat' 5 зірок, 0,5л"'''
+get_ararat_5 = tag.create_tag(ItemsPicsFromNet, 391)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Ararat Ahtamar' 10 років, 0,5л"'''
+get_ararat_ahtamar_10 = tag.create_tag(ItemsPicsFromNet, 392)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Ararat' 3 зірки, 0,5л"'''
+get_ararat_3 = tag.create_tag(ItemsPicsFromNet, 393)
+
+'''Тэг,возвращающий информацию о "Коньяк 'Ararat Nairi' 20 років, 0,5л"'''
+get_ararat_nairi_20 = tag.create_tag(ItemsPicsFromNet, 394)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():
