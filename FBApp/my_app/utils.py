@@ -1065,37 +1065,72 @@ class ContextSupervisor:
         elif nn_respond == SHABO_VSOP_RESERV:
             result = self.getting_prices('shabo_vsop_reserv', get_shabo_vsop_reserv)
         elif nn_respond == AZNAURI_3:
-            result = self.getting_prices(self.NO_PRICES, get_aznauri_3)
+            result = self.getting_prices('aznauri_3', get_aznauri_3)
         elif nn_respond == AZNAURI_5:
-            result = self.getting_prices(self.NO_PRICES, get_aznauri_5)
+            result = self.getting_prices('aznauri_5', get_aznauri_5)
         elif nn_respond == AZNAURI_4:
-            result = self.getting_prices(self.NO_PRICES, get_aznauri_4)
+            result = self.getting_prices('aznauri_4', get_aznauri_4)
         elif nn_respond == AZNAURI_BLACK_BARREL_5:
-            result = self.getting_prices(self.NO_PRICES, get_aznauri_black_barrel_5)
+            result = self.getting_prices('aznauri_black_barrel_5', get_aznauri_black_barrel_5)
         elif nn_respond == ADJARI_3:
-            result = self.getting_prices(self.NO_PRICES, get_adjari_3)
+            result = self.getting_prices('adjari_3', get_adjari_3)
         elif nn_respond == ADJARI_5:
-            result = self.getting_prices(self.NO_PRICES, get_adjari_5)
+            result = self.getting_prices('adjari_5', get_adjari_5)
         elif nn_respond == ADJARI_4:
-            result = self.getting_prices(self.NO_PRICES, get_adjari_4)
+            result = self.getting_prices('adjari_4', get_adjari_4)
         elif nn_respond == HENNESY_VS:
-            result = self.getting_prices(self.NO_PRICES, get_hennesy_vs)
+            result = self.getting_prices('hennesy_vs', get_hennesy_vs)
         elif nn_respond == HENNESY_VSOP:
-            result = self.getting_prices(self.NO_PRICES, get_hennesy_vsop)
+            result = self.getting_prices('hennesy_vsop', get_hennesy_vsop)
         elif nn_respond == ALEXX_GOLD_VSOP:
-            result = self.getting_prices(self.NO_PRICES, get_alexx_gold_vsop)
+            result = self.getting_prices('alexx_gold_vsop', get_alexx_gold_vsop)
         elif nn_respond == ALEXX_SILVER_VS:
-            result = self.getting_prices(self.NO_PRICES, get_alexx_silver_vs)
+            result = self.getting_prices('alexx_silver_vs', get_alexx_silver_vs)
         elif nn_respond == ARARAT_5:
-            result = self.getting_prices(self.NO_PRICES, get_ararat_5)
+            result = self.getting_prices('ararat_5', get_ararat_5)
         elif nn_respond == ARARAT_AHTAMAR_10:
-            result = self.getting_prices(self.NO_PRICES, get_ararat_ahtamar_10)
+            result = self.getting_prices('ararat_ahtamar_10', get_ararat_ahtamar_10)
         elif nn_respond == ARARAT_3:
-            result = self.getting_prices(self.NO_PRICES, get_ararat_3)
-        elif nn_respond == ARARAT_NAIRI_10:
-            result = self.getting_prices(self.NO_PRICES, get_ararat_nairi_20)
+            result = self.getting_prices('ararat_3', get_ararat_3)
+        elif nn_respond == ARARAT_NAIRI_20:
+            result = self.getting_prices('ararat_nairi_20', get_ararat_nairi_20)
         elif nn_respond == STARIY_KOHETI_4:
             result = self.getting_prices('stariy_kaheti_4', get_stariy_koheti_4)
+        elif nn_respond == GREEN_DAY_AIR_05L:
+            result = self.getting_prices('green_day_air_05l', get_green_day_air_05l)
+        elif nn_respond == GREEN_DAY_ULTRA_SOFT_05L:
+            result = self.getting_prices('green_day_ultra_soft_05l', get_green_day_ultra_soft_05l)
+        elif nn_respond == GREEN_DAY_ORGANIC_LIFE_05L:
+            result = self.getting_prices('green_day_organic_life_05l', get_green_day_organic_life_05l)
+        elif nn_respond == GREEN_DAY_CRYSTAL_05L:
+            result = self.getting_prices('green_day_crystal_05l', get_green_day_crystal_05l)
+        elif nn_respond == GREEN_DAY_05L:
+            result = self.getting_prices('green_day_05l', get_green_day_05l)
+        elif nn_respond == MEDOFF_CLASSIC_05L:
+            result = self.getting_prices('medoff_classic_05l', get_medoff_classic_05l)
+        elif nn_respond == SMIRNOFF_RED_05L:
+            result = self.getting_prices('smirnoff_red_05l', get_smirnoff_red_05l)
+        elif nn_respond == KOZACKA_RADA_CLASSIC_05L:
+            result = self.getting_prices('kozacka_rada_classic_05l', get_kozacka_rada_classic_05l)
+        elif nn_respond == KOZACKA_RADA_OSOBLIVA_05L:
+            result = self.getting_prices('kozacka_rada_osobliva_05l', get_kozacka_rada_osobliva_05l)
+        elif nn_respond == ZUBROWKA_BISON_GRASS_05L:
+            result = self.getting_prices('zubrowka_bison_grass_05l', get_zubrowka_bison_grass_05l)
+        elif nn_respond == ZUBROWKA_BIALA_05L:
+            result = self.getting_prices('zubrowka_biala_05l', get_zubrowka_biala_05l)
+        elif nn_respond == ZUBROWKA_CZARNA_05L:
+            result = self.getting_prices('zubrowka_czarna_05l', get_zubrowka_czarna_05l)
+        elif nn_respond == VOZDUH_LEGKA_05L:
+            result = self.getting_prices('vozduh_legka_osobliva_05l', get_vozduh_legka_05l)
+        elif nn_respond == VOZDUH_ALPHA_05L:
+            result = self.getting_prices('vozduh_legka_osobliva_05l', get_vozduh_alpha_05l)
+        elif nn_respond == PERSHA_GILDIYA_VERHOVNA_05L:
+            result = self.getting_prices(self.NO_PRICES, get_persha_gild_verhovna_05l)
+        elif nn_respond == PERSHA_GILDIYA_ZNATNA_05L:
+            result = self.getting_prices(self.NO_PRICES, get_persha_gild_znatna_05l)
+        elif nn_respond == PERSHA_GILDIYA_POVAJNA_05L:
+            result = self.getting_prices(self.NO_PRICES, get_persha_gild_povajna_05l)
+
 
 
         # тут подключаются блюда

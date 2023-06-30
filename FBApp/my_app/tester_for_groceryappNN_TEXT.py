@@ -844,7 +844,41 @@ class TesterForGroceryAppText:
         elif np.argmax(result) == 389:
             return ARARAT_3
         elif np.argmax(result) == 390:
-            return ARARAT_NAIRI_10
+            return ARARAT_NAIRI_20
+        elif np.argmax(result) == 391:
+            return GREEN_DAY_AIR_05L
+        elif np.argmax(result) == 392:
+            return GREEN_DAY_ULTRA_SOFT_05L
+        elif np.argmax(result) == 393:
+            return GREEN_DAY_ORGANIC_LIFE_05L
+        elif np.argmax(result) == 394:
+            return GREEN_DAY_CRYSTAL_05L
+        elif np.argmax(result) == 395:
+            return GREEN_DAY_05L
+        elif np.argmax(result) == 396:
+            return MEDOFF_CLASSIC_05L
+        elif np.argmax(result) == 397:
+            return SMIRNOFF_RED_05L
+        elif np.argmax(result) == 398:
+            return KOZACKA_RADA_CLASSIC_05L
+        elif np.argmax(result) == 399:
+            return KOZACKA_RADA_OSOBLIVA_05L
+        elif np.argmax(result) == 400:
+            return ZUBROWKA_BISON_GRASS_05L
+        elif np.argmax(result) == 401:
+            return ZUBROWKA_BIALA_05L
+        elif np.argmax(result) == 402:
+            return ZUBROWKA_CZARNA_05L
+        elif np.argmax(result) == 403:
+            return VOZDUH_LEGKA_05L
+        elif np.argmax(result) == 404:
+            return VOZDUH_ALPHA_05L
+        elif np.argmax(result) == 405:
+            return PERSHA_GILDIYA_VERHOVNA_05L
+        elif np.argmax(result) == 406:
+            return PERSHA_GILDIYA_ZNATNA_05L
+        elif np.argmax(result) == 407:
+            return PERSHA_GILDIYA_POVAJNA_05L
 
 
 

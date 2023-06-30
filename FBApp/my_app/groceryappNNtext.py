@@ -29,7 +29,7 @@ class GroceryAppText:
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 391
+    ITEMS_AMOUNT = 405      #добавить 3 перши гильдии потом
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -37,7 +37,7 @@ class GroceryAppText:
         self.model = keras.Sequential([
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),  # 128
-            LSTM(175),  # 64
+            LSTM(180),  # 64
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 

@@ -11,6 +11,7 @@ from django.core.management import call_command
 import json
 from parsers import ProductParserVol2
 
+
 # коэфициенты для борща красного
 water_rate = 3
 meat_rate = 0.8
@@ -2660,6 +2661,232 @@ all_products_names = [
         "metro": parser.shabo_vsop_reserv_parser()[6],
         "fozzy": parser.shabo_vsop_reserv_parser()[8]
     }},
+
+    {'aznauri_3': {
+        "atb": parser.aznauri_3_parser()[0],
+        "eko": parser.aznauri_3_parser()[1],
+        "varus": parser.aznauri_3_parser()[2],
+        "silpo": parser.aznauri_3_parser()[3],
+        "ashan": parser.aznauri_3_parser()[4],
+        "novus": parser.aznauri_3_parser()[5],
+        "metro": parser.aznauri_3_parser()[6],
+        "nash_kray": parser.aznauri_3_parser()[7],
+        "fozzy": parser.aznauri_3_parser()[8]
+    }},
+
+    {'aznauri_5': {
+        "atb": parser.aznauri_5_parser()[0],
+        "eko": parser.aznauri_5_parser()[1],
+        "varus": parser.aznauri_5_parser()[2],
+        "silpo": parser.aznauri_5_parser()[3],
+        "ashan": parser.aznauri_5_parser()[4],
+        "novus": parser.aznauri_5_parser()[5],
+        "nash_kray": parser.aznauri_5_parser()[7],
+        "fozzy": parser.aznauri_5_parser()[8]
+    }},
+
+    {'aznauri_4': {
+        "eko": parser.aznauri_4_parser()[1],
+        "ashan": parser.aznauri_4_parser()[4],
+        "novus": parser.aznauri_4_parser()[5],
+        "metro": parser.aznauri_4_parser()[6],
+        "fozzy": parser.aznauri_4_parser()[8]
+    }},
+
+    {'aznauri_black_barrel_5': {
+        "atb": parser.aznauri_black_barrel_5_parser()[0],
+        "eko": parser.aznauri_black_barrel_5_parser()[1],
+        "varus": parser.aznauri_black_barrel_5_parser()[2],
+        "silpo": parser.aznauri_black_barrel_5_parser()[3],
+        "ashan": parser.aznauri_black_barrel_5_parser()[4],
+        "novus": parser.aznauri_black_barrel_5_parser()[5],
+        "fozzy": parser.aznauri_black_barrel_5_parser()[8]
+    }},
+
+    {'adjari_3': {
+        "varus": parser.adjari_3_parser()[2],
+        "silpo": parser.adjari_3_parser()[3],
+        "ashan": parser.adjari_3_parser()[4],
+        "metro": parser.adjari_3_parser()[6],
+        "fozzy": parser.adjari_3_parser()[8]
+    }},
+
+    {'adjari_5': {
+        "varus": parser.adjari_5_parser()[2],
+        "silpo": parser.adjari_5_parser()[3],
+        "ashan": parser.adjari_5_parser()[4],
+        "metro": parser.adjari_5_parser()[6],
+        "novus": parser.adjari_5_parser()[5],
+        "fozzy": parser.adjari_5_parser()[8]
+    }},
+
+    {'adjari_4': {
+        "ashan": parser.adjari_4_parser()[4],
+        "fozzy": parser.adjari_4_parser()[8]
+    }},
+
+    {'hennesy_vs': {
+        "atb": parser.hennesy_vs_parser()[0],
+        "silpo": parser.hennesy_vs_parser()[3],
+        "novus": parser.hennesy_vs_parser()[5],
+        "metro": parser.hennesy_vs_parser()[6],
+        "fozzy": parser.hennesy_vs_parser()[8]
+    }},
+
+    {'hennesy_vsop': {
+        "silpo": parser.hennesy_vsop_parser()[3],
+        "metro": parser.hennesy_vsop_parser()[6],
+        "fozzy": parser.hennesy_vsop_parser()[8]
+    }},
+
+    {'alexx_gold_vsop': {
+        "varus": parser.alexx_gold_vsop_parser()[2],
+        "silpo": parser.alexx_gold_vsop_parser()[3],
+        "novus": parser.alexx_gold_vsop_parser()[5],
+        "metro": parser.alexx_gold_vsop_parser()[6],
+        "fozzy": parser.alexx_gold_vsop_parser()[8]
+    }},
+
+    {'alexx_silver_vs': {
+        "varus": parser.alexx_silver_vs_parser()[2],
+        "silpo": parser.alexx_silver_vs_parser()[3],
+        "metro": parser.alexx_silver_vs_parser()[6],
+        "fozzy": parser.alexx_silver_vs_parser()[8]
+    }},
+
+    {'ararat_5': {
+        "varus": parser.ararat_5_parser()[2],
+        "silpo": parser.ararat_5_parser()[3],
+        "ashan": parser.ararat_5_parser()[4],
+        "metro": parser.ararat_5_parser()[6],
+        "fozzy": parser.ararat_5_parser()[8]
+    }},
+
+    {'ararat_ahtamar_10': {
+        "silpo": parser.ararat_ahtamar_10_parser()[3],
+        "ashan": parser.ararat_ahtamar_10_parser()[4],
+        "fozzy": parser.ararat_ahtamar_10_parser()[8]
+    }},
+
+    {'ararat_3': {
+        "varus": parser.ararat_3_parser()[2],
+        "silpo": parser.ararat_3_parser()[3],
+        "ashan": parser.ararat_3_parser()[4],
+        "metro": parser.ararat_3_parser()[6],
+        "nash_kray": parser.ararat_3_parser()[7],
+        "fozzy": parser.ararat_3_parser()[8]
+    }},
+
+    {'ararat_nairi_20': {
+        "ashan": parser.ararat_nairi_20_parser()[4],
+        "fozzy": parser.ararat_nairi_20_parser()[8]
+    }},
+
+    {'green_day_air_05l': {
+        "fozzy": parser.green_day_air_05l_parser()[8]
+    }},
+
+    {'green_day_ultra_soft_05l': {
+        "fozzy": parser.green_day_ultra_soft_05l_parser()[8]
+    }},
+
+    {'green_day_organic_life_05l': {
+        "varus": parser.green_day_organic_life_05l_parser()[2],
+        "ashan": parser.green_day_organic_life_05l_parser()[4],
+        "fozzy": parser.green_day_organic_life_05l_parser()[8]
+    }},
+
+    {'green_day_crystal_05l': {
+        "varus": parser.green_day_crystal_05l_parser()[2],
+        "silpo": parser.green_day_crystal_05l_parser()[3],
+        "ashan": parser.green_day_crystal_05l_parser()[4],
+        "metro": parser.green_day_crystal_05l_parser()[6],
+        "fozzy": parser.green_day_crystal_05l_parser()[8]
+    }},
+
+    {'green_day_05l': {
+        "varus": parser.green_day_05l_parser()[2],
+        "silpo": parser.green_day_05l_parser()[3],
+        "ashan": parser.green_day_05l_parser()[4],
+        "metro": parser.green_day_05l_parser()[6],
+        "fozzy": parser.green_day_05l_parser()[8]
+    }},
+
+    {'medoff_classic_05l': {
+        "eko": parser.medoff_classic_05l_parser()[1],
+        "varus": parser.medoff_classic_05l_parser()[2],
+        "silpo": parser.medoff_classic_05l_parser()[3],
+        "nash_kray": parser.medoff_classic_05l_parser()[7],
+        "fozzy": parser.medoff_classic_05l_parser()[8]
+    }},
+
+    {'smirnoff_red_05l': {
+        "eko": parser.smirnoff_red_05l_parser()[1],
+        "varus": parser.smirnoff_red_05l_parser()[2],
+        "silpo": parser.smirnoff_red_05l_parser()[3],
+        "fozzy": parser.smirnoff_red_05l_parser()[8]
+    }},
+
+    {'kozacka_rada_classic_05l': {
+        "atb": parser.kozacka_rada_classic_05l_parser()[0],
+        "eko": parser.kozacka_rada_classic_05l_parser()[1],
+        "silpo": parser.kozacka_rada_classic_05l_parser()[3],
+        "ashan": parser.kozacka_rada_classic_05l_parser()[4],
+        "novus": parser.kozacka_rada_classic_05l_parser()[5],
+        "metro": parser.kozacka_rada_classic_05l_parser()[6],
+        "nash_kray": parser.kozacka_rada_classic_05l_parser()[7],
+        "fozzy": parser.kozacka_rada_classic_05l_parser()[8]
+    }},
+
+    {'kozacka_rada_osobliva_05l': {
+        "atb": parser.kozacka_rada_osobliva_05l_parser()[0],
+        "eko": parser.kozacka_rada_osobliva_05l_parser()[1],
+        "varus": parser.kozacka_rada_osobliva_05l_parser()[2],
+        "silpo": parser.kozacka_rada_osobliva_05l_parser()[3],
+        "novus": parser.kozacka_rada_osobliva_05l_parser()[5],
+        "fozzy": parser.kozacka_rada_osobliva_05l_parser()[8]
+    }},
+
+    {'zubrowka_bison_grass_05l': {
+        "atb": parser.zubrowka_bison_grass_05l_parser()[0],
+        "eko": parser.zubrowka_bison_grass_05l_parser()[1],
+        "ashan": parser.zubrowka_bison_grass_05l_parser()[4],
+        "novus": parser.zubrowka_bison_grass_05l_parser()[5],
+        "metro": parser.zubrowka_bison_grass_05l_parser()[6],
+        "nash_kray": parser.zubrowka_bison_grass_05l_parser()[7],
+        "fozzy": parser.zubrowka_bison_grass_05l_parser()[8]
+    }},
+
+    {'zubrowka_biala_05l': {
+        "atb": parser.zubrowka_biala_05l_parser()[0],
+        "eko": parser.zubrowka_biala_05l_parser()[1],
+        "ashan": parser.zubrowka_biala_05l_parser()[4],
+        "novus": parser.zubrowka_biala_05l_parser()[5],
+        "metro": parser.zubrowka_biala_05l_parser()[6],
+        "nash_kray": parser.zubrowka_biala_05l_parser()[7],
+        "fozzy": parser.zubrowka_biala_05l_parser()[8]
+    }},
+
+    {'zubrowka_czarna_05l': {
+        "eko": parser.zubrowka_czarna_05l_parser()[1],
+        "ashan": parser.zubrowka_czarna_05l_parser()[4],
+        "nash_kray": parser.zubrowka_czarna_05l_parser()[7],
+        "fozzy": parser.zubrowka_czarna_05l_parser()[8]
+    }},
+
+    {'vozduh_legka_osobliva_05l': {
+        "silpo": parser.vozduh_legka_osobliva_05l_parser()[3],
+        "fozzy": parser.vozduh_legka_osobliva_05l_parser()[8]
+    }},
+
+    {'vozduh_legka_osobliva_05l': {
+        "eko": parser.vozduh_alpha_05l_parser()[1],
+        "fozzy": parser.vozduh_alpha_05l_parser()[8]
+    }},
+
+
+
+
 
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)

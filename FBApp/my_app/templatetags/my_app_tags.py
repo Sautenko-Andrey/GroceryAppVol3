@@ -1194,6 +1194,58 @@ get_ararat_3 = tag.create_tag(ItemsPicsFromNet, 393)
 '''Тэг,возвращающий информацию о "Коньяк 'Ararat Nairi' 20 років, 0,5л"'''
 get_ararat_nairi_20 = tag.create_tag(ItemsPicsFromNet, 394)
 
+'''Тэг,возвращающий информацию о "Горілка Green Day Air, 0,5л"'''
+get_green_day_air_05l = tag.create_tag(ItemsPicsFromNet, 395)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Ultra Soft 40%, 0,5л"'''
+get_green_day_ultra_soft_05l = tag.create_tag(ItemsPicsFromNet, 396)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Organic Life, 0,5л"'''
+get_green_day_organic_life_05l = tag.create_tag(ItemsPicsFromNet, 397)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Crystal 40%, 0,5л"'''
+get_green_day_crystal_05l = tag.create_tag(ItemsPicsFromNet, 398)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day, 0,5л"'''
+get_green_day_05l = tag.create_tag(ItemsPicsFromNet, 399)
+
+'''Тэг,возвращающий информацию о "Горілка Medoff Класік New, 0,5л"'''
+get_medoff_classic_05l = tag.create_tag(ItemsPicsFromNet, 400)
+
+'''Тэг,возвращающий информацию о "Горілка Smirnoff Red, 0,5л"'''
+get_smirnoff_red_05l = tag.create_tag(ItemsPicsFromNet, 401)
+
+'''Тэг,возвращающий информацию о "Горілка Класична "Козацька рада", 0,5л"'''
+get_kozacka_rada_classic_05l = tag.create_tag(ItemsPicsFromNet, 402)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 0,5л"'''
+get_kozacka_rada_osobliva_05l = tag.create_tag(ItemsPicsFromNet, 403)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Bison Grass, 0,5л"'''
+get_zubrowka_bison_grass_05l = tag.create_tag(ItemsPicsFromNet, 404)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Biala, 0,5л"'''
+get_zubrowka_biala_05l = tag.create_tag(ItemsPicsFromNet, 405)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Сzarna, 0,5л"'''
+get_zubrowka_czarna_05l = tag.create_tag(ItemsPicsFromNet, 406)
+
+'''Тэг,возвращающий информацию о "Горілка Воздух Легка особлива, 0,5л"'''
+get_vozduh_legka_05l = tag.create_tag(ItemsPicsFromNet, 407)
+
+'''Тэг,возвращающий информацию о "Горілка Повітря Альфа, 0,5л"'''
+get_vozduh_alpha_05l = tag.create_tag(ItemsPicsFromNet, 408)
+
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Верховна, 0,5л"'''
+get_persha_gild_verhovna_05l = tag.create_tag(ItemsPicsFromNet, 409)
+
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Знатна, 0,5л"'''
+get_persha_gild_znatna_05l = tag.create_tag(ItemsPicsFromNet, 410)
+
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Поважна, 0,5л"'''
+get_persha_gild_povajna_05l = tag.create_tag(ItemsPicsFromNet, 411)
+
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

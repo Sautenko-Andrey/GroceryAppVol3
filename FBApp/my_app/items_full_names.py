@@ -388,7 +388,24 @@ ALEXX_SILVER_VS = "Коньяк 'AleXX Silver VS' в тубусі, 0,5л"
 ARARAT_5 = "Коньяк 'Ararat' 5 зірок, 0,5л"
 ARARAT_AHTAMAR_10 = "Коньяк 'Ararat Ahtamar' 10 років, 0,5л"
 ARARAT_3 = "Коньяк 'Ararat' 3 зірки, 0,5л"
-ARARAT_NAIRI_10 = "Коньяк 'Ararat Nairi' 20 років, 0,5л"
+ARARAT_NAIRI_20 = "Коньяк 'Ararat Nairi' 20 років, 0,5л"
+GREEN_DAY_AIR_05L = "Горілка Green Day Air, 0,5л"
+GREEN_DAY_ULTRA_SOFT_05L = "Горілка Green Day Ultra Soft 40%, 0,5л"
+GREEN_DAY_ORGANIC_LIFE_05L = "Горілка Green Day Organic Life, 0,5л"
+GREEN_DAY_CRYSTAL_05L = "Горілка Green Day Crystal 40%, 0,5л"
+GREEN_DAY_05L = "Горілка Green Day, 0,5л"
+MEDOFF_CLASSIC_05L = "Горілка Medoff Класік New, 0,5л"
+SMIRNOFF_RED_05L = "Горілка Smirnoff Red, 0,5л"
+KOZACKA_RADA_CLASSIC_05L = 'Горілка Класична "Козацька рада", 0,5л'
+KOZACKA_RADA_OSOBLIVA_05L = 'Горілка "Козацька рада" Особлива, 0,5л'
+ZUBROWKA_BISON_GRASS_05L = "Горілка Zubrowka Bison Grass, 0,5л"
+ZUBROWKA_BIALA_05L = "Горілка Zubrowka Biala, 0,5л"
+ZUBROWKA_CZARNA_05L = "Горілка Zubrowka Сzarna, 0,5л"
+VOZDUH_LEGKA_05L = "Горілка Воздух Легка особлива, 0,5л"
+VOZDUH_ALPHA_05L = "Горілка Повітря Альфа, 0,5л"
+PERSHA_GILDIYA_VERHOVNA_05L = 'Горілка "Перша гільдія" Верховна, 0,5л'
+PERSHA_GILDIYA_ZNATNA_05L = 'Горілка "Перша гільдія" Знатна, 0,5л'
+PERSHA_GILDIYA_POVAJNA_05L = 'Горілка "Перша гільдія" Поважна, 0,5л'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

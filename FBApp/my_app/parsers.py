@@ -4,6 +4,7 @@ from my_app.utils import price_updating_data
 
 
 
+
 class ProductParserVol2:
     '''Класс для парсинга цен с сайтов с приминением Selenium'''
 
@@ -3730,6 +3731,286 @@ class ProductParserVol2:
             'https://novus.online/product/konak-ukraini-sabo-rezerv-vsop-40-05l',
             'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404388/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/36522-konyak-shabo-rezerv-vsop-4820070404388.html'
+        ])
+    
+    def aznauri_3_parser(self):
+        ''' Парсер для коньяк Aznauri 3*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05-l-aznauri-cuperior-tri-zirocki-40-ukraina',
+            'https://eko.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290094/',
+            'https://varus.ua/konyak-aznauri-3-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-aznauri-3-zirky-690230',
+            'https://auchan.ua/ua/kon-jak-aznauri-3-goda-vyderzhki-40-500-ml-893135/',
+            'https://novus.online/product/konak-40-05l-ukraini-ordinarnij-aznauri-3-roki-pl',
+            'https://metro.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290094/',
+            'https://shop.nashkraj.ua/kovel/product/230802-konyak-aznauri-0-5l-3-40',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/42983-konyak-ukrainy-aznauri-05-3-goda-4820189290094.html'
+        ])
+    
+    def aznauri_5_parser(self):
+        ''' Парсер для коньяк Aznauri 5*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05-l-aznauri-cuperior-pat-zirocok-40-ukraina',
+            'https://eko.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290117/',
+            'https://varus.ua/konyak-aznauri-5-zvezd-0-5-l',
+            'https://shop.silpo.ua/product/koniak-aznauri-5-zirok-690231',
+            'https://auchan.ua/ua/kon-jak-aznauri-5-let-vyderzhki-40-500-ml-893114/',
+            'https://novus.online/product/konak-40-05l-ukraini-ordinarnij-aznauri-5-roki-pl',
+            'https://shop.nashkraj.ua/kovel/product/230377-konyak-aznauri-0-5l-5-40',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/42985-konyak-ukrainy-aznauri-05-5-let-4820189290117.html'
+        ])
+    
+    def aznauri_4_parser(self):
+        ''' Парсер для коньяк Aznauri 4*'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290100/',
+            'https://auchan.ua/ua/kon-jak-aznauri-4-goda-vyderzhki-40-500-ml-893128/',
+            'https://novus.online/product/konak-40-05l-ukraini-ordinarnij-aznauri-4-roki-pl',
+            'https://metro.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290100/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/42984-konyak-ukrainy-aznauri-05-4-goda-4820189290100.html'
+        ])
+    
+    def aznauri_black_barrel_5_parser(self):
+        ''' Парсер для коньяк Aznauri Black Barrel 5*'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05-l-aznauri-black-barrel-5-rokiv-40-ob-skbut',
+            'https://eko.zakaz.ua/uk/products/koniak-aznauri-500ml-ukrayina--04820189292258/',
+            'https://varus.ua/konyak-aznauri-black-barrel-5-zvezd-0-5-l',
+            'https://shop.silpo.ua/product/koniak-aznauri-black-barrel-5-rokiv-834517',
+            'https://auchan.ua/ua/kon-jak-aznauri-black-barrel-5-let-vyderzhki-40-500-ml-893121/',
+            'https://novus.online/product/konyak-aznauri-black-barrel-5-rokiv-40-05l',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/83144-konyak-aznauri-black-barrel-5-let-4820189292258.html'
+        ])
+    
+    def adjari_3_parser(self):
+        ''' Парсер для коньяк Adjari 3*'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-adjari-3-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-adjari-3-zirky-711132',
+            'https://auchan.ua/ua/brendi-adjari-3-40-0-5-l-1167009/',
+            'https://metro.zakaz.ua/uk/products/koniak-adzhari-500ml-ukrayina--04820235321406/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/45574-konyak-adjari-3-4820183101631.html'
+        ])
+    
+    def adjari_5_parser(self):
+        ''' Парсер для коньяк Adjari 5*'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-adjari-5-zvezd-0-5-l',
+            'https://shop.silpo.ua/product/koniak-adjari-5-zirok-711133',
+            'https://auchan.ua/ua/brendi-adjari-5-40-0-5-l-1167015/',
+            'https://novus.online/product/konyak-adjari-5-40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-adzhari-500ml-ukrayina--04820235321482/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/45575-konyak-adjari-5-4820183101594.html'
+        ])
+    
+    def adjari_4_parser(self):
+        ''' Парсер для коньяк Adjari 4*'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/kon-jak-adjari-kvarteli-4-goda-vyderzhki-40-500-ml-957981/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/73458-konyak-adjari-kvarteli-4-4820183102942.html'
+        ])
+    
+    def hennesy_vs_parser(self):
+        ''' Парсер для коньяк Hennesy VS'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/konak-05l-hennessy-vs-40-u-korobci',
+            'https://shop.silpo.ua/product/koniak-hennessy-vs-v-podarunkovii-upakovtsi-591589',
+            'https://novus.online/product/konak-hennessy-vs40-05l',
+            'https://metro.zakaz.ua/uk/products/koniak-khennessi-500ml-frantsiia--03245990287407/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/17705-konyak-hennessy-vs-v-podarochnoj-upakovke-3245995817111.html'
+        ])
+    
+    def hennesy_vsop_parser(self):
+        ''' Парсер для коньяк Hennesy VSOP'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/koniak-hennessy-vsop-v-podarunkovii-upakovtsi-591591',
+            'https://metro.zakaz.ua/uk/products/koniak-khennessi-500ml-frantsiia--03245990018308/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/17707-konyak-hennessy-vsop-v-podarochnoj-upakovke-3245996122511.html'
+        ])
+    
+    def alexx_gold_vsop_parser(self):
+        ''' Парсер для коньяк Alexx Gold VSOP'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-alexx-gold-vsop-0-5-l',
+            'https://shop.silpo.ua/product/koniak-alexx-gold-vsop-u-tubusi-66504',
+            'https://novus.online/product/konak-alexx-gold-40-05l',
+            'https://metro.zakaz.ua/uk/products/ukrayina--04823093700437/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2165-konyak-alexx-gold-vsop-v-tubuse-4820000621182.html'
+        ])
+    
+    def alexx_silver_vs_parser(self):
+        ''' Парсер для коньяк Alexx Silver VS'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-alexx-silver-vs-0-5-l',
+            'https://shop.silpo.ua/product/koniak-alexx-silver-vs-64225',
+            'https://metro.zakaz.ua/uk/products/ukrayina--04823093700352/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/17704-konyak-alexx-silver-vs-4820000621175.html'
+        ])
+    
+    def ararat_5_parser(self):
+        ''' Парсер для коньяк Ararat 5*'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-ararat-5-zvezd-0-5-l',
+            'https://shop.silpo.ua/product/koniak-ararat-5-zirok-34563',
+            'https://auchan.ua/ua/kon-jak-ararat-5-let-40-v-podarochnoj-upakovke-0-5-l-1043692/',
+            'https://metro.zakaz.ua/uk/products/koniak-ararat-500ml-virmeniia--04850001000037/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2277-konyak-ararat-5-4850001001935.html'
+        ])
+    
+    def ararat_ahtamar_10_parser(self):
+        ''' Парсер для коньяк Ararat Ahtamar 10*'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/koniak-ararat-akhtamar-10-rokiv-podarunkova-korobka-1044',
+            'https://auchan.ua/ua/brendi-ararat-ahtamar-10-let-vyderzhki-40-v-podarochnoj-upakovke-0-5-l-1077192/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2263-konyak-ararat-akhtamar-10-let-podarochnaya-korobka-4850001002024.html'
+        ])
+    
+    def ararat_3_parser(self):
+        ''' Парсер для коньяк Ararat 3*'''
+        return self.prices_parsing([
+            'https://varus.ua/konyak-ararat-3-zvezdy-0-5-l',
+            'https://shop.silpo.ua/product/koniak-ararat-3-zirky-1042',
+            'https://auchan.ua/ua/brendi-ararat-3-goda-vyderzhki-40-0-5-l-1085762/',
+            'https://metro.zakaz.ua/uk/products/koniak-ararat-500ml-virmeniia--04850001000013/',
+            'https://shop.nashkraj.ua/kovel/product/23756-brendi-ararat-0-5l-3r-40',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/2256-konyak-ararat-3-4850001001904.html'
+        ])
+    
+    def ararat_nairi_20_parser(self):
+        ''' Парсер для коньяк Ararat Nairi 20*'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/brendi-ararat-nairi-20-let-vyderzhki-40-v-podarochnoj-upakovke-0-7-l-1077202/',
+            'https://fozzyshop.ua/konyak-brendi-armanyak/53163-konyak-nairi-20-let-41-podar-kor-4850001002123.html'
+        ])
+
+    def green_day_air_05l_parser(self):
+        ''' Парсер для горілка Green Day Air 0.5 л'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/vodka/26677-vodka-green-day-air-4820183100429.html'
+        ])
+
+    def green_day_ultra_soft_05l_parser(self):
+        ''' Парсер для горілка Green Day Ultra Soft 0.5 л'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/vodka/45548-vodka-green-day-ultra-soft-40-4820024229937.html'
+        ])
+
+    def green_day_organic_life_05l_parser(self):
+        ''' Парсер для горілка Green Day Organic Life 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-green-day-organic-life-40-0-5-l',
+            'https://auchan.ua/ua/vodka-green-day-organic-40-500-ml-1165108/',
+            'https://fozzyshop.ua/vodka/26678-vodka-green-day-organic-life-4820073561774.html'
+        ])
+
+    def green_day_crystal_05l_parser(self):
+        ''' Парсер для горілка Green Day Crystal 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-green-day-crystal-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-green-day-crystal-40-722131',
+            'https://auchan.ua/ua/vodka-green-day-crystal-40-500-ml-1165090/',
+            'https://metro.zakaz.ua/uk/products/gorilka-grin-dei-500ml-ukrayina--04820024228770/',
+            'https://fozzyshop.ua/vodka/45546-vodka-green-day-crystal-40-4820024228770.html'
+        ])
+
+    def green_day_05l_parser(self):
+        ''' Парсер для горілка Green Day 0.5 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-green-day-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-green-day-536956',
+            'https://auchan.ua/ua/vodka-green-day-40-500-ml-1165084/',
+            'https://metro.zakaz.ua/uk/products/gorilka-grin-dei-500ml-ukrayina--04820024228763/',
+            'https://fozzyshop.ua/vodka/1848-vodka-green-day-4820024228763.html'
+        ])
+
+    def medoff_classic_05l_parser(self):
+        ''' Парсер для горілка Medoff Classic 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-medoff-500ml--04820179280470/',
+            'https://varus.ua/gorilka-medoff-classic-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-medoff-klasik-new-253629',
+            'https://shop.nashkraj.ua/kovel/product/4732-gorilka-medoff-0-5l-klasik-40',
+            'https://fozzyshop.ua/vodka/1855-vodka-medoff-klassik-new-4820179280470.html'
+        ])
+
+    def smirnoff_red_05l_parser(self):
+        ''' Парсер для горілка Smirnoff Red 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-smirnoff-500ml-italiia--05410316072014/',
+            'https://varus.ua/gorilka-0-5l-40-red-smirnoff-pl',
+            'https://shop.silpo.ua/product/gorilka-smirnoff-21-klasychna-49016',
+            'https://fozzyshop.ua/vodka/2109-vodka-smirnoff-red-5410316072014.html'
+        ])
+
+    def kozacka_rada_classic_05l_parser(self):
+        ''' Парсер для горілка Козацька Рада классична 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-kozacka-rada-klasicna-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-500ml-ukrayina--04820080720386/',
+            'https://shop.silpo.ua/product/gorilka-kozatska-rada-klasychna-306954',
+            'https://auchan.ua/ua/vodka-kozac-ka-rada-klassicheskaja-40-0-5l-1047919/',
+            'https://novus.online/product/gorilka-kozacka-rada-klasicna-40-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-kozatska-rada-500ml-ukrayina--04820080720386/',
+            'https://shop.nashkraj.ua/kovel/product/31988-gorilka-kozatska-rada-0-5l-klasichna-40',
+            'https://fozzyshop.ua/vodka/1940-vodka-klassicheskaya-kozackaya-rada-4820080720386.html'
+        ])
+
+    def kozacka_rada_osobliva_05l_parser(self):
+        ''' Парсер для горілка Козацька Рада особлива 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05-l-kozacka-rada-osobliva-40-ob-skbut',
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-500ml-ukrayina--04820050031221/',
+            'https://varus.ua/gorilka-kozacka-rada-osobliva-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-kozatska-rada-osoblyva-260',
+            'https://novus.online/product/gorilka-kozacka-rada-osobliva-40-05l',
+            'https://fozzyshop.ua/vodka/1964-vodka-kozacka-rada-osobaya-4820080720409.html'
+        ])
+
+    def zubrowka_bison_grass_05l_parser(self):
+        ''' Парсер для горілка Zubrowka Bison Grass 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-bison-grass-tm-zubrowka-375',
+            'https://eko.zakaz.ua/uk/products/nastoianka-zubrovka-500ml-polshcha--05900343003674/',
+            'https://auchan.ua/ua/nastojka-zubrowka-bison-grass-37-5-500-ml-894079/',
+            'https://novus.online/product/gorilka-05l-zubrowka-bison-grass-375',
+            'https://metro.zakaz.ua/uk/products/nastoianka-zubrovka-500ml-polshcha--05900343003674/',
+            'https://shop.nashkraj.ua/kovel/product/168592-nap-alk-zubrovka-0-5l-grass-37-5',
+            'https://fozzyshop.ua/vodka/1896-vodka-zubrowka-5900343003674.html'
+        ])
+
+    def zubrowka_biala_05l_parser(self):
+        ''' Парсер для горілка Zubrowka Biala 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-05l-biala-tm-zubrowka-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-zubrovka-500ml-polshcha--05900343001892/',
+            'https://auchan.ua/ua/vodka-zubrowka-biala-40-500-ml-887513/',
+            'https://novus.online/product/gorilka-zubrowka-biala-40-05l',
+            'https://metro.zakaz.ua/uk/products/gorilka-zubrovka-500ml-polshcha--05900343001892/',
+            'https://shop.nashkraj.ua/kovel/product/168591-gorilka-zubrovka-0-5l-byala-40',
+            'https://fozzyshop.ua/vodka/1897-vodka-zubrowka-biala-5900343001892.html'
+        ])
+
+    def zubrowka_czarna_05l_parser(self):
+        ''' Парсер для горілка Zubrowka Czarna 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-zubrovka-500ml-polshcha--05900343010047/',
+            'https://auchan.ua/ua/vodka-zubrowka-czarna-40-500-ml-887534/',
+            'https://shop.nashkraj.ua/kovel/product/304719-gorilka-zubrovka-0-5l-chorna-40',
+            'https://fozzyshop.ua/vodka/64215-vodka-zubrowka-szarna-5900343010047.html'
+        ])
+
+    def vozduh_legka_osobliva_05l_parser(self):
+        ''' Парсер для горілка Воздух легка особлива 0.5 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/gorilka-vozdukh-legka-osoblyva-652085',
+            'https://fozzyshop.ua/vodka/26732-vodka-vozdukh-legkaya-osobaya-4830080728122.html'
+        ])
+
+    def vozduh_alpha_05l_parser(self):
+        ''' Парсер для горілка Воздух Alpha 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-vozdukh-500ml--04823098200932/',
+            'https://fozzyshop.ua/vodka/57985-vodka-vozdukh-alfa-4823098200932.html'
         ])
 
 
