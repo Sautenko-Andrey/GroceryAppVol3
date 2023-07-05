@@ -3005,6 +3005,52 @@ all_products_names = [
         "fozzy": parser.nemiroff_lex_07l_parser()[8]
     }},
 
+    {'zubrowka_bison_grass_07l': {
+        "atb": parser.zubrowka_bison_grass_07l_parser()[0],
+        "eko": parser.zubrowka_bison_grass_07l_parser()[1],
+        "ashan": parser.zubrowka_bison_grass_07l_parser()[4],
+        "novus": parser.zubrowka_bison_grass_07l_parser()[5],
+        "nash_kray": parser.zubrowka_bison_grass_07l_parser()[7],
+        "fozzy": parser.zubrowka_bison_grass_07l_parser()[8]
+    }},
+
+    {'zubrowka_czarna_07l': {
+        "eko": parser.zubrowka_czarna_07l_parser()[1],
+        "ashan": parser.zubrowka_czarna_07l_parser()[4],
+        "nash_kray": parser.zubrowka_czarna_07l_parser()[7],
+        "fozzy": parser.zubrowka_czarna_07l_parser()[8]
+    }},
+
+    {'hetman_07l': {
+        "varus": parser.hetman_07l_parser()[2],
+        "silpo": parser.hetman_07l_parser()[3],
+        "novus": parser.hetman_07l_parser()[5],
+        "fozzy": parser.hetman_07l_parser()[8]
+    }},
+
+    {'kozacka_rada_classic_07l': {
+        "atb": parser.kozacka_rada_classic_07l_parser()[0],
+        "eko": parser.kozacka_rada_classic_07l_parser()[1],
+        "silpo": parser.kozacka_rada_classic_07l_parser()[3],
+        "ashan": parser.kozacka_rada_classic_07l_parser()[4],
+        "novus": parser.kozacka_rada_classic_07l_parser()[5],
+        "fozzy": parser.kozacka_rada_classic_07l_parser()[8]
+    }},
+
+    {'kozacka_rada_premium_07l': {
+        "eko": parser.kozacka_rada_premium_07l_parser()[1],
+        "ashan": parser.kozacka_rada_premium_07l_parser()[4],
+        "fozzy": parser.kozacka_rada_premium_07l_parser()[8]
+    }},
+
+    {'kozacka_rada_osobliva_07l': {
+        "eko": parser.kozacka_rada_osobliva_07l_parser()[1],
+        "varus": parser.kozacka_rada_osobliva_07l_parser()[2],
+        "ashan": parser.kozacka_rada_osobliva_07l_parser()[4],
+        "novus": parser.kozacka_rada_osobliva_07l_parser()[5],
+        "fozzy": parser.kozacka_rada_osobliva_07l_parser()[8]
+    }},
+
 
 
 

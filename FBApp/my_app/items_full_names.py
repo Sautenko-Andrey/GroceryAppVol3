@@ -420,6 +420,12 @@ NEMIROFF_DELIKAT_MYAKA_07L = "Горілка Nemiroff Delikat м`яка, 0,7л"
 NEMIROFF_OSOBLIVA_SHTOF_07L = "Горілка Nemiroff Особлива штоф, 0,7л"
 NEMIROFF_DELUXE_07L = "Горілка Nemiroff Де Люкс, 0,7л"
 NEMIROFF_LEX_07L = "Горілка Nemiroff Lex, 0,7л"
+ZUBROWKA_07L = "Горілка Zubrowka, 0,7л"
+ZUBROWKA_CZARNA_07L = "Горілка Zubrowka Сzarna, 0,7л"
+HETMAN_07L = "Горілка Гетьман, 0,7л"
+KOZACKA_RADA_CLASSIC_07L = 'Горілка "Козацька рада" Класична, 0,7л'
+KOZACKA_RADA_PREMIUM_07L = 'Горілка "Козацька рада" Преміум, 0,7л'
+KOZACKA_RADA_OSOBLIVA_07L = 'Горілка "Козацька рада" Особлива, 0,7л'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

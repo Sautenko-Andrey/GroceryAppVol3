@@ -29,7 +29,7 @@ class GroceryAppText:
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 422
+    ITEMS_AMOUNT = 428
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''

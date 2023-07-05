@@ -907,3 +907,15 @@ class TesterForGroceryAppText:
             return NEMIROFF_DELUXE_07L
         elif np.argmax(result) == 421:
             return NEMIROFF_LEX_07L
+        elif np.argmax(result) == 422:
+            return ZUBROWKA_07L
+        elif np.argmax(result) == 423:
+            return ZUBROWKA_CZARNA_07L
+        elif np.argmax(result) == 424:
+            return HETMAN_07L
+        elif np.argmax(result) == 425:
+            return KOZACKA_RADA_CLASSIC_07L
+        elif np.argmax(result) == 426:
+            return KOZACKA_RADA_PREMIUM_07L
+        elif np.argmax(result) == 427:
+            return KOZACKA_RADA_OSOBLIVA_07L

@@ -1158,6 +1158,18 @@ class ContextSupervisor:
             result = self.getting_prices('nemiroff_deluxe_07l', get_nemiroff_deluxe_07l)
         elif nn_respond == NEMIROFF_LEX_07L:
             result = self.getting_prices('nemiroff_lex_07l', get_nemiroff_lex_07l)
+        elif nn_respond == ZUBROWKA_07L:
+            result = self.getting_prices('zubrowka_bison_grass_07l', get_zubrowka_07l)
+        elif nn_respond == ZUBROWKA_CZARNA_07L:
+            result = self.getting_prices('zubrowka_czarna_07l', get_zubrowka_czarna_07l)
+        elif nn_respond == HETMAN_07L:
+            result = self.getting_prices('hetman_07l', get_hetman_07l)
+        elif nn_respond == KOZACKA_RADA_CLASSIC_07L:
+            result = self.getting_prices('kozacka_rada_classic_07l', get_kozacka_rada_classic_07l)
+        elif nn_respond == KOZACKA_RADA_PREMIUM_07L:
+            result = self.getting_prices('kozacka_rada_premium_07l', get_kozacka_rada_premium_07l)
+        elif nn_respond == KOZACKA_RADA_OSOBLIVA_07L:
+            result = self.getting_prices('kozacka_rada_osobliva_07l', get_kozacka_rada_osobliva_07l)
 
 
 
@@ -1220,41 +1232,41 @@ def get_dishes_prices(ingredients_prices:tuple, devider:int) -> list:
 
     return final_prices
 
-borsh_devider = 6
-water_rate = 3
-meat_rate = 0.8
-potato_rate = 2
-beet_rate = 10
-carrot_rate = 10
-onion_rate = 0.2
-cabbage_rate = 0.4
-
-borsh = get_dishes_prices(
-    (
-        ((store["water_in_bottle_6l"]["atb"] / water_rate),
-        (store["pork_lopatka"]["atb"] / meat_rate),
-        (store["potato"]["atb"] / potato_rate),
-        (store["beet"]["atb"] / beet_rate),
-        (store["carrot"]["atb"] / carrot_rate),
-        (store["onion"]["atb"] * onion_rate),
-        (store["cabbage"]["atb"] * cabbage_rate)),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-        (0,0,0,0,0,0,0),
-
-    ), borsh_devider
-)
+# borsh_devider = 6
+# water_rate = 3
+# meat_rate = 0.8
+# potato_rate = 2
+# beet_rate = 10
+# carrot_rate = 10
+# onion_rate = 0.2
+# cabbage_rate = 0.4
+#
+# borsh = get_dishes_prices(
+#     (
+#         ((store["water_in_bottle_6l"]["atb"] / water_rate),
+#         (store["pork_lopatka"]["atb"] / meat_rate),
+#         (store["potato"]["atb"] / potato_rate),
+#         (store["beet"]["atb"] / beet_rate),
+#         (store["carrot"]["atb"] / carrot_rate),
+#         (store["onion"]["atb"] * onion_rate),
+#         (store["cabbage"]["atb"] * cabbage_rate)),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#         (0,0,0,0,0,0,0),
+#
+#     ), borsh_devider
+# )
 

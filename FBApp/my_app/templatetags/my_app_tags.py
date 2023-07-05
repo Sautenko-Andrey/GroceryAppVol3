@@ -1287,6 +1287,24 @@ get_nemiroff_deluxe_07l = tag.create_tag(ItemsPicsFromNet, 423)
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Lex, 0,7л"'''
 get_nemiroff_lex_07l = tag.create_tag(ItemsPicsFromNet, 424)
 
+'''Тэг,возвращающий информацию о "Горілка Zubrowka, 0,7л"'''
+get_zubrowka_07l = tag.create_tag(ItemsPicsFromNet, 425)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Сzarna, 0,7л"'''
+get_zubrowka_czarna_07l = tag.create_tag(ItemsPicsFromNet, 426)
+
+'''Тэг,возвращающий информацию о "Горілка Гетьман, 0,7л"'''
+get_hetman_07l = tag.create_tag(ItemsPicsFromNet, 427)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Класична, 0,7л"'''
+get_kozacka_rada_classic_07l = tag.create_tag(ItemsPicsFromNet, 428)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Преміум, 0,7л"'''
+get_kozacka_rada_premium_07l = tag.create_tag(ItemsPicsFromNet, 429)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 0,7л"'''
+get_kozacka_rada_osobliva_07l = tag.create_tag(ItemsPicsFromNet, 430)
+
 
 
 

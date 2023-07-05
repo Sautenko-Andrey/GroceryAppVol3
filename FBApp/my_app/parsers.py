@@ -4168,6 +4168,64 @@ class ProductParserVol2:
             'https://fozzyshop.ua/vodka/16326-vodka-nemiroff-lex-4820181420567.html'
         ])
 
+    def zubrowka_bison_grass_07l_parser(self):
+        ''' Парсер для горілка Zubrowka Bison Grass 0.7 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-07l-bison-grass-tm-zubrowka-375',
+            'https://eko.zakaz.ua/uk/products/nastoianka-zubrovka-700ml-polshcha--05900343003698/',
+            'https://auchan.ua/ua/nastojka-zubrowka-bison-grass-37-5-700-ml-894086/',
+            'https://novus.online/product/gorilka-07l-zubrowka-bison-grass-375',
+            'https://shop.nashkraj.ua/kovel/product/168594-nastoyanka-zubrovka-0-7l-37-5',
+            'https://fozzyshop.ua/vodka/1919-vodka-zubrowka-5900343003698.html'
+        ])
+
+    def zubrowka_czarna_07l_parser(self):
+        ''' Парсер для горілка Zubrowka Czarna 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-zubrovka-700ml-polshcha--05900343010054/',
+            'https://auchan.ua/ua/vodka-zubrowka-czarna-40-700-ml-887577/',
+            'https://shop.nashkraj.ua/kovel/product/319418-gorilka-zubrovka-0-7l-chorna-40',
+            'https://fozzyshop.ua/vodka/60398-vodka-zubrowka-szarna-5900343010054.html'
+        ])
+
+    def hetman_07l_parser(self):
+        ''' Парсер для горілка Гетьман 0.7 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-getman-40-0-7-l',
+            'https://shop.silpo.ua/product/gorilka-getman-969',
+            'https://novus.online/product/gorilka-getman-40-07l',
+            'https://fozzyshop.ua/vodka/84104-vodka-getman-4823001100113.html'
+        ])
+
+    def kozacka_rada_classic_07l_parser(self):
+        ''' Парсер для горілка Козацька Рада Классік 0.7 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-07l-kozacka-rada-klasicna-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-700ml-ukrayina--04820080726838/',
+            'https://shop.silpo.ua/product/gorilka-kozatska-rada-klasychna-590750',
+            'https://auchan.ua/ua/vodka-hlibnij-dar-klassicheskaja-40-700-ml-1022183/',
+            'https://novus.online/product/gorilka-07l-40-kozacka-rada-klasicna',
+            'https://fozzyshop.ua/vodka/16346-vodka-kozacka-rada-klassicheskaya-4820080726838.html'
+        ])
+
+    def kozacka_rada_premium_07l_parser(self):
+        ''' Парсер для горілка Козацька Рада Преміум 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-700ml-ukrayina--04820080728443/',
+            'https://auchan.ua/ua/vodka-kozac-ka-rada-premium-oak-carbon-filtration-40-700-ml-1022177/',
+            'https://fozzyshop.ua/vodka/36597-vodka-kozacka-rada-premium-4820080728443.html'
+        ])
+
+    def kozacka_rada_osobliva_07l_parser(self):
+        ''' Парсер для горілка Козацька Рада Особлива 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-700ml-ukrayina--04820080726852/',
+            'https://varus.ua/gorilka-kozacka-rada-osobliva-40-0-7-l',
+            'https://auchan.ua/ua/vodka-kozac-ka-rada-osobennaja-40-700-ml-1022171/',
+            'https://novus.online/product/gorilka-07l-40-osobliva-kozacka-rada-osobliva',
+            'https://fozzyshop.ua/vodka/16347-vodka-kozacka-rada-osobaya-4820080726852.html'
+        ])
+
 
 
 
