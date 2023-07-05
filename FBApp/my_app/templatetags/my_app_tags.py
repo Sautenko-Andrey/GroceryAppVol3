@@ -1245,6 +1245,50 @@ get_persha_gild_znatna_05l = tag.create_tag(ItemsPicsFromNet, 410)
 '''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Поважна, 0,5л"'''
 get_persha_gild_povajna_05l = tag.create_tag(ItemsPicsFromNet, 411)
 
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 0,5л"'''
+get_hlibniy_dar_classic_05l = tag.create_tag(ItemsPicsFromNet, 412)
+
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" на пророщеному зерні, 0,5л"'''
+get_hlibniy_dar_pror_zerno_05l = tag.create_tag(ItemsPicsFromNet, 413)
+
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Житня, 0,5л"'''
+get_hlibniy_dar_jitnya_05l = tag.create_tag(ItemsPicsFromNet, 414)
+
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Пшенична, 0,5л"'''
+get_hlibniy_dar_pshen_05l = tag.create_tag(ItemsPicsFromNet, 414)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Organic Life, 0,7л"'''
+get_green_day_organic_life_07l = tag.create_tag(ItemsPicsFromNet, 415)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day, 0,7л"'''
+get_green_day_07l = tag.create_tag(ItemsPicsFromNet, 416)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Ultra Soft 40%, 0,7л"'''
+get_green_day_ultra_soft_07l = tag.create_tag(ItemsPicsFromNet, 417)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Air, 0,7л"'''
+get_green_day_air_07l = tag.create_tag(ItemsPicsFromNet, 418)
+
+'''Тэг,возвращающий информацию о "Горілка Green Day Crystal 40%, 0,7л"'''
+get_green_day_crystal_07l = tag.create_tag(ItemsPicsFromNet, 419)
+
+'''Тэг,возвращающий информацию о "Горілка Medoff Класік, 0,7л"'''
+get_medoff_classic_07l = tag.create_tag(ItemsPicsFromNet, 420)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Delikat м`яка, 0,7л"'''
+get_nemiroff_delikat_myaka_07l = tag.create_tag(ItemsPicsFromNet, 421)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Особлива штоф, 0,7л"'''
+get_nemiroff_osob_shtof_07l = tag.create_tag(ItemsPicsFromNet, 422)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Де Люкс, 0,7л"'''
+get_nemiroff_deluxe_07l = tag.create_tag(ItemsPicsFromNet, 423)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Lex, 0,7л"'''
+get_nemiroff_lex_07l = tag.create_tag(ItemsPicsFromNet, 424)
+
+
+
 
 
 # @register.simple_tag()

@@ -406,6 +406,20 @@ VOZDUH_ALPHA_05L = "Горілка Повітря Альфа, 0,5л"
 PERSHA_GILDIYA_VERHOVNA_05L = 'Горілка "Перша гільдія" Верховна, 0,5л'
 PERSHA_GILDIYA_ZNATNA_05L = 'Горілка "Перша гільдія" Знатна, 0,5л'
 PERSHA_GILDIYA_POVAJNA_05L = 'Горілка "Перша гільдія" Поважна, 0,5л'
+HLIB_DAR_CLASSIC_05L = 'Горілка "Хлібний Дар" Класична, 0,5л'
+HLIB_DAR_PROR_ZERNO_05L = 'Горілка "Хлібний Дар" на пророщеному зерні, 0,5л'
+HLIB_DAR_JITNYA_05L = 'Горілка "Хлібний Дар" Житня, 0,5л'
+HLIB_DAR_PSHENICHNA_05L = 'Горілка "Хлібний Дар" Пшенична, 0,5л'
+GREEN_DAY_ORGANIC_LIFE_07L = 'Горілка Green Day Organic Life, 0,7л'
+GREEN_DAY_07L = 'Горілка Green Day, 0,7л'
+GREEN_DAY_ULTRA_SOFT_07L = 'Горілка Green Day Ultra Soft 40%, 0,7л'
+GREEN_DAY_AIR_07L = 'Горілка Green Day Air, 0,7л'
+GREEN_DAY_CRYSTAL_07L = 'Горілка Green Day Crystal 40%, 0,7л'
+MEDOFF_CLASSIC_07L = "Горілка Medoff Класік, 0,7л"
+NEMIROFF_DELIKAT_MYAKA_07L = "Горілка Nemiroff Delikat м`яка, 0,7л"
+NEMIROFF_OSOBLIVA_SHTOF_07L = "Горілка Nemiroff Особлива штоф, 0,7л"
+NEMIROFF_DELUXE_07L = "Горілка Nemiroff Де Люкс, 0,7л"
+NEMIROFF_LEX_07L = "Горілка Nemiroff Lex, 0,7л"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

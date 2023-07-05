@@ -380,6 +380,11 @@ class DishesSetResult(MutualContext, ListView):
         context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],round_num)
         context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],round_num)
         context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],round_num)
+        context_dict['flag_price'] = (max(
+            context_dict['price_from_site_atb'],context_dict['price_from_site_eko'],context_dict['price_from_site_varus'],
+            context_dict['price_from_site_silpo'],context_dict['price_from_site_ashan'],context_dict['price_from_site_novus'],
+            context_dict['price_from_site_metro'],context_dict['price_from_site_nash_kray'],context_dict['price_from_site_fozzy']
+        )) / 100 * 60
 
         mutual_context_dict = self.get_user_context(title='Цена блюда')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))

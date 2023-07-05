@@ -1125,11 +1125,39 @@ class ContextSupervisor:
         elif nn_respond == VOZDUH_ALPHA_05L:
             result = self.getting_prices('vozduh_legka_osobliva_05l', get_vozduh_alpha_05l)
         elif nn_respond == PERSHA_GILDIYA_VERHOVNA_05L:
-            result = self.getting_prices(self.NO_PRICES, get_persha_gild_verhovna_05l)
+            result = self.getting_prices('persha_gildiya_verhovna_05l', get_persha_gild_verhovna_05l)
         elif nn_respond == PERSHA_GILDIYA_ZNATNA_05L:
-            result = self.getting_prices(self.NO_PRICES, get_persha_gild_znatna_05l)
+            result = self.getting_prices('persha_gildiya_znatna_05l', get_persha_gild_znatna_05l)
         elif nn_respond == PERSHA_GILDIYA_POVAJNA_05L:
-            result = self.getting_prices(self.NO_PRICES, get_persha_gild_povajna_05l)
+            result = self.getting_prices('persha_gildiya_povajna_05l', get_persha_gild_povajna_05l)
+        elif nn_respond == HLIB_DAR_CLASSIC_05L:
+            result = self.getting_prices('hlib_dar_classic_05l', get_hlibniy_dar_classic_05l)
+        elif nn_respond == HLIB_DAR_PROR_ZERNO_05L:
+            result = self.getting_prices('hlib_dar_pror_zerno_05l', get_hlibniy_dar_pror_zerno_05l)
+        elif nn_respond == HLIB_DAR_JITNYA_05L:
+            result = self.getting_prices('hlib_dar_jitnya_05l', get_hlibniy_dar_jitnya_05l)
+        elif nn_respond == HLIB_DAR_PSHENICHNA_05L:
+            result = self.getting_prices('hlib_dar_pshenichna_05l', get_hlibniy_dar_pshen_05l)
+        elif nn_respond == GREEN_DAY_ORGANIC_LIFE_07L:
+            result = self.getting_prices('green_day_organic_life_07l', get_green_day_organic_life_07l)
+        elif nn_respond == GREEN_DAY_07L:
+            result = self.getting_prices('green_day_07l', get_green_day_07l)
+        elif nn_respond == GREEN_DAY_ULTRA_SOFT_07L:
+            result = self.getting_prices('green_day_ultra_soft_07l', get_green_day_ultra_soft_07l)
+        elif nn_respond == GREEN_DAY_AIR_07L:
+            result = self.getting_prices('green_day_air_07l', get_green_day_air_07l)
+        elif nn_respond == GREEN_DAY_CRYSTAL_07L:
+            result = self.getting_prices('green_day_crystal_07l', get_green_day_crystal_07l)
+        elif nn_respond == MEDOFF_CLASSIC_07L:
+            result = self.getting_prices('medoff_classic_07l', get_medoff_classic_07l)
+        elif nn_respond == NEMIROFF_DELIKAT_MYAKA_07L:
+            result = self.getting_prices('nemiroff_delikat_myaka_07l', get_nemiroff_delikat_myaka_07l)
+        elif nn_respond == NEMIROFF_OSOBLIVA_SHTOF_07L:
+            result = self.getting_prices('nemiroff_osob_shtof_07l', get_nemiroff_osob_shtof_07l)
+        elif nn_respond == NEMIROFF_DELUXE_07L:
+            result = self.getting_prices('nemiroff_deluxe_07l', get_nemiroff_deluxe_07l)
+        elif nn_respond == NEMIROFF_LEX_07L:
+            result = self.getting_prices('nemiroff_lex_07l', get_nemiroff_lex_07l)
 
 
 
@@ -1173,3 +1201,60 @@ class RefersForRNN:
             texts += item_text
 
         return texts, count_item_list
+
+
+def get_dishes_prices(ingredients_prices:tuple, devider:int) -> list:
+    '''Метод , который подсчитытвает себестоимость блюд'''
+
+    if len(ingredients_prices) != 9:
+        raise AttributeError("You have to include all 9 markets.")
+    if type(ingredients_prices) != tuple or type(devider) != int:
+        raise AttributeError("Incorrect arguments's types.")
+
+    final_prices = []
+    for market in ingredients_prices:
+        for ingred in market:
+            if ingred == 0:
+                market = (0 for x in market)
+        final_prices.append(sum(market) / devider)
+
+    return final_prices
+
+borsh_devider = 6
+water_rate = 3
+meat_rate = 0.8
+potato_rate = 2
+beet_rate = 10
+carrot_rate = 10
+onion_rate = 0.2
+cabbage_rate = 0.4
+
+borsh = get_dishes_prices(
+    (
+        ((store["water_in_bottle_6l"]["atb"] / water_rate),
+        (store["pork_lopatka"]["atb"] / meat_rate),
+        (store["potato"]["atb"] / potato_rate),
+        (store["beet"]["atb"] / beet_rate),
+        (store["carrot"]["atb"] / carrot_rate),
+        (store["onion"]["atb"] * onion_rate),
+        (store["cabbage"]["atb"] * cabbage_rate)),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+        (0,0,0,0,0,0,0),
+
+    ), borsh_devider
+)
+

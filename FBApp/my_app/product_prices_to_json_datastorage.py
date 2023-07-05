@@ -2884,6 +2884,127 @@ all_products_names = [
         "fozzy": parser.vozduh_alpha_05l_parser()[8]
     }},
 
+    {'persha_gildiya_verhovna_05l': {
+        "ashan": parser.persha_gildiya_verhovna_05l_parser()[4],
+        "novus": parser.persha_gildiya_verhovna_05l_parser()[5],
+        "fozzy": parser.persha_gildiya_verhovna_05l_parser()[8]
+    }},
+
+    {'persha_gildiya_znatna_05l': {
+        "silpo": parser.persha_gildiya_znatna_05l_parser()[3],
+        "ashan": parser.persha_gildiya_znatna_05l_parser()[4],
+        "fozzy": parser.persha_gildiya_znatna_05l_parser()[8]
+    }},
+
+    {'persha_gildiya_povajna_05l': {
+        "silpo": parser.persha_gildiya_povajna_05l_parser()[3],
+        "ashan": parser.persha_gildiya_povajna_05l_parser()[4],
+        "novus": parser.persha_gildiya_povajna_05l_parser()[5],
+        "metro": parser.persha_gildiya_povajna_05l_parser()[6],
+        "fozzy": parser.persha_gildiya_povajna_05l_parser()[8]
+    }},
+
+    {'hlib_dar_classic_05l': {
+        "atb": parser.hlib_dar_classic_05l_parser()[0],
+        "eko": parser.hlib_dar_classic_05l_parser()[1],
+        "silpo": parser.hlib_dar_classic_05l_parser()[3],
+        "ashan": parser.hlib_dar_classic_05l_parser()[4],
+        "metro": parser.hlib_dar_classic_05l_parser()[6],
+        "fozzy": parser.hlib_dar_classic_05l_parser()[8]
+    }},
+
+    {'hlib_dar_pror_zerno_05l': {
+        "eko": parser.hlib_dar_pror_zerno_05l_parser()[1],
+        "silpo": parser.hlib_dar_pror_zerno_05l_parser()[3],
+        "novus": parser.hlib_dar_pror_zerno_05l_parser()[5],
+        "fozzy": parser.hlib_dar_pror_zerno_05l_parser()[8]
+    }},
+
+    {'hlib_dar_jitnya_05l': {
+        "eko": parser.hlib_dar_jitnya_05l_parser()[1],
+        "silpo": parser.hlib_dar_jitnya_05l_parser()[3],
+        "fozzy": parser.hlib_dar_jitnya_05l_parser()[8]
+    }},
+
+    {'hlib_dar_pshenichna_05l': {
+        "eko": parser.hlib_dar_pshenichna_05l_parser()[1],
+        "silpo": parser.hlib_dar_pshenichna_05l_parser()[3],
+        "novus": parser.hlib_dar_pshenichna_05l_parser()[5],
+        "fozzy": parser.hlib_dar_pshenichna_05l_parser()[8]
+    }},
+
+    {'green_day_organic_life_07l': {
+        "silpo": parser.green_day_organic_life_07l_parser()[3],
+        "ashan": parser.green_day_organic_life_07l_parser()[4],
+        "fozzy": parser.green_day_organic_life_07l_parser()[8]
+    }},
+
+    {'green_day_07l': {
+        "varus": parser.green_day_07l_parser()[2],
+        "silpo": parser.green_day_07l_parser()[3],
+        "ashan": parser.green_day_07l_parser()[4],
+        "fozzy": parser.green_day_07l_parser()[8]
+    }},
+
+    {'green_day_ultra_soft_07l': {
+        "fozzy": parser.green_day_ultra_soft_07l_parser()[8]
+    }},
+
+    {'green_day_air_07l': {
+        "fozzy": parser.green_day_air_07l_parser()[8]
+    }},
+
+    {'green_day_crystal_07l': {
+        "varus": parser.green_day_crystal_07l_parser()[2],
+        "silpo": parser.green_day_crystal_07l_parser()[3],
+        "ashan": parser.green_day_crystal_07l_parser()[4],
+        "novus": parser.green_day_crystal_07l_parser()[5],
+        "fozzy": parser.green_day_crystal_07l_parser()[8]
+    }},
+
+    {'medoff_classic_07l': {
+        "eko": parser.medoff_classic_07l_parser()[1],
+        "varus": parser.medoff_classic_07l_parser()[2],
+        "silpo": parser.medoff_classic_07l_parser()[3],
+        "ashan": parser.medoff_classic_07l_parser()[4],
+        "nash_kray": parser.medoff_classic_07l_parser()[7],
+        "fozzy": parser.medoff_classic_07l_parser()[8]
+    }},
+
+    {'nemiroff_delikat_myaka_07l': {
+        "eko": parser.nemiroff_delikat_myaka_07l_parser()[1],
+        "varus": parser.nemiroff_delikat_myaka_07l_parser()[2],
+        "silpo": parser.nemiroff_delikat_myaka_07l_parser()[3],
+        "novus": parser.nemiroff_delikat_myaka_07l_parser()[5],
+        "metro": parser.nemiroff_delikat_myaka_07l_parser()[6],
+        "nash_kray": parser.nemiroff_delikat_myaka_07l_parser()[7],
+        "fozzy": parser.nemiroff_delikat_myaka_07l_parser()[8]
+    }},
+
+    {'nemiroff_osob_shtof_07l': {
+        "atb": parser.nemiroff_osob_shtof_07l_parser()[0],
+        "silpo": parser.nemiroff_osob_shtof_07l_parser()[3],
+        "metro": parser.nemiroff_osob_shtof_07l_parser()[6],
+        "fozzy": parser.nemiroff_osob_shtof_07l_parser()[8]
+    }},
+
+    {'nemiroff_deluxe_07l': {
+        "atb": parser.nemiroff_deluxe_07l_parser()[0],
+        "eko": parser.nemiroff_deluxe_07l_parser()[1],
+        "silpo": parser.nemiroff_deluxe_07l_parser()[3],
+        "ashan": parser.nemiroff_deluxe_07l_parser()[4],
+        "novus": parser.nemiroff_deluxe_07l_parser()[5],
+        "metro": parser.nemiroff_deluxe_07l_parser()[6],
+        "fozzy": parser.nemiroff_deluxe_07l_parser()[8]
+    }},
+
+    {'nemiroff_lex_07l': {
+        "silpo": parser.nemiroff_lex_07l_parser()[3],
+        "novus": parser.nemiroff_lex_07l_parser()[5],
+        "metro": parser.nemiroff_lex_07l_parser()[6],
+        "fozzy": parser.nemiroff_lex_07l_parser()[8]
+    }},
+
 
 
 
@@ -2981,4 +3102,13 @@ def get_all_prices():
 
 
 get_all_prices()
+
+
+
+
+
+
+
+
+
 

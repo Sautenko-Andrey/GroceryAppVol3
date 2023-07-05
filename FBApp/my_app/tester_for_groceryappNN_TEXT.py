@@ -879,8 +879,31 @@ class TesterForGroceryAppText:
             return PERSHA_GILDIYA_ZNATNA_05L
         elif np.argmax(result) == 407:
             return PERSHA_GILDIYA_POVAJNA_05L
-
-
-
-
-
+        elif np.argmax(result) == 408:
+            return HLIB_DAR_CLASSIC_05L
+        elif np.argmax(result) == 409:
+            return HLIB_DAR_PROR_ZERNO_05L
+        elif np.argmax(result) == 410:
+            return HLIB_DAR_JITNYA_05L
+        elif np.argmax(result) == 411:
+            return HLIB_DAR_PSHENICHNA_05L
+        elif np.argmax(result) == 412:
+            return GREEN_DAY_ORGANIC_LIFE_07L
+        elif np.argmax(result) == 413:
+            return GREEN_DAY_07L
+        elif np.argmax(result) == 414:
+            return GREEN_DAY_ULTRA_SOFT_07L
+        elif np.argmax(result) == 415:
+            return GREEN_DAY_AIR_07L
+        elif np.argmax(result) == 416:
+            return GREEN_DAY_CRYSTAL_07L
+        elif np.argmax(result) == 417:
+            return MEDOFF_CLASSIC_07L
+        elif np.argmax(result) == 418:
+            return NEMIROFF_DELIKAT_MYAKA_07L
+        elif np.argmax(result) == 419:
+            return NEMIROFF_OSOBLIVA_SHTOF_07L
+        elif np.argmax(result) == 420:
+            return NEMIROFF_DELUXE_07L
+        elif np.argmax(result) == 421:
+            return NEMIROFF_LEX_07L
