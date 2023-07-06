@@ -426,6 +426,15 @@ HETMAN_07L = "Горілка Гетьман, 0,7л"
 KOZACKA_RADA_CLASSIC_07L = 'Горілка "Козацька рада" Класична, 0,7л'
 KOZACKA_RADA_PREMIUM_07L = 'Горілка "Козацька рада" Преміум, 0,7л'
 KOZACKA_RADA_OSOBLIVA_07L = 'Горілка "Козацька рада" Особлива, 0,7л'
+PERSHA_GILDIYA_POVAJNA_07L = 'Горілка "Перша гільдія" Поважна, 0,7л'
+PERSHA_GILDIYA_VERHOVNA_07L = 'Горілка "Перша гільдія" Верховна, 0,7л'
+PERSHA_GILDIYA_ZNATNA_07L = 'Горілка "Перша гільдія" Знатна, 0,7л'
+HLIB_DAR_CLASSIC_07L = 'Горілка "Хлібний Дар" Класична, 0,7л'
+MEDOFF_CLASSIC_1L = 'Горілка Medoff Класік , 1л'
+NEMIROFF_SHTOF_1L = 'Горілка Nemiroff Особлива штоф, 1л'
+NEMIROFF_DELICAT_SOFT_1L = 'Горілка Nemiroff Delikat м`яка, 1л'
+ZUBROWKA_BISON_GRASS_1L = 'Горілка Zubrowka Bison Grass, 1л'
+ZUBROWKA_BIALA_1L = 'Горілка Zubrowka Biala, 1л'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

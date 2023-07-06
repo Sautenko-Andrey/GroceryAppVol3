@@ -531,6 +531,13 @@ class SetResults(MutualContext, ListView):
 
         return super().get_queryset().filter(owner=self.request.user.id)
 
+#delete order from set
+def delete_product(request, order_id):
+    '''Метод для удаления заказов в списке покупок'''
+    order = SetOfProducts.objects.get(pk = order_id)
+    order.delete()
+    return redirect("items_set")
+
 
 class Thanksfull_DELETE_SET(MutualContext, ListView):
     '''Класс для удаления продуктовых наборов из БД и
@@ -630,9 +637,4 @@ class ItemsInfoAPI(generics.ListAPIView):
     pagination_class = ItemsInfoAPIPagination
     permission_classes = (ReadOnlyPermission,)
 
-#delete order from set
-def delete_product(request, order_id):
-    '''Метод для удаления заказов в списке покупок'''
-    order = SetOfProducts.objects.get(pk = order_id)
-    order.delete()
-    return redirect("items_set")
+

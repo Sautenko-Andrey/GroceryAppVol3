@@ -1170,6 +1170,24 @@ class ContextSupervisor:
             result = self.getting_prices('kozacka_rada_premium_07l', get_kozacka_rada_premium_07l)
         elif nn_respond == KOZACKA_RADA_OSOBLIVA_07L:
             result = self.getting_prices('kozacka_rada_osobliva_07l', get_kozacka_rada_osobliva_07l)
+        elif nn_respond == PERSHA_GILDIYA_POVAJNA_07L:
+            result = self.getting_prices('persha_gildiya_povajna_07l', get_persha_gildya_povajna_07l)
+        elif nn_respond == PERSHA_GILDIYA_VERHOVNA_07L:
+            result = self.getting_prices('persha_gildiya_verhovna_07l', get_persha_gildya_verhovna_07l)
+        elif nn_respond == PERSHA_GILDIYA_ZNATNA_07L:
+            result = self.getting_prices('persha_gildiya_znatna_07l', get_persha_gildya_znatna_07l)
+        elif nn_respond == HLIB_DAR_CLASSIC_07L:
+            result = self.getting_prices('hlibniy_dar_classic_07l', get_hlib_dar_classic_07l)
+        elif nn_respond == MEDOFF_CLASSIC_1L:
+            result = self.getting_prices('medoff_classic_1l', get_medoff_classic_1l)
+        elif nn_respond == NEMIROFF_SHTOF_1L:
+            result = self.getting_prices('nemiroff_shtof_1l', get_nemiroff_shtof_1l)
+        elif nn_respond == NEMIROFF_DELICAT_SOFT_1L:
+            result = self.getting_prices('nemiroff_delicat_1l', get_nemiroff_delicat_soft_1l)
+        elif nn_respond == ZUBROWKA_BISON_GRASS_1L:
+            result = self.getting_prices('zubrowka_bison_grass_1l', get_zubrowka_bison_grass_1l)
+        elif nn_respond == ZUBROWKA_BIALA_1L:
+            result = self.getting_prices('zubrowka_biala_1l', get_zubrowka_biala_1l)
 
 
 

@@ -3051,6 +3051,74 @@ all_products_names = [
         "fozzy": parser.kozacka_rada_osobliva_07l_parser()[8]
     }},
 
+    {'persha_gildiya_povajna_07l': {
+        "eko": parser.persha_gildiya_povajna_07l_parser()[1],
+        "silpo": parser.persha_gildiya_povajna_07l_parser()[3],
+        "ashan": parser.persha_gildiya_povajna_07l_parser()[4],
+        "fozzy": parser.persha_gildiya_povajna_07l_parser()[8]
+    }},
+
+    {'persha_gildiya_verhovna_07l': {
+        "eko": parser.persha_gildiya_verhovna_07l_parser()[1],
+        "silpo": parser.persha_gildiya_verhovna_07l_parser()[3],
+        "ashan": parser.persha_gildiya_verhovna_07l_parser()[4],
+        "novus": parser.persha_gildiya_verhovna_07l_parser()[5],
+        "fozzy": parser.persha_gildiya_verhovna_07l_parser()[8]
+    }},
+
+    {'persha_gildiya_znatna_07l': {
+        "eko": parser.persha_gildiya_znatna_07l_parser()[1],
+        "silpo": parser.persha_gildiya_znatna_07l_parser()[3],
+        "ashan": parser.persha_gildiya_znatna_07l_parser()[4],
+        "fozzy": parser.persha_gildiya_znatna_07l_parser()[8]
+    }},
+
+    {'hlibniy_dar_classic_07l': {
+        "atb": parser.hlib_dar_classic_07l_parser()[0],
+        "eko": parser.hlib_dar_classic_07l_parser()[1],
+        "silpo": parser.hlib_dar_classic_07l_parser()[3],
+        "ashan": parser.hlib_dar_classic_07l_parser()[4],
+        "novus": parser.hlib_dar_classic_07l_parser()[5],
+        "metro": parser.hlib_dar_classic_07l_parser()[6],
+        "nash_kray": parser.hlib_dar_classic_07l_parser()[7],
+        "fozzy": parser.hlib_dar_classic_07l_parser()[8]
+    }},
+
+    {'medoff_classic_1l': {
+        "nash_kray": parser.medoff_classic_1l_parser()[7],
+        "fozzy": parser.medoff_classic_1l_parser()[8]
+    }},
+
+    {'nemiroff_shtof_1l': {
+        "atb": parser.nemiroff_shtof_1l_parser()[0],
+        "silpo": parser.nemiroff_shtof_1l_parser()[3],
+        "nash_kray": parser.nemiroff_shtof_1l_parser()[7],
+        "fozzy": parser.nemiroff_shtof_1l_parser()[8]
+    }},
+
+    {'nemiroff_delicat_1l': {
+        "eko": parser.nemiroff_delicat_1l_parser()[1],
+        "varus": parser.nemiroff_delicat_1l_parser()[2],
+        "silpo": parser.nemiroff_delicat_1l_parser()[3],
+        "ashan": parser.nemiroff_delicat_1l_parser()[4],
+        "novus": parser.nemiroff_delicat_1l_parser()[5],
+        "fozzy": parser.nemiroff_delicat_1l_parser()[8]
+    }},
+
+    {'zubrowka_bison_grass_1l': {
+        "varus": parser.zubrowka_bison_grass_1l_parser()[2],
+        "novus": parser.zubrowka_bison_grass_1l_parser()[5],
+        "nash_kray": parser.zubrowka_bison_grass_1l_parser()[7],
+        "fozzy": parser.zubrowka_bison_grass_1l_parser()[8]
+    }},
+
+    {'zubrowka_biala_1l': {
+        "eko": parser.zubrowka_biala_1l_parser()[1],
+        "varus": parser.zubrowka_biala_1l_parser()[2],
+        "fozzy": parser.zubrowka_biala_1l_parser()[8]
+    }},
+
+
 
 
 

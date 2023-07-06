@@ -919,3 +919,21 @@ class TesterForGroceryAppText:
             return KOZACKA_RADA_PREMIUM_07L
         elif np.argmax(result) == 427:
             return KOZACKA_RADA_OSOBLIVA_07L
+        elif np.argmax(result) == 428:
+            return PERSHA_GILDIYA_POVAJNA_07L
+        elif np.argmax(result) == 429:
+            return PERSHA_GILDIYA_VERHOVNA_07L
+        elif np.argmax(result) == 430:
+            return PERSHA_GILDIYA_ZNATNA_07L
+        elif np.argmax(result) == 431:
+            return HLIB_DAR_CLASSIC_07L
+        elif np.argmax(result) == 432:
+            return MEDOFF_CLASSIC_1L
+        elif np.argmax(result) == 433:
+            return NEMIROFF_SHTOF_1L
+        elif np.argmax(result) == 434:
+            return NEMIROFF_DELICAT_SOFT_1L
+        elif np.argmax(result) == 435:
+            return ZUBROWKA_BISON_GRASS_1L
+        elif np.argmax(result) == 436:
+            return ZUBROWKA_BIALA_1L

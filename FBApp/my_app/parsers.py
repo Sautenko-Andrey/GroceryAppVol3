@@ -4226,6 +4226,91 @@ class ProductParserVol2:
             'https://fozzyshop.ua/vodka/16347-vodka-kozacka-rada-osobaya-4820080726852.html'
         ])
 
+    def persha_gildiya_povajna_07l_parser(self):
+        ''' Парсер для горілка Перша Гільдія Поважна 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-persha-gildiia-700ml-ukrayina--04820080725909/',
+            'https://shop.silpo.ua/product/gorilka-persha-gildiia-povazhna-551051',
+            'https://auchan.ua/ua/vodka-persha-gil-dija-pochtennaja-40-700-ml-1022147/',
+            'https://fozzyshop.ua/vodka/1993-vodka-persha-gildiyapovazhna-4820080725909.html'
+        ])
+
+    def persha_gildiya_verhovna_07l_parser(self):
+        ''' Парсер для горілка Перша Гільдія Верховна 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-persha-gildiia-700ml-ukrayina--04820080725855/',
+            'https://shop.silpo.ua/product/gorilka-persha-gildiia-verkhovna-551047',
+            'https://auchan.ua/ua/vodka-persha-gil-dija-verhovnaja-40-700-ml-1022135/',
+            'https://novus.online/product/gorilka-persa-gildia-verhovna-40-07l',
+            'https://fozzyshop.ua/vodka/1990-vodka-persha-gildiya-verkhovnaya-4820080725855.html'
+        ])
+
+    def persha_gildiya_znatna_07l_parser(self):
+        ''' Парсер для горілка Перша Гільдія Знатна 0.7 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-persha-gildiia-700ml-ukrayina--04820080725862/',
+            'https://shop.silpo.ua/product/gorilka-persha-gildiia-znatna-551049',
+            'https://auchan.ua/ua/vodka-persha-gil-dija-znatnaja-40-700-ml-1022141/',
+            'https://fozzyshop.ua/vodka/1992-vodka-persha-gildiya-znatnaya-4820080725862.html'
+        ])
+
+    def hlib_dar_classic_07l_parser(self):
+        ''' Парсер для горілка Хлібний Дар Класична 0.7 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-07l-hlibnij-dar-klasicna-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-khlibnii-dar-700ml-ukrayina--04820080720584/',
+            'https://shop.silpo.ua/product/gorilka-khlibnyi-dar-klasychna-93352',
+            'https://auchan.ua/ua/vodka-hlebnyj-dar-klassicheskaja-40-0-7-l-1075537/',
+            'https://novus.online/product/gorilka-hlibnij-dar-klasicna-40-07l',
+            'https://metro.zakaz.ua/uk/products/gorilka-khlibnii-dar-700ml-ukrayina--04820080720584/',
+            'https://shop.nashkraj.ua/kovel/product/5001-gorilka-khlibniy-dar-0-7l-klasichna-40',
+            'https://fozzyshop.ua/vodka/2064-vodka-khlibnij-dar-klassicheskaya-4820080725787.html'
+        ])
+
+    def medoff_classic_1l_parser(self):
+        ''' Парсер для горілка Medoff Классик 1 л'''
+        return self.prices_parsing([
+            'https://shop.nashkraj.ua/kovel/product/20342-gorilka-medoff-1l-klasik-40',
+            'https://fozzyshop.ua/vodka/1875-vodka-medoff-klassik-4820179280494.html'
+        ])
+
+    def nemiroff_shtof_1l_parser(self):
+        ''' Парсер для горілка Nemiroff Штоф 1 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-1l-nemiroff-osobliva-stof-40',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-osoblyva-shtof-16699',
+            'https://shop.nashkraj.ua/kovel/product/4860-gorilka-nemiroff-1l-osobliva-shtof-40',
+            'https://fozzyshop.ua/vodka/16330-vodka-nemiroff-osobaya-shtof-4820181420635.html'
+        ])
+
+    def nemiroff_delicat_1l_parser(self):
+        ''' Парсер для горілка Nemiroff Делікат 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-nemiroff-1000ml--04820181420451/',
+            'https://varus.ua/gorilka-nemiroff-delikat-40-1-l',
+            'https://shop.silpo.ua/product/gorilka-nemiroff-delikat-m-iaka-445401',
+            'https://auchan.ua/ua/vodka-nemiroff-deliat-40-1l-1047308/',
+            'https://novus.online/product/horilka-nemiroff-shtof-delikat-myaka-40-1l',
+            'https://fozzyshop.ua/vodka/16325-vodka-nemiroff-delikat-myagkaya-4820181420451.html'
+        ])
+
+    def zubrowka_bison_grass_1l_parser(self):
+        ''' Парсер для горілка Zubrowka Bison Grass 1 л'''
+        return self.prices_parsing([
+            'https://varus.ua/nastoyanka-zubrovka-1l',
+            'https://novus.online/product/gorilka-1l-zubrowka-bison-grass-375',
+            'https://shop.nashkraj.ua/kovel/product/307052-gorilka-zubrovka-1l-bison-grass-37-5',
+            'https://fozzyshop.ua/vodka/1920-vodka-zubrowka-5900343003711.html'
+        ])
+
+    def zubrowka_biala_1l_parser(self):
+        ''' Парсер для горілка Zubrowka Biala 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-zubrovka-1000ml-polshcha--05900343001939/',
+            'https://varus.ua/gorilka-byala-zubrivka-1l',
+            'https://fozzyshop.ua/vodka/1922-vodka-zubrowka-biala-5900343001939.html'
+        ])
+
 
 
 

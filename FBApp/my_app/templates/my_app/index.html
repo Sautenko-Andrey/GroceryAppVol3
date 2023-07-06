@@ -24,9 +24,22 @@
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-md-12 col-sm-12" align="center">
-                <h1><b>{{info.title}}</b></h1>
+
+                <!--Начало кастомизированного заголовка-->
+                <div class="content">
+                    <h1 class="title"><b>{{info.title}}</b>
+                        <div class="aurora">
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                            <div class="aurora__item"></div>
+                        </div>
+                    </h1>
+                </div>
+                <!--Конец кастомизированного заголовка-->
+
+                <!--<h1><b>{{info.title}}</b></h1>-->
                 <h6><b>{{info.under_title}}</b></h6>
-                <br>
                 <br>
                 <h6>Выберите способ поиска товара :</h6>
             </div>
@@ -73,7 +86,10 @@
         <div class="row">
             <div class="col-xl-4 col-md-12 col-sm-12" align="center">
             </div>
-            <!--что-то вставить -->
+
+            <!--Начало кнопок для соцсетей -->
+
+            <!--Конец кнопок для соцсетей -->
             <div class="col-xl-4 col-md-12 col-sm-12" align="center">
             </div>
         </div>
@@ -152,9 +168,5 @@
 <br>
 <br>
 <br>
-
-
-<!--<script src="{% static 'my_app/js/script.js' %}"></script>-->
-
 {% endfor %}
 {% endblock %}

@@ -1305,6 +1305,33 @@ get_kozacka_rada_premium_07l = tag.create_tag(ItemsPicsFromNet, 429)
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 0,7л"'''
 get_kozacka_rada_osobliva_07l = tag.create_tag(ItemsPicsFromNet, 430)
 
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Поважна, 0,7л"'''
+get_persha_gildya_povajna_07l = tag.create_tag(ItemsPicsFromNet, 431)
+
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Верховна, 0,7л"'''
+get_persha_gildya_verhovna_07l = tag.create_tag(ItemsPicsFromNet, 432)
+
+'''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Знатна, 0,7л"'''
+get_persha_gildya_znatna_07l = tag.create_tag(ItemsPicsFromNet, 433)
+
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 0,7л"'''
+get_hlib_dar_classic_07l = tag.create_tag(ItemsPicsFromNet, 434)
+
+'''Тэг,возвращающий информацию о "Горілка Medoff Класік , 1л"'''
+get_medoff_classic_1l = tag.create_tag(ItemsPicsFromNet, 435)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Особлива штоф, 1л"'''
+get_nemiroff_shtof_1l = tag.create_tag(ItemsPicsFromNet, 436)
+
+'''Тэг,возвращающий информацию о "Горілка Nemiroff Delikat м`яка, 1л"'''
+get_nemiroff_delicat_soft_1l = tag.create_tag(ItemsPicsFromNet, 437)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Bison Grass, 1л"'''
+get_zubrowka_bison_grass_1l = tag.create_tag(ItemsPicsFromNet, 438)
+
+'''Тэг,возвращающий информацию о "Горілка Zubrowka Biala, 1л"'''
+get_zubrowka_biala_1l = tag.create_tag(ItemsPicsFromNet, 439)
+
 
 
 
