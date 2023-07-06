@@ -93,7 +93,8 @@
                     <tr>
                         <th scope="row"></th>
                         <td><samp><b>{{info.product_name}}</b></samp></td>
-                        <td><samp><b>{{info.amount}}</b></samp></td>
+                        <td><samp><b><i>{{info.amount}}</i></b></samp></td>
+                        <td><samp><a href="{% url 'delete_product_from_set' info.id %}" class="btn btn-danger" title="Удалить"><b>X</b></a></samp></td>
                         {% endfor %}
                     </tr>
                     </tbody>
@@ -104,7 +105,7 @@
             <a class="custom-btn btn-12" href="{% url 'resultsofsets' %}"><span>Нажми!</span><span>Посчитать</span></a>
             <!--конец кастомизированной кнопки-->
             <h4>
-                <button class="btn btn-danger" type="button" data-bs-toggle="offcanvas"
+                <button class="btn btn-danger" type="button" title="Помощь" data-bs-toggle="offcanvas"
                         data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                          class="bi bi-question-circle" viewBox="0 0 16 16">

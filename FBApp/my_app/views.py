@@ -629,3 +629,10 @@ class ItemsInfoAPI(generics.ListAPIView):
 
     pagination_class = ItemsInfoAPIPagination
     permission_classes = (ReadOnlyPermission,)
+
+#delete order from set
+def delete_product(request, order_id):
+    '''Метод для удаления заказов в списке покупок'''
+    order = SetOfProducts.objects.get(pk = order_id)
+    order.delete()
+    return redirect("items_set")
