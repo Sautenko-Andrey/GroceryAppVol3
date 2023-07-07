@@ -4311,6 +4311,68 @@ class ProductParserVol2:
             'https://fozzyshop.ua/vodka/1922-vodka-zubrowka-biala-5900343001939.html'
         ])
 
+    def hetman_1l_parser(self):
+        ''' Парсер для горілка Гетьман 1 л'''
+        return self.prices_parsing([
+            'https://varus.ua/gorilka-getman-40-0-5-l',
+            'https://shop.silpo.ua/product/gorilka-getman-854174',
+            'https://fozzyshop.ua/vodka/90806-vodka-getman-4820050233816.html'
+        ])
+
+    def kozacka_rada_osobliva_1l_parser(self):
+        ''' Парсер для горілка Козацька Рада Особлива 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04820080724087/',
+            'https://varus.ua/gorilka-kozacka-rada-osobliva-1-l',
+            'https://auchan.ua/ua/vodka-kozac-ka-rada-osobaja-40-1-l-1165060/',
+            'https://novus.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04820080724087/',
+            'https://fozzyshop.ua/vodka/1944-vodka-kozacka-rada-osobaya-4820080724087.html'
+        ])
+
+    def kozacka_rada_classic_1l_parser(self):
+        ''' Парсер для горілка Козацька Рада Класична 1 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/gorilka-1l-kozacka-rada-40',
+            'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04820080724063/',
+            'https://varus.ua/gorilka-kozacka-rada-klasichna-40-1-l',
+            'https://shop.silpo.ua/product/gorilka-kozatska-rada-klasychna-436336',
+            'https://auchan.ua/ua/vodka-kozac-ka-rada-klassicheskaja-40-1l-1047907/',
+            'https://novus.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04810027013480/',
+            'https://fozzyshop.ua/vodka/1973-vodka-kozacka-rada-klassicheskaya-4820080724063.html'
+        ])
+
+    def hlib_dar_classic_1l_parser(self):
+        ''' Парсер для горілка Хлібний Дар Класична 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/gorilka-khlibnii-dar-1000ml-ukrayina--04820080722045/',
+            'https://varus.ua/gorilka-hlibniy-dar-klasichna-40-1-l',
+            'https://shop.silpo.ua/product/gorilka-khlibnyi-dar-klasychna-337180',
+            'https://novus.zakaz.ua/uk/products/gorilka-khlibnii-dar-1000ml-ukrayina--04820080722045/',
+            'https://fozzyshop.ua/vodka/2066-vodka-khlibnij-dar-klassicheskaya-4820080722045.html'
+        ])
+
+    def svinne_rebro_parser(self):
+        ''' Парсер для свинне ребро'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/rebertsia--ekomarket00000000530055/',
+            'https://varus.ua/rebro-svinoe-vesovoe',
+            'https://shop.silpo.ua/product/svyniache-rebro-fermerske-757772',
+            'https://novus.online/product/rebra-svinni-z-masom-oholodzeni-vag-virobnictvo',
+            'https://metro.zakaz.ua/uk/products/rebertsia-tsemiaco-ukrayina--metro28864400000000/',
+            'https://shop.nashkraj.ua/kovel/product/110613-svinina-okholodzhena-rebra-myasni',
+            'https://fozzyshop.ua/svinina/11248-svinoe-rebro-2732649.html'
+        ])
+
+    def salo_parser(self):
+        ''' Парсер для сало'''
+        return self.prices_parsing([
+            'https://varus.ua/svinyache-salo-domashne-tovste-nf-oholvu',
+            'https://shop.silpo.ua/product/svyniache-salo-fermerske-767650',
+            'https://novus.online/product/salo-svynyache-fermerske',
+            'https://shop.nashkraj.ua/kovel/product/9563-svinina-okholodzhena-salo-z-shkiroyu-1kat',
+            'https://fozzyshop.ua/svinina/100150-svinoe-salo-fermerskoe-2781506.html'
+        ])
+
 
 
 

@@ -435,6 +435,27 @@ NEMIROFF_SHTOF_1L = 'Горілка Nemiroff Особлива штоф, 1л'
 NEMIROFF_DELICAT_SOFT_1L = 'Горілка Nemiroff Delikat м`яка, 1л'
 ZUBROWKA_BISON_GRASS_1L = 'Горілка Zubrowka Bison Grass, 1л'
 ZUBROWKA_BIALA_1L = 'Горілка Zubrowka Biala, 1л'
+HETMAN_1L = 'Горілка Гетьман, 1000мл'
+KOZACKA_RADA_OSOBLIVA_1L = 'Горілка "Козацька рада" Особлива, 1л'
+KOZACKA_RADA_CLASSIC_1L = 'Горілка "Козацька рада" Класична, 1л'
+HLIB_DAR_CLASSIC_1L = 'Горілка "Хлібний Дар" Класична, 1л'
+SVINNE_REBRO = 'Свинне ребро, кг'
+SALO = 'Свиняче сало фермерське, кг'
+SVINNA_GOMILKA = 'Свинна гомілка, кг'
+SVIN_PECHINKA = 'Печінка свинна охолоджена, кг'
+SVIN_GULYASH = 'Свинячий гуляш, кг'
+SVIN_PIDJARKA = 'Свинна піджарка, кг'
+SVIN_KOREYKA = 'Свинна корейка, кг'
+SVIN_VIRIZKA = 'Свинна вирізка, кг'
+SVIN_LOPATKA_BEZ_KISTKI = 'Свинна лопатка без кістки, кг'
+SVIN_OKIST_BEZ_KISTKI = 'Свинний окіст без кістки, кг'
+SVIN_FARSH = 'Фарш свинний, кг'
+SVIN_BITOK_BEZ_KISTI = 'Свинний биток без кістки, кг'
+SVIN_RAGU = 'Свинне рагу, кг'
+SVIN_OSHEYEK_BEZ_KISTKI = 'Свинний ошийок без кістки, кг'
+
+
+
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

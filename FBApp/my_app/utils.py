@@ -1188,6 +1188,43 @@ class ContextSupervisor:
             result = self.getting_prices('zubrowka_bison_grass_1l', get_zubrowka_bison_grass_1l)
         elif nn_respond == ZUBROWKA_BIALA_1L:
             result = self.getting_prices('zubrowka_biala_1l', get_zubrowka_biala_1l)
+        elif nn_respond == HETMAN_1L:
+            result = self.getting_prices('hetman_1l', get_hetman_1l)
+        elif nn_respond == KOZACKA_RADA_OSOBLIVA_1L:
+            result = self.getting_prices('kozacka_rada_osobliva_1l', get_kozacka_rada_osobliva_1l)
+        elif nn_respond == KOZACKA_RADA_CLASSIC_1L:
+            result = self.getting_prices('kozacka_rada_classic_1l', get_kozacka_rada_classic_1l)
+        elif nn_respond == HLIB_DAR_CLASSIC_1L:
+            result = self.getting_prices('hlib_dar_classic_1l', get_hlib_dar_classic_1l)
+        elif nn_respond == SVINNE_REBRO:
+            result = self.getting_prices('svinne_rebro', get_svin_rebro)
+        elif nn_respond == SALO:
+            result = self.getting_prices('salo', get_salo)
+        elif nn_respond == SVINNA_GOMILKA:
+            result = self.getting_prices(self.NO_PRICES, get_svin_gomilka)
+        elif nn_respond == SVIN_PECHINKA:
+            result = self.getting_prices(self.NO_PRICES, get_pechinka_svin)
+        elif nn_respond == SVIN_GULYASH:
+            result = self.getting_prices(self.NO_PRICES, get_svin_gulyash)
+        elif nn_respond == SVIN_PIDJARKA:
+            result = self.getting_prices(self.NO_PRICES, get_svin_pidjarka)
+        elif nn_respond == SVIN_KOREYKA:
+            result = self.getting_prices(self.NO_PRICES, get_svin_koreyka)
+        elif nn_respond == SVIN_VIRIZKA:
+            result = self.getting_prices(self.NO_PRICES, get_svin_virezka)
+        elif nn_respond == SVIN_LOPATKA_BEZ_KISTKI:
+            result = self.getting_prices(self.NO_PRICES, get_lopatka_bez_kistki)
+        elif nn_respond == SVIN_OKIST_BEZ_KISTKI:
+            result = self.getting_prices(self.NO_PRICES, get_svin_okist_bez_kistki)
+        elif nn_respond == SVIN_FARSH:
+            result = self.getting_prices(self.NO_PRICES, get_svin_farsh)
+        elif nn_respond == SVIN_BITOK_BEZ_KISTI:
+            result = self.getting_prices(self.NO_PRICES, get_svin_bitok_bez_kistki)
+        elif nn_respond == SVIN_RAGU:
+            result = self.getting_prices(self.NO_PRICES, get_svin_ragu)
+        elif nn_respond == SVIN_OSHEYEK_BEZ_KISTKI:
+            result = self.getting_prices(self.NO_PRICES, get_svin_osheek_bez_kistki)
+
 
 
 

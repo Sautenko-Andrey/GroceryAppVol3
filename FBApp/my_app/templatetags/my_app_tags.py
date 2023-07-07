@@ -1332,6 +1332,59 @@ get_zubrowka_bison_grass_1l = tag.create_tag(ItemsPicsFromNet, 438)
 '''Тэг,возвращающий информацию о "Горілка Zubrowka Biala, 1л"'''
 get_zubrowka_biala_1l = tag.create_tag(ItemsPicsFromNet, 439)
 
+'''Тэг,возвращающий информацию о "Горілка Гетьман, 1000мл"'''
+get_hetman_1l = tag.create_tag(ItemsPicsFromNet, 440)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 1л"'''
+get_kozacka_rada_osobliva_1l = tag.create_tag(ItemsPicsFromNet, 441)
+
+'''Тэг,возвращающий информацию о "Горілка "Козацька рада" Класична, 1л"'''
+get_kozacka_rada_classic_1l = tag.create_tag(ItemsPicsFromNet, 442)
+
+'''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 1л"'''
+get_hlib_dar_classic_1l = tag.create_tag(ItemsPicsFromNet, 442)
+
+'''Тэг,возвращающий информацию о "Свинне ребро, кг"'''
+get_svin_rebro = tag.create_tag(ItemsPicsFromNet, 443)
+
+'''Тэг,возвращающий информацию о "Свиняче сало фермерське, кг"'''
+get_salo = tag.create_tag(ItemsPicsFromNet, 444)
+
+'''Тэг,возвращающий информацию о "Свинна гомілка, кг"'''
+get_svin_gomilka = tag.create_tag(ItemsPicsFromNet, 445)
+
+'''Тэг,возвращающий информацию о "Печінка свинна охолоджена, кг"'''
+get_pechinka_svin = tag.create_tag(ItemsPicsFromNet, 446)
+
+'''Тэг,возвращающий информацию о "Свинячий гуляш, кг"'''
+get_svin_gulyash = tag.create_tag(ItemsPicsFromNet, 447)
+
+'''Тэг,возвращающий информацию о "Свинна піджарка, кг"'''
+get_svin_pidjarka = tag.create_tag(ItemsPicsFromNet, 448)
+
+'''Тэг,возвращающий информацию о "Горілка "Свинна корейка, кг"'''
+get_svin_koreyka = tag.create_tag(ItemsPicsFromNet, 449)
+
+'''Тэг,возвращающий информацию о "Свинна вирізка, кг"'''
+get_svin_virezka = tag.create_tag(ItemsPicsFromNet, 450)
+
+'''Тэг,возвращающий информацию о "Свинна лопатка без кістки, кг"'''
+get_lopatka_bez_kistki = tag.create_tag(ItemsPicsFromNet, 451)
+
+'''Тэг,возвращающий информацию о "Свинний окіст без кістки, кг"'''
+get_svin_okist_bez_kistki = tag.create_tag(ItemsPicsFromNet, 452)
+
+'''Тэг,возвращающий информацию о "Фарш свинний, кг"'''
+get_svin_farsh = tag.create_tag(ItemsPicsFromNet, 453)
+
+'''Тэг,возвращающий информацию о "Свинний биток без кістки, кг"'''
+get_svin_bitok_bez_kistki = tag.create_tag(ItemsPicsFromNet, 454)
+
+'''Тэг,возвращающий информацию о "Свинне рагу, кг"'''
+get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 455)
+
+'''Тэг,возвращающий информацию о "Свинний ошийок без кістки, кг"'''
+get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 456)
 
 
 

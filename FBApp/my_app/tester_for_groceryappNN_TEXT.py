@@ -937,3 +937,39 @@ class TesterForGroceryAppText:
             return ZUBROWKA_BISON_GRASS_1L
         elif np.argmax(result) == 436:
             return ZUBROWKA_BIALA_1L
+        elif np.argmax(result) == 437:
+            return HETMAN_1L
+        elif np.argmax(result) == 438:
+            return KOZACKA_RADA_OSOBLIVA_1L
+        elif np.argmax(result) == 439:
+            return KOZACKA_RADA_CLASSIC_1L
+        elif np.argmax(result) == 440:
+            return HLIB_DAR_CLASSIC_1L
+        elif np.argmax(result) == 441:
+            return SVINNE_REBRO
+        elif np.argmax(result) == 442:
+            return SALO
+        elif np.argmax(result) == 443:
+            return SVINNA_GOMILKA
+        elif np.argmax(result) == 444:
+            return SVIN_PECHINKA
+        elif np.argmax(result) == 445:
+            return SVIN_GULYASH
+        elif np.argmax(result) == 446:
+            return SVIN_PIDJARKA
+        elif np.argmax(result) == 447:
+            return SVIN_KOREYKA
+        elif np.argmax(result) == 448:
+            return SVIN_VIRIZKA
+        elif np.argmax(result) == 449:
+            return SVIN_LOPATKA_BEZ_KISTKI
+        elif np.argmax(result) == 450:
+            return SVIN_OKIST_BEZ_KISTKI
+        elif np.argmax(result) == 451:
+            return SVIN_FARSH
+        elif np.argmax(result) == 452:
+            return SVIN_BITOK_BEZ_KISTI
+        elif np.argmax(result) == 453:
+            return SVIN_RAGU
+        elif np.argmax(result) == 454:
+            return SVIN_OSHEYEK_BEZ_KISTKI

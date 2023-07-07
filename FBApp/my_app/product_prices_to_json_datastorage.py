@@ -3118,6 +3118,56 @@ all_products_names = [
         "fozzy": parser.zubrowka_biala_1l_parser()[8]
     }},
 
+    {'hetman_1l': {
+        "varus": parser.hetman_1l_parser()[2],
+        "silpo": parser.hetman_1l_parser()[3],
+        "fozzy": parser.hetman_1l_parser()[8]
+    }},
+
+    {'kozacka_rada_osobliva_1l': {
+        "eko": parser.kozacka_rada_osobliva_1l_parser()[1],
+        "varus": parser.kozacka_rada_osobliva_1l_parser()[2],
+        "ashan": parser.kozacka_rada_osobliva_1l_parser()[4],
+        "novus": parser.kozacka_rada_osobliva_1l_parser()[5],
+        "fozzy": parser.kozacka_rada_osobliva_1l_parser()[8]
+    }},
+
+    {'kozacka_rada_classic_1l': {
+        "atb": parser.kozacka_rada_classic_1l_parser()[0],
+        "eko": parser.kozacka_rada_classic_1l_parser()[1],
+        "varus": parser.kozacka_rada_classic_1l_parser()[2],
+        "silpo": parser.kozacka_rada_classic_1l_parser()[3],
+        "ashan": parser.kozacka_rada_classic_1l_parser()[4],
+        "novus": parser.kozacka_rada_classic_1l_parser()[5],
+        "fozzy": parser.kozacka_rada_classic_1l_parser()[8]
+    }},
+
+    {'hlib_dar_classic_1l': {
+        "eko": parser.hlib_dar_classic_1l_parser()[1],
+        "varus": parser.hlib_dar_classic_1l_parser()[2],
+        "silpo": parser.hlib_dar_classic_1l_parser()[3],
+        "novus": parser.hlib_dar_classic_1l_parser()[5],
+        "fozzy": parser.hlib_dar_classic_1l_parser()[8]
+    }},
+
+    {'svinne_rebro': {
+        "eko": parser.svinne_rebro_parser()[1],
+        "varus": parser.svinne_rebro_parser()[2],
+        "silpo": parser.svinne_rebro_parser()[3],
+        "novus": parser.svinne_rebro_parser()[5],
+        "metro": parser.svinne_rebro_parser()[6],
+        "nash_kray": parser.svinne_rebro_parser()[7],
+        "fozzy": parser.svinne_rebro_parser()[8]
+    }},
+
+    {'salo': {
+        "varus": parser.salo_parser()[2],
+        "silpo": parser.salo_parser()[3],
+        "novus": parser.salo_parser()[5],
+        "nash_kray": parser.salo_parser()[7],
+        "fozzy": parser.salo_parser()[8]
+    }},
+
 
 
 
