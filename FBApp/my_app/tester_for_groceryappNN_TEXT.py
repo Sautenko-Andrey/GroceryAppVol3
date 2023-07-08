@@ -973,3 +973,13 @@ class TesterForGroceryAppText:
             return SVIN_RAGU
         elif np.argmax(result) == 454:
             return SVIN_OSHEYEK_BEZ_KISTKI
+        elif np.argmax(result) == 455:
+            return KURYACHA_CHETVERT
+        elif np.argmax(result) == 456:
+            return KURYACHE_STEGNO
+        elif np.argmax(result) == 457:
+            return KURYACHE_KRILO
+        elif np.argmax(result) == 458:
+            return KURYACHE_FILE
+        elif np.argmax(result) == 459:
+            return KURYACHA_GOMILKA

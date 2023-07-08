@@ -1386,6 +1386,21 @@ get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 455)
 '''Тэг,возвращающий информацию о "Свинний ошийок без кістки, кг"'''
 get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 456)
 
+'''Тэг,возвращающий информацию о "Куряча четвертина, кг"'''
+get_kuryacha_chetvert = tag.create_tag(ItemsPicsFromNet, 457)
+
+'''Тэг,возвращающий информацию о "Куряче стегно, кг"'''
+get_kuryache_stegno = tag.create_tag(ItemsPicsFromNet, 458)
+
+'''Тэг,возвращающий информацию о "Куряче крило, кг"'''
+get_kuryache_krilo = tag.create_tag(ItemsPicsFromNet, 459)
+
+'''Тэг,возвращающий информацию о "Куряче філе, кг"'''
+get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 460)
+
+'''Тэг,возвращающий информацию о "Куряча гомілка, кг"'''
+get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 461)
+
 
 
 

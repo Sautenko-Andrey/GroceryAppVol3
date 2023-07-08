@@ -453,6 +453,11 @@ SVIN_FARSH = 'Фарш свинний, кг'
 SVIN_BITOK_BEZ_KISTI = 'Свинний биток без кістки, кг'
 SVIN_RAGU = 'Свинне рагу, кг'
 SVIN_OSHEYEK_BEZ_KISTKI = 'Свинний ошийок без кістки, кг'
+KURYACHA_CHETVERT = 'Куряча четвертина, кг'
+KURYACHE_STEGNO = 'Куряче стегно, кг'
+KURYACHE_KRILO = 'Куряче крило, кг'
+KURYACHE_FILE = 'Куряче філе, кг'
+KURYACHA_GOMILKA = 'Куряча гомілка, кг'
 
 
 

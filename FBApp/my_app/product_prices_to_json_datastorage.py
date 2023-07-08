@@ -3168,6 +3168,83 @@ all_products_names = [
         "fozzy": parser.salo_parser()[8]
     }},
 
+    {'svinna_gomilka': {
+        "varus": parser.svinna_gomilka_parser()[2],
+        "metro": parser.svinna_gomilka_parser()[6],
+        "fozzy": parser.svinna_gomilka_parser()[8]
+    }},
+
+    {'svinna_pechinka': {
+        "varus": parser.svin_pechinka_parser()[2],
+        "nash_kray": parser.svin_pechinka_parser()[7],
+        "fozzy": parser.svin_pechinka_parser()[8]
+    }},
+
+    {'svin_gulyash': {
+        "silpo": parser.svin_gulyash_parser()[3],
+        "fozzy": parser.svin_gulyash_parser()[8]
+    }},
+
+    {'svinna_pidjarka': {
+        "varus": parser.svin_pidjarka_parser()[2],
+        "fozzy": parser.svin_pidjarka_parser()[8]
+    }},
+
+    {'svin_koreyka': {
+        "varus": parser.svin_koreyka_parser()[2],
+        "silpo": parser.svin_koreyka_parser()[3],
+        "novus": parser.svin_koreyka_parser()[5],
+        "metro": parser.svin_koreyka_parser()[6],
+        "nash_kray": parser.svin_koreyka_parser()[7],
+    }},
+
+    {'svin_virizka': {
+        "eko": parser.svin_virizka_parser()[1],
+        "varus": parser.svin_virizka_parser()[2],
+        "silpo": parser.svin_virizka_parser()[3],
+        "metro": parser.svin_virizka_parser()[6],
+        "fozzy": parser.svin_virizka_parser()[8]
+    }},
+
+    {'svin_lopatka_bez_kistki': {
+        "eko": parser.svin_lopatka_bez_kistki_parser()[1],
+        "varus": parser.svin_lopatka_bez_kistki_parser()[2],
+        "silpo": parser.svin_lopatka_bez_kistki_parser()[3],
+        "metro": parser.svin_lopatka_bez_kistki_parser()[6],
+        "fozzy": parser.svin_lopatka_bez_kistki_parser()[8]
+    }},
+
+    {'svin_okist_bez_kistki': {
+        "silpo": parser.svin_okist_bez_kistki_parser()[3],
+        "fozzy": parser.svin_okist_bez_kistki_parser()[8]
+    }},
+
+    {'svin_farsh': {
+        "nash_kray": parser.svin_farsh_parser()[7],
+        "fozzy": parser.svin_farsh_parser()[8]
+    }},
+
+    {'svin_bitok_bez_kosti': {
+        "eko": parser.svin_bitok_bez_kosti_parser()[1],
+        "varus": parser.svin_bitok_bez_kosti_parser()[2],
+        "silpo": parser.svin_bitok_bez_kosti_parser()[3],
+        "fozzy": parser.svin_bitok_bez_kosti_parser()[8]
+    }},
+
+    {'svin_ragu': {
+        "silpo": parser.svin_ragu_parser()[3],
+        "fozzy": parser.svin_ragu_parser()[8]
+    }},
+
+    {'svin_osheek_bez_kistki': {
+        "eko": parser.svin_osheek_bez_kistki_parser()[1],
+        "varus": parser.svin_osheek_bez_kistki_parser()[2],
+        "silpo": parser.svin_osheek_bez_kistki_parser()[3],
+        "novus": parser.svin_osheek_bez_kistki_parser()[5],
+        "metro": parser.svin_osheek_bez_kistki_parser()[6],
+        "fozzy": parser.svin_osheek_bez_kistki_parser()[8]
+    }},
+
 
 
 

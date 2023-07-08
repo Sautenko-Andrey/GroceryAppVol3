@@ -4373,6 +4373,107 @@ class ProductParserVol2:
             'https://fozzyshop.ua/svinina/100150-svinoe-salo-fermerskoe-2781506.html'
         ])
 
+    def svinna_gomilka_parser(self):
+        ''' Парсер для свинна гомілка'''
+        return self.prices_parsing([
+            'https://varus.ua/rulka-z-domashnoi-svinini-n-f-ohol-vag',
+            'https://metro.zakaz.ua/uk/products/goliashka--metro28835600000000/',
+            'https://fozzyshop.ua/svinina/11238-svinaya-golyashka-2732679.html'
+        ])
+
+    def svin_pechinka_parser(self):
+        ''' Парсер для свинна печінка'''
+        return self.prices_parsing([
+            'https://varus.ua/pechen-svinaya-razmorozhena-vesovaya',
+            'https://shop.nashkraj.ua/kovel/product/3387-svinina-okholodzhena-pechinka',
+            'https://fozzyshop.ua/svinina/19928-pechen-svinaya-okhlazhdennaya-2714621.html'
+        ])
+
+    def svin_gulyash_parser(self):
+        ''' Парсер для свинний гуляш'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/svyniachyi-guliash-32691',
+            'https://fozzyshop.ua/svinina/59720-svinoj-gulyash-2732691.html'
+        ])
+
+    def svin_pidjarka_parser(self):
+        ''' Парсер для свинна піджарка'''
+        return self.prices_parsing([
+            'https://novus.online/product/pidzarka-zi-svinini-oholodzena-vag',
+            'https://fozzyshop.ua/svinina/11244-svinaya-podzharka-2740987.html'
+        ])
+
+    def svin_koreyka_parser(self):
+        ''' Парсер для свинна корейка'''
+        return self.prices_parsing([
+            'https://varus.ua/koreyka-z-domashnoi-svinini-z-k-n-f-ohol-vag',
+            'https://shop.silpo.ua/product/svyniacha-koreika-fermerska-757766',
+            'https://novus.online/product/korejka-svina-bk-oholvag',
+            'https://metro.zakaz.ua/uk/products/m-iaso-globino--metro28509400000000/',
+            'https://shop.nashkraj.ua/kovel/category/myaso/myaso-svinina?filter=filter&sort=popular&weight=0&range=0&page=3'
+        ])
+
+    def svin_virizka_parser(self):
+        ''' Парсер для свинна вирізка'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000534899/',
+            'https://varus.ua/vyrezka-svinaya-vesovaya',
+            'https://shop.silpo.ua/product/svyniacha-vyrizka-fermerska-757764',
+            'https://metro.zakaz.ua/uk/products/m-iaso--metro28499800000000/',
+            'https://fozzyshop.ua/svinina/11236-svinaya-vyrezka-2732716.html'
+        ])
+
+    def svin_lopatka_bez_kistki_parser(self):
+        ''' Парсер для свинна лопатка без кістки'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000530047/',
+            'https://varus.ua/lopatka-svinaya-vesovaya',
+            'https://shop.silpo.ua/product/svyniacha-lopatka-fermerska-757767',
+            'https://metro.zakaz.ua/uk/products/m-iaso--metro28500400000000/',
+            'https://fozzyshop.ua/svinina/11242-svinaya-lopatka-bez-kosti-2732700.html'
+        ])
+
+    def svin_okist_bez_kistki_parser(self):
+        ''' Парсер для свинна окіст без кістки'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/svyniachyi-okist-fermerskyi-757778',
+            'https://fozzyshop.ua/svinina/36927-svinoj-okorok-bez-kosti-2712607.html'
+        ])
+
+    def svin_farsh_parser(self):
+        ''' Парсер для свинний фарш'''
+        return self.prices_parsing([
+            'https://shop.nashkraj.ua/kovel/product/97844-farsh-svinina-domashniy-okhol-n-f-vag',
+            'https://fozzyshop.ua/svinina/11275-farsh-svinoj-2732789.html'
+        ])
+
+    def svin_bitok_bez_kosti_parser(self):
+        ''' Парсер для свинний биток без кості'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000530039/',
+            'https://varus.ua/bitok-z-domashnoi-svinini-n-f-ohol-vag',
+            'https://shop.silpo.ua/product/svyniachyi-bytok-fermerskyi-757776',
+            'https://fozzyshop.ua/svinina/11253-svinoj-bitok-bez-kosti-2732710.html'
+        ])
+
+    def svin_ragu_parser(self):
+        ''' Парсер для свинне рагу'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/svyniache-ragu-fermerske-757771',
+            'https://fozzyshop.ua/svinina/11247-svinoe-ragu-2732683.html'
+        ])
+
+    def svin_osheek_bez_kistki_parser(self):
+        ''' Парсер для свинне рагу'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/oshiiok--ekomarket00000000530052/',
+            'https://varus.ua/sheya-svinaya-vesovaya',
+            'https://shop.silpo.ua/product/svyniachyi-oshyiok-fermerskyi-757779',
+            'https://novus.online/product/osijok-svinij-bk-oholvag-virobnictvo',
+            'https://metro.zakaz.ua/uk/products/svinina--94820245940065/',
+            'https://fozzyshop.ua/svinina/11261-svinoj-osheek-bez-kosti-2732694.html'
+        ])
+
 
 
 
