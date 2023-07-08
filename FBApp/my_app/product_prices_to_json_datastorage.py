@@ -3245,6 +3245,57 @@ all_products_names = [
         "fozzy": parser.svin_osheek_bez_kistki_parser()[8]
     }},
 
+    {'kuryacha_chetvert': {
+        "atb": parser.kuryacha_chetvert_parser()[0],
+        "eko": parser.kuryacha_chetvert_parser()[1],
+        "varus": parser.kuryacha_chetvert_parser()[2],
+        "silpo": parser.kuryacha_chetvert_parser()[3],
+        "nash_kray": parser.kuryacha_chetvert_parser()[7],
+        "fozzy": parser.kuryacha_chetvert_parser()[8]
+    }},
+
+    {'kuryache_stegno': {
+        "atb": parser.kuryache_stegno_parser()[0],
+        "eko": parser.kuryache_stegno_parser()[1],
+        "varus": parser.kuryache_stegno_parser()[2],
+        "silpo": parser.kuryache_stegno_parser()[3],
+        "novus": parser.kuryache_stegno_parser()[5],
+        "metro": parser.kuryache_stegno_parser()[6],
+        "nash_kray": parser.kuryache_stegno_parser()[7],
+        "fozzy": parser.kuryache_stegno_parser()[8]
+    }},
+
+    {'kuryache_krilo': {
+        "atb": parser.kuryache_krilo_parser()[0],
+        "varus": parser.kuryache_krilo_parser()[2],
+        "silpo": parser.kuryache_krilo_parser()[3],
+        "novus": parser.kuryache_krilo_parser()[5],
+        "metro": parser.kuryache_krilo_parser()[6],
+        "nash_kray": parser.kuryache_krilo_parser()[7],
+        "fozzy": parser.kuryache_krilo_parser()[8]
+    }},
+
+    {'kuryache_file': {
+        "atb": parser.kuryache_file_parser()[0],
+        "eko": parser.kuryache_file_parser()[1],
+        "varus": parser.kuryache_file_parser()[2],
+        "silpo": parser.kuryache_file_parser()[3],
+        "novus": parser.kuryache_file_parser()[5],
+        "metro": parser.kuryache_file_parser()[6],
+        "nash_kray": parser.kuryache_file_parser()[7],
+        "fozzy": parser.kuryache_file_parser()[8]
+    }},
+
+    {'kuryacha_gomilka': {
+        "eko": parser.kuryacha_gomilka_parser()[1],
+        "varus": parser.kuryacha_gomilka_parser()[2],
+        "silpo": parser.kuryacha_gomilka_parser()[3],
+        "novus": parser.kuryacha_gomilka_parser()[5],
+        "metro": parser.kuryacha_gomilka_parser()[6],
+        "nash_kray": parser.kuryacha_gomilka_parser()[7],
+        "fozzy": parser.kuryacha_gomilka_parser()[8]
+    }},
+
 
 
 

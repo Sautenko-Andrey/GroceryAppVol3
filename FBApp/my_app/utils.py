@@ -1225,15 +1225,15 @@ class ContextSupervisor:
         elif nn_respond == SVIN_OSHEYEK_BEZ_KISTKI:
             result = self.getting_prices('svin_osheek_bez_kistki', get_svin_osheek_bez_kistki)
         elif nn_respond == KURYACHA_CHETVERT:
-            result = self.getting_prices(self.NO_PRICES, get_kuryacha_chetvert)
+            result = self.getting_prices('kuryacha_chetvert', get_kuryacha_chetvert)
         elif nn_respond == KURYACHE_STEGNO:
-            result = self.getting_prices(self.NO_PRICES, get_kuryache_stegno)
+            result = self.getting_prices('kuryache_stegno', get_kuryache_stegno)
         elif nn_respond == KURYACHE_KRILO:
-            result = self.getting_prices(self.NO_PRICES, get_kuryache_krilo)
+            result = self.getting_prices('kuryache_krilo', get_kuryache_krilo)
         elif nn_respond == KURYACHE_FILE:
-            result = self.getting_prices(self.NO_PRICES, get_kuryache_file)
+            result = self.getting_prices('kuryache_file', get_kuryache_file)
         elif nn_respond == KURYACHA_GOMILKA:
-            result = self.getting_prices(self.NO_PRICES, get_kuryacha_gomilka)
+            result = self.getting_prices('kuryacha_gomilka', get_kuryacha_gomilka)
 
 
 

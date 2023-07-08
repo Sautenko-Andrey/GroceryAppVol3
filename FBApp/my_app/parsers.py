@@ -4474,6 +4474,67 @@ class ProductParserVol2:
             'https://fozzyshop.ua/svinina/11261-svinoj-osheek-bez-kosti-2732694.html'
         ])
 
+    def kuryacha_chetvert_parser(self):
+        ''' Парсер для куряча четверть'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cetvertina-zadna-kurcat-brojleriv-cebaturocka-oholodzena-gazupak',
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000531562/',
+            'https://varus.ua/chetvertaya-kurica-vesovaya',
+            'https://shop.silpo.ua/product/kuriacha-chvert-domashnia-560143',
+            'https://shop.nashkraj.ua/kovel/product/12562-kuryatina-okholodzhena-chetvertina-zadnya',
+            'https://fozzyshop.ua/kurica/11180-kurinaya-chetvert-2768007.html'
+        ])
+
+    def kuryache_stegno_parser(self):
+        ''' Парсер для куряче стегно'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/stegno-kurcat-brojleriv-epikur-oholodzene',
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000530003/',
+            'https://varus.ua/bedro-kurica-vesovoe',
+            'https://shop.silpo.ua/product/kuriache-stegno-461762',
+            'https://novus.online/product/stegno-kurace-oholodzene-vag',
+            'https://metro.zakaz.ua/uk/products/m-iaso-nasha-riaba--metro28704000000000/',
+            'https://shop.nashkraj.ua/kovel/product/255909-kuryatina-okholodzhena-stegno-z-khrebt-kistk',
+            'https://fozzyshop.ua/kurica/11181-kurinoe-bedro-2739826.html'
+        ])
+
+    def kuryache_krilo_parser(self):
+        ''' Парсер для куряче крило'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/krilo-kurcat-brojleriv-cebaturocka-oholodzene',
+            'https://varus.ua/krylo-kurinoe-vesovoe',
+            'https://shop.silpo.ua/product/kuriache-krylo-461793',
+            'https://novus.online/product/krilo-kurace-oholodzene-vag',
+            'https://metro.zakaz.ua/uk/products/m-iaso-nasha-riaba--metro28634800000000/',
+            'https://shop.nashkraj.ua/kovel/product/1655-kuryatina-okholodzhena-krila',
+            'https://fozzyshop.ua/kurica/11189-kurinoe-krylo-2739887.html'
+        ])
+
+    def kuryache_file_parser(self):
+        ''' Парсер для куряче філе'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/file-kurcat-brojleriv-cebaturocka-oholodzene',
+            'https://eko.zakaz.ua/uk/products/file--ekomarket00000000530545/',
+            'https://varus.ua/file-kurica-vesovoe',
+            'https://shop.silpo.ua/product/kuriache-file-461800',
+            'https://novus.online/product/file-kurace-oholodzene-vag',
+            'https://metro.zakaz.ua/uk/products/m-iaso-nasha-riaba--metro28968100000000/',
+            'https://shop.nashkraj.ua/kovel/product/13917-kuryatina-okholodzhena-file',
+            'https://fozzyshop.ua/kurica/11196-kurinoe-file-2739899.html'
+        ])
+
+    def kuryacha_gomilka_parser(self):
+        ''' Парсер для куряча гомілка'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000530535/',
+            'https://varus.ua/golen-kurinaya-vesovaya',
+            'https://shop.silpo.ua/product/kuriacha-gomilka-461752',
+            'https://novus.online/product/gomilka-kuraca-oholodzena-vag',
+            'https://metro.zakaz.ua/uk/products/m-iaso-nasha-riaba--metro28960100000000/',
+            'https://shop.nashkraj.ua/kovel/product/43276-kuryatina-okholodzhena-gomilka',
+            'https://fozzyshop.ua/kurica/11171-kurinaya-golen-2739780.html'
+        ])
+
 
 
 
