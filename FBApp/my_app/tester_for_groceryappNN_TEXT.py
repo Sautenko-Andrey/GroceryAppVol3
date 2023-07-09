@@ -983,3 +983,13 @@ class TesterForGroceryAppText:
             return KURYACHE_FILE
         elif np.argmax(result) == 459:
             return KURYACHA_GOMILKA
+        elif np.argmax(result) == 460:
+            return COCA_COLA_ORIGINAL_033_JB
+        elif np.argmax(result) == 461:
+            return COCA_COLA_ZERO_033_JB
+        elif np.argmax(result) == 462:
+            return FANTA_ORANGE_033_JB
+        elif np.argmax(result) == 463:
+            return FANTA_PINEAPPLE_033_JB
+        elif np.argmax(result) == 464:
+            return SPRITE_033_JB

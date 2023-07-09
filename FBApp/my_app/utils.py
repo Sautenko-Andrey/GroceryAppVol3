@@ -1234,6 +1234,16 @@ class ContextSupervisor:
             result = self.getting_prices('kuryache_file', get_kuryache_file)
         elif nn_respond == KURYACHA_GOMILKA:
             result = self.getting_prices('kuryacha_gomilka', get_kuryacha_gomilka)
+        elif nn_respond == COCA_COLA_ORIGINAL_033_JB:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_origin_033_jb)
+        elif nn_respond == COCA_COLA_ZERO_033_JB:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_033_jb)
+        elif nn_respond == FANTA_ORANGE_033_JB:
+            result = self.getting_prices(self.NO_PRICES, get_fanta_orange_033_jb)
+        elif nn_respond == FANTA_PINEAPPLE_033_JB:
+            result = self.getting_prices(self.NO_PRICES, get_fanta_pineapple_033_jb)
+        elif nn_respond == SPRITE_033_JB:
+            result = self.getting_prices(self.NO_PRICES, get_sprite_033_jb)
 
 
 

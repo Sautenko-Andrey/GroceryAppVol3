@@ -1401,6 +1401,21 @@ get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 460)
 '''Тэг,возвращающий информацию о "Куряча гомілка, кг"'''
 get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 461)
 
+'''Тэг,возвращающий информацию о "Напій Coca-Cola банка, 0,33л"'''
+get_coca_cola_origin_033_jb = tag.create_tag(ItemsPicsFromNet, 462)
+
+'''Тэг,возвращающий информацию о "Напій Coca-Cola Zero м/б, 0,33л"'''
+get_coca_cola_zero_033_jb = tag.create_tag(ItemsPicsFromNet, 463)
+
+'''Тэг,возвращающий информацию о "Напій Fanta Orange м/б, 0,33л"'''
+get_fanta_orange_033_jb = tag.create_tag(ItemsPicsFromNet, 464)
+
+'''Тэг,возвращающий информацию о "Напій Fanta Pineapple м/б, 0,33л"'''
+get_fanta_pineapple_033_jb = tag.create_tag(ItemsPicsFromNet, 465)
+
+'''Тэг,возвращающий информацию о "Напій Sprite м/б, 0,33л"'''
+get_sprite_033_jb = tag.create_tag(ItemsPicsFromNet, 466)
+
 
 
 

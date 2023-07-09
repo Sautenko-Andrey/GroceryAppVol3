@@ -458,6 +458,11 @@ KURYACHE_STEGNO = 'Куряче стегно, кг'
 KURYACHE_KRILO = 'Куряче крило, кг'
 KURYACHE_FILE = 'Куряче філе, кг'
 KURYACHA_GOMILKA = 'Куряча гомілка, кг'
+COCA_COLA_ORIGINAL_033_JB = 'Напій Coca-Cola банка, 0,33л'
+COCA_COLA_ZERO_033_JB = 'Напій Coca-Cola Zero м/б, 0,33л'
+FANTA_ORANGE_033_JB = 'Напій Fanta Orange м/б, 0,33л'
+FANTA_PINEAPPLE_033_JB = 'Напій Fanta Pineapple з/б, 0,355л'
+SPRITE_033_JB = 'Напій Sprite м/б, 0,33л'
 
 
 
