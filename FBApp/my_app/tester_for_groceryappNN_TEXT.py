@@ -993,3 +993,15 @@ class TesterForGroceryAppText:
             return FANTA_PINEAPPLE_033_JB
         elif np.argmax(result) == 464:
             return SPRITE_033_JB
+        elif np.argmax(result) == 465:
+            return COCA_COLA_ORIGINAL_025_GLASS
+        elif np.argmax(result) == 467:
+            return COCA_COLA_ZERO_025_GLASS
+        elif np.argmax(result) == 468:
+            return COCA_COLA_ORIGINAL_05_PL
+        elif np.argmax(result) == 469:
+            return COCA_COLA_ZERO_05_PL
+        elif np.argmax(result) == 470:
+            return FANTA_ORANGE_05_PL
+        elif np.argmax(result) == 471:
+            return SPRITE_05_PL

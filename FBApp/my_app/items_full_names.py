@@ -463,6 +463,12 @@ COCA_COLA_ZERO_033_JB = 'Напій Coca-Cola Zero м/б, 0,33л'
 FANTA_ORANGE_033_JB = 'Напій Fanta Orange м/б, 0,33л'
 FANTA_PINEAPPLE_033_JB = 'Напій Fanta Pineapple з/б, 0,355л'
 SPRITE_033_JB = 'Напій Sprite м/б, 0,33л'
+COCA_COLA_ORIGINAL_025_GLASS = 'Напиток Coca-Cola ст.бут., 0,25л'
+COCA_COLA_ZERO_025_GLASS = 'Напиток Coca-Cola Zero стекло, 0,25л'
+COCA_COLA_ORIGINAL_05_PL = 'Напиток Coca-Cola 0,5л'
+COCA_COLA_ZERO_05_PL = 'Напиток Coca-Cola Zero, 0,5л'
+FANTA_ORANGE_05_PL = 'Напиток Fanta Orange 0,5л'
+SPRITE_05_PL = 'Напиток Sprite 0,5л'
 
 
 

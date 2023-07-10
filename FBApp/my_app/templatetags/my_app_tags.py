@@ -1342,79 +1342,97 @@ get_kozacka_rada_osobliva_1l = tag.create_tag(ItemsPicsFromNet, 441)
 get_kozacka_rada_classic_1l = tag.create_tag(ItemsPicsFromNet, 442)
 
 '''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 1л"'''
-get_hlib_dar_classic_1l = tag.create_tag(ItemsPicsFromNet, 442)
+get_hlib_dar_classic_1l = tag.create_tag(ItemsPicsFromNet, 443)
 
 '''Тэг,возвращающий информацию о "Свинне ребро, кг"'''
-get_svin_rebro = tag.create_tag(ItemsPicsFromNet, 443)
+get_svin_rebro = tag.create_tag(ItemsPicsFromNet, 444)
 
 '''Тэг,возвращающий информацию о "Свиняче сало фермерське, кг"'''
-get_salo = tag.create_tag(ItemsPicsFromNet, 444)
+get_salo = tag.create_tag(ItemsPicsFromNet, 445)
 
 '''Тэг,возвращающий информацию о "Свинна гомілка, кг"'''
-get_svin_gomilka = tag.create_tag(ItemsPicsFromNet, 445)
+get_svin_gomilka = tag.create_tag(ItemsPicsFromNet, 446)
 
 '''Тэг,возвращающий информацию о "Печінка свинна охолоджена, кг"'''
-get_pechinka_svin = tag.create_tag(ItemsPicsFromNet, 446)
+get_pechinka_svin = tag.create_tag(ItemsPicsFromNet, 447)
 
 '''Тэг,возвращающий информацию о "Свинячий гуляш, кг"'''
-get_svin_gulyash = tag.create_tag(ItemsPicsFromNet, 447)
+get_svin_gulyash = tag.create_tag(ItemsPicsFromNet, 448)
 
 '''Тэг,возвращающий информацию о "Свинна піджарка, кг"'''
-get_svin_pidjarka = tag.create_tag(ItemsPicsFromNet, 448)
+get_svin_pidjarka = tag.create_tag(ItemsPicsFromNet, 449)
 
 '''Тэг,возвращающий информацию о "Горілка "Свинна корейка, кг"'''
-get_svin_koreyka = tag.create_tag(ItemsPicsFromNet, 449)
+get_svin_koreyka = tag.create_tag(ItemsPicsFromNet, 450)
 
 '''Тэг,возвращающий информацию о "Свинна вирізка, кг"'''
-get_svin_virezka = tag.create_tag(ItemsPicsFromNet, 450)
+get_svin_virezka = tag.create_tag(ItemsPicsFromNet, 451)
 
 '''Тэг,возвращающий информацию о "Свинна лопатка без кістки, кг"'''
-get_lopatka_bez_kistki = tag.create_tag(ItemsPicsFromNet, 451)
+get_lopatka_bez_kistki = tag.create_tag(ItemsPicsFromNet, 452)
 
 '''Тэг,возвращающий информацию о "Свинний окіст без кістки, кг"'''
-get_svin_okist_bez_kistki = tag.create_tag(ItemsPicsFromNet, 452)
+get_svin_okist_bez_kistki = tag.create_tag(ItemsPicsFromNet, 453)
 
 '''Тэг,возвращающий информацию о "Фарш свинний, кг"'''
-get_svin_farsh = tag.create_tag(ItemsPicsFromNet, 453)
+get_svin_farsh = tag.create_tag(ItemsPicsFromNet, 454)
 
 '''Тэг,возвращающий информацию о "Свинний биток без кістки, кг"'''
-get_svin_bitok_bez_kistki = tag.create_tag(ItemsPicsFromNet, 454)
+get_svin_bitok_bez_kistki = tag.create_tag(ItemsPicsFromNet, 455)
 
 '''Тэг,возвращающий информацию о "Свинне рагу, кг"'''
-get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 455)
+get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 456)
 
 '''Тэг,возвращающий информацию о "Свинний ошийок без кістки, кг"'''
-get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 456)
+get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 457)
 
 '''Тэг,возвращающий информацию о "Куряча четвертина, кг"'''
-get_kuryacha_chetvert = tag.create_tag(ItemsPicsFromNet, 457)
+get_kuryacha_chetvert = tag.create_tag(ItemsPicsFromNet, 458)
 
 '''Тэг,возвращающий информацию о "Куряче стегно, кг"'''
-get_kuryache_stegno = tag.create_tag(ItemsPicsFromNet, 458)
+get_kuryache_stegno = tag.create_tag(ItemsPicsFromNet, 459)
 
 '''Тэг,возвращающий информацию о "Куряче крило, кг"'''
-get_kuryache_krilo = tag.create_tag(ItemsPicsFromNet, 459)
+get_kuryache_krilo = tag.create_tag(ItemsPicsFromNet, 460)
 
 '''Тэг,возвращающий информацию о "Куряче філе, кг"'''
-get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 460)
+get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 461)
 
 '''Тэг,возвращающий информацию о "Куряча гомілка, кг"'''
-get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 461)
+get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 462)
 
 '''Тэг,возвращающий информацию о "Напій Coca-Cola банка, 0,33л"'''
-get_coca_cola_origin_033_jb = tag.create_tag(ItemsPicsFromNet, 462)
+get_coca_cola_origin_033_jb = tag.create_tag(ItemsPicsFromNet, 463)
 
 '''Тэг,возвращающий информацию о "Напій Coca-Cola Zero м/б, 0,33л"'''
-get_coca_cola_zero_033_jb = tag.create_tag(ItemsPicsFromNet, 463)
+get_coca_cola_zero_033_jb = tag.create_tag(ItemsPicsFromNet, 464)
 
 '''Тэг,возвращающий информацию о "Напій Fanta Orange м/б, 0,33л"'''
-get_fanta_orange_033_jb = tag.create_tag(ItemsPicsFromNet, 464)
+get_fanta_orange_033_jb = tag.create_tag(ItemsPicsFromNet, 465)
 
 '''Тэг,возвращающий информацию о "Напій Fanta Pineapple м/б, 0,33л"'''
-get_fanta_pineapple_033_jb = tag.create_tag(ItemsPicsFromNet, 465)
+get_fanta_pineapple_033_jb = tag.create_tag(ItemsPicsFromNet, 466)
 
 '''Тэг,возвращающий информацию о "Напій Sprite м/б, 0,33л"'''
-get_sprite_033_jb = tag.create_tag(ItemsPicsFromNet, 466)
+get_sprite_033_jb = tag.create_tag(ItemsPicsFromNet, 467)
+
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola ст.бут., 0,25л"'''
+get_coca_cola_025_glass = tag.create_tag(ItemsPicsFromNet, 468)
+
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero стекло, 0,25л"'''
+get_coca_cola_zero_025_glass = tag.create_tag(ItemsPicsFromNet, 469)
+
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola 0,5л"'''
+get_coca_cola_original_05_pl = tag.create_tag(ItemsPicsFromNet, 470)
+
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero, 0,5л"'''
+get_coca_cola_zero_05_pl = tag.create_tag(ItemsPicsFromNet, 471)
+
+'''Тэг,возвращающий информацию о "Напиток Fanta Orange 0,5л"'''
+get_fanta_orange_05_pl = tag.create_tag(ItemsPicsFromNet, 472)
+
+'''Тэг,возвращающий информацию о "Напиток Sprite 0,5л"'''
+get_sprite_05_pl = tag.create_tag(ItemsPicsFromNet, 473)
 
 
 

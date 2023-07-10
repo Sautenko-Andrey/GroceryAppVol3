@@ -1244,6 +1244,18 @@ class ContextSupervisor:
             result = self.getting_prices(self.NO_PRICES, get_fanta_pineapple_033_jb)
         elif nn_respond == SPRITE_033_JB:
             result = self.getting_prices(self.NO_PRICES, get_sprite_033_jb)
+        elif nn_respond == COCA_COLA_ORIGINAL_025_GLASS:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_025_glass)
+        elif nn_respond == COCA_COLA_ZERO_025_GLASS:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_025_glass)
+        elif nn_respond == COCA_COLA_ORIGINAL_05_PL:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_original_05_pl)
+        elif nn_respond == COCA_COLA_ZERO_05_PL:
+            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_05_pl)
+        elif nn_respond == FANTA_ORANGE_05_PL:
+            result = self.getting_prices(self.NO_PRICES, get_fanta_orange_05_pl)
+        elif nn_respond == SPRITE_05_PL:
+            result = self.getting_prices(self.NO_PRICES, get_sprite_05_pl)
 
 
 
