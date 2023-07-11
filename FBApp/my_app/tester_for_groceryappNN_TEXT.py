@@ -1005,3 +1005,15 @@ class TesterForGroceryAppText:
             return FANTA_ORANGE_05_PL
         elif np.argmax(result) == 471:
             return SPRITE_05_PL
+        elif np.argmax(result) == 472:
+            return COCA_COLA_ORIGINAL_15_PL
+        elif np.argmax(result) == 473:
+            return COCA_COLA_ZERO_15_PL
+        elif np.argmax(result) == 474:
+            return SPRITE_15_PL
+        elif np.argmax(result) == 475:
+            return FANTA_ORANGE_15_PL
+        elif np.argmax(result) == 476:
+            return FANTA_SHOKATA_15_PL
+        elif np.argmax(result) == 477:
+            return FANTA_MANDARIN_15_PL

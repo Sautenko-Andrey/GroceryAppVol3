@@ -1434,6 +1434,24 @@ get_fanta_orange_05_pl = tag.create_tag(ItemsPicsFromNet, 472)
 '''Тэг,возвращающий информацию о "Напиток Sprite 0,5л"'''
 get_sprite_05_pl = tag.create_tag(ItemsPicsFromNet, 473)
 
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola 1,5л"'''
+get_coca_cola_original_15_pl = tag.create_tag(ItemsPicsFromNet, 474)
+
+'''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero"'''
+get_coca_cola_zero_15_pl = tag.create_tag(ItemsPicsFromNet, 475)
+
+'''Тэг,возвращающий информацию о "Напиток Sprite 1,5л"'''
+get_sprite_15_pl = tag.create_tag(ItemsPicsFromNet, 476)
+
+'''Тэг,возвращающий информацию о "Напиток Fanta Orange 1,5л"'''
+get_fanta_orange_15_pl = tag.create_tag(ItemsPicsFromNet, 477)
+
+'''Тэг,возвращающий информацию о "Напиток сокосодержащий Fanta Shokata сильногазированный, 1,5л"'''
+get_fanta_shokata_15_pl = tag.create_tag(ItemsPicsFromNet, 478)
+
+'''Тэг,возвращающий информацию о "Напиток Fanta Мандарин, 1,5л"'''
+get_fanta_mandarin_15_pl = tag.create_tag(ItemsPicsFromNet, 479)
+
 
 
 

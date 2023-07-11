@@ -4535,6 +4535,189 @@ class ProductParserVol2:
             'https://fozzyshop.ua/kurica/11171-kurinaya-golen-2739780.html'
         ])
 
+    def coca_cola_original_033_jb_parser(self):
+        ''' Парсер для Coca Cola 0.33 в банке'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/search/?q=coca%20cola',
+            'https://varus.ua/napiy-coca-cola-silnogazovaniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-2500',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-s-gaz-coca-cola-zh-b-0-33l-688416/',
+            'https://novus.online/ru/product/napij-gazovanij-coca-cola-zb-033l',
+            'https://metro.zakaz.ua/ru/products/napii-koka-kola-330ml--05449000000996/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/28662-napitok-coca-cola-banka-5449000000996.html'
+        ])
+
+    def coca_cola_zero_033_jb_parser(self):
+        ''' Парсер для Coca Cola Zero 0.33 в банке'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-koka-kola-330ml--05449000131805/',
+            'https://varus.ua/napiy-coca-cola-zero-silnogazovaniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-zero-692606',
+            'https://novus.online/ru/product/napij-silnogazovanij-bezalkogolnij-coca-cola-zero-v-zerstanij-banci-033l',
+            'https://metro.zakaz.ua/ru/products/napii-koka-kola-330ml--05449000131805/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/36887-napitok-coca-cola-zero-zh-b-5449000131805.html'
+        ])
+
+    def fanta_orange_033_jb_parser(self):
+        ''' Парсер для Fanta Orange 0.33 в банке'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-fanta-330ml--05449000011527/',
+            'https://varus.ua/napiy-fanta-apelsin-silnogazovaniy-sokovmisniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-fanta-orange-z-b-50118',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-s-gaz-fanta-zh-b-0-33l-688423/',
+            'https://novus.online/ru/product/napij-gazapelsfanta-zb-033l',
+            'https://metro.zakaz.ua/ru/products/napii-fanta-330ml--05449000011527/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/28664-napitok-fanta-orange-zh-b-5449000011527.html'
+        ])
+
+    def fanta_pineapple_033_jb_parser(self):
+        ''' Парсер для Fanta Pineapple 0.33 в банке'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/napii-fanta-pineapple-z-b-908256',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/102026-napitok-fanta-pineapple-zh-b-0250014891198.html'
+        ])
+
+    def sprite_033_jb_parser(self):
+        ''' Парсер для Sprite 0.33 в банке'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-sprait-330ml--05449000014535/',
+            'https://varus.ua/napiy-sprite-silnogazovaniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-sprite-z-b-48593'
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-na-aromatizatorah-sprite-p-but-330ml-688899/',
+            'https://novus.online/ru/product/napij-gazovanij-sprite-zb-033l',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/28674-napitok-sprite-zh-b-5449000014535.html'
+        ])
+
+    def coca_cola_original_025_gl_parser(self):
+        ''' Парсер для Coca Cola Original 0.25 л у склі'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12888-napitok-coca-cola-stbut-54490086.html'
+        ])
+
+    def coca_cola_zero_025_gl_parser(self):
+        ''' Парсер для Coca Cola Zero 0.25 л у склі'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/36888-napitok-coca-cola-zero-steklo-90338120.html'
+        ])
+
+    def coca_cola_original_05_pl_parser(self):
+        ''' Парсер для Coca Cola Original 0.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05-l-coca-cola-bezalkogolnij-silnogazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-koka-kola-500ml-ukrayina--00000054491472/',
+            'https://varus.ua/napiy-coca-cola-silnogazovaniy-0-5-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-665',
+            'https://auchan.ua/ua/napitok-coca-cola-500-ml-274333/',
+            'https://novus.online/ru/product/napij-gazovanij-coca-cola-05l',
+            'https://metro.zakaz.ua/ru/products/napii-koka-kola-500ml--metro00000054491472/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12881-napitok-coca-cola-05l-54491472.html'
+        ])
+
+    def coca_cola_zero_05_pl_parser(self):
+        ''' Парсер для Coca Cola Zero 0.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05-l-coca-cola-zero-bezalkogolnij-silnogazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-koka-kola-500ml--05449000131836/',
+            'https://varus.ua/napiy-coca-cola-zero-silnogazovaniy-0-5-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-zero-692605',
+            'https://novus.online/ru/product/napij-silnogazovanij-bezalkogolnij-coca-cola-zero-v-plastikovij-plasci-05l',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/36884-napitok-coca-cola-zero-5449000131836.html'
+        ])
+
+    def fanta_orange_05_pl_parser(self):
+        ''' Парсер для Fanta Orange 0.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05-l-fanta-apelsin-bezalkogolnij-silnogazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-fanta-500ml--00000040822938/',
+            'https://varus.ua/napiy-fanta-apelsin-silnogazovaniy-sokovmisniy-0-5-l',
+            'https://shop.silpo.ua/product/napii-fanta-orange-668',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-s-apel-sinovym-sokom-fanta-p-but-0-5l-688675/',
+            'https://novus.online/ru/product/napij-gazovanij-fanta-apelsin-05l',
+            'https://metro.zakaz.ua/ru/products/napii-fanta-500ml--05449000020123/',
+            'https://shop.nashkraj.ua/kovel/product/7688-napiy-fanta-0-5l-apelsin',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12917-napitok-fanta-orange-05l-40822938.html'
+        ])
+
+    def sprite_05_pl_parser(self):
+        ''' Парсер для Sprite 0.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05-l-sprite-bezalkogolnij-silnogazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-sprait-500ml--00000054491069/',
+            'https://varus.ua/napiy-sprite-silnogazovaniy-0-5-l',
+            'https://shop.silpo.ua/product/napii-sprite-666',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-na-aromatizatorah-sprite-p-but-500ml-688906/',
+            'https://novus.online/ru/product/napij-gazovanij-sprite-05l',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12930-napitok-sprite-05l-54491069.html'
+        ])
+
+    def coca_cola_original_15_pl_parser(self):
+        ''' Парсер для Coca Cola Original 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-koka-kola-1500ml--05449000000439/',
+            'https://varus.ua/napiy-coca-cola-silnogazovaniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-486807',
+            'https://auchan.ua/ua/napitok-coca-cola-1-5-l-246666/',
+            'https://novus.online/ru/product/napij-gazovanij-coca-cola-15l',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12883-napitok-coca-cola-15l-5449000000439.html'
+        ])
+
+    def coca_cola_zero_15_pl_parser(self):
+        ''' Парсер для Coca Cola Zero 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-koka-kola-1500ml--05449000133335/',
+            'https://varus.ua/napiy-coca-cola-zero-silnogazovaniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-coca-cola-zero-692608',
+            'https://auchan.ua/ua/napitok-coca-cola-zero-sugar-1-5-l-246667/',
+            'https://metro.zakaz.ua/ru/products/napii-koka-kola-1500ml-ukrayina--05449000143211/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/36886-napitok-coca-cola-zero-5449000133335.html'
+        ])
+
+    def sprite_15_pl_parser(self):
+        ''' Парсер для Sprite 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-sprait-1500ml--05449000012203/',
+            'https://varus.ua/napiy-sprite-silnogazovaniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-sprite-504407',
+            'https://auchan.ua/ua/napitok-sprite-1-5-l-237668/',
+            'https://novus.online/ru/product/napij-gazovanij-sprite-15l',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12969-napitok-sprite-15l-5449000012203.html'
+        ])
+
+    def fanta_orange_15_pl_parser(self):
+        ''' Парсер для Fanta Orange 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-fanta-1500ml--05449000052926/',
+            'https://varus.ua/napiy-fanta-apelsin-silnogazovaniy-sokovmisniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-fanta-orange-486805',
+            'https://novus.online/ru/product/napij-gazovanij-apelsin-fanta-15l',
+            'https://metro.zakaz.ua/ru/products/napii-fanta-1500ml--05449000052926/',
+            'https://shop.nashkraj.ua/kovel/product/160724-napiy-fanta-1-5l-apelsin',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12919-napitok-fanta-orange-15l-5449000052926.html'
+        ])
+
+    def fanta_shokata_15_pl_parser(self):
+        ''' Парсер для Fanta Shokata 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-fanta-1500ml--05449000099655/',
+            'https://varus.ua/napiy-fanta-shokata-silnogazovaniy-sokovmisniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-fanta-shokata-sylnogazovanyi-812685',
+            'https://auchan.ua/ua/napitok-b-a-sil-nogazirovannyj-sokosoderzhaschij-shokata-fanta-p-but-1-5l-688262/',
+            'https://novus.online/ru/product/napij-silnogazovanij-fanta-shokata-15l-ppl',
+            'https://metro.zakaz.ua/ru/products/ukrayina--05449000163769/',
+            'https://shop.nashkraj.ua/kovel/product/353316-napiy-fanta-1-5l-shokata',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/74057-napitok-sokosoderzhashhij-fanta-shokata-silnogazirovannyj-5449000099655.html'
+        ])
+
+    def fanta_mandarin_15_pl_parser(self):
+        ''' Парсер для Fanta Mandarin 1.5 л у пластиковій пляшці'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-fanta-mandarin-silnogazovaniy-1-5-l',
+            'https://shop.silpo.ua/product/napii-fanta-mandaryn-569227',
+            'https://novus.online/ru/product/napij-gazovanij-fanta-mandarin-plastikova-plaska-15l',
+            'https://metro.zakaz.ua/ru/products/napii-fanta-1500ml--05449000183910/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/19266-napitok-fanta-mandarin-5449000054128.html'
+        ])
+
 
 
 

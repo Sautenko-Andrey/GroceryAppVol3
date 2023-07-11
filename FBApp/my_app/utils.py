@@ -1235,27 +1235,39 @@ class ContextSupervisor:
         elif nn_respond == KURYACHA_GOMILKA:
             result = self.getting_prices('kuryacha_gomilka', get_kuryacha_gomilka)
         elif nn_respond == COCA_COLA_ORIGINAL_033_JB:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_origin_033_jb)
+            result = self.getting_prices('coca_cola_original_033_jb', get_coca_cola_origin_033_jb)
         elif nn_respond == COCA_COLA_ZERO_033_JB:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_033_jb)
+            result = self.getting_prices('coca_cola_zero_033_jb', get_coca_cola_zero_033_jb)
         elif nn_respond == FANTA_ORANGE_033_JB:
-            result = self.getting_prices(self.NO_PRICES, get_fanta_orange_033_jb)
+            result = self.getting_prices('fanta_orange_033_jb', get_fanta_orange_033_jb)
         elif nn_respond == FANTA_PINEAPPLE_033_JB:
-            result = self.getting_prices(self.NO_PRICES, get_fanta_pineapple_033_jb)
+            result = self.getting_prices('fanta_pineapple_033_jb', get_fanta_pineapple_033_jb)
         elif nn_respond == SPRITE_033_JB:
-            result = self.getting_prices(self.NO_PRICES, get_sprite_033_jb)
+            result = self.getting_prices('sprite_033_jb', get_sprite_033_jb)
         elif nn_respond == COCA_COLA_ORIGINAL_025_GLASS:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_025_glass)
+            result = self.getting_prices('coca_cola_original_025_gl', get_coca_cola_025_glass)
         elif nn_respond == COCA_COLA_ZERO_025_GLASS:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_025_glass)
+            result = self.getting_prices('coca_cola_zero_025_gl', get_coca_cola_zero_025_glass)
         elif nn_respond == COCA_COLA_ORIGINAL_05_PL:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_original_05_pl)
+            result = self.getting_prices('coca_cola_original_05_pl', get_coca_cola_original_05_pl)
         elif nn_respond == COCA_COLA_ZERO_05_PL:
-            result = self.getting_prices(self.NO_PRICES, get_coca_cola_zero_05_pl)
+            result = self.getting_prices('coca_cola_zero_05_pl', get_coca_cola_zero_05_pl)
         elif nn_respond == FANTA_ORANGE_05_PL:
-            result = self.getting_prices(self.NO_PRICES, get_fanta_orange_05_pl)
+            result = self.getting_prices('fanta_orange_05_pl', get_fanta_orange_05_pl)
         elif nn_respond == SPRITE_05_PL:
-            result = self.getting_prices(self.NO_PRICES, get_sprite_05_pl)
+            result = self.getting_prices('sprite_05_pl', get_sprite_05_pl)
+        elif nn_respond == COCA_COLA_ORIGINAL_15_PL:
+            result = self.getting_prices('coca_cola_original_15_pl', get_coca_cola_original_15_pl)
+        elif nn_respond == COCA_COLA_ZERO_15_PL:
+            result = self.getting_prices('coca_cola_zero_15_pl', get_coca_cola_zero_15_pl)
+        elif nn_respond == SPRITE_15_PL:
+            result = self.getting_prices('sprite_15_pl', get_sprite_15_pl)
+        elif nn_respond == FANTA_ORANGE_15_PL:
+            result = self.getting_prices('fanta_orange_15_pl', get_fanta_orange_15_pl)
+        elif nn_respond == FANTA_SHOKATA_15_PL:
+            result = self.getting_prices('fanta_shokata_15_pl', get_fanta_shokata_15_pl)
+        elif nn_respond == FANTA_MANDARIN_15_PL:
+            result = self.getting_prices('fanta_mandarin_15_pl', get_fanta_mandarin_15_pl)
 
 
 

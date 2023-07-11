@@ -3296,6 +3296,155 @@ all_products_names = [
         "fozzy": parser.kuryacha_gomilka_parser()[8]
     }},
 
+    {'coca_cola_original_033_jb': {
+        "eko": parser.coca_cola_original_033_jb_parser()[1],
+        "varus": parser.coca_cola_original_033_jb_parser()[2],
+        "silpo": parser.coca_cola_original_033_jb_parser()[3],
+        "ashan": parser.coca_cola_original_033_jb_parser()[4],
+        "novus": parser.coca_cola_original_033_jb_parser()[5],
+        "metro": parser.coca_cola_original_033_jb_parser()[6],
+        "fozzy": parser.coca_cola_original_033_jb_parser()[8]
+    }},
+
+    {'coca_cola_zero_033_jb': {
+        "eko": parser.coca_cola_zero_033_jb_parser()[1],
+        "varus": parser.coca_cola_zero_033_jb_parser()[2],
+        "silpo": parser.coca_cola_zero_033_jb_parser()[3],
+        "novus": parser.coca_cola_zero_033_jb_parser()[5],
+        "metro": parser.coca_cola_zero_033_jb_parser()[6],
+        "fozzy": parser.coca_cola_zero_033_jb_parser()[8]
+    }},
+
+    {'fanta_orange_033_jb': {
+        "eko": parser.fanta_orange_033_jb_parser()[1],
+        "varus": parser.fanta_orange_033_jb_parser()[2],
+        "silpo": parser.fanta_orange_033_jb_parser()[3],
+        "ashan": parser.fanta_orange_033_jb_parser()[4],
+        "novus": parser.fanta_orange_033_jb_parser()[5],
+        "metro": parser.fanta_orange_033_jb_parser()[6],
+        "fozzy": parser.fanta_orange_033_jb_parser()[8]
+    }},
+
+    {'fanta_pineapple_033_jb': {
+        "silpo": parser.fanta_pineapple_033_jb_parser()[3],
+        "fozzy": parser.fanta_pineapple_033_jb_parser()[8]
+    }},
+
+    {'sprite_033_jb': {
+        "eko": parser.sprite_033_jb_parser()[1],
+        "varus": parser.sprite_033_jb_parser()[2],
+        "silpo": parser.sprite_033_jb_parser()[3],
+        "ashan": parser.sprite_033_jb_parser()[4],
+        "novus": parser.sprite_033_jb_parser()[5],
+        "fozzy": parser.sprite_033_jb_parser()[8]
+    }},
+
+    {'coca_cola_original_025_gl': {
+        "fozzy": parser.coca_cola_original_025_gl_parser()[8]
+    }},
+
+    {'coca_cola_zero_025_gl': {
+        "fozzy": parser.coca_cola_zero_025_gl_parser()[8]
+    }},
+
+    {'coca_cola_original_05_pl': {
+        "atb": parser.coca_cola_original_05_pl_parser()[0],
+        "eko": parser.coca_cola_original_05_pl_parser()[1],
+        "varus": parser.coca_cola_original_05_pl_parser()[2],
+        "silpo": parser.coca_cola_original_05_pl_parser()[3],
+        "ashan": parser.coca_cola_original_05_pl_parser()[4],
+        "novus": parser.coca_cola_original_05_pl_parser()[5],
+        "metro": parser.coca_cola_original_05_pl_parser()[6],
+        "fozzy": parser.coca_cola_original_05_pl_parser()[8]
+    }},
+
+    {'coca_cola_zero_05_pl': {
+        "atb": parser.coca_cola_zero_05_pl_parser()[0],
+        "eko": parser.coca_cola_zero_05_pl_parser()[1],
+        "varus": parser.coca_cola_zero_05_pl_parser()[2],
+        "silpo": parser.coca_cola_zero_05_pl_parser()[3],
+        "novus": parser.coca_cola_zero_05_pl_parser()[5],
+        "fozzy": parser.coca_cola_zero_05_pl_parser()[8]
+    }},
+
+    {'fanta_orange_05_pl': {
+        "atb": parser.fanta_orange_05_pl_parser()[0],
+        "eko": parser.fanta_orange_05_pl_parser()[1],
+        "varus": parser.fanta_orange_05_pl_parser()[2],
+        "silpo": parser.fanta_orange_05_pl_parser()[3],
+        "ashan": parser.fanta_orange_05_pl_parser()[4],
+        "novus": parser.fanta_orange_05_pl_parser()[5],
+        "metro": parser.fanta_orange_05_pl_parser()[6],
+        "nash_kray": parser.fanta_orange_05_pl_parser()[7],
+        "fozzy": parser.fanta_orange_05_pl_parser()[8]
+    }},
+
+    {'sprite_05_pl': {
+        "atb": parser.sprite_05_pl_parser()[0],
+        "eko": parser.sprite_05_pl_parser()[1],
+        "varus": parser.sprite_05_pl_parser()[2],
+        "silpo": parser.sprite_05_pl_parser()[3],
+        "ashan": parser.sprite_05_pl_parser()[4],
+        "novus": parser.sprite_05_pl_parser()[5],
+        "fozzy": parser.sprite_05_pl_parser()[8]
+    }},
+
+    {'coca_cola_original_15_pl': {
+        "eko": parser.coca_cola_original_15_pl_parser()[1],
+        "varus": parser.coca_cola_original_15_pl_parser()[2],
+        "silpo": parser.coca_cola_original_15_pl_parser()[3],
+        "ashan": parser.coca_cola_original_15_pl_parser()[4],
+        "novus": parser.coca_cola_original_15_pl_parser()[5],
+        "fozzy": parser.coca_cola_original_15_pl_parser()[8]
+    }},
+
+    {'coca_cola_zero_15_pl': {
+        "eko": parser.coca_cola_zero_15_pl_parser()[1],
+        "varus": parser.coca_cola_zero_15_pl_parser()[2],
+        "silpo": parser.coca_cola_zero_15_pl_parser()[3],
+        "ashan": parser.coca_cola_zero_15_pl_parser()[4],
+        "metro": parser.coca_cola_zero_15_pl_parser()[6],
+        "fozzy": parser.coca_cola_zero_15_pl_parser()[8]
+    }},
+
+    {'sprite_15_pl': {
+        "eko": parser.sprite_15_pl_parser()[1],
+        "varus": parser.sprite_15_pl_parser()[2],
+        "silpo": parser.sprite_15_pl_parser()[3],
+        "ashan": parser.sprite_15_pl_parser()[4],
+        "novus": parser.sprite_15_pl_parser()[5],
+        "fozzy": parser.sprite_15_pl_parser()[8]
+    }},
+
+    {'fanta_orange_15_pl': {
+        "eko": parser.fanta_orange_15_pl_parser()[1],
+        "varus": parser.fanta_orange_15_pl_parser()[2],
+        "silpo": parser.fanta_orange_15_pl_parser()[3],
+        "novus": parser.fanta_orange_15_pl_parser()[5],
+        "metro": parser.fanta_orange_15_pl_parser()[6],
+        "nash_kray": parser.fanta_orange_15_pl_parser()[7],
+        "fozzy": parser.fanta_orange_15_pl_parser()[8]
+    }},
+
+    {'fanta_shokata_15_pl': {
+        "eko": parser.fanta_shokata_15_pl_parser()[1],
+        "varus": parser.fanta_shokata_15_pl_parser()[2],
+        "silpo": parser.fanta_shokata_15_pl_parser()[3],
+        "ashan": parser.fanta_shokata_15_pl_parser()[4],
+        "novus": parser.fanta_shokata_15_pl_parser()[5],
+        "metro": parser.fanta_shokata_15_pl_parser()[6],
+        "nash_kray": parser.fanta_shokata_15_pl_parser()[7],
+        "fozzy": parser.fanta_shokata_15_pl_parser()[8]
+    }},
+
+    {'fanta_mandarin_15_pl': {
+        "varus": parser.fanta_mandarin_15_pl_parser()[2],
+        "silpo": parser.fanta_mandarin_15_pl_parser()[3],
+        "novus": parser.fanta_mandarin_15_pl_parser()[5],
+        "metro": parser.fanta_mandarin_15_pl_parser()[6],
+        "fozzy": parser.fanta_mandarin_15_pl_parser()[8]
+    }},
+
 
 
 

@@ -469,7 +469,12 @@ COCA_COLA_ORIGINAL_05_PL = 'Напиток Coca-Cola 0,5л'
 COCA_COLA_ZERO_05_PL = 'Напиток Coca-Cola Zero, 0,5л'
 FANTA_ORANGE_05_PL = 'Напиток Fanta Orange 0,5л'
 SPRITE_05_PL = 'Напиток Sprite 0,5л'
-
+COCA_COLA_ORIGINAL_15_PL = 'Напиток Coca-Cola Original 1,5л'
+COCA_COLA_ZERO_15_PL = 'Напиток Coca-Cola Zero 1.5 л'
+SPRITE_15_PL = 'Напиток Sprite 1,5л'
+FANTA_ORANGE_15_PL = 'Напиток Fanta Orange 1,5л'
+FANTA_SHOKATA_15_PL = 'Напиток Fanta Shokata, 1,5л'
+FANTA_MANDARIN_15_PL = 'Напиток Fanta Мандарин, 1,5л'
 
 
 
