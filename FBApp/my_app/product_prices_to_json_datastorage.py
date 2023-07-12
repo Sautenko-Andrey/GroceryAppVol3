@@ -3498,6 +3498,41 @@ all_products_names = [
         "fozzy": parser.chips_luxe_sir_133gr_parser()[8]
     }},
 
+    {'chips_luxe_sir_71gr': {
+        "eko": parser.chips_luxe_sir_71gr_parser()[1],
+        "varus": parser.chips_luxe_sir_71gr_parser()[2],
+        "silpo": parser.chips_luxe_sir_71gr_parser()[3],
+        "novus": parser.chips_luxe_sir_71gr_parser()[5],
+        "metro": parser.chips_luxe_sir_71gr_parser()[6],
+        "fozzy": parser.chips_luxe_sir_71gr_parser()[8]
+    }},
+
+    {'chips_luxe_becon_71gr': {
+        "eko": parser.chips_luxe_becon_71gr_parser()[1],
+        "varus": parser.chips_luxe_becon_71gr_parser()[2],
+        "silpo": parser.chips_luxe_becon_71gr_parser()[3],
+        "metro": parser.chips_luxe_becon_71gr_parser()[6],
+        "nash_kray": parser.chips_luxe_becon_71gr_parser()[7],
+        "fozzy": parser.chips_luxe_becon_71gr_parser()[8]
+    }},
+
+    {'chips_luxe_paprika_71gr': {
+        "varus": parser.chips_luxe_paprika_71gr_parser()[2],
+        "silpo": parser.chips_luxe_paprika_71gr_parser()[3],
+        "novus": parser.chips_luxe_paprika_71gr_parser()[5],
+        "metro": parser.chips_luxe_paprika_71gr_parser()[6],
+        "nash_kray": parser.chips_luxe_paprika_71gr_parser()[7],
+        "fozzy": parser.chips_luxe_paprika_71gr_parser()[8]
+    }},
+
+    {'chips_luxe_crab_71gr': {
+        "fozzy": parser.chips_luxe_crab_71gr_parser()[8]
+    }},
+
+    {'chips_luxe_smetana_cibulya_71gr': {
+        "fozzy": parser.chips_luxe_smetana_cibulya_71gr_parser()[8]
+    }},
+
 
 
 

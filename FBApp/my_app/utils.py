@@ -1279,15 +1279,15 @@ class ContextSupervisor:
         elif nn_respond == CHIPS_LUXE_SIR_133GR:
             result = self.getting_prices('chips_luxe_sir_133gr', get_chips_luxe_sir_133gr)
         elif nn_respond == CHIPS_LUXE_SIR_71GR:
-            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_sir_71gr)
+            result = self.getting_prices('chips_luxe_sir_71gr', get_chips_luxe_sir_71gr)
         elif nn_respond == CHIPS_LUXE_BECON_71GR:
-            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_becon_71gr)
+            result = self.getting_prices('chips_luxe_becon_71gr', get_chips_luxe_becon_71gr)
         elif nn_respond == CHIPS_LUXE_PAPRIKA_71GR:
-            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_paprika_71gr)
+            result = self.getting_prices('chips_luxe_paprika_71gr', get_chips_luxe_paprika_71gr)
         elif nn_respond == CHIPS_LUXE_CRAB_71GR:
-            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_crab_71gr)
+            result = self.getting_prices('chips_luxe_crab_71gr', get_chips_luxe_crab_71gr)
         elif nn_respond == CHIPS_LUXE_SMETANA_CIBULYA_71GR:
-            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_smetana_cibulya_71gr)
+            result = self.getting_prices('chips_luxe_smetana_cibulya_71gr', get_chips_luxe_smetana_cibulya_71gr)
 
 
 

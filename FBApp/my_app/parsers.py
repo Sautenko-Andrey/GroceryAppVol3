@@ -4781,6 +4781,51 @@ class ProductParserVol2:
             'https://fozzyshop.ua/chipsy/6433-chipsy-lyuks-syr-7622210176172.html'
         ])
 
+    def chips_luxe_sir_71gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сиру 71 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-71g--07622210175724/',
+            'https://varus.ua/chipsi-lyuks-sir-71-g',
+            'https://shop.silpo.ua/product/chypsy-liuks-syr-555263',
+            'https://novus.online/product/cipsi-luks-z-sirom-71g',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-71g--07622210175724/',
+            'https://fozzyshop.ua/chipsy/6394-chipsy-lyuks-syr-7622210175724.html'
+        ])
+
+    def chips_luxe_becon_71gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком бекону 71 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-71g--07622210175731/',
+            'https://varus.ua/chipsi-zi-smakom-bekona-lyuks-71g',
+            'https://shop.silpo.ua/product/chypsy-liuks-bekon-555279',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-71g--07622210175731/',
+            'https://shop.nashkraj.ua/kovel/product/178939-chipsi-lyuks-71g-bekon',
+            'https://fozzyshop.ua/chipsy/6367-chipsy-lyuks-bekon-7622210175731.html'
+        ])
+
+    def chips_luxe_paprika_71gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком паприки 71 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/chipsi-lyuks-paprika-71-g',
+            'https://shop.silpo.ua/product/chipsy-liuks-papryka-555280',
+            'https://novus.online/product/cipsi-luks-z-paprikou-71g',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-71g--07622210175748/',
+            'https://shop.nashkraj.ua/kovel/product/178940-chipsi-lyuks-71g-paprika',
+            'https://fozzyshop.ua/chipsy/6370-chipsy-lyuks-paprika-7622210175748.html'
+        ])
+
+    def chips_luxe_crab_71gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком краба 71 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/chipsy/6386-chipsy-lyuks-krab-7622210177247.html'
+        ])
+
+    def chips_luxe_smetana_cibulya_71gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сметани та цибулі 71 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/chipsy/6392-chipsy-lyuks-smetana-luk-7622210176158.html'
+        ])
+
 
 
 
