@@ -3445,6 +3445,59 @@ all_products_names = [
         "fozzy": parser.fanta_mandarin_15_pl_parser()[8]
     }},
 
+    {'chips_luxe_becon_133gr': {
+        "eko": parser.chips_luxe_becon_133gr_parser()[1],
+        "silpo": parser.chips_luxe_becon_133gr_parser()[3],
+        "ashan": parser.chips_luxe_becon_133gr_parser()[4],
+        "novus": parser.chips_luxe_becon_133gr_parser()[5],
+        "metro": parser.chips_luxe_becon_133gr_parser()[6],
+        "nash_kray": parser.chips_luxe_becon_133gr_parser()[7],
+        "fozzy": parser.chips_luxe_becon_133gr_parser()[8]
+    }},
+
+    {'chips_luxe_paprika_133gr': {
+        "atb": parser.chips_luxe_paprika_133gr_parser()[0],
+        "eko": parser.chips_luxe_paprika_133gr_parser()[1],
+        "silpo": parser.chips_luxe_paprika_133gr_parser()[3],
+        "ashan": parser.chips_luxe_paprika_133gr_parser()[4],
+        "novus": parser.chips_luxe_paprika_133gr_parser()[5],
+        "metro": parser.chips_luxe_paprika_133gr_parser()[6],
+        "nash_kray": parser.chips_luxe_paprika_133gr_parser()[7],
+        "fozzy": parser.chips_luxe_paprika_133gr_parser()[8]
+    }},
+
+    {'chips_luxe_crab_133gr': {
+        "atb": parser.chips_luxe_crab_133gr_parser()[0],
+        "eko": parser.chips_luxe_crab_133gr_parser()[1],
+        "silpo": parser.chips_luxe_crab_133gr_parser()[3],
+        "ashan": parser.chips_luxe_crab_133gr_parser()[4],
+        "novus": parser.chips_luxe_crab_133gr_parser()[5],
+        "metro": parser.chips_luxe_crab_133gr_parser()[6],
+        "nash_kray": parser.chips_luxe_crab_133gr_parser()[7],
+        "fozzy": parser.chips_luxe_crab_133gr_parser()[8]
+    }},
+
+    {'chips_luxe_smetana_cibulya_133gr': {
+        "atb": parser.chips_luxe_smetana_cibulya_133gr_parser()[0],
+        "eko": parser.chips_luxe_smetana_cibulya_133gr_parser()[1],
+        "silpo": parser.chips_luxe_smetana_cibulya_133gr_parser()[3],
+        "novus": parser.chips_luxe_smetana_cibulya_133gr_parser()[5],
+        "metro": parser.chips_luxe_smetana_cibulya_133gr_parser()[6],
+        "nash_kray": parser.chips_luxe_smetana_cibulya_133gr_parser()[7],
+        "fozzy": parser.chips_luxe_smetana_cibulya_133gr_parser()[8]
+    }},
+
+    {'chips_luxe_sir_133gr': {
+        "atb": parser.chips_luxe_sir_133gr_parser()[0],
+        "eko": parser.chips_luxe_sir_133gr_parser()[1],
+        "silpo": parser.chips_luxe_sir_133gr_parser()[3],
+        "ashan": parser.chips_luxe_sir_133gr_parser()[4],
+        "novus": parser.chips_luxe_sir_133gr_parser()[5],
+        "metro": parser.chips_luxe_sir_133gr_parser()[6],
+        "nash_kray": parser.chips_luxe_sir_133gr_parser()[7],
+        "fozzy": parser.chips_luxe_sir_133gr_parser()[8]
+    }},
+
 
 
 

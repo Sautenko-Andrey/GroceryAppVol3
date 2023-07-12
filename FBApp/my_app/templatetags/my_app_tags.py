@@ -1452,6 +1452,38 @@ get_fanta_shokata_15_pl = tag.create_tag(ItemsPicsFromNet, 478)
 '''Тэг,возвращающий информацию о "Напиток Fanta Мандарин, 1,5л"'''
 get_fanta_mandarin_15_pl = tag.create_tag(ItemsPicsFromNet, 479)
 
+'''Тэг,возвращающий информацию о "Чіпси Люкс бекон, 133г"'''
+get_chips_luxe_becon_133gr = tag.create_tag(ItemsPicsFromNet, 480)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс паприка, 133г"'''
+get_chips_luxe_paprika_133gr = tag.create_tag(ItemsPicsFromNet, 481)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс краб, 133г"'''
+get_chips_luxe_crab_133gr = tag.create_tag(ItemsPicsFromNet, 482)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс сметана-цибуля, 133г"'''
+get_chips_luxe_smetana_cibulya_133gr = tag.create_tag(ItemsPicsFromNet, 483)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс сир, 133г"'''
+get_chips_luxe_sir_133gr = tag.create_tag(ItemsPicsFromNet, 484)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс сир, 71г"'''
+get_chips_luxe_sir_71gr = tag.create_tag(ItemsPicsFromNet, 485)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс бекон, 71г"'''
+get_chips_luxe_becon_71gr = tag.create_tag(ItemsPicsFromNet, 486)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс паприка, 71г"'''
+get_chips_luxe_paprika_71gr = tag.create_tag(ItemsPicsFromNet, 487)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс краб, 71г"'''
+get_chips_luxe_crab_71gr = tag.create_tag(ItemsPicsFromNet, 488)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс сметана-цибуля, 71г"'''
+get_chips_luxe_smetana_cibulya_71gr = tag.create_tag(ItemsPicsFromNet, 489)
+
+
+
 
 
 

@@ -1268,6 +1268,26 @@ class ContextSupervisor:
             result = self.getting_prices('fanta_shokata_15_pl', get_fanta_shokata_15_pl)
         elif nn_respond == FANTA_MANDARIN_15_PL:
             result = self.getting_prices('fanta_mandarin_15_pl', get_fanta_mandarin_15_pl)
+        elif nn_respond == CHIPS_LUXE_BECON_133GR:
+            result = self.getting_prices('chips_luxe_becon_133gr', get_chips_luxe_becon_133gr)
+        elif nn_respond == CHIPS_LUXE_PAPRIKA_133GR:
+            result = self.getting_prices('chips_luxe_paprika_133gr', get_chips_luxe_paprika_133gr)
+        elif nn_respond == CHIPS_LUXE_CRAB_133GR:
+            result = self.getting_prices('chips_luxe_crab_133gr', get_chips_luxe_crab_133gr)
+        elif nn_respond == CHIPS_LUXE_SMETANA_CIBULYA_133GR:
+            result = self.getting_prices('chips_luxe_smetana_cibulya_133gr', get_chips_luxe_smetana_cibulya_133gr)
+        elif nn_respond == CHIPS_LUXE_SIR_133GR:
+            result = self.getting_prices('chips_luxe_sir_133gr', get_chips_luxe_sir_133gr)
+        elif nn_respond == CHIPS_LUXE_SIR_71GR:
+            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_sir_71gr)
+        elif nn_respond == CHIPS_LUXE_BECON_71GR:
+            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_becon_71gr)
+        elif nn_respond == CHIPS_LUXE_PAPRIKA_71GR:
+            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_paprika_71gr)
+        elif nn_respond == CHIPS_LUXE_CRAB_71GR:
+            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_crab_71gr)
+        elif nn_respond == CHIPS_LUXE_SMETANA_CIBULYA_71GR:
+            result = self.getting_prices(self.NO_PRICES, get_chips_luxe_smetana_cibulya_71gr)
 
 
 

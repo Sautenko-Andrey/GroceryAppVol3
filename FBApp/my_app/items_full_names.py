@@ -475,6 +475,16 @@ SPRITE_15_PL = 'Напиток Sprite 1,5л'
 FANTA_ORANGE_15_PL = 'Напиток Fanta Orange 1,5л'
 FANTA_SHOKATA_15_PL = 'Напиток Fanta Shokata, 1,5л'
 FANTA_MANDARIN_15_PL = 'Напиток Fanta Мандарин, 1,5л'
+CHIPS_LUXE_BECON_133GR = 'Чіпси Люкс бекон, 133г'
+CHIPS_LUXE_PAPRIKA_133GR = 'Чіпси Люкс паприка, 133г'
+CHIPS_LUXE_CRAB_133GR = 'Чіпси Люкс краб, 133г'
+CHIPS_LUXE_SMETANA_CIBULYA_133GR = 'Чіпси Люкс сметана-цибуля, 133г'
+CHIPS_LUXE_SIR_133GR = 'Чіпси Люкс сир, 133г'
+CHIPS_LUXE_SIR_71GR = 'Чіпси Люкс сир, 71г'
+CHIPS_LUXE_BECON_71GR = 'Чіпси Люкс бекон, 71г'
+CHIPS_LUXE_PAPRIKA_71GR = 'Чіпси Люкс паприка, 71г'
+CHIPS_LUXE_CRAB_71GR = 'Чіпси Люкс краб, 71г'
+CHIPS_LUXE_SMETANA_CIBULYA_71GR = 'Чіпси Люкс сметана-цибуля, 71г'
 
 
 

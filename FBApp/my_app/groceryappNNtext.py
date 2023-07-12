@@ -29,7 +29,7 @@ class GroceryAppText:
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 477
+    ITEMS_AMOUNT = 487
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -51,7 +51,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=60, batch_size=50)
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=75, batch_size=50)
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 

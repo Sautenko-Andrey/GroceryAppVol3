@@ -995,25 +995,45 @@ class TesterForGroceryAppText:
             return SPRITE_033_JB
         elif np.argmax(result) == 465:
             return COCA_COLA_ORIGINAL_025_GLASS
-        elif np.argmax(result) == 467:
+        elif np.argmax(result) == 466:
             return COCA_COLA_ZERO_025_GLASS
-        elif np.argmax(result) == 468:
+        elif np.argmax(result) == 467:
             return COCA_COLA_ORIGINAL_05_PL
-        elif np.argmax(result) == 469:
+        elif np.argmax(result) == 468:
             return COCA_COLA_ZERO_05_PL
-        elif np.argmax(result) == 470:
+        elif np.argmax(result) == 469:
             return FANTA_ORANGE_05_PL
-        elif np.argmax(result) == 471:
+        elif np.argmax(result) == 470:
             return SPRITE_05_PL
-        elif np.argmax(result) == 472:
+        elif np.argmax(result) == 471:
             return COCA_COLA_ORIGINAL_15_PL
-        elif np.argmax(result) == 473:
+        elif np.argmax(result) == 472:
             return COCA_COLA_ZERO_15_PL
-        elif np.argmax(result) == 474:
+        elif np.argmax(result) == 473:
             return SPRITE_15_PL
-        elif np.argmax(result) == 475:
+        elif np.argmax(result) == 474:
             return FANTA_ORANGE_15_PL
-        elif np.argmax(result) == 476:
+        elif np.argmax(result) == 475:
             return FANTA_SHOKATA_15_PL
-        elif np.argmax(result) == 477:
+        elif np.argmax(result) == 476:
             return FANTA_MANDARIN_15_PL
+        elif np.argmax(result) == 477:
+            return CHIPS_LUXE_BECON_133GR
+        elif np.argmax(result) == 478:
+            return CHIPS_LUXE_PAPRIKA_133GR
+        elif np.argmax(result) == 479:
+            return CHIPS_LUXE_CRAB_133GR
+        elif np.argmax(result) == 480:
+            return CHIPS_LUXE_SMETANA_CIBULYA_133GR
+        elif np.argmax(result) == 481:
+            return CHIPS_LUXE_SIR_133GR
+        elif np.argmax(result) == 482:
+            return CHIPS_LUXE_SIR_71GR
+        elif np.argmax(result) == 483:
+            return CHIPS_LUXE_BECON_71GR
+        elif np.argmax(result) == 484:
+            return CHIPS_LUXE_PAPRIKA_71GR
+        elif np.argmax(result) == 485:
+            return CHIPS_LUXE_CRAB_71GR
+        elif np.argmax(result) == 486:
+            return CHIPS_LUXE_SMETANA_CIBULYA_71GR

@@ -4718,6 +4718,69 @@ class ProductParserVol2:
             'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/19266-napitok-fanta-mandarin-5449000054128.html'
         ])
 
+    def chips_luxe_becon_133gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком бекону 133 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-133g--07622210176196/',
+            'https://shop.silpo.ua/product/chypsy-liuks-bekon-555287',
+            'https://auchan.ua/ua/chipsy-ljuks-bekon-133-g-238976/',
+            'https://novus.online/product/cipsi-luks-z-bekonom-133g',
+            'https://metro.zakaz.ua/ru/products/chipsi-liuks-133g--07622210176196/',
+            'https://shop.nashkraj.ua/kovel/product/178945-chipsi-lyuks-133g-bekon',
+            'https://fozzyshop.ua/chipsy/6385-chipsy-lyuks-bekon-7622210176196.html'
+        ])
+
+    def chips_luxe_paprika_133gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком паприки 133 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-133-g-luks-zi-smakom-papriki-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-133g--07622210176202/',
+            'https://shop.silpo.ua/product/chypsy-liuks-papryka-555288',
+            'https://auchan.ua/ua/chipsy-ljuks-paprika-133-g-238977/',
+            'https://novus.online/product/cipsi-luks-z-paprikou-133g',
+            'https://metro.zakaz.ua/ru/products/chipsi-liuks-133g--07622210176202/',
+            'https://shop.nashkraj.ua/kovel/product/178946-chipsi-lyuks-133g-paprika',
+            'https://fozzyshop.ua/chipsy/6388-chipsy-lyuks-paprika-7622210176202.html'
+        ])
+
+    def chips_luxe_crab_133gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком краба 133 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-133-g-luks-zi-smakom-kraba-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-133g--07622210177261/',
+            'https://shop.silpo.ua/product/chypsy-liuks-krab-555291',
+            'https://auchan.ua/ua/chipsy-kartofel-nye-ljuks-so-vkusom-kraba-133-g-883335/',
+            'https://novus.online/product/cipsi-luks-z-krabom-133g',
+            'https://metro.zakaz.ua/ru/products/chipsi-liuks-133g--07622210177261/',
+            'https://shop.nashkraj.ua/kovel/product/178949-chipsi-lyuks-133g-krab',
+            'https://fozzyshop.ua/chipsy/6387-chipsy-lyuks-krab-7622210177261.html'
+        ])
+
+    def chips_luxe_smetana_cibulya_133gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сметани та цибулі 133 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-133-g-luks-zi-smakom-verskovij-sir-i-gribi-smetana-cibula-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-133g--07622210176219/',
+            'https://shop.silpo.ua/product/chypsy-liuks-smetana-tsybulia-555289',
+            'https://novus.online/product/cipsi-luks-zi-smetanou-ta-cibuleu-133g',
+            'https://metro.zakaz.ua/ru/products/chipsi-liuks-133g--07622210176219/',
+            'https://shop.nashkraj.ua/kovel/product/178947-chipsi-lyuks-133g-smetana-tsibulya',
+            'https://fozzyshop.ua/chipsy/6432-chipsy-lyuks-smetana-luk-7622210176219.html'
+        ])
+
+    def chips_luxe_sir_133gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сиру 133 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-133-g-luks-zi-smakom-siru-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-133g--07622210176172/',
+            'https://shop.silpo.ua/product/chypsy-liuks-syr-555286',
+            'https://auchan.ua/ua/chipsy-ljuks-syr-133-g-238975/',
+            'https://novus.online/product/cipsi-luks-z-sirom-133g',
+            'https://metro.zakaz.ua/ru/products/chipsi-liuks-133g--07622210176172/',
+            'https://shop.nashkraj.ua/kovel/product/178944-chipsi-lyuks-133g-sir',
+            'https://fozzyshop.ua/chipsy/6433-chipsy-lyuks-syr-7622210176172.html'
+        ])
+
 
 
 
