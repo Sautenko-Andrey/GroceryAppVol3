@@ -1037,3 +1037,31 @@ class TesterForGroceryAppText:
             return CHIPS_LUXE_CRAB_71GR
         elif np.argmax(result) == 486:
             return CHIPS_LUXE_SMETANA_CIBULYA_71GR
+
+
+        elif np.argmax(result) == 487:
+            return CHIPS_LUXE_HVIL_LISICHKI_125GR
+        elif np.argmax(result) == 488:
+            return CHIPS_LUXE_SMETANA_CIBULYA_183GR
+        elif np.argmax(result) == 489:
+            return CHIPS_LUXE_BECON_183GR
+        elif np.argmax(result) == 490:
+            return CHIPS_LUXE_SIR_183GR
+        elif np.argmax(result) == 491:
+            return CHIPS_PRINGLES_GREECE_SOUCE_CACIKI_185GR
+        elif np.argmax(result) == 492:
+            return CHIPS_PRINGLES_PAPRIKA_165GR
+        elif np.argmax(result) == 493:
+            return CHIPS_PRINGLES_PIZZA_PEPERONI_185GR
+        elif np.argmax(result) == 494:
+            return CHIPS_PRINGLES_SIR_CIBULYA_165GR
+        elif np.argmax(result) == 495:
+            return CHIPS_PRINGLES_ORIGINAL_165GR
+        elif np.argmax(result) == 496:
+            return CHIPS_PRINGLES_SIR_165GR
+        elif np.argmax(result) == 497:
+            return CHIPS_LAYS_PAPRIKA_120GR
+        elif np.argmax(result) == 498:
+            return CHIPS_LAYS_CRAB_120GR
+        elif np.argmax(result) == 499:
+            return CHIPS_LAYS_SIR_120GR

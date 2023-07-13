@@ -4826,6 +4826,142 @@ class ProductParserVol2:
             'https://fozzyshop.ua/chipsy/6392-chipsy-lyuks-smetana-luk-7622210176158.html'
         ])
 
+    def chips_luxe_hvil_lisichki_125gr_parser(self):
+        ''' Парсер для чіпси Люкс хвилясті за смаком лисичок 125 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-125-g-luks-zi-smakom-lisicok-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-liuks-125g--07622201769413/',
+            'https://varus.ua/chipsi-kartoplyani-lyuks-hvilyasti-zi-smakom-lisichok-125-g',
+            'https://shop.silpo.ua/product/chipsy-liuks-khvyliasti-zi-smakom-lysychok-872080',
+            'https://auchan.ua/ua/chipsy-riflenye-ljuks-so-vkusom-lisichek-125-g-649651/',
+            'https://novus.online/product/chipsy-kartoplyani-ryfleni-zi-smakom-lysychok-lyukc-125h',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-125g--07622201769413/',
+            'https://shop.nashkraj.ua/kovel/product/410092-chipsi-lyuks-125g-lisichki-rifleni',
+            'https://fozzyshop.ua/chipsy/92502-chipsy-lyuks-volnistye-so-vkusom-lisichek-7622201769413.html'
+        ])
+
+    def chips_luxe_smetana_cibulya_183gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сметани та цибулі 183 гр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chypsy-liuks-zi-smakom-smetany-i-tsybuli-609680',
+            'https://auchan.ua/ua/chipsy-ljuks-so-vkusom-smetany-i-luka-183-g-650083/',
+            'https://novus.online/product/cipsi-kartoplani-luks-z-smetanou-ta-cibuleu-183g',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-183g--07622210420152/',
+            'https://shop.nashkraj.ua/kovel/product/214979-chipsi-lyuks-183g-smetana-tsibulya',
+            'https://fozzyshop.ua/chipsy/43381-chipsy-lyuks-so-vkusom-smetany-i-luka-7622210420152.html'
+        ])
+
+    def chips_luxe_becon_183gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком бекону 183 гр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chypsy-liuks-zi-smakom-bekonu-609682',
+            'https://auchan.ua/ua/chipsy-ljuks-so-vkusom-bekona-183-g-650076/',
+            'https://novus.online/product/cipsi-kartoplani-luks-z-bekonom-183g',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-183g--07622210420145/',
+            'https://shop.nashkraj.ua/kovel/product/214977-chipsi-lyuks-183g-bekon',
+            'https://fozzyshop.ua/chipsy/33841-chipsy-lyuks-so-vkusom-bekona-7622210420145.html'
+        ])
+
+    def chips_luxe_sir_183gr_parser(self):
+        ''' Парсер для чіпси Люкс зі смаком сиру 183 гр'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chypsy-liuks-zi-smakom-syru-609679',
+            'https://auchan.ua/ua/chipsy-ljuks-so-vkusom-syra-183-g-650069/',
+            'https://novus.online/product/cipsi-kartoplani-luks-z-sirom-183g',
+            'https://metro.zakaz.ua/uk/products/chipsi-liuks-183g--07622210420138/',
+            'https://shop.nashkraj.ua/kovel/product/214978-chipsi-lyuks-183g-sir',
+            'https://fozzyshop.ua/chipsy/33840-chipsy-lyuks-so-vkusom-syra-7622210420138.html'
+        ])
+
+    def chips_pringles_greece_souce_caciki_185gr_parser(self):
+        ''' Парсер для чіпси Pringles Грецький соус та цацики 185 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/chipsy/100325-snek-pikantnyj-pringles-grecheskij-sous-caciki-250015045996.html'
+        ])
+
+    def chips_pringles_paprika_165gr_parser(self):
+        ''' Парсер для чіпси Pringles папріка 165 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/chipsy-pringles-paprika-165g',
+            'https://shop.silpo.ua/product/snek-pikantnyi-pringles-papryka-903305',
+            'https://auchan.ua/ua/chipsy-kartofel-nye-pringles-so-vkusom-papriki-165-g-665854/',
+            'https://novus.online/product/cipsi-paprika-pringles-paprika-165g',
+            'https://metro.zakaz.ua/uk/products/chipsi-pringls-165g--05053990106868/',
+            'https://fozzyshop.ua/chipsy/98178-snek-pikantnyj-pringles-paprika-0250014807946.html'
+        ])
+
+    def chips_pringles_pizza_peperoni_185gr_parser(self):
+        ''' Парсер для чіпси Pringles піца пепероні 185 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/chipsy/100683-snek-pikantnyj-pringles-picca-peperoni-0250015045989.html'
+        ])
+
+    def chips_pringles_sir_cubylya_165gr_parser(self):
+        ''' Парсер для чіпси Pringles зі смаком сиру та цибулі 165 гр'''
+        return self.prices_parsing([
+            'https://novus.online/product/cipsi-sir-cibula-pringles-cheese-onion-165g',
+            'https://metro.zakaz.ua/uk/products/chipsi-pringls-165g--05053990101535/',
+            'https://fozzyshop.ua/chipsy/6356-chipsy-pringles-syr-luk-5410076068210.html'
+        ])
+
+    def chips_pringles_original_165gr_parser(self):
+        ''' Парсер для чіпси Pringles Original 165 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chipsi-pringls-165g--05053990101573/',
+            'https://varus.ua/chipsi-kartoplyani-originalni-pringles-165g',
+            'https://shop.silpo.ua/product/chypsy-pringles-oryginal-423903',
+            'https://auchan.ua/ua/chipsy-pringles-original-165-g-241166/',
+            'https://novus.online/product/cipsi-original-pringles-original-165g',
+            'https://metro.zakaz.ua/uk/products/chipsi-pringls-165g--05053990101573/',
+            'https://fozzyshop.ua/chipsy/6381-chipsy-pringles-original-5410076068067.html'
+        ])
+
+    def chips_pringles_sir_165gr_parser(self):
+        ''' Парсер для чіпси Pringles зі смаком сиру 165 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-165g-pringles-kartoplani-zi-smakom-siru',
+            'https://eko.zakaz.ua/uk/products/chipsi-pringls-165g--05053990106981/',
+            'https://varus.ua/chipsi-pringles-cheese-165-g',
+            'https://shop.silpo.ua/product/chypsy-pringles-syr-423899',
+            'https://auchan.ua/ua/chipsy-pringles-cheese-165-g-241161/',
+            'https://novus.online/product/cipsi-sir-pringles-cheese-165g',
+            'https://metro.zakaz.ua/uk/products/chipsi-pringls-165g--05053990106981/',
+            'https://fozzyshop.ua/chipsy/6384-chipsy-pringles-syr-5410076068241.html'
+        ])
+
+    def chips_lays_paprika_120gr_parser(self):
+        ''' Парсер для чіпси Lay's папріка 120 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/chipsy-lays-kartofelnye-so-vkusom-papriki-120g',
+            'https://shop.silpo.ua/product/chipsy-lay-s-kartopliani-zi-smakom-papryky-920464',
+            'https://novus.online/product/chipsy-kartoplyani-smak-papryky-lays-120h',
+            'https://metro.zakaz.ua/uk/products/chipsi-leiz--04823063125451/',
+            'https://fozzyshop.ua/chipsy/100361-chipsy-lays-kartofelnye-so-vkusom-papriki-250015119604.html'
+        ])
+
+    def chips_lays_crab_120gr_parser(self):
+        ''' Парсер для чіпси Lay's краб 120 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/cipsi-120-g-lays-kartoplani-zi-smakom-krabu-mup',
+            'https://eko.zakaz.ua/uk/products/chipsi-leiz-120g--04823063125314/',
+            'https://varus.ua/chipsy-lays-kartofelnye-so-vkusom-kraba-120g',
+            'https://shop.silpo.ua/product/chipsy-lay-s-kartopliani-zi-smakom-kraba-920457',
+            'https://novus.online/product/chipsy-kartoplyani-smak-kraba-lays-120h',
+            'https://metro.zakaz.ua/uk/products/chipsi-leiz-120g--04823063125314/',
+            'https://fozzyshop.ua/chipsy/100358-chipsy-lays-kartofelnye-so-vkusom-kraba-250015119550.html'
+        ])
+
+    def chips_lays_sir_60gr_parser(self):
+        ''' Парсер для чіпси Lay's сир 60 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chipsi-leiz-60g--04823063125352/',
+            'https://varus.ua/chipsy-lays-kartofelnye-so-vkusom-syra-60g',
+            'https://shop.silpo.ua/product/chipsy-lay-s-kartopliani-zi-smakom-syru-920461',
+            'https://novus.online/product/chipsy-kartoplyani-syr-lays-60h',
+            'https://metro.zakaz.ua/uk/products/chipsi-leiz-60g--04823063125352/',
+            'https://fozzyshop.ua/chipsy/100687-chipsy-lays-kartofelnye-so-vkusom-syra-0250015119581.html'
+        ])
+
 
 
 

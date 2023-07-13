@@ -1288,6 +1288,32 @@ class ContextSupervisor:
             result = self.getting_prices('chips_luxe_crab_71gr', get_chips_luxe_crab_71gr)
         elif nn_respond == CHIPS_LUXE_SMETANA_CIBULYA_71GR:
             result = self.getting_prices('chips_luxe_smetana_cibulya_71gr', get_chips_luxe_smetana_cibulya_71gr)
+        elif nn_respond == CHIPS_LUXE_HVIL_LISICHKI_125GR:
+            result = self.getting_prices('chips_luxe_hvil_lisichki_125gr', get_chips_luxe_hvilyasti_lisichki_125gr)
+        elif nn_respond == CHIPS_LUXE_SMETANA_CIBULYA_183GR:
+            result = self.getting_prices('chips_luxe_smetana_cibulya_183gr', get_chips_luxe_smetana_cibulya_183gr)
+        elif nn_respond == CHIPS_LUXE_BECON_183GR:
+            result = self.getting_prices('chips_luxe_becon_183gr', get_chips_luxe_becon_183gr)
+        elif nn_respond == CHIPS_LUXE_SIR_183GR:
+            result = self.getting_prices('chips_luxe_sir_183gr', get_chips_luxe_sir_183gr)
+        elif nn_respond == CHIPS_PRINGLES_GREECE_SOUCE_CACIKI_185GR:
+            result = self.getting_prices('chips_pringles_greece_souce_caciki_185gr', get_chips_pringles_greec_souse_caciki_185gr)
+        elif nn_respond == CHIPS_PRINGLES_PAPRIKA_165GR:
+            result = self.getting_prices('chips_pringles_paprika_165gr', get_chips_pringles_paprika_165gr)
+        elif nn_respond == CHIPS_PRINGLES_PIZZA_PEPERONI_185GR:
+            result = self.getting_prices('chips_pringles_pizza_peperoni_185gr', get_chips_pringles_pizza_peperoni_185gr)
+        elif nn_respond == CHIPS_PRINGLES_SIR_CIBULYA_165GR:
+            result = self.getting_prices('chips_pringles_sir_cubylya_165gr', get_chips_pringles_sir_cibulya_165gr)
+        elif nn_respond == CHIPS_PRINGLES_ORIGINAL_165GR:
+            result = self.getting_prices('chips_pringles_original_165gr', get_chips_pringles_original_165gr)
+        elif nn_respond == CHIPS_PRINGLES_SIR_165GR:
+            result = self.getting_prices('chips_pringles_sir_165gr', get_chips_pringles_sir_165gr)
+        elif nn_respond == CHIPS_LAYS_PAPRIKA_120GR:
+            result = self.getting_prices('chips_lays_paprika_120gr', get_chips_lays_paprika_120gr)
+        elif nn_respond == CHIPS_LAYS_CRAB_120GR:
+            result = self.getting_prices('chips_lays_crab_120gr', get_chips_lays_crab_120gr)
+        elif nn_respond == CHIPS_LAYS_SIR_60GR:
+            result = self.getting_prices('chips_lays_sir_60gr', get_chips_lays_sir_60gr)
 
 
 

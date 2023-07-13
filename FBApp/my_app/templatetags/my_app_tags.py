@@ -1482,6 +1482,45 @@ get_chips_luxe_crab_71gr = tag.create_tag(ItemsPicsFromNet, 488)
 '''Тэг,возвращающий информацию о "Чіпси Люкс сметана-цибуля, 71г"'''
 get_chips_luxe_smetana_cibulya_71gr = tag.create_tag(ItemsPicsFromNet, 489)
 
+'''Тэг,возвращающий информацию о "Чіпси Люкс хвилясті зі смаком лисичок, 125г"'''
+get_chips_luxe_hvilyasti_lisichki_125gr = tag.create_tag(ItemsPicsFromNet, 490)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком сметани та цибулі, 183г"'''
+get_chips_luxe_smetana_cibulya_183gr = tag.create_tag(ItemsPicsFromNet, 491)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком бекону, 183г"'''
+get_chips_luxe_becon_183gr = tag.create_tag(ItemsPicsFromNet, 492)
+
+'''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком сиру, 183г"'''
+get_chips_luxe_sir_183gr = tag.create_tag(ItemsPicsFromNet, 493)
+
+'''Тэг,возвращающий информацию о "Снек пікантний Pringles Грецький соус цацикі, 185г"'''
+get_chips_pringles_greec_souse_caciki_185gr = tag.create_tag(ItemsPicsFromNet, 494)
+
+'''Тэг,возвращающий информацию о "Снек пікантний Pringles Паприка, 165г"'''
+get_chips_pringles_paprika_165gr = tag.create_tag(ItemsPicsFromNet, 495)
+
+'''Тэг,возвращающий информацию о "Снек пікантний Pringles Піца пепероні, 185г"'''
+get_chips_pringles_pizza_peperoni_185gr = tag.create_tag(ItemsPicsFromNet, 496)
+
+'''Тэг,возвращающий информацию о "Чіпси Pringles сир-цибуля, 165г"'''
+get_chips_pringles_sir_cibulya_165gr = tag.create_tag(ItemsPicsFromNet, 497)
+
+'''Тэг,возвращающий информацию о "Чіпси Pringles Оригінал, 165г"'''
+get_chips_pringles_original_165gr = tag.create_tag(ItemsPicsFromNet, 498)
+
+'''Тэг,возвращающий информацию о "Чіпси Pringles сир, 165г"'''
+get_chips_pringles_sir_165gr = tag.create_tag(ItemsPicsFromNet, 499)
+
+'''Тэг,возвращающий информацию о "Чипси Lay`s картопляні зі смаком паприки, 120г"'''
+get_chips_lays_paprika_120gr = tag.create_tag(ItemsPicsFromNet, 500)
+
+'''Тэг,возвращающий информацию о "Чипси Lay`s картопляні зі смаком краба, 120г"'''
+get_chips_lays_crab_120gr = tag.create_tag(ItemsPicsFromNet, 501)
+
+'''Тэг,возвращающий информацию о "Чіпси Lay`s картопляні зі смаком сиру, 60г"'''
+get_chips_lays_sir_60gr = tag.create_tag(ItemsPicsFromNet, 502)
+
 
 
 
