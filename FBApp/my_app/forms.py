@@ -40,10 +40,14 @@ class SearchByPhotoForm(forms.ModelForm):
 class SearchDishesForm(forms.ModelForm):
     BORSH = 'борщ украинский'
     VARENIKI_S_KARTOSHKOY = 'вареники с картошкой'
+    VARENIKI_S_KAPUSTOY = 'вареники с капустой'
+    GRECHESKIY_SALAT = 'греческий салат'
 
     DISH_CHOICES = [
         (BORSH, 'Борщ украинский'),
-        (VARENIKI_S_KARTOSHKOY, 'Вареники с картошкой')
+        (VARENIKI_S_KARTOSHKOY, 'Вареники с картошкой'),
+        (VARENIKI_S_KAPUSTOY , 'Вареники с капустой'),
+        (GRECHESKIY_SALAT, 'Греческий салат')
     ]
 
     dish_name = forms.ChoiceField(label='Название блюда',choices=DISH_CHOICES)

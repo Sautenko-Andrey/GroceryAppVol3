@@ -11,7 +11,6 @@ from django.core.management import call_command
 import json
 from parsers import ProductParserVol2
 
-
 # коэфициенты для борща красного
 water_rate = 3
 meat_rate = 0.8
@@ -22,14 +21,27 @@ onion_rate = 0.2
 cabbage_rate = 0.4
 borsh_mututal_devider = 6
 
-# коэфициенты для вареников с картошкой
+# коэфициенты для вареников с картошкой/капустой
 sour_var = 0.4
 water_var = 0.033
 egg_var = 0.1
 oil_var = 0.05
 onion_var = 0.2
+onion_bigger_var = 0.4
 potato_var = 0.6
+cabbage_var = 0.6
+carrot_var = 0.05
 vareniki_mutual_devider = 5
+# коєфициенты для греческого салата
+tomato_var = 0.25
+cucumber_var = 0.15
+reb_bolg_paper_var = 0.15
+onion_greece_salad_var = 0.9
+sir_feta_fozzy_var = 0.15
+oliv_var = 0.27
+oil_oliv_var_greece_salat = 0.05
+basilik_var = 0.5
+greece_salad_devider = 4
 
 silpo_correct_price = 10
 
@@ -3643,10 +3655,25 @@ all_products_names = [
         "fozzy": parser.chips_lays_sir_60gr_parser()[8]
     }},
 
+    {'sir_svet_feta_ukr_rozsil_45_1kg': {
+        "fozzy": parser.sir_svet_feta_ukr_rozsil_45_1kg_parser()[8]
+    }},
 
+    {'olivki_extra_chorni_bez_kist_300gr': {
+        "fozzy": parser.olivki_extra_chorni_bez_kist_300gr_parser()[8]
+    }},
 
+    {'oliv_oil_povna_chasha_913gr': {
+        "fozzy": parser.oliv_oil_povna_chasha_913gr_parser()[8]
+    }},
 
-
+    {'basilik_chervoniy_svij': {
+        "varus": parser.basilik_chervoniy_svij_parser()[2],
+        "silpo": parser.basilik_chervoniy_svij_parser()[3],
+        "novus": parser.basilik_chervoniy_svij_parser()[5],
+        "metro": parser.basilik_chervoniy_svij_parser()[6],
+        "fozzy": parser.basilik_chervoniy_svij_parser()[8]
+    }},
 
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
@@ -3667,7 +3694,7 @@ all_products_names = [
         "silpo": ((parser.water_in_6l_bottle_parser()[3] / water_rate)
                   + ((parser.pork_lopatka_parser()[3] * silpo_correct_price) * meat_rate)
                   + (parser.potato_parser()[3] / potato_rate) + (
-                              (parser.beet_parser()[3] * silpo_correct_price) / beet_rate)
+                          (parser.beet_parser()[3] * silpo_correct_price) / beet_rate)
                   + ((parser.carrot_parcer()[3] * silpo_correct_price) / carrot_rate)
                   + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_rate)
                   + ((parser.cabbage_parcer()[3] * silpo_correct_price) * cabbage_rate)) / borsh_mututal_devider,
@@ -3689,43 +3716,102 @@ all_products_names = [
     }},
 
     {'veriniki_potato': {
-        "atb": ((parser.four_parser()[0] * sour_var) + (parser.water_in_6l_bottle_parser()[0] * sour_var)
+        "atb": ((parser.four_parser()[0] * sour_var) + (parser.water_in_6l_bottle_parser()[0] * water_var)
                 + (parser.egg_parcer()[0] * egg_var) + (parser.oil_for_dishes_parser()[0] * oil_var)
                 + (parser.onion_parcer()[0] * onion_var) + (parser.sour_cream_for_dishes_parser()[0])
                 + (parser.potato_parser()[0] * potato_var)) / vareniki_mutual_devider,
 
-        "eko": ((parser.four_parser()[1] * sour_var) + (parser.water_in_6l_bottle_parser()[1] * sour_var)
+        "eko": ((parser.four_parser()[1] * sour_var) + (parser.water_in_6l_bottle_parser()[1] * water_var)
                 + ((parser.egg_parcer()[1] * egg_correct_price) * egg_var) + (
-                            parser.oil_for_dishes_parser()[1] * oil_var)
+                        parser.oil_for_dishes_parser()[1] * oil_var)
                 + (parser.onion_parcer()[1] * onion_var) + (parser.sour_cream_for_dishes_parser()[1])
                 + (parser.potato_parser()[1] * potato_var)) / vareniki_mutual_devider,
 
-        "varus": ((parser.four_parser()[2] * sour_var) + (parser.water_in_6l_bottle_parser()[2] * sour_var)
+        "varus": ((parser.four_parser()[2] * sour_var) + (parser.water_in_6l_bottle_parser()[2] * water_var)
                   + (parser.egg_parcer()[2] * egg_var) + (parser.oil_for_dishes_parser()[2] * oil_var)
                   + (parser.onion_parcer()[2] * onion_var) + (parser.sour_cream_for_dishes_parser()[2])
                   + (parser.potato_parser()[2] * potato_var)) / vareniki_mutual_devider,
 
-        "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * sour_var)
+        "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
                   + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
                   + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_var) + (
-                  parser.sour_cream_for_dishes_parser()[3])
+                      parser.sour_cream_for_dishes_parser()[3])
                   + (parser.potato_parser()[3] * potato_var)) / vareniki_mutual_devider,
 
-        "novus": ((parser.four_parser()[5] * sour_var) + (parser.water_in_6l_bottle_parser()[5] * sour_var)
+        "novus": ((parser.four_parser()[5] * sour_var) + (parser.water_in_6l_bottle_parser()[5] * water_var)
                   + (parser.egg_parcer()[5] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[5] * oil_var)
                   + (parser.onion_parcer()[5] * onion_var) + (parser.sour_cream_for_dishes_parser()[5])
                   + (parser.potato_parser()[5] * potato_var)) / vareniki_mutual_devider,
 
-        "metro": ((parser.four_parser()[6] * sour_var) + (parser.water_in_6l_bottle_parser()[6] * sour_var)
+        "metro": ((parser.four_parser()[6] * sour_var) + (parser.water_in_6l_bottle_parser()[6] * water_var)
                   + (parser.egg_parcer()[6] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[6] * oil_var)
                   + (parser.onion_parcer()[6] * onion_var) + (parser.sour_cream_for_dishes_parser()[6])
                   + (parser.potato_parser()[6] * potato_var)) / vareniki_mutual_devider,
 
-        "fozzy": ((parser.four_parser()[8] * sour_var) + (parser.water_in_6l_bottle_parser()[8] * sour_var)
+        "fozzy": ((parser.four_parser()[8] * sour_var) + (parser.water_in_6l_bottle_parser()[8] * water_var)
                   + ((parser.egg_parcer()[8] * egg_correct_price) * egg_var) + (
-                              parser.oil_shedriy_dar_850_parcer()[8] * oil_var)
+                          parser.oil_shedriy_dar_850_parcer()[8] * oil_var)
                   + (parser.onion_parcer()[8] * onion_var) + (parser.sour_cream_for_dishes_parser()[8])
                   + (parser.potato_parser()[8] * potato_var)) / vareniki_mutual_devider,
+    }},
+
+    {'veriniki_kapusta': {
+        "atb": ((parser.four_parser()[0] * sour_var) + (parser.water_in_6l_bottle_parser()[0] * water_var)
+                + (parser.egg_parcer()[0] * egg_var) + (parser.oil_for_dishes_parser()[0] * oil_var)
+                + (parser.onion_parcer()[0] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[0])
+                + (parser.cabbage_parcer()[0] * cabbage_var) + parser.carrot_parcer()[
+                    0] * carrot_var) / vareniki_mutual_devider,
+
+        "eko": ((parser.four_parser()[1] * sour_var) + (parser.water_in_6l_bottle_parser()[1] * water_var)
+                + ((parser.egg_parcer()[1] * egg_correct_price) * egg_var) + (
+                        parser.oil_for_dishes_parser()[1] * oil_var)
+                + (parser.onion_parcer()[1] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[1])
+                + (parser.cabbage_parcer()[1] * cabbage_var) + parser.carrot_parcer()[
+                    0] * carrot_var) / vareniki_mutual_devider,
+
+        "varus": ((parser.four_parser()[2] * sour_var) + (parser.water_in_6l_bottle_parser()[2] * water_var)
+                  + (parser.egg_parcer()[2] * egg_var) + (parser.oil_for_dishes_parser()[2] * oil_var)
+                  + (parser.onion_parcer()[2] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[2])
+                  + (parser.cabbage_parcer()[2] * cabbage_var) + parser.carrot_parcer()[
+                      0] * carrot_var) / vareniki_mutual_devider,
+
+        "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
+                  + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
+                  + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_bigger_var) + (
+                      parser.sour_cream_for_dishes_parser()[3])
+                  + (parser.cabbage_parcer()[3] * cabbage_var) + parser.carrot_parcer()[
+                      0] * carrot_var) / vareniki_mutual_devider,
+
+        "novus": ((parser.four_parser()[5] * sour_var) + (parser.water_in_6l_bottle_parser()[5] * water_var)
+                  + (parser.egg_parcer()[5] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[5] * oil_var)
+                  + (parser.onion_parcer()[5] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[5])
+                  + (parser.cabbage_parcer()[5] * cabbage_var) + parser.carrot_parcer()[
+                      0] * carrot_var) / vareniki_mutual_devider,
+
+        "metro": ((parser.four_parser()[6] * sour_var) + (parser.water_in_6l_bottle_parser()[6] * water_var)
+                  + (parser.egg_parcer()[6] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[6] * oil_var)
+                  + (parser.onion_parcer()[6] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[6])
+                  + (parser.cabbage_parcer()[6] * cabbage_var) + parser.carrot_parcer()[
+                      0] * carrot_var) / vareniki_mutual_devider,
+
+        "fozzy": ((parser.four_parser()[8] * sour_var) + (parser.water_in_6l_bottle_parser()[8] * water_var)
+                  + ((parser.egg_parcer()[8] * egg_correct_price) * egg_var) + (
+                          parser.oil_shedriy_dar_850_parcer()[8] * oil_var)
+                  + (parser.onion_parcer()[8] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[8])
+                  + (parser.cabbage_parcer()[8] * cabbage_var) + parser.carrot_parcer()[
+                      0] * carrot_var) / vareniki_mutual_devider,
+    }},
+
+    {'grecheskiy_salat': {
+        "fozzy": ((parser.tomato_parser()[8] * tomato_var) + (parser.cucumber_parser()[8] * cucumber_var)
+                  + (parser.red_bolg_papper_parser()[8] * reb_bolg_paper_var) + (
+                          parser.onion_parcer()[8] * oil_var)
+                  + (parser.onion_parcer()[8] * onion_greece_salad_var) + (
+                          parser.sir_svet_feta_ukr_rozsil_45_1kg_parser()[8] * sir_feta_fozzy_var)
+                  + (parser.olivki_extra_chorni_bez_kist_300gr_parser()[8] * oliv_var) +
+                  (parser.oliv_oil_povna_chasha_913gr_parser()[
+                       8] * oil_oliv_var_greece_salat) + parser.basilik_chervoniy_svij_parser()[
+                      8] * basilik_var) / greece_salad_devider,
     }},
 ]
 
@@ -3741,13 +3827,3 @@ def get_all_prices():
 
 
 get_all_prices()
-
-
-
-
-
-
-
-
-
-

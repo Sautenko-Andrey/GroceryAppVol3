@@ -1521,6 +1521,18 @@ get_chips_lays_crab_120gr = tag.create_tag(ItemsPicsFromNet, 501)
 '''Тэг,возвращающий информацию о "Чіпси Lay`s картопляні зі смаком сиру, 60г"'''
 get_chips_lays_sir_60gr = tag.create_tag(ItemsPicsFromNet, 502)
 
+'''Тэг,возвращающий информацию о "Сир Свет Сыр Фета Українська розсільний 45% в/у"'''
+get_sir_svet_feta_ukr_rozsil_45_1kg = tag.create_tag(ItemsPicsFromNet, 503)
+
+'''Тэг,возвращающий информацию о "Оливки Extra! чорні без кісточки, 300г"'''
+get_olivki_extra_chorn_bez_kist_300gr = tag.create_tag(ItemsPicsFromNet, 504)
+
+'''Тэг,возвращающий информацию о "Масло оливковое Повна Чаша, 913г"'''
+get_oliv_oil_povna_chasha_913gr = tag.create_tag(ItemsPicsFromNet, 505)
+
+'''Тэг,возвращающий информацию о "Базилік Вершки та Корінці червоний свіжий з коренем, 50г"'''
+get_basilik_svij = tag.create_tag(ItemsPicsFromNet, 506)
+
 
 
 
@@ -1538,6 +1550,12 @@ get_borsh_ukr_info = tag.create_tag(AvailableDishes, 1)
 
 '''Тег , возвращающий информацю о варениках с картошкой'''
 get_vareniki_s_kartoshkoy_info = tag.create_tag(AvailableDishes, 2)
+
+'''Тег , возвращающий информацю о варениках с капустой'''
+get_vareniki_s_kapustoy_info = tag.create_tag(AvailableDishes, 3)
+
+'''Тег , возвращающий информацю о гречеськом салаті'''
+get_grecheskiy_salat_info = tag.create_tag(AvailableDishes, 4)
 
 
 # ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА

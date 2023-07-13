@@ -498,9 +498,16 @@ CHIPS_PRINGLES_SIR_165GR = 'Чіпси Pringles сир, 165г'
 CHIPS_LAYS_PAPRIKA_120GR = 'Чипси Lay`s картопляні зі смаком паприки, 120г'
 CHIPS_LAYS_CRAB_120GR = 'Чипси Lay`s картопляні зі смаком краба, 120г'
 CHIPS_LAYS_SIR_60GR = 'Чіпси Lay`s картопляні зі смаком сиру, 60г'
+SIR_SVET_FETA_UKR_ROZSIL_45_1KG = 'Сир Свет Сыр Фета Українська розсільний 45% в/у'
+OLIVKI_EXTRA_CHORNI_BEZ_KIST_300GR = 'Оливки Extra! чорні без кісточки, 300г'
+OLIV_OIL_POVNA_CHASHA_913GR = 'Масло оливковое Повна Чаша, 913г'
+BASILIK_CHERVONIY_SVIJIY = 'Базілік червоний свіжий'
 
 
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'
 VARENIKI_KARTOSHKA = 'вареники с картошкой'
+VARENIKI_KAPUSTA = 'вареники с капустой'
+GRECHESKIY_SALAT = 'гречеський салат'
+

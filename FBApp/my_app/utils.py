@@ -1314,6 +1314,14 @@ class ContextSupervisor:
             result = self.getting_prices('chips_lays_crab_120gr', get_chips_lays_crab_120gr)
         elif nn_respond == CHIPS_LAYS_SIR_60GR:
             result = self.getting_prices('chips_lays_sir_60gr', get_chips_lays_sir_60gr)
+        elif nn_respond == SIR_SVET_FETA_UKR_ROZSIL_45_1KG:
+            result = self.getting_prices('sir_svet_feta_ukr_rozsil_45_1kg', get_sir_svet_feta_ukr_rozsil_45_1kg)
+        elif nn_respond == OLIVKI_EXTRA_CHORNI_BEZ_KIST_300GR:
+            result = self.getting_prices('olivki_extra_chorni_bez_kist_300gr', get_olivki_extra_chorn_bez_kist_300gr)
+        elif nn_respond == OLIV_OIL_POVNA_CHASHA_913GR:
+            result = self.getting_prices('oliv_oil_povna_chasha_913gr', get_oliv_oil_povna_chasha_913gr)
+        elif nn_respond == BASILIK_CHERVONIY_SVIJIY:
+            result = self.getting_prices('basilik_chervoniy_svij', get_basilik_svij)
 
 
 
@@ -1323,6 +1331,10 @@ class ContextSupervisor:
             result = self.getting_prices('borsh_red', get_borsh_ukr_info)
         elif nn_respond == VARENIKI_KARTOSHKA:
             result = self.getting_prices('veriniki_potato', get_vareniki_s_kartoshkoy_info)
+        elif nn_respond == VARENIKI_KAPUSTA:
+            result = self.getting_prices('veriniki_kapusta', get_vareniki_s_kapustoy_info)
+        elif nn_respond == GRECHESKIY_SALAT:
+            result = self.getting_prices('grecheskiy_salat', get_grecheskiy_salat_info)
 
         # ------------------------------------конец подключения блюд------------------------
 

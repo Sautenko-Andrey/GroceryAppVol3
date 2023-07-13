@@ -1064,4 +1064,12 @@ class TesterForGroceryAppText:
         elif np.argmax(result) == 498:
             return CHIPS_LAYS_CRAB_120GR
         elif np.argmax(result) == 499:
-            return CHIPS_LAYS_SIR_120GR
+            return CHIPS_LAYS_SIR_60GR
+        elif np.argmax(result) == 500:
+            return SIR_SVET_FETA_UKR_ROZSIL_45_1KG
+        elif np.argmax(result) == 501:
+            return OLIVKI_EXTRA_CHORNI_BEZ_KIST_300GR
+        elif np.argmax(result) == 502:
+            return OLIV_OIL_POVNA_CHASHA_913GR
+        elif np.argmax(result) == 503:
+            return BASILIK_CHERVONIY_SVIJIY

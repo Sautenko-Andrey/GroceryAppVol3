@@ -4962,6 +4962,34 @@ class ProductParserVol2:
             'https://fozzyshop.ua/chipsy/100687-chipsy-lays-kartofelnye-so-vkusom-syra-0250015119581.html'
         ])
 
+    def sir_svet_feta_ukr_rozsil_45_1kg_parser(self):
+        ''' Парсер для Сир Свет Сыр Фета Українська розсільний 45% в/у'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/rassolnyj/36358-syr-svet-syr-feta-ukrainskaya-rassolnyj-45-v-u-2722985.html'
+        ])
+
+    def olivki_extra_chorni_bez_kist_300gr_parser(self):
+        ''' Парсер для Оливки Extra! чорні без кісточки, 300г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/masliny-olivki/19470-olivki-extra-chernye-bez-kostochki-4824034034734.html'
+        ])
+
+    def oliv_oil_povna_chasha_913gr_parser(self):
+        ''' Парсер для Оливкове масло Повна Чаша 913 г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/oliya-olivkova/50492-maslo-olivkovoe-povna-chasha-4823096401041.html'
+        ])
+
+    def basilik_chervoniy_svij_parser(self):
+        ''' Парсер для Базілік червоний свіжий'''
+        return self.prices_parsing([
+            'https://varus.ua/bazilik-svezhiy-40-g',
+            'https://shop.silpo.ua/product/bazylik-chervonyi-505390',
+            'https://novus.online/ru/product/bazylik-chervonyy-blister-50hr',
+            'https://metro.zakaz.ua/uk/products/zelen-bazilik-50g--metro98690128120460/',
+            'https://fozzyshop.ua/zelen/73186-bazilik-vershki-ta-korinci-krasnyj-svezhij-s-kornem-4820224870038.html'
+        ])
+
 
 
 
