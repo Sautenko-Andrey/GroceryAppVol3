@@ -509,5 +509,5 @@ BASILIK_CHERVONIY_SVIJIY = 'Базілік червоний свіжий'
 RED_BORSH = 'борщ украинский'
 VARENIKI_KARTOSHKA = 'вареники с картошкой'
 VARENIKI_KAPUSTA = 'вареники с капустой'
-GRECHESKIY_SALAT = 'гречеський салат'
+GRECHESKIY_SALAT = 'греческий салат'
 

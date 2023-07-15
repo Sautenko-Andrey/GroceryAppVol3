@@ -62,33 +62,53 @@
                                     <td><h5><a href="https://www.atbmarket.com/" target="_blank"
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h5></td>
-                                    <td class="black-red-style">{{price_from_site_atb}} грн</td>
+                                    {% if price_from_site_atb == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_atb}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">2</th>
                                     <td><h5><a href="https://shop.silpo.ua/" target="_blank" class="black-red-style"><b><img
                                             src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h5></td>
-                                    <td class="black-red-style">{{price_from_site_silpo}} грн</td>
+                                    {% if price_from_site_silpo == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_silpo}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">3</th>
                                     <td><h5><a href="https://varus.ua/" target="_blank" class="black-red-style"><b><img
                                             src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h5></td>
-                                    <td class="black-red-style">{{price_from_site_varus}} грн</td>
+                                    {% if price_from_site_varus == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_varus}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">4</th>
                                     <td><h5><a href="https://www.instagram.com/semya_sever/" target="_blank"
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h5></td>
-                                    <td class="black-red-style">{{price_from_site_novus}} грн</td>
+                                    {% if price_from_site_novus == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_novus}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">5</th>
                                     <td><h5><a href="https://chudo-market.ua/" target="_blank"
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h5></td>
-                                    <td class="black-red-style">{{price_from_site_ashan}} грн</td>
+                                    {% if price_from_site_ashan == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_ashan}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">6</th>
@@ -96,7 +116,11 @@
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/ecomarket.png' %}"> ЭКО-Маркет</b></a></h5>
                                     </td>
-                                    <td class="black-red-style">{{price_from_site_eko}} грн</td>
+                                    {% if price_from_site_eko == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_eko}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">7</th>
@@ -104,7 +128,11 @@
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/metro.png' %}"> METRO</b></a></h5>
                                     </td>
-                                    <td class="black-red-style">{{price_from_site_metro}} грн</td>
+                                    {% if price_from_site_metro == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_metro}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">8</th>
@@ -112,7 +140,11 @@
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/nash_kray.png' %}"> Наш Край</b></a></h5>
                                     </td>
-                                    <td class="black-red-style">{{price_from_site_nash_kray}} грн</td>
+                                    {% if price_from_site_nash_kray == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_nash_kray}} грн</td>
+                                    {% endif %}
                                 </tr>
                                 <tr>
                                     <th scope="row">9</th>
@@ -120,7 +152,11 @@
                                                class="black-red-style"><b><img
                                             src="{% static 'my_app/images/fozzy.png' %}"> Fozzy</b></a></h5>
                                     </td>
-                                    <td class="black-red-style">{{price_from_site_fozzy}} грн</td>
+                                    {% if price_from_site_fozzy == 0 %}
+                                    <td class="out-of-stoke" align="center">нет</td>
+                                    {% else %}
+                                    <td class="black-red-style" align="center">{{price_from_site_fozzy}} грн</td>
+                                    {% endif %}
                                 </tbody>
                             </table>
                         </div>

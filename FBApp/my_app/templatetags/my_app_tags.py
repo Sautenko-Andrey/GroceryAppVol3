@@ -1255,283 +1255,283 @@ get_hlibniy_dar_pror_zerno_05l = tag.create_tag(ItemsPicsFromNet, 413)
 get_hlibniy_dar_jitnya_05l = tag.create_tag(ItemsPicsFromNet, 414)
 
 '''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Пшенична, 0,5л"'''
-get_hlibniy_dar_pshen_05l = tag.create_tag(ItemsPicsFromNet, 414)
+get_hlibniy_dar_pshen_05l = tag.create_tag(ItemsPicsFromNet, 415)
 
 '''Тэг,возвращающий информацию о "Горілка Green Day Organic Life, 0,7л"'''
-get_green_day_organic_life_07l = tag.create_tag(ItemsPicsFromNet, 415)
+get_green_day_organic_life_07l = tag.create_tag(ItemsPicsFromNet, 416)
 
 '''Тэг,возвращающий информацию о "Горілка Green Day, 0,7л"'''
-get_green_day_07l = tag.create_tag(ItemsPicsFromNet, 416)
+get_green_day_07l = tag.create_tag(ItemsPicsFromNet, 417)
 
 '''Тэг,возвращающий информацию о "Горілка Green Day Ultra Soft 40%, 0,7л"'''
-get_green_day_ultra_soft_07l = tag.create_tag(ItemsPicsFromNet, 417)
+get_green_day_ultra_soft_07l = tag.create_tag(ItemsPicsFromNet, 418)
 
 '''Тэг,возвращающий информацию о "Горілка Green Day Air, 0,7л"'''
-get_green_day_air_07l = tag.create_tag(ItemsPicsFromNet, 418)
+get_green_day_air_07l = tag.create_tag(ItemsPicsFromNet, 419)
 
 '''Тэг,возвращающий информацию о "Горілка Green Day Crystal 40%, 0,7л"'''
-get_green_day_crystal_07l = tag.create_tag(ItemsPicsFromNet, 419)
+get_green_day_crystal_07l = tag.create_tag(ItemsPicsFromNet, 420)
 
 '''Тэг,возвращающий информацию о "Горілка Medoff Класік, 0,7л"'''
-get_medoff_classic_07l = tag.create_tag(ItemsPicsFromNet, 420)
+get_medoff_classic_07l = tag.create_tag(ItemsPicsFromNet, 421)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Delikat м`яка, 0,7л"'''
-get_nemiroff_delikat_myaka_07l = tag.create_tag(ItemsPicsFromNet, 421)
+get_nemiroff_delikat_myaka_07l = tag.create_tag(ItemsPicsFromNet, 422)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Особлива штоф, 0,7л"'''
-get_nemiroff_osob_shtof_07l = tag.create_tag(ItemsPicsFromNet, 422)
+get_nemiroff_osob_shtof_07l = tag.create_tag(ItemsPicsFromNet, 423)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Де Люкс, 0,7л"'''
-get_nemiroff_deluxe_07l = tag.create_tag(ItemsPicsFromNet, 423)
+get_nemiroff_deluxe_07l = tag.create_tag(ItemsPicsFromNet, 424)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Lex, 0,7л"'''
-get_nemiroff_lex_07l = tag.create_tag(ItemsPicsFromNet, 424)
+get_nemiroff_lex_07l = tag.create_tag(ItemsPicsFromNet, 425)
 
 '''Тэг,возвращающий информацию о "Горілка Zubrowka, 0,7л"'''
-get_zubrowka_07l = tag.create_tag(ItemsPicsFromNet, 425)
+get_zubrowka_07l = tag.create_tag(ItemsPicsFromNet, 426)
 
 '''Тэг,возвращающий информацию о "Горілка Zubrowka Сzarna, 0,7л"'''
-get_zubrowka_czarna_07l = tag.create_tag(ItemsPicsFromNet, 426)
+get_zubrowka_czarna_07l = tag.create_tag(ItemsPicsFromNet, 427)
 
 '''Тэг,возвращающий информацию о "Горілка Гетьман, 0,7л"'''
-get_hetman_07l = tag.create_tag(ItemsPicsFromNet, 427)
+get_hetman_07l = tag.create_tag(ItemsPicsFromNet, 428)
 
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Класична, 0,7л"'''
-get_kozacka_rada_classic_07l = tag.create_tag(ItemsPicsFromNet, 428)
+get_kozacka_rada_classic_07l = tag.create_tag(ItemsPicsFromNet, 429)
 
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Преміум, 0,7л"'''
-get_kozacka_rada_premium_07l = tag.create_tag(ItemsPicsFromNet, 429)
+get_kozacka_rada_premium_07l = tag.create_tag(ItemsPicsFromNet, 430)
 
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 0,7л"'''
-get_kozacka_rada_osobliva_07l = tag.create_tag(ItemsPicsFromNet, 430)
+get_kozacka_rada_osobliva_07l = tag.create_tag(ItemsPicsFromNet, 431)
 
 '''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Поважна, 0,7л"'''
-get_persha_gildya_povajna_07l = tag.create_tag(ItemsPicsFromNet, 431)
+get_persha_gildya_povajna_07l = tag.create_tag(ItemsPicsFromNet, 432)
 
 '''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Верховна, 0,7л"'''
-get_persha_gildya_verhovna_07l = tag.create_tag(ItemsPicsFromNet, 432)
+get_persha_gildya_verhovna_07l = tag.create_tag(ItemsPicsFromNet, 433)
 
 '''Тэг,возвращающий информацию о "Горілка "Перша гільдія" Знатна, 0,7л"'''
-get_persha_gildya_znatna_07l = tag.create_tag(ItemsPicsFromNet, 433)
+get_persha_gildya_znatna_07l = tag.create_tag(ItemsPicsFromNet, 434)
 
 '''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 0,7л"'''
-get_hlib_dar_classic_07l = tag.create_tag(ItemsPicsFromNet, 434)
+get_hlib_dar_classic_07l = tag.create_tag(ItemsPicsFromNet, 435)
 
 '''Тэг,возвращающий информацию о "Горілка Medoff Класік , 1л"'''
-get_medoff_classic_1l = tag.create_tag(ItemsPicsFromNet, 435)
+get_medoff_classic_1l = tag.create_tag(ItemsPicsFromNet, 436)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Особлива штоф, 1л"'''
-get_nemiroff_shtof_1l = tag.create_tag(ItemsPicsFromNet, 436)
+get_nemiroff_shtof_1l = tag.create_tag(ItemsPicsFromNet, 437)
 
 '''Тэг,возвращающий информацию о "Горілка Nemiroff Delikat м`яка, 1л"'''
-get_nemiroff_delicat_soft_1l = tag.create_tag(ItemsPicsFromNet, 437)
+get_nemiroff_delicat_soft_1l = tag.create_tag(ItemsPicsFromNet, 438)
 
 '''Тэг,возвращающий информацию о "Горілка Zubrowka Bison Grass, 1л"'''
-get_zubrowka_bison_grass_1l = tag.create_tag(ItemsPicsFromNet, 438)
+get_zubrowka_bison_grass_1l = tag.create_tag(ItemsPicsFromNet, 439)
 
 '''Тэг,возвращающий информацию о "Горілка Zubrowka Biala, 1л"'''
-get_zubrowka_biala_1l = tag.create_tag(ItemsPicsFromNet, 439)
+get_zubrowka_biala_1l = tag.create_tag(ItemsPicsFromNet, 440)
 
 '''Тэг,возвращающий информацию о "Горілка Гетьман, 1000мл"'''
-get_hetman_1l = tag.create_tag(ItemsPicsFromNet, 440)
+get_hetman_1l = tag.create_tag(ItemsPicsFromNet, 441)
 
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Особлива, 1л"'''
-get_kozacka_rada_osobliva_1l = tag.create_tag(ItemsPicsFromNet, 441)
+get_kozacka_rada_osobliva_1l = tag.create_tag(ItemsPicsFromNet, 442)
 
 '''Тэг,возвращающий информацию о "Горілка "Козацька рада" Класична, 1л"'''
-get_kozacka_rada_classic_1l = tag.create_tag(ItemsPicsFromNet, 442)
+get_kozacka_rada_classic_1l = tag.create_tag(ItemsPicsFromNet, 443)
 
 '''Тэг,возвращающий информацию о "Горілка "Хлібний Дар" Класична, 1л"'''
-get_hlib_dar_classic_1l = tag.create_tag(ItemsPicsFromNet, 443)
+get_hlib_dar_classic_1l = tag.create_tag(ItemsPicsFromNet, 444)
 
 '''Тэг,возвращающий информацию о "Свинне ребро, кг"'''
-get_svin_rebro = tag.create_tag(ItemsPicsFromNet, 444)
+get_svin_rebro = tag.create_tag(ItemsPicsFromNet, 445)
 
 '''Тэг,возвращающий информацию о "Свиняче сало фермерське, кг"'''
-get_salo = tag.create_tag(ItemsPicsFromNet, 445)
+get_salo = tag.create_tag(ItemsPicsFromNet, 446)
 
 '''Тэг,возвращающий информацию о "Свинна гомілка, кг"'''
-get_svin_gomilka = tag.create_tag(ItemsPicsFromNet, 446)
+get_svin_gomilka = tag.create_tag(ItemsPicsFromNet, 447)
 
 '''Тэг,возвращающий информацию о "Печінка свинна охолоджена, кг"'''
-get_pechinka_svin = tag.create_tag(ItemsPicsFromNet, 447)
+get_pechinka_svin = tag.create_tag(ItemsPicsFromNet, 448)
 
 '''Тэг,возвращающий информацию о "Свинячий гуляш, кг"'''
-get_svin_gulyash = tag.create_tag(ItemsPicsFromNet, 448)
+get_svin_gulyash = tag.create_tag(ItemsPicsFromNet, 449)
 
 '''Тэг,возвращающий информацию о "Свинна піджарка, кг"'''
-get_svin_pidjarka = tag.create_tag(ItemsPicsFromNet, 449)
+get_svin_pidjarka = tag.create_tag(ItemsPicsFromNet, 450)
 
 '''Тэг,возвращающий информацию о "Горілка "Свинна корейка, кг"'''
-get_svin_koreyka = tag.create_tag(ItemsPicsFromNet, 450)
+get_svin_koreyka = tag.create_tag(ItemsPicsFromNet, 451)
 
 '''Тэг,возвращающий информацию о "Свинна вирізка, кг"'''
-get_svin_virezka = tag.create_tag(ItemsPicsFromNet, 451)
+get_svin_virezka = tag.create_tag(ItemsPicsFromNet, 452)
 
 '''Тэг,возвращающий информацию о "Свинна лопатка без кістки, кг"'''
-get_lopatka_bez_kistki = tag.create_tag(ItemsPicsFromNet, 452)
+get_lopatka_bez_kistki = tag.create_tag(ItemsPicsFromNet, 453)
 
 '''Тэг,возвращающий информацию о "Свинний окіст без кістки, кг"'''
-get_svin_okist_bez_kistki = tag.create_tag(ItemsPicsFromNet, 453)
+get_svin_okist_bez_kistki = tag.create_tag(ItemsPicsFromNet, 454)
 
 '''Тэг,возвращающий информацию о "Фарш свинний, кг"'''
-get_svin_farsh = tag.create_tag(ItemsPicsFromNet, 454)
+get_svin_farsh = tag.create_tag(ItemsPicsFromNet, 455)
 
 '''Тэг,возвращающий информацию о "Свинний биток без кістки, кг"'''
-get_svin_bitok_bez_kistki = tag.create_tag(ItemsPicsFromNet, 455)
+get_svin_bitok_bez_kistki = tag.create_tag(ItemsPicsFromNet, 456)
 
 '''Тэг,возвращающий информацию о "Свинне рагу, кг"'''
-get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 456)
+get_svin_ragu = tag.create_tag(ItemsPicsFromNet, 457)
 
 '''Тэг,возвращающий информацию о "Свинний ошийок без кістки, кг"'''
-get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 457)
+get_svin_osheek_bez_kistki = tag.create_tag(ItemsPicsFromNet, 458)
 
 '''Тэг,возвращающий информацию о "Куряча четвертина, кг"'''
-get_kuryacha_chetvert = tag.create_tag(ItemsPicsFromNet, 458)
+get_kuryacha_chetvert = tag.create_tag(ItemsPicsFromNet, 459)
 
 '''Тэг,возвращающий информацию о "Куряче стегно, кг"'''
-get_kuryache_stegno = tag.create_tag(ItemsPicsFromNet, 459)
+get_kuryache_stegno = tag.create_tag(ItemsPicsFromNet, 460)
 
 '''Тэг,возвращающий информацию о "Куряче крило, кг"'''
-get_kuryache_krilo = tag.create_tag(ItemsPicsFromNet, 460)
+get_kuryache_krilo = tag.create_tag(ItemsPicsFromNet, 461)
 
 '''Тэг,возвращающий информацию о "Куряче філе, кг"'''
-get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 461)
+get_kuryache_file = tag.create_tag(ItemsPicsFromNet, 462)
 
 '''Тэг,возвращающий информацию о "Куряча гомілка, кг"'''
-get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 462)
+get_kuryacha_gomilka = tag.create_tag(ItemsPicsFromNet, 463)
 
 '''Тэг,возвращающий информацию о "Напій Coca-Cola банка, 0,33л"'''
-get_coca_cola_origin_033_jb = tag.create_tag(ItemsPicsFromNet, 463)
+get_coca_cola_origin_033_jb = tag.create_tag(ItemsPicsFromNet, 464)
 
 '''Тэг,возвращающий информацию о "Напій Coca-Cola Zero м/б, 0,33л"'''
-get_coca_cola_zero_033_jb = tag.create_tag(ItemsPicsFromNet, 464)
+get_coca_cola_zero_033_jb = tag.create_tag(ItemsPicsFromNet, 465)
 
 '''Тэг,возвращающий информацию о "Напій Fanta Orange м/б, 0,33л"'''
-get_fanta_orange_033_jb = tag.create_tag(ItemsPicsFromNet, 465)
+get_fanta_orange_033_jb = tag.create_tag(ItemsPicsFromNet, 466)
 
 '''Тэг,возвращающий информацию о "Напій Fanta Pineapple м/б, 0,33л"'''
-get_fanta_pineapple_033_jb = tag.create_tag(ItemsPicsFromNet, 466)
+get_fanta_pineapple_033_jb = tag.create_tag(ItemsPicsFromNet, 467)
 
 '''Тэг,возвращающий информацию о "Напій Sprite м/б, 0,33л"'''
-get_sprite_033_jb = tag.create_tag(ItemsPicsFromNet, 467)
+get_sprite_033_jb = tag.create_tag(ItemsPicsFromNet, 468)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola ст.бут., 0,25л"'''
-get_coca_cola_025_glass = tag.create_tag(ItemsPicsFromNet, 468)
+get_coca_cola_025_glass = tag.create_tag(ItemsPicsFromNet, 469)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero стекло, 0,25л"'''
-get_coca_cola_zero_025_glass = tag.create_tag(ItemsPicsFromNet, 469)
+get_coca_cola_zero_025_glass = tag.create_tag(ItemsPicsFromNet, 470)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola 0,5л"'''
-get_coca_cola_original_05_pl = tag.create_tag(ItemsPicsFromNet, 470)
+get_coca_cola_original_05_pl = tag.create_tag(ItemsPicsFromNet, 471)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero, 0,5л"'''
-get_coca_cola_zero_05_pl = tag.create_tag(ItemsPicsFromNet, 471)
+get_coca_cola_zero_05_pl = tag.create_tag(ItemsPicsFromNet, 472)
 
 '''Тэг,возвращающий информацию о "Напиток Fanta Orange 0,5л"'''
-get_fanta_orange_05_pl = tag.create_tag(ItemsPicsFromNet, 472)
+get_fanta_orange_05_pl = tag.create_tag(ItemsPicsFromNet, 473)
 
 '''Тэг,возвращающий информацию о "Напиток Sprite 0,5л"'''
-get_sprite_05_pl = tag.create_tag(ItemsPicsFromNet, 473)
+get_sprite_05_pl = tag.create_tag(ItemsPicsFromNet, 474)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola 1,5л"'''
-get_coca_cola_original_15_pl = tag.create_tag(ItemsPicsFromNet, 474)
+get_coca_cola_original_15_pl = tag.create_tag(ItemsPicsFromNet, 475)
 
 '''Тэг,возвращающий информацию о "Напиток Coca-Cola Zero"'''
-get_coca_cola_zero_15_pl = tag.create_tag(ItemsPicsFromNet, 475)
+get_coca_cola_zero_15_pl = tag.create_tag(ItemsPicsFromNet, 476)
 
 '''Тэг,возвращающий информацию о "Напиток Sprite 1,5л"'''
-get_sprite_15_pl = tag.create_tag(ItemsPicsFromNet, 476)
+get_sprite_15_pl = tag.create_tag(ItemsPicsFromNet, 477)
 
 '''Тэг,возвращающий информацию о "Напиток Fanta Orange 1,5л"'''
-get_fanta_orange_15_pl = tag.create_tag(ItemsPicsFromNet, 477)
+get_fanta_orange_15_pl = tag.create_tag(ItemsPicsFromNet, 478)
 
 '''Тэг,возвращающий информацию о "Напиток сокосодержащий Fanta Shokata сильногазированный, 1,5л"'''
-get_fanta_shokata_15_pl = tag.create_tag(ItemsPicsFromNet, 478)
+get_fanta_shokata_15_pl = tag.create_tag(ItemsPicsFromNet, 479)
 
 '''Тэг,возвращающий информацию о "Напиток Fanta Мандарин, 1,5л"'''
-get_fanta_mandarin_15_pl = tag.create_tag(ItemsPicsFromNet, 479)
+get_fanta_mandarin_15_pl = tag.create_tag(ItemsPicsFromNet, 480)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс бекон, 133г"'''
-get_chips_luxe_becon_133gr = tag.create_tag(ItemsPicsFromNet, 480)
+get_chips_luxe_becon_133gr = tag.create_tag(ItemsPicsFromNet, 481)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс паприка, 133г"'''
-get_chips_luxe_paprika_133gr = tag.create_tag(ItemsPicsFromNet, 481)
+get_chips_luxe_paprika_133gr = tag.create_tag(ItemsPicsFromNet, 482)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс краб, 133г"'''
-get_chips_luxe_crab_133gr = tag.create_tag(ItemsPicsFromNet, 482)
+get_chips_luxe_crab_133gr = tag.create_tag(ItemsPicsFromNet, 483)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс сметана-цибуля, 133г"'''
-get_chips_luxe_smetana_cibulya_133gr = tag.create_tag(ItemsPicsFromNet, 483)
+get_chips_luxe_smetana_cibulya_133gr = tag.create_tag(ItemsPicsFromNet, 484)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс сир, 133г"'''
-get_chips_luxe_sir_133gr = tag.create_tag(ItemsPicsFromNet, 484)
+get_chips_luxe_sir_133gr = tag.create_tag(ItemsPicsFromNet, 485)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс сир, 71г"'''
-get_chips_luxe_sir_71gr = tag.create_tag(ItemsPicsFromNet, 485)
+get_chips_luxe_sir_71gr = tag.create_tag(ItemsPicsFromNet, 486)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс бекон, 71г"'''
-get_chips_luxe_becon_71gr = tag.create_tag(ItemsPicsFromNet, 486)
+get_chips_luxe_becon_71gr = tag.create_tag(ItemsPicsFromNet, 487)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс паприка, 71г"'''
-get_chips_luxe_paprika_71gr = tag.create_tag(ItemsPicsFromNet, 487)
+get_chips_luxe_paprika_71gr = tag.create_tag(ItemsPicsFromNet, 488)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс краб, 71г"'''
-get_chips_luxe_crab_71gr = tag.create_tag(ItemsPicsFromNet, 488)
+get_chips_luxe_crab_71gr = tag.create_tag(ItemsPicsFromNet, 489)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс сметана-цибуля, 71г"'''
-get_chips_luxe_smetana_cibulya_71gr = tag.create_tag(ItemsPicsFromNet, 489)
+get_chips_luxe_smetana_cibulya_71gr = tag.create_tag(ItemsPicsFromNet, 490)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс хвилясті зі смаком лисичок, 125г"'''
-get_chips_luxe_hvilyasti_lisichki_125gr = tag.create_tag(ItemsPicsFromNet, 490)
+get_chips_luxe_hvilyasti_lisichki_125gr = tag.create_tag(ItemsPicsFromNet, 491)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком сметани та цибулі, 183г"'''
-get_chips_luxe_smetana_cibulya_183gr = tag.create_tag(ItemsPicsFromNet, 491)
+get_chips_luxe_smetana_cibulya_183gr = tag.create_tag(ItemsPicsFromNet, 492)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком бекону, 183г"'''
-get_chips_luxe_becon_183gr = tag.create_tag(ItemsPicsFromNet, 492)
+get_chips_luxe_becon_183gr = tag.create_tag(ItemsPicsFromNet, 493)
 
 '''Тэг,возвращающий информацию о "Чіпси Люкс зі смаком сиру, 183г"'''
-get_chips_luxe_sir_183gr = tag.create_tag(ItemsPicsFromNet, 493)
+get_chips_luxe_sir_183gr = tag.create_tag(ItemsPicsFromNet, 494)
 
 '''Тэг,возвращающий информацию о "Снек пікантний Pringles Грецький соус цацикі, 185г"'''
-get_chips_pringles_greec_souse_caciki_185gr = tag.create_tag(ItemsPicsFromNet, 494)
+get_chips_pringles_greec_souse_caciki_185gr = tag.create_tag(ItemsPicsFromNet, 495)
 
 '''Тэг,возвращающий информацию о "Снек пікантний Pringles Паприка, 165г"'''
-get_chips_pringles_paprika_165gr = tag.create_tag(ItemsPicsFromNet, 495)
+get_chips_pringles_paprika_165gr = tag.create_tag(ItemsPicsFromNet, 496)
 
 '''Тэг,возвращающий информацию о "Снек пікантний Pringles Піца пепероні, 185г"'''
-get_chips_pringles_pizza_peperoni_185gr = tag.create_tag(ItemsPicsFromNet, 496)
+get_chips_pringles_pizza_peperoni_185gr = tag.create_tag(ItemsPicsFromNet, 497)
 
 '''Тэг,возвращающий информацию о "Чіпси Pringles сир-цибуля, 165г"'''
-get_chips_pringles_sir_cibulya_165gr = tag.create_tag(ItemsPicsFromNet, 497)
+get_chips_pringles_sir_cibulya_165gr = tag.create_tag(ItemsPicsFromNet, 498)
 
 '''Тэг,возвращающий информацию о "Чіпси Pringles Оригінал, 165г"'''
-get_chips_pringles_original_165gr = tag.create_tag(ItemsPicsFromNet, 498)
+get_chips_pringles_original_165gr = tag.create_tag(ItemsPicsFromNet, 499)
 
 '''Тэг,возвращающий информацию о "Чіпси Pringles сир, 165г"'''
-get_chips_pringles_sir_165gr = tag.create_tag(ItemsPicsFromNet, 499)
+get_chips_pringles_sir_165gr = tag.create_tag(ItemsPicsFromNet, 500)
 
 '''Тэг,возвращающий информацию о "Чипси Lay`s картопляні зі смаком паприки, 120г"'''
-get_chips_lays_paprika_120gr = tag.create_tag(ItemsPicsFromNet, 500)
+get_chips_lays_paprika_120gr = tag.create_tag(ItemsPicsFromNet, 501)
 
 '''Тэг,возвращающий информацию о "Чипси Lay`s картопляні зі смаком краба, 120г"'''
-get_chips_lays_crab_120gr = tag.create_tag(ItemsPicsFromNet, 501)
+get_chips_lays_crab_120gr = tag.create_tag(ItemsPicsFromNet, 502)
 
 '''Тэг,возвращающий информацию о "Чіпси Lay`s картопляні зі смаком сиру, 60г"'''
-get_chips_lays_sir_60gr = tag.create_tag(ItemsPicsFromNet, 502)
+get_chips_lays_sir_60gr = tag.create_tag(ItemsPicsFromNet, 503)
 
 '''Тэг,возвращающий информацию о "Сир Свет Сыр Фета Українська розсільний 45% в/у"'''
-get_sir_svet_feta_ukr_rozsil_45_1kg = tag.create_tag(ItemsPicsFromNet, 503)
+get_sir_svet_feta_ukr_rozsil_45_1kg = tag.create_tag(ItemsPicsFromNet, 504)
 
 '''Тэг,возвращающий информацию о "Оливки Extra! чорні без кісточки, 300г"'''
-get_olivki_extra_chorn_bez_kist_300gr = tag.create_tag(ItemsPicsFromNet, 504)
+get_olivki_extra_chorn_bez_kist_300gr = tag.create_tag(ItemsPicsFromNet, 505)
 
 '''Тэг,возвращающий информацию о "Масло оливковое Повна Чаша, 913г"'''
-get_oliv_oil_povna_chasha_913gr = tag.create_tag(ItemsPicsFromNet, 505)
+get_oliv_oil_povna_chasha_913gr = tag.create_tag(ItemsPicsFromNet, 506)
 
 '''Тэг,возвращающий информацию о "Базилік Вершки та Корінці червоний свіжий з коренем, 50г"'''
-get_basilik_svij = tag.create_tag(ItemsPicsFromNet, 506)
+get_basilik_svij = tag.create_tag(ItemsPicsFromNet, 507)
 
 
 

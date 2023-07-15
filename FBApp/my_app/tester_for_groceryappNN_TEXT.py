@@ -1037,8 +1037,6 @@ class TesterForGroceryAppText:
             return CHIPS_LUXE_CRAB_71GR
         elif np.argmax(result) == 486:
             return CHIPS_LUXE_SMETANA_CIBULYA_71GR
-
-
         elif np.argmax(result) == 487:
             return CHIPS_LUXE_HVIL_LISICHKI_125GR
         elif np.argmax(result) == 488:

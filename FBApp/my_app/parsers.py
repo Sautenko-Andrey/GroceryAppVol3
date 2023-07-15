@@ -46,8 +46,16 @@ class ProductParserVol2:
         self.options = undetected_chromedriver.ChromeOptions()
         # self.options.add_argument('enable-features=NetworkServiceInProcess')
         self.options.add_argument("disable-features=NetworkService")  # если верхнее не работает,то включаем это
-        # self.options.add_argument("--disable-gpu")
+        #last arguments
+        self.options.add_argument("--disable-gpu")
+        self.options.add_argument("--no-sandbox")
+        self.options.add_argument("--disable-extensions")
+        self.options.add_argument("--dns-prefetch-disable")
+        #end last arguments
         self.options.add_argument('--headless')
+        #новая опция из-за ошибки при парсинге
+        self.options.add_argument("--disable-site-isolation-trials")
+        #конец новой опции
         self.driver = undetected_chromedriver.Chrome(options=self.options)
 
     def check_comma(self,text:str):
@@ -86,7 +94,7 @@ class ProductParserVol2:
 
         #время задержки при парсинге 5 секунд
         waiting_time = 5
-        spec_waiting_time_for_metro = 15
+        long_waiting_time = 15
 
         #номера индексов магазинов в списке с ценами по порядку
         atb_index = 0
@@ -4325,7 +4333,7 @@ class ProductParserVol2:
             'https://eko.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04820080724087/',
             'https://varus.ua/gorilka-kozacka-rada-osobliva-1-l',
             'https://auchan.ua/ua/vodka-kozac-ka-rada-osobaja-40-1-l-1165060/',
-            'https://novus.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04820080724087/',
+            'https://novus.online/product/gorilka-kozacka-rada-osobliva-40-1l',
             'https://fozzyshop.ua/vodka/1944-vodka-kozacka-rada-osobaya-4820080724087.html'
         ])
 
@@ -4337,7 +4345,7 @@ class ProductParserVol2:
             'https://varus.ua/gorilka-kozacka-rada-klasichna-40-1-l',
             'https://shop.silpo.ua/product/gorilka-kozatska-rada-klasychna-436336',
             'https://auchan.ua/ua/vodka-kozac-ka-rada-klassicheskaja-40-1l-1047907/',
-            'https://novus.zakaz.ua/uk/products/gorilka-kozatska-rada-1000ml-ukrayina--04810027013480/',
+            'https://novus.online/product/gorilka-kozacka-rada-klasicna-40-1l',
             'https://fozzyshop.ua/vodka/1973-vodka-kozacka-rada-klassicheskaya-4820080724063.html'
         ])
 
@@ -4347,7 +4355,7 @@ class ProductParserVol2:
             'https://eko.zakaz.ua/uk/products/gorilka-khlibnii-dar-1000ml-ukrayina--04820080722045/',
             'https://varus.ua/gorilka-hlibniy-dar-klasichna-40-1-l',
             'https://shop.silpo.ua/product/gorilka-khlibnyi-dar-klasychna-337180',
-            'https://novus.zakaz.ua/uk/products/gorilka-khlibnii-dar-1000ml-ukrayina--04820080722045/',
+            'https://novus.online/product/gorilka-hlibnij-dar-klasicna-40-1l',
             'https://fozzyshop.ua/vodka/2066-vodka-khlibnij-dar-klassicheskaya-4820080722045.html'
         ])
 
