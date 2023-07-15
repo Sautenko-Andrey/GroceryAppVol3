@@ -3821,7 +3821,8 @@ def get_all_prices():
     for item in all_products_names:
         for product, values in item.items():
             to_json[product] = values
-    with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
+    #with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
+    with open('../prices_store.json', 'w') as f:
         json.dump(to_json, f, sort_keys=False, indent=len(all_products_names))
         print('Все продукты и их цены добавлены в базу данных!')
 

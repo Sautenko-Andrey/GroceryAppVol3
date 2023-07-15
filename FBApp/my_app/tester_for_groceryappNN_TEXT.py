@@ -47,6 +47,10 @@ class TesterForGroceryAppText:
         # загружаем обученную модель НС для распознования товара по тексту:
         model = load_model('/home/andrey/GroceryAppVol3/FBApp/my_app/my_model_text')
 
+        #загружаем обученную модель НС для распознования товара по тексту (для образа включительно):
+        #model = load_model('/code/my_model_text')
+        #----------------------------------------
+
         # переводим пользовательский запрос в нижний регистр:
         user_text = user_text.lower()
 

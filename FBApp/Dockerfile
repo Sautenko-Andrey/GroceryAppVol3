@@ -4,7 +4,14 @@ ENV PYTHONUNBUFFERED=1
 
 WORKDIR /code
 
-COPY /my_app/prices_store.json .
+#COPY /my_app/prices_store.json .
+COPY /prices_store.json .
+
+#сopying NN data
+COPY /my_model_text .
+
+#copying learning data for RNN
+COPY /ALL_TEXT_VARIANTS .
 
 COPY requirements.txt .
 

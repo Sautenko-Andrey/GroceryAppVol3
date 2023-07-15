@@ -3,12 +3,21 @@ from .templatetags.my_app_tags import *
 
 from .items_full_names import *
 
+#for local
+# try:
+#     with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json') as f:
+#         store = json.load(f)
+# except Exception:
+#     print("I can't open data base with prices. Check path:"
+#           " '/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json'")
+
+#for docker
 try:
-    with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json') as f:
+    with open('prices_store.json') as f:
         store = json.load(f)
 except Exception:
-    print("I can't open data base with prices. Check path:"
-          " '/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json'")
+    print("I can't open data base with prices. Change or check path:"
+          " '../prices_store.json'")
 
 
 class MutualContext:
@@ -1351,7 +1360,12 @@ class RefersForRNN:
         '''Функция для предвариетльной обработки обучающего текстового набора для НС'''
 
         # загрузка обучающего текста
-        path = f'/home/andrey/grocery_data/ALL_TEXT_VARIANTS/{path_tail}'
+        path = f'/home/andrey/grocery_data/ALL_TEXT_VARIANTS/{path_tail}'  #for local
+
+        #for docker
+        #path = f'/code/ALL_TEXT_VARIANTS/{path_tail}'
+        #------------------------------------------------------------
+
         with open(path, 'r', encoding='utf-8') as f:
             item_text = f.readlines()
         # убираем первый невидимый символ
