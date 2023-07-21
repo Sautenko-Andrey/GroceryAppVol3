@@ -1403,41 +1403,72 @@ def get_dishes_prices(ingredients_prices:tuple, devider:int) -> list:
 
     return final_prices
 
-# borsh_devider = 6
-# water_rate = 3
-# meat_rate = 0.8
-# potato_rate = 2
-# beet_rate = 10
-# carrot_rate = 10
-# onion_rate = 0.2
-# cabbage_rate = 0.4
-#
-# borsh = get_dishes_prices(
-#     (
-#         ((store["water_in_bottle_6l"]["atb"] / water_rate),
-#         (store["pork_lopatka"]["atb"] / meat_rate),
-#         (store["potato"]["atb"] / potato_rate),
-#         (store["beet"]["atb"] / beet_rate),
-#         (store["carrot"]["atb"] / carrot_rate),
-#         (store["onion"]["atb"] * onion_rate),
-#         (store["cabbage"]["atb"] * cabbage_rate)),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#         (0,0,0,0,0,0,0),
-#
-#     ), borsh_devider
-# )
+
+class UserAmountConverter:
+    '''Класс фомирующий величину (количество) продукто(продуктов)
+    для формирования точной цены для пользователе в "Продуктовых наборах"'''
+
+    __KILOGRAMS_SYMB = 'кКkK'
+    __GRAMMS_SYMB = 'гГgG'
+    __PICES_SYMB = 'ШшПпУуКкБбПпНн'
+    __FIRST_SYMBOL = 0
+
+    def __init__(self, user_request:str):
+        self.user_request = user_request
+
+    def __convert_coma_to_dot(self, text: str) -> str:
+        '''Метод, находящий и преобразовывающий запятые в точки
+        в поле запроса пользователя'''
+
+        new_text = []
+        for symb in text:
+            if symb == ',':
+                symb = '.'
+            new_text.append(symb)
+        res = ''.join(new_text)
+        return res
+
+    def __clear_dots(self, text: str) -> str:
+        '''Метод который очищает строку от лишних точек в запросе юзера'''
+
+        text = self.__convert_coma_to_dot(text)
+        if not text[0].isdigit():
+            return '0'
+        first_part = []
+        second_part = []
+        for i in range(len(text) - 1):
+            if text[i] == '.':
+                first_part = list(text[:i + 1])
+                second_part = list(text[i + 1:])
+                break
+            else:
+                first_part = list(text[:i + 1])
+                second_part = list(text[i + 1:])
+
+        second_part_upgrade = [x for x in second_part if x != '.']
+        res = ''.join(first_part + second_part_upgrade)
+        return res
+
+    def convert_str_to_num(self) -> float:
+        '''Метод , который окончательно формирует множитель
+        в зависимости от размерности, указанной пользователем'''
+
+        text = self.__clear_dots(self.user_request)
+        dig = [x for x in text if x.isdigit() or x == '.']
+
+        dig_type = [x for x in text if x.isalpha()]
+
+        if len(dig_type) < 1:
+            res = float(''.join(dig))
+            return res
+        else:
+            if dig_type[self.__FIRST_SYMBOL] in self.__GRAMMS_SYMB:
+                res = float(''.join(dig)) / 1000
+                return res
+
+            elif dig_type[self.__FIRST_SYMBOL] in self.__KILOGRAMS_SYMB or dig_type[self.__FIRST_SYMBOL] in self.__PICES_SYMB:
+                res = float(''.join(dig))
+                return res
+            else:
+                print("ERROR!!!!!")
 

@@ -30,7 +30,7 @@ from .permissions import ReadOnlyPermission
 
 from django.shortcuts import redirect
 
-from .utils import ContextSupervisor
+from .utils import ContextSupervisor, UserAmountConverter
 
 with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json') as f:
 #with open('/code/prices_store.json') as f:  #for docker image
@@ -464,6 +464,7 @@ class SetResults(MutualContext, ListView):
         total_product_info = []
 
         for order in user_orders:
+
             result = pred.identify_item(order.product_name)
             # добавим цены из БД цен
             # подключение класса, который формирует контекст (цены + инфо о товаре)
@@ -507,21 +508,30 @@ class SetResults(MutualContext, ListView):
             best_price=best_price_identify(filtered_prices)
             print('Best price: ',best_price)
 
+            # new
+            mul_amount = UserAmountConverter(order.amount).convert_str_to_num()
+            # end
+
             total_product_info.append(
                 {result: [
                     order.amount, order.atb_choice, order.eko_choice, order.varus_choice,
                     order.silpo_choice, order.ashan_choice, order.novus_choice, order.metro_choice,
-                    order.nash_kray_choice, order.fozzy_choice, atb_price, eko_price, varus_price, silpo_price,
-                    ashan_price,novus_price,metro_price,nash_kray_price,fozzy_price,picture,best_price
+                    order.nash_kray_choice, order.fozzy_choice, round(atb_price * mul_amount,2),
+                    round(eko_price * mul_amount,2),round(varus_price * mul_amount,2),
+                    round(silpo_price * mul_amount,2),round(ashan_price * mul_amount,2),
+                    round(novus_price * mul_amount,2),round(metro_price * mul_amount,2),
+                    round(nash_kray_price * mul_amount,2),round(fozzy_price * mul_amount,2),
+                    picture, best_price
                 ]}
             )
+
         return total_product_info
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
         context_dict['all_relevant_markets'] = get_all_markets
         # отображение списка кортежей с полной информацией по заказу
-        context_dict['products_set'] = self.NN_works()
+        context_dict['products_set']  = self.NN_works()
         mutual_context_dict = self.get_user_context(title='Результаты по наборам')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
 
