@@ -43,7 +43,7 @@ oil_oliv_var_greece_salat = 0.05
 basilik_var = 0.5
 greece_salad_devider = 4
 
-silpo_correct_price = 10
+correct_price_mul_10 = 10
 
 egg_correct_price = 10
 
@@ -72,9 +72,9 @@ all_products_names = [
         "atb": parser.garlik_parcer()[0],
         "eko": parser.garlik_parcer()[1],
         "varus": parser.garlik_parcer()[2],
-        "silpo": parser.garlik_parcer()[3],
+        "silpo": parser.garlik_parcer()[3] * correct_price_mul_10,
         "novus": parser.garlik_parcer()[5],
-        "nash_kray": parser.garlik_parcer()[7],
+        "nash_kray": parser.garlik_parcer()[7] * correct_price_mul_10,
         "fozzy": parser.garlik_parcer()[8]
     }},
     {'tea_minutka': {
@@ -86,7 +86,7 @@ all_products_names = [
         "atb": parser.apple_golden_parcer()[0],
         "eko": parser.apple_golden_parcer()[1],
         "varus": parser.apple_golden_parcer()[2],
-        "silpo": parser.apple_golden_parcer()[3] * silpo_correct_price,
+        "silpo": parser.apple_golden_parcer()[3] * correct_price_mul_10,
         "metro": parser.apple_golden_parcer()[6],
         "nash_kray": parser.apple_golden_parcer()[7],
         "fozzy": parser.apple_golden_parcer()[8]
@@ -127,7 +127,7 @@ all_products_names = [
         "atb": parser.onion_parcer()[0],
         "eko": parser.onion_parcer()[1],
         "varus": parser.onion_parcer()[2],
-        "silpo": parser.onion_parcer()[3] * silpo_correct_price,
+        "silpo": parser.onion_parcer()[3] * correct_price_mul_10,
         "novus": parser.onion_parcer()[5],
         "metro": parser.onion_parcer()[6],
         "nash_kray": parser.onion_parcer()[7],
@@ -137,7 +137,7 @@ all_products_names = [
         "atb": parser.apple_black_prince_parcer()[0],
         "eko": parser.apple_black_prince_parcer()[1],
         "varus": parser.apple_black_prince_parcer()[2],
-        "silpo": parser.apple_black_prince_parcer()[3] * silpo_correct_price,
+        "silpo": parser.apple_black_prince_parcer()[3] * correct_price_mul_10,
         "metro": parser.apple_black_prince_parcer()[6],
         "fozzy": parser.apple_black_prince_parcer()[8]
     }},
@@ -148,7 +148,7 @@ all_products_names = [
         "atb": parser.limon_parcer()[0],
         "eko": parser.limon_parcer()[1],
         "varus": parser.limon_parcer()[2],
-        "silpo": parser.limon_parcer()[3] * silpo_correct_price,
+        "silpo": parser.limon_parcer()[3] * correct_price_mul_10,
         "novus": parser.limon_parcer()[5],
         "metro": parser.limon_parcer()[6],
         "nash_kray": parser.limon_parcer()[7],
@@ -186,7 +186,7 @@ all_products_names = [
         "atb": parser.carrot_parcer()[0],
         "eko": parser.carrot_parcer()[1],
         "varus": parser.carrot_parcer()[2],
-        "silpo": parser.carrot_parcer()[3] * silpo_correct_price,
+        "silpo": parser.carrot_parcer()[3] * correct_price_mul_10,
         "novus": parser.carrot_parcer()[5],
         "metro": parser.carrot_parcer()[6],
         "nash_kray": parser.carrot_parcer()[7],
@@ -196,7 +196,7 @@ all_products_names = [
         "atb": parser.cabbage_parcer()[0],
         "eko": parser.cabbage_parcer()[1],
         "varus": parser.cabbage_parcer()[2],
-        "silpo": parser.cabbage_parcer()[3] * silpo_correct_price,
+        "silpo": parser.cabbage_parcer()[3] * correct_price_mul_10,
         "novus": parser.cabbage_parcer()[5],
         "metro": parser.cabbage_parcer()[6],
         "nash_kray": parser.cabbage_parcer()[7],
@@ -204,14 +204,14 @@ all_products_names = [
     }},
     {'eggs': {
         "atb": parser.egg_parcer()[0],
-        "eko": parser.egg_parcer()[1],
-        "varus": parser.egg_parcer()[2],
+        "eko": parser.egg_parcer()[1] * correct_price_mul_10,
+        "varus": parser.egg_parcer()[2] * correct_price_mul_10,
         "silpo": parser.egg_parcer()[3],
         "ashan": parser.egg_parcer()[4],
         "novus": parser.egg_parcer()[5],
         "metro": parser.egg_parcer()[6],
         "nash_kray": parser.egg_parcer()[7],
-        "fozzy": parser.egg_parcer()[8] * silpo_correct_price
+        "fozzy": parser.egg_parcer()[8] * correct_price_mul_10
     }},
     {'mayonez_detsk_shedro_67%': {
         "atb": parser.mayonez_detsk_shedro_67_parcer()[0],
@@ -258,10 +258,10 @@ all_products_names = [
         "atb": parser.pork_lopatka_parser()[0],
         "eko": parser.pork_lopatka_parser()[1],
         "varus": parser.pork_lopatka_parser()[2],
-        "silpo": parser.pork_lopatka_parser()[3] * silpo_correct_price,
+        "silpo": parser.pork_lopatka_parser()[3] * correct_price_mul_10,
         "novus": parser.pork_lopatka_parser()[5],
         "metro": parser.pork_lopatka_parser()[6],
-        "nash_kray": parser.pork_lopatka_parser()[7] * silpo_correct_price,
+        "nash_kray": parser.pork_lopatka_parser()[7] * correct_price_mul_10,
         "fozzy": parser.pork_lopatka_parser()[8]
     }},
     {'potato': {
@@ -277,7 +277,7 @@ all_products_names = [
         "atb": parser.beet_parser()[0],
         "eko": parser.beet_parser()[1],
         "varus": parser.beet_parser()[2],
-        "silpo": parser.beet_parser()[3] * silpo_correct_price,
+        "silpo": parser.beet_parser()[3] * correct_price_mul_10,
         "novus": parser.beet_parser()[5],
         "metro": parser.beet_parser()[6],
         "fozzy": parser.beet_parser()[8]
@@ -334,7 +334,7 @@ all_products_names = [
         "atb": parser.apple_gala_parser()[0],
         "eko": parser.apple_gala_parser()[1],
         "varus": parser.apple_gala_parser()[2],
-        "silpo": parser.apple_gala_parser()[3] * silpo_correct_price,
+        "silpo": parser.apple_gala_parser()[3],
         "novus": parser.apple_gala_parser()[5],
         "metro": parser.apple_gala_parser()[6],
         "fozzy": parser.apple_gala_parser()[8]
@@ -1444,7 +1444,7 @@ all_products_names = [
         "atb": parser.banana_parser()[0],
         "eko": parser.banana_parser()[1],
         "varus": parser.banana_parser()[2],
-        "silpo": parser.banana_parser()[3] * silpo_correct_price,
+        "silpo": parser.banana_parser()[3] * correct_price_mul_10,
         "novus": parser.banana_parser()[5],
         "metro": parser.banana_parser()[6],
         "nash_kray": parser.banana_parser()[7],
@@ -1455,7 +1455,7 @@ all_products_names = [
         "atb": parser.orange_parser()[0],
         "eko": parser.orange_parser()[1],
         "varus": parser.orange_parser()[2],
-        "silpo": parser.orange_parser()[3] * silpo_correct_price,
+        "silpo": parser.orange_parser()[3] * correct_price_mul_10,
         "novus": parser.orange_parser()[5],
         "metro": parser.orange_parser()[6],
         "nash_kray": parser.orange_parser()[7],
@@ -1466,7 +1466,7 @@ all_products_names = [
         "atb": parser.kiwi_parser()[0],
         "eko": parser.kiwi_parser()[1],
         "varus": parser.kiwi_parser()[2],
-        "silpo": parser.kiwi_parser()[3] * silpo_correct_price,
+        "silpo": parser.kiwi_parser()[3] * correct_price_mul_10,
         "metro": parser.kiwi_parser()[6],
         "nash_kray": parser.kiwi_parser()[7],
         "fozzy": parser.kiwi_parser()[8]
@@ -1475,7 +1475,7 @@ all_products_names = [
     {'coconut': {
         "atb": parser.coconut_parser()[0],
         "varus": parser.coconut_parser()[2],
-        "silpo": parser.coconut_parser()[3] * silpo_correct_price,
+        "silpo": parser.coconut_parser()[3] * correct_price_mul_10,
         "metro": parser.coconut_parser()[6],
         "nash_kray": parser.coconut_parser()[7],
         "fozzy": parser.coconut_parser()[8]
@@ -1485,7 +1485,7 @@ all_products_names = [
         "atb": parser.grapefruit_parser()[0],
         "eko": parser.grapefruit_parser()[1],
         "varus": parser.grapefruit_parser()[2],
-        "silpo": parser.grapefruit_parser()[3] * silpo_correct_price,
+        "silpo": parser.grapefruit_parser()[3] * correct_price_mul_10,
         "novus": parser.grapefruit_parser()[5],
         "metro": parser.grapefruit_parser()[6],
         "nash_kray": parser.grapefruit_parser()[7],
@@ -1496,7 +1496,7 @@ all_products_names = [
         "atb": parser.pomegranate_parser()[0],
         "eko": parser.pomegranate_parser()[1],
         "varus": parser.pomegranate_parser()[2],
-        "silpo": parser.pomegranate_parser()[3] * silpo_correct_price,
+        "silpo": parser.pomegranate_parser()[3] * correct_price_mul_10,
         "metro": parser.pomegranate_parser()[6],
         "fozzy": parser.pomegranate_parser()[8]
     }},
@@ -1523,7 +1523,7 @@ all_products_names = [
         "atb": parser.cucumber_parser()[0],
         "eko": parser.cucumber_parser()[1],
         "varus": parser.cucumber_parser()[2],
-        "silpo": parser.cucumber_parser()[3] * silpo_correct_price,
+        "silpo": parser.cucumber_parser()[3] * correct_price_mul_10,
         "novus": parser.cucumber_parser()[5],
         "metro": parser.cucumber_parser()[6],
         "nash_kray": parser.cucumber_parser()[7],
@@ -1534,7 +1534,7 @@ all_products_names = [
         "atb": parser.kabachki_parser()[0],
         "eko": parser.kabachki_parser()[1],
         "varus": parser.kabachki_parser()[2],
-        "silpo": parser.kabachki_parser()[3] * silpo_correct_price,
+        "silpo": parser.kabachki_parser()[3] * correct_price_mul_10,
         "novus": parser.kabachki_parser()[5],
         "metro": parser.kabachki_parser()[6],
         "nash_kray": parser.kabachki_parser()[7],
@@ -1544,7 +1544,7 @@ all_products_names = [
     {'red_bolgar_papper': {
         "atb": parser.red_bolg_papper_parser()[0],
         "eko": parser.red_bolg_papper_parser()[1],
-        "silpo": parser.red_bolg_papper_parser()[3] * silpo_correct_price,
+        "silpo": parser.red_bolg_papper_parser()[3] * correct_price_mul_10,
         "novus": parser.red_bolg_papper_parser()[5],
         "metro": parser.red_bolg_papper_parser()[6],
         "nash_kray": parser.red_bolg_papper_parser()[7],
@@ -1553,7 +1553,7 @@ all_products_names = [
 
     {'yellow_bolgar_papper': {
         "atb": parser.yellow_bolg_papper_parser()[0],
-        "silpo": parser.yellow_bolg_papper_parser()[3] * silpo_correct_price,
+        "silpo": parser.yellow_bolg_papper_parser()[3] * correct_price_mul_10,
         "novus": parser.yellow_bolg_papper_parser()[5],
         "metro": parser.yellow_bolg_papper_parser()[6],
         "nash_kray": parser.yellow_bolg_papper_parser()[7],
@@ -1570,7 +1570,7 @@ all_products_names = [
     }},
 
     {'brokoli': {
-        "silpo": parser.brokoli_parser()[3],
+        "silpo": parser.brokoli_parser()[3] * correct_price_mul_10,
         "novus": parser.brokoli_parser()[5],
         "nash_kray": parser.brokoli_parser()[7],
         "fozzy": parser.brokoli_parser()[8]
@@ -3165,16 +3165,16 @@ all_products_names = [
     {'svinne_rebro': {
         "eko": parser.svinne_rebro_parser()[1],
         "varus": parser.svinne_rebro_parser()[2],
-        "silpo": parser.svinne_rebro_parser()[3],
+        "silpo": parser.svinne_rebro_parser()[3] * correct_price_mul_10,
         "novus": parser.svinne_rebro_parser()[5],
         "metro": parser.svinne_rebro_parser()[6],
-        "nash_kray": parser.svinne_rebro_parser()[7],
+        "nash_kray": parser.svinne_rebro_parser()[7] * correct_price_mul_10,
         "fozzy": parser.svinne_rebro_parser()[8]
     }},
 
     {'salo': {
         "varus": parser.salo_parser()[2],
-        "silpo": parser.salo_parser()[3],
+        "silpo": parser.salo_parser()[3] * correct_price_mul_10,
         "novus": parser.salo_parser()[5],
         "nash_kray": parser.salo_parser()[7],
         "fozzy": parser.salo_parser()[8]
@@ -3193,7 +3193,7 @@ all_products_names = [
     }},
 
     {'svin_gulyash': {
-        "silpo": parser.svin_gulyash_parser()[3],
+        "silpo": parser.svin_gulyash_parser()[3] * correct_price_mul_10,
         "fozzy": parser.svin_gulyash_parser()[8]
     }},
 
@@ -3204,7 +3204,7 @@ all_products_names = [
 
     {'svin_koreyka': {
         "varus": parser.svin_koreyka_parser()[2],
-        "silpo": parser.svin_koreyka_parser()[3],
+        "silpo": parser.svin_koreyka_parser()[3] * correct_price_mul_10,
         "novus": parser.svin_koreyka_parser()[5],
         "metro": parser.svin_koreyka_parser()[6],
         "nash_kray": parser.svin_koreyka_parser()[7],
@@ -3213,7 +3213,7 @@ all_products_names = [
     {'svin_virizka': {
         "eko": parser.svin_virizka_parser()[1],
         "varus": parser.svin_virizka_parser()[2],
-        "silpo": parser.svin_virizka_parser()[3],
+        "silpo": parser.svin_virizka_parser()[3] * correct_price_mul_10,
         "metro": parser.svin_virizka_parser()[6],
         "fozzy": parser.svin_virizka_parser()[8]
     }},
@@ -3221,37 +3221,37 @@ all_products_names = [
     {'svin_lopatka_bez_kistki': {
         "eko": parser.svin_lopatka_bez_kistki_parser()[1],
         "varus": parser.svin_lopatka_bez_kistki_parser()[2],
-        "silpo": parser.svin_lopatka_bez_kistki_parser()[3],
+        "silpo": parser.svin_lopatka_bez_kistki_parser()[3] * correct_price_mul_10,
         "metro": parser.svin_lopatka_bez_kistki_parser()[6],
         "fozzy": parser.svin_lopatka_bez_kistki_parser()[8]
     }},
 
     {'svin_okist_bez_kistki': {
-        "silpo": parser.svin_okist_bez_kistki_parser()[3],
+        "silpo": parser.svin_okist_bez_kistki_parser()[3] * correct_price_mul_10,
         "fozzy": parser.svin_okist_bez_kistki_parser()[8]
     }},
 
     {'svin_farsh': {
-        "nash_kray": parser.svin_farsh_parser()[7],
+        "nash_kray": parser.svin_farsh_parser()[7] * correct_price_mul_10,
         "fozzy": parser.svin_farsh_parser()[8]
     }},
 
     {'svin_bitok_bez_kosti': {
         "eko": parser.svin_bitok_bez_kosti_parser()[1],
         "varus": parser.svin_bitok_bez_kosti_parser()[2],
-        "silpo": parser.svin_bitok_bez_kosti_parser()[3],
+        "silpo": parser.svin_bitok_bez_kosti_parser()[3] * correct_price_mul_10,
         "fozzy": parser.svin_bitok_bez_kosti_parser()[8]
     }},
 
     {'svin_ragu': {
-        "silpo": parser.svin_ragu_parser()[3],
+        "silpo": parser.svin_ragu_parser()[3] * correct_price_mul_10,
         "fozzy": parser.svin_ragu_parser()[8]
     }},
 
     {'svin_osheek_bez_kistki': {
         "eko": parser.svin_osheek_bez_kistki_parser()[1],
         "varus": parser.svin_osheek_bez_kistki_parser()[2],
-        "silpo": parser.svin_osheek_bez_kistki_parser()[3],
+        "silpo": parser.svin_osheek_bez_kistki_parser()[3] * correct_price_mul_10,
         "novus": parser.svin_osheek_bez_kistki_parser()[5],
         "metro": parser.svin_osheek_bez_kistki_parser()[6],
         "fozzy": parser.svin_osheek_bez_kistki_parser()[8]
@@ -3261,7 +3261,7 @@ all_products_names = [
         "atb": parser.kuryacha_chetvert_parser()[0],
         "eko": parser.kuryacha_chetvert_parser()[1],
         "varus": parser.kuryacha_chetvert_parser()[2],
-        "silpo": parser.kuryacha_chetvert_parser()[3],
+        "silpo": parser.kuryacha_chetvert_parser()[3] * correct_price_mul_10,
         "nash_kray": parser.kuryacha_chetvert_parser()[7],
         "fozzy": parser.kuryacha_chetvert_parser()[8]
     }},
@@ -3270,7 +3270,7 @@ all_products_names = [
         "atb": parser.kuryache_stegno_parser()[0],
         "eko": parser.kuryache_stegno_parser()[1],
         "varus": parser.kuryache_stegno_parser()[2],
-        "silpo": parser.kuryache_stegno_parser()[3],
+        "silpo": parser.kuryache_stegno_parser()[3] * correct_price_mul_10,
         "novus": parser.kuryache_stegno_parser()[5],
         "metro": parser.kuryache_stegno_parser()[6],
         "nash_kray": parser.kuryache_stegno_parser()[7],
@@ -3280,7 +3280,7 @@ all_products_names = [
     {'kuryache_krilo': {
         "atb": parser.kuryache_krilo_parser()[0],
         "varus": parser.kuryache_krilo_parser()[2],
-        "silpo": parser.kuryache_krilo_parser()[3],
+        "silpo": parser.kuryache_krilo_parser()[3] * correct_price_mul_10,
         "novus": parser.kuryache_krilo_parser()[5],
         "metro": parser.kuryache_krilo_parser()[6],
         "nash_kray": parser.kuryache_krilo_parser()[7],
@@ -3291,17 +3291,17 @@ all_products_names = [
         "atb": parser.kuryache_file_parser()[0],
         "eko": parser.kuryache_file_parser()[1],
         "varus": parser.kuryache_file_parser()[2],
-        "silpo": parser.kuryache_file_parser()[3],
+        "silpo": parser.kuryache_file_parser()[3] * correct_price_mul_10,
         "novus": parser.kuryache_file_parser()[5],
         "metro": parser.kuryache_file_parser()[6],
-        "nash_kray": parser.kuryache_file_parser()[7],
+        "nash_kray": parser.kuryache_file_parser()[7] * correct_price_mul_10,
         "fozzy": parser.kuryache_file_parser()[8]
     }},
 
     {'kuryacha_gomilka': {
         "eko": parser.kuryacha_gomilka_parser()[1],
         "varus": parser.kuryacha_gomilka_parser()[2],
-        "silpo": parser.kuryacha_gomilka_parser()[3],
+        "silpo": parser.kuryacha_gomilka_parser()[3] * correct_price_mul_10,
         "novus": parser.kuryacha_gomilka_parser()[5],
         "metro": parser.kuryacha_gomilka_parser()[6],
         "nash_kray": parser.kuryacha_gomilka_parser()[7],
@@ -3675,6 +3675,59 @@ all_products_names = [
         "fozzy": parser.basilik_chervoniy_svij_parser()[8]
     }},
 
+    {'pelmeni_gerkules_firm_400gr': {
+        "varus": parser.pelmeni_gerkules_firm_400gr_parser()[2],
+        "silpo": parser.pelmeni_gerkules_firm_400gr_parser()[3],
+        "novus": parser.pelmeni_gerkules_firm_400gr_parser()[5],
+        "fozzy": parser.pelmeni_gerkules_firm_400gr_parser()[8]
+    }},
+
+    {'pelmeni_gerkules_firm_800gr': {
+        "varus": parser.pelmeni_gerkules_firm_800gr_parser()[2],
+        "silpo": parser.pelmeni_gerkules_firm_800gr_parser()[3],
+        "novus": parser.pelmeni_gerkules_firm_800gr_parser()[5],
+        "metro": parser.pelmeni_gerkules_firm_800gr_parser()[6],
+        "fozzy": parser.pelmeni_gerkules_firm_800gr_parser()[8]
+    }},
+
+    {'pelmeni_gerkules_indeyka_400gr': {
+        "varus": parser.pelmeni_gerkules_indeyka_400gr_parser()[2],
+        "silpo": parser.pelmeni_gerkules_indeyka_400gr_parser()[3],
+        "novus": parser.pelmeni_gerkules_indeyka_400gr_parser()[5],
+        "fozzy": parser.pelmeni_gerkules_indeyka_400gr_parser()[8]
+    }},
+
+    {'pelmeni_tri_vedmedi_firm_800gr': {
+        "atb": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[0],
+        "varus": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[2],
+        "silpo": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[3],
+        "novus": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[5],
+        "metro": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[6],
+        "fozzy": parser.pelmeni_tri_vedmedi_firm_800gr_parser()[8]
+    }},
+
+    {'pelmeni_tri_vedmedi_mishutka_400gr': {
+        "atb": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[0],
+        "eko": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[1],
+        "varus": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[2],
+        "silpo": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[3],
+        "novus": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[5],
+        "metro": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[6],
+        "fozzy": parser.pelmeni_tri_vedmedi_mishutka_400gr_parser()[8]
+    }},
+
+    {'pelmeni_extra_firm_800gr': {
+        "fozzy": parser.pelmeni_extra_firm_800gr_parser()[8]
+    }},
+
+    {'pelmeni_extra_sibir_500gr': {
+        "fozzy": parser.pelmeni_extra_sibir_500gr_parser()[8]
+    }},
+
+    {'pelmeni_extra_ravioli_dom_800gr': {
+        "fozzy": parser.pelmeni_extra_ravioli_dom_800gr_parser()[8]
+    }},
+
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
                 + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)
@@ -3692,12 +3745,12 @@ all_products_names = [
                   + (parser.cabbage_parcer()[2] * cabbage_rate)) / borsh_mututal_devider,
 
         "silpo": ((parser.water_in_6l_bottle_parser()[3] / water_rate)
-                  + ((parser.pork_lopatka_parser()[3] * silpo_correct_price) * meat_rate)
+                  + ((parser.pork_lopatka_parser()[3]) * meat_rate)
                   + (parser.potato_parser()[3] / potato_rate) + (
-                          (parser.beet_parser()[3] * silpo_correct_price) / beet_rate)
-                  + ((parser.carrot_parcer()[3] * silpo_correct_price) / carrot_rate)
-                  + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_rate)
-                  + ((parser.cabbage_parcer()[3] * silpo_correct_price) * cabbage_rate)) / borsh_mututal_devider,
+                          (parser.beet_parser()[3]) / beet_rate)
+                  + ((parser.carrot_parcer()[3]) / carrot_rate)
+                  + ((parser.onion_parcer()[3]) * onion_rate)
+                  + ((parser.cabbage_parcer()[3]) * cabbage_rate)) / borsh_mututal_devider,
 
         "novus": ((parser.water_in_6l_bottle_parser()[5] / water_rate) + (parser.pork_lopatka_parser()[5] * meat_rate)
                   + (parser.potato_parser()[5] / potato_rate) + (parser.beet_parser()[5] / beet_rate)
@@ -3734,7 +3787,7 @@ all_products_names = [
 
         "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
                   + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
-                  + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_var) + (
+                  + ((parser.onion_parcer()[3]) * onion_var) + (
                       parser.sour_cream_for_dishes_parser()[3])
                   + (parser.potato_parser()[3] * potato_var)) / vareniki_mutual_devider,
 
@@ -3777,7 +3830,7 @@ all_products_names = [
 
         "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
                   + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
-                  + ((parser.onion_parcer()[3] * silpo_correct_price) * onion_bigger_var) + (
+                  + ((parser.onion_parcer()[3]) * onion_bigger_var) + (
                       parser.sour_cream_for_dishes_parser()[3])
                   + (parser.cabbage_parcer()[3] * cabbage_var) + parser.carrot_parcer()[
                       3] * carrot_var) / vareniki_mutual_devider,
@@ -3821,7 +3874,7 @@ def get_all_prices():
     for item in all_products_names:
         for product, values in item.items():
             to_json[product] = values
-    #with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
+    # with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
     with open('../prices_store.json', 'w') as f:
         json.dump(to_json, f, sort_keys=False, indent=len(all_products_names))
         print('Все продукты и их цены добавлены в базу данных!')

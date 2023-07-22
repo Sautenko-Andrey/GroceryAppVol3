@@ -1075,3 +1075,19 @@ class TesterForGroceryAppText:
             return OLIV_OIL_POVNA_CHASHA_913GR
         elif np.argmax(result) == 503:
             return BASILIK_CHERVONIY_SVIJIY
+        elif np.argmax(result) == 504:
+            return PELMENI_GERKULES_FIRM_400GR
+        elif np.argmax(result) == 505:
+            return PELMENI_GERKULES_FIRM_800GR
+        elif np.argmax(result) == 506:
+            return PELMENI_GERKULES_INDEYKA_400GR
+        elif np.argmax(result) == 507:
+            return PELMENI_TRI_VEDMEDI_FIRM_800GR
+        elif np.argmax(result) == 508:
+            return PELMENI_TRI_VEDMEDI_MISHUTKA_TELYATINA_400GR
+        elif np.argmax(result) == 509:
+            return PELMENI_EXTRA_FIRM_800GR
+        elif np.argmax(result) == 510:
+            return PELMENI_EXTRA_SIBIR_500GR
+        elif np.argmax(result) == 511:
+            return PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR

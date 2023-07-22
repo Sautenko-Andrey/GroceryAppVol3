@@ -4998,6 +4998,75 @@ class ProductParserVol2:
             'https://fozzyshop.ua/zelen/73186-bazilik-vershki-ta-korinci-krasnyj-svezhij-s-kornem-4820224870038.html'
         ])
 
+    def pelmeni_gerkules_firm_400gr_parser(self):
+        ''' Парсер для пельмені Геркулес Фірмові 400 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/pelmeni-firmovi-gerkules-400g',
+            'https://shop.silpo.ua/product/pelmeni-gerkules-firmovi-4728',
+            'https://novus.online/ru/product/pelmeni-firmovi-gerkules-400g',
+            'https://fozzyshop.ua/ru/pelmeni/19844-pelmeni-gerkules-firmennye-4820020710040.html'
+        ])
+
+    def pelmeni_gerkules_firm_800gr_parser(self):
+        ''' Парсер для пельмені Геркулес Фірмові 800 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/pelmeni-firmovi-gerkules-800g-ukraina',
+            'https://shop.silpo.ua/product/pelmeni-gerkules-firmovi-681380',
+            'https://novus.online/ru/product/pelmeni-firmovi-gerkules-800g',
+            'https://metro.zakaz.ua/ru/products/pelmeni-gerkules-800g-ukrayina--04820020715465/',
+            'https://fozzyshop.ua/ru/pelmeni/44824-pelmeni-gerkules-firmennye-4820020715465.html'
+        ])
+
+    def pelmeni_gerkules_indeyka_400gr_parser(self):
+        ''' Парсер для пельмені Геркулес з м'ясом індички 400 гр'''
+        return self.prices_parsing([
+            'https://varus.ua/pelmeni-z-myasom-indichki-gerkules-400g',
+            'https://shop.silpo.ua/product/pelmeni-gerkules-z-m-iasom-indychky-512216',
+            'https://novus.online/ru/product/pelmeni-z-masom-indicki-gerkules-400g',
+            'https://fozzyshop.ua/ru/pelmeni/19843-pelmeni-gerkules-s-myasom-indejki-4820020716035.html'
+        ])
+
+    def pelmeni_tri_vedmedi_firm_800gr_parser(self):
+        ''' Парсер для пельмені Три Ведмеді Фірмові 800 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/pelmeni-085kg-tri-vedmedi-firmovi-zi-svininou-ta-alovicinou',
+            'https://varus.ua/pelmeni-tri-medvedya-po-domashnemu-800g',
+            'https://shop.silpo.ua/product/pelmeni-try-vedmedi-firmovi-450102',
+            'https://novus.online/ru/product/pelmeni-firmovi-tri-vedmedi-800g',
+            'https://metro.zakaz.ua/ru/products/pelmeni-tri-vedmedi-800g-ukrayina--04823086113107/',
+            'https://fozzyshop.ua/ru/pelmeni/50856-pelmeni-tri-vedmedi-firmennye-4820039464279.html'
+        ])
+
+    def pelmeni_tri_vedmedi_mishutka_400gr_parser(self):
+        ''' Парсер для пельмені Три Ведмеді Мішутка телятіна 400 гр'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/pelmeni-450g-tri-vedmedi-misutka-z-telatinou',
+            'https://eko.zakaz.ua/uk/products/pelmeni-tri-vedmedi-400g-ukrayina--04823086112926/',
+            'https://varus.ua/pelmeni-z-telyatinoyu-mishutka-400g',
+            'https://shop.silpo.ua/product/pelmeni-try-vedmedi-mishutka-z-teliatynoiu-885574',
+            'https://novus.online/ru/product/pelmeni-misutka-telatina-tri-vedmedi-400g',
+            'https://metro.zakaz.ua/ru/products/pelmeni-tri-vedmedi-400g--04823086103153/',
+            'https://fozzyshop.ua/ru/pelmeni/91219-pelmeni-tri-vedmedi-mishutka-telyatina-4823086112926.html'
+        ])
+
+    def pelmeni_extra_firm_800gr_parser(self):
+        ''' Парсер для пельмені Extra! фірмові 800 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ru/pelmeni/7743-pelmeni-extra-firmennye-4824034014996.html'
+        ])
+
+    def pelmeni_extra_sibir_500gr_parser(self):
+        ''' Парсер для пельмені Extra! сибірські 500 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ru/pelmeni/7742-pelmeni-extra-cibirskie-4824034015009.html'
+        ])
+
+    def pelmeni_extra_ravioli_dom_800gr_parser(self):
+        ''' Парсер для пельмені Extra! равіолі домашні 800 гр'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ru/pelmeni/7776-ravioli-extra-domashnie-4824034011650.html'
+        ])
+
 
 
 

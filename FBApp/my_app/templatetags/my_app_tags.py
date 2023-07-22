@@ -1533,6 +1533,30 @@ get_oliv_oil_povna_chasha_913gr = tag.create_tag(ItemsPicsFromNet, 506)
 '''Тэг,возвращающий информацию о "Базилік Вершки та Корінці червоний свіжий з коренем, 50г"'''
 get_basilik_svij = tag.create_tag(ItemsPicsFromNet, 507)
 
+'''Тэг,возвращающий информацию о "Пельмени Геркулес Фирменные , 400г"'''
+get_pelmeni_gerkules_firm_400gr = tag.create_tag(ItemsPicsFromNet, 508)
+
+'''Тэг,возвращающий информацию о "Пельмени Геркулес Фирменные , 800г"'''
+get_pelmeni_gerkules_firm_800gr = tag.create_tag(ItemsPicsFromNet, 509)
+
+'''Тэг,возвращающий информацию о "Пельмени Геркулес з м'ясом індички , 400г"'''
+get_pelmeni_gerkules_indeyka_400gr = tag.create_tag(ItemsPicsFromNet, 510)
+
+'''Тэг,возвращающий информацию о "Пельмени Три Ведмеді Фірмові , 800г"'''
+get_pelmeni_tri_vedmid_firm_800gr = tag.create_tag(ItemsPicsFromNet, 511)
+
+'''Тэг,возвращающий информацию о "Пельмени Три ведмеді Мишутка телятина, 400г"'''
+get_pelmeni_tri_vedmid_mishutka_telyatina_400gr = tag.create_tag(ItemsPicsFromNet, 512)
+
+'''Тэг,возвращающий информацию о "Пельмени Extra! Фирменные, 800г"'''
+get_pelmeni_extra_firm_800gr = tag.create_tag(ItemsPicsFromNet, 513)
+
+'''Тэг,возвращающий информацию о "Пельмени Extra! сибирські, 500г"'''
+get_pelmeni_extra_sibir_500gr = tag.create_tag(ItemsPicsFromNet, 514)
+
+'''Тэг,возвращающий информацию о "Равиоли Extra! Домашние, 800г"'''
+get_pelmeni_extra_rav_dom_800gr = tag.create_tag(ItemsPicsFromNet, 515)
+
 
 
 

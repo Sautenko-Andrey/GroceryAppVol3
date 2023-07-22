@@ -1331,6 +1331,22 @@ class ContextSupervisor:
             result = self.getting_prices('oliv_oil_povna_chasha_913gr', get_oliv_oil_povna_chasha_913gr)
         elif nn_respond == BASILIK_CHERVONIY_SVIJIY:
             result = self.getting_prices('basilik_chervoniy_svij', get_basilik_svij)
+        elif nn_respond == PELMENI_GERKULES_FIRM_400GR:
+            result = self.getting_prices('pelmeni_gerkules_firm_400gr', get_pelmeni_gerkules_firm_400gr)
+        elif nn_respond == PELMENI_GERKULES_FIRM_800GR:
+            result = self.getting_prices('pelmeni_gerkules_firm_800gr', get_pelmeni_gerkules_firm_800gr)
+        elif nn_respond == PELMENI_GERKULES_INDEYKA_400GR:
+            result = self.getting_prices('pelmeni_gerkules_indeyka_400gr', get_pelmeni_gerkules_indeyka_400gr)
+        elif nn_respond == PELMENI_TRI_VEDMEDI_FIRM_800GR:
+            result = self.getting_prices('pelmeni_tri_vedmedi_firm_800gr', get_pelmeni_tri_vedmid_firm_800gr)
+        elif nn_respond == PELMENI_TRI_VEDMEDI_MISHUTKA_TELYATINA_400GR:
+            result = self.getting_prices('pelmeni_tri_vedmedi_mishutka_400gr', get_pelmeni_tri_vedmid_mishutka_telyatina_400gr)
+        elif nn_respond == PELMENI_EXTRA_FIRM_800GR:
+            result = self.getting_prices('pelmeni_extra_firm_800gr', get_pelmeni_extra_firm_800gr)
+        elif nn_respond == PELMENI_EXTRA_SIBIR_500GR:
+            result = self.getting_prices('pelmeni_extra_sibir_500gr', get_pelmeni_extra_sibir_500gr)
+        elif nn_respond == PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR:
+            result = self.getting_prices('pelmeni_extra_ravioli_dom_800gr', get_pelmeni_extra_rav_dom_800gr)
 
 
 
@@ -1470,5 +1486,5 @@ class UserAmountConverter:
                 res = float(''.join(dig))
                 return res
             else:
-                print("ERROR!!!!!")
+                print("Conversion amount error. Check user's amount request in set feature.")
 
