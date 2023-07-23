@@ -5067,6 +5067,28 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/pelmeni/7776-ravioli-extra-domashnie-4824034011650.html'
         ])
 
+    def seven_up_033_jb_parser(self):
+        ''' Парсер для 7UP 0.33 л жб'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-330-ml-7-up-zb',
+            'https://eko.zakaz.ua/uk/products/napii-seven-ap-330ml-ukrayina--05900497030243/',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-s-aromatom-limona-i-lajma-7up-zh-b-0-33l-688913/',
+            'https://novus.online/ru/product/napij-gazovanij-7-up-033l-zb',
+            'https://metro.zakaz.ua/ru/products/napii-seven-ap-330ml-ukrayina--05900497030243/',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/77869-napitok-7up-bezalkogolnyj-silnogazirovannyj-zh-b-4823063116619.html'
+        ])
+
+    def kavun_parser(self):
+        ''' Парсер для Кавун, кг'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kavun-1-gat',
+            'https://eko.zakaz.ua/uk/products/iagoda--ekomarket00000000668884/',
+            'https://varus.ua/kavun-ukrayina-vagovij',
+            'https://shop.silpo.ua/product/kavun-51606',
+            'https://novus.online/ru/product/kavun-vag',
+            'https://metro.zakaz.ua/ru/products/frukt-kavun-bez-tm--metro28501700000000/',
+        ])
+
 
 
 

@@ -3728,6 +3728,24 @@ all_products_names = [
         "fozzy": parser.pelmeni_extra_ravioli_dom_800gr_parser()[8]
     }},
 
+    {'seven_up_033_jb': {
+        "atb": parser.seven_up_033_jb_parser()[0],
+        "eko": parser.seven_up_033_jb_parser()[1],
+        "ashan": parser.seven_up_033_jb_parser()[4],
+        "novus": parser.seven_up_033_jb_parser()[5],
+        "metro": parser.seven_up_033_jb_parser()[6],
+        "fozzy": parser.seven_up_033_jb_parser()[8]
+    }},
+
+    {'kavun': {
+        "atb": parser.kavun_parser()[0],
+        "eko": parser.kavun_parser()[1],
+        "varus": parser.kavun_parser()[2],
+        "silpo": parser.kavun_parser()[3] * correct_price_mul_10,
+        "novus": parser.kavun_parser()[5],
+        "metro": parser.kavun_parser()[6]
+    }},
+
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
                 + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)

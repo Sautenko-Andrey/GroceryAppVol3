@@ -1347,6 +1347,10 @@ class ContextSupervisor:
             result = self.getting_prices('pelmeni_extra_sibir_500gr', get_pelmeni_extra_sibir_500gr)
         elif nn_respond == PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR:
             result = self.getting_prices('pelmeni_extra_ravioli_dom_800gr', get_pelmeni_extra_rav_dom_800gr)
+        elif nn_respond == SEVEN_UP_033JB:
+            result = self.getting_prices('seven_up_033_jb', get_7up_033_jb)
+        elif nn_respond == KAVUN:
+            result = self.getting_prices('kavun', get_kavun)
 
 
 
@@ -1448,6 +1452,10 @@ class UserAmountConverter:
         '''Метод который очищает строку от лишних точек в запросе юзера'''
 
         text = self.__convert_coma_to_dot(text)
+
+        if len(text) < 2:
+            text += self.__PICES_SYMB[0]
+
         if not text[0].isdigit():
             return '0'
         first_part = []

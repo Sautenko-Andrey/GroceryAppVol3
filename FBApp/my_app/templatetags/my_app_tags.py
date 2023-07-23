@@ -1557,6 +1557,12 @@ get_pelmeni_extra_sibir_500gr = tag.create_tag(ItemsPicsFromNet, 514)
 '''Тэг,возвращающий информацию о "Равиоли Extra! Домашние, 800г"'''
 get_pelmeni_extra_rav_dom_800gr = tag.create_tag(ItemsPicsFromNet, 515)
 
+'''Тэг,возвращающий информацию о "Напиток 7UP безалкогольный, сильногазированный, ж/б, 0,33л"'''
+get_7up_033_jb = tag.create_tag(ItemsPicsFromNet, 516)
+
+'''Тэг,возвращающий информацию о "Кавун, кг"'''
+get_kavun = tag.create_tag(ItemsPicsFromNet, 517)
+
 
 
 

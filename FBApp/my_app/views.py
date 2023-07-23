@@ -33,7 +33,7 @@ from django.shortcuts import redirect
 from .utils import ContextSupervisor, UserAmountConverter
 
 with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json') as f:
-#with open('/code/prices_store.json') as f:  #for docker image
+    # with open('/code/prices_store.json') as f:  #for docker image
     store = json.load(f)
 
 
@@ -113,11 +113,11 @@ class ItemNameAnswerPage(MutualContext, ListView):
         context_dict = super().get_context_data(**kwargs)
         context_dict['nn_answer'] = self.NN_works()  # работа НС
 
-        #подключение класса, который формирует контекст (цены + инфо о товаре)
+        # подключение класса, который формирует контекст (цены + инфо о товаре)
         item_context = ContextSupervisor(context_dict['nn_answer'])
         # подключение тега для отображения информации о товаре (изображение и текст)
         context_dict['item_image_for_user'] = item_context.info
-        #подключение цен товара
+        # подключение цен товара
         context_dict['price_from_site_atb'] = item_context.atb_price
         context_dict['price_from_site_eko'] = item_context.eko_price
         context_dict['price_from_site_varus'] = item_context.varus_price
@@ -343,6 +343,7 @@ class DishesSet(MutualContext, CreateView):
     template_name = 'my_app/dishes_set.html'
     success_url = reverse_lazy('dish_info')
 
+
 class DishesSetResult(MutualContext, ListView):
     '''Страница для отображения результатов по блюдам'''
     model = Dishes
@@ -362,28 +363,40 @@ class DishesSetResult(MutualContext, ListView):
         item_context = ContextSupervisor(context_dict['nn_answer'])
 
         # подключение класса, который формирует контекст (цены + инфо о товаре)
-        context_dict['user_count_persons'] = int(self.what_dish()[1])   #количество порций
+        context_dict['user_count_persons'] = int(self.what_dish()[1])  # количество порций
 
         # подключение тега для отображения информации о товаре (изображение и текст)
         context_dict['item_info_for_user'] = item_context.info
 
-        #округление до 2 знаков после запятой
+        # округление до 2 знаков после запятой
         round_num = 2
 
         # подключение цен товара
-        context_dict['price_from_site_atb'] = round(item_context.atb_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_eko'] = round(item_context.eko_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_varus'] = round(item_context.varus_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_silpo'] = round(item_context.silpo_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_ashan'] = round(item_context.ashan_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_novus'] = round(item_context.novus_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],round_num)
-        context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],round_num)
+        context_dict['price_from_site_atb'] = round(item_context.atb_price * context_dict['user_count_persons'],
+                                                    round_num)
+        context_dict['price_from_site_eko'] = round(item_context.eko_price * context_dict['user_count_persons'],
+                                                    round_num)
+        context_dict['price_from_site_varus'] = round(item_context.varus_price * context_dict['user_count_persons'],
+                                                      round_num)
+        context_dict['price_from_site_silpo'] = round(item_context.silpo_price * context_dict['user_count_persons'],
+                                                      round_num)
+        context_dict['price_from_site_ashan'] = round(item_context.ashan_price * context_dict['user_count_persons'],
+                                                      round_num)
+        context_dict['price_from_site_novus'] = round(item_context.novus_price * context_dict['user_count_persons'],
+                                                      round_num)
+        context_dict['price_from_site_metro'] = round(item_context.metro_price * context_dict['user_count_persons'],
+                                                      round_num)
+        context_dict['price_from_site_nash_kray'] = round(item_context.nk_price * context_dict['user_count_persons'],
+                                                          round_num)
+        context_dict['price_from_site_fozzy'] = round(item_context.fozzy_price * context_dict['user_count_persons'],
+                                                      round_num)
         context_dict['flag_price'] = (max(
-            context_dict['price_from_site_atb'],context_dict['price_from_site_eko'],context_dict['price_from_site_varus'],
-            context_dict['price_from_site_silpo'],context_dict['price_from_site_ashan'],context_dict['price_from_site_novus'],
-            context_dict['price_from_site_metro'],context_dict['price_from_site_nash_kray'],context_dict['price_from_site_fozzy']
+            context_dict['price_from_site_atb'], context_dict['price_from_site_eko'],
+            context_dict['price_from_site_varus'],
+            context_dict['price_from_site_silpo'], context_dict['price_from_site_ashan'],
+            context_dict['price_from_site_novus'],
+            context_dict['price_from_site_metro'], context_dict['price_from_site_nash_kray'],
+            context_dict['price_from_site_fozzy']
         )) / 100 * 60
 
         mutual_context_dict = self.get_user_context(title='Цена блюда')
@@ -394,7 +407,6 @@ class DishesSetResult(MutualContext, ListView):
         которая была добавлена самой последней'''
 
         return Dishes.objects.latest('time_create')
-
 
 
 class ProductsSet(MutualContext, CreateView):
@@ -442,10 +454,10 @@ class SetResults(MutualContext, ListView):
     model = SetOfProducts
     context_object_name = 'user_orders'
 
-    #флаг, означающий, что маркет выбран пользователем для формирования цен
+    # флаг, означающий, что маркет выбран пользователем для формирования цен
     MARKER = 1
 
-    #имена доступных супермаркетов
+    # имена доступных супермаркетов
     __ATB_MARKET = "ATB"
     __EKO_MARKET = "EKO"
     __VARUS_MARKET = "Varus"
@@ -462,6 +474,16 @@ class SetResults(MutualContext, ListView):
         pred = NN_text()
         user_orders = self.get_queryset()
         total_product_info = []
+
+        atb_total = 0
+        eko_total = 0
+        varus_total = 0
+        silpo_total = 0
+        ashan_total = 0
+        novus_total = 0
+        metro_total = 0
+        nk_total = 0
+        fozzy_total = 0
 
         for order in user_orders:
 
@@ -480,33 +502,33 @@ class SetResults(MutualContext, ListView):
             fozzy_price = item_context.fozzy_price
             picture = item_context.info
 
-            #отфильтруем цены. оставим только те цены , которые соответствуют выбранным супермаркетам!
-            filtered_prices=[]
+            # отфильтруем цены. оставим только те цены , которые соответствуют выбранным супермаркетам!
+            filtered_prices = []
 
-            if order.atb_choice==self.MARKER:
-                filtered_prices.append((self.__ATB_MARKET,atb_price))
-            if order.eko_choice==self.MARKER:
-                 filtered_prices.append((self.__EKO_MARKET,eko_price))
-            if order.varus_choice==self.MARKER:
-                 filtered_prices.append((self.__VARUS_MARKET,varus_price))
-            if order.silpo_choice==self.MARKER:
-                 filtered_prices.append((self.__SILPO_MARKET,silpo_price))
-            if order.ashan_choice==self.MARKER:
-                 filtered_prices.append((self.__ASHAN_MARKET,ashan_price))
-            if order.novus_choice==self.MARKER:
-                 filtered_prices.append((self.__NOVUS_MARKET,novus_price))
-            if order.metro_choice==self.MARKER:
-                 filtered_prices.append((self.__METRO_MARKET,metro_price))
-            if order.nash_kray_choice==self.MARKER:
-                 filtered_prices.append((self.__NK_MARKET,nash_kray_price))
-            if order.fozzy_choice==self.MARKER:
-                 filtered_prices.append((self.__FOZZY_MARKET,fozzy_price))
+            if order.atb_choice == self.MARKER:
+                filtered_prices.append((self.__ATB_MARKET, atb_price))
+            if order.eko_choice == self.MARKER:
+                filtered_prices.append((self.__EKO_MARKET, eko_price))
+            if order.varus_choice == self.MARKER:
+                filtered_prices.append((self.__VARUS_MARKET, varus_price))
+            if order.silpo_choice == self.MARKER:
+                filtered_prices.append((self.__SILPO_MARKET, silpo_price))
+            if order.ashan_choice == self.MARKER:
+                filtered_prices.append((self.__ASHAN_MARKET, ashan_price))
+            if order.novus_choice == self.MARKER:
+                filtered_prices.append((self.__NOVUS_MARKET, novus_price))
+            if order.metro_choice == self.MARKER:
+                filtered_prices.append((self.__METRO_MARKET, metro_price))
+            if order.nash_kray_choice == self.MARKER:
+                filtered_prices.append((self.__NK_MARKET, nash_kray_price))
+            if order.fozzy_choice == self.MARKER:
+                filtered_prices.append((self.__FOZZY_MARKET, fozzy_price))
 
-            print('Отфильтрованный список цен',filtered_prices)
+            print('Отфильтрованный список цен', filtered_prices)
 
-            #определяем лучшую цену:
-            best_price=best_price_identify(filtered_prices)
-            print('Best price: ',best_price)
+            # определяем лучшую цену:
+            best_price = best_price_identify(filtered_prices)
+            print('Best price: ', best_price)
 
             # new
             mul_amount = UserAmountConverter(order.amount).convert_str_to_num()
@@ -516,22 +538,43 @@ class SetResults(MutualContext, ListView):
                 {result: [
                     order.amount, order.atb_choice, order.eko_choice, order.varus_choice,
                     order.silpo_choice, order.ashan_choice, order.novus_choice, order.metro_choice,
-                    order.nash_kray_choice, order.fozzy_choice, round(atb_price * mul_amount,2),
-                    round(eko_price * mul_amount,2),round(varus_price * mul_amount,2),
-                    round(silpo_price * mul_amount,2),round(ashan_price * mul_amount,2),
-                    round(novus_price * mul_amount,2),round(metro_price * mul_amount,2),
-                    round(nash_kray_price * mul_amount,2),round(fozzy_price * mul_amount,2),
+                    order.nash_kray_choice, order.fozzy_choice, round(atb_price * mul_amount, 2),
+                    round(eko_price * mul_amount, 2), round(varus_price * mul_amount, 2),
+                    round(silpo_price * mul_amount, 2), round(ashan_price * mul_amount, 2),
+                    round(novus_price * mul_amount, 2), round(metro_price * mul_amount, 2),
+                    round(nash_kray_price * mul_amount, 2), round(fozzy_price * mul_amount, 2),
                     picture, best_price
                 ]}
             )
 
-        return total_product_info
+            # new
+            # формируем тотал по каждому маркету
+
+            for product in total_product_info:
+                for key, value in product.items():
+                    atb_total += value[10]
+                    eko_total += value[11]
+                    varus_total += value[12]
+                    silpo_total += value[13]
+                    ashan_total += value[14]
+                    novus_total += value[15]
+                    metro_total += value[16]
+                    nk_total += value[17]
+                    fozzy_total += value[18]
+            # end
+
+        return total_product_info, atb_total, eko_total, varus_total, \
+            silpo_total, ashan_total, novus_total, metro_total, nk_total, fozzy_total
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
         context_dict['all_relevant_markets'] = get_all_markets
         # отображение списка кортежей с полной информацией по заказу
-        context_dict['products_set']  = self.NN_works()
+        context_dict['products_set'], context_dict['ATB_total'], context_dict['EKO_total'], context_dict[
+            'VARUS_total'], context_dict['SILPO_total'], context_dict['ASHAN_total'], context_dict[
+            'NOVUS_total'], context_dict['METRO_total'], context_dict['NK_total'], context_dict[
+            'FOZZY_total'] = self.NN_works()
+
         mutual_context_dict = self.get_user_context(title='Результаты по наборам')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
 
@@ -541,10 +584,11 @@ class SetResults(MutualContext, ListView):
 
         return super().get_queryset().filter(owner=self.request.user.id)
 
-#delete order from set
+
+# delete order from set
 def delete_product(request, order_id):
     '''Метод для удаления заказов в списке покупок'''
-    order = SetOfProducts.objects.get(pk = order_id)
+    order = SetOfProducts.objects.get(pk=order_id)
     order.delete()
     return redirect("items_set")
 
@@ -646,5 +690,3 @@ class ItemsInfoAPI(generics.ListAPIView):
 
     pagination_class = ItemsInfoAPIPagination
     permission_classes = (ReadOnlyPermission,)
-
-

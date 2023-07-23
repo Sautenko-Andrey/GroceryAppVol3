@@ -1091,3 +1091,7 @@ class TesterForGroceryAppText:
             return PELMENI_EXTRA_SIBIR_500GR
         elif np.argmax(result) == 511:
             return PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR
+        elif np.argmax(result) == 512:
+            return SEVEN_UP_033JB
+        elif np.argmax(result) == 513:
+            return KAVUN
