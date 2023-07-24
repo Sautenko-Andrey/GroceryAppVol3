@@ -14,9 +14,9 @@
                     </svg>
                 </b></h4>
             </div>
-
             <!--Accordion here-->
-            <div class="accordion accordion-flush alert alert-info" id="accordionFlushExample" align="center" role="alert">
+            <div class="accordion accordion-flush alert alert-info" id="accordionFlushExample" align="center"
+                 role="alert">
                 <div class="accordion-item alert-info" role="alert">
                     <h2 class="accordion-header">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -64,22 +64,24 @@
                     </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
                          data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><h5 align="left">
-                            --------------------------------------------------</h5>
-                            <h5 align="left">Скупившись в АТБ: {{ATB_total}} грн</h5>
-                            <h5 align="left">Скупившись в ЭКО: {{EKO_total}} грн</h5>
-                            <h5 align="left">Скупившись в Varus: {{VARUS_total}} грн</h5>
-                            <h5 align="left">Скупившись в Сильпо: {{SILPO_total}} грн</h5>
-                            <h5 align="left">Скупившись в Ашане: {{ASHAN_total}} грн</h5>
-                            <h5 align="left">Скупившись в Novus: {{NOVUS_total}} грн</h5>
-                            <h5 align="left">Скупившись в Metro: {{METRO_total}} грн</h5>
-                            {% if NK_total == 0 %}
-                            <h5 align="left">Наш Край: запрашиваемые продукты отсутствуют в магазине</h5>
-                            {% else %}
-                            <h5 align="left">Скупившись в Наш Край: {{NK_total}} грн</h5>
-                            {% endif %}
-                            <h5 align="left">Скупившись в Fozzy: {{FOZZY_total}} грн</h5>
-                            <h5 align="left">--------------------------------------------------</h5>
+                        <div class="accordion-body">
+                            <h5 align="left">
+                                <h5>--------------------------------------------------</h5>
+                                <h5 align="left">Выгоднее всего будет скупить в ---> какой-то маркет</h5>
+                                <h5 align="left">Скупившись по списку в АТБ Вы портатите: {{ATB_total}} грн</h5>
+                                <!--<h5 align="left">Скупившись в ЭКО: {{EKO_total}} грн</h5>
+                                <h5 align="left">Скупившись в Varus: {{VARUS_total}} грн</h5>
+                                <h5 align="left">Скупившись в Сильпо: {{SILPO_total}} грн</h5>
+                                <h5 align="left">Скупившись в Ашане: {{ASHAN_total}} грн</h5>
+                                <h5 align="left">Скупившись в Novus: {{NOVUS_total}} грн</h5>
+                                <h5 align="left">Скупившись в Metro: {{METRO_total}} грн</h5>
+                                {% if NK_total == 0 %}
+                                <h5 align="left">Наш Край: запрашиваемые продукты отсутствуют в магазине</h5>
+                                {% else %}
+                                <h5 align="left">Скупившись в Наш Край: {{NK_total}} грн</h5>
+                                {% endif %}
+                                <h5 align="left">Скупившись в Fozzy: {{FOZZY_total}} грн</h5>
+                                <h5 align="left">--------------------------------------------------</h5>-->
                         </div>
                     </div>
                 </div>
@@ -98,44 +100,164 @@
                     </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse"
                          data-bs-parent="#accordionFlushExample">
-                        <div class="accordion-body"><h5 align="left">ATB</h5>
+                        <div class="accordion-body">
+                            <!--for ATB-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/ATB_BIG_LOGO.png' %}" class="img-fluid rounded-start" alt="АТБ">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>АТБ</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.10 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.10}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{ATB_total}} грн</b></h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <h5 align="left"><b>АТБ</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
                             {% if value.10 == 0 %}
-                            <h5 align="left">нет в наличии</h5>
+                            <h5 align="left">{{key}} : нет в наличии</h5>
                             {% else %}
-                            <h5 align="left">{{key}} : {{value.10}} грн/кг/ед</h5>
+                            <h5 align="left">{{key}} : {{value.10}} грн</h5>
                             {% endif %}
                             {% endfor %}
                             {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{ATB_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for EKO-->
+                            <h5 align="left"><b>ЭКО</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.11 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.11}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{EKO_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Varus-->
+                            <h5 align="left"><b>Varus</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.12 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.12}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{VARUS_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Silpo-->
+                            <h5 align="left"><b>Сильпо</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.13 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.13}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{SILPO_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Ashan-->
+                            <h5 align="left"><b>Ашан</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.14 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.14}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{ASHAN_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Novus-->
+                            <h5 align="left"><b>Novus</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.15 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.15}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{NOVUS_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Metro-->
+                            <h5 align="left"><b>Metro</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.16 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.16}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{METRO_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for NK-->
+                            <h5 align="left"><b>Наш Край</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.17 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.17}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{NK_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
+                            <!--for Fozzy-->
+                            <h5 align="left"><b>Fozzy</b></h5>
+                            {% for product in products_set %}
+                            {% for key,value in product.items %}
+                            {% if value.18 == 0 %}
+                            <h5 align="left">{{key}} : нет в наличии</h5>
+                            {% else %}
+                            <h5 align="left">{{key}} : {{value.18}} грн</h5>
+                            {% endif %}
+                            {% endfor %}
+                            {% endfor %}
+                            <h5 align="left"><b>Общая сумма : {{FOZZY_total}} грн</b></h5>
+                            <br>
+                            <!--end-->
                         </div>
                     </div>
                 </div>
             </div>
             <!--end accordion-->
-
-            <!--<div class="alert alert-info" role="alert">
-                <h5><b>Лучшие цены на товары в списке
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
-                         class="bi bi-currency-dollar" viewBox="0 0 16 16">
-                        <path d="M4 10.781c.148 1.667 1.513 2.85 3.591 3.003V15h1.043v-1.216c2.27-.179 3.678-1.438 3.678-3.3 0-1.59-.947-2.51-2.956-3.028l-.722-.187V3.467c1.122.11 1.879.714 2.07 1.616h1.47c-.166-1.6-1.54-2.748-3.54-2.875V1H7.591v1.233c-1.939.23-3.27 1.472-3.27 3.156 0 1.454.966 2.483 2.661 2.917l.61.162v4.031c-1.149-.17-1.94-.8-2.131-1.718H4zm3.391-3.836c-1.043-.263-1.6-.825-1.6-1.616 0-.944.704-1.641 1.8-1.828v3.495l-.2-.05zm1.591 1.872c1.287.323 1.852.859 1.852 1.769 0 1.097-.826 1.828-2.2 1.939V8.73l.348.086z"/>
-                    </svg>
-                    <br>
-                    {% for product in products_set %}
-                    {% for key,value in product.items %}
-                    {% if ' 0 ' in value.20 %}
-                    <h5 align="left">{{key}} : нет в наличии</h5>
-                    <hr class="border border-primary border-2 opacity-50">
-                    {% else %}
-                    <h5 align="left">{{key}} : <b>{{value.20}} грн/кг/ед</b></h5>
-                    <hr class="border border-primary border-2 opacity-50">
-
-                    {% endif %}
-                    {% endfor %}
-                    {% endfor %}
-                </b></h5>
-            </div>
-            <br>-->
         </div>
     </div>
 </div>
@@ -252,47 +374,6 @@
 <div class="container">
     <div class="row">
         <div class="col-xl-12 col-md-12 col-sm-12" align="center">
-
-            <!--
-            <h5 align="left">Лучшие цены</h5>
-            {% for product in products_set %}
-            {% for key,value in product.items %}
-            {% if ' 0 ' in value.20 %}
-            <h5 align="left">{{key}} : нет в наличии</h5>
-            {% else %}
-            <h5 align="left">{{key}} : {{value.20}} грн/кг/ед</h5>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-            <br>
-            <h5 align="left">Сводка по маркетам</h5>
-            <h5 align="left">ATB</h5>
-            {% for product in products_set %}
-            {% for key,value in product.items %}
-            {% if value.10 == 0 %}
-            <h5 align="left">нет в наличии</h5>
-            {% else %}
-            <h5 align="left">{{key}} : {{value.10}} грн/кг/ед</h5>
-            {% endif %}
-            {% endfor %}
-            {% endfor %}
-            <h5 align="left">--------------------------------------------------</h5>
-            <h5 align="left">Скупившись в АТБ: {{ATB_total}} грн</h5>
-            <h5 align="left">Скупившись в ЭКО: {{EKO_total}} грн</h5>
-            <h5 align="left">Скупившись в Varus: {{VARUS_total}} грн</h5>
-            <h5 align="left">Скупившись в Сильпо: {{SILPO_total}} грн</h5>
-            <h5 align="left">Скупившись в Ашане: {{ASHAN_total}} грн</h5>
-            <h5 align="left">Скупившись в Novus: {{NOVUS_total}} грн</h5>
-            <h5 align="left">Скупившись в Metro: {{METRO_total}} грн</h5>
-            {% if NK_total == 0 %}
-            <h5 align="left">Наш Край: запрашиваемые продукты отсутствуют в магазине</h5>
-            {% else %}
-            <h5 align="left">Скупившись в Наш Край: {{NK_total}} грн</h5>
-            {% endif %}
-            <h5 align="left">Скупившись в Fozzy: {{FOZZY_total}} грн</h5>
-            <h5 align="left">--------------------------------------------------</h5>
-            -->
-
             <div class="alert alert-info" role="alert">
                 <h5>Просмотрели цены? Нажмите, чтобы закончить работу с наборами
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"

@@ -1095,3 +1095,5 @@ class TesterForGroceryAppText:
             return SEVEN_UP_033JB
         elif np.argmax(result) == 513:
             return KAVUN
+        elif np.argmax(result) == 514:
+            return JIVCHIK_APPLE_2l

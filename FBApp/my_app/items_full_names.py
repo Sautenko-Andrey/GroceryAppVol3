@@ -512,6 +512,7 @@ PELMENI_EXTRA_SIBIR_500GR = 'Пельмени Extra! Сибирские, 500г'
 PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR = 'Равиоли Extra! Домашние, 800г'
 SEVEN_UP_033JB = 'Напиток 7UP безалкогольный, сильногазированный, ж/б, 0,33л'
 KAVUN = 'Кавун, кг'
+JIVCHIK_APPLE_2l = 'Напиток Живчик яблоко 2л'
 
 
 

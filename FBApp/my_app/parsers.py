@@ -5089,6 +5089,18 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/ru/products/frukt-kavun-bez-tm--metro28501700000000/',
         ])
 
+    def jivchik_apple_2l_parser(self):
+        ''' Парсер для напій Живчік Яблуко 2 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-2-l-zivcik-gazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-2000ml--04820000195447/',
+            'https://shop.silpo.ua/product/napii-zhyvchyk-z-sokom-iabluka-1820',
+            'https://auchan.ua/ua/napitok-gazirovannyj-zhivchik-jabloko-2l-996347/',
+            'https://novus.online/ru/product/napij-negazovanij-zivcik-2l',
+            'https://metro.zakaz.ua/ru/products/napii-zhivchik-2000ml--04820000191531/',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12973-napitok-zhivchik-yabloko-2l-4820000195447.html'
+        ])
+
 
 
 

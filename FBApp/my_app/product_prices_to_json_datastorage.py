@@ -3746,6 +3746,16 @@ all_products_names = [
         "metro": parser.kavun_parser()[6]
     }},
 
+    {'jivchik_apple_2l': {
+        "atb": parser.jivchik_apple_2l_parser()[0],
+        "eko": parser.jivchik_apple_2l_parser()[1],
+        "silpo": parser.jivchik_apple_2l_parser()[3],
+        "ashan": parser.jivchik_apple_2l_parser()[4],
+        "novus": parser.jivchik_apple_2l_parser()[5],
+        "metro": parser.jivchik_apple_2l_parser()[6],
+        "fozzy": parser.jivchik_apple_2l_parser()[8]
+    }},
+
     {'borsh_red': {
         "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (parser.pork_lopatka_parser()[0] * meat_rate)
                 + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)

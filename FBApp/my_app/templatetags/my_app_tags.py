@@ -1563,6 +1563,9 @@ get_7up_033_jb = tag.create_tag(ItemsPicsFromNet, 516)
 '''Тэг,возвращающий информацию о "Кавун, кг"'''
 get_kavun = tag.create_tag(ItemsPicsFromNet, 517)
 
+'''Тэг,возвращающий информацию о "Напиток Живчик яблоко 2л"'''
+get_jivchik_apple_2l = tag.create_tag(ItemsPicsFromNet, 518)
+
 
 
 
