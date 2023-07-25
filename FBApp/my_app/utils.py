@@ -1353,6 +1353,8 @@ class ContextSupervisor:
             result = self.getting_prices('kavun', get_kavun)
         elif nn_respond == JIVCHIK_APPLE_2l:
             result = self.getting_prices('jivchik_apple_2l', get_jivchik_apple_2l)
+        elif nn_respond == JIVCHIK_APPLE_1l:
+            result = self.getting_prices('jivchik_apple_1l', get_jivchik_apple_1l)
 
 
 

@@ -66,22 +66,17 @@
                          data-bs-parent="#accordionFlushExample">
                         <div class="accordion-body">
                             <h5 align="left">
-                                <h5>--------------------------------------------------</h5>
                                 <h5 align="left">Выгоднее всего будет скупить в ---> какой-то маркет</h5>
                                 <h5 align="left">Скупившись по списку в АТБ Вы портатите: {{ATB_total}} грн</h5>
-                                <!--<h5 align="left">Скупившись в ЭКО: {{EKO_total}} грн</h5>
-                                <h5 align="left">Скупившись в Varus: {{VARUS_total}} грн</h5>
-                                <h5 align="left">Скупившись в Сильпо: {{SILPO_total}} грн</h5>
-                                <h5 align="left">Скупившись в Ашане: {{ASHAN_total}} грн</h5>
-                                <h5 align="left">Скупившись в Novus: {{NOVUS_total}} грн</h5>
-                                <h5 align="left">Скупившись в Metro: {{METRO_total}} грн</h5>
-                                {% if NK_total == 0 %}
-                                <h5 align="left">Наш Край: запрашиваемые продукты отсутствуют в магазине</h5>
-                                {% else %}
-                                <h5 align="left">Скупившись в Наш Край: {{NK_total}} грн</h5>
-                                {% endif %}
-                                <h5 align="left">Скупившись в Fozzy: {{FOZZY_total}} грн</h5>
-                                <h5 align="left">--------------------------------------------------</h5>-->
+                                <h5 align="left">Скупившись по списку в ЕКО Вы портатите: {{EKO_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Varus Вы портатите: {{VARUS_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Сільпо Вы портатите: {{SILPO_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Ашане Вы портатите: {{ASHAN_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Novus Вы портатите: {{NOVUS_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Metro Вы портатите: {{METRO_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Нашому Краї Вы портатите: {{NK_total}} грн</h5>
+                                <h5 align="left">Скупившись по списку в Fozzy Вы портатите: {{FOZZY_total}} грн</h5>
+                            </h5>
                         </div>
                     </div>
                 </div>
@@ -106,7 +101,8 @@
                             <div class="card mb-3" style="max-width: 940px;">
                                 <div class="row g-0">
                                     <div class="col-md-4">
-                                        <img src="{% static 'my_app/images/ATB_BIG_LOGO.png' %}" class="img-fluid rounded-start" alt="АТБ">
+                                        <img src="{% static 'my_app/images/ATB_BIG_LOGO.png' %}"
+                                             class="img-fluid rounded-start" alt="АТБ">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
@@ -121,14 +117,240 @@
                                             {% endfor %}
                                             <hr class="border border-secondary border-1 opacity-25">
                                             {% endfor %}
-                                            <h5 class="card-text" align="left"><b>Общая сумма : {{ATB_total}} грн</b></h5>
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{ATB_total}} грн</b>
+                                            </h5>
                                             <hr class="border border-primary border-2 opacity-50">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <!--end-->
-                            <h5 align="left"><b>АТБ</b></h5>
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/EKO_big_logo.jpg' %}"
+                                             class="img-fluid rounded-start" alt="ЕКО">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>ЭКО</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.11 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.11}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{EKO_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/VARUS_big_logo.jpg' %}"
+                                             class="img-fluid rounded-start" alt="Варус">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Varus</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.12 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.12}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{VARUS_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/SILPO_big_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Сільпо">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Сільпо</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.13 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.13}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{SILPO_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/ASHAN_big_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Ашан">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Ашан</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.14 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.14}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{ASHAN_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/NOVUS_big_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Новус">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Novus</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.15 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.15}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{NOVUS_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/METRO_big_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Метро">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Metro</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.16 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.16}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{METRO_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/NK_big_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Наш Край">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Наш Край</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.17 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.17}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{NK_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+                            <!--new-->
+                            <div class="card mb-3" style="max-width: 940px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="{% static 'my_app/images/FOZZY_logo.png' %}"
+                                             class="img-fluid rounded-start" alt="Фоззі">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title"><b>Fozzy</b></h5>
+                                            {% for product in products_set %}
+                                            {% for key,value in product.items %}
+                                            {% if value.18 == 0 %}
+                                            <h5 class="card-text" align="left">{{key}} : нет в наличии</h5>
+                                            {% else %}
+                                            <h5 class="card-text" align="left">{{key}} : {{value.18}} грн</h5>
+                                            {% endif %}
+                                            {% endfor %}
+                                            <hr class="border border-secondary border-1 opacity-25">
+                                            {% endfor %}
+                                            <h5 class="card-text" align="left"><b>Общая сумма : {{FOZZY_total}} грн</b>
+                                            </h5>
+                                            <hr class="border border-primary border-2 opacity-50">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--end-->
+
+                            <!--<h5 align="left"><b>АТБ</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
                             {% if value.10 == 0 %}
@@ -140,8 +362,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{ATB_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for EKO-->
+
                             <h5 align="left"><b>ЭКО</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -154,8 +375,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{EKO_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Varus-->
+
                             <h5 align="left"><b>Varus</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -168,8 +388,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{VARUS_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Silpo-->
+
                             <h5 align="left"><b>Сильпо</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -182,8 +401,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{SILPO_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Ashan-->
+
                             <h5 align="left"><b>Ашан</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -196,8 +414,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{ASHAN_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Novus-->
+
                             <h5 align="left"><b>Novus</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -210,8 +427,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{NOVUS_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Metro-->
+
                             <h5 align="left"><b>Metro</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -224,8 +440,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{METRO_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for NK-->
+
                             <h5 align="left"><b>Наш Край</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -238,8 +453,7 @@
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{NK_total}} грн</b></h5>
                             <br>
-                            <!--end-->
-                            <!--for Fozzy-->
+
                             <h5 align="left"><b>Fozzy</b></h5>
                             {% for product in products_set %}
                             {% for key,value in product.items %}
@@ -251,8 +465,9 @@
                             {% endfor %}
                             {% endfor %}
                             <h5 align="left"><b>Общая сумма : {{FOZZY_total}} грн</b></h5>
-                            <br>
-                            <!--end-->
+                            <br>-->
+
+
                         </div>
                     </div>
                 </div>

@@ -1566,6 +1566,9 @@ get_kavun = tag.create_tag(ItemsPicsFromNet, 517)
 '''Тэг,возвращающий информацию о "Напиток Живчик яблоко 2л"'''
 get_jivchik_apple_2l = tag.create_tag(ItemsPicsFromNet, 518)
 
+'''Тэг,возвращающий информацию о "Напиток Живчик яблоко 1л"'''
+get_jivchik_apple_1l = tag.create_tag(ItemsPicsFromNet, 519)
+
 
 
 
