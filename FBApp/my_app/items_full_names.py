@@ -512,10 +512,12 @@ PELMENI_EXTRA_SIBIR_500GR = 'Пельмени Extra! Сибирские, 500г'
 PELMENI_EXTRA_RAVIOLI_DOMASHNIE_800GR = 'Равиоли Extra! Домашние, 800г'
 SEVEN_UP_033JB = 'Напиток 7UP безалкогольный, сильногазированный, ж/б, 0,33л'
 KAVUN = 'Кавун, кг'
-JIVCHIK_APPLE_2l = 'Напиток Живчик яблоко 2л'
-JIVCHIK_APPLE_1l = 'Напиток Живчик яблоко 1л'
-
-
+JIVCHIK_APPLE_2l = 'Напиток Живчик яблоко 2 л'
+JIVCHIK_APPLE_1l = 'Напиток Живчик яблоко 1 л'
+JIVCHIK_APPLE_05l = 'Напиток Живчик яблоко 0.5 л'
+JIVCHIK_GRUSHA_1l = 'Напиток Живчик груша 1 л'
+JIVCHIK_SMART_COLA_2l = 'Живчик Smart Сola, 2л'
+JIVCHIK_LIMON_2l = 'Живчик лімон, 2л'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

@@ -5113,6 +5113,50 @@ class ProductParserVol2:
             'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12951-napitok-zhivchik-yabloko-4820000195430.html'
         ])
 
+    def jivchik_apple_05l_parser(self):
+        ''' Парсер для напій Живчік Яблуко 0.5 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-05l-zivcik-gazovanij',
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-500ml--04820000195423/',
+            'https://varus.ua/napiy-zhivchik-silnogazovaniy-0-5-l',
+            'https://shop.silpo.ua/product/napii-zhyvchyk-z-sokom-iabluka-64604',
+            'https://novus.online/ru/product/napij-gazovanij-zivcik-05l',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/19309-napitok-zhivchik-yabloko-05l-4820000195423.html'
+        ])
+
+    def jivchik_grusha_1l_parser(self):
+        ''' Парсер для напій Живчік Груша 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-1000ml--04820000193252/',
+            'https://varus.ua/napiy-zhivchik-grusha-silnogazovaniy-1-l',
+            'https://shop.silpo.ua/product/napii-zhyvchyk-grusha-304833',
+            'https://auchan.ua/ua/napitok-zhivchik-grusha-1-l-994796/',
+            'https://novus.online/ru/product/napij-gazovanij-zivcik-grusa-1l',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12947-napitok-zhivchik-grusha-4820000193252.html'
+        ])
+
+    def jivchik_smart_cola_2l_parser(self):
+        ''' Парсер для напій Живчік Smart Cola 2 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-2000ml--04820193032857/',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-zhyvchyk-smart-sola-793178',
+            'https://auchan.ua/ua/napitok-sokosoderzhaschij-sil-nogazirovannyj-smart-sola-zhivchik-p-but-2l-689109/',
+            'https://novus.online/ru/product/napij-gazovanij-sokovmisnij-zivcik-smart-sola-2l-pet',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/63966-napitok-sokosoderzhashhij-zhivchik-smart-sola-4820193032857.html'
+        ])
+
+    def jivchik_limon_2l_parser(self):
+        ''' Парсер для напій Живчік лімон 2 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-2000ml--04820000191982/',
+            'https://varus.ua/napiy-zhivchik-limon-silnogazovaniy-2-l',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-zhyvchyk-leemon-910081',
+            'https://auchan.ua/ua/voda-limon-zhivchik-obolon-2l-682242/',
+            'https://novus.online/ru/product/napij-gazovanij-zivcik-limon-2l',
+            'https://metro.zakaz.ua/ru/products/napii-zhivchik-2000ml--04820000191982/',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12948-napitok-zhivchik-limon-4820000191982.html'
+        ])
+
 
 
 

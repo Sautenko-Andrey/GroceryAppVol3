@@ -1355,6 +1355,14 @@ class ContextSupervisor:
             result = self.getting_prices('jivchik_apple_2l', get_jivchik_apple_2l)
         elif nn_respond == JIVCHIK_APPLE_1l:
             result = self.getting_prices('jivchik_apple_1l', get_jivchik_apple_1l)
+        elif nn_respond == JIVCHIK_APPLE_05l:
+            result = self.getting_prices('jivchik_apple_05l', get_jivchik_apple_05l)
+        elif nn_respond == JIVCHIK_GRUSHA_1l:
+            result = self.getting_prices('jivchik_grusha_1l', get_jivchik_grusha_1l)
+        elif nn_respond == JIVCHIK_SMART_COLA_2l:
+            result = self.getting_prices('jivchik_smart_cola_2l', get_jivchik_smart_cola_2l)
+        elif nn_respond == JIVCHIK_LIMON_2l:
+            result = self.getting_prices('jivchik_limon_2l', get_jivchik_limon_2l)
 
 
 

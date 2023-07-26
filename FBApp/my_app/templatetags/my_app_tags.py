@@ -1569,6 +1569,18 @@ get_jivchik_apple_2l = tag.create_tag(ItemsPicsFromNet, 518)
 '''Тэг,возвращающий информацию о "Напиток Живчик яблоко 1л"'''
 get_jivchik_apple_1l = tag.create_tag(ItemsPicsFromNet, 519)
 
+'''Тэг,возвращающий информацию о "Напиток Живчик яблоко 0.5 л"'''
+get_jivchik_apple_05l = tag.create_tag(ItemsPicsFromNet, 520)
+
+'''Тэг,возвращающий информацию о "Напиток Живчик груша 1 л"'''
+get_jivchik_grusha_1l = tag.create_tag(ItemsPicsFromNet, 521)
+
+'''Тэг,возвращающий информацию о "Напиток сокосодержащий Живчик Smart Сola, 2л"'''
+get_jivchik_smart_cola_2l = tag.create_tag(ItemsPicsFromNet, 522)
+
+'''Тэг,возвращающий информацию о "Напиток Живчик лимон, 2л"'''
+get_jivchik_limon_2l = tag.create_tag(ItemsPicsFromNet, 523)
+
 
 
 

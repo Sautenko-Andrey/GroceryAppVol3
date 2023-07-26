@@ -1099,3 +1099,11 @@ class TesterForGroceryAppText:
             return JIVCHIK_APPLE_2l
         elif np.argmax(result) == 515:
             return JIVCHIK_APPLE_1l
+        elif np.argmax(result) == 516:
+            return JIVCHIK_APPLE_05l
+        elif np.argmax(result) == 517:
+            return JIVCHIK_GRUSHA_1l
+        elif np.argmax(result) == 518:
+            return JIVCHIK_SMART_COLA_2l
+        elif np.argmax(result) == 519:
+            return JIVCHIK_LIMON_2l

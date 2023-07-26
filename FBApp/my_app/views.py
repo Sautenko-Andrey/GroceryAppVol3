@@ -583,28 +583,24 @@ class SetResults(MutualContext, ListView):
                 metro_total += value[16]
                 nk_total += value[17]
                 fozzy_total += value[18]
+
+        #подсчет самой выгодной цены
+        best_market_price = min(atb_total, eko_total, varus_total, round(silpo_total,2), ashan_total,\
+            novus_total, metro_total, nk_total, fozzy_total)
+        print(f"Best market price: {best_market_price}")
         return atb_total, eko_total, varus_total, round(silpo_total,2), ashan_total,\
             novus_total, metro_total, nk_total, fozzy_total
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context_dict = super().get_context_data(**kwargs)
         context_dict['all_relevant_markets'] = get_all_markets
-        # отображение списка кортежей с полной информацией по заказу
-        # context_dict['products_set'], context_dict['ATB_total'], context_dict['EKO_total'], context_dict[
-        #     'VARUS_total'], context_dict['SILPO_total'], context_dict['ASHAN_total'], context_dict[
-        #     'NOVUS_total'], context_dict['METRO_total'], context_dict['NK_total'], context_dict[
-        #     'FOZZY_total'] = self.NN_works()
 
+        # отображение списка кортежей с полной информацией по заказу
         prices_list = context_dict['products_set'] = self.NN_works()
         context_dict['ATB_total'], context_dict['EKO_total'], context_dict['VARUS_total'],\
             context_dict['SILPO_total'], context_dict['ASHAN_total'],context_dict['NOVUS_total'],\
             context_dict['METRO_total'], context_dict['NK_total'],\
             context_dict['FOZZY_total'] = self.get_market_total_price(prices_list)
-
-        # get_list = self.NN_works()[0]
-        # for item in get_list:
-        #     for key, value in item.items():
-        #         print(f"Value 10 = {value[10]}")
 
         mutual_context_dict = self.get_user_context(title='Результаты по наборам')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))

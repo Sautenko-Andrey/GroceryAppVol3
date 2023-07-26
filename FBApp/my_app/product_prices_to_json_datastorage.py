@@ -3766,6 +3766,42 @@ all_products_names = [
         "fozzy": parser.jivchik_apple_1l_parser()[8]
     }},
 
+    {'jivchik_apple_05l': {
+        "atb": parser.jivchik_apple_05l_parser()[0],
+        "eko": parser.jivchik_apple_05l_parser()[1],
+        "varus": parser.jivchik_apple_05l_parser()[2],
+        "silpo": parser.jivchik_apple_05l_parser()[3],
+        "novus": parser.jivchik_apple_05l_parser()[5],
+        "fozzy": parser.jivchik_apple_05l_parser()[8]
+    }},
+
+    {'jivchik_grusha_1l': {
+        "eko": parser.jivchik_grusha_1l_parser()[1],
+        "varus": parser.jivchik_grusha_1l_parser()[2],
+        "silpo": parser.jivchik_grusha_1l_parser()[3],
+        "ashan": parser.jivchik_grusha_1l_parser()[4],
+        "novus": parser.jivchik_grusha_1l_parser()[5],
+        "fozzy": parser.jivchik_grusha_1l_parser()[8]
+    }},
+
+    {'jivchik_smart_cola_2l': {
+        "eko": parser.jivchik_smart_cola_2l_parser()[1],
+        "silpo": parser.jivchik_smart_cola_2l_parser()[3],
+        "ashan": parser.jivchik_smart_cola_2l_parser()[4],
+        "novus": parser.jivchik_smart_cola_2l_parser()[5],
+        "fozzy": parser.jivchik_smart_cola_2l_parser()[8]
+    }},
+
+    {'jivchik_limon_2l': {
+        "eko": parser.jivchik_limon_2l_parser()[1],
+        "varus": parser.jivchik_limon_2l_parser()[2],
+        "silpo": parser.jivchik_limon_2l_parser()[3],
+        "ashan": parser.jivchik_limon_2l_parser()[4],
+        "novus": parser.jivchik_limon_2l_parser()[5],
+        "metro": parser.jivchik_limon_2l_parser()[6],
+        "fozzy": parser.jivchik_limon_2l_parser()[8]
+    }},
+
 
 
 
