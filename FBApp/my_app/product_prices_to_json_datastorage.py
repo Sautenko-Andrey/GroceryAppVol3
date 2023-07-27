@@ -3802,6 +3802,73 @@ all_products_names = [
         "fozzy": parser.jivchik_limon_2l_parser()[8]
     }},
 
+    {'jivchik_smart_cola_1l': {
+        "eko": parser.jivchik_smart_cola_1l_parser()[1],
+        "silpo": parser.jivchik_smart_cola_1l_parser()[3],
+        "ashan": parser.jivchik_smart_cola_1l_parser()[4],
+        "novus": parser.jivchik_smart_cola_1l_parser()[5],
+        "fozzy": parser.jivchik_smart_cola_1l_parser()[8]
+    }},
+
+    {'biola_strawb_kiwi_2l': {
+        "atb": parser.biola_strawb_kiwi_2l_parser()[0],
+        "novus": parser.biola_strawb_kiwi_2l_parser()[5],
+        "fozzy": parser.biola_strawb_kiwi_2l_parser()[8]
+    }},
+
+    {'biola_lemonad_2l': {
+        "varus": parser.biola_lemonad_2l_parser()[2],
+        "silpo": parser.biola_lemonad_2l_parser()[3],
+        "novus": parser.biola_lemonad_2l_parser()[5],
+        "fozzy": parser.biola_lemonad_2l_parser()[8]
+    }},
+
+    {'bon_boisson_limonad_1l': {
+        "varus": parser.bon_boisson_limonad_1l_parser()[2],
+        "silpo": parser.bon_boisson_limonad_1l_parser()[3],
+        "ashan": parser.bon_boisson_limonad_1l_parser()[4],
+        "novus": parser.bon_boisson_limonad_1l_parser()[5],
+        "nash_kray": parser.bon_boisson_limonad_1l_parser()[7],
+        "fozzy": parser.bon_boisson_limonad_1l_parser()[8]
+    }},
+
+    {'bon_boisson_limonad_2l': {
+        "eko": parser.bon_boisson_limonad_2l_parser()[1],
+        "varus": parser.bon_boisson_limonad_2l_parser()[2],
+        "silpo": parser.bon_boisson_limonad_2l_parser()[3],
+        "ashan": parser.bon_boisson_limonad_2l_parser()[4],
+        "novus": parser.bon_boisson_limonad_2l_parser()[5],
+        "metro": parser.bon_boisson_limonad_2l_parser()[6],
+        "nash_kray": parser.bon_boisson_limonad_2l_parser()[7],
+        "fozzy": parser.bon_boisson_limonad_2l_parser()[8]
+    }},
+
+    {'bon_boisson_lime_mint_2l': {
+        "fozzy": parser.bon_boisson_lime_mint_2l_parser()[8]
+    }},
+
+    {'bon_boisson_baikal_2l': {
+        "eko": parser.bon_boisson_baikal_2l_parser()[1],
+        "varus": parser.bon_boisson_baikal_2l_parser()[2],
+        "silpo": parser.bon_boisson_baikal_2l_parser()[3],
+        "ashan": parser.bon_boisson_baikal_2l_parser()[4],
+        "novus": parser.bon_boisson_baikal_2l_parser()[5],
+        "metro": parser.bon_boisson_baikal_2l_parser()[6],
+        "fozzy": parser.bon_boisson_baikal_2l_parser()[8]
+    }},
+
+    {'bon_boisson_tarhun_2l': {
+        "atb": parser.bon_boisson_tarhun_2l_parser()[0],
+        "eko": parser.bon_boisson_tarhun_2l_parser()[1],
+        "varus": parser.bon_boisson_tarhun_2l_parser()[2],
+        "silpo": parser.bon_boisson_tarhun_2l_parser()[3],
+        "ashan": parser.bon_boisson_tarhun_2l_parser()[4],
+        "novus": parser.bon_boisson_tarhun_2l_parser()[5],
+        "metro": parser.bon_boisson_tarhun_2l_parser()[6],
+        "nash_kray": parser.bon_boisson_tarhun_2l_parser()[7],
+        "fozzy": parser.bon_boisson_tarhun_2l_parser()[8]
+    }},
+
 
 
 

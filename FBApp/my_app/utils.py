@@ -1363,6 +1363,22 @@ class ContextSupervisor:
             result = self.getting_prices('jivchik_smart_cola_2l', get_jivchik_smart_cola_2l)
         elif nn_respond == JIVCHIK_LIMON_2l:
             result = self.getting_prices('jivchik_limon_2l', get_jivchik_limon_2l)
+        elif nn_respond == JIVCHIK_SMART_COLA_1l:
+            result = self.getting_prices('jivchik_smart_cola_1l', get_jivchik_smart_cola_1l)
+        elif nn_respond == BIOLA_STRAWBERRY_KIWI_2L:
+            result = self.getting_prices('biola_strawb_kiwi_2l', get_biola_strawb_kiwi_2l)
+        elif nn_respond == BIOLA_LEMONAD_2L:
+            result = self.getting_prices('biola_lemonad_2l', get_biola_lemonad_2l)
+        elif nn_respond == BON_BOISSON_LIMONAD_1L:
+            result = self.getting_prices('bon_boisson_limonad_1l', get_bon_boisson_limonad_1l)
+        elif nn_respond == BON_BOISSON_LIMONAD_2L:
+            result = self.getting_prices('bon_boisson_limonad_2l', get_bon_boisson_limonad_2l)
+        elif nn_respond == BON_BOISSON_LIME_MINT_2L:
+            result = self.getting_prices('bon_boisson_lime_mint_2l', get_bon_boisson_lime_mint_2l)
+        elif nn_respond == BON_BOISSON_BAIKAL_2L:
+            result = self.getting_prices('bon_boisson_baikal_2l', get_bon_boisson_baikal_2l)
+        elif nn_respond == BON_BOISSON_TARHUN_2L:
+            result = self.getting_prices('bon_boisson_tarhun_2l', get_bon_boisson_tarhun_2l)
 
 
 

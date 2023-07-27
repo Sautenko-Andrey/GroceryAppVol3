@@ -1581,7 +1581,29 @@ get_jivchik_smart_cola_2l = tag.create_tag(ItemsPicsFromNet, 522)
 '''Тэг,возвращающий информацию о "Напиток Живчик лимон, 2л"'''
 get_jivchik_limon_2l = tag.create_tag(ItemsPicsFromNet, 523)
 
+'''Тэг,возвращающий информацию о "Напиток сокосодержащий Живчик Smart Сola, 1л"'''
+get_jivchik_smart_cola_1l = tag.create_tag(ItemsPicsFromNet, 524)
 
+'''Тэг,возвращающий информацию о "Напиток Biola Fruit Water со вкусом клубники и киви, 2л"'''
+get_biola_strawb_kiwi_2l = tag.create_tag(ItemsPicsFromNet, 525)
+
+'''Тэг,возвращающий информацию о "Напиток Biola Фруктовая вода Лимонад сильногазированный, 2л"'''
+get_biola_lemonad_2l = tag.create_tag(ItemsPicsFromNet, 526)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson Лимонад, 1л"'''
+get_bon_boisson_limonad_1l = tag.create_tag(ItemsPicsFromNet, 527)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson Лимонад, 2л"'''
+get_bon_boisson_limonad_2l = tag.create_tag(ItemsPicsFromNet, 528)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson со вкусом лайм-мята, 2л"'''
+get_bon_boisson_lime_mint_2l = tag.create_tag(ItemsPicsFromNet, 529)
+
+'''Тэг,возвращающий информацию о "Напиток Бон Буассон Байкал 2л"'''
+get_bon_boisson_baikal_2l = tag.create_tag(ItemsPicsFromNet, 530)
+
+'''Тэг,возвращающий информацию о "Напиток Бон Буассон Тархун 2л"'''
+get_bon_boisson_tarhun_2l = tag.create_tag(ItemsPicsFromNet, 531)
 
 
 

@@ -518,6 +518,14 @@ JIVCHIK_APPLE_05l = 'Напиток Живчик яблоко 0.5 л'
 JIVCHIK_GRUSHA_1l = 'Напиток Живчик груша 1 л'
 JIVCHIK_SMART_COLA_2l = 'Живчик Smart Сola, 2л'
 JIVCHIK_LIMON_2l = 'Живчик лімон, 2л'
+JIVCHIK_SMART_COLA_1l = 'Живчик Smart Сola, 1 л'
+BIOLA_STRAWBERRY_KIWI_2L = 'Біола полуниця-ківі, 2л'
+BIOLA_LEMONAD_2L = 'Біола лімонад, 2л'
+BON_BOISSON_LIMONAD_1L = 'Напиток Bon Boisson Лимонад, 1л'
+BON_BOISSON_LIMONAD_2L = 'Напиток Bon Boisson Лимонад, 2л'
+BON_BOISSON_LIME_MINT_2L = "Напиток Bon Boisson Лайм-м'ята, 2л"
+BON_BOISSON_BAIKAL_2L = "Напиток Bon Boisson Байкал, 2л"
+BON_BOISSON_TARHUN_2L = "Напиток Bon Boisson Тархун, 2л"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

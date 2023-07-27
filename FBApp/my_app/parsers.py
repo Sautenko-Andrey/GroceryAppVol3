@@ -5157,6 +5157,89 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12948-napitok-zhivchik-limon-4820000191982.html'
         ])
 
+    def jivchik_smart_cola_1l_parser(self):
+        ''' Парсер для напій Живчік Smart Cola 1 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-zhivchik-1000ml--04820193032871/',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-zhyvchyk-smart-sola-793177',
+            'https://auchan.ua/ua/napitok-sokosoderzhaschij-sil-nogazirovannyj-smart-sola-zhivchik-p-but-1l-689102/',
+            'https://novus.online/ru/product/napij-gazovanij-sokovmisnij-zivcik-smart-sola-1l-pet',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/63967-napitok-sokosoderzhashhij-zhivchik-smart-sola-4820193032871.html'
+        ])
+
+    def biola_strawb_kiwi_2l_parser(self):
+        ''' Парсер для напій Біола полуниця-ківі 2 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-2-l-biola-polunica-kivi-bezalkogolnij-sokovmisnij-silnogazovanij',
+            'https://novus.online/ru/product/napiy-sylhazyrovanyy-biola-polunytsya-kivi-2l-pet',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/87668-napitok-biola-fruit-water-so-vkusom-klubniki-i-kivi-4820209112245.html'
+        ])
+
+    def biola_lemonad_2l_parser(self):
+        ''' Парсер для напій Біола лімонад 2 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napij-biola-fruit-water-limonad-bezalkogolnij-silnogazovanij-na-aromatizatorah-2-l',
+            'https://shop.silpo.ua/product/napii-biola-fruktova-voda-lymonad-sylnogazovana-913438',
+            'https://novus.online/ru/product/napij-gazovanij-biola-limonad-2l',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/101364-napitok-biola-fruktovaya-voda-limonad-silnogazirovannyj-0250015067462.html'
+        ])
+
+    def bon_boisson_limonad_1l_parser(self):
+        ''' Парсер для напій Бон Буассон лімонад 1 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-bon-boisson-limonad-silnogazovaniy-1-l',
+            'https://shop.silpo.ua/product/napii-bon-boisson-lymonad-89009',
+            'https://auchan.ua/ua/napitok-bon-buasson-limonad-1-l-745722/',
+            'https://novus.online/ru/product/napij-gazovanij-bon-buason-limonad-1l',
+            'https://shop.nashkraj.ua/kovel/product/19296-napiy-bon-buasson-1l-limonad',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/28659-napitok-bon-boisson-limonad-4820005194339.html'
+        ])
+
+    def bon_boisson_limonad_2l_parser(self):
+        ''' Парсер для напій Бон Буассон лімонад 2 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203710096/',
+            'https://varus.ua/napiy-bon-boisson-limonad-silnogazovaniy-2-l',
+            'https://shop.silpo.ua/product/napii-lymonad-4214',
+            'https://auchan.ua/ua/napitok-bon-buasson-limonad-2-l-246668/',
+            'https://novus.online/ru/product/napij-gazovanij-bon-buason-limonad-2l',
+            'https://metro.zakaz.ua/ru/products/napii-bon-buasson-2000ml-ukrayina--04820005197446/',
+            'https://shop.nashkraj.ua/kovel/product/6551-napiy-bon-buasson-2l-limonad',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/49832-napitok-bon-buasson-limonad-2l-4820005190379.html'
+        ])
+
+    def bon_boisson_lime_mint_2l_parser(self):
+        ''' Парсер для напій Бон Буассон лайм-м'ята 2 л'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/86494-napitok-bon-boisson-so-vkusom-lajm-myata-4820203711239.html'
+        ])
+
+    def bon_boisson_baikal_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Байкал 2 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203710034/',
+            'https://varus.ua/napiy-bon-boisson-baykal-silnogazovaniy-2-l',
+            'https://shop.silpo.ua/product/napii-baikal-4538',
+            'https://auchan.ua/ua/napitok-bon-buasson-bajkal-2-l-710627/',
+            'https://novus.online/ru/product/napij-gazovanij-bon-buason-bajkal-2l',
+            'https://metro.zakaz.ua/ru/products/napii-bon-buasson-2000ml-ukrayina--04820005190249/',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/49829-napitok-bon-buasson-bajkal-2l-4820005190249.html'
+        ])
+
+    def bon_boisson_tarhun_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Тархун 2 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-bon-buasson-tarhun-2-l',
+            'https://eko.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203710256/',
+            'https://varus.ua/napiy-bon-boisson-tarhun-silnogazovaniy-2-l',
+            'https://shop.silpo.ua/product/napii-tarkhun-4215',
+            'https://auchan.ua/ua/napitok-bon-buasson-tarhun-gazirovannyj-2l-246670/',
+            'https://novus.online/ru/product/napij-gazovanij-bon-buason-tarhun-2l',
+            'https://metro.zakaz.ua/ru/products/napii-bon-buasson-2000ml-ukrayina--04820005190294/',
+            'https://shop.nashkraj.ua/kovel/product/6552-napiy-bon-buasson-2l-tarkhun',
+            'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/49831-napitok-bon-buasson-tarkhun-2l-4820005190294.html'
+        ])
+
 
 
 
