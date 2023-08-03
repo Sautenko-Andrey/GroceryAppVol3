@@ -1,0 +1,704 @@
+{
+                                                                                                     "kozacka_rada_classic_05l": {
+                                                                                                                                                                                                          "atb": 130.6,
+                                                                                                                                                                                                          "eko": 124.0,
+                                                                                                                                                                                                          "silpo": 134.0,
+                                                                                                                                                                                                          "ashan": 122.9,
+                                                                                                                                                                                                          "novus": 130.0,
+                                                                                                                                                                                                          "metro": 132.7,
+                                                                                                                                                                                                          "nash_kray": 101.9,
+                                                                                                                                                                                                          "fozzy": 121.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_osobliva_05l": {
+                                                                                                                                                                                                          "atb": 129.9,
+                                                                                                                                                                                                          "eko": 129.9,
+                                                                                                                                                                                                          "varus": 129.0,
+                                                                                                                                                                                                          "silpo": 114.0,
+                                                                                                                                                                                                          "novus": 114.0,
+                                                                                                                                                                                                          "fozzy": 114.0
+                                                                                                     },
+                                                                                                     "zubrowka_bison_grass_05l": {
+                                                                                                                                                                                                          "atb": 105.9,
+                                                                                                                                                                                                          "eko": 134.9,
+                                                                                                                                                                                                          "ashan": 137.0,
+                                                                                                                                                                                                          "novus": 184.0,
+                                                                                                                                                                                                          "metro": 142.4,
+                                                                                                                                                                                                          "nash_kray": 13.0,
+                                                                                                                                                                                                          "fozzy": 137.0
+                                                                                                     },
+                                                                                                     "zubrowka_biala_05l": {
+                                                                                                                                                                                                          "atb": 93.9,
+                                                                                                                                                                                                          "eko": 161.3,
+                                                                                                                                                                                                          "ashan": 135.9,
+                                                                                                                                                                                                          "novus": 134.0,
+                                                                                                                                                                                                          "metro": 135.9,
+                                                                                                                                                                                                          "nash_kray": 151.9,
+                                                                                                                                                                                                          "fozzy": 121.0
+                                                                                                     },
+                                                                                                     "zubrowka_czarna_05l": {
+                                                                                                                                                                                                          "eko": 389.3,
+                                                                                                                                                                                                          "ashan": 178.9,
+                                                                                                                                                                                                          "nash_kray": 32.0,
+                                                                                                                                                                                                          "fozzy": 315.0
+                                                                                                     },
+                                                                                                     "vozduh_legka_osobliva_05l": {
+                                                                                                                                                                                                          "eko": 150.1,
+                                                                                                                                                                                                          "fozzy": 124.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_verhovna_05l": {
+                                                                                                                                                                                                          "ashan": 0,
+                                                                                                                                                                                                          "novus": 0,
+                                                                                                                                                                                                          "fozzy": 172.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_znatna_05l": {
+                                                                                                                                                                                                          "silpo": 139.0,
+                                                                                                                                                                                                          "ashan": 0,
+                                                                                                                                                                                                          "fozzy": 169.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_povajna_05l": {
+                                                                                                                                                                                                          "silpo": 174.0,
+                                                                                                                                                                                                          "ashan": 168.0,
+                                                                                                                                                                                                          "novus": 139.0,
+                                                                                                                                                                                                          "metro": 168.3,
+                                                                                                                                                                                                          "fozzy": 168.0
+                                                                                                     },
+                                                                                                     "hlib_dar_classic_05l": {
+                                                                                                                                                                                                          "atb": 126.6,
+                                                                                                                                                                                                          "eko": 109.0,
+                                                                                                                                                                                                          "silpo": 123.0,
+                                                                                                                                                                                                          "ashan": 117.0,
+                                                                                                                                                                                                          "metro": 132.7,
+                                                                                                                                                                                                          "fozzy": 121.0
+                                                                                                     },
+                                                                                                     "hlib_dar_pror_zerno_05l": {
+                                                                                                                                                                                                          "eko": 153.7,
+                                                                                                                                                                                                          "silpo": 149.0,
+                                                                                                                                                                                                          "novus": 149.0,
+                                                                                                                                                                                                          "fozzy": 109.0
+                                                                                                     },
+                                                                                                     "hlib_dar_jitnya_05l": {
+                                                                                                                                                                                                          "eko": 153.7,
+                                                                                                                                                                                                          "silpo": 109.0,
+                                                                                                                                                                                                          "fozzy": 123.0
+                                                                                                     },
+                                                                                                     "hlib_dar_pshenichna_05l": {
+                                                                                                                                                                                                          "eko": 153.7,
+                                                                                                                                                                                                          "silpo": 109.0,
+                                                                                                                                                                                                          "novus": 139.0,
+                                                                                                                                                                                                          "fozzy": 125.0
+                                                                                                     },
+                                                                                                     "green_day_organic_life_07l": {
+                                                                                                                                                                                                          "silpo": 204.0,
+                                                                                                                                                                                                          "ashan": 168.0,
+                                                                                                                                                                                                          "fozzy": 168.0
+                                                                                                     },
+                                                                                                     "green_day_07l": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 204.0,
+                                                                                                                                                                                                          "ashan": 160.8,
+                                                                                                                                                                                                          "fozzy": 157.0
+                                                                                                     },
+                                                                                                     "green_day_ultra_soft_07l": {
+                                                                                                                                                                                                          "fozzy": 174.0
+                                                                                                     },
+                                                                                                     "green_day_air_07l": {
+                                                                                                                                                                                                          "fozzy": 169.0
+                                                                                                     },
+                                                                                                     "green_day_crystal_07l": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 199.0,
+                                                                                                                                                                                                          "ashan": 190.0,
+                                                                                                                                                                                                          "novus": 199.0,
+                                                                                                                                                                                                          "fozzy": 190.0
+                                                                                                     },
+                                                                                                     "medoff_classic_07l": {
+                                                                                                                                                                                                          "eko": 225.2,
+                                                                                                                                                                                                          "varus": 139.9,
+                                                                                                                                                                                                          "silpo": 204.0,
+                                                                                                                                                                                                          "ashan": 181.0,
+                                                                                                                                                                                                          "nash_kray": 193.6,
+                                                                                                                                                                                                          "fozzy": 181.0
+                                                                                                     },
+                                                                                                     "nemiroff_delikat_myaka_07l": {
+                                                                                                                                                                                                          "eko": 218.6,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 169.0,
+                                                                                                                                                                                                          "novus": 159.0,
+                                                                                                                                                                                                          "metro": 196.4,
+                                                                                                                                                                                                          "nash_kray": 179.9,
+                                                                                                                                                                                                          "fozzy": 154.0
+                                                                                                     },
+                                                                                                     "nemiroff_osob_shtof_07l": {
+                                                                                                                                                                                                          "atb": 185.7,
+                                                                                                                                                                                                          "silpo": 169.0,
+                                                                                                                                                                                                          "metro": 192.1,
+                                                                                                                                                                                                          "fozzy": 176.0
+                                                                                                     },
+                                                                                                     "nemiroff_deluxe_07l": {
+                                                                                                                                                                                                          "atb": 262.6,
+                                                                                                                                                                                                          "eko": 239.9,
+                                                                                                                                                                                                          "silpo": 284.0,
+                                                                                                                                                                                                          "ashan": 0,
+                                                                                                                                                                                                          "novus": 284.0,
+                                                                                                                                                                                                          "metro": 304.4,
+                                                                                                                                                                                                          "fozzy": 299.0
+                                                                                                     },
+                                                                                                     "nemiroff_lex_07l": {
+                                                                                                                                                                                                          "silpo": 479.0,
+                                                                                                                                                                                                          "novus": 479.0,
+                                                                                                                                                                                                          "metro": 507.4,
+                                                                                                                                                                                                          "fozzy": 474.0
+                                                                                                     },
+                                                                                                     "zubrowka_bison_grass_07l": {
+                                                                                                                                                                                                          "atb": 195.9,
+                                                                                                                                                                                                          "eko": 254.5,
+                                                                                                                                                                                                          "ashan": 234.0,
+                                                                                                                                                                                                          "novus": 179.0,
+                                                                                                                                                                                                          "nash_kray": 24.0,
+                                                                                                                                                                                                          "fozzy": 187.0
+                                                                                                     },
+                                                                                                     "zubrowka_czarna_07l": {
+                                                                                                                                                                                                          "eko": 500.8,
+                                                                                                                                                                                                          "ashan": 339.0,
+                                                                                                                                                                                                          "nash_kray": 419.4,
+                                                                                                                                                                                                          "fozzy": 394.0
+                                                                                                     },
+                                                                                                     "hetman_07l": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 229.0,
+                                                                                                                                                                                                          "novus": 219.0,
+                                                                                                                                                                                                          "fozzy": 226.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_classic_07l": {
+                                                                                                                                                                                                          "atb": 181.3,
+                                                                                                                                                                                                          "eko": 227.2,
+                                                                                                                                                                                                          "silpo": 195.9,
+                                                                                                                                                                                                          "ashan": 176.9,
+                                                                                                                                                                                                          "novus": 169.0,
+                                                                                                                                                                                                          "fozzy": 175.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_premium_07l": {
+                                                                                                                                                                                                          "eko": 286.9,
+                                                                                                                                                                                                          "ashan": 239.0,
+                                                                                                                                                                                                          "fozzy": 239.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_osobliva_07l": {
+                                                                                                                                                                                                          "eko": 227.2,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "ashan": 169.0,
+                                                                                                                                                                                                          "novus": 219.0,
+                                                                                                                                                                                                          "fozzy": 189.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_povajna_07l": {
+                                                                                                                                                                                                          "eko": 237.6,
+                                                                                                                                                                                                          "silpo": 219.0,
+                                                                                                                                                                                                          "ashan": 192.0,
+                                                                                                                                                                                                          "fozzy": 212.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_verhovna_07l": {
+                                                                                                                                                                                                          "eko": 237.7,
+                                                                                                                                                                                                          "silpo": 169.0,
+                                                                                                                                                                                                          "ashan": 204.0,
+                                                                                                                                                                                                          "novus": 169.0,
+                                                                                                                                                                                                          "fozzy": 199.0
+                                                                                                     },
+                                                                                                     "persha_gildiya_znatna_07l": {
+                                                                                                                                                                                                          "eko": 237.6,
+                                                                                                                                                                                                          "silpo": 169.0,
+                                                                                                                                                                                                          "ashan": 183.8,
+                                                                                                                                                                                                          "fozzy": 169.0
+                                                                                                     },
+                                                                                                     "hlibniy_dar_classic_07l": {
+                                                                                                                                                                                                          "atb": 176.8,
+                                                                                                                                                                                                          "eko": 215.0,
+                                                                                                                                                                                                          "silpo": 174.0,
+                                                                                                                                                                                                          "ashan": 155.4,
+                                                                                                                                                                                                          "novus": 174.0,
+                                                                                                                                                                                                          "metro": 187.8,
+                                                                                                                                                                                                          "nash_kray": 176.5,
+                                                                                                                                                                                                          "fozzy": 172.0
+                                                                                                     },
+                                                                                                     "medoff_classic_1l": {
+                                                                                                                                                                                                          "nash_kray": 270.6,
+                                                                                                                                                                                                          "fozzy": 234.0
+                                                                                                     },
+                                                                                                     "nemiroff_shtof_1l": {
+                                                                                                                                                                                                          "atb": 263.5,
+                                                                                                                                                                                                          "silpo": 299.0,
+                                                                                                                                                                                                          "nash_kray": 298.8,
+                                                                                                                                                                                                          "fozzy": 257.0
+                                                                                                     },
+                                                                                                     "nemiroff_delicat_1l": {
+                                                                                                                                                                                                          "eko": 310.3,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 299.0,
+                                                                                                                                                                                                          "ashan": 0,
+                                                                                                                                                                                                          "novus": 299.0,
+                                                                                                                                                                                                          "fozzy": 281.0
+                                                                                                     },
+                                                                                                     "zubrowka_bison_grass_1l": {
+                                                                                                                                                                                                          "varus": 359.0,
+                                                                                                                                                                                                          "novus": 349.0,
+                                                                                                                                                                                                          "nash_kray": 31.0,
+                                                                                                                                                                                                          "fozzy": 339.0
+                                                                                                     },
+                                                                                                     "zubrowka_biala_1l": {
+                                                                                                                                                                                                          "eko": 239.9,
+                                                                                                                                                                                                          "varus": 349.9,
+                                                                                                                                                                                                          "fozzy": 311.0
+                                                                                                     },
+                                                                                                     "hetman_1l": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 289.0,
+                                                                                                                                                                                                          "fozzy": 299.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_osobliva_1l": {
+                                                                                                                                                                                                          "eko": 313.6,
+                                                                                                                                                                                                          "varus": 235.0,
+                                                                                                                                                                                                          "ashan": 225.0,
+                                                                                                                                                                                                          "novus": 289.0,
+                                                                                                                                                                                                          "fozzy": 269.0
+                                                                                                     },
+                                                                                                     "kozacka_rada_classic_1l": {
+                                                                                                                                                                                                          "atb": 255.9,
+                                                                                                                                                                                                          "eko": 229.9,
+                                                                                                                                                                                                          "varus": 249.9,
+                                                                                                                                                                                                          "silpo": 284.0,
+                                                                                                                                                                                                          "ashan": 254.9,
+                                                                                                                                                                                                          "novus": 229.0,
+                                                                                                                                                                                                          "fozzy": 250.0
+                                                                                                     },
+                                                                                                     "hlib_dar_classic_1l": {
+                                                                                                                                                                                                          "eko": 306.1,
+                                                                                                                                                                                                          "varus": 279.0,
+                                                                                                                                                                                                          "silpo": 219.0,
+                                                                                                                                                                                                          "novus": 249.0,
+                                                                                                                                                                                                          "fozzy": 209.0
+                                                                                                     },
+                                                                                                     "svinne_rebro": {
+                                                                                                                                                                                                          "eko": 189.9,
+                                                                                                                                                                                                          "varus": 179.9,
+                                                                                                                                                                                                          "silpo": 199.0,
+                                                                                                                                                                                                          "novus": 199.0,
+                                                                                                                                                                                                          "metro": 212.6,
+                                                                                                                                                                                                          "nash_kray": 205.7,
+                                                                                                                                                                                                          "fozzy": 179.9
+                                                                                                     },
+                                                                                                     "salo": {
+                                                                                                                                                                                                          "varus": 239.0,
+                                                                                                                                                                                                          "silpo": 259.0,
+                                                                                                                                                                                                          "novus": 229.0,
+                                                                                                                                                                                                          "nash_kray": 14.29,
+                                                                                                                                                                                                          "fozzy": 209.9
+                                                                                                     },
+                                                                                                     "svinna_gomilka": {
+                                                                                                                                                                                                          "varus": 99.9,
+                                                                                                                                                                                                          "metro": 205.0,
+                                                                                                                                                                                                          "fozzy": 94.9
+                                                                                                     },
+                                                                                                     "svinna_pechinka": {
+                                                                                                                                                                                                          "varus": 62.9,
+                                                                                                                                                                                                          "nash_kray": 47.3,
+                                                                                                                                                                                                          "fozzy": 69.9
+                                                                                                     },
+                                                                                                     "svin_gulyash": {
+                                                                                                                                                                                                          "silpo": 204.0,
+                                                                                                                                                                                                          "fozzy": 174.9
+                                                                                                     },
+                                                                                                     "svinna_pidjarka": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "fozzy": 164.9
+                                                                                                     },
+                                                                                                     "svin_koreyka": {
+                                                                                                                                                                                                          "varus": 219.9,
+                                                                                                                                                                                                          "silpo": 214.0,
+                                                                                                                                                                                                          "novus": 269.0,
+                                                                                                                                                                                                          "metro": 269.8,
+                                                                                                                                                                                                          "nash_kray": 47.3
+                                                                                                     },
+                                                                                                     "svin_virizka": {
+                                                                                                                                                                                                          "eko": 259.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 269.0,
+                                                                                                                                                                                                          "metro": 277.4,
+                                                                                                                                                                                                          "fozzy": 232.9
+                                                                                                     },
+                                                                                                     "svin_lopatka_bez_kistki": {
+                                                                                                                                                                                                          "eko": 179.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 189.0,
+                                                                                                                                                                                                          "metro": 212.6,
+                                                                                                                                                                                                          "fozzy": 175.9
+                                                                                                     },
+                                                                                                     "svin_okist_bez_kistki": {
+                                                                                                                                                                                                          "silpo": 194.0,
+                                                                                                                                                                                                          "fozzy": 195.9
+                                                                                                     },
+                                                                                                     "svin_farsh": {
+                                                                                                                                                                                                          "nash_kray": 159.8,
+                                                                                                                                                                                                          "fozzy": 159.9
+                                                                                                     },
+                                                                                                     "svin_bitok_bez_kosti": {
+                                                                                                                                                                                                          "eko": 239.9,
+                                                                                                                                                                                                          "varus": 259.0,
+                                                                                                                                                                                                          "silpo": 269.0,
+                                                                                                                                                                                                          "fozzy": 221.9
+                                                                                                     },
+                                                                                                     "svin_ragu": {
+                                                                                                                                                                                                          "silpo": 20.0,
+                                                                                                                                                                                                          "fozzy": 33.4
+                                                                                                     },
+                                                                                                     "svin_osheek_bez_kistki": {
+                                                                                                                                                                                                          "eko": 249.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 264.0,
+                                                                                                                                                                                                          "novus": 259.0,
+                                                                                                                                                                                                          "metro": 283.9,
+                                                                                                                                                                                                          "fozzy": 259.9
+                                                                                                     },
+                                                                                                     "kuryacha_chetvert": {
+                                                                                                                                                                                                          "atb": 87.45,
+                                                                                                                                                                                                          "eko": 79.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 104.0,
+                                                                                                                                                                                                          "nash_kray": 79.5,
+                                                                                                                                                                                                          "fozzy": 73.4
+                                                                                                     },
+                                                                                                     "kuryache_stegno": {
+                                                                                                                                                                                                          "atb": 143.9,
+                                                                                                                                                                                                          "eko": 119.9,
+                                                                                                                                                                                                          "varus": 92.0,
+                                                                                                                                                                                                          "silpo": 112.0,
+                                                                                                                                                                                                          "novus": 134.0,
+                                                                                                                                                                                                          "metro": 161.1,
+                                                                                                                                                                                                          "nash_kray": 68.2,
+                                                                                                                                                                                                          "fozzy": 108.9
+                                                                                                     },
+                                                                                                     "kuryache_krilo": {
+                                                                                                                                                                                                          "atb": 90.99,
+                                                                                                                                                                                                          "varus": 92.0,
+                                                                                                                                                                                                          "silpo": 99.0,
+                                                                                                                                                                                                          "novus": 109.0,
+                                                                                                                                                                                                          "metro": 109.1,
+                                                                                                                                                                                                          "nash_kray": 81.2,
+                                                                                                                                                                                                          "fozzy": 89.9
+                                                                                                     },
+                                                                                                     "kuryache_file": {
+                                                                                                                                                                                                          "atb": 171.9,
+                                                                                                                                                                                                          "eko": 139.9,
+                                                                                                                                                                                                          "varus": 23.9,
+                                                                                                                                                                                                          "silpo": 144.0,
+                                                                                                                                                                                                          "novus": 159.0,
+                                                                                                                                                                                                          "metro": 179.9,
+                                                                                                                                                                                                          "nash_kray": 163.70000000000002,
+                                                                                                                                                                                                          "fozzy": 152.9
+                                                                                                     },
+                                                                                                     "kuryacha_gomilka": {
+                                                                                                                                                                                                          "eko": 74.9,
+                                                                                                                                                                                                          "varus": 23.9,
+                                                                                                                                                                                                          "silpo": 82.0,
+                                                                                                                                                                                                          "novus": 79.99,
+                                                                                                                                                                                                          "metro": 85.18,
+                                                                                                                                                                                                          "nash_kray": 81.2,
+                                                                                                                                                                                                          "fozzy": 79.9
+                                                                                                     },
+                                                                                                     "coca_cola_original_033_jb": {
+                                                                                                                                                                                                          "eko": 0,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 19.38,
+                                                                                                                                                                                                          "ashan": 16.6,
+                                                                                                                                                                                                          "novus": 18.79,
+                                                                                                                                                                                                          "metro": 17.7,
+                                                                                                                                                                                                          "fozzy": 16.5
+                                                                                                     },
+                                                                                                     "coca_cola_zero_033_jb": {
+                                                                                                                                                                                                          "eko": 18.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 19.18,
+                                                                                                                                                                                                          "novus": 18.19,
+                                                                                                                                                                                                          "metro": 17.7,
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "fanta_orange_033_jb": {
+                                                                                                                                                                                                          "eko": 18.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 19.18,
+                                                                                                                                                                                                          "ashan": 16.6,
+                                                                                                                                                                                                          "novus": 18.59,
+                                                                                                                                                                                                          "metro": 17.7,
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "fanta_pineapple_033_jb": {
+                                                                                                                                                                                                          "silpo": 90.89,
+                                                                                                                                                                                                          "fozzy": 79.9
+                                                                                                     },
+                                                                                                     "sprite_033_jb": {
+                                                                                                                                                                                                          "eko": 18.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 0,
+                                                                                                                                                                                                          "ashan": 0,
+                                                                                                                                                                                                          "novus": 19.89,
+                                                                                                                                                                                                          "fozzy": 15.9
+                                                                                                     },
+                                                                                                     "coca_cola_original_025_gl": {
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "coca_cola_zero_025_gl": {
+                                                                                                                                                                                                          "fozzy": 27.5
+                                                                                                     },
+                                                                                                     "coca_cola_original_05_pl": {
+                                                                                                                                                                                                          "atb": 21.5,
+                                                                                                                                                                                                          "eko": 20.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 21.6,
+                                                                                                                                                                                                          "ashan": 20.4,
+                                                                                                                                                                                                          "novus": 20.99,
+                                                                                                                                                                                                          "metro": 21.41,
+                                                                                                                                                                                                          "fozzy": 20.35
+                                                                                                     },
+                                                                                                     "coca_cola_zero_05_pl": {
+                                                                                                                                                                                                          "atb": 21.5,
+                                                                                                                                                                                                          "eko": 26.75,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 21.6,
+                                                                                                                                                                                                          "novus": 20.99,
+                                                                                                                                                                                                          "fozzy": 21.1
+                                                                                                     },
+                                                                                                     "fanta_orange_05_pl": {
+                                                                                                                                                                                                          "atb": 21.5,
+                                                                                                                                                                                                          "eko": 26.75,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 21.6,
+                                                                                                                                                                                                          "ashan": 18.9,
+                                                                                                                                                                                                          "novus": 0,
+                                                                                                                                                                                                          "metro": 20.03,
+                                                                                                                                                                                                          "nash_kray": 25.7,
+                                                                                                                                                                                                          "fozzy": 17.8
+                                                                                                     },
+                                                                                                     "sprite_05_pl": {
+                                                                                                                                                                                                          "atb": 21.5,
+                                                                                                                                                                                                          "eko": 26.75,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 21.6,
+                                                                                                                                                                                                          "ashan": 20.8,
+                                                                                                                                                                                                          "novus": 21.99,
+                                                                                                                                                                                                          "fozzy": 20.8
+                                                                                                     },
+                                                                                                     "coca_cola_original_15_pl": {
+                                                                                                                                                                                                          "eko": 35.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 37.69,
+                                                                                                                                                                                                          "ashan": 35.9,
+                                                                                                                                                                                                          "novus": 37.69,
+                                                                                                                                                                                                          "fozzy": 36.5
+                                                                                                     },
+                                                                                                     "coca_cola_zero_15_pl": {
+                                                                                                                                                                                                          "eko": 35.9,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 37.79,
+                                                                                                                                                                                                          "ashan": 35.9,
+                                                                                                                                                                                                          "metro": 234.6,
+                                                                                                                                                                                                          "fozzy": 35.5
+                                                                                                     },
+                                                                                                     "sprite_15_pl": {
+                                                                                                                                                                                                          "eko": 49.89,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 43.32,
+                                                                                                                                                                                                          "ashan": 35.3,
+                                                                                                                                                                                                          "novus": 41.99,
+                                                                                                                                                                                                          "fozzy": 36.3
+                                                                                                     },
+                                                                                                     "fanta_orange_15_pl": {
+                                                                                                                                                                                                          "eko": 49.89,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 38.57,
+                                                                                                                                                                                                          "novus": 40.99,
+                                                                                                                                                                                                          "metro": 37.42,
+                                                                                                                                                                                                          "nash_kray": 48.1,
+                                                                                                                                                                                                          "fozzy": 36.3
+                                                                                                     },
+                                                                                                     "fanta_shokata_15_pl": {
+                                                                                                                                                                                                          "eko": 49.89,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 42.21,
+                                                                                                                                                                                                          "ashan": 37.4,
+                                                                                                                                                                                                          "novus": 47.99,
+                                                                                                                                                                                                          "metro": 224.5,
+                                                                                                                                                                                                          "nash_kray": 48.1,
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "fanta_mandarin_15_pl": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 46.35,
+                                                                                                                                                                                                          "novus": 46.99,
+                                                                                                                                                                                                          "metro": 224.5,
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "chips_luxe_becon_133gr": {
+                                                                                                                                                                                                          "eko": 53.9,
+                                                                                                                                                                                                          "silpo": 54.99,
+                                                                                                                                                                                                          "ashan": 45.9,
+                                                                                                                                                                                                          "novus": 55.99,
+                                                                                                                                                                                                          "metro": 58.19,
+                                                                                                                                                                                                          "nash_kray": 52.99,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_paprika_133gr": {
+                                                                                                                                                                                                          "atb": 48.9,
+                                                                                                                                                                                                          "eko": 53.9,
+                                                                                                                                                                                                          "silpo": 55.59,
+                                                                                                                                                                                                          "ashan": 45.9,
+                                                                                                                                                                                                          "novus": 55.69,
+                                                                                                                                                                                                          "metro": 58.19,
+                                                                                                                                                                                                          "nash_kray": 46.9,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_crab_133gr": {
+                                                                                                                                                                                                          "atb": 56.3,
+                                                                                                                                                                                                          "eko": 68.59,
+                                                                                                                                                                                                          "silpo": 55.59,
+                                                                                                                                                                                                          "ashan": 45.9,
+                                                                                                                                                                                                          "novus": 55.69,
+                                                                                                                                                                                                          "metro": 58.19,
+                                                                                                                                                                                                          "nash_kray": 46.9,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_smetana_cibulya_133gr": {
+                                                                                                                                                                                                          "atb": 56.3,
+                                                                                                                                                                                                          "eko": 53.9,
+                                                                                                                                                                                                          "silpo": 55.59,
+                                                                                                                                                                                                          "novus": 55.69,
+                                                                                                                                                                                                          "metro": 58.19,
+                                                                                                                                                                                                          "nash_kray": 52.99,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_sir_133gr": {
+                                                                                                                                                                                                          "atb": 46.2,
+                                                                                                                                                                                                          "eko": 53.9,
+                                                                                                                                                                                                          "silpo": 55.59,
+                                                                                                                                                                                                          "ashan": 45.9,
+                                                                                                                                                                                                          "novus": 55.69,
+                                                                                                                                                                                                          "metro": 58.19,
+                                                                                                                                                                                                          "nash_kray": 52.99,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_sir_71gr": {
+                                                                                                                                                                                                          "eko": 35.19,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 35.59,
+                                                                                                                                                                                                          "novus": 35.99,
+                                                                                                                                                                                                          "metro": 34.87,
+                                                                                                                                                                                                          "fozzy": 25.9
+                                                                                                     },
+                                                                                                     "chips_luxe_becon_71gr": {
+                                                                                                                                                                                                          "eko": 43.69,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 35.59,
+                                                                                                                                                                                                          "metro": 34.87,
+                                                                                                                                                                                                          "nash_kray": 45.3,
+                                                                                                                                                                                                          "fozzy": 25.9
+                                                                                                     },
+                                                                                                     "chips_luxe_paprika_71gr": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 35.59,
+                                                                                                                                                                                                          "novus": 35.99,
+                                                                                                                                                                                                          "metro": 34.87,
+                                                                                                                                                                                                          "nash_kray": 45.3,
+                                                                                                                                                                                                          "fozzy": 25.9
+                                                                                                     },
+                                                                                                     "chips_luxe_crab_71gr": {
+                                                                                                                                                                                                          "fozzy": 32.9
+                                                                                                     },
+                                                                                                     "chips_luxe_smetana_cibulya_71gr": {
+                                                                                                                                                                                                          "fozzy": 32.9
+                                                                                                     },
+                                                                                                     "chips_luxe_hvil_lisichki_125gr": {
+                                                                                                                                                                                                          "atb": 56.3,
+                                                                                                                                                                                                          "eko": 68.59,
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 55.59,
+                                                                                                                                                                                                          "ashan": 55.8,
+                                                                                                                                                                                                          "novus": 0,
+                                                                                                                                                                                                          "metro": 58.94,
+                                                                                                                                                                                                          "nash_kray": 46.9,
+                                                                                                                                                                                                          "fozzy": 41.9
+                                                                                                     },
+                                                                                                     "chips_luxe_smetana_cibulya_183gr": {
+                                                                                                                                                                                                          "silpo": 85.99,
+                                                                                                                                                                                                          "ashan": 75.5,
+                                                                                                                                                                                                          "novus": 59.99,
+                                                                                                                                                                                                          "metro": 84.27,
+                                                                                                                                                                                                          "nash_kray": 95.6,
+                                                                                                                                                                                                          "fozzy": 56.9
+                                                                                                     },
+                                                                                                     "chips_luxe_becon_183gr": {
+                                                                                                                                                                                                          "silpo": 84.49,
+                                                                                                                                                                                                          "ashan": 75.5,
+                                                                                                                                                                                                          "novus": 59.99,
+                                                                                                                                                                                                          "metro": 84.27,
+                                                                                                                                                                                                          "nash_kray": 95.6,
+                                                                                                                                                                                                          "fozzy": 56.9
+                                                                                                     },
+                                                                                                     "chips_luxe_sir_183gr": {
+                                                                                                                                                                                                          "silpo": 85.99,
+                                                                                                                                                                                                          "ashan": 75.5,
+                                                                                                                                                                                                          "novus": 59.99,
+                                                                                                                                                                                                          "metro": 84.27,
+                                                                                                                                                                                                          "nash_kray": 95.6,
+                                                                                                                                                                                                          "fozzy": 56.9
+                                                                                                     },
+                                                                                                     "chips_pringles_greece_souce_caciki_185gr": {
+                                                                                                                                                                                                          "fozzy": 89.0
+                                                                                                     },
+                                                                                                     "chips_pringles_paprika_165gr": {
+                                                                                                                                                                                                          "varus": 126.5,
+                                                                                                                                                                                                          "silpo": 95.99,
+                                                                                                                                                                                                          "ashan": 135.0,
+                                                                                                                                                                                                          "novus": 129.0,
+                                                                                                                                                                                                          "metro": 137.6,
+                                                                                                                                                                                                          "fozzy": 129.0
+                                                                                                     },
+                                                                                                     "chips_pringles_pizza_peperoni_185gr": {
+                                                                                                                                                                                                          "fozzy": 0
+                                                                                                     },
+                                                                                                     "chips_pringles_sir_cubylya_165gr": {
+                                                                                                                                                                                                          "novus": 159.0,
+                                                                                                                                                                                                          "metro": 137.6,
+                                                                                                                                                                                                          "fozzy": 129.0
+                                                                                                     },
+                                                                                                     "chips_pringles_original_165gr": {
+                                                                                                                                                                                                          "eko": 129.0,
+                                                                                                                                                                                                          "varus": 126.5,
+                                                                                                                                                                                                          "silpo": 95.99,
+                                                                                                                                                                                                          "ashan": 126.0,
+                                                                                                                                                                                                          "novus": 129.0,
+                                                                                                                                                                                                          "metro": 137.6,
+                                                                                                                                                                                                          "fozzy": 129.0
+                                                                                                     },
+                                                                                                     "chips_pringles_sir_165gr": {
+                                                                                                                                                                                                          "atb": 99.9,
+                                                                                                                                                                                                          "eko": 129.0,
+                                                                                                                                                                                                          "varus": 126.5,
+                                                                                                                                                                                                          "silpo": 95.99,
+                                                                                                                                                                                                          "ashan": 126.0,
+                                                                                                                                                                                                          "novus": 129.0,
+                                                                                                                                                                                                          "metro": 137.6,
+                                                                                                                                                                                                          "fozzy": 129.0
+                                                                                                     },
+                                                                                                     "chips_lays_paprika_120gr": {
+                                                                                                                                                                                                          "varus": 0,
+                                                                                                                                                                                                          "silpo": 49.69,
+                                                                                                                                                                                                          "novus": 66.99,
+                                                                                                                                                                                                          "metro": 52.89,
+                                                                                                                                                                                                          "fozzy": 59.9
+                                                                                                     },
+                                                                                                     "chips_lays_crab_120gr": {
+                                                                                                                                                                                                          "atb": 56.9,
+                                                                                                                                                                                                          "eko": 51.99,
+                                                                                                                                                                                                          "varus": 56.9,
+                                                                                                                                                                                                          "silpo": 49.69,
+                                                                                                                                                                                                          "novus": 66.99,
+                                                                                                                                                                                                          "metro": 52.89,
+                                                                                                                                                                                                          "fozzy": 59.9
+                                                                                                     }
+}

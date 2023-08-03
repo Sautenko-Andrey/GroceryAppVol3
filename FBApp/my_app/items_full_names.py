@@ -526,10 +526,30 @@ BON_BOISSON_LIMONAD_2L = 'Напиток Bon Boisson Лимонад, 2л'
 BON_BOISSON_LIME_MINT_2L = "Напиток Bon Boisson Лайм-м'ята, 2л"
 BON_BOISSON_BAIKAL_2L = "Напиток Bon Boisson Байкал, 2л"
 BON_BOISSON_TARHUN_2L = "Напиток Bon Boisson Тархун, 2л"
+BON_BOISSON_BAIKAL_1L = "Напиток Bon Boisson Байкал, 1л"
+BON_BOISSON_MULT_SOK_1L = "Напиток Bon Boisson Мультивитамин з натурал.соком, 1л"
+BON_BOISSON_MANGO_2L = "Напиток Bon Boisson манго, 2л"
+BON_BOISSON_MOHITO_2L = "Напиток Bon Boisson мохіто, 2л"
+BON_BOISSON_SITRO_2L = "Напиток Bon Boisson сітро, 2л"
+BON_BOISSON_KREM_SODA_2L = "Напиток Bon Boisson крем-сода, 2л"
+BON_BOISSON_MULT_SOK_2L = "Напиток Bon Boisson Мультивитамин з натурал.соком, 2л"
+MIRINDA_ORANGE_033JB = "Mirinda Апельсин 0.33л жб"
+MIRINDA_ORANGE_05L = "Mirinda Апельсин 0.5л п/п"
+SCHWEPPES_GRANAT_1L = "Напій Schweppes гранат 1 л"
+SCHWEPPES_INDIAN_TONIC_033JB = "Напій Schweppes Indian Tonic 0.33 з/б"
+SCHWEPPES_TANGERINE_033JB = "Напій Schweppes Tangerine 0.33 з/б"
+SCHWEPPES_ORIGINAL_BITTER_LEMON_033JB = "Напій Schweppes Original bitter lemon 0.33 з/б"
+SCHWEPPES_ORIGINAL_BITTER_LEMON_075pl = "Напій Schweppes Original bitter lemon 0.75 пл"
+SCHWEPPES_ORIGINAL_BITTER_LEMON_1L = "Напій Schweppes Original bitter lemon 1 л"
+SCHWEPPES_GRANAT_075L = "Напій Schweppes гранат 0.75 л"
+SCHWEPPES_CLASSIC_MOJITO_033JB = "Напій Schweppes Classic Mojito 0.33 з/б"
+FARSH_GOVYAJIY = "Фарш гов'яжий, кг"
+RICE_EXTRA_KRUGLIY_1KG = "Ріс круглий Extra! 1 кг"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'
 VARENIKI_KARTOSHKA = 'вареники с картошкой'
 VARENIKI_KAPUSTA = 'вареники с капустой'
 GRECHESKIY_SALAT = 'греческий салат'
+GOLUBCI = 'голубци'
 

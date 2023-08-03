@@ -1,0 +1,458 @@
+{
+  "beer_obolon_svitle_1l": {
+    "varus": 0,
+    "novus": 46.99
+  },
+  "beer_rogan_tradiciyne_svitle_1l": {
+    "atb": 43.5,
+    "ashan": 42.7,
+    "novus": 46.99,
+    "metro": 46.33,
+    "nash_kray": 49.1,
+    "fozzy": 42.7
+  },
+  "beer_jigulivske_svitle_2l_plastic": {
+    "varus": 0
+  },
+  "beer_chayka_dniprovska_2l_plastic": {
+    "silpo": 67.49,
+    "novus": 74.99,
+    "metro": 89.53,
+    "fozzy": 71.7
+  },
+  "beer_piwny_kebek_svitle_2l_plastic": {
+    "varus": 0
+  },
+  "ketchup_torchin_do_shashliky_270gr": {
+    "eko": 26.19,
+    "varus": 61.1,
+    "silpo": 27.99,
+    "ashan": 25.2,
+    "novus": 24.79,
+    "fozzy": 0
+  },
+  "mayonez_chumak_appetitniy_50_300gr": {
+    "eko": 47.59,
+    "varus": 35.7,
+    "silpo": 34.99,
+    "novus": 42.99,
+    "metro": 46.98
+  },
+  "coffee_chorna_karta_50gr": {
+    "eko": 61.99
+  },
+  "beer_arsenal_micne_2l_plastic": {
+    "metro": 93.64,
+    "nash_kray": 94.7,
+    "fozzy": 0
+  },
+  "beer_ppb_bochkove_svitle_2l_plastic": {
+    "eko": 69.9,
+    "silpo": 84.99,
+    "novus": 84.99,
+    "metro": 81.97
+  },
+  "beer_ppb_zakarpatske_svitle_2l_plastic": {
+    "silpo": 66.99,
+    "novus": 84.99,
+    "metro": 84.78
+  },
+  "beer_zibert_svitle_05l_v_banke": {
+    "atb": 23.9,
+    "eko": 22.9,
+    "varus": 0,
+    "novus": 24.99,
+    "metro": 25.38
+  },
+  "yogurt_fanni_lisovi_yagodi_1_5_240gr_stakan": {
+    "varus": 0,
+    "silpo": 27.99
+  },
+  "beer_obolon_kievskoe_razlivnoe_svetloe_195l": {
+    "eko": 54.9,
+    "varus": 0,
+    "novus": 62.99,
+    "metro": 65.77
+  },
+  "beer_chernigivske_light_svitle_2l_plastic": {
+    "atb": 72.9,
+    "silpo": 51.99,
+    "metro": 76.14
+  },
+  "beer_opilla_korifey_svitle_2l_plastic": {
+    "ashan": 89.9,
+    "novus": 69.99,
+    "metro": 97.09
+  },
+  "beer_yantar_svitle_2l_plastic": {
+    "metro": 78.73
+  },
+  "beer_tuborg_green_svitle_4_banki_05l": {
+    "silpo": 134.0,
+    "ashan": 120.8,
+    "metro": 120.8,
+    "fozzy": 120.7
+  },
+  "beer_ppb_zakarpatske_svitle_4_banki_05l": {
+    "silpo": 124.0,
+    "ashan": 130.9,
+    "novus": 129.0,
+    "metro": 132.7
+  },
+  "beer_ppb_bochkove_svitle_4_banki_05l": {
+    "silpo": 139.0,
+    "novus": 134.0,
+    "metro": 133.8
+  },
+  "beer_budweiser_budvar_svitle_05l": {
+    "varus": 0,
+    "ashan": 62.9,
+    "novus": 65.99,
+    "metro": 67.93
+  },
+  "beer_pilsner_urquell_svitle_05l": {
+    "metro": 67.93
+  },
+  "beer_robert_doms_belgiyskiy_svitle_nefilter_05l_glass": {
+    "varus": 0,
+    "silpo": 39.49,
+    "metro": 41.36
+  },
+  "beer_chernigivske_svitle_05_l_jb": {
+    "ashan": 27.6,
+    "novus": 28.99,
+    "fozzy": 27.8
+  },
+  "beer_chernigivske_bile_nefilter_05_l_jb": {
+    "atb": 26.9,
+    "silpo": 34.49,
+    "ashan": 34.4,
+    "metro": 34.45,
+    "fozzy": 0
+  },
+  "beer_velkopopovicky_kozel_temne_05_l_jb": {
+    "atb": 35.3,
+    "ashan": 34.5,
+    "novus": 39.99,
+    "metro": 37.26,
+    "fozzy": 25.9
+  },
+  "beer_edelmeister_pilsner_svitle_05_l_jb": {
+    "atb": 34.9
+  },
+  "beer_faxe_svitle_05_l_jb": {
+    "atb": 39.9
+  },
+  "beer_livu_pilzenes_svitle_05_l_jb": {
+    "atb": 34.9
+  },
+  "beer_velkopopovicky_kozel_svitle_05_l_jb": {
+    "atb": 35.3,
+    "silpo": 37.99,
+    "ashan": 34.5,
+    "novus": 39.99,
+    "metro": 37.26
+  },
+  "beer_obolon_beermix_limon_svitle_05_l_jb": {
+    "atb": 34.4,
+    "eko": 33.59,
+    "varus": 30.9,
+    "silpo": 24.99,
+    "ashan": 28.9,
+    "novus": 36.99,
+    "metro": 36.94,
+    "nash_kray": 37.3,
+    "fozzy": 33.59
+  },
+  "beer_edelmeister_weizenbier_svitle_nefilter_05_l_jb": {
+    "atb": 41.4
+  },
+  "beer_edelmeister_schwarzbier_temne_05_l_jb": {
+    "atb": 37.2
+  },
+  "beer_hike_blanche_nefilter_05_l_jb": {
+    "atb": 30.9,
+    "eko": 30.6,
+    "varus": 0,
+    "ashan": 30.5,
+    "novus": 32.99,
+    "metro": 32.94
+  },
+  "beer_zlata_praha_svitle_05_l_jb": {
+    "atb": 29.3,
+    "varus": 0,
+    "ashan": 34.3
+  },
+  "beer_thuringer_premium_beer_svitle_05_l_jb": {
+    "atb": 40.4
+  },
+  "beer_livu_sencu_beer_svitle_05_l_jb": {
+    "atb": 34.9
+  },
+  "beer_germanarich_svitle_05_l_jb": {
+    "atb": 28.9
+  },
+  "beer_hike_premium_svitle_05_l_jb": {
+    "atb": 30.9,
+    "eko": 35.49,
+    "varus": 0,
+    "silpo": 30.69,
+    "ashan": 30.1,
+    "novus": 32.99,
+    "metro": 32.94,
+    "fozzy": 33.5
+  },
+  "beer_obolon_nonalcohol_nefilter_svitle_05_l_jb": {
+    "atb": 30.9,
+    "varus": 0,
+    "ashan": 30.1
+  },
+  "beer_zibert_bavarskoe_svitle_05_l_jb": {
+    "eko": 27.25,
+    "novus": 24.99,
+    "metro": 27.43
+  },
+  "beer_bavaria_liquid_apple_ninalco_svitle_05_l_jb": {
+    "eko": 40.55
+  },
+  "beer_heineken_svitle_05_l_jb": {
+    "eko": 60.19,
+    "varus": 0,
+    "silpo": 38.99,
+    "ashan": 42.9,
+    "novus": 53.99,
+    "metro": 51.74,
+    "fozzy": 40.8
+  },
+  "beer_rychtar_grant_11_svitle_05_l_jb": {
+    "eko": 27.9
+  },
+  "beer_amstel_svitle_05_l_jb": {
+    "eko": 44.09,
+    "varus": 0,
+    "silpo": 37.99,
+    "ashan": 37.1,
+    "novus": 37.99,
+    "metro": 40.28,
+    "fozzy": 37.0
+  },
+  "beer_bavaria_svitle_05_l_jb": {
+    "eko": 41.39,
+    "varus": 0,
+    "ashan": 40.7,
+    "metro": 40.72
+  },
+  "beer_bavaria_svitle_nonalcohol_05_l_jb": {
+    "eko": 35.65,
+    "varus": 0
+  },
+  "beer_edelburg_lager_05_l_jb": {
+    "eko": 25.9,
+    "metro": 38.77
+  },
+  "beer_donner_pils_svitle_05_l_jb": {
+    "eko": 24.9
+  },
+  "beer_dutch_windmill_svitle_05_l_jb": {
+    "eko": 39.25,
+    "varus": 0,
+    "novus": 34.99
+  },
+  "beer_edelburg_hefeweizen_svitle_nefilter_05_l_jb": {
+    "eko": 25.9,
+    "metro": 38.77
+  },
+  "beer_edelmeister_unfiltered_svitle_nefilter_05_l_jb": {
+    "eko": 40.9
+  },
+  "beer_estrella_damm_barcelona_svitle_05_l_jb": {
+    "eko": 44.9,
+    "silpo": 39.99,
+    "novus": 44.99,
+    "metro": 0,
+    "fozzy": 39.9
+  },
+  "beer_halne_jasne_pelne_05_l_jb": {
+    "eko": 39.9,
+    "novus": 31.99
+  },
+  "beer_eurotour_hefeweissbier_svitle_05_l_jb": {
+    "eko": 34.09
+  },
+  "beer_hollandia_strong_svitle_05_l_jb": {
+    "eko": 40.45,
+    "varus": 0,
+    "ashan": 47.8
+  },
+  "beer_lander_brau_premium_svitle_05_l_jb": {
+    "eko": 29.9,
+    "varus": 0,
+    "metro": 42.34
+  },
+  "beer_saku_kuld_05_l_jb": {
+    "eko": 19.9
+  },
+  "beer_saku_originaal_05_l_jb": {
+    "eko": 26.9
+  },
+  "beer_stangen_lager_svitle_05_l_jb": {
+    "eko": 29.9
+  },
+  "beer_van_pur_premium_svitle_05_l_jb": {
+    "eko": 27.9
+  },
+  "beer_bavaria_mango_marakya_nonalco_svitle_05_l_jb": {
+    "eko": 39.69
+  },
+  "beer_bavaria_granat_nonalco_svitle_05_l_jb": {
+    "eko": 40.55
+  },
+  "beer_obolon_beermix_malina_svitle_05_l_jb": {
+    "atb": 32.8,
+    "eko": 39.29,
+    "ashan": 0,
+    "nash_kray": 37.3
+  },
+  "beer_obolon_beermix_vishnya_svitle_05_l_jb": {
+    "eko": 27.9,
+    "varus": 19.9,
+    "silpo": 24.99,
+    "ashan": 28.9,
+    "novus": 36.99,
+    "metro": 36.94,
+    "nash_kray": 37.3,
+    "fozzy": 30.8
+  },
+  "beer_lomza_svitle_05_l_jb": {
+    "eko": 25.9
+  },
+  "beer_paderborner_pilsener_05_l_jb": {
+    "eko": 32.9,
+    "silpo": 47.99,
+    "novus": 29.99,
+    "metro": 49.9,
+    "fozzy": 27.9
+  },
+  "beer_paderborner_export_05_l_jb": {
+    "eko": 32.9,
+    "silpo": 48.99,
+    "novus": 29.99,
+    "metro": 49.57
+  },
+  "beer_clausthaler_grapefruit_nonalco_05_l_jb": {
+    "eko": 36.95,
+    "varus": 19.9,
+    "metro": 36.61
+  },
+  "beer_clausthaler_original_nonalco_05_l_jb": {
+    "eko": 38.15,
+    "varus": 0,
+    "metro": 36.61
+  },
+  "beer_clausthaler_lemon_nonalco_05_l_jb": {
+    "eko": 36.95,
+    "varus": 0,
+    "novus": 36.99
+  },
+  "beer_forever_rock_n_roll_nefilter_svitle_05_l_jb": {
+    "eko": 85.39
+  },
+  "beer_forever_black_queen_nefilter_temne_05_l_jb": {
+    "eko": 78.35
+  },
+  "beer_forever_kite_safari_nefilter_svitle_05_l_jb": {
+    "eko": 80.09
+  },
+  "beer_forever_crazy_nefilter_svitle_05_l_jb": {
+    "eko": 78.35
+  },
+  "beer_hike_light_svitle_05_l_jb": {
+    "atb": 25.6,
+    "eko": 35.49,
+    "varus": 0,
+    "silpo": 29.49,
+    "metro": 32.94
+  },
+  "beer_hike_zero_nonalco_05_l_jb": {
+    "atb": 25.2,
+    "eko": 35.49,
+    "varus": 0,
+    "silpo": 30.29,
+    "novus": 32.99,
+    "metro": 30.13,
+    "fozzy": 23.9
+  },
+  "beer_horn_disel_ice_pilsner_svitle_05_l_jb": {
+    "eko": 35.9
+  },
+  "beer_horn_disel_original_svitle_05_l_jb": {
+    "eko": 35.9
+  },
+  "beer_horn_disel_traditional_svitle_05_l_jb": {
+    "eko": 35.9
+  },
+  "beer_horn_disel_premium_svitle_05_l_jb": {
+    "eko": 32.9
+  },
+  "beer_krusovice_cerne_temne_05_l_jb": {
+    "eko": 45.85,
+    "varus": 0,
+    "silpo": 39.49,
+    "novus": 39.99,
+    "metro": 39.86,
+    "nash_kray": 41.5,
+    "fozzy": 34.4
+  },
+  "beer_lander_brau_micne_05_l_jb": {
+    "eko": 42.69,
+    "metro": 42.34
+  },
+  "beer_lander_brau_svitle_nefilter_05_l_jb": {
+    "eko": 41.09,
+    "varus": 0,
+    "metro": 42.34
+  },
+  "beer_paderborner_pilger_svitle_nefilter_05_l_jb": {
+    "eko": 34.9,
+    "silpo": 49.99,
+    "novus": 39.99,
+    "metro": 48.48,
+    "fozzy": 44.7
+  },
+  "beer_platan_jedenactka_11_svitle_05_l_jb": {
+    "eko": 27.9
+  },
+  "beer_praga_svitle_05_l_jb": {
+    "eko": 39.9,
+    "novus": 64.99,
+    "metro": 70.09
+  },
+  "beer_saku_rock_svitle_0568_l_jb": {
+    "eko": 27.9
+  },
+  "beer_sitnan_svitle_05_l_jb": {
+    "eko": 29.9,
+    "novus": 29.99
+  },
+  "beer_vienas_premium_golden_svitle_05_l_jb": {
+    "eko": 35.9
+  },
+  "beer_vienas_premium_traditional_svitle_05_l_jb": {
+    "eko": 35.9
+  },
+  "beer_volynski_browar_forever_sweet_wit_svitle_05_l_jb": {
+    "eko": 70.79
+  },
+  "beer_zahringer_premium_svitle_05_l_jb": {
+    "eko": 27.9
+  },
+  "beer_zahringer_hefeweizen_svitle_05_l_jb": {
+    "eko": 23.9
+  },
+  "beer_jajkivske_nefilter_svitle_05_l_jb": {
+    "atb": 26.9,
+    "eko": 31.79,
+    "silpo": 27.19,
+    "novus": 22.99
+  }
+}

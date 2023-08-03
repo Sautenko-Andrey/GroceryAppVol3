@@ -1,0 +1,233 @@
+{
+                                  "chips_lays_sir_60gr": {
+                                                                    "eko": 41.15,
+                                                                    "varus": 39.9,
+                                                                    "silpo": 29.99,
+                                                                    "novus": 37.99,
+                                                                    "metro": 36.99,
+                                                                    "fozzy": 34.9
+                                  },
+                                  "sir_svet_feta_ukr_rozsil_45_1kg": {
+                                                                    "fozzy": 209.0
+                                  },
+                                  "olivki_extra_chorni_bez_kist_300gr": {
+                                                                    "fozzy": 41.4
+                                  },
+                                  "oliv_oil_povna_chasha_913gr": {
+                                                                    "fozzy": 199.0
+                                  },
+                                  "basilik_chervoniy_svij": {
+                                                                    "varus": 36.9,
+                                                                    "silpo": 59.99,
+                                                                    "novus": 43.99,
+                                                                    "metro": 44.9,
+                                                                    "fozzy": 0
+                                  },
+                                  "pelmeni_gerkules_firm_400gr": {
+                                                                    "varus": 0,
+                                                                    "silpo": 63.99,
+                                                                    "novus": 99.0,
+                                                                    "fozzy": 99.0
+                                  },
+                                  "pelmeni_gerkules_firm_800gr": {
+                                                                    "varus": 195.0,
+                                                                    "silpo": 179.0,
+                                                                    "novus": 174.0,
+                                                                    "metro": 193.2,
+                                                                    "fozzy": 199.0
+                                  },
+                                  "pelmeni_gerkules_indeyka_400gr": {
+                                                                    "varus": 0,
+                                                                    "silpo": 99.0,
+                                                                    "novus": 99.0,
+                                                                    "fozzy": 102.0
+                                  },
+                                  "pelmeni_tri_vedmedi_firm_800gr": {
+                                                                    "atb": 157.9,
+                                                                    "varus": 205.8,
+                                                                    "silpo": 174.0,
+                                                                    "novus": 174.0,
+                                                                    "metro": 182.4,
+                                                                    "fozzy": 197.0
+                                  },
+                                  "pelmeni_tri_vedmedi_mishutka_400gr": {
+                                                                    "atb": 108.7,
+                                                                    "eko": 129.1,
+                                                                    "varus": 0,
+                                                                    "silpo": 99.99,
+                                                                    "novus": 99.99,
+                                                                    "metro": 106.4,
+                                                                    "fozzy": 120.0
+                                  },
+                                  "pelmeni_extra_firm_800gr": {
+                                                                    "fozzy": 78.3
+                                  },
+                                  "pelmeni_extra_sibir_500gr": {
+                                                                    "fozzy": 58.7
+                                  },
+                                  "pelmeni_extra_ravioli_dom_800gr": {
+                                                                    "fozzy": 68.5
+                                  },
+                                  "seven_up_033_jb": {
+                                                                    "atb": 17.9,
+                                                                    "eko": 23.19,
+                                                                    "ashan": 17.8,
+                                                                    "novus": 22.99,
+                                                                    "metro": 18.87,
+                                                                    "fozzy": 18.2
+                                  },
+                                  "kavun": {
+                                                                    "atb": 27.95,
+                                                                    "eko": 23.9,
+                                                                    "varus": 17.9,
+                                                                    "silpo": 28.3,
+                                                                    "novus": 34.99,
+                                                                    "metro": 41.5
+                                  },
+                                  "jivchik_apple_2l": {
+                                                                    "atb": 42.6,
+                                                                    "eko": 49.99,
+                                                                    "silpo": 42.69,
+                                                                    "ashan": 41.2,
+                                                                    "novus": 42.99,
+                                                                    "metro": 267.0,
+                                                                    "fozzy": 41.9
+                                  },
+                                  "jivchik_apple_1l": {
+                                                                    "atb": 27.3,
+                                                                    "eko": 32.99,
+                                                                    "varus": 0,
+                                                                    "silpo": 28.19,
+                                                                    "novus": 28.99,
+                                                                    "metro": 300.9,
+                                                                    "fozzy": 26.9
+                                  },
+                                  "jivchik_apple_05l": {
+                                                                    "atb": 16.9,
+                                                                    "eko": 21.35,
+                                                                    "varus": 0,
+                                                                    "silpo": 17.39,
+                                                                    "novus": 19.49,
+                                                                    "fozzy": 16.9
+                                  },
+                                  "jivchik_grusha_1l": {
+                                                                    "eko": 32.99,
+                                                                    "varus": 0,
+                                                                    "silpo": 40.99,
+                                                                    "ashan": 23.9,
+                                                                    "novus": 40.99,
+                                                                    "fozzy": 22.4
+                                  },
+                                  "jivchik_smart_cola_2l": {
+                                                                    "eko": 49.99,
+                                                                    "silpo": 52.49,
+                                                                    "ashan": 34.5,
+                                                                    "novus": 50.99,
+                                                                    "fozzy": 44.1
+                                  },
+                                  "jivchik_limon_2l": {
+                                                                    "eko": 49.99,
+                                                                    "varus": 0,
+                                                                    "silpo": 45.89,
+                                                                    "ashan": 41.1,
+                                                                    "novus": 45.99,
+                                                                    "metro": 44.41,
+                                                                    "fozzy": 41.1
+                                  },
+                                  "jivchik_smart_cola_1l": {
+                                                                    "eko": 32.99,
+                                                                    "silpo": 31.69,
+                                                                    "ashan": 23.9,
+                                                                    "novus": 30.99,
+                                                                    "fozzy": 22.4
+                                  },
+                                  "biola_strawb_kiwi_2l": {
+                                                                    "atb": 36.4,
+                                                                    "novus": 0,
+                                                                    "fozzy": 39.6
+                                  },
+                                  "biola_lemonad_2l": {
+                                                                    "varus": 39.9,
+                                                                    "silpo": 44.13,
+                                                                    "novus": 0,
+                                                                    "fozzy": 37.3
+                                  },
+                                  "bon_boisson_limonad_1l": {
+                                                                    "varus": 39.9,
+                                                                    "silpo": 30.9,
+                                                                    "ashan": 24.0,
+                                                                    "novus": 29.99,
+                                                                    "nash_kray": 28.9,
+                                                                    "fozzy": 23.9
+                                  },
+                                  "bon_boisson_limonad_2l": {
+                                                                    "eko": 46.09,
+                                                                    "varus": 37.9,
+                                                                    "silpo": 43.89,
+                                                                    "ashan": 35.7,
+                                                                    "novus": 42.99,
+                                                                    "metro": 37.84,
+                                                                    "nash_kray": 41.8,
+                                                                    "fozzy": 35.6
+                                  },
+                                  "bon_boisson_lime_mint_2l": {
+                                                                    "fozzy": 38.4
+                                  },
+                                  "bon_boisson_baikal_2l": {
+                                                                    "eko": 29.9,
+                                                                    "varus": 0,
+                                                                    "silpo": 37.99,
+                                                                    "ashan": 35.2,
+                                                                    "novus": 42.99,
+                                                                    "metro": 37.31,
+                                                                    "fozzy": 35.1
+                                  },
+                                  "bon_boisson_tarhun_2l": {
+                                                                    "atb": 35.8,
+                                                                    "eko": 46.09,
+                                                                    "varus": 34.5,
+                                                                    "silpo": 35.99,
+                                                                    "ashan": 35.3,
+                                                                    "novus": 42.99,
+                                                                    "metro": 37.84,
+                                                                    "nash_kray": 41.8,
+                                                                    "fozzy": 35.2
+                                  },
+                                  "bon_boisson_baikal_1l": {
+                                                                    "silpo": 30.9,
+                                                                    "ashan": 24.0,
+                                                                    "novus": 29.99,
+                                                                    "nash_kray": 28.9,
+                                                                    "fozzy": 23.7
+                                  },
+                                  "borsh_red": {
+                                                                    "atb": 6.758500000000001,
+                                                                    "eko": 32.470555555555556,
+                                                                    "varus": 6.431111111111111,
+                                                                    "silpo": 12.442944444444445,
+                                                                    "novus": 1.943888888888889,
+                                                                    "metro": 37.647,
+                                                                    "fozzy": 27.383333333333336
+                                  },
+                                  "veriniki_potato": {
+                                                                    "atb": 13.619899999999998,
+                                                                    "eko": 14.868540000000001,
+                                                                    "varus": 10.18304,
+                                                                    "silpo": 9.804134,
+                                                                    "novus": 10.287434000000001,
+                                                                    "metro": 14.699676,
+                                                                    "fozzy": 9.0217
+                                  },
+                                  "veriniki_kapusta": {
+                                                                    "atb": 15.932199999999998,
+                                                                    "eko": 19.583540000000003,
+                                                                    "varus": 13.26604,
+                                                                    "silpo": 8.589134000000001,
+                                                                    "novus": 10.287434000000001,
+                                                                    "metro": 19.748276,
+                                                                    "fozzy": 9.380700000000001
+                                  },
+                                  "grecheskiy_salat": {
+                                                                    "fozzy": 20.18075
+                                  }
+}

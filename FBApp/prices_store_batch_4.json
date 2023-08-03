@@ -1,0 +1,711 @@
+{
+  "pit_bull_X_0250_l": {
+    "eko": 22.49,
+    "varus": 0,
+    "silpo": 19.19,
+    "novus": 19.99,
+    "fozzy": 19.2
+  },
+  "pit_bull_extra_vitamin_c_0250_l": {
+    "eko": 22.19,
+    "varus": 0,
+    "silpo": 18.29,
+    "metro": 20.09,
+    "fozzy": 18.0
+  },
+  "pit_bull_0250_l": {
+    "varus": 0,
+    "ashan": 19.8
+  },
+  "maccoffee_gold_rozch_soft_pack_60_gr": {
+    "silpo": 85.99,
+    "fozzy": 78.2
+  },
+  "nescafe_gold_rozch_soft_pack_120_gr": {
+    "varus": 129.9,
+    "silpo": 119.0,
+    "ashan": 153.7,
+    "novus": 169.0,
+    "metro": 161.8,
+    "fozzy": 154.0
+  },
+  "grano_dorado_gold_rozch_soft_pack_130_gr": {
+    "fozzy": 107.0
+  },
+  "nescafe_classic_soft_pack_60_gr": {
+    "eko": 76.45,
+    "varus": 0,
+    "silpo": 57.99,
+    "ashan": 67.6,
+    "novus": 57.99,
+    "metro": 71.17,
+    "fozzy": 74.9
+  },
+  "chorna_karta_gold_soft_pack_400_gr": {
+    "silpo": 479.0,
+    "ashan": 339.8,
+    "novus": 0,
+    "fozzy": 357.7
+  },
+  "bounty_57gr": {
+    "atb": 19.6,
+    "eko": 18.99,
+    "varus": 0,
+    "silpo": 18.99,
+    "ashan": 19.4,
+    "novus": 22.99,
+    "metro": 17.49,
+    "nash_kray": 26.2,
+    "fozzy": 19.4
+  },
+  "bounty_85gr": {
+    "atb": 28.9,
+    "eko": 28.89,
+    "varus": 0,
+    "silpo": 28.99,
+    "ashan": 26.9,
+    "novus": 28.79,
+    "metro": 26.82,
+    "fozzy": 26.99
+  },
+  "mars_51gr": {
+    "eko": 21.05,
+    "varus": 0,
+    "silpo": 17.99,
+    "metro": 18.97,
+    "nash_kray": 23.9,
+    "fozzy": 14.9
+  },
+  "mars_70gr": {
+    "atb": 28.6,
+    "eko": 27.9,
+    "varus": 0,
+    "silpo": 23.5,
+    "novus": 33.99,
+    "metro": 25.33,
+    "nash_kray": 38.2,
+    "fozzy": 23.9
+  },
+  "nuts_strawberry": {
+    "eko": 32.15,
+    "varus": 25.7,
+    "silpo": 23.39,
+    "ashan": 23.1,
+    "metro": 22.9,
+    "fozzy": 21.58
+  },
+  "nuts_42gr": {
+    "eko": 32.15,
+    "varus": 25.7,
+    "silpo": 23.39,
+    "ashan": 23.2,
+    "novus": 24.99,
+    "metro": 22.9,
+    "nash_kray": 33.2,
+    "fozzy": 22.39
+  },
+  "nuts_king_size_60gr": {
+    "eko": 39.75,
+    "varus": 0,
+    "ashan": 34.6,
+    "novus": 37.79,
+    "metro": 36.99,
+    "nash_kray": 49.7,
+    "fozzy": 34.1
+  },
+  "snickers_50gr": {
+    "atb": 17.9,
+    "eko": 17.9,
+    "varus": 0,
+    "silpo": 17.99,
+    "ashan": 17.3,
+    "novus": 17.89,
+    "metro": 18.44,
+    "nash_kray": 23.9,
+    "fozzy": 17.2
+  },
+  "snickers_super_112_5gr": {
+    "atb": 35.3,
+    "varus": 0,
+    "silpo": 36.49,
+    "ashan": 34.0,
+    "novus": 34.99,
+    "metro": 35.93,
+    "nash_kray": 35.99,
+    "fozzy": 33.8
+  },
+  "snickers_creamy_peanut_butter_54_75gr": {
+    "atb": 29.8,
+    "eko": 36.29,
+    "varus": 0,
+    "silpo": 30.99,
+    "ashan": 23.9,
+    "metro": 30.42,
+    "nash_kray": 39.9,
+    "fozzy": 25.2
+  },
+  "snickers_creamy_peanut_butter_36_5gr": {
+    "varus": 0,
+    "silpo": 21.59,
+    "ashan": 16.8,
+    "metro": 21.09,
+    "nash_kray": 26.2,
+    "fozzy": 16.2
+  },
+  "twix_50gr": {
+    "atb": 15.9,
+    "eko": 17.99,
+    "varus": 0,
+    "silpo": 17.99,
+    "ashan": 17.3,
+    "novus": 17.89,
+    "metro": 18.23,
+    "nash_kray": 23.9,
+    "fozzy": 17.1
+  },
+  "twix_75gr": {
+    "atb": 28.6,
+    "eko": 27.9,
+    "varus": 0,
+    "silpo": 28.99,
+    "ashan": 24.3,
+    "novus": 0,
+    "metro": 26.39,
+    "nash_kray": 38.2,
+    "fozzy": 0
+  },
+  "vodka_absolut_05l": {
+    "eko": 289.9,
+    "varus": 0,
+    "silpo": 249.0,
+    "ashan": 279.0,
+    "novus": 269.0,
+    "metro": 323.9,
+    "nash_kray": 31.0,
+    "fozzy": 249.0
+  },
+  "vodka_absolut_1l": {
+    "varus": 0,
+    "silpo": 499.0,
+    "ashan": 519.0,
+    "novus": 609.0,
+    "metro": 621.0,
+    "fozzy": 439.0
+  },
+  "vodka_absolut_07l": {
+    "varus": 0,
+    "silpo": 369.0,
+    "ashan": 383.9,
+    "novus": 369.0,
+    "metro": 0,
+    "fozzy": 369.0
+  },
+  "vodka_absolut_lime_07l": {
+    "eko": 463.1,
+    "silpo": 369.0,
+    "ashan": 389.0,
+    "novus": 359.0,
+    "metro": 0,
+    "fozzy": 388.0
+  },
+  "vodka_absolut_grapefruit_07l": {
+    "silpo": 369.0,
+    "ashan": 389.0,
+    "novus": 399.0,
+    "metro": 0,
+    "fozzy": 424.0
+  },
+  "vodka_absolut_elyx_07l": {
+    "ashan": 999.0,
+    "fozzy": 999.0
+  },
+  "vodka_absolut_citron_07l": {
+    "varus": 0,
+    "silpo": 369.0,
+    "ashan": 389.0,
+    "novus": 359.0,
+    "metro": 0,
+    "fozzy": 388.0
+  },
+  "vodka_absolut_kurant_07l": {
+    "silpo": 369.0,
+    "ashan": 389.0,
+    "novus": 0,
+    "metro": 452.4,
+    "fozzy": 0
+  },
+  "vodka_absolut_watermelon_07l": {
+    "silpo": 369.0,
+    "ashan": 374.0,
+    "novus": 359.0,
+    "metro": 452.4,
+    "fozzy": 424.0
+  },
+  "vodka_absolut_mandarin_07l": {
+    "silpo": 369.0,
+    "novus": 359.0,
+    "fozzy": 420.0
+  },
+  "vodka_finland_05l": {
+    "atb": 259.8,
+    "eko": 289.0,
+    "silpo": 269.0,
+    "ashan": 249.0,
+    "novus": 279.0,
+    "metro": 289.3,
+    "nash_kray": 293.3,
+    "fozzy": 284.0
+  },
+  "vodka_finland_07l": {
+    "eko": 464.0,
+    "varus": 0,
+    "silpo": 329.0,
+    "ashan": 339.0,
+    "novus": 329.0,
+    "metro": 322.9,
+    "fozzy": 372.0
+  },
+  "vodka_finland_1l": {
+    "eko": 549.9,
+    "varus": 0,
+    "silpo": 499.0,
+    "ashan": 469.0,
+    "novus": 499.0,
+    "metro": 536.6,
+    "fozzy": 490.0
+  },
+  "vodka_finland_redberry_05l": {
+    "varus": 0,
+    "silpo": 289.0,
+    "ashan": 249.0,
+    "metro": 286.0,
+    "nash_kray": 293.3,
+    "fozzy": 260.0
+  },
+  "vodka_finland_redberry_1l": {
+    "silpo": 499.0,
+    "novus": 499.0
+  },
+  "vodka_finland_cranberry_05l": {
+    "atb": 259.8,
+    "eko": 299.9,
+    "silpo": 289.0,
+    "ashan": 249.0,
+    "novus": 289.0,
+    "metro": 286.0,
+    "nash_kray": 305.1,
+    "fozzy": 260.0
+  },
+  "vodka_finland_cranberry_1l": {
+    "eko": 639.9,
+    "silpo": 499.0,
+    "novus": 0,
+    "metro": 588.6,
+    "fozzy": 538.0
+  },
+  "vodka_finland_grapefruit_05l": {
+    "eko": 346.1,
+    "varus": 0,
+    "silpo": 299.0,
+    "ashan": 258.0,
+    "novus": 299.0,
+    "metro": 286.0,
+    "nash_kray": 293.3,
+    "fozzy": 258.0
+  },
+  "vodka_finland_lime_05l": {
+    "eko": 346.1,
+    "varus": 0,
+    "silpo": 289.0,
+    "ashan": 249.0,
+    "novus": 299.0,
+    "metro": 286.0,
+    "nash_kray": 293.3,
+    "fozzy": 260.0
+  },
+  "vodka_finland_coconut_05l": {
+    "eko": 346.1,
+    "silpo": 289.0,
+    "ashan": 249.0,
+    "novus": 299.0,
+    "metro": 286.0,
+    "nash_kray": 293.3,
+    "fozzy": 247.0
+  },
+  "vodka_finland_blackcurrant_05l": {
+    "varus": 0,
+    "silpo": 289.0,
+    "fozzy": 258.0
+  },
+  "vodka_finland_lime_1l": {
+    "silpo": 499.0,
+    "novus": 499.0,
+    "metro": 588.6,
+    "fozzy": 538.0
+  },
+  "vodka_finland_blackcurrant_1l": {
+    "silpo": 469.0,
+    "novus": 469.0,
+    "metro": 588.6,
+    "fozzy": 538.0
+  },
+  "vodka_finland_grapefruit_1l": {
+    "silpo": 529.0,
+    "novus": 0,
+    "metro": 588.6,
+    "fozzy": 538.0
+  },
+  "vodka_finland_white_175l": {
+    "novus": 0,
+    "fozzy": 538.0
+  },
+  "nemiroff_delicat_05l": {
+    "atb": 133.8,
+    "eko": 157.6,
+    "silpo": 134.0,
+    "novus": 134.0,
+    "metro": 133.8,
+    "nash_kray": 151.7,
+    "fozzy": 122.0
+  },
+  "nemiroff_shtof_05l": {
+    "atb": 133.8,
+    "eko": 157.6,
+    "varus": 139.9,
+    "silpo": 127.0,
+    "novus": 127.0,
+    "metro": 138.1,
+    "fozzy": 125.0
+  },
+  "nemiroff_ukr_pshen_05l": {
+    "atb": 122.9,
+    "eko": 157.6,
+    "varus": 0,
+    "silpo": 144.0,
+    "novus": 0,
+    "fozzy": 124.0
+  },
+  "nemiroff_delux_05l": {
+    "varus": 269.0,
+    "silpo": 234.0,
+    "ashan": 194.7,
+    "novus": 189.0,
+    "nash_kray": 199.9,
+    "fozzy": 229.0
+  },
+  "nemiroff_lex_05l": {
+    "eko": 407.0,
+    "silpo": 364.0,
+    "novus": 329.0,
+    "fozzy": 359.0
+  },
+  "artemivske_bile_napivsolodke": {
+    "atb": 185.9,
+    "eko": 169.9,
+    "varus": 0,
+    "ashan": 189.0,
+    "novus": 186.0,
+    "metro": 178.8,
+    "nash_kray": 227.6,
+    "fozzy": 189.0
+  },
+  "artemivske_rojeve_napivsuhe": {
+    "varus": 0,
+    "silpo": 199.0,
+    "ashan": 0,
+    "novus": 169.0,
+    "fozzy": 229.0
+  },
+  "artemivske_bile_brut": {
+    "atb": 185.9,
+    "eko": 169.9,
+    "varus": 0,
+    "silpo": 189.0,
+    "ashan": 189.0,
+    "novus": 188.0,
+    "metro": 181.9,
+    "nash_kray": 227.6,
+    "fozzy": 189.0
+  },
+  "artemivske_coll_napivsuhe": {
+    "fozzy": 189.0
+  },
+  "artemivske_chervone_napivsolodke": {
+    "varus": 0,
+    "ashan": 229.0,
+    "novus": 189.0,
+    "fozzy": 229.0
+  },
+  "bagrationi_bile_napivsolodke": {
+    "varus": 278.9,
+    "silpo": 299.0,
+    "novus": 299.0,
+    "metro": 341.9,
+    "fozzy": 304.0
+  },
+  "bagrationi_bile_napivsuhe": {
+    "varus": 344.0,
+    "silpo": 309.0,
+    "novus": 379.0,
+    "metro": 303.9,
+    "fozzy": 339.0
+  },
+  "bagrationi_bile_brut": {
+    "varus": 0,
+    "silpo": 299.0,
+    "novus": 0,
+    "metro": 303.9,
+    "fozzy": 298.0
+  },
+  "bagrationi_roj_napivsolodke": {
+    "fozzy": 342.0
+  },
+  "bagrationi_gold_napivsolodke": {
+    "fozzy": 339.0
+  },
+  "bolgrad_bile_brut": {
+    "varus": 239.0,
+    "silpo": 164.0,
+    "fozzy": 159.0
+  },
+  "bolgrad_bile_napivsolodke": {
+    "atb": 124.5,
+    "varus": 0,
+    "silpo": 122.0,
+    "fozzy": 121.0
+  },
+  "bolgrad_nectar_bile_solodke": {
+    "varus": 0,
+    "fozzy": 154.0
+  },
+  "fran_bulvar_bile_napivsuhe": {
+    "eko": 154.9,
+    "silpo": 189.0,
+    "metro": 0,
+    "fozzy": 184.0
+  },
+  "fran_bulvar_bile_brut": {
+    "eko": 154.9,
+    "silpo": 189.0,
+    "metro": 0,
+    "fozzy": 184.0
+  },
+  "fran_bulvar_bile_napivsolodke": {
+    "eko": 154.9,
+    "silpo": 179.0,
+    "metro": 0,
+    "fozzy": 149.0
+  },
+  "stariy_kaheti_3": {
+    "varus": 0,
+    "novus": 279.0,
+    "metro": 295.8,
+    "fozzy": 271.0
+  },
+  "stariy_kaheti_5": {
+    "varus": 0,
+    "novus": 0,
+    "metro": 295.8,
+    "fozzy": 271.0
+  },
+  "stariy_kaheti_4": {
+    "varus": 0,
+    "novus": 319.0,
+    "metro": 317.4,
+    "fozzy": 289.0
+  },
+  "koblevo_extra_old_8": {
+    "eko": 367.4,
+    "novus": 0,
+    "fozzy": 259.0
+  },
+  "shabo_vsop_5": {
+    "atb": 217.9,
+    "eko": 209.9,
+    "varus": 210.3,
+    "silpo": 199.0,
+    "metro": 214.8,
+    "nash_kray": 253.4,
+    "fozzy": 197.0
+  },
+  "shabo_vs_3": {
+    "atb": 191.9,
+    "eko": 249.3,
+    "varus": 0,
+    "silpo": 169.0,
+    "novus": 179.0,
+    "metro": 181.3,
+    "nash_kray": 214.5,
+    "fozzy": 179.0
+  },
+  "shabo_1788_4": {
+    "atb": 195.3,
+    "eko": 275.5,
+    "varus": 0,
+    "silpo": 194.0,
+    "novus": 0,
+    "metro": 207.2,
+    "fozzy": 189.0
+  },
+  "shabo_1788_reserv": {
+    "fozzy": 228.0
+  },
+  "shabo_vs_reserv": {
+    "varus": 239.0,
+    "silpo": 224.0,
+    "novus": 199.0,
+    "metro": 224.5,
+    "fozzy": 207.0
+  },
+  "shabo_vsop_reserv": {
+    "atb": 108.9,
+    "eko": 321.2,
+    "silpo": 229.0,
+    "novus": 224.0,
+    "metro": 245.1,
+    "fozzy": 237.0
+  },
+  "aznauri_3": {
+    "atb": 174.9,
+    "eko": 159.9,
+    "varus": 0,
+    "silpo": 169.0,
+    "ashan": 166.0,
+    "novus": 189.0,
+    "metro": 182.4,
+    "nash_kray": 17.0,
+    "fozzy": 167.0
+  },
+  "aznauri_5": {
+    "atb": 215.3,
+    "eko": 215.3,
+    "varus": 0,
+    "silpo": 214.0,
+    "ashan": 183.9,
+    "novus": 234.0,
+    "nash_kray": 20.0,
+    "fozzy": 0
+  },
+  "aznauri_4": {
+    "eko": 239.2,
+    "ashan": 180.8,
+    "novus": 199.0,
+    "metro": 195.2,
+    "fozzy": 0
+  },
+  "aznauri_black_barrel_5": {
+    "atb": 220.9,
+    "eko": 290.0,
+    "varus": 0,
+    "silpo": 235.9,
+    "ashan": 236.5,
+    "novus": 269.0,
+    "fozzy": 0
+  },
+  "adjari_3": {
+    "varus": 206.9,
+    "silpo": 229.0,
+    "ashan": 234.0,
+    "metro": 248.2,
+    "fozzy": 242.0
+  },
+  "adjari_5": {
+    "varus": 0,
+    "silpo": 259.0,
+    "ashan": 0,
+    "metro": 269.8,
+    "novus": 0,
+    "fozzy": 256.0
+  },
+  "adjari_4": {
+    "ashan": 0,
+    "fozzy": 182.0
+  },
+  "hennesy_vs": {
+    "atb": 1299.0,
+    "silpo": 1349.0,
+    "novus": 0,
+    "metro": 1316.0,
+    "fozzy": 1.0
+  },
+  "hennesy_vsop": {
+    "silpo": 2999.0,
+    "metro": 3292.0,
+    "fozzy": 2.0
+  },
+  "alexx_gold_vsop": {
+    "varus": 0,
+    "silpo": 414.0,
+    "novus": 0,
+    "metro": 404.8,
+    "fozzy": 376.0
+  },
+  "alexx_silver_vs": {
+    "varus": 0,
+    "silpo": 364.0,
+    "metro": 355.2,
+    "fozzy": 315.0
+  },
+  "ararat_5": {
+    "varus": 0,
+    "silpo": 579.0,
+    "ashan": 447.0,
+    "metro": 571.3,
+    "fozzy": 523.0
+  },
+  "ararat_ahtamar_10": {
+    "silpo": 999.0,
+    "ashan": 829.0,
+    "fozzy": 998.0
+  },
+  "ararat_3": {
+    "varus": 0,
+    "silpo": 449.0,
+    "ashan": 356.0,
+    "metro": 442.6,
+    "nash_kray": 525.8,
+    "fozzy": 405.0
+  },
+  "ararat_nairi_20": {
+    "ashan": 2.0,
+    "fozzy": 1.0
+  },
+  "green_day_air_05l": {
+    "fozzy": 119.0
+  },
+  "green_day_ultra_soft_05l": {
+    "fozzy": 124.0
+  },
+  "green_day_organic_life_05l": {
+    "varus": 0,
+    "ashan": 138.0,
+    "fozzy": 118.0
+  },
+  "green_day_crystal_05l": {
+    "varus": 0,
+    "silpo": 139.0,
+    "ashan": 0,
+    "metro": 139.2,
+    "fozzy": 134.0
+  },
+  "green_day_05l": {
+    "varus": 119.9,
+    "silpo": 139.0,
+    "ashan": 127.0,
+    "metro": 139.2,
+    "fozzy": 127.0
+  },
+  "medoff_classic_05l": {
+    "eko": 158.8,
+    "varus": 136.0,
+    "silpo": 144.0,
+    "nash_kray": 109.9,
+    "fozzy": 110.0
+  },
+  "smirnoff_red_05l": {
+    "eko": 401.6,
+    "varus": 329.0,
+    "silpo": 269.0,
+    "fozzy": 339.0
+  }
+}

@@ -3869,6 +3869,14 @@ all_products_names = [
         "fozzy": parser.bon_boisson_tarhun_2l_parser()[8]
     }},
 
+    {'bon_boisson_baikal_1l': {
+        "silpo": parser.bon_boisson_baikal_1l_parser()[3],
+        "ashan": parser.bon_boisson_baikal_1l_parser()[4],
+        "novus": parser.bon_boisson_baikal_1l_parser()[5],
+        "nash_kray": parser.bon_boisson_baikal_1l_parser()[7],
+        "fozzy": parser.bon_boisson_baikal_1l_parser()[8]
+    }},
+
 
 
 
@@ -4012,7 +4020,6 @@ all_products_names = [
     }},
 ]
 
-
 def get_all_prices():
     to_json = dict()
     for item in all_products_names:
@@ -4022,6 +4029,7 @@ def get_all_prices():
     with open('../prices_store.json', 'w') as f:
         json.dump(to_json, f, sort_keys=False, indent=len(all_products_names))
         print('Все продукты и их цены добавлены в базу данных!')
+
 
 
 get_all_prices()

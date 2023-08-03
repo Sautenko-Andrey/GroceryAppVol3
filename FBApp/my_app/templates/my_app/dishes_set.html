@@ -11,8 +11,8 @@
             <br>
             <div class="alert alert-info" role="alert">
                 <h5 align="center">Введите ниже <i><u>название блюда</u></i>, которое
-                хотите приготовить,
-                а так же на какое количество людей,
+                    хотите приготовить,
+                    а так же на какое количество людей,
                     и мы с удовольствием <b>посчитаем для Вас его себестоимость!</b></h5>
             </div>
 
@@ -30,16 +30,27 @@
                         <br>
                         <h5 align="center">
                             <button type="submit" class="custom-btn btn-3"><span>поиск</span></button>
-                            <!--<button type="submit">поиск</button>-->
                         </h5>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
     <div class="col-xl-6 col-md-6 col-sm-12" align="center">
-        <img src="{% static 'my_app/images/salad4.jpeg' %}">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'my_app/images/bbq.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'my_app/images/salad2.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'my_app/images/rice.jpeg' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
     </div>
-</div>
 </div>
 {% endblock %}

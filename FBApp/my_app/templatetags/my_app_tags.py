@@ -1605,6 +1605,63 @@ get_bon_boisson_baikal_2l = tag.create_tag(ItemsPicsFromNet, 530)
 '''Тэг,возвращающий информацию о "Напиток Бон Буассон Тархун 2л"'''
 get_bon_boisson_tarhun_2l = tag.create_tag(ItemsPicsFromNet, 531)
 
+'''Тэг,возвращающий информацию о "Напій Bon Boisson Байкал, 1л"'''
+get_bon_boisson_baikal_1l = tag.create_tag(ItemsPicsFromNet, 532)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson Мультивитамин с натурал.соком, 1л"'''
+get_bon_boisson_mult_sok_1l = tag.create_tag(ItemsPicsFromNet, 533)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson манго, 2л"'''
+get_bon_boisson_mango_2l = tag.create_tag(ItemsPicsFromNet, 534)
+
+'''Тэг,возвращающий информацию о "Напиток Bon Boisson Мохито 2 л"'''
+get_bon_boisson_mohito_2l = tag.create_tag(ItemsPicsFromNet, 535)
+
+'''Тэг,возвращающий информацию о "Напиток Бон Буассон Ситро 2л"'''
+get_bon_boisson_sitro_2l = tag.create_tag(ItemsPicsFromNet, 536)
+
+'''Тэг,возвращающий информацию о "Напиток Бон Буассон Крем Сода 2л"'''
+get_bon_boisson_krem_soda_2l = tag.create_tag(ItemsPicsFromNet, 537)
+
+'''Тэг,возвращающий информацию о "Напиток Мультивитамин с соком, 2л"'''
+get_bon_boisson_mult_sok_2l = tag.create_tag(ItemsPicsFromNet, 538)
+
+'''Тэг,возвращающий информацию о "Mirinda Апельсин 0.33л"'''
+get_mirinda_orange_033jb = tag.create_tag(ItemsPicsFromNet, 539)
+
+'''Тэг,возвращающий информацию о "Напиток Mirinda Free со вкусом апельсина, 0,5л"'''
+get_mirinda_orange_05l = tag.create_tag(ItemsPicsFromNet, 540)
+
+'''Тэг,возвращающий информацию о "Напій Schweppes гранат 1 л"'''
+get_schweppes_granat_1l = tag.create_tag(ItemsPicsFromNet, 541)
+
+'''Тэг,возвращающий информацию о "Напій Schweppes Indian Tonic 0.33"'''
+get_schweppes_indian_tonic_033jb = tag.create_tag(ItemsPicsFromNet, 542)
+
+'''Тэг,возвращающий информацию о "Напій Schweppes Tangerine 0.33"'''
+get_schweppes_tangerine_033jb = tag.create_tag(ItemsPicsFromNet, 543)
+
+'''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Original BitLemon 0.33"'''
+get_schweppes_original_bitter_lemon_033jb = tag.create_tag(ItemsPicsFromNet, 544)
+
+'''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Original BitLemon 0.75"'''
+get_schweppes_original_bitter_lemon_075pl = tag.create_tag(ItemsPicsFromNet, 545)
+
+'''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Original BitLemon 1 л"'''
+get_schweppes_original_bitter_lemon_1l = tag.create_tag(ItemsPicsFromNet, 546)
+
+'''Тэг,возвращающий информацию о "Напій Schweppes Гранат 750 г"'''
+get_schweppes_granat_075l = tag.create_tag(ItemsPicsFromNet, 547)
+
+'''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Classic Mojito 0.33"'''
+get_schweppes_classic_mojito_033jb = tag.create_tag(ItemsPicsFromNet, 548)
+
+'''Тэг,возвращающий информацию о "Фарш говяжий, кг"'''
+get_farsh_govyajiy = tag.create_tag(ItemsPicsFromNet, 549)
+
+'''Тэг,возвращающий информацию о "Ріс круглий Extra! 1 кг"'''
+get_rice_krug_extra_1kg = tag.create_tag(ItemsPicsFromNet, 550)
+
 
 
 

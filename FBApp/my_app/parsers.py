@@ -5240,6 +5240,150 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/49831-napitok-bon-buasson-tarkhun-2l-4820005190294.html'
         ])
 
+    def bon_boisson_baikal_1l_parser(self):
+        ''' Парсер для напій Бон Буассон Байкал 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/napii-bon-boisson-baikal-94224',
+            'https://auchan.ua/ua/napitok-bon-buasson-bajkal-1-l-745715/',
+            'https://novus.online/product/napij-gazovanij-bon-buason-bajkal-1l',
+            'https://shop.nashkraj.ua/kovel/product/17165-napiy-bon-buasson-1l-baykal',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/28658-napitok-bon-boisson-bajkal-4820005194322.html'
+        ])
+
+    def bon_boisson_mult_sok_1l_parser(self):
+        ''' Парсер для напій Бон Буассон Мультівітамін 1 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-bon-boisson-multivitamin-silnogazovaniy-sokovmisniy-1-l',
+            'https://shop.silpo.ua/product/napii-bon-boisson-multyvitamin-z-naturalnym-sokom-89011',
+            'https://shop.nashkraj.ua/kovel/product/19298-napiy-bon-buasson-1l-multivitamin',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42538-napitok-bon-boisson-multivitamin-s-naturalsokom-4820203710591.html'
+        ])
+
+    def bon_boisson_mango_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Манго 2 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-bon-boisson-mango-silnogazovaniy-sokovmisniy-2-l',
+            'https://shop.silpo.ua/product/napii-bon-boisson-mango-749371',
+            'https://novus.online/product/napij-bon-buasson-mango-2l',
+            'https://metro.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203711123/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/53282-napitok-bon-boisson-mango-4820203711123.html'
+        ])
+
+    def bon_boisson_mohito_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Мохито 2 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-bon-boisson-mohito-silnogazovaniy-sokovmisniy-2-l',
+            'https://shop.silpo.ua/product/napii-bon-boisson-mokhito-bezalkogolnyi-sylnogazovanyi-796017',
+            'https://metro.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203711505/',
+            'https://shop.nashkraj.ua/kovel/product/317979-napiy-bon-buasson-2l-mokhito',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/86493-napitok-bon-boisson-mokhito-bezalkogolnyj-silnogazirovannyj-4820203711505.html'
+        ])
+
+    def bon_boisson_sitro_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Ситро 2 л'''
+        return self.prices_parsing([
+            'https://varus.ua/napiy-bon-boisson-sitro-silnogazovaniy-2-l',
+            'https://novus.online/product/napij-gazovanij-bon-buason-sitro-2l',
+            'https://metro.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820005194711/',
+            'https://shop.nashkraj.ua/kovel/product/19307-napiy-bon-buasson-2l-sitro',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/49774-napitok-bon-buasson-sitro-2l-4820005194711.html'
+        ])
+
+    def bon_boisson_krem_soda_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Крем Сода 2 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/napii-krem-soda-nostalzhi-177315',
+            'https://auchan.ua/ua/napitok-bon-buasson-krem-soda-2-l-246669/',
+            'https://novus.online/product/napij-gazovanij-bon-buason-krem-soda-2l',
+            'https://metro.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820005195312/',
+            'https://shop.nashkraj.ua/kovel/product/6549-napiy-bon-buasson-2l-krem-soda',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/49764-napitok-bon-buasson-krem-soda-2l-4820203710157.html'
+        ])
+
+    def bon_boisson_mult_sok_2l_parser(self):
+        ''' Парсер для напій Бон Буассон Мультивитамин 2 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203710577/',
+            'https://novus.online/product/napij-sokovmisnij-gazovanij-multivitamin-bon-buason-2l',
+            'https://metro.zakaz.ua/uk/products/napii-bon-buasson-2000ml-ukrayina--04820203710577/',
+            'https://shop.nashkraj.ua/kovel/product/19306-napiy-bon-buasson-2l-multivitamin',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42545-napitok-multivitamin-s-sokom-4820203710577.html'
+        ])
+
+    def mirinda_orange_033jb_parser(self):
+        ''' Парсер для напій Mirinda Orange 0.33 л'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-330-ml-mirinda-apelsin-zb',
+            'https://novus.online/product/napij-033l-gazovanij-mirinda-zb',
+            'https://metro.zakaz.ua/uk/products/napii-mirinda-mirinda-330ml-ukrayina--04823063126939/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42556-mirinda-apelsin-033l-4823063111812.html'
+        ])
+
+    def mirinda_orange_05l_parser(self):
+        ''' Парсер для напій Mirinda Orange 0.5 л'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-mirinda-mirinda-500ml-ukrayina--04823063110495/',
+            'https://varus.ua/napiy-mirinda-apelsin-silnogazovaniy-0-5-l',
+            'https://novus.online/product/napiy-sylnohazovanyy-mirinda-zero-05-l-pb',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/101367-napitok-mirinda-free-so-vkusom-apelsina-5900497040853.html'
+        ])
+
+    def schweppes_granat_1l_parser(self):
+        ''' Парсер для напій Schweppes Granat 1 л'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/napii-schweppes-granat-sylnogazovanyi-778462',
+        ])
+
+    def schweppes_indian_tonic_033jb_parser(self):
+        ''' Парсер для напій Schweppes Indian Tonic 0.33'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-shveps-330ml--05449000046390/',
+            'https://varus.ua/napiy-schweppes-indian-tonic-water-silnogazovaniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-schweppes-indian-tonic-714691',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-indian-tonic-water-schweppes-zh-b-0-33l-688507/',
+            'https://novus.online/product/napij-silnogazovanij-bezalkogolnij-indian-tonic-schweppes-v-zestanij-banci-033l',
+            'https://shop.nashkraj.ua/kovel/product/113741-napiy-schweppes-0-33l-tonik-zhb',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42565-napitok-sokosoderzhashhij-schweppes-indian-tonic-zh-b-5449000046390.html'
+        ])
+
+    def schweppes_original_bitter_lemon_033jb_parser(self):
+        ''' Парсер для напій Schweppes Original Bitter lemon 0.33'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-shveps-330ml--05449000064110/',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-schweppes-original-bitlemon-714692',
+            'https://novus.online/product/napij-silnogazovanij-bezalkogolnij-bitter-lemon-schweppes-v-zestanij-banci-033l',
+        ])
+
+    def schweppes_original_bitter_lemon_075l_parser(self):
+        ''' Парсер для напій Schweppes Original Bitter lemon 0.75'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/napij-075-l-schweppes-bitter-lemon-bezalkogolnij-silnogazovanij-pet',
+            'https://eko.zakaz.ua/uk/products/voda-shveps-750ml--05449000312136/',
+            'https://shop.silpo.ua/product/napii-schweppes-bitter-lemon-bezalkogolnyi-sylnogazovanyi-914866',
+            'https://novus.online/product/napiy-hazovanyy-schweppes-bitter-lemon-075-plpl',
+            'https://metro.zakaz.ua/uk/products/napii-shveps-750ml--05449000312259/',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/100319-napitok-schweppes-bitter-lemon-silnogazirovannyj-250015025707.html'
+        ])
+
+    def schweppes_original_bitter_lemon_1l_parser(self):
+        ''' Парсер для напій Schweppes Original Bitter lemon 1 l'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-schweppes-original-bitter-lemon-750478',
+        ])
+
+    def schweppes_classic_mojito_033jb_parser(self):
+        ''' Парсер для напій Schweppes Classic Mojito 0.33'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/napii-shveps-330ml--05449000171351/',
+            'https://varus.ua/napiy-schweppes-classic-mojito-silnogazovaniy-0-33-l',
+            'https://shop.silpo.ua/product/napii-sokovmisnyi-schweppes-classic-mojito-714690',
+            'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-classic-mojito-schweppes-zh-b-0-33l-688444/',
+            'https://novus.online/product/napij-silnogazovanij-bezalkogolnij-taste-of-classic-mojito-schweppes-v-zestanij-banci-033l',
+            'https://metro.zakaz.ua/uk/products/napii-shveps-330ml--05449000171351/',
+            'https://shop.nashkraj.ua/kovel/product/244062-napiy-schweppes-0-33l-mokhito-zhb',
+            'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42564-napitok-sokosoderzhashhij-schweppes-classic-mojito-zh-b-5449000171351.html'
+        ])
+
 
 
 

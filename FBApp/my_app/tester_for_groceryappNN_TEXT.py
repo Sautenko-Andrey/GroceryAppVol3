@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2100
+    MAX_WORDS = 2200
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1123,3 +1123,41 @@ class TesterForGroceryAppText:
             return BON_BOISSON_BAIKAL_2L
         elif np.argmax(result) == 527:
             return BON_BOISSON_TARHUN_2L
+        elif np.argmax(result) == 528:
+            return BON_BOISSON_BAIKAL_1L
+        elif np.argmax(result) == 529:
+            return BON_BOISSON_MULT_SOK_1L
+        elif np.argmax(result) == 530:
+            return BON_BOISSON_MANGO_2L
+        elif np.argmax(result) == 531:
+            return BON_BOISSON_MOHITO_2L
+        elif np.argmax(result) == 532:
+            return BON_BOISSON_SITRO_2L
+        elif np.argmax(result) == 533:
+            return BON_BOISSON_KREM_SODA_2L
+        elif np.argmax(result) == 534:
+            return BON_BOISSON_MULT_SOK_2L
+        elif np.argmax(result) == 535:
+            return MIRINDA_ORANGE_033JB
+        elif np.argmax(result) == 536:
+            return MIRINDA_ORANGE_05L
+        elif np.argmax(result) == 537:
+            return SCHWEPPES_GRANAT_1L
+        elif np.argmax(result) == 538:
+            return SCHWEPPES_INDIAN_TONIC_033JB
+        elif np.argmax(result) == 539:
+            return SCHWEPPES_TANGERINE_033JB
+        elif np.argmax(result) == 540:
+            return SCHWEPPES_ORIGINAL_BITTER_LEMON_033JB
+        elif np.argmax(result) == 541:
+            return SCHWEPPES_ORIGINAL_BITTER_LEMON_075pl
+        elif np.argmax(result) == 542:
+            return SCHWEPPES_ORIGINAL_BITTER_LEMON_1L
+        elif np.argmax(result) == 543:
+            return SCHWEPPES_GRANAT_075L
+        elif np.argmax(result) == 544:
+            return SCHWEPPES_CLASSIC_MOJITO_033JB
+        elif np.argmax(result) == 545:
+            return FARSH_GOVYAJIY
+        elif np.argmax(result) == 546:
+            return RICE_EXTRA_KRUGLIY_1KG

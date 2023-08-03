@@ -1379,6 +1379,40 @@ class ContextSupervisor:
             result = self.getting_prices('bon_boisson_baikal_2l', get_bon_boisson_baikal_2l)
         elif nn_respond == BON_BOISSON_TARHUN_2L:
             result = self.getting_prices('bon_boisson_tarhun_2l', get_bon_boisson_tarhun_2l)
+        elif nn_respond == BON_BOISSON_BAIKAL_1L:
+            result = self.getting_prices('bon_boisson_baikal_1l', get_bon_boisson_baikal_1l)
+        elif nn_respond == BON_BOISSON_MULT_SOK_1L:
+            result = self.getting_prices('bon_boisson_mult_sok_1l', get_bon_boisson_mult_sok_1l)
+        elif nn_respond == BON_BOISSON_MANGO_2L:
+            result = self.getting_prices('bon_boisson_mango_2l', get_bon_boisson_mango_2l)
+        elif nn_respond == BON_BOISSON_MOHITO_2L:
+            result = self.getting_prices('bon_boisson_mohito_2l', get_bon_boisson_mohito_2l)
+        elif nn_respond == BON_BOISSON_SITRO_2L:
+            result = self.getting_prices('bon_boisson_sitro_2l', get_bon_boisson_sitro_2l)
+        elif nn_respond == BON_BOISSON_KREM_SODA_2L:
+            result = self.getting_prices('bon_boisson_krem_soda_2l', get_bon_boisson_krem_soda_2l)
+        elif nn_respond == BON_BOISSON_MULT_SOK_2L:
+            result = self.getting_prices('bon_boisson_mult_sok_2l', get_bon_boisson_mult_sok_2l)
+        elif nn_respond == MIRINDA_ORANGE_033JB:
+            result = self.getting_prices('mirinda_orange_033jb', get_mirinda_orange_033jb)
+        elif nn_respond == MIRINDA_ORANGE_05L:
+            result = self.getting_prices('mirinda_orange_05l', get_mirinda_orange_05l)
+        elif nn_respond == SCHWEPPES_GRANAT_1L:
+            result = self.getting_prices('schweppes_granat_1l', get_schweppes_granat_1l)
+        elif nn_respond == SCHWEPPES_INDIAN_TONIC_033JB:
+            result = self.getting_prices('schweppes_indian_tonic_033jb', get_schweppes_indian_tonic_033jb)
+        elif nn_respond == SCHWEPPES_ORIGINAL_BITTER_LEMON_033JB:
+            result = self.getting_prices('schweppes_original_bitter_lemon_033jb', get_schweppes_original_bitter_lemon_033jb)
+        elif nn_respond == SCHWEPPES_ORIGINAL_BITTER_LEMON_075pl:
+            result = self.getting_prices('schweppes_original_bitter_lemon_075l', get_schweppes_original_bitter_lemon_075pl)
+        elif nn_respond == SCHWEPPES_ORIGINAL_BITTER_LEMON_1L:
+            result = self.getting_prices('schweppes_original_bitter_lemon_1l', get_schweppes_original_bitter_lemon_1l)
+        elif nn_respond == SCHWEPPES_CLASSIC_MOJITO_033JB:
+            result = self.getting_prices('schweppes_classic_mojito_033jb', get_schweppes_classic_mojito_033jb)
+        elif nn_respond == FARSH_GOVYAJIY:
+            result = self.getting_prices(self.NO_PRICES, get_farsh_govyajiy)
+        elif nn_respond == RICE_EXTRA_KRUGLIY_1KG:
+            result = self.getting_prices(self.NO_PRICES, get_rice_krug_extra_1kg)
 
 
 
