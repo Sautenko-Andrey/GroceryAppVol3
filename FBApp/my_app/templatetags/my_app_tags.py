@@ -1684,6 +1684,9 @@ get_vareniki_s_kapustoy_info = tag.create_tag(AvailableDishes, 3)
 '''Тег , возвращающий информацю о гречеськом салаті'''
 get_grecheskiy_salat_info = tag.create_tag(AvailableDishes, 4)
 
+'''Тег , возвращающий информацю о голубцах'''
+get_golubci_info = tag.create_tag(AvailableDishes, 5)
+
 
 # ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА
 class SimpleTagMakerAllItems:

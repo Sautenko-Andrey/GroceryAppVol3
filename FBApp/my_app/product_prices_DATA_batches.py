@@ -6,69 +6,52 @@ import django
 
 django.setup()
 
-from django.core.management import call_command
-
 import json
+import pandas as pd
 from parsers import ProductParserVol2
 
-# коэфициенты для борща красного
-water_rate = 3
-meat_rate = 0.8
-potato_rate = 2
-beet_rate = 10
-carrot_rate = 10
-onion_rate = 0.2
-cabbage_rate = 0.4
-borsh_mututal_devider = 6
-
-# коэфициенты для вареников с картошкой/капустой
-sour_var = 0.4
+#вспомагательные коэффициенты, благодаря которым корректируется цена продукта
 water_var = 0.033
-egg_var = 0.1
-oil_var = 0.05
-onion_var = 0.2
-onion_bigger_var = 0.4
-potato_var = 0.6
-cabbage_var = 0.6
-carrot_var = 0.05
-vareniki_mutual_devider = 5
-# коєфициенты для греческого салата
-tomato_var = 0.25
-cucumber_var = 0.15
-reb_bolg_paper_var = 0.15
-onion_greece_salad_var = 0.9
-sir_feta_fozzy_var = 0.15
 oliv_var = 0.27
-oil_oliv_var_greece_salat = 0.05
-basilik_var = 0.5
-greece_salad_devider = 4
+addition_ingredients = 5
+double_price = 2
+half_price = 0.5
+ten_percent_price = 0.1
+fifteen_percent_price = 0.15
+twenty_percent_price = 0.2
+twenty_five_percent_price = 0.25
+fourty_percent_rate = 0.4
+sixty_percent_price = 0.6
+six_percent_price = 0.06
+ninety_percent_price = 0.9
+five_percent_price = 0.05
+three_percent_price = 0.03
+eighty_percent_price = 0.8
+mul_price_by_10 = 10
+devide_by_3 = 3
+devide_by_4 = 4
+devide_by_5 = 5
+devide_by_6 = 6
+rate_3 = 3
 
-correct_price_mul_10 = 10
-
-egg_correct_price = 10
+# в каждом батче по 100 продуктов
+batch_1_path = "../prices_store_batch_1.json"
+batch_2_path = "../prices_store_batch_2.json"
+batch_3_path = "../prices_store_batch_3.json"
+batch_4_path = "../prices_store_batch_4.json"
+batch_5_path = "../prices_store_batch_5.json"
+batch_6_path = "../prices_store_batch_6.json"
+batch_7_path = "../prices_store_batch_7.json"
 
 parser = ProductParserVol2()
 
-#old
-# def write_prices_to_json(batch: list, json_data: str):
-#     '''Функция записи цен в json для batch '''
-#     to_json = dict()
-#     for item in batch:
-#         for product, values in item.items():
-#             to_json[product] = values
-#     # with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
-#     with open(json_data, 'w') as f:
-#         json.dump(to_json, f, sort_keys=False, indent=len(batch))
-#         print(f'Все продукты и их цены добавлены в базу данных (batch {batch})!')
-#end
-
-def write_prices_to_json(batch: list, json_data: str, mode:str):
+def write_prices_to_json(batch: list, json_data: str, mode: str):
     '''Функция записи цен в json для batch '''
     to_json = dict()
     for item in batch:
         for product, values in item.items():
             to_json[product] = values
-    # with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json', 'w') as f:
+
     if mode == "w":
         with open(json_data, 'w') as f:
             json.dump(to_json, f, sort_keys=False, indent=len(batch))
@@ -84,17 +67,6 @@ def price_parcing(batch_name: str):
     if type(batch_name) != str:
         raise AttributeError("Input data types are inopropriate!")
 
-    # в каждом батче по 100 продуктов
-    batch_1_path = "../prices_store_batch_1.json"
-    batch_2_path = "../prices_store_batch_2.json"
-    batch_3_path = "../prices_store_batch_3.json"
-    batch_4_path = "../prices_store_batch_4.json"
-    batch_5_path = "../prices_store_batch_5.json"
-    batch_6_path = "../prices_store_batch_6.json"
-    #new!
-    overall_batch_path = "../prices_store_overall.json"
-    #end
-
     # названия батчей
     batch_name_1 = "all_products_names_batch_1"
     batch_name_2 = "all_products_names_batch_2"
@@ -105,7 +77,6 @@ def price_parcing(batch_name: str):
     batch_name_7 = "all_products_names_batch_7"
 
     mode_type_first_write = "w"
-    mode_type_addition_write = "a"
 
     # для первого батча
     if batch_name == batch_name_1:
@@ -132,9 +103,9 @@ def price_parcing(batch_name: str):
                 "atb": parser.garlik_parcer()[0],
                 "eko": parser.garlik_parcer()[1],
                 "varus": parser.garlik_parcer()[2],
-                "silpo": parser.garlik_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.garlik_parcer()[3] * mul_price_by_10,
                 "novus": parser.garlik_parcer()[5],
-                "nash_kray": parser.garlik_parcer()[7] * correct_price_mul_10,
+                "nash_kray": parser.garlik_parcer()[7] * mul_price_by_10,
                 "fozzy": parser.garlik_parcer()[8]
             }},
             {'tea_minutka': {
@@ -146,7 +117,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.apple_golden_parcer()[0],
                 "eko": parser.apple_golden_parcer()[1],
                 "varus": parser.apple_golden_parcer()[2],
-                "silpo": parser.apple_golden_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.apple_golden_parcer()[3] * mul_price_by_10,
                 "metro": parser.apple_golden_parcer()[6],
                 "nash_kray": parser.apple_golden_parcer()[7],
                 "fozzy": parser.apple_golden_parcer()[8]
@@ -187,7 +158,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.onion_parcer()[0],
                 "eko": parser.onion_parcer()[1],
                 "varus": parser.onion_parcer()[2],
-                "silpo": parser.onion_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.onion_parcer()[3] * mul_price_by_10,
                 "novus": parser.onion_parcer()[5],
                 "metro": parser.onion_parcer()[6],
                 "nash_kray": parser.onion_parcer()[7],
@@ -197,7 +168,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.apple_black_prince_parcer()[0],
                 "eko": parser.apple_black_prince_parcer()[1],
                 "varus": parser.apple_black_prince_parcer()[2],
-                "silpo": parser.apple_black_prince_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.apple_black_prince_parcer()[3] * mul_price_by_10,
                 "metro": parser.apple_black_prince_parcer()[6],
                 "fozzy": parser.apple_black_prince_parcer()[8]
             }},
@@ -208,7 +179,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.limon_parcer()[0],
                 "eko": parser.limon_parcer()[1],
                 "varus": parser.limon_parcer()[2],
-                "silpo": parser.limon_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.limon_parcer()[3] * mul_price_by_10,
                 "novus": parser.limon_parcer()[5],
                 "metro": parser.limon_parcer()[6],
                 "nash_kray": parser.limon_parcer()[7],
@@ -246,7 +217,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.carrot_parcer()[0],
                 "eko": parser.carrot_parcer()[1],
                 "varus": parser.carrot_parcer()[2],
-                "silpo": parser.carrot_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.carrot_parcer()[3] * mul_price_by_10,
                 "novus": parser.carrot_parcer()[5],
                 "metro": parser.carrot_parcer()[6],
                 "nash_kray": parser.carrot_parcer()[7],
@@ -256,7 +227,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.cabbage_parcer()[0],
                 "eko": parser.cabbage_parcer()[1],
                 "varus": parser.cabbage_parcer()[2],
-                "silpo": parser.cabbage_parcer()[3] * correct_price_mul_10,
+                "silpo": parser.cabbage_parcer()[3] * mul_price_by_10,
                 "novus": parser.cabbage_parcer()[5],
                 "metro": parser.cabbage_parcer()[6],
                 "nash_kray": parser.cabbage_parcer()[7],
@@ -264,14 +235,14 @@ def price_parcing(batch_name: str):
             }},
             {'eggs': {
                 "atb": parser.egg_parcer()[0],
-                "eko": parser.egg_parcer()[1] * correct_price_mul_10,
-                "varus": parser.egg_parcer()[2] * correct_price_mul_10,
+                "eko": parser.egg_parcer()[1] * mul_price_by_10,
+                "varus": parser.egg_parcer()[2] * mul_price_by_10,
                 "silpo": parser.egg_parcer()[3],
                 "ashan": parser.egg_parcer()[4],
                 "novus": parser.egg_parcer()[5],
                 "metro": parser.egg_parcer()[6],
                 "nash_kray": parser.egg_parcer()[7],
-                "fozzy": parser.egg_parcer()[8] * correct_price_mul_10
+                "fozzy": parser.egg_parcer()[8] * mul_price_by_10
             }},
             {'mayonez_detsk_shedro_67%': {
                 "atb": parser.mayonez_detsk_shedro_67_parcer()[0],
@@ -318,10 +289,10 @@ def price_parcing(batch_name: str):
                 "atb": parser.pork_lopatka_parser()[0],
                 "eko": parser.pork_lopatka_parser()[1],
                 "varus": parser.pork_lopatka_parser()[2],
-                "silpo": parser.pork_lopatka_parser()[3] * correct_price_mul_10,
+                "silpo": parser.pork_lopatka_parser()[3] * mul_price_by_10,
                 "novus": parser.pork_lopatka_parser()[5],
                 "metro": parser.pork_lopatka_parser()[6],
-                "nash_kray": parser.pork_lopatka_parser()[7] * correct_price_mul_10,
+                "nash_kray": parser.pork_lopatka_parser()[7] * mul_price_by_10,
                 "fozzy": parser.pork_lopatka_parser()[8]
             }},
             {'potato': {
@@ -337,7 +308,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.beet_parser()[0],
                 "eko": parser.beet_parser()[1],
                 "varus": parser.beet_parser()[2],
-                "silpo": parser.beet_parser()[3] * correct_price_mul_10,
+                "silpo": parser.beet_parser()[3] * mul_price_by_10,
                 "novus": parser.beet_parser()[5],
                 "metro": parser.beet_parser()[6],
                 "fozzy": parser.beet_parser()[8]
@@ -857,8 +828,8 @@ def price_parcing(batch_name: str):
             }}
         ]
         # далее записываем цены в json-файл
-        #write_prices_to_json(all_products_names_batch_1, batch_1_path,mode_type_first_write)
-        write_prices_to_json(all_products_names_batch_1, overall_batch_path, mode_type_first_write)
+        write_prices_to_json(all_products_names_batch_1, batch_1_path, mode_type_first_write)
+        # write_prices_to_json(all_products_names_batch_1, overall_batch_path, mode_type_first_write)
 
     # для второго батча
     elif batch_name == batch_name_2:
@@ -1322,7 +1293,7 @@ def price_parcing(batch_name: str):
             }}
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_2, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_2, batch_2_path, mode_type_first_write)
 
     # для 3-го батча
     elif batch_name == batch_name_3:
@@ -1519,7 +1490,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.banana_parser()[0],
                 "eko": parser.banana_parser()[1],
                 "varus": parser.banana_parser()[2],
-                "silpo": parser.banana_parser()[3] * correct_price_mul_10,
+                "silpo": parser.banana_parser()[3] * mul_price_by_10,
                 "novus": parser.banana_parser()[5],
                 "metro": parser.banana_parser()[6],
                 "nash_kray": parser.banana_parser()[7],
@@ -1530,7 +1501,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.orange_parser()[0],
                 "eko": parser.orange_parser()[1],
                 "varus": parser.orange_parser()[2],
-                "silpo": parser.orange_parser()[3] * correct_price_mul_10,
+                "silpo": parser.orange_parser()[3] * mul_price_by_10,
                 "novus": parser.orange_parser()[5],
                 "metro": parser.orange_parser()[6],
                 "nash_kray": parser.orange_parser()[7],
@@ -1541,7 +1512,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.kiwi_parser()[0],
                 "eko": parser.kiwi_parser()[1],
                 "varus": parser.kiwi_parser()[2],
-                "silpo": parser.kiwi_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kiwi_parser()[3] * mul_price_by_10,
                 "metro": parser.kiwi_parser()[6],
                 "nash_kray": parser.kiwi_parser()[7],
                 "fozzy": parser.kiwi_parser()[8]
@@ -1550,7 +1521,7 @@ def price_parcing(batch_name: str):
             {'coconut': {
                 "atb": parser.coconut_parser()[0],
                 "varus": parser.coconut_parser()[2],
-                "silpo": parser.coconut_parser()[3] * correct_price_mul_10,
+                "silpo": parser.coconut_parser()[3] * mul_price_by_10,
                 "metro": parser.coconut_parser()[6],
                 "nash_kray": parser.coconut_parser()[7],
                 "fozzy": parser.coconut_parser()[8]
@@ -1560,7 +1531,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.grapefruit_parser()[0],
                 "eko": parser.grapefruit_parser()[1],
                 "varus": parser.grapefruit_parser()[2],
-                "silpo": parser.grapefruit_parser()[3] * correct_price_mul_10,
+                "silpo": parser.grapefruit_parser()[3] * mul_price_by_10,
                 "novus": parser.grapefruit_parser()[5],
                 "metro": parser.grapefruit_parser()[6],
                 "nash_kray": parser.grapefruit_parser()[7],
@@ -1571,7 +1542,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.pomegranate_parser()[0],
                 "eko": parser.pomegranate_parser()[1],
                 "varus": parser.pomegranate_parser()[2],
-                "silpo": parser.pomegranate_parser()[3] * correct_price_mul_10,
+                "silpo": parser.pomegranate_parser()[3] * mul_price_by_10,
                 "metro": parser.pomegranate_parser()[6],
                 "fozzy": parser.pomegranate_parser()[8]
             }},
@@ -1598,7 +1569,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.cucumber_parser()[0],
                 "eko": parser.cucumber_parser()[1],
                 "varus": parser.cucumber_parser()[2],
-                "silpo": parser.cucumber_parser()[3] * correct_price_mul_10,
+                "silpo": parser.cucumber_parser()[3] * mul_price_by_10,
                 "novus": parser.cucumber_parser()[5],
                 "metro": parser.cucumber_parser()[6],
                 "nash_kray": parser.cucumber_parser()[7],
@@ -1609,7 +1580,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.kabachki_parser()[0],
                 "eko": parser.kabachki_parser()[1],
                 "varus": parser.kabachki_parser()[2],
-                "silpo": parser.kabachki_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kabachki_parser()[3] * mul_price_by_10,
                 "novus": parser.kabachki_parser()[5],
                 "metro": parser.kabachki_parser()[6],
                 "nash_kray": parser.kabachki_parser()[7],
@@ -1619,7 +1590,7 @@ def price_parcing(batch_name: str):
             {'red_bolgar_papper': {
                 "atb": parser.red_bolg_papper_parser()[0],
                 "eko": parser.red_bolg_papper_parser()[1],
-                "silpo": parser.red_bolg_papper_parser()[3] * correct_price_mul_10,
+                "silpo": parser.red_bolg_papper_parser()[3] * mul_price_by_10,
                 "novus": parser.red_bolg_papper_parser()[5],
                 "metro": parser.red_bolg_papper_parser()[6],
                 "nash_kray": parser.red_bolg_papper_parser()[7],
@@ -1628,7 +1599,7 @@ def price_parcing(batch_name: str):
 
             {'yellow_bolgar_papper': {
                 "atb": parser.yellow_bolg_papper_parser()[0],
-                "silpo": parser.yellow_bolg_papper_parser()[3] * correct_price_mul_10,
+                "silpo": parser.yellow_bolg_papper_parser()[3] * mul_price_by_10,
                 "novus": parser.yellow_bolg_papper_parser()[5],
                 "metro": parser.yellow_bolg_papper_parser()[6],
                 "nash_kray": parser.yellow_bolg_papper_parser()[7],
@@ -1645,7 +1616,7 @@ def price_parcing(batch_name: str):
             }},
 
             {'brokoli': {
-                "silpo": parser.brokoli_parser()[3] * correct_price_mul_10,
+                "silpo": parser.brokoli_parser()[3] * mul_price_by_10,
                 "novus": parser.brokoli_parser()[5],
                 "nash_kray": parser.brokoli_parser()[7],
                 "fozzy": parser.brokoli_parser()[8]
@@ -2107,7 +2078,7 @@ def price_parcing(batch_name: str):
             }}
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_3, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_3, batch_3_path, mode_type_first_write)
 
     # для 4-го батча
     elif batch_name == batch_name_4:
@@ -2921,7 +2892,7 @@ def price_parcing(batch_name: str):
             }},
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_4, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_4, batch_4_path, mode_type_first_write)
 
     # для 5-го батча
     elif batch_name == batch_name_5:
@@ -3252,16 +3223,16 @@ def price_parcing(batch_name: str):
             {'svinne_rebro': {
                 "eko": parser.svinne_rebro_parser()[1],
                 "varus": parser.svinne_rebro_parser()[2],
-                "silpo": parser.svinne_rebro_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svinne_rebro_parser()[3] * mul_price_by_10,
                 "novus": parser.svinne_rebro_parser()[5],
                 "metro": parser.svinne_rebro_parser()[6],
-                "nash_kray": parser.svinne_rebro_parser()[7] * correct_price_mul_10,
+                "nash_kray": parser.svinne_rebro_parser()[7] * mul_price_by_10,
                 "fozzy": parser.svinne_rebro_parser()[8]
             }},
 
             {'salo': {
                 "varus": parser.salo_parser()[2],
-                "silpo": parser.salo_parser()[3] * correct_price_mul_10,
+                "silpo": parser.salo_parser()[3] * mul_price_by_10,
                 "novus": parser.salo_parser()[5],
                 "nash_kray": parser.salo_parser()[7],
                 "fozzy": parser.salo_parser()[8]
@@ -3280,7 +3251,7 @@ def price_parcing(batch_name: str):
             }},
 
             {'svin_gulyash': {
-                "silpo": parser.svin_gulyash_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_gulyash_parser()[3] * mul_price_by_10,
                 "fozzy": parser.svin_gulyash_parser()[8]
             }},
 
@@ -3291,7 +3262,7 @@ def price_parcing(batch_name: str):
 
             {'svin_koreyka': {
                 "varus": parser.svin_koreyka_parser()[2],
-                "silpo": parser.svin_koreyka_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_koreyka_parser()[3] * mul_price_by_10,
                 "novus": parser.svin_koreyka_parser()[5],
                 "metro": parser.svin_koreyka_parser()[6],
                 "nash_kray": parser.svin_koreyka_parser()[7],
@@ -3300,7 +3271,7 @@ def price_parcing(batch_name: str):
             {'svin_virizka': {
                 "eko": parser.svin_virizka_parser()[1],
                 "varus": parser.svin_virizka_parser()[2],
-                "silpo": parser.svin_virizka_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_virizka_parser()[3] * mul_price_by_10,
                 "metro": parser.svin_virizka_parser()[6],
                 "fozzy": parser.svin_virizka_parser()[8]
             }},
@@ -3308,37 +3279,37 @@ def price_parcing(batch_name: str):
             {'svin_lopatka_bez_kistki': {
                 "eko": parser.svin_lopatka_bez_kistki_parser()[1],
                 "varus": parser.svin_lopatka_bez_kistki_parser()[2],
-                "silpo": parser.svin_lopatka_bez_kistki_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_lopatka_bez_kistki_parser()[3] * mul_price_by_10,
                 "metro": parser.svin_lopatka_bez_kistki_parser()[6],
                 "fozzy": parser.svin_lopatka_bez_kistki_parser()[8]
             }},
 
             {'svin_okist_bez_kistki': {
-                "silpo": parser.svin_okist_bez_kistki_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_okist_bez_kistki_parser()[3] * mul_price_by_10,
                 "fozzy": parser.svin_okist_bez_kistki_parser()[8]
             }},
 
             {'svin_farsh': {
-                "nash_kray": parser.svin_farsh_parser()[7] * correct_price_mul_10,
+                "nash_kray": parser.svin_farsh_parser()[7] * mul_price_by_10,
                 "fozzy": parser.svin_farsh_parser()[8]
             }},
 
             {'svin_bitok_bez_kosti': {
                 "eko": parser.svin_bitok_bez_kosti_parser()[1],
                 "varus": parser.svin_bitok_bez_kosti_parser()[2],
-                "silpo": parser.svin_bitok_bez_kosti_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_bitok_bez_kosti_parser()[3] * mul_price_by_10,
                 "fozzy": parser.svin_bitok_bez_kosti_parser()[8]
             }},
 
             {'svin_ragu': {
-                "silpo": parser.svin_ragu_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_ragu_parser()[3] * mul_price_by_10,
                 "fozzy": parser.svin_ragu_parser()[8]
             }},
 
             {'svin_osheek_bez_kistki': {
                 "eko": parser.svin_osheek_bez_kistki_parser()[1],
                 "varus": parser.svin_osheek_bez_kistki_parser()[2],
-                "silpo": parser.svin_osheek_bez_kistki_parser()[3] * correct_price_mul_10,
+                "silpo": parser.svin_osheek_bez_kistki_parser()[3] * mul_price_by_10,
                 "novus": parser.svin_osheek_bez_kistki_parser()[5],
                 "metro": parser.svin_osheek_bez_kistki_parser()[6],
                 "fozzy": parser.svin_osheek_bez_kistki_parser()[8]
@@ -3348,7 +3319,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.kuryacha_chetvert_parser()[0],
                 "eko": parser.kuryacha_chetvert_parser()[1],
                 "varus": parser.kuryacha_chetvert_parser()[2],
-                "silpo": parser.kuryacha_chetvert_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kuryacha_chetvert_parser()[3] * mul_price_by_10,
                 "nash_kray": parser.kuryacha_chetvert_parser()[7],
                 "fozzy": parser.kuryacha_chetvert_parser()[8]
             }},
@@ -3357,7 +3328,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.kuryache_stegno_parser()[0],
                 "eko": parser.kuryache_stegno_parser()[1],
                 "varus": parser.kuryache_stegno_parser()[2],
-                "silpo": parser.kuryache_stegno_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kuryache_stegno_parser()[3] * mul_price_by_10,
                 "novus": parser.kuryache_stegno_parser()[5],
                 "metro": parser.kuryache_stegno_parser()[6],
                 "nash_kray": parser.kuryache_stegno_parser()[7],
@@ -3367,7 +3338,7 @@ def price_parcing(batch_name: str):
             {'kuryache_krilo': {
                 "atb": parser.kuryache_krilo_parser()[0],
                 "varus": parser.kuryache_krilo_parser()[2],
-                "silpo": parser.kuryache_krilo_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kuryache_krilo_parser()[3] * mul_price_by_10,
                 "novus": parser.kuryache_krilo_parser()[5],
                 "metro": parser.kuryache_krilo_parser()[6],
                 "nash_kray": parser.kuryache_krilo_parser()[7],
@@ -3378,17 +3349,17 @@ def price_parcing(batch_name: str):
                 "atb": parser.kuryache_file_parser()[0],
                 "eko": parser.kuryache_file_parser()[1],
                 "varus": parser.kuryache_file_parser()[2],
-                "silpo": parser.kuryache_file_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kuryache_file_parser()[3] * mul_price_by_10,
                 "novus": parser.kuryache_file_parser()[5],
                 "metro": parser.kuryache_file_parser()[6],
-                "nash_kray": parser.kuryache_file_parser()[7] * correct_price_mul_10,
+                "nash_kray": parser.kuryache_file_parser()[7] * mul_price_by_10,
                 "fozzy": parser.kuryache_file_parser()[8]
             }},
 
             {'kuryacha_gomilka': {
                 "eko": parser.kuryacha_gomilka_parser()[1],
                 "varus": parser.kuryacha_gomilka_parser()[2],
-                "silpo": parser.kuryacha_gomilka_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kuryacha_gomilka_parser()[3] * mul_price_by_10,
                 "novus": parser.kuryacha_gomilka_parser()[5],
                 "metro": parser.kuryacha_gomilka_parser()[6],
                 "nash_kray": parser.kuryacha_gomilka_parser()[7],
@@ -3734,7 +3705,7 @@ def price_parcing(batch_name: str):
             }}
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_5, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_5, batch_5_path, mode_type_first_write)
 
     # для 6-го батча
     elif batch_name == batch_name_6:
@@ -3834,7 +3805,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.kavun_parser()[0],
                 "eko": parser.kavun_parser()[1],
                 "varus": parser.kavun_parser()[2],
-                "silpo": parser.kavun_parser()[3] * correct_price_mul_10,
+                "silpo": parser.kavun_parser()[3] * mul_price_by_10,
                 "novus": parser.kavun_parser()[5],
                 "metro": parser.kavun_parser()[6]
             }},
@@ -3971,156 +3942,152 @@ def price_parcing(batch_name: str):
             }},
 
             {'borsh_red': {
-                "atb": ((parser.water_in_6l_bottle_parser()[0] / water_rate) + (
-                        parser.pork_lopatka_parser()[0] * meat_rate)
-                        + (parser.potato_parser()[0] / potato_rate) + (parser.beet_parser()[0] / beet_rate)
-                        + (parser.carrot_parcer()[0] / carrot_rate) + (parser.onion_parcer()[0] * onion_rate)
-                        + (parser.cabbage_parcer()[0] * cabbage_rate)) / borsh_mututal_devider,
+                "atb": ((parser.water_in_6l_bottle_parser()[0] / rate_3) + (
+                        parser.pork_lopatka_parser()[0] * eighty_percent_price)
+                        + (parser.potato_parser()[0] / double_price) + (parser.beet_parser()[0] / mul_price_by_10)
+                        + (parser.carrot_parcer()[0] / mul_price_by_10) + (parser.onion_parcer()[0] * twenty_percent_price)
+                        + (parser.cabbage_parcer()[0] * fourty_percent_rate)) / devide_by_6,
 
-                "eko": ((parser.water_in_6l_bottle_parser()[1] / water_rate) + (
-                        parser.pork_lopatka_parser()[1] * meat_rate)
-                        + (parser.potato_parser()[1] / potato_rate) + (parser.beet_parser()[1] / beet_rate)
-                        + (parser.carrot_parcer()[1] / carrot_rate) + (parser.onion_parcer()[1] * onion_rate)
-                        + (parser.cabbage_parcer()[1] * cabbage_rate)) / borsh_mututal_devider,
+                "eko": ((parser.water_in_6l_bottle_parser()[1] / rate_3) + (
+                        parser.pork_lopatka_parser()[1] * eighty_percent_price)
+                        + (parser.potato_parser()[1] / double_price) + (parser.beet_parser()[1] / mul_price_by_10)
+                        + (parser.carrot_parcer()[1] / mul_price_by_10) + (parser.onion_parcer()[1] * twenty_percent_price)
+                        + (parser.cabbage_parcer()[1] * fourty_percent_rate)) / devide_by_6,
 
-                "varus": ((parser.water_in_6l_bottle_parser()[2] / water_rate) + (
-                        parser.pork_lopatka_parser()[2] * meat_rate)
-                          + (parser.potato_parser()[2] / potato_rate) + (parser.beet_parser()[2] / beet_rate)
-                          + (parser.carrot_parcer()[2] / carrot_rate) + (parser.onion_parcer()[2] * onion_rate)
-                          + (parser.cabbage_parcer()[2] * cabbage_rate)) / borsh_mututal_devider,
+                "varus": ((parser.water_in_6l_bottle_parser()[2] / rate_3) + (
+                        parser.pork_lopatka_parser()[2] * eighty_percent_price)
+                          + (parser.potato_parser()[2] / double_price) + (parser.beet_parser()[2] / mul_price_by_10)
+                          + (parser.carrot_parcer()[2] / mul_price_by_10) + (parser.onion_parcer()[2] * twenty_percent_price)
+                          + (parser.cabbage_parcer()[2] * fourty_percent_rate)) / devide_by_6,
 
-                "silpo": ((parser.water_in_6l_bottle_parser()[3] / water_rate)
-                          + ((parser.pork_lopatka_parser()[3]) * meat_rate)
-                          + (parser.potato_parser()[3] / potato_rate) + (
-                                  (parser.beet_parser()[3]) / beet_rate)
-                          + ((parser.carrot_parcer()[3]) / carrot_rate)
-                          + ((parser.onion_parcer()[3]) * onion_rate)
-                          + ((parser.cabbage_parcer()[3]) * cabbage_rate)) / borsh_mututal_devider,
+                "silpo": ((parser.water_in_6l_bottle_parser()[3] / rate_3)
+                          + ((parser.pork_lopatka_parser()[3]) * eighty_percent_price)
+                          + (parser.potato_parser()[3] / double_price) + (
+                                  (parser.beet_parser()[3]) / mul_price_by_10)
+                          + ((parser.carrot_parcer()[3]) / mul_price_by_10)
+                          + ((parser.onion_parcer()[3]) * twenty_percent_price)
+                          + ((parser.cabbage_parcer()[3]) * fourty_percent_rate)) / devide_by_6,
 
-                "novus": ((parser.water_in_6l_bottle_parser()[5] / water_rate) + (
-                        parser.pork_lopatka_parser()[5] * meat_rate)
-                          + (parser.potato_parser()[5] / potato_rate) + (parser.beet_parser()[5] / beet_rate)
-                          + (parser.carrot_parcer()[5] / carrot_rate) + (parser.onion_parcer()[5] * onion_rate)
-                          + (parser.cabbage_parcer()[5] * cabbage_rate)) / borsh_mututal_devider,
+                "novus": ((parser.water_in_6l_bottle_parser()[5] / rate_3) + (
+                        parser.pork_lopatka_parser()[5] * eighty_percent_price)
+                          + (parser.potato_parser()[5] / double_price) + (parser.beet_parser()[5] / mul_price_by_10)
+                          + (parser.carrot_parcer()[5] / mul_price_by_10) + (parser.onion_parcer()[5] * twenty_percent_price)
+                          + (parser.cabbage_parcer()[5] * fourty_percent_rate)) / devide_by_6,
 
-                "metro": ((parser.water_in_6l_bottle_parser()[6] / water_rate) + (
-                        parser.pork_lopatka_parser()[6] * meat_rate)
-                          + (parser.potato_parser()[6] / potato_rate) + (parser.beet_parser()[6] / beet_rate)
-                          + (parser.carrot_parcer()[6] / carrot_rate) + (parser.onion_parcer()[6] * onion_rate)
-                          + (parser.cabbage_parcer()[6] * cabbage_rate)) / borsh_mututal_devider,
+                "metro": ((parser.water_in_6l_bottle_parser()[6] / rate_3) + (
+                        parser.pork_lopatka_parser()[6] * eighty_percent_price)
+                          + (parser.potato_parser()[6] / double_price) + (parser.beet_parser()[6] / mul_price_by_10)
+                          + (parser.carrot_parcer()[6] / mul_price_by_10) + (parser.onion_parcer()[6] * twenty_percent_price)
+                          + (parser.cabbage_parcer()[6] * fourty_percent_rate)) / devide_by_6,
 
-                "fozzy": ((parser.water_in_6l_bottle_parser()[8] / water_rate) + (
-                        parser.pork_lopatka_parser()[8] * meat_rate)
-                          + (parser.potato_parser()[8] / potato_rate) + (parser.beet_parser()[8] / beet_rate)
-                          + (parser.carrot_parcer()[8] / carrot_rate) + (parser.onion_parcer()[8] * onion_rate)
-                          + (parser.cabbage_parcer()[8] * cabbage_rate)) / borsh_mututal_devider
+                "fozzy": ((parser.water_in_6l_bottle_parser()[8] / rate_3) + (
+                        parser.pork_lopatka_parser()[8] * eighty_percent_price)
+                          + (parser.potato_parser()[8] / double_price) + (parser.beet_parser()[8] / mul_price_by_10)
+                          + (parser.carrot_parcer()[8] / mul_price_by_10) + (parser.onion_parcer()[8] * twenty_percent_price)
+                          + (parser.cabbage_parcer()[8] * fourty_percent_rate)) / devide_by_6
             }},
 
             {'veriniki_potato': {
-                "atb": ((parser.four_parser()[0] * sour_var) + (parser.water_in_6l_bottle_parser()[0] * water_var)
-                        + (parser.egg_parcer()[0] * egg_var) + (parser.oil_for_dishes_parser()[0] * oil_var)
-                        + (parser.onion_parcer()[0] * onion_var) + (parser.sour_cream_for_dishes_parser()[0])
-                        + (parser.potato_parser()[0] * potato_var)) / vareniki_mutual_devider,
+                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[0] * water_var)
+                        + (parser.egg_parcer()[0] * ten_percent_price) + (parser.oil_for_dishes_parser()[0] * five_percent_price)
+                        + (parser.onion_parcer()[0] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[0])
+                        + (parser.potato_parser()[0] * sixty_percent_price)) / devide_by_5,
 
-                "eko": ((parser.four_parser()[1] * sour_var) + (parser.water_in_6l_bottle_parser()[1] * water_var)
-                        + ((parser.egg_parcer()[1] * egg_correct_price) * egg_var) + (
-                                parser.oil_for_dishes_parser()[1] * oil_var)
-                        + (parser.onion_parcer()[1] * onion_var) + (parser.sour_cream_for_dishes_parser()[1])
-                        + (parser.potato_parser()[1] * potato_var)) / vareniki_mutual_devider,
+                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[1] * water_var)
+                        + ((parser.egg_parcer()[1] * mul_price_by_10) * ten_percent_price) + (
+                                parser.oil_for_dishes_parser()[1] * five_percent_price)
+                        + (parser.onion_parcer()[1] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[1])
+                        + (parser.potato_parser()[1] * sixty_percent_price)) / devide_by_5,
 
-                "varus": ((parser.four_parser()[2] * sour_var) + (parser.water_in_6l_bottle_parser()[2] * water_var)
-                          + (parser.egg_parcer()[2] * egg_var) + (parser.oil_for_dishes_parser()[2] * oil_var)
-                          + (parser.onion_parcer()[2] * onion_var) + (parser.sour_cream_for_dishes_parser()[2])
-                          + (parser.potato_parser()[2] * potato_var)) / vareniki_mutual_devider,
+                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[2] * water_var)
+                          + (parser.egg_parcer()[2] * ten_percent_price) + (parser.oil_for_dishes_parser()[2] * five_percent_price)
+                          + (parser.onion_parcer()[2] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[2])
+                          + (parser.potato_parser()[2] * sixty_percent_price)) / devide_by_5,
 
-                "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
-                          + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
-                          + ((parser.onion_parcer()[3]) * onion_var) + (
+                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[3] * water_var)
+                          + (parser.egg_parcer()[3] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
+                          + ((parser.onion_parcer()[3]) * twenty_percent_price) + (
                               parser.sour_cream_for_dishes_parser()[3])
-                          + (parser.potato_parser()[3] * potato_var)) / vareniki_mutual_devider,
+                          + (parser.potato_parser()[3] * sixty_percent_price)) / devide_by_5,
 
-                "novus": ((parser.four_parser()[5] * sour_var) + (parser.water_in_6l_bottle_parser()[5] * water_var)
-                          + (parser.egg_parcer()[5] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[5] * oil_var)
-                          + (parser.onion_parcer()[5] * onion_var) + (parser.sour_cream_for_dishes_parser()[5])
-                          + (parser.potato_parser()[5] * potato_var)) / vareniki_mutual_devider,
+                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[5] * water_var)
+                          + (parser.egg_parcer()[5] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
+                          + (parser.onion_parcer()[5] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[5])
+                          + (parser.potato_parser()[5] * sixty_percent_price)) / devide_by_5,
 
-                "metro": ((parser.four_parser()[6] * sour_var) + (parser.water_in_6l_bottle_parser()[6] * water_var)
-                          + (parser.egg_parcer()[6] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[6] * oil_var)
-                          + (parser.onion_parcer()[6] * onion_var) + (parser.sour_cream_for_dishes_parser()[6])
-                          + (parser.potato_parser()[6] * potato_var)) / vareniki_mutual_devider,
+                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[6] * water_var)
+                          + (parser.egg_parcer()[6] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
+                          + (parser.onion_parcer()[6] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[6])
+                          + (parser.potato_parser()[6] * sixty_percent_price)) / devide_by_5,
 
-                "fozzy": ((parser.four_parser()[8] * sour_var) + (parser.water_in_6l_bottle_parser()[8] * water_var)
-                          + ((parser.egg_parcer()[8] * egg_correct_price) * egg_var) + (
-                                  parser.oil_shedriy_dar_850_parcer()[8] * oil_var)
-                          + (parser.onion_parcer()[8] * onion_var) + (parser.sour_cream_for_dishes_parser()[8])
-                          + (parser.potato_parser()[8] * potato_var)) / vareniki_mutual_devider
+                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[8] * water_var)
+                          + ((parser.egg_parcer()[8] * mul_price_by_10) * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[8] * five_percent_price)
+                          + (parser.onion_parcer()[8] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[8])
+                          + (parser.potato_parser()[8] * sixty_percent_price)) / devide_by_5
             }},
 
             {'veriniki_kapusta': {
-                "atb": ((parser.four_parser()[0] * sour_var) + (parser.water_in_6l_bottle_parser()[0] * water_var)
-                        + (parser.egg_parcer()[0] * egg_var) + (parser.oil_for_dishes_parser()[0] * oil_var)
-                        + (parser.onion_parcer()[0] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[0])
-                        + (parser.cabbage_parcer()[0] * cabbage_var) + parser.carrot_parcer()[
-                            0] * carrot_var) / vareniki_mutual_devider,
+                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[0] * water_var)
+                        + (parser.egg_parcer()[0] * ten_percent_price) + (parser.oil_for_dishes_parser()[0] * five_percent_price)
+                        + (parser.onion_parcer()[0] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[0])
+                        + (parser.cabbage_parcer()[0] * sixty_percent_price) + parser.carrot_parcer()[
+                            0] * five_percent_price) / devide_by_5,
 
-                "eko": ((parser.four_parser()[1] * sour_var) + (parser.water_in_6l_bottle_parser()[1] * water_var)
-                        + ((parser.egg_parcer()[1] * egg_correct_price) * egg_var) + (
-                                parser.oil_for_dishes_parser()[1] * oil_var)
-                        + (parser.onion_parcer()[1] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[1])
-                        + (parser.cabbage_parcer()[1] * cabbage_var) + parser.carrot_parcer()[
-                            1] * carrot_var) / vareniki_mutual_devider,
+                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[1] * water_var)
+                        + ((parser.egg_parcer()[1] * mul_price_by_10) * ten_percent_price) + (
+                                parser.oil_for_dishes_parser()[1] * five_percent_price)
+                        + (parser.onion_parcer()[1] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[1])
+                        + (parser.cabbage_parcer()[1] * sixty_percent_price) + parser.carrot_parcer()[
+                            1] * five_percent_price) / devide_by_5,
 
-                "varus": ((parser.four_parser()[2] * sour_var) + (parser.water_in_6l_bottle_parser()[2] * water_var)
-                          + (parser.egg_parcer()[2] * egg_var) + (parser.oil_for_dishes_parser()[2] * oil_var)
-                          + (parser.onion_parcer()[2] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[2])
-                          + (parser.cabbage_parcer()[2] * cabbage_var) + parser.carrot_parcer()[
-                              2] * carrot_var) / vareniki_mutual_devider,
+                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[2] * water_var)
+                          + (parser.egg_parcer()[2] * ten_percent_price) + (parser.oil_for_dishes_parser()[2] * five_percent_price)
+                          + (parser.onion_parcer()[2] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[2])
+                          + (parser.cabbage_parcer()[2] * sixty_percent_price) + parser.carrot_parcer()[
+                              2] * five_percent_price) / devide_by_5,
 
-                "silpo": ((parser.four_parser()[3] * sour_var) + (parser.water_in_6l_bottle_parser()[3] * water_var)
-                          + (parser.egg_parcer()[3] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[3] * oil_var)
-                          + ((parser.onion_parcer()[3]) * onion_bigger_var) + (
+                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[3] * water_var)
+                          + (parser.egg_parcer()[3] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
+                          + ((parser.onion_parcer()[3]) * fourty_percent_rate) + (
                               parser.sour_cream_for_dishes_parser()[3])
-                          + (parser.cabbage_parcer()[3] * cabbage_var) + parser.carrot_parcer()[
-                              3] * carrot_var) / vareniki_mutual_devider,
+                          + (parser.cabbage_parcer()[3] * sixty_percent_price) + parser.carrot_parcer()[
+                              3] * five_percent_price) / devide_by_5,
 
-                "novus": ((parser.four_parser()[5] * sour_var) + (parser.water_in_6l_bottle_parser()[5] * water_var)
-                          + (parser.egg_parcer()[5] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[5] * oil_var)
-                          + (parser.onion_parcer()[5] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[5])
-                          + (parser.cabbage_parcer()[5] * cabbage_var) + parser.carrot_parcer()[
-                              5] * carrot_var) / vareniki_mutual_devider,
+                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[5] * water_var)
+                          + (parser.egg_parcer()[5] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
+                          + (parser.onion_parcer()[5] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[5])
+                          + (parser.cabbage_parcer()[5] * sixty_percent_price) + parser.carrot_parcer()[
+                              5] * five_percent_price) / devide_by_5,
 
-                "metro": ((parser.four_parser()[6] * sour_var) + (parser.water_in_6l_bottle_parser()[6] * water_var)
-                          + (parser.egg_parcer()[6] * egg_var) + (parser.oil_shedriy_dar_850_parcer()[6] * oil_var)
-                          + (parser.onion_parcer()[6] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[6])
-                          + (parser.cabbage_parcer()[6] * cabbage_var) + parser.carrot_parcer()[
-                              6] * carrot_var) / vareniki_mutual_devider,
+                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[6] * water_var)
+                          + (parser.egg_parcer()[6] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
+                          + (parser.onion_parcer()[6] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[6])
+                          + (parser.cabbage_parcer()[6] * sixty_percent_price) + parser.carrot_parcer()[
+                              6] * five_percent_price) / devide_by_5,
 
-                "fozzy": ((parser.four_parser()[8] * sour_var) + (parser.water_in_6l_bottle_parser()[8] * water_var)
-                          + ((parser.egg_parcer()[8] * egg_correct_price) * egg_var) + (
-                                  parser.oil_shedriy_dar_850_parcer()[8] * oil_var)
-                          + (parser.onion_parcer()[8] * onion_bigger_var) + (parser.sour_cream_for_dishes_parser()[8])
-                          + (parser.cabbage_parcer()[8] * cabbage_var) + parser.carrot_parcer()[
-                              8] * carrot_var) / vareniki_mutual_devider
+                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[8] * water_var)
+                          + ((parser.egg_parcer()[8] * mul_price_by_10) * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[8] * five_percent_price)
+                          + (parser.onion_parcer()[8] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[8])
+                          + (parser.cabbage_parcer()[8] * sixty_percent_price) + parser.carrot_parcer()[
+                              8] * five_percent_price) / devide_by_5
             }},
 
             {'grecheskiy_salat': {
-                "fozzy": ((parser.tomato_parser()[8] * tomato_var) + (parser.cucumber_parser()[8] * cucumber_var)
-                          + (parser.red_bolg_papper_parser()[8] * reb_bolg_paper_var) + (
-                                  parser.onion_parcer()[8] * oil_var)
-                          + (parser.onion_parcer()[8] * onion_greece_salad_var) + (
-                                  parser.sir_svet_feta_ukr_rozsil_45_1kg_parser()[8] * sir_feta_fozzy_var)
+                "fozzy": ((parser.tomato_parser()[8] * twenty_five_percent_price) + (parser.cucumber_parser()[8] * fifteen_percent_price)
+                          + (parser.red_bolg_papper_parser()[8] * fifteen_percent_price) + (
+                                  parser.onion_parcer()[8] * five_percent_price)
+                          + (parser.onion_parcer()[8] * ninety_percent_price) + (
+                                  parser.sir_svet_feta_ukr_rozsil_45_1kg_parser()[8] * fifteen_percent_price)
                           + (parser.olivki_extra_chorni_bez_kist_300gr_parser()[8] * oliv_var) +
                           (parser.oliv_oil_povna_chasha_913gr_parser()[
-                               8] * oil_oliv_var_greece_salat) + parser.basilik_chervoniy_svij_parser()[
-                              8] * basilik_var) / greece_salad_devider,
-            }},
-
-            {'golubci' : {
-                None
+                               8] * five_percent_price) + parser.basilik_chervoniy_svij_parser()[
+                              8] * half_price) / devide_by_4,
             }}
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_6, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_6, batch_6_path, mode_type_first_write)
 
     # для 7-го батча
     if batch_name == batch_name_7:
@@ -4180,7 +4147,7 @@ def price_parcing(batch_name: str):
                 "metro": parser.mirinda_orange_033jb_parser()[6],
                 "fozzy": parser.mirinda_orange_033jb_parser()[8]
             }},
-             {'mirinda_orange_05l': {
+            {'mirinda_orange_05l': {
                 "eko": parser.mirinda_orange_05l_parser()[1],
                 "varus": parser.mirinda_orange_05l_parser()[2],
                 "novus": parser.mirinda_orange_05l_parser()[5],
@@ -4218,7 +4185,7 @@ def price_parcing(batch_name: str):
             {'schweppes_original_bitter_lemon_1l': {
                 "silpo": parser.schweppes_original_bitter_lemon_1l_parser()[3]
             }},
-             {'schweppes_classic_mojito_033jb': {
+            {'schweppes_classic_mojito_033jb': {
                 "eko": parser.schweppes_classic_mojito_033jb_parser()[1],
                 "varus": parser.schweppes_classic_mojito_033jb_parser()[2],
                 "silpo": parser.schweppes_classic_mojito_033jb_parser()[3],
@@ -4229,21 +4196,114 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.schweppes_classic_mojito_033jb_parser()[8]
             }},
 
+            {'farsh_govyajiy': {
+                "atb": parser.farsh_govyajiy_parser()[0] * double_price,
+                "varus": parser.farsh_govyajiy_parser()[2],
+                "ashan": parser.farsh_govyajiy_parser()[4] * double_price + 24.60,
+                "novus": parser.farsh_govyajiy_parser()[5],
+                "metro": parser.farsh_govyajiy_parser()[6] * double_price,
+                "fozzy": parser.farsh_govyajiy_parser()[8]
+            }},
+
+            {'rice_extra_krugliy_1kg': {
+                "fozzy": parser.rice_extra_krugl_1kg_parser()[8]
+            }},
+
+            {'golubci': {
+                "fozzy": ((parser.cabbage_parcer()[8] * half_price) + (parser.sour_cream_for_dishes_parser()[8])
+                          + (parser.farsh_govyajiy_parser()[8] * ten_percent_price) + (
+                                      parser.svin_farsh_parser()[8] * ten_percent_price)
+                          + (parser.tomato_parser()[8] * ten_percent_price) + (
+                                      parser.rice_extra_krugl_1kg_parser()[8] * six_percent_price)
+                          + (parser.carrot_parcer()[8] * five_percent_price) + (
+                                      parser.onion_parcer()[8] * three_percent_price)) / devide_by_3
+            }}
+
         ]
         # далее записываем цены в json-файл
-        write_prices_to_json(all_products_names_batch_7, overall_batch_path, mode_type_addition_write)
+        write_prices_to_json(all_products_names_batch_7, batch_7_path, mode_type_first_write)
 
     else:
         print("Нет такого батча!")
 
 
-
-price_parcing("all_products_names_batch_1")
-#price_parcing("all_products_names_batch_2")
-#price_parcing("all_products_names_batch_3")
-#price_parcing("all_products_names_batch_4")
-#price_parcing("all_products_names_batch_5")
-#price_parcing("all_products_names_batch_6")
+# price_parcing("all_products_names_batch_1")
+# price_parcing("all_products_names_batch_2")
+# price_parcing("all_products_names_batch_3")
+# price_parcing("all_products_names_batch_4")
+# price_parcing("all_products_names_batch_5")
+# price_parcing("all_products_names_batch_6")
 #price_parcing("all_products_names_batch_7")
 
 
+def prepeare_json_data(path:str):
+    '''Открытие и загрузка json-файлов'''
+
+    with open(path, 'r', encoding='utf-8') as file:
+        data = json.load(file)
+    return data
+
+def merging_jsons():
+
+    '''Метод, объединяющий json - файлы в один общий.'''
+
+    data_1 = prepeare_json_data(batch_1_path)
+    data_2 = prepeare_json_data(batch_2_path)
+    data_3 = prepeare_json_data(batch_3_path)
+    data_4 = prepeare_json_data(batch_4_path)
+    data_5 = prepeare_json_data(batch_5_path)
+    data_6 = prepeare_json_data(batch_6_path)
+    data_7 = prepeare_json_data(batch_7_path)
+
+    df1 = pd.DataFrame([data_1])
+    df2 = pd.DataFrame([data_2])
+    df3 = pd.DataFrame([data_3])
+    df4 = pd.DataFrame([data_4])
+    df5 = pd.DataFrame([data_5])
+    df6 = pd.DataFrame([data_6])
+    df7 = pd.DataFrame([data_7])
+
+    merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7], axis=1)
+
+    merged_contents.to_json('../overall_prices.json', orient='records')
+
+merging_jsons()
+
+
+# def merging_jsons():
+#     file_path_1 = batch_1_path
+#     with open(file_path_1, 'r', encoding='utf-8') as file_1:
+#         data_1 = json.load(file_1)
+#
+#     file_path_2 = batch_2_path
+#     with open(file_path_2, 'r', encoding='utf-8') as file_2:
+#         data_2 = json.load(file_2)
+#
+#     file_path_3 = batch_3_path
+#     with open(file_path_3, 'r', encoding='utf-8') as file_3:
+#         data_3 = json.load(file_3)
+#
+#     file_path_4 = batch_4_path
+#     with open(file_path_4, 'r', encoding='utf-8') as file_4:
+#         data_4 = json.load(file_4)
+#
+#     file_path_5 = batch_5_path
+#     with open(file_path_5, 'r', encoding='utf-8') as file_5:
+#         data_5 = json.load(file_5)
+#
+#     file_path_6 = batch_6_path
+#     with open(file_path_6, 'r', encoding='utf-8') as file_6:
+#         data_6 = json.load(file_6)
+#
+#     df1 = pd.DataFrame([data_1])
+#     df2 = pd.DataFrame([data_2])
+#     df3 = pd.DataFrame([data_3])
+#     df4 = pd.DataFrame([data_4])
+#     df5 = pd.DataFrame([data_5])
+#     df6 = pd.DataFrame([data_6])
+#
+#     merged_contents = pd.concat([df1, df2, df3, df4, df5, df6], axis=1)
+#
+#     merged_contents.to_json('../overall_prices.json', orient='records')
+
+# merging_jsons()

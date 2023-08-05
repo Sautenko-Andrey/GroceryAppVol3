@@ -5384,6 +5384,23 @@ class ProductParserVol2:
             'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/42564-napitok-sokosoderzhashhij-schweppes-classic-mojito-zh-b-5449000171351.html'
         ])
 
+    def farsh_govyajiy_parser(self):
+        ''' Парсер для фарш гов'яжий'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/fars-05-kg-globino-alovicij-oholodzenij',
+            'https://varus.ua/farsh-delikatesnyy-s-govyadinoy-ohlazhdennyy-vesovoy',
+            'https://auchan.ua/ua/farsh-govjazhij-skott-smeat-ohlazhdennyj-450-g-1177897/',
+            'https://novus.online/product/fars-alovicij-kotletnij-oholvag',
+            'https://metro.zakaz.ua/uk/products/farsh-globino-500g--04820112651886/',
+            'https://fozzyshop.ua/govyadina-i-telyatina/11153-farsh-govyazhij-2732628.html'
+        ])
+
+    def rice_extra_krugl_1kg_parser(self):
+        ''' Парсер для ріс круглий Extra! 1 кг'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ris/5927-ris-extra-kruglyj-4824034013265.html'
+        ])
+
 
 
 

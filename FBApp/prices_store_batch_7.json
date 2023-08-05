@@ -1,0 +1,108 @@
+{
+                 "bon_boisson_mult_sok_1l": {
+                                  "varus": 19.8,
+                                  "silpo": 30.9,
+                                  "nash_kray": 28.9,
+                                  "fozzy": 24.0
+                 },
+                 "bon_boisson_mango_2l": {
+                                  "varus": 37.9,
+                                  "silpo": 39.08,
+                                  "novus": 39.99,
+                                  "metro": 37.84,
+                                  "fozzy": 37.7
+                 },
+                 "bon_boisson_mohito_2l": {
+                                  "varus": 37.9,
+                                  "silpo": 38.07,
+                                  "metro": 37.84,
+                                  "nash_kray": 41.8,
+                                  "fozzy": 37.7
+                 },
+                 "bon_boisson_sitro_2l": {
+                                  "varus": 37.9,
+                                  "novus": 45.99,
+                                  "metro": 37.84,
+                                  "nash_kray": 41.8,
+                                  "fozzy": 37.7
+                 },
+                 "bon_boisson_krem_soda_2l": {
+                                  "silpo": 38.59,
+                                  "ashan": 35.7,
+                                  "novus": 42.99,
+                                  "metro": 37.84,
+                                  "nash_kray": 41.8,
+                                  "fozzy": 35.6
+                 },
+                 "bon_boisson_mult_sok_2l": {
+                                  "eko": 46.09,
+                                  "novus": 39.99,
+                                  "metro": 37.84,
+                                  "nash_kray": 41.8,
+                                  "fozzy": 37.7
+                 },
+                 "mirinda_orange_033jb": {
+                                  "atb": 17.9,
+                                  "novus": 22.99,
+                                  "metro": 18.87,
+                                  "fozzy": 22.2
+                 },
+                 "mirinda_orange_05l": {
+                                  "eko": 25.39,
+                                  "varus": 24.5,
+                                  "novus": 25.99,
+                                  "fozzy": 23.1
+                 },
+                 "schweppes_granat_1l": {
+                                  "silpo": 43.42
+                 },
+                 "schweppes_indian_tonic_033jb": {
+                                  "eko": 25.69,
+                                  "varus": 23.2,
+                                  "silpo": 23.22,
+                                  "ashan": 22.0,
+                                  "novus": 22.99,
+                                  "nash_kray": 25.0,
+                                  "fozzy": 22.0
+                 },
+                 "schweppes_original_bitter_lemon_033jb": {
+                                  "eko": 21.9,
+                                  "silpo": 23.72,
+                                  "novus": 22.99
+                 },
+                 "schweppes_original_bitter_lemon_075l": {
+                                  "atb": 30.8,
+                                  "eko": 38.35,
+                                  "silpo": 32.01,
+                                  "novus": 34.99,
+                                  "metro": 379.3,
+                                  "fozzy": 32.3
+                 },
+                 "schweppes_original_bitter_lemon_1l": {
+                                  "silpo": 43.42
+                 },
+                 "schweppes_classic_mojito_033jb": {
+                                  "eko": 21.9,
+                                  "varus": 23.2,
+                                  "silpo": 23.52,
+                                  "ashan": 22.0,
+                                  "novus": 23.99,
+                                  "metro": 23.21,
+                                  "nash_kray": 25.0,
+                                  "fozzy": 22.0
+                 },
+                 "farsh_govyajiy": {
+                                  "atb": 206.8,
+                                  "varus": 129.9,
+                                  "ashan": 246.0,
+                                  "novus": 259.0,
+                                  "metro": 258.8,
+                                  "fozzy": 162.9
+                 },
+                 "rice_extra_krugliy_1kg": {
+                                  "fozzy": 47.9
+                 },
+                 "golubci": {
+                                  "fozzy": 22.613
+                 }
+}

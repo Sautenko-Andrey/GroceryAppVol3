@@ -12,12 +12,20 @@ from .items_full_names import *
 #           " '/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json'")
 
 #for docker
+# try:
+#     with open('prices_store.json') as f:
+#         store = json.load(f)
+# except Exception:
+#     print("I can't open data base with prices. Change or check path:"
+#           " '../prices_store.json'")
+
+#new prices storage
 try:
-    with open('prices_store.json') as f:
+    with open('../overall_prices.json') as f:
         store = json.load(f)
 except Exception:
     print("I can't open data base with prices. Change or check path:"
-          " '../prices_store.json'")
+          " '../overall_prices.json'")
 
 
 class MutualContext:
@@ -155,55 +163,55 @@ class ContextSupervisor:
                 metro_price, nk_price, fozzy_price = 0, 0, 0, 0, 0, 0, 0, 0, 0
             # пробуем вытянуть цену в АТБ из БД
             try:
-                atb_price = store[item_sample_DB][self.__ATB_KEY]
+                atb_price = store[0][item_sample_DB][self.__ATB_KEY]
             except Exception:
                 print(self.ATB_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в ЭКО из БД
             try:
-                eko_price = store[item_sample_DB][self.__EKO_KEY]
+                eko_price = store[0][item_sample_DB][self.__EKO_KEY]   #добавил [0], тк у нас изменилась форма БД
             except Exception:
                 print(self.EKO_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Варусе из БД
             try:
-                varus_price = store[item_sample_DB][self.__VARUS_KEY]
+                varus_price = store[0][item_sample_DB][self.__VARUS_KEY]
             except Exception:
                 print(self.VARUS_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Сильпо из БД
             try:
-                silpo_price = store[item_sample_DB][self.__SILPO_KEY]
+                silpo_price = store[0][item_sample_DB][self.__SILPO_KEY]
             except Exception:
                 print(self.SILPO_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Ашане из БД
             try:
-                ashan_price = store[item_sample_DB][self.__ASHAN_KEY]
+                ashan_price = store[0][item_sample_DB][self.__ASHAN_KEY]
             except Exception:
                 print(self.ASHAN_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Novus из БД
             try:
-                novus_price = store[item_sample_DB][self.__NOVUS_KEY]
+                novus_price = store[0][item_sample_DB][self.__NOVUS_KEY]
             except Exception:
                 print(self.NOVUS_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Metro из БД
             try:
-                metro_price = store[item_sample_DB][self.__METRO_KEY]
+                metro_price = store[0][item_sample_DB][self.__METRO_KEY]
             except Exception:
                 print(self.METRO_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Нашем Крае из БД
             try:
-                nk_price = store[item_sample_DB][self.__NK_KEY]
+                nk_price = store[0][item_sample_DB][self.__NK_KEY]
             except Exception:
                 print(self.NK_WARNING_MESSAGE)
 
             # пробуем вытянуть цену в Fozzy из БД
             try:
-                fozzy_price = store[item_sample_DB][self.__FOZZY_KEY]
+                fozzy_price = store[0][item_sample_DB][self.__FOZZY_KEY]
             except Exception:
                 print(self.FOZZY_WARNING_MESSAGE)
 
@@ -1410,9 +1418,9 @@ class ContextSupervisor:
         elif nn_respond == SCHWEPPES_CLASSIC_MOJITO_033JB:
             result = self.getting_prices('schweppes_classic_mojito_033jb', get_schweppes_classic_mojito_033jb)
         elif nn_respond == FARSH_GOVYAJIY:
-            result = self.getting_prices(self.NO_PRICES, get_farsh_govyajiy)
+            result = self.getting_prices('farsh_govyajiy', get_farsh_govyajiy)
         elif nn_respond == RICE_EXTRA_KRUGLIY_1KG:
-            result = self.getting_prices(self.NO_PRICES, get_rice_krug_extra_1kg)
+            result = self.getting_prices('rice_extra_krugliy_1kg', get_rice_krug_extra_1kg)
 
 
 
@@ -1426,6 +1434,8 @@ class ContextSupervisor:
             result = self.getting_prices('veriniki_kapusta', get_vareniki_s_kapustoy_info)
         elif nn_respond == GRECHESKIY_SALAT:
             result = self.getting_prices('grecheskiy_salat', get_grecheskiy_salat_info)
+        elif nn_respond == GOLUBCI:
+            result = self.getting_prices('golubci', get_golubci_info)
 
         # ------------------------------------конец подключения блюд------------------------
 
