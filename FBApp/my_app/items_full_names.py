@@ -542,9 +542,15 @@ SCHWEPPES_ORIGINAL_BITTER_LEMON_033JB = "Напій Schweppes Original bitter le
 SCHWEPPES_ORIGINAL_BITTER_LEMON_075pl = "Напій Schweppes Original bitter lemon 0.75 пл"
 SCHWEPPES_ORIGINAL_BITTER_LEMON_1L = "Напій Schweppes Original bitter lemon 1 л"
 SCHWEPPES_GRANAT_075L = "Напій Schweppes гранат 0.75 л"
+SCHWEPPES_GRANAT_033JB = "Напій Schweppes гранат 0.33 л з/б"
 SCHWEPPES_CLASSIC_MOJITO_033JB = "Напій Schweppes Classic Mojito 0.33 з/б"
 FARSH_GOVYAJIY = "Фарш гов'яжий, кг"
 RICE_EXTRA_KRUGLIY_1KG = "Ріс круглий Extra! 1 кг"
+MASLO_FERMA_SELYANSKE_73JIR_180GR = 'Масло сладкосливочное Ферма Сельское 73%, 180г'
+MASLO_FERMA_CHOCOLAT_62JIR_180GR = 'Масло сладкосливочное Ферма Шоколадное с какао 62.5%, 180г'
+MASLO_FERMA_EXTRA_82JIR_180GR = 'Масло сладкосливочное Ферма Екстра 82.5%, 180г'
+MASLO_FERMA_BUTER_63JIR_180GR = 'Масло сладкосливочное Ферма Бутербродне 63%, 180г'
+MASLO_FERMA_SELYANSKE_73JIR_400GR = 'Масло сладкосливочное Ферма Сельское 73%, 400г'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'
@@ -552,4 +558,5 @@ VARENIKI_KARTOSHKA = 'вареники с картошкой'
 VARENIKI_KAPUSTA = 'вареники с капустой'
 GRECHESKIY_SALAT = 'греческий салат'
 GOLUBCI = 'голубци'
-
+CLASSIK_PLOV_V_KAZANE_NA_PLITE_SVININA = 'классический плов в казане на плите со свининой'
+COTLETI_PO_KIEVSKI = 'классические котлеты по-киевски из куринного филе на сковороде'

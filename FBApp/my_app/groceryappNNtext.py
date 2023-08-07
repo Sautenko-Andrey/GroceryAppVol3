@@ -23,13 +23,13 @@ from my_app.utils import RefersForRNN
 
 class GroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2200
+    MAX_WORDS = 2250
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 547
+    ITEMS_AMOUNT = 553
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -51,7 +51,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=30, batch_size=100)
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=20, batch_size=100)
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 

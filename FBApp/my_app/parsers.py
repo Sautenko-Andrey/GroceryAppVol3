@@ -5401,6 +5401,56 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ris/5927-ris-extra-kruglyj-4824034013265.html'
         ])
 
+    def maslo_sliv_ferma_selyanske_73jir_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Ферма Сельское 73%, 180г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-180-g-ferma-solodkoverskove-selanske-73',
+            'https://eko.zakaz.ua/uk/products/maslo-ferma-180g-ukrayina--04820239242653/',
+            'https://varus.ua/maslo-solodkovershkove-selyanske-73-ferma-briket-180g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-ferma-selianske-73-840582',
+            'https://novus.online/ru/product/maslo-solodkoverskove-selanske-73-ferma-briket-180g',
+            'https://metro.zakaz.ua/ru/products/maslo-ferma-180g-ukrayina--04820234020706/',
+            'https://shop.nashkraj.ua/kovel/product/371643-maslo-ferma-73-180g-selyanske',
+            'https://fozzyshop.ua/ru/maslo/93829-maslo-sladkoslivochnoe-ferma-selskoe-73-4820239242653.html'
+        ])
+
+    def maslo_sliv_ferma_chocolat_62jir_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Ферма Шоколадное с какао 62.5%, 180 г'''
+        return self.prices_parsing([
+            'https://varus.ua/maslo-solodkovershkove-z-kakao-shokoladne-62-5-ferma-180g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-ferma-shokoladne-z-kakao-62-5-840586',
+            'https://shop.nashkraj.ua/kovel/product/393090-maslo-ferma-62-5-180g-shokoladne',
+            'https://fozzyshop.ua/ru/maslo/102847-maslo-sladkoslivochnoe-ferma-shokoladnoe-s-kakao-625-4820239240451.html'
+        ])
+
+    def maslo_sliv_ferma_extra_82_5jir_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Ферма экстра 82,5%, 180 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/maslo-ferma-180g-ukrayina--04820239242721/',
+            'https://varus.ua/maslo-solodkovershkove-ekstra-825-ferma-briket-180g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-ferma-ekstra-82-5-911503',
+            'https://metro.zakaz.ua/ru/products/maslo-ferma-180g-ukrayina--04820239242721/',
+            'https://fozzyshop.ua/ru/maslo/99721-maslo-sladkoslivochnoe-ferma-ekstra-825-0250014953315.html'
+        ])
+
+    def maslo_sliv_ferma_buter_63jir_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Ферма бутербродне 63%, 180 г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-180-g-ferma-solodkoverskove-buterbrodne-63',
+            'https://varus.ua/maslo-solodkovershkove-buterbrodne-63-ferma-briket-180g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-ferma-buterbrodne-63-840585',
+            'https://shop.nashkraj.ua/kovel/product/373774-maslo-ferma-63-180g-buterbrodne',
+        ])
+
+    def maslo_sliv_ferma_selyanske_73jir_400gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Ферма Сельское 73%, 400г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-400g-ferma-solodkoverskove-selanske-73',
+            'https://eko.zakaz.ua/uk/products/maslo-ferma-400g-ukrayina--04820239242691/',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-ferma-selianske-73-567021',
+            'https://shop.nashkraj.ua/kovel/product/178049-maslo-ferma-73-400g-selyanske-soldk',
+        ])
+
 
 
 

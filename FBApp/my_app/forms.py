@@ -42,14 +42,18 @@ class SearchDishesForm(forms.ModelForm):
     VARENIKI_S_KARTOSHKOY = 'вареники с картошкой'
     VARENIKI_S_KAPUSTOY = 'вареники с капустой'
     GRECHESKIY_SALAT = 'греческий салат'
-    GOLUBCI = 'голубцы'
+    GOLUBCI = 'голубци'
+    CLASSIK_PLOV_V_KAZANE_NA_PLITE_SVININA = 'классический плов в казане на плите со свининой'
+    COTLETI_PO_KIEVSKI = 'классические котлеты по-киевски из куринного филе на сковороде'
 
     DISH_CHOICES = [
         (BORSH, 'Борщ украинский'),
         (VARENIKI_S_KARTOSHKOY, 'Вареники с картошкой'),
         (VARENIKI_S_KAPUSTOY , 'Вареники с капустой'),
         (GRECHESKIY_SALAT, 'Греческий салат'),
-        (GOLUBCI, 'Голубцы')
+        (GOLUBCI, 'Голубцы'),
+        (CLASSIK_PLOV_V_KAZANE_NA_PLITE_SVININA, 'Классический плов в казане'),
+        (COTLETI_PO_KIEVSKI, 'Котлеты по-киевски')
     ]
 
     dish_name = forms.ChoiceField(label='Название блюда',choices=DISH_CHOICES)

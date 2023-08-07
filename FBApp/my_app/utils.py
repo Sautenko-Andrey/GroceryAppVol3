@@ -21,11 +21,11 @@ from .items_full_names import *
 
 #new prices storage
 try:
-    with open('../overall_prices.json') as f:
+    with open('./overall_prices.json') as f:
         store = json.load(f)
 except Exception:
     print("I can't open data base with prices. Change or check path:"
-          " '../overall_prices.json'")
+          " './overall_prices.json'")
 
 
 class MutualContext:
@@ -1421,7 +1421,16 @@ class ContextSupervisor:
             result = self.getting_prices('farsh_govyajiy', get_farsh_govyajiy)
         elif nn_respond == RICE_EXTRA_KRUGLIY_1KG:
             result = self.getting_prices('rice_extra_krugliy_1kg', get_rice_krug_extra_1kg)
-
+        elif nn_respond == MASLO_FERMA_SELYANSKE_73JIR_180GR:
+            result = self.getting_prices('maslo_ferma_selyanske_73jir_180gr', get_maslo_slivochne_ferma_73jir_180gr)
+        elif nn_respond == MASLO_FERMA_CHOCOLAT_62JIR_180GR:
+            result = self.getting_prices('maslo_sliv_ferma_chocolat_62jir_180gr', get_maslo_slivochne_ferma_chokolat_kakao_62jir_180gr)
+        elif nn_respond == MASLO_FERMA_EXTRA_82JIR_180GR:
+            result = self.getting_prices('maslo_sliv_ferma_extra_82_5jir_180gr', get_maslo_slivochne_ferma_extra_82jir_180gr)
+        elif nn_respond == MASLO_FERMA_BUTER_63JIR_180GR:
+            result = self.getting_prices('maslo_sliv_ferma_buter_63jir_180gr', get_maslo_slivochne_ferma_buter_63jir_180gr)
+        elif nn_respond == MASLO_FERMA_SELYANSKE_73JIR_400GR:
+            result = self.getting_prices('maslo_ferma_selyanske_73jir_400gr', get_maslo_slivochne_ferma_73jir_400gr)
 
 
 
@@ -1436,6 +1445,10 @@ class ContextSupervisor:
             result = self.getting_prices('grecheskiy_salat', get_grecheskiy_salat_info)
         elif nn_respond == GOLUBCI:
             result = self.getting_prices('golubci', get_golubci_info)
+        elif nn_respond == CLASSIK_PLOV_V_KAZANE_NA_PLITE_SVININA:
+            result = self.getting_prices('classic_plov_v_kazane_na_plite_svinina', get_classik_plov_v_kazane_na_plite_svinina_info)
+        elif nn_respond == COTLETI_PO_KIEVSKI:
+            result = self.getting_prices('classic_cotleti_po_kievski', get_classik_kotleti_po_kievski_info)
 
         # ------------------------------------конец подключения блюд------------------------
 

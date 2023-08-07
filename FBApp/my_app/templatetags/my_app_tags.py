@@ -1656,11 +1656,29 @@ get_schweppes_granat_075l = tag.create_tag(ItemsPicsFromNet, 547)
 '''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Classic Mojito 0.33"'''
 get_schweppes_classic_mojito_033jb = tag.create_tag(ItemsPicsFromNet, 548)
 
+'''Тэг,возвращающий информацию о "Напій соковмісний Schweppes Гранат 0.33"'''
+get_schweppes_granat_033jb = tag.create_tag(ItemsPicsFromNet, 549)
+
 '''Тэг,возвращающий информацию о "Фарш говяжий, кг"'''
-get_farsh_govyajiy = tag.create_tag(ItemsPicsFromNet, 549)
+get_farsh_govyajiy = tag.create_tag(ItemsPicsFromNet, 550)
 
 '''Тэг,возвращающий информацию о "Ріс круглий Extra! 1 кг"'''
-get_rice_krug_extra_1kg = tag.create_tag(ItemsPicsFromNet, 550)
+get_rice_krug_extra_1kg = tag.create_tag(ItemsPicsFromNet, 551)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Ферма Сельское 73%, 180г"'''
+get_maslo_slivochne_ferma_73jir_180gr = tag.create_tag(ItemsPicsFromNet, 552)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Ферма Шоколадное с какао 62.5%, 180 г"'''
+get_maslo_slivochne_ferma_chokolat_kakao_62jir_180gr = tag.create_tag(ItemsPicsFromNet, 553)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Ферма экстра 82,5%, 180 г"'''
+get_maslo_slivochne_ferma_extra_82jir_180gr = tag.create_tag(ItemsPicsFromNet, 554)
+
+'''Тэг,возвращающий информацию о "Масло 180 г Ферма солодковершкове бутербродне 63% "'''
+get_maslo_slivochne_ferma_buter_63jir_180gr = tag.create_tag(ItemsPicsFromNet, 555)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Ферма Сельское 73%, 400г"'''
+get_maslo_slivochne_ferma_73jir_400gr = tag.create_tag(ItemsPicsFromNet, 556)
 
 
 
@@ -1686,6 +1704,12 @@ get_grecheskiy_salat_info = tag.create_tag(AvailableDishes, 4)
 
 '''Тег , возвращающий информацю о голубцах'''
 get_golubci_info = tag.create_tag(AvailableDishes, 5)
+
+'''Тег , возвращающий информацю о Классический плов в казане на плите со свининой'''
+get_classik_plov_v_kazane_na_plite_svinina_info = tag.create_tag(AvailableDishes, 6)
+
+'''Тег , возвращающий информацю о классические котлеты по-киевски из куринного филе на сковороде'''
+get_classik_kotleti_po_kievski_info = tag.create_tag(AvailableDishes, 7)
 
 
 # ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА

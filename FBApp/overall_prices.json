@@ -3544,7 +3544,7 @@
       "fozzy": 20.18075
     },
     "bon_boisson_mult_sok_1l": {
-      "varus": 19.8,
+      "varus": 25.9,
       "silpo": 30.9,
       "nash_kray": 28.9,
       "fozzy": 24.0
@@ -3568,7 +3568,7 @@
       "novus": 45.99,
       "metro": 37.84,
       "nash_kray": 41.8,
-      "fozzy": 37.7
+      "fozzy": 0
     },
     "bon_boisson_krem_soda_2l": {
       "silpo": 38.59,
@@ -3637,7 +3637,7 @@
     },
     "farsh_govyajiy": {
       "atb": 206.8,
-      "varus": 129.9,
+      "varus": 135.9,
       "ashan": 246.0,
       "novus": 259.0,
       "metro": 258.8,
@@ -3648,6 +3648,47 @@
     },
     "golubci": {
       "fozzy": 22.613
+    },
+    "classic_plov_v_kazane_na_plite_svinina": {
+      "fozzy": 19.389
+    },
+    "maslo_ferma_selyanske_73jir_180gr": {
+      "atb": 70.4,
+      "eko": 68.5,
+      "varus": 67.6,
+      "silpo": 51.99,
+      "novus": 54.99,
+      "metro": 70.3,
+      "nash_kray": 62.5,
+      "fozzy": 69.3
+    },
+    "classic_cotleti_po_kievski": {
+      "fozzy": 27.137
+    },
+    "maslo_sliv_ferma_chocolat_62jir_180gr": {
+      "varus": 77.0,
+      "silpo": 79.99,
+      "nash_kray": 77.0,
+      "fozzy": 75.9
+    },
+    "maslo_sliv_ferma_extra_82_5jir_180gr": {
+      "eko": 74.99,
+      "varus": 74.9,
+      "silpo": 96.99,
+      "metro": 96.62,
+      "fozzy": 88.9
+    },
+    "maslo_sliv_ferma_buter_63jir_180gr": {
+      "atb": 63.9,
+      "varus": 61.7,
+      "silpo": 64.49,
+      "nash_kray": 67.1
+    },
+    "maslo_ferma_selyanske_73jir_400gr": {
+      "atb": 145.2,
+      "eko": 149.9,
+      "silpo": 149.0,
+      "nash_kray": 151.9
     }
   }
 ]

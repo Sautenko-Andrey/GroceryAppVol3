@@ -4217,7 +4217,60 @@ def price_parcing(batch_name: str):
                                       parser.rice_extra_krugl_1kg_parser()[8] * six_percent_price)
                           + (parser.carrot_parcer()[8] * five_percent_price) + (
                                       parser.onion_parcer()[8] * three_percent_price)) / devide_by_3
-            }}
+            }},
+
+            {'classic_plov_v_kazane_na_plite_svinina': {
+                "fozzy": ((parser.svin_osheek_bez_kistki_parser()[8] * 0.04)
+                          + (parser.rice_extra_krugl_1kg_parser()[8] * 0.04) + (parser.onion_parcer()[8] * 0.03)
+                          + (parser.carrot_parcer()[8] * 0.03) + 6)
+            }},
+
+            {'maslo_ferma_selyanske_73jir_180gr': {
+                "atb": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[0],
+                "eko": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[1],
+                "varus": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[3],
+                "novus": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[5],
+                "metro": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[6],
+                "nash_kray": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[7],
+                "fozzy": parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[8]
+            }},
+
+            {'classic_cotleti_po_kievski': {
+                "fozzy": ( (parser.kuryache_file_parser()[8] * 0.125)
+                           + (parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[8] * 0.025)
+                           + (parser.egg_parcer()[8] * 0.08)
+                           + (parser.oil_for_dishes_parser()[8] * 0.03) + 6)
+            }},
+
+            {'maslo_sliv_ferma_chocolat_62jir_180gr': {
+                "varus": parser.maslo_sliv_ferma_chocolat_62jir_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_ferma_chocolat_62jir_180gr_parser()[3],
+                "nash_kray": parser.maslo_sliv_ferma_chocolat_62jir_180gr_parser()[7],
+                "fozzy": parser.maslo_sliv_ferma_chocolat_62jir_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_ferma_extra_82_5jir_180gr': {
+                "eko": parser.maslo_sliv_ferma_extra_82_5jir_180gr_parser()[1],
+                "varus": parser.maslo_sliv_ferma_extra_82_5jir_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_ferma_extra_82_5jir_180gr_parser()[3],
+                "metro": parser.maslo_sliv_ferma_extra_82_5jir_180gr_parser()[6],
+                "fozzy": parser.maslo_sliv_ferma_extra_82_5jir_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_ferma_buter_63jir_180gr': {
+                "atb": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[0],
+                "varus": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[3],
+                "nash_kray": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[7]
+            }},
+             {'maslo_ferma_selyanske_73jir_400gr': {
+                "atb": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[0],
+                "eko": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[1],
+                "silpo": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[3],
+                "nash_kray": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[7]
+            }},
+
 
         ]
         # далее записываем цены в json-файл
@@ -4233,7 +4286,7 @@ def price_parcing(batch_name: str):
 # price_parcing("all_products_names_batch_4")
 # price_parcing("all_products_names_batch_5")
 # price_parcing("all_products_names_batch_6")
-#price_parcing("all_products_names_batch_7")
+price_parcing("all_products_names_batch_7")
 
 
 def prepeare_json_data(path:str):
