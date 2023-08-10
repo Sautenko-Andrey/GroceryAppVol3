@@ -12,7 +12,7 @@ from django.urls import reverse_lazy
 from rest_framework import generics
 
 from my_app.utils import MutualContext, best_price_identify
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, CreateView, View
 
 from .forms import *
 
@@ -245,6 +245,17 @@ class Thanksfull_DELETE_NAME(MutualContext, ListView):
         # тут удаляем загруженное название из БД
         user_item_name = UserItemNameUpload_2.objects.latest('time_create')
         return user_item_name.delete()
+
+class FAQ(MutualContext, ListView):
+    template_name = 'my_app/faq.html'
+    model = SitePolitics
+    context_object_name = 'faq'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context_dict = super().get_context_data(**kwargs)
+        mutual_context_dict = self.get_user_context(title='FAQ')
+        return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
+
 
 
 class FindYouDishHere(MutualContext, CreateView):

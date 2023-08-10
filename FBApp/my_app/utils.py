@@ -1431,7 +1431,26 @@ class ContextSupervisor:
             result = self.getting_prices('maslo_sliv_ferma_buter_63jir_180gr', get_maslo_slivochne_ferma_buter_63jir_180gr)
         elif nn_respond == MASLO_FERMA_SELYANSKE_73JIR_400GR:
             result = self.getting_prices('maslo_ferma_selyanske_73jir_400gr', get_maslo_slivochne_ferma_73jir_400gr)
-
+        elif nn_respond == MASLO_JAGOTINSKE_EXTRA_82_5_180GR:
+            result = self.getting_prices('maslo_sliv_jagotinske_extra_82_5_180gr', get_maslo_jagotinske_extra_82_5_180gr)
+        elif nn_respond == MASLO_JAGOTINSKE_BUTER_69_2_200GR:
+            result = self.getting_prices('maslo_sliv_jagotinske_buter_69_2_200gr', get_maslo_jagotinske_buter_69_2_200gr)
+        elif nn_respond == MASLO_SELYANSKE_EXTRA_82_180GR:
+            result = self.getting_prices('maslo_sliv_selyanske_extra_82_180gr', get_maslo_selyanske_extra_82_180gr)
+        elif nn_respond == MASLO_SELYANSKE_BUTER_63_180GR:
+            result = self.getting_prices('maslo_sliv_selyanske_buter_63_180gr', get_maslo_selyanske_buter_63_180gr)
+        elif nn_respond == MASLO_SELYANSKE_72_5_180GR:
+            result = self.getting_prices('maslo_sliv_selyanske_72_5_180gr', get_maslo_selyanske_72_5_180gr)
+        elif nn_respond == MASLO_GLOBINO_EXTRA_82_500GR:
+            result = self.getting_prices('maslo_sliv_globino_extra_82_500gr', get_maslo_globino_extra_82_500gr)
+        elif nn_respond == MASLO_GLOBINO_BEZLAKTOZ_82_180GR:
+            result = self.getting_prices('maslo_sliv_globino_bezlaktoz_82_180gr', get_maslo_globino_bezlaktoz_82_180gr)
+        elif nn_respond == MASLO_GALICHINA_82_5_180GR:
+            result = self.getting_prices('maslo_sliv_galichina_82_5_180gr', get_maslo_galichina_82_5_180gr)
+        elif nn_respond == MASLO_GALICHINA_SELYANSKE_72_6_180GR:
+            result = self.getting_prices('maslo_sliv_galichina_selyanske_72_6_180gr', get_maslo_galichina_selyanske_72_6_180gr)
+        elif nn_respond == MASLO_MALOKIYA_EXTRA_82_180GR:
+            result = self.getting_prices('maslo_sliv_malokiya_82_180gr', get_maslo_malokiya_extra_82_180gr)
 
 
         # тут подключаются блюда

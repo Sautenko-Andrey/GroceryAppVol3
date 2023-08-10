@@ -23,13 +23,13 @@ from my_app.utils import RefersForRNN
 
 class GroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2250
+    MAX_WORDS = 2300
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 553
+    ITEMS_AMOUNT = 563
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -37,7 +37,8 @@ class GroceryAppText:
         self.model = keras.Sequential([
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),
-            LSTM(250),
+            LSTM(self.ITEMS_AMOUNT),
+            #LSTM(250),
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 

@@ -4271,6 +4271,79 @@ def price_parcing(batch_name: str):
                 "nash_kray": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[7]
             }},
 
+            {'maslo_sliv_jagotinske_extra_82_5_180gr': {
+                "atb": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[0],
+                "eko": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[1],
+                "varus": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[3],
+                "novus": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[5],
+                "metro": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[6],
+                "nash_kray": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[7],
+                "fozzy": parser.maslo_sliv_jagotinske_extra_82_5_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_jagotinske_buter_69_2_200gr': {
+                "eko": parser.maslo_sliv_jagotinske_buter_69_2_200gr_parser()[1],
+                "silpo": parser.maslo_sliv_jagotinske_buter_69_2_200gr_parser()[3],
+                "fozzy": parser.maslo_sliv_jagotinske_buter_69_2_200gr_parser()[8]
+            }},
+
+            {'maslo_sliv_selyanske_extra_82_180gr': {
+                "varus": parser.maslo_sliv_selyanske_extra_82_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_selyanske_extra_82_180gr_parser()[3],
+                "novus": parser.maslo_sliv_selyanske_extra_82_180gr_parser()[5],
+                "metro": parser.maslo_sliv_selyanske_extra_82_180gr_parser()[6],
+                "fozzy": parser.maslo_sliv_selyanske_extra_82_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_selyanske_buter_63_180gr': {
+                "silpo": parser.maslo_sliv_selyanske_buter_63_180gr_parser()[3],
+                "fozzy": parser.maslo_sliv_selyanske_buter_63_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_selyanske_72_5_180gr': {
+                "eko": parser.maslo_sliv_selyanske_72_5_180gr_parser()[1],
+                "varus": parser.maslo_sliv_selyanske_72_5_180gr_parser()[2],
+                "metro": parser.maslo_sliv_selyanske_72_5_180gr_parser()[6],
+            }},
+
+            {'maslo_sliv_globino_extra_82_500gr': {
+                "fozzy": parser.maslo_sliv_globino_extra_82_500gr_parser()[8]
+            }},
+
+            {'maslo_sliv_globino_bezlaktoz_82_180gr': {
+                "eko": parser.maslo_sliv_globino_bezlaktoz_82_180gr_parser()[1],
+                "fozzy": parser.maslo_sliv_globino_bezlaktoz_82_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_galichina_82_5_180gr': {
+                "atb": parser.maslo_sliv_galichina_82_5_180gr_parser()[0],
+                "eko": parser.maslo_sliv_galichina_82_5_180gr_parser()[1],
+                "varus": parser.maslo_sliv_galichina_82_5_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_galichina_82_5_180gr_parser()[3],
+                "novus": parser.maslo_sliv_galichina_82_5_180gr_parser()[5],
+                "nash_kray": parser.maslo_sliv_galichina_82_5_180gr_parser()[7],
+                "fozzy": parser.maslo_sliv_galichina_82_5_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_galichina_selyanske_72_6_180gr': {
+                "eko": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[1],
+                "varus": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[2],
+                "silpo": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[3],
+                "novus": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[5],
+                "nash_kray": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[7],
+            }},
+
+            {'maslo_sliv_malokiya_82_180gr': {
+                "atb": parser.maslo_sliv_malokiya_82_180gr_parser()[0],
+                "eko": parser.maslo_sliv_malokiya_82_180gr_parser()[1],
+                "silpo": parser.maslo_sliv_malokiya_82_180gr_parser()[3],
+                "novus": parser.maslo_sliv_malokiya_82_180gr_parser()[5],
+                "metro": parser.maslo_sliv_malokiya_82_180gr_parser()[6],
+                "nash_kray": parser.maslo_sliv_malokiya_82_180gr_parser()[7],
+                "fozzy": parser.maslo_sliv_malokiya_82_180gr_parser()[8]
+            }},
+
 
         ]
         # далее записываем цены в json-файл

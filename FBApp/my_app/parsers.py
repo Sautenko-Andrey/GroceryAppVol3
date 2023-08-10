@@ -5451,6 +5451,99 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/178049-maslo-ferma-73-400g-selyanske-soldk',
         ])
 
+    def maslo_sliv_jagotinske_extra_82_5_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Яготинське Экстра 82,5%, 180г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-180-g-agotinske-solodkoverskove-ekstra-825-folga',
+            'https://eko.zakaz.ua/uk/products/maslo-iagotin-180g-ukrayina--04823005209065/',
+            'https://varus.ua/maslo-82-5-yagotinskoe-180g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-yagotynske-ekstra-82-5-874616',
+            'https://novus.online/ru/product/maslo-825-solodkovershkove-ekstra-yahotyn-180h',
+            'https://metro.zakaz.ua/ru/products/maslo-iagotin-200g--04823005202103/',
+            'https://shop.nashkraj.ua/kovel/product/449585-maslo-yagotinske-82-5-180g-ekstra',
+            'https://fozzyshop.ua/ru/maslo/89006-maslo-sladkoslivochnoe-yagotinske-ekstra-825-4823005209065.html'
+        ])
+
+    def maslo_sliv_jagotinske_buter_69_2_200gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Яготинське бутербродне 69.2%, 200г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/maslo-iagotin-200g--04823005202127/',
+            'https://shop.silpo.ua/product/maslo-vershkove-yagotynske-69-2-7924',
+            'https://fozzyshop.ua/ru/maslo/9926-maslo-slivochnoe-yagotinske-692-4823005202127.html'
+        ])
+
+    def maslo_sliv_selyanske_extra_82_180gr_parser(self):
+        ''' Парсер для Масло Селянське солодковершкове экстра 82%, 180 г'''
+        return self.prices_parsing([
+            'https://varus.ua/maslo-ekstra-82-selyanske-200g',
+            'https://shop.silpo.ua/product/maslo-selianske-solodkovershkove-ekstra-82-914280',
+            'https://novus.online/ru/product/maslo-solodkovershkove-ekstra-volohodske-82-selyanske-180h',
+            'https://metro.zakaz.ua/ru/products/maslo-180g-ukrayina--04820254400373/',
+            'https://fozzyshop.ua/ru/maslo/99715-maslo-selyanske-solodkovershkove-ekstra-82-0250015016774.html'
+        ])
+
+    def maslo_sliv_selyanske_buter_63_180gr_parser(self):
+        ''' Парсер для Масло Селянське сладкосливочное бутербродное 63%, 180 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/maslo-selianske-solodkovershkove-buterbrodne-63-914278',
+            'https://fozzyshop.ua/ru/maslo/99713-maslo-selyanske-sladkoslivochnoe-buterbrodnoe-63-0250015016750.html'
+        ])
+
+    def maslo_sliv_selyanske_72_5_180gr_parser(self):
+        ''' Парсер для Масло Селянське сладкосливочное 72.5%, 180 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/maslo-selianske--04820254400410/',
+            'https://varus.ua/maslo-solodkovershkove-72-5-selyanske-200g',
+            'https://metro.zakaz.ua/ru/products/maslo-selianske--04820254400410/'
+        ])
+
+    def maslo_sliv_globino_extra_82_500gr_parser(self):
+        ''' Парсер для Масло Глобино Экстра сладкосливочное 82%, 500г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/ru/maslo/97905-maslo-globino-ekstra-sladkoslivochnoe-82-4820029570614.html'
+        ])
+
+    def maslo_sliv_globino_bezlaktoz_82_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Глобино безлактозное 82%, 180г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/maslo-globino-180g--04820029571086/',
+            'https://fozzyshop.ua/ru/maslo/96476-maslo-sladkoslivochnoe-globino-bezlaktoznoe-82-9920000017901.html'
+        ])
+
+    def maslo_sliv_galichina_82_5_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Галичина 82,5%, 180г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-180-g-galicina-solodkoverskove-ekstra-825',
+            'https://eko.zakaz.ua/uk/products/maslo-galichina-180g-ukrayina--04820222762137/',
+            'https://varus.ua/maslo-82-5-solodkovershkove-ekstra-galichina-mu-200g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-galychyna-82-5-892644',
+            'https://novus.online/ru/product/maslo-solodkovershkove-ekstra-825-zhyru-halychyna-180h',
+            'https://shop.nashkraj.ua/kovel/product/480014-maslo-galichina-82-5-180g-solodkov-eks',
+            'https://fozzyshop.ua/ru/maslo/96475-maslo-sladkoslivochnoe-galichina-825-4820222762199.html'
+        ])
+
+    def maslo_sliv_galichina_selyanske_72_6_180gr_parser(self):
+        ''' Парсер для Масло солодковершкове «Галичина» «Селянське» 72,6%'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/maslo-galichina-180g-ukrayina--04820222762144/',
+            'https://varus.ua/maslo-72-6-solodkovershkove-selyanske-galichina-mu-200g',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-galychyna-selianske-72-6-892643',
+            'https://novus.online/ru/product/maslo-solodkovershkove-selyanske-726-zhyru-halychyna-180h',
+            'https://shop.nashkraj.ua/kovel/product/480015-maslo-galichina-72-6-180g-selyansk-solodk',
+        ])
+
+    def maslo_sliv_malokiya_82_180gr_parser(self):
+        ''' Парсер для Масло сладкосливочное Молокія Экстра 82%, 180г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/maslo-180-g-molokia-solodkoverskove-ekstra-82',
+            'https://eko.zakaz.ua/uk/products/maslo--04820045705106/',
+            'https://shop.silpo.ua/product/maslo-solodkovershkove-molokiia-ekstra-82-878789',
+            'https://novus.online/ru/product/maslo-ekstra-82-molokiya-folha-180h',
+            'https://metro.zakaz.ua/ru/products/maslo--04820045705106/',
+            'https://shop.nashkraj.ua/kovel/product/454586-maslo-molokiya-82-180g-ekstra-folga',
+            'https://fozzyshop.ua/ru/maslo/90991-maslo-sladkoslivochnoe-molokiya-ekstra-82-4820045705106.html'
+        ])
+
 
 
 

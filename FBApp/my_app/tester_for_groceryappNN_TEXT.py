@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2250
+    MAX_WORDS = 2300
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1173,3 +1173,23 @@ class TesterForGroceryAppText:
             return MASLO_FERMA_BUTER_63JIR_180GR
         elif np.argmax(result) == 552:
             return MASLO_FERMA_SELYANSKE_73JIR_400GR
+        elif np.argmax(result) == 553:
+            return MASLO_JAGOTINSKE_EXTRA_82_5_180GR
+        elif np.argmax(result) == 554:
+            return MASLO_JAGOTINSKE_BUTER_69_2_200GR
+        elif np.argmax(result) == 555:
+            return MASLO_SELYANSKE_EXTRA_82_180GR
+        elif np.argmax(result) == 556:
+            return MASLO_SELYANSKE_BUTER_63_180GR
+        elif np.argmax(result) == 557:
+            return MASLO_SELYANSKE_72_5_180GR
+        elif np.argmax(result) == 558:
+            return MASLO_GLOBINO_EXTRA_82_500GR
+        elif np.argmax(result) == 559:
+            return MASLO_GLOBINO_BEZLAKTOZ_82_180GR
+        elif np.argmax(result) == 560:
+            return MASLO_GALICHINA_82_5_180GR
+        elif np.argmax(result) == 561:
+            return MASLO_GALICHINA_SELYANSKE_72_6_180GR
+        elif np.argmax(result) == 562:
+            return MASLO_MALOKIYA_EXTRA_82_180GR

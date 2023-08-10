@@ -22,119 +22,118 @@
                     </svg>
                     : <b>{{user_count_persons}}</b></b></h5>
             </div>
+
             <table class="table table-bordered border-info">
                 <thead align="center">
-                <tr>
+                <tr class="breeze_text">
                     <th scope="col">#</th>
                     <th scope="col">Магазин</th>
                     <th scope="col">Цена</th>
                 </tr>
                 </thead>
-                <tbody align="center">
+                <tbody align="center" class="breeze_text">
                 <tr>
                     <th scope="row">1</th>
-                    <td><h5 align="center"><a href="https://www.atbmarket.com/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.atbmarket.com/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h5></td>
                     {% if price_from_site_atb < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_atb}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_atb}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">2</th>
-                    <td><h5 align="center"><a href="https://shop.silpo.ua/" target="_blank" class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://shop.silpo.ua/" target="_blank" class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h5></td>
                     {% if price_from_site_silpo < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_silpo}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_silpo}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">3</th>
-                    <td><h5 align="center"><a href="https://varus.ua/" target="_blank" class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://varus.ua/" target="_blank" class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h5></td>
                     {% if price_from_site_varus < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_varus}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_varus}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">4</th>
-                    <td><h5 align="center"><a href="https://www.instagram.com/semya_sever/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.instagram.com/semya_sever/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h5></td>
                     {% if price_from_site_novus < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_novus}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_novus}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">5</th>
-                    <td><h5 align="center"><a href="https://chudo-market.ua/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://chudo-market.ua/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h5></td>
                     {% if price_from_site_ashan < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_ashan}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_ashan}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">6</th>
-                    <td><h5 align="center"><a href="https://www.eko.com.ua/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.eko.com.ua/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/ecomarket.png' %}"> ЭКО-Маркет</b></a></h5>
                     </td>
                     {% if price_from_site_eko < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_eko}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_eko}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">7</th>
-                    <td><h5 align="center"><a href="https://www.eko.com.ua/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.eko.com.ua/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/metro.png' %}"> METRO</b></a></h5>
                     </td>
                     {% if price_from_site_metro < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_metro}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_metro}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">8</th>
-                    <td><h5 align="center"><a href="https://www.eko.com.ua/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.eko.com.ua/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/nash_kray.png' %}"> Наш Край</b></a></h5>
                     </td>
                     {% if price_from_site_nash_kray < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_nash_kray}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_nash_kray}} грн</td>
                     {% endif %}
                 </tr>
                 <tr>
                     <th scope="row">9</th>
-                    <td><h5 align="center"><a href="https://www.eko.com.ua/" target="_blank"
-                               class="black-red-style"><b><img
+                    <td><h5 align="left"><a href="https://www.eko.com.ua/" target="_blank"
+                               class="white-breeze-style"><b><img
                             src="{% static 'my_app/images/fozzy.png' %}"> Fozzy</b></a></h5>
                     </td>
                     {% if price_from_site_fozzy < flag_price %}
-                    <td class="black-red-style">Невозможно посчитать цену</td>
+                    <td class="white-breeze-style">Невозможно посчитать цену</td>
                     {% else %}
-                    <td class="black-red-style">{{price_from_site_fozzy}} грн</td>
+                    <td class="white-breeze-style">{{price_from_site_fozzy}} грн</td>
                     {% endif %}
                 </tbody>
             </table>
-
-
         </div>
     </div>
 </div>

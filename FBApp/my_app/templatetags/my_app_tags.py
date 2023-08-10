@@ -1680,6 +1680,36 @@ get_maslo_slivochne_ferma_buter_63jir_180gr = tag.create_tag(ItemsPicsFromNet, 5
 '''Тэг,возвращающий информацию о "Масло сладкосливочное Ферма Сельское 73%, 400г"'''
 get_maslo_slivochne_ferma_73jir_400gr = tag.create_tag(ItemsPicsFromNet, 556)
 
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Яготинське Экстра 82,5%, 180г"'''
+get_maslo_jagotinske_extra_82_5_180gr = tag.create_tag(ItemsPicsFromNet, 557)
+
+'''Тэг,возвращающий информацию о "Масло сливочное "Яготинське" 69,2%, 200г"'''
+get_maslo_jagotinske_buter_69_2_200gr = tag.create_tag(ItemsPicsFromNet, 558)
+
+'''Тэг,возвращающий информацию о "Масло Селянське солодковершкове экстра 82%, 180 г"'''
+get_maslo_selyanske_extra_82_180gr = tag.create_tag(ItemsPicsFromNet, 559)
+
+'''Тэг,возвращающий информацию о "Масло Селянське сладкосливочное бутербродное 63%, 180 г"'''
+get_maslo_selyanske_buter_63_180gr = tag.create_tag(ItemsPicsFromNet, 560)
+
+'''Тэг,возвращающий информацию о "Масло Селянське 72.5%, 180 г"'''
+get_maslo_selyanske_72_5_180gr = tag.create_tag(ItemsPicsFromNet, 561)
+
+'''Тэг,возвращающий информацию о "Масло Глобино Экстра сладкосливочное 82%, 500г"'''
+get_maslo_globino_extra_82_500gr = tag.create_tag(ItemsPicsFromNet, 562)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Глобино безлактозное 82%, 180г"'''
+get_maslo_globino_bezlaktoz_82_180gr = tag.create_tag(ItemsPicsFromNet, 563)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Галичина 82,5%, 180г"'''
+get_maslo_galichina_82_5_180gr = tag.create_tag(ItemsPicsFromNet, 564)
+
+'''Тэг,возвращающий информацию о "Масло солодковершкове «Галичина» «Селянське» 72,6%"'''
+get_maslo_galichina_selyanske_72_6_180gr = tag.create_tag(ItemsPicsFromNet, 565)
+
+'''Тэг,возвращающий информацию о "Масло сладкосливочное Молокія Экстра 82%, 180г"'''
+get_maslo_malokiya_extra_82_180gr = tag.create_tag(ItemsPicsFromNet, 566)
+
 
 
 

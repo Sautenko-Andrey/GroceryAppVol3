@@ -18,6 +18,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
 
 <div id="preloader"></div>
@@ -52,6 +53,10 @@
                                 {% else %}
                                 <h4></h4>
                                 {% endif %}
+                            </li>
+                            <li class="nav-item">
+                                <a class="navbar-brand white-oranje-style" aria-current="page"
+                                   href="{% url 'users_questions' %}"><b>faq</b></a>
                             </li>
                         </ul>
                         <li class="nav-item">
@@ -141,7 +146,6 @@
 <!--jqery-->
 <script src="https://code.jquery.com/jquery-latest.min.js"></script>
 <!--end-->
-
 
 
 <!--for preloader-->
