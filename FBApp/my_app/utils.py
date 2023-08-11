@@ -1451,6 +1451,26 @@ class ContextSupervisor:
             result = self.getting_prices('maslo_sliv_galichina_selyanske_72_6_180gr', get_maslo_galichina_selyanske_72_6_180gr)
         elif nn_respond == MASLO_MALOKIYA_EXTRA_82_180GR:
             result = self.getting_prices('maslo_sliv_malokiya_82_180gr', get_maslo_malokiya_extra_82_180gr)
+        elif nn_respond == MASLO_FARM_FRESH_EXTRA_82_180GR:
+            result = self.getting_prices('maslo_sliv_farm_fresh_extra_82_180gr', get_maslo_farm_fresh_extra_82_180gr)
+        elif nn_respond == MASLO_FARM_FRESH_SELYANSKE_82_180GR:
+            result = self.getting_prices('maslo_sliv_farm_fresh_selyanske_73_180gr', get_maslo_farm_fresh_selyanske_73_180gr)
+        elif nn_respond == MASLO_PRESIDENT_82_200GR:
+            result = self.getting_prices('maslo_sliv_president_82_200gr', get_maslo_president_82_200gr)
+        elif nn_respond == MASLO_PRESIDENT_82_400GR:
+            result = self.getting_prices('maslo_sliv_president_82_400gr', get_maslo_president_82_400gr)
+        elif nn_respond == MASLO_PRESIDENT_SOLONE_80_200GR:
+            result = self.getting_prices('maslo_sliv_president_solone_80_200gr', get_maslo_president_solone_80_200gr)
+        elif nn_respond == JACOBS_MONARCH_BANKA_95GR:
+            result = self.getting_prices('jacobs_monarch_banka_95gr', get_jacobs_monarch_banka_95gr)
+        elif nn_respond == JACOBS_MONARCH_BANKA_190GR:
+            result = self.getting_prices('jacobs_monarch_banka_190gr', get_jacobs_monarch_banka_190gr)
+        elif nn_respond == JACOBS_MONARCH_BANKA_200GR:
+            result = self.getting_prices('jacobs_monarch_banka_200gr', get_jacobs_monarch_banka_200gr)
+        elif nn_respond == JACOBS_MONARCH_BANKA_100GR:
+            result = self.getting_prices('jacobs_monarch_banka_100gr', get_jacobs_monarch_banka_100gr)
+        elif nn_respond == JACOBS_MONARCH_BANKA_50GR:
+            result = self.getting_prices('jacobs_monarch_banka_50gr', get_jacobs_monarch_banka_50gr)
 
 
         # тут подключаются блюда

@@ -5544,6 +5544,91 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/maslo/90991-maslo-sladkoslivochnoe-molokiya-ekstra-82-4820045705106.html'
         ])
 
+    def maslo_sliv_farm_fresh_extra_82_180gr_parser(self):
+        ''' Парсер для Масло Farm Fresh Екстра вершкове 82%, 180 г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/maslo/101346-maslo-farm-fresh-ekstra-slivochnoe-82-0250015156593.html'
+        ])
+
+    def maslo_sliv_farm_fresh_selyanske_73_180gr_parser(self):
+        ''' Парсер для Масло Farm Fresh Селянське вершкове 73%, 180 г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/maslo/103719-maslo-farm-fresh-krestyanskoe-slivochnoe-73-0250015156609.html'
+        ])
+
+    def maslo_sliv_president_82_200gr_parser(self):
+        ''' Парсер для Масло President солодковершкове 82%, 200г'''
+        return self.prices_parsing([
+            'https://varus.ua/maslo-82-nesolone-prezident-200g',
+            'https://shop.silpo.ua/product/maslo-kyslovershkove-president-82-82983',
+            'https://novus.online/ru/product/maslo-verskove-president-82-200g',
+            'https://metro.zakaz.ua/ru/products/maslo-prezident-200g--03228022910023/',
+            'https://fozzyshop.ua/maslo/18695-maslo-president-kisloslivochnoe-82-3228022910023.html'
+        ])
+
+    def maslo_sliv_president_82_400gr_parser(self):
+        ''' Парсер для Масло President солодковершкове 82%, 400г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/maslo-kyslovershkove-president-ekstra-82-408658',
+            'https://metro.zakaz.ua/ru/products/maslo-prezident-400g--04823065700151/',
+            'https://fozzyshop.ua/maslo/18697-maslo-president-kisloslivochnoe-ekstra-82-3228022970195.html'
+        ])
+
+    def maslo_sliv_president_solone_80_200gr_parser(self):
+        ''' Парсер для Масло President солодковершкове солоне 80%, 200г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/maslo-kyslovershkove-president-solone-80-424674',
+            'https://fozzyshop.ua/maslo/18696-maslo-president-kisloslivochnoe-solyonoe-80-3228020355741.html'
+        ])
+
+    def jacobs_monarch_banka_95gr_parser(self):
+        ''' Парсер для Кава розчинна Jacobs Monarch натуральна сублімована с/б, 95г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-95g-jacobs-monarch-rozcinna-sublimovana',
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-95g--04820206290885/',
+            'https://varus.ua/kava-naturalna-rozchinna-sublimovana-jacobs-monarch-95-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-jacobs-monarch-naturalna-sublimovana-s-b-579161',
+            'https://auchan.ua/ua/kofe-rastvorimyj-jacobs-monarch-95-g-242640/',
+            'https://novus.online/ru/product/kava-akobz-monarh-rozcinna-95g',
+            'https://metro.zakaz.ua/ru/products/kava-iakobz-95g--04820206290885/',
+            'https://shop.nashkraj.ua/kovel/product/204698-kava-jacobs-monarkh-95g-rozch-s-b',
+            'https://fozzyshop.ua/kofe-rastvorimyj/31329-kofe-rastvorimyj-jacobs-monarch-naturalnyj-sublimirovannyj-s-b-7622210324078.html'
+        ])
+
+    def jacobs_monarch_banka_190gr_parser(self):
+        ''' Парсер для Кава розчинна Jacobs Monarch натуральна сублімована с/б, 190г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-190g-jacobs-monarch-rozcinna-sublimovana',
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-190g--04820206290908/',
+            'https://varus.ua/kava-naturalna-rozchinna-sublimovana-jacobs-monarch-190-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-jacobs-monarch-naturalna-sublimovana-s-b-579164',
+            'https://novus.online/ru/product/kava-akobz-monarh-rozcinna-190g',
+            'https://shop.nashkraj.ua/kovel/product/204702-kava-jacobs-monarkh-190g-rozchinna',
+        ])
+
+    def jacobs_monarch_banka_200gr_parser(self):
+        ''' Парсер для Кава розчинна Jacobs Monarch натуральна сублімована с/б, 200г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-200-g-jacobs-monarch-rozcinna-sublimovana',
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-200g--08711000513880/',
+            'https://auchan.ua/ua/kofe-rastvorimyj-jacobs-monarch-200-g-1079192/'
+        ])
+
+    def jacobs_monarch_banka_100gr_parser(self):
+        ''' Парсер для Кава розчинна Jacobs Monarch натуральна сублімована с/б, 100г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-100g-nimechchina--08711000513859/',
+            'https://auchan.ua/ua/kofe-rastvorimyj-jacobs-monarch-100-g-830698-1083763/',
+        ])
+
+    def jacobs_monarch_banka_50gr_parser(self):
+        ''' Парсер для Кава розчинна Jacobs Monarch натуральна сублімована с/б, 50г'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/kofe-rastvorimyj-jacobs-monarch-v-banke-50-g-503709/',
+            'https://novus.online/ru/product/kava-akobz-monarh-rozcinna-48g',
+            'https://shop.nashkraj.ua/kovel/product/204701-kava-jacobs-monarkh-48g-rozch'
+        ])
+
 
 
 

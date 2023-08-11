@@ -561,6 +561,16 @@ MASLO_GLOBINO_BEZLAKTOZ_82_180GR = 'Масло сладкосливочное Г
 MASLO_GALICHINA_82_5_180GR = 'Масло сладкосливочное Галичина 82,5%, 180г'
 MASLO_GALICHINA_SELYANSKE_72_6_180GR = 'Масло сладкосливочное Галичина селянське 72.6%, 180г'
 MASLO_MALOKIYA_EXTRA_82_180GR = 'Масло сладкосливочное Молокія Экстра 82%, 180г'
+MASLO_FARM_FRESH_EXTRA_82_180GR = 'Масло Farm Fresh Екстра вершкове 82%, 180 г'
+MASLO_FARM_FRESH_SELYANSKE_82_180GR = 'Масло Farm Fresh селянське вершкове 73%, 180 г'
+MASLO_PRESIDENT_82_200GR = 'Масло President солодковершкове 82%, 200г'
+MASLO_PRESIDENT_82_400GR = 'Масло President солодковершкове 82%, 400г'
+MASLO_PRESIDENT_SOLONE_80_200GR = 'Масло President солодковершкове солоне 80%, 200г'
+JACOBS_MONARCH_BANKA_95GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 95г'
+JACOBS_MONARCH_BANKA_190GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 190г'
+JACOBS_MONARCH_BANKA_200GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 200г'
+JACOBS_MONARCH_BANKA_100GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 100г'
+JACOBS_MONARCH_BANKA_50GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 50г'
 
 
 #НАЗВАНИЯ БЛЮД

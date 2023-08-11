@@ -4304,7 +4304,7 @@ def price_parcing(batch_name: str):
             {'maslo_sliv_selyanske_72_5_180gr': {
                 "eko": parser.maslo_sliv_selyanske_72_5_180gr_parser()[1],
                 "varus": parser.maslo_sliv_selyanske_72_5_180gr_parser()[2],
-                "metro": parser.maslo_sliv_selyanske_72_5_180gr_parser()[6],
+                "metro": parser.maslo_sliv_selyanske_72_5_180gr_parser()[6]
             }},
 
             {'maslo_sliv_globino_extra_82_500gr': {
@@ -4331,7 +4331,7 @@ def price_parcing(batch_name: str):
                 "varus": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[2],
                 "silpo": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[3],
                 "novus": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[5],
-                "nash_kray": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[7],
+                "nash_kray": parser.maslo_sliv_galichina_selyanske_72_6_180gr_parser()[7]
             }},
 
             {'maslo_sliv_malokiya_82_180gr': {
@@ -4342,6 +4342,65 @@ def price_parcing(batch_name: str):
                 "metro": parser.maslo_sliv_malokiya_82_180gr_parser()[6],
                 "nash_kray": parser.maslo_sliv_malokiya_82_180gr_parser()[7],
                 "fozzy": parser.maslo_sliv_malokiya_82_180gr_parser()[8]
+            }},
+
+            {'maslo_sliv_farm_fresh_extra_82_180gr': {
+                "fozzy": parser.maslo_sliv_farm_fresh_extra_82_180gr_parser()[8]
+            }},
+             {'maslo_sliv_farm_fresh_selyanske_73_180gr': {
+                "fozzy": parser.maslo_sliv_farm_fresh_selyanske_73_180gr_parser()[8]
+            }},
+             {'maslo_sliv_president_82_200gr': {
+                "varus": parser.maslo_sliv_president_82_200gr_parser()[2],
+                "silpo": parser.maslo_sliv_president_82_200gr_parser()[3],
+                "novus": parser.maslo_sliv_president_82_200gr_parser()[5],
+                "metro": parser.maslo_sliv_president_82_200gr_parser()[6],
+                "fozzy": parser.maslo_sliv_president_82_200gr_parser()[8]
+            }},
+             {'maslo_sliv_president_82_400gr': {
+                "silpo": parser.maslo_sliv_president_82_400gr_parser()[3],
+                "metro": parser.maslo_sliv_president_82_400gr_parser()[6],
+                "fozzy": parser.maslo_sliv_president_82_400gr_parser()[8]
+            }},
+             {'maslo_sliv_president_solone_80_200gr': {
+                "silpo": parser.maslo_sliv_president_solone_80_200gr_parser()[3],
+                "fozzy": parser.maslo_sliv_president_solone_80_200gr_parser()[8]
+            }},
+
+            {'jacobs_monarch_banka_95gr': {
+                "atb": parser.jacobs_monarch_banka_95gr_parser()[0],
+                "eko": parser.jacobs_monarch_banka_95gr_parser()[1],
+                "varus": parser.jacobs_monarch_banka_95gr_parser()[2],
+                "silpo": parser.jacobs_monarch_banka_95gr_parser()[3],
+                "ashan": parser.jacobs_monarch_banka_95gr_parser()[4],
+                "novus": parser.jacobs_monarch_banka_95gr_parser()[5],
+                "metro": parser.jacobs_monarch_banka_95gr_parser()[6],
+                "nash_kray": parser.jacobs_monarch_banka_95gr_parser()[7],
+                "fozzy": parser.jacobs_monarch_banka_95gr_parser()[8]
+            }},
+
+            {'jacobs_monarch_banka_190gr': {
+                "atb": parser.jacobs_monarch_banka_190gr_parser()[0],
+                "eko": parser.jacobs_monarch_banka_190gr_parser()[1],
+                "varus": parser.jacobs_monarch_banka_190gr_parser()[2],
+                "silpo": parser.jacobs_monarch_banka_190gr_parser()[3],
+                "novus": parser.jacobs_monarch_banka_190gr_parser()[5],
+                "nash_kray": parser.jacobs_monarch_banka_190gr_parser()[7]
+            }},
+
+            {'jacobs_monarch_banka_200gr': {
+                "atb": parser.jacobs_monarch_banka_200gr_parser()[0],
+                "eko": parser.jacobs_monarch_banka_200gr_parser()[1],
+                "ashan": parser.jacobs_monarch_banka_200gr_parser()[4]
+            }},
+             {'jacobs_monarch_banka_100gr': {
+                "eko": parser.jacobs_monarch_banka_100gr_parser()[1],
+                "ashan": parser.jacobs_monarch_banka_100gr_parser()[4]
+            }},
+             {'jacobs_monarch_banka_50gr': {
+                "ashan": parser.jacobs_monarch_banka_50gr_parser()[4],
+                "novus": parser.jacobs_monarch_banka_50gr_parser()[5],
+                "nash_kray": parser.jacobs_monarch_banka_50gr_parser()[7]
             }},
 
 
@@ -4395,41 +4454,3 @@ def merging_jsons():
 
 merging_jsons()
 
-
-# def merging_jsons():
-#     file_path_1 = batch_1_path
-#     with open(file_path_1, 'r', encoding='utf-8') as file_1:
-#         data_1 = json.load(file_1)
-#
-#     file_path_2 = batch_2_path
-#     with open(file_path_2, 'r', encoding='utf-8') as file_2:
-#         data_2 = json.load(file_2)
-#
-#     file_path_3 = batch_3_path
-#     with open(file_path_3, 'r', encoding='utf-8') as file_3:
-#         data_3 = json.load(file_3)
-#
-#     file_path_4 = batch_4_path
-#     with open(file_path_4, 'r', encoding='utf-8') as file_4:
-#         data_4 = json.load(file_4)
-#
-#     file_path_5 = batch_5_path
-#     with open(file_path_5, 'r', encoding='utf-8') as file_5:
-#         data_5 = json.load(file_5)
-#
-#     file_path_6 = batch_6_path
-#     with open(file_path_6, 'r', encoding='utf-8') as file_6:
-#         data_6 = json.load(file_6)
-#
-#     df1 = pd.DataFrame([data_1])
-#     df2 = pd.DataFrame([data_2])
-#     df3 = pd.DataFrame([data_3])
-#     df4 = pd.DataFrame([data_4])
-#     df5 = pd.DataFrame([data_5])
-#     df6 = pd.DataFrame([data_6])
-#
-#     merged_contents = pd.concat([df1, df2, df3, df4, df5, df6], axis=1)
-#
-#     merged_contents.to_json('../overall_prices.json', orient='records')
-
-# merging_jsons()

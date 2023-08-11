@@ -1710,6 +1710,37 @@ get_maslo_galichina_selyanske_72_6_180gr = tag.create_tag(ItemsPicsFromNet, 565)
 '''Тэг,возвращающий информацию о "Масло сладкосливочное Молокія Экстра 82%, 180г"'''
 get_maslo_malokiya_extra_82_180gr = tag.create_tag(ItemsPicsFromNet, 566)
 
+'''Тэг,возвращающий информацию о "Масло Farm Fresh Екстра вершкове 82%, 180 г"'''
+get_maslo_farm_fresh_extra_82_180gr = tag.create_tag(ItemsPicsFromNet, 567)
+
+'''Тэг,возвращающий информацию о "Масло Farm Fresh Селянське вершкове 73%, 180г"'''
+get_maslo_farm_fresh_selyanske_73_180gr = tag.create_tag(ItemsPicsFromNet, 568)
+
+'''Тэг,возвращающий информацию о "Масло President солодковершкове 82%, 200г"'''
+get_maslo_president_82_200gr = tag.create_tag(ItemsPicsFromNet, 569)
+
+'''Тэг,возвращающий информацию о "Масло President солодковершкове 82%, 400г"'''
+get_maslo_president_82_400gr = tag.create_tag(ItemsPicsFromNet, 570)
+
+'''Тэг,возвращающий информацию о "Масло President солодковершкове солоне 80%, 200г"'''
+get_maslo_president_solone_80_200gr = tag.create_tag(ItemsPicsFromNet, 571)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 95г"'''
+get_jacobs_monarch_banka_95gr = tag.create_tag(ItemsPicsFromNet, 572)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 190г"'''
+get_jacobs_monarch_banka_190gr = tag.create_tag(ItemsPicsFromNet, 573)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 200г"'''
+get_jacobs_monarch_banka_200gr = tag.create_tag(ItemsPicsFromNet, 574)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 100г"'''
+get_jacobs_monarch_banka_100gr = tag.create_tag(ItemsPicsFromNet, 575)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 50г"'''
+get_jacobs_monarch_banka_50gr = tag.create_tag(ItemsPicsFromNet, 576)
+
+
 
 
 

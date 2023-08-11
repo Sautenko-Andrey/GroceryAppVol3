@@ -1193,3 +1193,23 @@ class TesterForGroceryAppText:
             return MASLO_GALICHINA_SELYANSKE_72_6_180GR
         elif np.argmax(result) == 562:
             return MASLO_MALOKIYA_EXTRA_82_180GR
+        elif np.argmax(result) == 563:
+            return MASLO_FARM_FRESH_EXTRA_82_180GR
+        elif np.argmax(result) == 564:
+            return MASLO_FARM_FRESH_SELYANSKE_82_180GR
+        elif np.argmax(result) == 565:
+            return MASLO_PRESIDENT_82_200GR
+        elif np.argmax(result) == 566:
+            return MASLO_PRESIDENT_82_400GR
+        elif np.argmax(result) == 567:
+            return MASLO_PRESIDENT_SOLONE_80_200GR
+        elif np.argmax(result) == 568:
+            return JACOBS_MONARCH_BANKA_95GR
+        elif np.argmax(result) == 569:
+            return JACOBS_MONARCH_BANKA_190GR
+        elif np.argmax(result) == 570:
+            return JACOBS_MONARCH_BANKA_200GR
+        elif np.argmax(result) == 571:
+            return JACOBS_MONARCH_BANKA_100GR
+        elif np.argmax(result) == 572:
+            return JACOBS_MONARCH_BANKA_50GR
