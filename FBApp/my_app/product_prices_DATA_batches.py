@@ -42,6 +42,7 @@ batch_4_path = "../prices_store_batch_4.json"
 batch_5_path = "../prices_store_batch_5.json"
 batch_6_path = "../prices_store_batch_6.json"
 batch_7_path = "../prices_store_batch_7.json"
+batch_8_path = "../prices_store_batch_8.json"
 
 parser = ProductParserVol2()
 
@@ -75,6 +76,7 @@ def price_parcing(batch_name: str):
     batch_name_5 = "all_products_names_batch_5"
     batch_name_6 = "all_products_names_batch_6"
     batch_name_7 = "all_products_names_batch_7"
+    batch_name_8 = "all_products_names_batch_8"
 
     mode_type_first_write = "w"
 
@@ -4090,7 +4092,7 @@ def price_parcing(batch_name: str):
         write_prices_to_json(all_products_names_batch_6, batch_6_path, mode_type_first_write)
 
     # для 7-го батча
-    if batch_name == batch_name_7:
+    elif batch_name == batch_name_7:
         all_products_names_batch_7 = [
 
             {'bon_boisson_mult_sok_1l': {
@@ -4403,10 +4405,88 @@ def price_parcing(batch_name: str):
                 "nash_kray": parser.jacobs_monarch_banka_50gr_parser()[7]
             }},
 
+            {'jacobs_monarch_classico_pack_225gr': {
+                "silpo": parser.jacobs_monarch_classico_pack_225gr_parser()[3],
+                "ashan": parser.jacobs_monarch_classico_pack_225gr_parser()[4]
+            }},
+
+            {'jacobs_barista_strong_pack_225gr': {
+                "silpo": parser.jacobs_barista_strong_pack_225gr_parser()[3],
+                "ashan": parser.jacobs_barista_strong_pack_225gr_parser()[4],
+                "nash_kray": parser.jacobs_barista_strong_pack_225gr_parser()[7]
+            }},
+
+            {'jacobs_kronung_500gr': {
+                "silpo": parser.jacobs_kronung_500gr_parser()[3]
+            }},
+
+            {'jacobs_monarch_classico_pack_70gr': {
+                "eko": parser.jacobs_monarch_classico_pack_70gr_parser()[1],
+                "varus": parser.jacobs_monarch_classico_pack_70gr_parser()[2],
+                "silpo": parser.jacobs_monarch_classico_pack_70gr_parser()[3],
+                "novus": parser.jacobs_monarch_classico_pack_70gr_parser()[5]
+            }},
+
+             {'jacobs_monarch_intense_200gr': {
+                "eko": parser.jacobs_monarch_intense_200gr_parser()[1],
+                "silpo": parser.jacobs_monarch_intense_200gr_parser()[3],
+                "novus": parser.jacobs_monarch_intense_200gr_parser()[5],
+                "metro": parser.jacobs_monarch_intense_200gr_parser()[6],
+                "nash_kray": parser.jacobs_monarch_intense_200gr_parser()[7]
+            }},
+
+            {'jacobs_espresso_230gr': {
+                "atb": parser.jacobs_espresso_230gr_parser()[0],
+                "eko": parser.jacobs_espresso_230gr_parser()[1],
+                "varus": parser.jacobs_espresso_230gr_parser()[2],
+                "silpo": parser.jacobs_espresso_230gr_parser()[3],
+                "metro": parser.jacobs_espresso_230gr_parser()[6],
+                "nash_kray": parser.jacobs_espresso_230gr_parser()[7]
+            }},
+
+             {'jacobs_barista_classic_pack_225gr': {
+                "silpo": parser.jacobs_barista_classic_pack_225gr_parser()[3],
+                "ashan": parser.jacobs_barista_classic_pack_225gr_parser()[4],
+                "novus": parser.jacobs_barista_classic_pack_225gr_parser()[5],
+                "metro": parser.jacobs_barista_classic_pack_225gr_parser()[6]
+            }},
+             {'jacobs_monarch_intense_400gr': {
+                "eko": parser.jacobs_monarch_intense_400gr_parser()[1],
+                "silpo": parser.jacobs_monarch_intense_400gr_parser()[3],
+                "ashan": parser.jacobs_monarch_intense_400gr_parser()[4],
+                "novus": parser.jacobs_monarch_intense_400gr_parser()[5],
+                "metro": parser.jacobs_monarch_intense_400gr_parser()[6]
+            }},
+             {'jacobs_monarch_classico_pack_400gr': {
+                "eko": parser.jacobs_monarch_classico_pack_400gr_parser()[1],
+                "silpo": parser.jacobs_monarch_classico_pack_400gr_parser()[3],
+                "ashan": parser.jacobs_monarch_classico_pack_400gr_parser()[4],
+                "novus": parser.jacobs_monarch_classico_pack_400gr_parser()[5],
+                "metro": parser.jacobs_monarch_classico_pack_400gr_parser()[6]
+            }},
+
+             {'jacobs_monarch_rozch_60gr': {
+                "atb": parser.jacobs_monarch_rozch_60gr_parser()[0]
+            }},
+
+            {'jacobs_monarch_rozch_425gr': {
+                "atb": parser.jacobs_monarch_rozch_425gr_parser()[0]
+            }},
+
 
         ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_7, batch_7_path, mode_type_first_write)
+
+    # для первого батча
+    elif batch_name == batch_name_8:
+        all_products_names_batch_8 = [
+
+
+        ]
+
+        # далее записываем цены в json-файл
+        write_prices_to_json(all_products_names_batch_8, batch_8_path, mode_type_first_write)
 
     else:
         print("Нет такого батча!")
@@ -4419,6 +4499,7 @@ def price_parcing(batch_name: str):
 # price_parcing("all_products_names_batch_5")
 # price_parcing("all_products_names_batch_6")
 price_parcing("all_products_names_batch_7")
+#price_parcing("all_products_names_batch_8")
 
 
 def prepeare_json_data(path:str):
@@ -4439,6 +4520,7 @@ def merging_jsons():
     data_5 = prepeare_json_data(batch_5_path)
     data_6 = prepeare_json_data(batch_6_path)
     data_7 = prepeare_json_data(batch_7_path)
+    #data_8 = prepeare_json_data(batch_8_path)
 
     df1 = pd.DataFrame([data_1])
     df2 = pd.DataFrame([data_2])
@@ -4447,6 +4529,7 @@ def merging_jsons():
     df5 = pd.DataFrame([data_5])
     df6 = pd.DataFrame([data_6])
     df7 = pd.DataFrame([data_7])
+    #df8 = pd.DataFrame([data_8])
 
     merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7], axis=1)
 

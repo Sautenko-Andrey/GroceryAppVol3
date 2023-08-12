@@ -1740,6 +1740,39 @@ get_jacobs_monarch_banka_100gr = tag.create_tag(ItemsPicsFromNet, 575)
 '''Тэг,возвращающий информацию о "Кава розчинна Jacobs Monarch натуральна сублімована с/б, 50г"'''
 get_jacobs_monarch_banka_50gr = tag.create_tag(ItemsPicsFromNet, 576)
 
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Monarch Classico 225 г"'''
+get_jacobs_monarch_classico_pack_225gr = tag.create_tag(ItemsPicsFromNet, 577)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Barista Strong 225 г"'''
+get_jacobs_barista_strong_pack_225gr = tag.create_tag(ItemsPicsFromNet, 578)
+
+'''Тэг,возвращающий информацию о "	Кава мелена Jacobs Kronung 500 г"'''
+get_jacobs_kronung_500gr = tag.create_tag(ItemsPicsFromNet, 579)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Monarch Classico 70 г"'''
+get_jacobs_monarch_classico_pack_70gr = tag.create_tag(ItemsPicsFromNet, 580)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Monarch Intense смажена 200 гр"'''
+get_jacobs_monarch_intense_pack_200gr = tag.create_tag(ItemsPicsFromNet, 581)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Espresso 230 г"'''
+get_jacobs_espresso_pack_230gr = tag.create_tag(ItemsPicsFromNet, 582)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Вarista Classic 225 гр"'''
+get_jacobs_barista_classic_pack_225gr = tag.create_tag(ItemsPicsFromNet, 583)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Monarch Intense смажена 400 гр"'''
+get_jacobs_monarch_intense_pack_400gr = tag.create_tag(ItemsPicsFromNet, 584)
+
+'''Тэг,возвращающий информацию о "Кава мелена Jacobs Monarch Classic смажена 400 гр"'''
+get_jacobs_monarch_classic_pack_400gr = tag.create_tag(ItemsPicsFromNet, 585)
+
+'''Тэг,возвращающий информацию о "Кава 60г Jacobs Monarch розчинна сублімована"'''
+get_jacobs_monarch__rozch_60gr = tag.create_tag(ItemsPicsFromNet, 586)
+
+'''Тэг,возвращающий информацию о "Кава 425г Jacobs Monarch розчинна сублімована"'''
+get_jacobs_monarch__rozch_425gr = tag.create_tag(ItemsPicsFromNet, 587)
+
 
 
 

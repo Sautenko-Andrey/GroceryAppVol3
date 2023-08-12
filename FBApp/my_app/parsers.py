@@ -5629,6 +5629,98 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/204701-kava-jacobs-monarkh-48g-rozch'
         ])
 
+    def jacobs_monarch_classico_pack_225gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Monarch Classico 225 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-melena-jacobs-monarch-classico-757346',
+            'https://auchan.ua/ua/kofe-molotyj-jacobs-classic-225-g-274192/'
+        ])
+
+    def jacobs_barista_strong_pack_225gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Barista Strong 225 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-melena-jacobs-barista-strong-797543',
+            'https://auchan.ua/ua/kofe-molotyj-jacobs-barista-editions-strong-225-g-503384/',
+            'https://shop.nashkraj.ua/kovel/product/326684-kava-jacobs-225g-barista-strong-mel'
+        ])
+
+    def jacobs_kronung_500gr_parser(self):
+        ''' Парсер для 	Кава мелена Jacobs Kronung 500 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-melena-jacobs-kronung-896014'
+        ])
+
+    def jacobs_monarch_classico_pack_70gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Monarch Classico 70 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-70g--08714599101834/',
+            'https://varus.ua/kava-smazh-mel-monarch-classic-jacobs-70g',
+            'https://shop.silpo.ua/product/kava-melena-jacobs-monarch-classico-757345',
+            'https://novus.online/product/kava-naturalna-smazena-melena-akobz-monarh-klasik-70g'
+        ])
+
+    def jacobs_monarch_intense_200gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Monarch Intense смажена 200 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-200g--08711000547038/',
+            'https://shop.silpo.ua/product/kava-melena-jacobs-monarch-intense-smazhena-924622',
+            'https://novus.online/product/kava-naturalna-smazhena-melena-jacobs-monarch-intense-200h',
+            'https://metro.zakaz.ua/uk/products/kava-iakobz-200g--08711000547038/',
+            'https://shop.nashkraj.ua/kovel/product/272915-kava-jacobs-monarkh-225g-intens-mel'
+        ])
+
+    def jacobs_espresso_230gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Espresso 230 г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-230g-jacobs-monarch-espresso-melena',
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-230g--08714599106945/',
+            'https://varus.ua/kava-melena-espreso-yakobz-230g',
+            'https://shop.silpo.ua/product/kava-melena-jacobs-espresso-823825',
+            'https://metro.zakaz.ua/uk/products/kava-iakobz-230g--08714599106945/',
+            'https://shop.nashkraj.ua/kovel/product/236903-kava-jacobs-monarkh-230g-espreso-melena'
+        ])
+
+    def jacobs_barista_classic_pack_225gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Barista Classic 225 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-melena-jacobs-varista-classic-797544',
+            'https://auchan.ua/ua/kofe-molotyj-jacobs-barista-classic-225-g-503389/',
+            'https://novus.online/product/kava-naturalna-smazena-melena-jacobs-barista-editions-classic-225g',
+            'https://metro.zakaz.ua/uk/products/kava-iakobz-225g--08714599103821/'
+        ])
+
+    def jacobs_monarch_intense_400gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Monarch Intense смажена 400 гр'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-400g-bolgariia--08711000547069/',
+            'https://shop.silpo.ua/product/kava-melena-jacobs-monarch-intense-smazhena-924623',
+            'https://auchan.ua/ua/kofe-molotyj-jacobs-monarch-intense-450-g-280914/',
+            'https://novus.online/product/kava-naturalna-smazhena-melena-jacobs-monarch-intense-400h',
+            'https://metro.zakaz.ua/uk/products/kava-iakobz-400g-bolgariia--08711000547069/'
+        ])
+
+    def jacobs_monarch_classico_pack_400gr_parser(self):
+        ''' Парсер для Кава мелена Jacobs Monarch Classico 400 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-iakobz-400g--08711000499979/',
+            'https://shop.silpo.ua/product/kava-melena-jacobs-monarch-classic-smazhena-927091',
+            'https://auchan.ua/ua/kofe-molotyj-jacobs-classic-450-g-274191/',
+            'https://novus.online/product/kava-naturalna-smazhena-melena-jacobs-monarch-classic-400h',
+            'https://metro.zakaz.ua/uk/products/kava-iakobz-400g--08711000499979/'
+        ])
+
+    def jacobs_monarch_rozch_60gr_parser(self):
+        ''' Парсер для Кава 60г Jacobs Monarch розчинна сублімована'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-60g-jacobs-monarch-rozcinna-sublimovana'
+        ])
+
+    def jacobs_monarch_rozch_425gr_parser(self):
+        ''' Парсер для Кава 425г Jacobs Monarch розчинна сублімована'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-425g-jacobs-monarch-rozcinna-sublimovana'
+        ])
+
 
 
 

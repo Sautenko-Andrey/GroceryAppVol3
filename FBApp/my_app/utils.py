@@ -1471,6 +1471,28 @@ class ContextSupervisor:
             result = self.getting_prices('jacobs_monarch_banka_100gr', get_jacobs_monarch_banka_100gr)
         elif nn_respond == JACOBS_MONARCH_BANKA_50GR:
             result = self.getting_prices('jacobs_monarch_banka_50gr', get_jacobs_monarch_banka_50gr)
+        elif nn_respond == JACOBS_MONARCH_CLASSICO_PACK_225GR:
+            result = self.getting_prices('jacobs_monarch_classico_pack_225gr', get_jacobs_monarch_classico_pack_225gr)
+        elif nn_respond == JACOBS_BARISTA_STRONG_PACK_225GR:
+            result = self.getting_prices('jacobs_barista_strong_pack_225gr', get_jacobs_barista_strong_pack_225gr)
+        elif nn_respond == JACOBS_KRONUNG_500GR:
+            result = self.getting_prices('jacobs_kronung_500gr', get_jacobs_kronung_500gr)
+        elif nn_respond == JACOBS_MONARCH_CLASSICO_PACK_70GR:
+            result = self.getting_prices('jacobs_monarch_classico_pack_70gr', get_jacobs_monarch_classico_pack_70gr)
+        elif nn_respond == JACOBS_MONARCH_INTENSE_PACK_200GR:
+            result = self.getting_prices('jacobs_monarch_intense_200gr', get_jacobs_monarch_intense_pack_200gr)
+        elif nn_respond == JACOBS_ESPRESSO_PACK_230GR:
+            result = self.getting_prices('jacobs_espresso_230gr', get_jacobs_espresso_pack_230gr)
+        elif nn_respond == JACOBS_BARISTA_CLASSIC_PACK_225GR:
+            result = self.getting_prices('jacobs_barista_classic_pack_225gr', get_jacobs_barista_classic_pack_225gr)
+        elif nn_respond == JACOBS_MONARCH_INTENSE_PACK_400GR:
+            result = self.getting_prices('jacobs_monarch_intense_400gr', get_jacobs_monarch_intense_pack_400gr)
+        elif nn_respond == JACOBS_MONARCH_CLASSICO_PACK_400GR:
+            result = self.getting_prices('jacobs_monarch_classico_pack_400gr', get_jacobs_monarch_classic_pack_400gr)
+        elif nn_respond == JACOBS_MONARCH_ROZCH_PACK_60GR:
+            result = self.getting_prices('jacobs_monarch_rozch_60gr', get_jacobs_monarch__rozch_60gr)
+        elif nn_respond == JACOBS_MONARCH_ROZCH_PACK_425GR:
+            result = self.getting_prices('jacobs_monarch_rozch_425gr', get_jacobs_monarch__rozch_425gr)
 
 
         # тут подключаются блюда

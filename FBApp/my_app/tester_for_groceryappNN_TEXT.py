@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2300
+    MAX_WORDS = 2350
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1213,3 +1213,25 @@ class TesterForGroceryAppText:
             return JACOBS_MONARCH_BANKA_100GR
         elif np.argmax(result) == 572:
             return JACOBS_MONARCH_BANKA_50GR
+        elif np.argmax(result) == 573:
+            return JACOBS_MONARCH_CLASSICO_PACK_225GR
+        elif np.argmax(result) == 574:
+            return JACOBS_BARISTA_STRONG_PACK_225GR
+        elif np.argmax(result) == 575:
+            return JACOBS_KRONUNG_500GR
+        elif np.argmax(result) == 576:
+            return JACOBS_MONARCH_CLASSICO_PACK_70GR
+        elif np.argmax(result) == 577:
+            return JACOBS_MONARCH_INTENSE_PACK_200GR
+        elif np.argmax(result) == 578:
+            return JACOBS_ESPRESSO_PACK_230GR
+        elif np.argmax(result) == 579:
+            return JACOBS_BARISTA_CLASSIC_PACK_225GR
+        elif np.argmax(result) == 580:
+            return JACOBS_MONARCH_INTENSE_PACK_400GR
+        elif np.argmax(result) == 581:
+            return JACOBS_MONARCH_CLASSICO_PACK_400GR
+        elif np.argmax(result) == 582:
+            return JACOBS_MONARCH_ROZCH_PACK_60GR
+        elif np.argmax(result) == 583:
+            return JACOBS_MONARCH_ROZCH_PACK_425GR

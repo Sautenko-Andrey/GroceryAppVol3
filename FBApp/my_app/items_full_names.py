@@ -571,6 +571,18 @@ JACOBS_MONARCH_BANKA_190GR = 'Кава розчинна Jacobs Monarch нату�
 JACOBS_MONARCH_BANKA_200GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 200г'
 JACOBS_MONARCH_BANKA_100GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 100г'
 JACOBS_MONARCH_BANKA_50GR = 'Кава розчинна Jacobs Monarch натуральна сублімована с/б, 50г'
+JACOBS_MONARCH_CLASSICO_PACK_225GR = 'Кава мелена Jacobs Monarch Classic 225 г'
+JACOBS_BARISTA_STRONG_PACK_225GR = 'Кава мелена Jacobs Barista Strong 225 г'
+JACOBS_KRONUNG_500GR = 'Кава мелена Jacobs Kronung 500 г'
+JACOBS_MONARCH_CLASSICO_PACK_70GR = 'Кава мелена Jacobs Monarch Classic 70 г'
+JACOBS_MONARCH_INTENSE_PACK_200GR = 'Кава мелена Jacobs Monarch Intense смажена 200 гр'
+JACOBS_ESPRESSO_PACK_230GR = 'Кава мелена Jacobs Espresso 230 г'
+JACOBS_BARISTA_CLASSIC_PACK_225GR = 'Кава мелена Jacobs Barista Classic 225 г'
+JACOBS_MONARCH_INTENSE_PACK_400GR = 'Кава мелена Jacobs Monarch Intense смажена 400 гр'
+JACOBS_MONARCH_CLASSICO_PACK_400GR = 'Кава мелена Jacobs Monarch Classic 400 г'
+JACOBS_MONARCH_ROZCH_PACK_60GR = 'Кава 60г Jacobs Monarch розчинна сублімована'
+JACOBS_MONARCH_ROZCH_PACK_425GR = 'Кава 425г Jacobs Monarch розчинна сублімована'
+
 
 
 #НАЗВАНИЯ БЛЮД
