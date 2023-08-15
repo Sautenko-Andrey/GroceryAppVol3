@@ -2,12 +2,11 @@
 {% block content %}
 <br>
 <br>
-<br>
+
 <div class="container">
     <div class="row">
         <div class="col-xl-12 col-md-12 col-sm-12" align="center">
             <div class="login-box">
-                <h2>{{title}}</h2>
                 <form method="post">
                     {% csrf_token %}
                     {% for f in form %}
@@ -26,4 +25,6 @@
         </div>
     </div>
 </div>
+<br>
+<br>
 {% endblock %}

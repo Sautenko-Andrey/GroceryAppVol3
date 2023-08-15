@@ -256,6 +256,16 @@ class FAQ(MutualContext, ListView):
         mutual_context_dict = self.get_user_context(title='FAQ')
         return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
 
+class Question_1_prices(MutualContext, ListView):
+    template_name = 'my_app/about_prices.html'
+    model = SitePolitics
+    context_object_name = 'info'
+
+    def get_context_data(self, *, object_list=None, **kwargs):
+        context_dict = super().get_context_data(**kwargs)
+        mutual_context_dict = self.get_user_context(title='about_prices')
+        return dict(list(context_dict.items()) + list(mutual_context_dict.items()))
+
 
 
 class FindYouDishHere(MutualContext, CreateView):
@@ -558,25 +568,6 @@ class SetResults(MutualContext, ListView):
                 ]}
             )
 
-            # new
-            # формируем тотал по каждому маркету
-
-            # for product in total_product_info:
-            #     for key, value in product.items():
-            #         atb_total += value[10]
-            #         eko_total += value[11]
-            #         varus_total += value[12]
-            #         silpo_total += value[13]
-            #         ashan_total += value[14]
-            #         novus_total += value[15]
-            #         metro_total += value[16]
-            #         nk_total += value[17]
-            #         fozzy_total += value[18]
-            # end
-
-        # return total_product_info, round(atb_total,2), round(eko_total,2), round(varus_total,2), \
-        #     round(silpo_total,2), round(ashan_total,2), round(novus_total,2), round(metro_total,2),\
-        #     round(nk_total,2), round(fozzy_total,2)
         return total_product_info
 
     def get_market_total_price(self, price_list: list):

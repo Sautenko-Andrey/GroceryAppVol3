@@ -1,0 +1,35 @@
+{% extends 'my_app/base.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+            <div id="load">
+  <div>P</div>
+  <div>P</div>
+  <div>A</div>
+  <div> </div>
+  <div>Y</div>
+  <div>R</div>
+  <div>E</div>
+  <div>C</div>
+  <div>O</div>
+  <div>R</div>
+  <div>G</div>
+</div>
+        </div>
+    </div>
+</div>
+<script>
+    $('.ribbon').on('click', function () {
+        var self = $(this),
+            newone = self.clone(true);
+
+        self.before(newone);
+        $("." + self.attr("class") + ":last").remove();
+    });
+</script>
+{% endblock %}

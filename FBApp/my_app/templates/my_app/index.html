@@ -3,6 +3,7 @@
 
 {% block content %}
 {% for info in content %}
+
 <div class="main-page-style-blue">
     <br>
     <br>
@@ -36,12 +37,14 @@
                         </div>
                     </h1>
                 </div>
+                <h6>{{info.under_title}}</h6>
                 <!--Конец кастомизированного заголовка-->
-
-                <!--<h1><b>{{info.title}}</b></h1>-->
-                <h6><b>{{info.under_title}}</b></h6>
                 <br>
-                <h6>Выберите способ поиска товара :</h6>
+                <div class="wrapper">
+                    <div class="typing-demo">
+                        <h5><b>Выберите способ поиска товара :</b></h5>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -50,10 +53,6 @@
             <div class="col-xl-4 col-md-12 col-sm-12" align="center">
             </div>
             <div class="col-xl-4 col-md-12 col-sm-12" align="center">
-                <!--<h4><a class="btn btn-outline-info" href="{% url 'search_by_photo' %}" role="button">ПО ФОТО</a>
-                    &emsp;&emsp;<a class="btn btn-outline-info" href="{% url 'get_item_name' %}" role="button">ПО
-                        НАЗВАНИЮ</a>
-                </h4>-->
 
                 <!--здесь вставляем новую крутую кнопку-->
                 <h4><a class="btn_neon_style_for_button" href="{% url 'search_by_photo' %}">
@@ -79,94 +78,136 @@
             </div>
         </div>
     </div>
-    <br>
-    <br>
-    <br>
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
-            </div>
-
-            <!--Начало кнопок для соцсетей -->
-
-            <!--Конец кнопок для соцсетей -->
-            <div class="col-xl-4 col-md-12 col-sm-12" align="center">
-            </div>
-        </div>
-    </div>
 </div>
 <br>
 <br>
 <br>
+<br>
+<!--new-->
 <div class="container">
     <div class="row">
         <div class="col-xl-12 col-md-12 col-sm-12" align="center">
-            <div class="card">
-                <div class="card-body">
-                    <blockquote class="blockquote mb-0">
-                        <h5 align="left">{{info.text_on_page}}</h5>
-                    </blockquote>
+            <!-- Button trigger modal -->
+            <div class="btn-holder">
+                <!--new button-->
+                <button type="button" class="btn btn-outline-light hover-filled-slide-down" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
+                    <span>Что нужно знать о GroceryApp</span>
+                </button>
+
+                <!--end new button-->
+                <!-- Modal -->
+                <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                     tabindex="-1"
+                     aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="staticBackdropLabel">Важно!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5 align="left">{{info.text_on_page}}</h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Ок</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end-->
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+                <h5 class="white-oranje-style"><b>Популярные супермаркеты</b></h5>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://www.atbmarket.com/" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h4>
+                </div>
+
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://shop.silpo.ua" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h4>
+                </div>
+
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://varus.ua" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h4>
+                </div>
+
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://novus.online/" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h4>
+                </div>
+
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://auchan.ua/" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h4>
+                </div>
+
+                <div class="btn-group">
+                    <h4><a class="btn btn-light" href="https://www.eko.com.ua/" target=”_blank” role="button"><b><img
+                            src="{% static 'my_app/images/ecomarket.png' %}"> Эко-Маркет</b></a></h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--social networks-->
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12 col-md-12 col-sm-12" align="center">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+                    <link rel="stylesheet" href="style.css">
+                    <link rel="stylesheet"
+                          href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                </head>
+
+                <div class="container">
+                    <a href="https://github.com/Sautenko-Andrey" target=”_blank” title="GitHub разработчика"><i
+                            class="fa fa-github-square github" id="github"></i></a>
+                    <a href="https://www.facebook.com/profile.php?id=100007390817108" target=”_blank”
+                       title="Facebook разработчика"><i
+                            class="fa fa-facebook-square" id="facebook"></i></a>
+                    <a href="https://www.instagram.com/" target=”_blank” title="Instagram разработчика"><i
+                            class="fa fa-instagram" id="instagram"></i></a>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <br>
-<br>
-<br>
-<br>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
-            <h4><b>Популярные супермаркеты</b></h4>
-        </div>
-    </div>
-</div>
-<br>
-<div class="container">
-    <div class="row">
-        <div class="col-xl-12 col-md-12 col-sm-12" align="center">
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://www.atbmarket.com/" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/ATB.png' %}"> АТБ</b></a></h4>
-            </div>
+<!--end social networks-->
+<!--typing text-->
 
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://shop.silpo.ua" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/silpo.png' %}"> Сильпо</b></a></h4>
-            </div>
+<!--end-->
 
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://varus.ua" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/varus.png' %}"> Varus</b></a></h4>
-            </div>
-
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://novus.online/" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/novus.png' %}"> Novus</b></a></h4>
-            </div>
-
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://auchan.ua/" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/ashan.png' %}"> Ашан</b></a></h4>
-            </div>
-
-            <div class="btn-group">
-                <h4><a class="btn btn-light" href="https://www.eko.com.ua/" target=”_blank” role="button"><b><img
-                        src="{% static 'my_app/images/ecomarket.png' %}"> Эко-Маркет</b></a></h4>
-            </div>
-        </div>
-    </div>
-</div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
 {% endfor %}
+
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+myInput.focus()
+})
+
 {% endblock %}

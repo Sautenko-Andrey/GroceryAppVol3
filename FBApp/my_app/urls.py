@@ -25,6 +25,7 @@ urlpatterns=[
     path('your_dish_price/',DishesSetResult.as_view(),name='dish_info'),
     path('delete_order/<order_id>', delete_product, name = 'delete_product_from_set'),
     path('faq/', FAQ.as_view(), name = 'users_questions'),
+    path('about_prices/', Question_1_prices.as_view(), name = 'about_prices_question'),
 
 
     #url для REST API
