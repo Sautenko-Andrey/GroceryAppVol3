@@ -582,8 +582,22 @@ JACOBS_MONARCH_INTENSE_PACK_400GR = 'Кава мелена Jacobs Monarch Intens
 JACOBS_MONARCH_CLASSICO_PACK_400GR = 'Кава мелена Jacobs Monarch Classic 400 г'
 JACOBS_MONARCH_ROZCH_PACK_60GR = 'Кава 60г Jacobs Monarch розчинна сублімована'
 JACOBS_MONARCH_ROZCH_PACK_425GR = 'Кава 425г Jacobs Monarch розчинна сублімована'
-
-
+NESCAFE_GOLD_PACK_165_GR = 'Кава розчинна Nescafe Gold натуральна 165 г'
+NESCAFE_GOLD_PACK_310_GR = 'Кава розчинна Nescafe Gold натуральна 310 г'
+NESCAFE_CLASSIC_PACK_170_GR = 'Кава розчинна Nescafe Classic натуральна 170 г'
+NESCAFE_GOLD_PACK_360_GR = 'Кава розчинна Nescafe Gold натуральна 360 г'
+NESCAFE_CLASSIC_PACK_30_GR = 'Кава розчинна Nescafe Classic натуральна 30 г'
+NESCAFE_GOLD_PACK_30_GR = 'Кава розчинна Nescafe Gold натуральна 30 г'
+NESCAFE_GOLD_PACK_60_GR = 'Кава розчинна Nescafe GOLD натуральна 60 г'
+NESCAFE_CLASSIC_PACK_300_GR = 'Кава розчинна Nescafe Classic натуральна 300 г'
+NESCAFE_GOLD_PACK_260_GR = 'Кава розчинна Nescafe GOLD натуральна 260 г'
+CARTE_NOIRE_PACK_140GR = 'Кава розчинна Carte Noire натуральна сублімована 140 г'
+CARTE_NOIRE_PACK_70GR = 'Кава розчинна Carte Noire натуральна сублімована 70 г'
+CARTE_NOIRE_CARAMEL_PACK_120GR = 'Кава розчинна Carte Noire Caramel натуральна сублімована 120 г'
+CARTE_NOIRE_PACK_210GR = 'Кава розчинна Carte Noire натуральна сублімована 210 г'
+CARTE_NOIRE_PACK_280GR = 'Кава розчинна Carte Noire натуральна сублімована 280 г'
+AMBASSADOR_PREMIUM_PACK_50GR = 'Кава розчинна Ambassador Premium 50 г'
+AMBASSADOR_PREMIUM_PACK_100GR = 'Кава розчинна Ambassador Premium 100 г'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

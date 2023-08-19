@@ -27,6 +27,14 @@ except Exception:
     print("I can't open data base with prices. Change or check path:"
           " './overall_prices.json'")
 
+#new prices storage for docker image
+# try:
+#     with open('overall_prices.json') as f:
+#         store = json.load(f)
+# except Exception:
+#     print("I can't open data base with prices. Change or check path:"
+#           " './overall_prices.json'")
+
 
 class MutualContext:
     def get_user_context(self, **kwargs) -> dict:
@@ -1493,6 +1501,38 @@ class ContextSupervisor:
             result = self.getting_prices('jacobs_monarch_rozch_60gr', get_jacobs_monarch__rozch_60gr)
         elif nn_respond == JACOBS_MONARCH_ROZCH_PACK_425GR:
             result = self.getting_prices('jacobs_monarch_rozch_425gr', get_jacobs_monarch__rozch_425gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_165_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_165gr', get_nescafe_gold_rozch_pack_165gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_310_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_310gr', get_nescafe_gold_rozch_pack_310gr)
+        elif nn_respond == NESCAFE_CLASSIC_PACK_170_GR:
+            result = self.getting_prices('nescafe_classic_rozch_pack_170gr', get_nescafe_classic_rozch_pack_170gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_360_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_360gr', get_nescafe_gold_rozch_pack_360gr)
+        elif nn_respond == NESCAFE_CLASSIC_PACK_30_GR:
+            result = self.getting_prices('nescafe_classic_rozch_pack_30gr', get_nescafe_classic_rozch_pack_30gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_30_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_30gr', get_nescafe_gold_rozch_pack_30gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_60_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_60gr', get_nescafe_gold_rozch_pack_60gr)
+        elif nn_respond == NESCAFE_CLASSIC_PACK_300_GR:
+            result = self.getting_prices('nescafe_classic_rozch_pack_300gr', get_nescafe_classic_rozch_pack_300gr)
+        elif nn_respond == NESCAFE_GOLD_PACK_260_GR:
+            result = self.getting_prices('nescafe_gold_rozch_pack_260gr', get_nescafe_gold_rozch_pack_260gr)
+        elif nn_respond == CARTE_NOIRE_PACK_140GR:
+            result = self.getting_prices('carte_noire_pack_rozch_140gr', get_carte_noire_rozch_pack_140gr)
+        elif nn_respond == CARTE_NOIRE_PACK_70GR:
+            result = self.getting_prices('carte_noire_pack_rozch_70gr', get_carte_noire_rozch_pack_70gr)
+        elif nn_respond == CARTE_NOIRE_CARAMEL_PACK_120GR:
+            result = self.getting_prices('carte_noire_caramel_pack_rozch_120gr', get_carte_noire_caramel_rozch_pack_120gr)
+        elif nn_respond == CARTE_NOIRE_PACK_210GR:
+            result = self.getting_prices('carte_noire_rozch_pack_210gr', get_carte_noire_rozch_pack_210gr)
+        elif nn_respond == CARTE_NOIRE_PACK_280GR:
+            result = self.getting_prices('carte_noire_rozch_pack_280gr', get_carte_noire_rozch_pack_280gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_50GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_50gr', get_ambassador_premium_rozch_pack_50gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_100GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_100gr', get_ambassador_premium_rozch_pack_100gr)
 
 
         # тут подключаются блюда

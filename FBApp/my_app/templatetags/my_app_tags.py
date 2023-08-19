@@ -1773,7 +1773,53 @@ get_jacobs_monarch__rozch_60gr = tag.create_tag(ItemsPicsFromNet, 586)
 '''Тэг,возвращающий информацию о "Кава 425г Jacobs Monarch розчинна сублімована"'''
 get_jacobs_monarch__rozch_425gr = tag.create_tag(ItemsPicsFromNet, 587)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold натуральна 165 г"'''
+get_nescafe_gold_rozch_pack_165gr = tag.create_tag(ItemsPicsFromNet, 588)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold сублімована 310 г"'''
+get_nescafe_gold_rozch_pack_310gr = tag.create_tag(ItemsPicsFromNet, 589)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Classic 170 г"'''
+get_nescafe_classic_rozch_pack_170gr = tag.create_tag(ItemsPicsFromNet, 590)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold натуральна сублімована 360 г"'''
+get_nescafe_gold_rozch_pack_360gr = tag.create_tag(ItemsPicsFromNet, 591)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Classic у м'якій упаковці 30 г"'''
+get_nescafe_classic_rozch_pack_30gr = tag.create_tag(ItemsPicsFromNet, 592)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold у м'якій упаковці 30 г"'''
+get_nescafe_gold_rozch_pack_30gr = tag.create_tag(ItemsPicsFromNet, 593)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold 60 г"'''
+get_nescafe_gold_rozch_pack_60gr = tag.create_tag(ItemsPicsFromNet, 594)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Classic, м'яка упаковка 300 г"'''
+get_nescafe_classic_rozch_pack_300gr = tag.create_tag(ItemsPicsFromNet, 595)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Nescafe Gold сублімована 260 г"'''
+get_nescafe_gold_rozch_pack_260gr = tag.create_tag(ItemsPicsFromNet, 596)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Carte Noire натуральна сублімована 140 г"'''
+get_carte_noire_rozch_pack_140gr = tag.create_tag(ItemsPicsFromNet, 597)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Carte Noire натуральна сублімована 70 г"'''
+get_carte_noire_rozch_pack_70gr = tag.create_tag(ItemsPicsFromNet, 598)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Carte Noire Caramel сублімована 120 г"'''
+get_carte_noire_caramel_rozch_pack_120gr = tag.create_tag(ItemsPicsFromNet, 599)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Carte Noire натуральна сублімована 210 г"'''
+get_carte_noire_rozch_pack_210gr = tag.create_tag(ItemsPicsFromNet, 600)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Carte Noire Classic сублімована 280 гр"'''
+get_carte_noire_rozch_pack_280gr = tag.create_tag(ItemsPicsFromNet, 601)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 50 г"'''
+get_ambassador_premium_rozch_pack_50gr = tag.create_tag(ItemsPicsFromNet, 602)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 100 г"'''
+get_ambassador_premium_rozch_pack_100gr = tag.create_tag(ItemsPicsFromNet, 603)
 
 
 

@@ -5721,6 +5721,153 @@ class ProductParserVol2:
             'https://www.atbmarket.com/product/kava-425g-jacobs-monarch-rozcinna-sublimovana'
         ])
 
+    def nescafe_gold_rozch_pack_165gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold натуральна 165 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-165g--07613037095982/',
+            'https://varus.ua/kava-rozchinna-sublimovana-nescafe-gold-165-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-naturalna-786157',
+            'https://auchan.ua/ua/kofe-rastvorimyj-nescafe-gold-165-g-503804/',
+            'https://novus.online/ru/product/kava-rozcinna-neskafe-gold-mu-165g',
+            'https://fozzyshop.ua/ru/kofe-rastvorimyj/62482-kofe-rastvorimyj-nescafe-gold-naturalnyj-7613037095982.html'
+
+        ])
+
+    def nescafe_gold_rozch_pack_310gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold натуральна 310 г'''
+        return self.prices_parsing([
+            'https://varus.ua/kava-nescafe-gold-rozchinna-310-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-sublimovana-928742',
+            'https://novus.online/ru/product/kava-rozchynna-neskafe-hold-310h'
+        ])
+
+    def nescafe_classic_rozch_pack_170gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Classic 170 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-classic-813560'
+        ])
+
+    def nescafe_gold_rozch_pack_360gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold натуральна сублімована 360 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-ukrayina--07613035932081/',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-naturalna-sublimovana-701592'
+        ])
+
+    def nescafe_classic_rozch_pack_30gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Classic у м'якій упаковці 30 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-classic-u-m-iakii-upakovtsi-638371'
+        ])
+
+    def nescafe_gold_rozch_pack_30gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold у м'якій упаковці 30 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-30g--07613035444256/',
+            'https://varus.ua/kava-rozchinna-sublimovana-nescafe-gold-30-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-m-iaka-upakovka-646270',
+            'https://auchan.ua/ua/kofe-rastvorimyj-nescafe-gold-30-g-503649/',
+            'https://shop.nashkraj.ua/kovel/product/218830-kava-nescafe-30g-gold-mu',
+            'https://fozzyshop.ua/ru/kofe-rastvorimyj/12543-kofe-rastvorimyj-nescafe-gold-myagkaya-upakovka-7613035444256.html'
+        ])
+
+    def nescafe_gold_rozch_pack_60gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold у м'якій упаковці 60 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-60g--07613035524835/',
+            'https://varus.ua/kava-rozchinna-sublimovana-nescafe-gold-60-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-663484',
+            'https://auchan.ua/ua/kofe-nescafe-gold-60-g-215720/',
+            'https://novus.online/ru/product/kava-naturalna-rozcinna-neskafe-gold-maka-upakovka-60g',
+            'https://shop.nashkraj.ua/kovel/product/231303-kava-nescafe-60g-gold-m-u',
+            'https://fozzyshop.ua/ru/kofe-rastvorimyj/3312-kofe-nescafe-gold-7613035524835.html'
+        ])
+
+    def nescafe_classic_rozch_pack_300gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Classic у м'якій упаковці 300 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-classic-m-iaka-upakovka-50-g-bezkoshtovno-686892'
+        ])
+
+    def nescafe_gold_rozch_pack_260gr_parser(self):
+        ''' Парсер для Кава розчинна Nescafe Gold у м'якій упаковці 260 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava-neskafe-260g--07613035526259/',
+            'https://varus.ua/kava-nescafe-gold-naturalna-rozchinna-sublimovana-260-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-nescafe-gold-sublimovana-50-g-bezkoshtovno-686893',
+            'https://auchan.ua/ua/kofe-rastvorimyj-nescafe-gold-260-g-503859/',
+            'https://fozzyshop.ua/ru/kofe-rastvorimyj/38792-kofe-rastvorimyj-nescafe-gold-sublimir-50g-bespl-7613035526259.html'
+        ])
+
+    def carte_noire_pack_rozch_140gr_parser(self):
+        ''' Парсер для Кава розчинна Carte Noire натуральна сублімована 140 г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-140g-carte-noire-rozcinna-sublimovana',
+            'https://eko.zakaz.ua/uk/products/kava-kart-nuar-140g--08714599104194/',
+            'https://varus.ua/kava-sublimovan-classic-carte-noire-140g',
+            'https://shop.silpo.ua/product/kava-rozchynna-carte-noire-naturalna-sublimovana-783913',
+            'https://auchan.ua/ua/kofe-rastvorimyj-carte-noire-classic-140-g-503988/',
+            'https://novus.online/ru/product/kava-naturalna-rozcinna-sublimovana-kart-nuar-140g',
+            'https://metro.zakaz.ua/ru/products/kava-kart-nuar-140g--08714599104194/'
+        ])
+
+    def carte_noire_pack_rozch_70gr_parser(self):
+        ''' Парсер для Кава розчинна Carte Noire натуральна сублімована 70 г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-70g-carte-noire-rozcinna-sublimovana',
+            'https://eko.zakaz.ua/uk/products/kava-kart-nuar-70g--04820187043654/',
+            'https://shop.silpo.ua/product/kava-carte-noire-original-natur-rozch-sublim-p-e-597836',
+            'https://novus.online/ru/product/kava-rozcinna-kart-nuar-ekonom-paket-70g',
+            'https://metro.zakaz.ua/ru/products/kava-kart-nuar-70g--04820187043654/'
+        ])
+
+    def carte_noire_caramel_pack_rozch_120gr_parser(self):
+        ''' Парсер для Кава розчинна Carte Noire Caramel сублімована 120 г'''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/kava-120-g-carte-noire-zi-smakom-karameli-naturalna-rozcinna-sublimovana-mup',
+            'https://eko.zakaz.ua/uk/products/kava-kart-nuar-120g--08714599620274/',
+            'https://shop.silpo.ua/product/kava-rozchynna-carte-noire-caramel-sublimovana-926067',
+            'https://novus.online/ru/product/kava-naturalna-rozchynna-sublimovana-kart-nuar-zi-smakom-karameli-120h',
+            'https://metro.zakaz.ua/ru/products/kava-kart-nuar-120g--08714599620274/'
+        ])
+
+    def carte_noire_rozch_pack_210gr_parser(self):
+        ''' Парсер для Кава розчинна Carte Noire натуральна сублімована 210 г'''
+        return self.prices_parsing([
+            'https://varus.ua/kava-rozchinna-carte-noire-classic-210-g',
+            'https://shop.silpo.ua/product/kava-rozchynna-carte-noire-naturalna-sublimovana-783914',
+            'https://auchan.ua/ua/kofe-rastvorimyj-carte-noire-classic-210-g-503978/',
+            'https://novus.online/ru/product/kava-naturalna-rozcinna-sublimovana-kart-nuar-210g'
+        ])
+
+    def carte_noire_rozch_pack_280gr_parser(self):
+        ''' Парсер для Кава розчинна Carte Noire натуральна сублімована 280 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-carte-noire-classic-sublimovana-210-70-g-881354',
+            'https://auchan.ua/ua/kofe-rastvorimyj-carte-noire-classic-210-g-70-g-927576/',
+            'https://metro.zakaz.ua/ru/products/kava-kart-nuar-210g--08714599620014/'
+        ])
+
+    def ambassador_premium_rozch_pack_50gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 50 г'''
+        return self.prices_parsing([
+            'https://varus.ua/kava-rozchinna-premium-ambassador-50g',
+            'https://shop.silpo.ua/product/kava-rozchynna-ambassador-premium-894365',
+            'https://auchan.ua/ua/kofe-ambassador-premium-rastvorimyj-50-g-1299004/',
+            'https://novus.online/ru/product/kava-rozchynna-ambassador-premium-paket-50h'
+        ])
+
+    def ambassador_premium_rozch_pack_100gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 100 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava--08720254065663/',
+            'https://varus.ua/kava-rozchinna-premium-ambassador-100g',
+            'https://shop.silpo.ua/product/kava-rozchynna-ambassador-premium-naturalna-sublimovana-859091',
+            'https://auchan.ua/ua/kofe-rastvorimyj-sublimirovannyj-ambassador-premium-100-g-890211/',
+            'https://metro.zakaz.ua/ru/products/kava--08720254065663/'
+        ])
+
+
 
 
 

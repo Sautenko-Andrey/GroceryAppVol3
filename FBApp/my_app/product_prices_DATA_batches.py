@@ -4473,6 +4473,117 @@ def price_parcing(batch_name: str):
                 "atb": parser.jacobs_monarch_rozch_425gr_parser()[0]
             }},
 
+             {'nescafe_gold_rozch_pack_165gr': {
+                "eko": parser.nescafe_gold_rozch_pack_165gr_parser()[1],
+                "varus": parser.nescafe_gold_rozch_pack_165gr_parser()[2],
+                "silpo": parser.nescafe_gold_rozch_pack_165gr_parser()[3],
+                "ashan": parser.nescafe_gold_rozch_pack_165gr_parser()[4],
+                "novus": parser.nescafe_gold_rozch_pack_165gr_parser()[5],
+                "fozzy": parser.nescafe_gold_rozch_pack_165gr_parser()[8]
+            }},
+
+            {'nescafe_gold_rozch_pack_310gr': {
+                "varus": parser.nescafe_gold_rozch_pack_310gr_parser()[2],
+                "silpo": parser.nescafe_gold_rozch_pack_310gr_parser()[3],
+                "novus": parser.nescafe_gold_rozch_pack_310gr_parser()[5]
+            }},
+
+            {'nescafe_classic_rozch_pack_170gr': {
+                "silpo": parser.nescafe_classic_rozch_pack_170gr_parser()[3]
+            }},
+
+            {'nescafe_gold_rozch_pack_360gr': {
+                "eko": parser.nescafe_gold_rozch_pack_360gr_parser()[1],
+                "silpo": parser.nescafe_gold_rozch_pack_360gr_parser()[3]
+            }},
+
+             {'nescafe_classic_rozch_pack_30gr': {
+                "silpo": parser.nescafe_classic_rozch_pack_30gr_parser()[3]
+            }},
+
+             {'nescafe_gold_rozch_pack_30gr': {
+                "eko": parser.nescafe_gold_rozch_pack_30gr_parser()[1],
+                "varus": parser.nescafe_gold_rozch_pack_30gr_parser()[2],
+                "silpo": parser.nescafe_gold_rozch_pack_30gr_parser()[3],
+                "ashan": parser.nescafe_gold_rozch_pack_30gr_parser()[4],
+                "nash_kray": parser.nescafe_gold_rozch_pack_30gr_parser()[7],
+                "fozzy": parser.nescafe_gold_rozch_pack_30gr_parser()[8]
+            }},
+
+             {'nescafe_gold_rozch_pack_60gr': {
+                "eko": parser.nescafe_gold_rozch_pack_60gr_parser()[1],
+                "varus": parser.nescafe_gold_rozch_pack_60gr_parser()[2],
+                "silpo": parser.nescafe_gold_rozch_pack_60gr_parser()[3],
+                "ashan": parser.nescafe_gold_rozch_pack_60gr_parser()[4],
+                "novus": parser.nescafe_gold_rozch_pack_60gr_parser()[5],
+                "nash_kray": parser.nescafe_gold_rozch_pack_60gr_parser()[7],
+                "fozzy": parser.nescafe_gold_rozch_pack_60gr_parser()[8]
+            }},
+
+            {'nescafe_classic_rozch_pack_300gr': {
+                "silpo": parser.nescafe_classic_rozch_pack_300gr_parser()[3]
+            }},
+
+            {'nescafe_gold_rozch_pack_260gr': {
+                "eko": parser.nescafe_gold_rozch_pack_260gr_parser()[1],
+                "varus": parser.nescafe_gold_rozch_pack_260gr_parser()[2],
+                "silpo": parser.nescafe_gold_rozch_pack_260gr_parser()[3],
+                "ashan": parser.nescafe_gold_rozch_pack_260gr_parser()[4],
+                "fozzy": parser.nescafe_gold_rozch_pack_260gr_parser()[8]
+            }},
+
+            {'carte_noire_pack_rozch_140gr': {
+                "atb": parser.carte_noire_pack_rozch_140gr_parser()[0],
+                "eko": parser.carte_noire_pack_rozch_140gr_parser()[1],
+                "varus": parser.carte_noire_pack_rozch_140gr_parser()[2],
+                "silpo": parser.carte_noire_pack_rozch_140gr_parser()[3],
+                "ashan": parser.carte_noire_pack_rozch_140gr_parser()[4],
+                "novus": parser.carte_noire_pack_rozch_140gr_parser()[5],
+                "metro": parser.carte_noire_pack_rozch_140gr_parser()[6]
+            }},
+
+            {'carte_noire_pack_rozch_70gr': {
+                "atb": parser.carte_noire_pack_rozch_70gr_parser()[0],
+                "eko": parser.carte_noire_pack_rozch_70gr_parser()[1],
+                "silpo": parser.carte_noire_pack_rozch_70gr_parser()[3],
+                "novus": parser.carte_noire_pack_rozch_70gr_parser()[5],
+                "metro": parser.carte_noire_pack_rozch_70gr_parser()[6]
+            }},
+
+            {'carte_noire_caramel_pack_rozch_120gr': {
+                "atb": parser.carte_noire_caramel_pack_rozch_120gr_parser()[0],
+                "eko": parser.carte_noire_caramel_pack_rozch_120gr_parser()[1],
+                "silpo": parser.carte_noire_caramel_pack_rozch_120gr_parser()[3],
+                "novus": parser.carte_noire_caramel_pack_rozch_120gr_parser()[5],
+                "metro": parser.carte_noire_caramel_pack_rozch_120gr_parser()[6]
+            }},
+
+            {'carte_noire_rozch_pack_210gr': {
+                "varus": parser.carte_noire_rozch_pack_210gr_parser()[2],
+                "silpo": parser.carte_noire_rozch_pack_210gr_parser()[3],
+                "ashan": parser.carte_noire_rozch_pack_210gr_parser()[4],
+                "novus": parser.carte_noire_rozch_pack_210gr_parser()[5]
+            }},
+
+            {'carte_noire_rozch_pack_280gr': {
+                "silpo": parser.carte_noire_rozch_pack_280gr_parser()[3],
+                "ashan": parser.carte_noire_rozch_pack_280gr_parser()[4],
+                "metro": parser.carte_noire_rozch_pack_280gr_parser()[6]
+            }},
+             {'ambassador_premium_rozch_pack_50gr': {
+                "varus": parser.ambassador_premium_rozch_pack_50gr_parser()[2],
+                "silpo": parser.ambassador_premium_rozch_pack_50gr_parser()[3],
+                "ashan": parser.ambassador_premium_rozch_pack_50gr_parser()[4],
+                "novus": parser.ambassador_premium_rozch_pack_50gr_parser()[5]
+            }},
+             {'ambassador_premium_rozch_pack_100gr': {
+                "eko": parser.ambassador_premium_rozch_pack_100gr_parser()[1],
+                "varus": parser.ambassador_premium_rozch_pack_100gr_parser()[2],
+                "silpo": parser.ambassador_premium_rozch_pack_100gr_parser()[3],
+                "ashan": parser.ambassador_premium_rozch_pack_100gr_parser()[4],
+                "metro": parser.ambassador_premium_rozch_pack_100gr_parser()[6]
+            }},
+
 
         ]
         # далее записываем цены в json-файл

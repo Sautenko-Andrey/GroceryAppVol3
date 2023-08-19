@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED=1
 WORKDIR /code
 
 #COPY /my_app/prices_store.json .
-COPY /prices_store.json .
+COPY /overall_prices.json .
 
 #сopying NN data
 COPY /my_model_text .

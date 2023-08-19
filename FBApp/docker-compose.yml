@@ -1,7 +1,7 @@
 version: '3.9'
 services:
   django:
-    image: sautenkoandrey/grocery_app:0.0.1
+    image: sautenkoandrey/grocery_app:0.0.2
     build: .
     ports:
       - "8000:8000"

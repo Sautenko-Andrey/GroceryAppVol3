@@ -33,7 +33,7 @@ from django.shortcuts import redirect
 from .utils import ContextSupervisor, UserAmountConverter
 
 with open('/home/andrey/GroceryAppVol3/FBApp/my_app/prices_store.json') as f:
-    # with open('/code/prices_store.json') as f:  #for docker image
+#with open('/code/overall_prices.json') as f:  #for docker image
     store = json.load(f)
 
 

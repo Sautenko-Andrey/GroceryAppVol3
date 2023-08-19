@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2350
+    MAX_WORDS = 2400
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1235,3 +1235,35 @@ class TesterForGroceryAppText:
             return JACOBS_MONARCH_ROZCH_PACK_60GR
         elif np.argmax(result) == 583:
             return JACOBS_MONARCH_ROZCH_PACK_425GR
+        elif np.argmax(result) == 584:
+            return NESCAFE_GOLD_PACK_165_GR
+        elif np.argmax(result) == 585:
+            return NESCAFE_GOLD_PACK_310_GR
+        elif np.argmax(result) == 586:
+            return NESCAFE_CLASSIC_PACK_170_GR
+        elif np.argmax(result) == 587:
+            return NESCAFE_GOLD_PACK_360_GR
+        elif np.argmax(result) == 588:
+            return NESCAFE_CLASSIC_PACK_30_GR
+        elif np.argmax(result) == 589:
+            return NESCAFE_GOLD_PACK_30_GR
+        elif np.argmax(result) == 590:
+            return NESCAFE_GOLD_PACK_60_GR
+        elif np.argmax(result) == 591:
+            return NESCAFE_CLASSIC_PACK_300_GR
+        elif np.argmax(result) == 592:
+            return NESCAFE_GOLD_PACK_260_GR
+        elif np.argmax(result) == 593:
+            return CARTE_NOIRE_PACK_140GR
+        elif np.argmax(result) == 594:
+            return CARTE_NOIRE_PACK_70GR
+        elif np.argmax(result) == 595:
+            return CARTE_NOIRE_CARAMEL_PACK_120GR
+        elif np.argmax(result) == 596:
+            return CARTE_NOIRE_PACK_210GR
+        elif np.argmax(result) == 597:
+            return CARTE_NOIRE_PACK_280GR
+        elif np.argmax(result) == 598:
+            return AMBASSADOR_PREMIUM_PACK_50GR
+        elif np.argmax(result) == 599:
+            return AMBASSADOR_PREMIUM_PACK_100GR
