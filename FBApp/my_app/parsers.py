@@ -5867,6 +5867,119 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/ru/products/kava--08720254065663/'
         ])
 
+    def ambassador_premium_rozch_pack_250gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 250 г'''
+        return self.prices_parsing([
+            'https://varus.ua/kofe-rastvorimyj-ambassador-premium-200g-50g',
+            'https://shop.silpo.ua/product/kava-rozchynna-ambassador-premium-naturalna-sublimovana-859093',
+            'https://novus.online/ru/product/kava-naturalna-rozchynna-sublimovana-premium-ambassador-dp-250h',
+            'https://metro.zakaz.ua/ru/products/kava-ambassador-250g-ukrayina--08720254065700/'
+        ])
+
+    def ambassador_premium_rozch_pack_170gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 170 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-ambassador-premium-naturalna-sublimovana-859092',
+            'https://auchan.ua/ua/kofe-rastvorimyj-ambassador-premium-170-g-784371/',
+            'https://metro.zakaz.ua/ru/products/kava-ambassador--08720254065687/'
+        ])
+
+    def ambassador_premium_rozch_pack_400gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 400 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-ambassador-premium-300-100-g-917590',
+            'https://auchan.ua/ua/kofe-rastvorimyj-ambassador-premium-400-g-1085591/',
+            'https://metro.zakaz.ua/ru/products/kava-ambassador--08720254065427/'
+        ])
+
+    def ambassador_premium_rozch_pack_500gr_parser(self):
+        ''' Парсер для Кава розчинна Ambassador Premium 500 г'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/kofe-ambassador-premium-rastvorimyj-500-g-1299074/',
+            'https://metro.zakaz.ua/ru/products/kava-ambassador-500g--08720254065748/'
+        ])
+
+    def chorna_carta_gold_rozch_pack_200gr_parser(self):
+        ''' Парсер для Кава розчинна «Чорна карта» Gold 200 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-chorna-karta-gold-843946',
+            'https://auchan.ua/ua/kofe-natural-nyj-rastvorimyj-sublimirovannyj-gold-chorna-karta-200-g-732173-900246/',
+            'https://metro.zakaz.ua/ru/products/kava-chorna-karta-200g--08720254065304/'
+        ])
+
+    def chorna_carta_gold_rozch_pack_100gr_parser(self):
+        ''' Парсер для Кава розчинна «Чорна карта» Gold 100 г'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/kava--08720254065762/',
+            'https://shop.silpo.ua/product/kava-rozchynna-chorna-karta-gold-paket-874035',
+            'https://auchan.ua/ua/kofe-rastvorimyj-sublimirovannyj-chorna-karta-gold-100-g-890218/',
+            'https://novus.online/ru/product/kava-rozchynna-chorna-karta-gold-paket-100h'
+        ])
+
+    def tchibo_gold_selection_rozch_glass_jar_50gr_parser(self):
+        ''' Парсер для Кава Tchibo Gold Selection с/б 50 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-tchibo-gold-selection-s-b-199729',
+            'https://auchan.ua/ua/kofe-rastvorimyj-tchibo-gold-selection-50-g-503704/',
+            'https://novus.online/ru/product/kava-rozcinna-tchibo-gold-select-50g'
+        ])
+
+    def tchibo_gold_selection_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Tchibo Gold Selection с/б 100 г'''
+        return self.prices_parsing([
+            'https://varus.ua/kava-rozchinna-tchibo-gold-selection-100-g',
+            'https://shop.silpo.ua/product/kava-tchibo-gold-selection-199728',
+            'https://auchan.ua/ua/kofe-rastvorimyj-tchibo-gold-selection-v-banke-100-g-503809/',
+            'https://novus.online/ru/product/kava-rozcinna-tchibo-gold-selection-100g',
+            'https://metro.zakaz.ua/ru/products/kava-chibo-100g--04006064010111/'
+        ])
+
+    def tchibo_gold_selection_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава Tchibo Gold Selection с/б 200 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-tchibo-gold-selection-737260',
+            'https://auchan.ua/ua/kofe-rastvorimyj-tchibo-gold-selection-v-banke-200-g-503854/',
+            'https://metro.zakaz.ua/uk/products/kava-chibo-200g-nimechchina--04046234596236/'
+        ])
+
+    def tchibo_exclusive_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава Tchibo Exclusive с/б 200 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-tchibo-exclusive-s-b-4502',
+            'https://auchan.ua/ua/kofe-rastvorimyj-tchibo-exclusive-v-banke-200-g-503894/'
+        ])
+
+    def aroma_gold_decaff_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Aroma Gold без кофеїну розчинна 100 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-aroma-gold-bez-kofeinu-rozchynna-895294',
+            'https://fozzyshop.ua/kofe-rastvorimyj/96877-kofe-aroma-gold-bez-kofeina-rastvorimyj-4771632312002.html'
+        ])
+
+    def aroma_gold_freeze_dried_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Aroma Gold розчинна Freeze-dried 100 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-aroma-gold-rozchynna-895288',
+            'https://novus.online/product/kava-rozchynna-cublimovana-aroma-gold-95h',
+            'https://shop.nashkraj.ua/kovel/product/471519-kava-aroma-gold-95g-sublimovaniy',
+            'https://fozzyshop.ua/kofe-rastvorimyj/97591-kofe-aroma-gold-rastvorimyj-0250014775382.html'
+        ])
+
+    def aroma_gold_freeze_dried_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава Aroma Gold розчинна Freeze-dried 200 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-aroma-gold-902627'
+        ])
+
+    def maccoffee_arabica_rozch_glass_jar_120gr_parser(self):
+        ''' Парсер для Кава розчинна MacCoffee Arabica натуральна сублімована 120 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-maccoffee-arabica-naturalna-sublimovana-857465',
+            'https://auchan.ua/ua/kofe-maccoffee-arabica-rastvorimyj-120-g-1299308/',
+            'https://novus.online/product/kava-rozchynna-arabika-maccoffee-120h',
+            'https://metro.zakaz.ua/uk/products/kava--08887290146135/'
+        ])
+
 
 
 

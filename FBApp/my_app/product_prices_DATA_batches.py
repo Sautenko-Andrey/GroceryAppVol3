@@ -4593,6 +4593,91 @@ def price_parcing(batch_name: str):
     elif batch_name == batch_name_8:
         all_products_names_batch_8 = [
 
+            {'ambassador_premium_rozch_pack_250gr': {
+                "varus": parser.ambassador_premium_rozch_pack_250gr_parser()[2],
+                "silpo": parser.ambassador_premium_rozch_pack_250gr_parser()[3],
+                "novus": parser.ambassador_premium_rozch_pack_250gr_parser()[5],
+                "metro": parser.ambassador_premium_rozch_pack_250gr_parser()[6]
+            }},
+
+            {'ambassador_premium_rozch_pack_170gr': {
+                "silpo": parser.ambassador_premium_rozch_pack_170gr_parser()[3],
+                "ashan": parser.ambassador_premium_rozch_pack_170gr_parser()[4],
+                "metro": parser.ambassador_premium_rozch_pack_170gr_parser()[6]
+            }},
+
+            {'ambassador_premium_rozch_pack_400gr': {
+                "silpo": parser.ambassador_premium_rozch_pack_400gr_parser()[3],
+                "ashan": parser.ambassador_premium_rozch_pack_400gr_parser()[4],
+                "metro": parser.ambassador_premium_rozch_pack_400gr_parser()[6]
+            }},
+
+            {'ambassador_premium_rozch_pack_500gr': {
+                "ashan": parser.ambassador_premium_rozch_pack_500gr_parser()[4],
+                "metro": parser.ambassador_premium_rozch_pack_500gr_parser()[6]
+            }},
+
+            {'chorna_carta_gold_rozch_pack_200gr': {
+                "silpo": parser.chorna_carta_gold_rozch_pack_200gr_parser()[3],
+                "ashan": parser.chorna_carta_gold_rozch_pack_200gr_parser()[4],
+                "metro": parser.chorna_carta_gold_rozch_pack_200gr_parser()[6]
+            }},
+
+             {'chorna_carta_gold_rozch_pack_100gr': {
+                 "eko": parser.chorna_carta_gold_rozch_pack_100gr_parser()[1],
+                "silpo": parser.chorna_carta_gold_rozch_pack_100gr_parser()[3],
+                "ashan": parser.chorna_carta_gold_rozch_pack_100gr_parser()[4],
+                "novus": parser.chorna_carta_gold_rozch_pack_100gr_parser()[5]
+            }},
+
+            {'tchibo_gold_selection_rozch_glass_jar_50gr': {
+                "silpo": parser.tchibo_gold_selection_rozch_glass_jar_50gr_parser()[3],
+                "ashan": parser.tchibo_gold_selection_rozch_glass_jar_50gr_parser()[4],
+                "novus": parser.tchibo_gold_selection_rozch_glass_jar_50gr_parser()[5]
+            }},
+
+            {'tchibo_gold_selection_rozch_glass_jar_100gr': {
+                "varus": parser.tchibo_gold_selection_rozch_glass_jar_100gr_parser()[2],
+                "silpo": parser.tchibo_gold_selection_rozch_glass_jar_100gr_parser()[3],
+                "ashan": parser.tchibo_gold_selection_rozch_glass_jar_100gr_parser()[4],
+                "novus": parser.tchibo_gold_selection_rozch_glass_jar_100gr_parser()[5],
+                "metro": parser.tchibo_gold_selection_rozch_glass_jar_100gr_parser()[6]
+            }},
+
+            {'tchibo_gold_selection_rozch_glass_jar_200gr': {
+                "silpo": parser.tchibo_gold_selection_rozch_glass_jar_200gr_parser()[3],
+                "ashan": parser.tchibo_gold_selection_rozch_glass_jar_200gr_parser()[4],
+                "metro": parser.tchibo_gold_selection_rozch_glass_jar_200gr_parser()[6]
+            }},
+
+            {'tchibo_exclusive_rozch_glass_jar_200gr': {
+                "silpo": parser.tchibo_exclusive_rozch_glass_jar_200gr_parser()[3],
+                "ashan": parser.tchibo_exclusive_rozch_glass_jar_200gr_parser()[4]
+            }},
+
+            {'aroma_gold_decaff_rozch_glass_jar_100gr': {
+                "silpo": parser.aroma_gold_decaff_rozch_glass_jar_100gr_parser()[3],
+                "fozzy": parser.aroma_gold_decaff_rozch_glass_jar_100gr_parser()[8]
+            }},
+
+            {'aroma_gold_freeze_dried_rozch_glass_jar_100gr': {
+                "silpo": parser.aroma_gold_freeze_dried_rozch_glass_jar_100gr_parser()[3],
+                "novus": parser.aroma_gold_freeze_dried_rozch_glass_jar_100gr_parser()[5],
+                "nash_kray": parser.aroma_gold_freeze_dried_rozch_glass_jar_100gr_parser()[7],
+                "fozzy": parser.aroma_gold_freeze_dried_rozch_glass_jar_100gr_parser()[8]
+            }},
+
+            {'aroma_gold_freeze_dried_rozch_glass_jar_200gr': {
+                "silpo": parser.aroma_gold_freeze_dried_rozch_glass_jar_200gr_parser()[3]
+            }},
+
+            {'maccoffee_arabica_rozch_glass_jar_120gr': {
+                "silpo": parser.maccoffee_arabica_rozch_glass_jar_120gr_parser()[3],
+                "ashan": parser.maccoffee_arabica_rozch_glass_jar_120gr_parser()[4],
+                "novus": parser.maccoffee_arabica_rozch_glass_jar_120gr_parser()[5],
+                "metro": parser.maccoffee_arabica_rozch_glass_jar_120gr_parser()[6]
+            }},
+
 
         ]
 
@@ -4609,8 +4694,8 @@ def price_parcing(batch_name: str):
 # price_parcing("all_products_names_batch_4")
 # price_parcing("all_products_names_batch_5")
 # price_parcing("all_products_names_batch_6")
-price_parcing("all_products_names_batch_7")
-#price_parcing("all_products_names_batch_8")
+#price_parcing("all_products_names_batch_7")
+price_parcing("all_products_names_batch_8")
 
 
 def prepeare_json_data(path:str):
@@ -4631,7 +4716,7 @@ def merging_jsons():
     data_5 = prepeare_json_data(batch_5_path)
     data_6 = prepeare_json_data(batch_6_path)
     data_7 = prepeare_json_data(batch_7_path)
-    #data_8 = prepeare_json_data(batch_8_path)
+    data_8 = prepeare_json_data(batch_8_path)
 
     df1 = pd.DataFrame([data_1])
     df2 = pd.DataFrame([data_2])
@@ -4640,9 +4725,9 @@ def merging_jsons():
     df5 = pd.DataFrame([data_5])
     df6 = pd.DataFrame([data_6])
     df7 = pd.DataFrame([data_7])
-    #df8 = pd.DataFrame([data_8])
+    df8 = pd.DataFrame([data_8])
 
-    merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7], axis=1)
+    merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8], axis=1)
 
     merged_contents.to_json('../overall_prices.json', orient='records')
 

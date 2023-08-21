@@ -1533,6 +1533,36 @@ class ContextSupervisor:
             result = self.getting_prices('ambassador_premium_rozch_pack_50gr', get_ambassador_premium_rozch_pack_50gr)
         elif nn_respond == AMBASSADOR_PREMIUM_PACK_100GR:
             result = self.getting_prices('ambassador_premium_rozch_pack_100gr', get_ambassador_premium_rozch_pack_100gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_250GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_250gr', get_ambassador_premium_rozch_pack_250gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_170GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_170gr', get_ambassador_premium_rozch_pack_170gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_400GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_400gr', get_ambassador_premium_rozch_pack_400gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_PACK_500GR:
+            result = self.getting_prices('ambassador_premium_rozch_pack_500gr', get_ambassador_premium_rozch_pack_500gr)
+        elif nn_respond == AMBASSADOR_PREMIUM_JAR_GLASS_190GR:
+            result = self.getting_prices('ambassador_premium_rozch_glass_190gr', get_ambassador_premium_rozch_glass_190gr)
+        elif nn_respond == CHORNA_CARTA_GOLD_200GR:
+            result = self.getting_prices('chorna_carta_gold_rozch_pack_200gr', get_chorna_carta_gold_rozch_pack_200gr)
+        elif nn_respond == CHORNA_CARTA_GOLD_100GR:
+            result = self.getting_prices('chorna_carta_gold_rozch_pack_100gr', get_chorna_carta_gold_rozch_pack_100gr)
+        elif nn_respond == TCHIBO_GOLD_SELECTION_GLASS_JAR_50GR:
+            result = self.getting_prices('tchibo_gold_selection_rozch_glass_jar_50gr', get_tchibo_gold_selection_rozch_glass_jar_50gr)
+        elif nn_respond == TCHIBO_GOLD_SELECTION_GLASS_JAR_100GR:
+            result = self.getting_prices('tchibo_gold_selection_rozch_glass_jar_100gr', get_tchibo_gold_selection_rozch_glass_jar_100gr)
+        elif nn_respond == TCHIBO_GOLD_SELECTION_GLASS_JAR_200GR:
+            result = self.getting_prices('tchibo_gold_selection_rozch_glass_jar_200gr', get_tchibo_gold_selection_rozch_glass_jar_200gr)
+        elif nn_respond == TCHIBO_EXCLUSIVE_GLASS_JAR_200GR:
+            result = self.getting_prices('tchibo_exclusive_rozch_glass_jar_200gr', get_tchibo_exclusive_rozch_glass_jar_200gr)
+        elif nn_respond == AROMA_GOLD_ROZCH_DECAFF_GLASS_JAR_100GR:
+            result = self.getting_prices('aroma_gold_decaff_rozch_glass_jar_100gr', get_aroma_gold_decaff_rozch_glass_jar_100gr)
+        elif nn_respond == AROMA_GOLD_ROZCH_FREEZE_DRIED_GLASS_JAR_100GR:
+            result = self.getting_prices('aroma_gold_freeze_dried_rozch_glass_jar_100gr', get_aroma_gold_freeze_dried_rozch_glass_jar_100gr)
+        elif nn_respond == AROMA_GOLD_ROZCH_FREEZE_DRIED_GLASS_JAR_200GR:
+            result = self.getting_prices('aroma_gold_freeze_dried_rozch_glass_jar_200gr', get_aroma_gold_freeze_dried_rozch_glass_jar_200gr)
+        elif nn_respond == MACCOFFEE_ARABICA_ROZCH_PACK_120GR:
+            result = self.getting_prices('maccoffee_arabica_rozch_glass_jar_120gr', get_maccoffee_arabica_rozch_glass_jar_120gr)
 
 
         # тут подключаются блюда

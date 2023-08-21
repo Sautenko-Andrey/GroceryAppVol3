@@ -1821,6 +1821,51 @@ get_ambassador_premium_rozch_pack_50gr = tag.create_tag(ItemsPicsFromNet, 602)
 '''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 100 г"'''
 get_ambassador_premium_rozch_pack_100gr = tag.create_tag(ItemsPicsFromNet, 603)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 250 г"'''
+get_ambassador_premium_rozch_pack_250gr = tag.create_tag(ItemsPicsFromNet, 604)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 170 г"'''
+get_ambassador_premium_rozch_pack_170gr = tag.create_tag(ItemsPicsFromNet, 605)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 400 г"'''
+get_ambassador_premium_rozch_pack_400gr = tag.create_tag(ItemsPicsFromNet, 606)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium 500 г"'''
+get_ambassador_premium_rozch_pack_500gr = tag.create_tag(ItemsPicsFromNet, 607)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Ambassador Premium с/б 190 г"'''
+get_ambassador_premium_rozch_glass_190gr = tag.create_tag(ItemsPicsFromNet, 608)
+
+'''Тэг,возвращающий информацию о "Кава розчинна «Чорна карта» Gold 200 г"'''
+get_chorna_carta_gold_rozch_pack_200gr = tag.create_tag(ItemsPicsFromNet, 609)
+
+'''Тэг,возвращающий информацию о "Кава розчинна «Чорна карта» Gold 100 г"'''
+get_chorna_carta_gold_rozch_pack_100gr = tag.create_tag(ItemsPicsFromNet, 610)
+
+'''Тэг,возвращающий информацию о "Кава Tchibo Gold Selection с/б 50 г"'''
+get_tchibo_gold_selection_rozch_glass_jar_50gr = tag.create_tag(ItemsPicsFromNet, 611)
+
+'''Тэг,возвращающий информацию о "Кава Tchibo Gold Selection с/б 100 г"'''
+get_tchibo_gold_selection_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 612)
+
+'''Тэг,возвращающий информацию о "Кава Tchibo Gold Selection с/б 200 г"'''
+get_tchibo_gold_selection_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 613)
+
+'''Тэг,возвращающий информацию о "Кава Tchibo Exclusive с/б 200 г"'''
+get_tchibo_exclusive_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 614)
+
+'''Тэг,возвращающий информацию о "Кава Aroma Gold без кофеїну розчинна 100 г"'''
+get_aroma_gold_decaff_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 615)
+
+'''Тэг,возвращающий информацию о "Кава Aroma Gold Freeze-dried розчинна 100 г"'''
+get_aroma_gold_freeze_dried_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 616)
+
+'''Тэг,возвращающий информацию о "Кава Aroma Gold Freeze-dried розчинна 200 г"'''
+get_aroma_gold_freeze_dried_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 617)
+
+'''Тэг,возвращающий информацию о "Кава розчинна MacCoffee Arabica натуральна сублімована 120 г"'''
+get_maccoffee_arabica_rozch_glass_jar_120gr = tag.create_tag(ItemsPicsFromNet, 618)
+
 
 
 # @register.simple_tag()

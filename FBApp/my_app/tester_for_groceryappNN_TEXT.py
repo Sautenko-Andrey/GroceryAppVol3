@@ -1267,3 +1267,33 @@ class TesterForGroceryAppText:
             return AMBASSADOR_PREMIUM_PACK_50GR
         elif np.argmax(result) == 599:
             return AMBASSADOR_PREMIUM_PACK_100GR
+        elif np.argmax(result) == 600:
+            return AMBASSADOR_PREMIUM_PACK_250GR
+        elif np.argmax(result) == 601:
+            return AMBASSADOR_PREMIUM_PACK_170GR
+        elif np.argmax(result) == 602:
+            return AMBASSADOR_PREMIUM_PACK_400GR
+        elif np.argmax(result) == 603:
+            return AMBASSADOR_PREMIUM_PACK_500GR
+        elif np.argmax(result) == 604:
+            return AMBASSADOR_PREMIUM_JAR_GLASS_190GR
+        elif np.argmax(result) == 605:
+            return CHORNA_CARTA_GOLD_200GR
+        elif np.argmax(result) == 606:
+            return CHORNA_CARTA_GOLD_100GR
+        elif np.argmax(result) == 607:
+            return TCHIBO_GOLD_SELECTION_GLASS_JAR_50GR
+        elif np.argmax(result) == 608:
+            return TCHIBO_GOLD_SELECTION_GLASS_JAR_100GR
+        elif np.argmax(result) == 609:
+            return TCHIBO_GOLD_SELECTION_GLASS_JAR_200GR
+        elif np.argmax(result) == 610:
+            return TCHIBO_EXCLUSIVE_GLASS_JAR_200GR
+        elif np.argmax(result) == 611:
+            return AROMA_GOLD_ROZCH_DECAFF_GLASS_JAR_100GR
+        elif np.argmax(result) == 612:
+            return AROMA_GOLD_ROZCH_FREEZE_DRIED_GLASS_JAR_100GR
+        elif np.argmax(result) == 613:
+            return AROMA_GOLD_ROZCH_FREEZE_DRIED_GLASS_JAR_200GR
+        elif np.argmax(result) == 614:
+            return MACCOFFEE_ARABICA_ROZCH_PACK_120GR
