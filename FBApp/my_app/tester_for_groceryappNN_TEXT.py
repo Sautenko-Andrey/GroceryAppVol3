@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2400
+    MAX_WORDS = 2450
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1297,3 +1297,29 @@ class TesterForGroceryAppText:
             return AROMA_GOLD_ROZCH_FREEZE_DRIED_GLASS_JAR_200GR
         elif np.argmax(result) == 614:
             return MACCOFFEE_ARABICA_ROZCH_PACK_120GR
+        elif np.argmax(result) == 615:
+            return MAXWELL_HOUSE_INSTANT_MILD_BLEND_ROZCH_GLASS_JAR_100GR
+        elif np.argmax(result) == 616:
+            return MAXWELL_HOUSE_INSTANT_MILD_BLEND_ROZCH_GLASS_JAR_200GR
+        elif np.argmax(result) == 617:
+            return DALLMAYR_GOLD_ROZCH_GLASS_JAR_100GR
+        elif np.argmax(result) == 618:
+            return DALLMAYR_GOLD_ROZCH_GLASS_JAR_200GR
+        elif np.argmax(result) == 619:
+            return AROMA_PLATINUM_ROZCH_FREEZE_DRIED_GLASS_JAR_200GR
+        elif np.argmax(result) == 620:
+            return AROMA_PLATINUM_ROZCH_FREEZE_DRIED_GLASS_JAR_100GR
+        elif np.argmax(result) == 621:
+            return BEANIES_MINCE_PIE_ROZCH_GLASS_JAR_50GR
+        elif np.argmax(result) == 622:
+            return BEANIES_CRISTMAS_PUDDING_ROZCH_GLASS_JAR_50GR
+        elif np.argmax(result) == 623:
+            return BEANIES_DOUBLE_CHOCOLATE_ROZCH_GLASS_JAR_50GR
+        elif np.argmax(result) == 624:
+            return BEANIES_CINDER_TOFFEE_ROZCH_GLASS_JAR_50GR
+        elif np.argmax(result) == 625:
+            return BUSHIDO_KODO_ROZCH_GLASS_JAR_95GR
+        elif np.argmax(result) == 626:
+            return DAVIDOFF_RICH_AROMA_ROZCH_GLASS_JAR_100GR
+        elif np.argmax(result) == 627:
+            return DAVIDOFF_FINE_AROMA_ROZCH_GLASS_JAR_100GR

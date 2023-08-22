@@ -1563,6 +1563,32 @@ class ContextSupervisor:
             result = self.getting_prices('aroma_gold_freeze_dried_rozch_glass_jar_200gr', get_aroma_gold_freeze_dried_rozch_glass_jar_200gr)
         elif nn_respond == MACCOFFEE_ARABICA_ROZCH_PACK_120GR:
             result = self.getting_prices('maccoffee_arabica_rozch_glass_jar_120gr', get_maccoffee_arabica_rozch_glass_jar_120gr)
+        elif nn_respond == MAXWELL_HOUSE_INSTANT_MILD_BLEND_ROZCH_GLASS_JAR_100GR:
+            result = self.getting_prices('maxwell_house_instant_mild_blend_rozch_glass_jar_100gr', get_maxwell_house_instant_mild_blend_rozch_glass_jar_100gr)
+        elif nn_respond == MAXWELL_HOUSE_INSTANT_MILD_BLEND_ROZCH_GLASS_JAR_200GR:
+            result = self.getting_prices('maxwell_house_instant_mild_blend_rozch_glass_jar_200gr', get_maxwell_house_instant_mild_blend_rozch_glass_jar_200gr)
+        elif nn_respond == DALLMAYR_GOLD_ROZCH_GLASS_JAR_100GR:
+            result = self.getting_prices('dallmayr_gold_rozch_glass_jar_100gr', get_dallmayr_gold_rozch_glass_jar_100gr)
+        elif nn_respond == DALLMAYR_GOLD_ROZCH_GLASS_JAR_200GR:
+            result = self.getting_prices('dallmayr_gold_rozch_glass_jar_200gr', get_dallmayr_gold_rozch_glass_jar_200gr)
+        elif nn_respond == AROMA_PLATINUM_ROZCH_FREEZE_DRIED_GLASS_JAR_200GR:
+            result = self.getting_prices('aroma_platinum_fr_dr_rozch_glass_jar_200gr', get_aroma_platinum_fr_dr_rozch_glass_jar_200gr)
+        elif nn_respond == AROMA_PLATINUM_ROZCH_FREEZE_DRIED_GLASS_JAR_100GR:
+            result = self.getting_prices('aroma_platinum_fr_dr_rozch_glass_jar_100gr', get_aroma_platinum_fr_dr_rozch_glass_jar_100gr)
+        elif nn_respond == BEANIES_MINCE_PIE_ROZCH_GLASS_JAR_50GR:
+            result = self.getting_prices('beanies_mince_pie_rozch_glass_jar_50gr', get_beanies_mince_pie_rozch_glass_jar_50gr)
+        elif nn_respond == BEANIES_CRISTMAS_PUDDING_ROZCH_GLASS_JAR_50GR:
+            result = self.getting_prices('beanies_cristmas_pudding_rozch_glass_jar_50gr', get_beanies_cristmas_pudding_rozch_glass_jar_50gr)
+        elif nn_respond == BEANIES_DOUBLE_CHOCOLATE_ROZCH_GLASS_JAR_50GR:
+            result = self.getting_prices('beanies_double_chocolate_rozch_glass_jar_50gr', get_beanies_double_chocolate_rozch_glass_jar_50gr)
+        elif nn_respond == BEANIES_CINDER_TOFFEE_ROZCH_GLASS_JAR_50GR:
+            result = self.getting_prices('beanies_cinder_toffee_rozch_glass_jar_50gr', get_beanies_cinder_toffee_rozch_glass_jar_50gr)
+        elif nn_respond == BUSHIDO_KODO_ROZCH_GLASS_JAR_95GR:
+            result = self.getting_prices('bushido_kodo_rozch_glass_jar_95gr', get_bushido_kodo_rozch_glass_jar_95gr)
+        elif nn_respond == DAVIDOFF_RICH_AROMA_ROZCH_GLASS_JAR_100GR:
+            result = self.getting_prices('davidoff_rich_aroma_rozch_glass_jar_100gr', get_davidoff_rich_aroma_rozch_glass_jar_100gr)
+        elif nn_respond == DAVIDOFF_FINE_AROMA_ROZCH_GLASS_JAR_100GR:
+            result = self.getting_prices('davidoff_fine_aroma_rozch_glass_jar_100gr',get_davidoff_fine_aroma_rozch_glass_jar_100gr)
 
 
         # тут подключаются блюда

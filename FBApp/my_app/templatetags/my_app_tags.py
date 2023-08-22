@@ -1866,7 +1866,44 @@ get_aroma_gold_freeze_dried_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFrom
 '''Тэг,возвращающий информацию о "Кава розчинна MacCoffee Arabica натуральна сублімована 120 г"'''
 get_maccoffee_arabica_rozch_glass_jar_120gr = tag.create_tag(ItemsPicsFromNet, 618)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Maxwell House Instant Mild Blend 100 г"'''
+get_maxwell_house_instant_mild_blend_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 619)
 
+'''Тэг,возвращающий информацию о "Кава розчинна Maxwell House Instant Mild Blend 200 г"'''
+get_maxwell_house_instant_mild_blend_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 620)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Dallmayr Gold натуральна сублімована 100 г"'''
+get_dallmayr_gold_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 621)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Dallmayr Gold натуральна сублімована 200 г"'''
+get_dallmayr_gold_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 622)
+
+'''Тэг,возвращающий информацию о "Кава Aroma Platinum розчинна, 200г"'''
+get_aroma_platinum_fr_dr_rozch_glass_jar_200gr = tag.create_tag(ItemsPicsFromNet, 623)
+
+'''Тэг,возвращающий информацию о "Кава Aroma Platinum розчинна, 100г"'''
+get_aroma_platinum_fr_dr_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 624)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Beanies Mince Pie с/б, 50г"'''
+get_beanies_mince_pie_rozch_glass_jar_50gr = tag.create_tag(ItemsPicsFromNet, 625)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Beanies Christmas Pudding с/б, 50г"'''
+get_beanies_cristmas_pudding_rozch_glass_jar_50gr = tag.create_tag(ItemsPicsFromNet, 626)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Beanies Double Chocolate с/б, 50г"'''
+get_beanies_double_chocolate_rozch_glass_jar_50gr = tag.create_tag(ItemsPicsFromNet, 627)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Beanies Cinder Toffee с/б, 50г"'''
+get_beanies_cinder_toffee_rozch_glass_jar_50gr = tag.create_tag(ItemsPicsFromNet, 628)
+
+'''Тэг,возвращающий информацию о "Кава розчинна Bushido Kodo с/б, 95г"'''
+get_bushido_kodo_rozch_glass_jar_95gr = tag.create_tag(ItemsPicsFromNet, 629)
+
+'''Тэг,возвращающий информацию о "Кава Davidoff Rich Aroma, 100г"'''
+get_davidoff_rich_aroma_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 630)
+
+'''Тэг,возвращающий информацию о "Кава Davidoff Fine Aroma, 100г"'''
+get_davidoff_fine_aroma_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 631)
 
 # @register.simple_tag()
 # def get_obolon_premium():

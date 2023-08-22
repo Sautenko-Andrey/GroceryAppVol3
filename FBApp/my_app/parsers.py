@@ -5980,6 +5980,88 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/kava--08887290146135/'
         ])
 
+    def maxwell_house_instant_mild_blend_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава розчинна Maxwell House Instant Mild Blend 100 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-maxwell-house-instant-mild-blend-896113',
+            'https://fozzyshop.ua/kofe-rastvorimyj/102041-kofe-rastvorimyj-maxwell-house-instant-mild-blend-8711000516706.html'
+        ])
+
+    def maxwell_house_instant_mild_blend_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава розчинна Maxwell House Instant Mild Blend 200 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-maxwell-house-instant-mild-blend-896112',
+            'https://fozzyshop.ua/kofe-rastvorimyj/102044-kofe-rastvorimyj-maxwell-house-instant-mild-blend-8711000516881.html'
+        ])
+
+    def dallmayr_gold_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава розчинна Dallmayr Gold натуральна сублімована 100 г'''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/kava-rozchynna-dallmayr-gold-naturalna-sublimovana-923324'
+        ])
+
+    def dallmayr_gold_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава розчинна Dallmayr Gold натуральна сублімована 200 г'''
+        return self.prices_parsing([
+            'https://metro.zakaz.ua/uk/products/kava-dallmaier-200g--04008167270508/'
+        ])
+
+    def aroma_platinum_fr_dr_rozch_glass_jar_200gr_parser(self):
+        ''' Парсер для Кава Aroma Platinum розчинна, 200г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/97565-kofe-aroma-platinum-rastvorimyj-4771632310862.html'
+        ])
+
+    def aroma_platinum_fr_dr_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Aroma Platinum розчинна, 100г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/97564-kofe-aroma-platinum-rastvorimyj-4771632086019.html'
+        ])
+
+    def beanies_mince_pie_rozch_glass_jar_50gr_parser(self):
+        ''' Парсер для Кава розчинна Beanies Mince Pie с/б, 50г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/102046-kofe-rastvorimyj-beanies-mince-pie-s-b-5060169984264.html'
+        ])
+
+    def beanies_cristmas_pudding_rozch_glass_jar_50gr_parser(self):
+        ''' Парсер для Кава розчинна Beanies Christmas Pudding с/б, 50г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/102045-kofe-rastvorimyj-beanies-christmas-pudding-s-b-5060169982154.html'
+        ])
+
+    def beanies_double_chocolate_rozch_glass_jar_50gr_parser(self):
+        ''' Парсер для Кава розчинна Beanies Double Chocolate с/б, 50г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/73892-kofe-rastvorimyj-beanies-double-chocolate-s-b-5060169982031.html'
+        ])
+
+    def beanies_cinder_toffee_rozch_glass_jar_50gr_parser(self):
+        ''' Парсер для 	Кава розчинна Beanies Cinder Toffee с/б, 50г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/73891-kofe-rastvorimyj-beanies-cinder-toffee-s-b-5060169982116.html'
+        ])
+
+    def bushido_kodo_rozch_glass_jar_95gr_parser(self):
+        ''' Парсер для 	Кава розчинна Bushido Kodo с/б, 95г'''
+        return self.prices_parsing([
+            'https://fozzyshop.ua/kofe-rastvorimyj/90305-kofe-rastvorimyj-bushido-kodo-s-b-5060367340176.html'
+        ])
+
+    def davidoff_rich_aroma_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Davidoff Rich Aroma, 100г'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/kofe-rastvorimyj-davidoff-cafe-rich-aroma-100-g-503983/',
+            'https://novus.online/product/kava-rozcinna-davidoff-rich-aroma-sb-100g',
+            'https://fozzyshop.ua/kofe-rastvorimyj/3347-kofe-davidoff-rich-aroma-4006067084188.html'
+        ])
+
+    def davidoff_fine_aroma_rozch_glass_jar_100gr_parser(self):
+        ''' Парсер для Кава Davidoff Fine Aroma, 100г'''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/kofe-rastvorimyj-davidoff-cafe-fine-aroma-v-banke-100-g-503998/'
+        ])
+
 
 
 

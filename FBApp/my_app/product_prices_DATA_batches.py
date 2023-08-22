@@ -4678,6 +4678,62 @@ def price_parcing(batch_name: str):
                 "metro": parser.maccoffee_arabica_rozch_glass_jar_120gr_parser()[6]
             }},
 
+            {'maxwell_house_instant_mild_blend_rozch_glass_jar_100gr': {
+                "silpo": parser.maxwell_house_instant_mild_blend_rozch_glass_jar_100gr_parser()[3],
+                "fozzy": parser.maxwell_house_instant_mild_blend_rozch_glass_jar_100gr_parser()[8]
+            }},
+
+            {'maxwell_house_instant_mild_blend_rozch_glass_jar_200gr': {
+                "silpo": parser.maxwell_house_instant_mild_blend_rozch_glass_jar_200gr_parser()[3],
+                "fozzy": parser.maxwell_house_instant_mild_blend_rozch_glass_jar_200gr_parser()[8]
+            }},
+
+            {'dallmayr_gold_rozch_glass_jar_100gr': {
+                "silpo": parser.dallmayr_gold_rozch_glass_jar_100gr_parser()[3]
+            }},
+
+            {'dallmayr_gold_rozch_glass_jar_200gr': {
+                "metro": parser.dallmayr_gold_rozch_glass_jar_200gr_parser()[6]
+            }},
+
+            {'aroma_platinum_fr_dr_rozch_glass_jar_200gr': {
+                "fozzy": parser.aroma_platinum_fr_dr_rozch_glass_jar_200gr_parser()[8]
+            }},
+
+            {'aroma_platinum_fr_dr_rozch_glass_jar_100gr': {
+                "fozzy": parser.aroma_platinum_fr_dr_rozch_glass_jar_100gr_parser()[8]
+            }},
+
+            {'beanies_mince_pie_rozch_glass_jar_50gr': {
+                "fozzy": parser.beanies_mince_pie_rozch_glass_jar_50gr_parser()[8]
+            }},
+
+            {'beanies_cristmas_pudding_rozch_glass_jar_50gr': {
+                "fozzy": parser.beanies_cristmas_pudding_rozch_glass_jar_50gr_parser()[8]
+            }},
+
+            {'beanies_double_chocolate_rozch_glass_jar_50gr': {
+                "fozzy": parser.beanies_double_chocolate_rozch_glass_jar_50gr_parser()[8]
+            }},
+
+            {'beanies_cinder_toffee_rozch_glass_jar_50gr': {
+                "fozzy": parser.beanies_cinder_toffee_rozch_glass_jar_50gr_parser()[8]
+            }},
+
+            {'bushido_kodo_rozch_glass_jar_95gr': {
+                "fozzy": parser.bushido_kodo_rozch_glass_jar_95gr_parser()[8]
+            }},
+
+            {'davidoff_rich_aroma_rozch_glass_jar_100gr': {
+                "ashan": parser.davidoff_rich_aroma_rozch_glass_jar_100gr_parser()[4],
+                "novus": parser.davidoff_rich_aroma_rozch_glass_jar_100gr_parser()[5],
+                "fozzy": parser.davidoff_rich_aroma_rozch_glass_jar_100gr_parser()[8]
+            }},
+
+            {'davidoff_fine_aroma_rozch_glass_jar_100gr': {
+                "ashan": parser.davidoff_fine_aroma_rozch_glass_jar_100gr_parser()[4]
+            }},
+
 
         ]
 
