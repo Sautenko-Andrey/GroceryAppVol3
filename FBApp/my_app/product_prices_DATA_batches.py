@@ -4734,6 +4734,87 @@ def price_parcing(batch_name: str):
                 "ashan": parser.davidoff_fine_aroma_rozch_glass_jar_100gr_parser()[4]
             }},
 
+            {'ahmad_tea_eng_breakf_black_pack_100gr': {
+                "silpo": parser.ahmad_tea_eng_breakf_black_pack_100gr_parser()[3]
+            }},
+
+            {'ahmad_tea_graf_grey_black_pack_100gr': {
+                "silpo": parser.ahmad_tea_graf_grey_black_pack_100gr_parser()[3]
+            }},
+
+            {'ahmad_tea_london_black_pack_100gr': {
+                "eko": parser.ahmad_tea_london_black_pack_100gr_parser()[1],
+                "varus": parser.ahmad_tea_london_black_pack_100gr_parser()[2],
+                "silpo": parser.ahmad_tea_london_black_pack_100gr_parser()[3]
+            }},
+
+            {'ahmad_tea_english_n1_black_pack_100gr': {
+                "eko": parser.ahmad_tea_english_n1_black_pack_100gr_parser()[1],
+                "varus": parser.ahmad_tea_english_n1_black_pack_100gr_parser()[2],
+                "silpo": parser.ahmad_tea_english_n1_black_pack_100gr_parser()[3]
+            }},
+
+            {'ahmad_tea_eng_breakf_black_pack_200gr': {
+                "eko": parser.ahmad_tea_eng_breakf_black_pack_200gr_parser()[1],
+                "silpo": parser.ahmad_tea_eng_breakf_black_pack_200gr_parser()[3],
+                "fozzy": parser.ahmad_tea_eng_breakf_black_pack_200gr_parser()[8]
+            }},
+
+            {'ahmad_tea_graf_grey_black_pack_200gr': {
+                "eko": parser.ahmad_tea_graf_grey_black_pack_200gr_parser()[1],
+                "silpo": parser.ahmad_tea_graf_grey_black_pack_200gr_parser()[3],
+                "novus": parser.ahmad_tea_graf_grey_black_pack_200gr_parser()[5],
+                "fozzy": parser.ahmad_tea_graf_grey_black_pack_200gr_parser()[8]
+            }},
+
+            {'ahmad_tea_london_black_pack_100pk': {
+                "eko": parser.ahmad_tea_london_black_pack_100pk_parser()[1],
+                "varus": parser.ahmad_tea_london_black_pack_100pk_parser()[2],
+                "silpo": parser.ahmad_tea_london_black_pack_100pk_parser()[3],
+                "fozzy": parser.ahmad_tea_london_black_pack_100pk_parser()[8]
+            }},
+
+            {'ahmad_tea_graf_grey_black_pack_40pk': {
+                "silpo": parser.ahmad_tea_graf_grey_black_pack_40pk_parser()[3]
+            }},
+
+            {'ahmad_tea_london_black_pack_25pk': {
+                "eko": parser.ahmad_tea_london_black_pack_25pk_parser()[1],
+                "varus": parser.ahmad_tea_london_black_pack_25pk_parser()[2],
+                "silpo": parser.ahmad_tea_london_black_pack_25pk_parser()[3]
+            }},
+
+            {'ahmad_tea_lavanda_bergamot_black_pack_20pk': {
+                "silpo": parser.ahmad_tea_lavanda_bergamot_black_pack_20pk_parser()[3]
+            }},
+
+            {'ahmad_tea_eng_breakf_black_pack_25pk': {
+                "eko": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[1],
+                "varus": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[2],
+                "silpo": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[3],
+                "ashan": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[4],
+                "novus": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[5],
+                "fozzy": parser.ahmad_tea_eng_breakf_black_pack_25pk_parser()[8]
+            }},
+
+            {'ahmad_tea_english_n1_black_pack_25pk': {
+                "eko": parser.ahmad_tea_english_n1_black_pack_25pk_parser()[1],
+                "varus": parser.ahmad_tea_english_n1_black_pack_25pk_parser()[2],
+                "silpo": parser.ahmad_tea_english_n1_black_pack_25pk_parser()[3],
+                "novus": parser.ahmad_tea_english_n1_black_pack_25pk_parser()[5],
+                "fozzy": parser.ahmad_tea_english_n1_black_pack_25pk_parser()[8]
+            }},
+
+            {'ahmad_tea_graf_grey_black_pack_25pk': {
+                "silpo": parser.ahmad_tea_graf_grey_black_pack_25pk_parser()[3],
+                "fozzy": parser.ahmad_tea_graf_grey_black_pack_25pk_parser()[8]
+            }},
+             {'ahmad_tea_london_black_pack_40pk': {
+                "eko": parser.ahmad_tea_london_black_pack_40pk_parser()[1],
+                "silpo": parser.ahmad_tea_london_black_pack_40pk_parser()[3],
+                "fozzy": parser.ahmad_tea_london_black_pack_40pk_parser()[8]
+            }},
+
 
         ]
 

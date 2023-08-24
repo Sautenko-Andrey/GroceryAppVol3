@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2450
+    MAX_WORDS = 2500
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1323,3 +1323,31 @@ class TesterForGroceryAppText:
             return DAVIDOFF_RICH_AROMA_ROZCH_GLASS_JAR_100GR
         elif np.argmax(result) == 627:
             return DAVIDOFF_FINE_AROMA_ROZCH_GLASS_JAR_100GR
+        elif np.argmax(result) == 628:
+            return AHMAD_TEA_ENG_BREAKF_BLACK_PACK_100GR
+        elif np.argmax(result) == 629:
+            return AHMAD_TEA_GRAF_GREY_BLACK_PACK_100GR
+        elif np.argmax(result) == 630:
+            return AHMAD_TEA_LONDON_BLACK_PACK_100GR
+        elif np.argmax(result) == 631:
+            return AHMAD_TEA_ENG_N1_BLACK_PACK_100GR
+        elif np.argmax(result) == 632:
+            return AHMAD_TEA_ENG_BREAKF_BLACK_PACK_200GR
+        elif np.argmax(result) == 633:
+            return AHMAD_TEA_GRAF_GREY_BLACK_PACK_200GR
+        elif np.argmax(result) == 634:
+            return AHMAD_TEA_LONDON_BLACK_PACK_100PK
+        elif np.argmax(result) == 635:
+            return AHMAD_TEA_GRAF_GREY_BLACK_PACK_40PK
+        elif np.argmax(result) == 636:
+            return AHMAD_TEA_LONDON_BLACK_PACK_25PK
+        elif np.argmax(result) == 637:
+            return AHMAD_TEA_LAVANDA_BERGAMOT_BLACK_PACK_20PK
+        elif np.argmax(result) == 638:
+            return AHMAD_TEA_ENG_BREAKF_BLACK_PACK_25PK
+        elif np.argmax(result) == 639:
+            return AHMAD_TEA_ENG_N1_BLACK_PACK_25PK
+        elif np.argmax(result) == 640:
+            return AHMAD_TEA_GRAF_GREY_BLACK_PACK_25PK
+        elif np.argmax(result) == 641:
+            return AHMAD_TEA_LONDON_BLACK_PACK_40PK

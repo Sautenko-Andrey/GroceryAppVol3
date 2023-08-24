@@ -6062,6 +6062,115 @@ class ProductParserVol2:
             'https://auchan.ua/ua/kofe-rastvorimyj-davidoff-cafe-fine-aroma-v-banke-100-g-503998/'
         ])
 
+    def ahmad_tea_eng_breakf_black_pack_100gr_parser(self):
+        ''' Чай Ahmad tea «Англійський до сніданку» чорний 100 г лістовий '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-do-snidanku-15186',
+        ])
+
+    def ahmad_tea_graf_grey_black_pack_100gr_parser(self):
+        ''' Чай Ahmad tea «Граф Грей» чорний 100 г лістовий '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-ahmad-tea-graf-grei-31345'
+        ])
+
+    def ahmad_tea_london_black_pack_100gr_parser(self):
+        ''' Чай Ahmad tea «Лондон» чорний 100 г лістовий '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-100g--00054881025140/',
+            'https://varus.ua/chay-ahmad-tea-london-chernyy-melkolistnyy-100-g',
+            'https://shop.silpo.ua/product/chai-chornyi-ahmad-tea-london-905492'
+        ])
+
+    def ahmad_tea_english_n1_black_pack_100gr_parser(self):
+        ''' Чай Ahmad tea «Англійський №1» чорний 100 г лістовий '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai--00054881006293/',
+            'https://varus.ua/chay-ahmad-tea-no-1-chorniy-z-bergamotom-100g',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-1-17524'
+        ])
+
+    def ahmad_tea_eng_breakf_black_pack_200gr_parser(self):
+        ''' Чай Ahmad tea «Англійський до сніданку» чорний 200 г лістовий '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-200g--00054881001434/',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-snidanok-138346',
+            'https://fozzyshop.ua/chaj-rassypnoj/3866-chaj-ahmad-tea-anglijskij-zavtrak-0054881001434.html'
+        ])
+
+    def ahmad_tea_graf_grey_black_pack_200gr_parser(self):
+        ''' 	Чай Ahmad tea «Граф Грей» 200 г чорний листовий '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-200g--00054881001410/',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-graf-grei-100419',
+            'https://novus.online/product/caj-cornij-listovij-ahmad-earl-grey-200g',
+            'https://fozzyshop.ua/chaj-rassypnoj/3833-chaj-ahmad-tea-graf-grej-0054881001410.html'
+        ])
+
+    def ahmad_tea_london_black_pack_100pk_parser(self):
+        ''' Чай чорний Ahmad Tea «Лондон» байховий пакетований 100 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-200g-ukrayina--00054881025164/',
+            'https://varus.ua/chaj-ahmad-tea-london-chernyj-100-2g',
+            'https://shop.silpo.ua/product/chai-chornyi-ahmad-tea-london-baikhovyi-879805',
+            'https://fozzyshop.ua/chaj-rassypnoj/95812-chaj-chernyj-ahmad-tea-london-bajkhovyj-0250014448569.html'
+        ])
+
+    def ahmad_tea_graf_grey_black_pack_40pk_parser(self):
+        ''' Чай Ahmad tea «Граф Грей» чорний пакетований 40 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-ahmad-tea-graf-grei-32330'
+        ])
+
+    def ahmad_tea_london_black_pack_25pk_parser(self):
+        ''' Чай чорний Ahmad Tea «Лондон» байховий чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad--00054881024969/',
+            'https://varus.ua/chaj-ahmad-tea-london-chernyj-25-2g',
+            'https://shop.silpo.ua/product/chai-chornyi-ahmad-tea-london-baikhovyi-879803'
+        ])
+
+    def ahmad_tea_lavanda_bergamot_black_pack_20pk_parser(self):
+        ''' Чай чорний Ahmad tea з лавандою і бергамотом пакетований 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-ahmad-tea-z-lavandoiu-i-bergamotom-dribnyi-781459'
+        ])
+
+    def ahmad_tea_eng_breakf_black_pack_25pk_parser(self):
+        ''' Чай Ahmad tea Англійський сніданок чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-50g--00054881005906/',
+            'https://varus.ua/chay-ahmad-english-breakfast-chorniy-25-paketik-v-po-2g',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-snidanok-17530',
+            'https://auchan.ua/ua/chaj-chernyj-ahmad-tea-english-breakfast-25-sht-516815/',
+            'https://novus.online/product/caj-cornij-ahmad-anglijskij-do-snidanku-paket-za-2g25st',
+            'https://fozzyshop.ua/chaj-v-paketikakh/3837-chaj-ahmad-tea-anglijskij-k-zavtraku-0054881005906.html'
+        ])
+
+    def ahmad_tea_english_n1_black_pack_25pk_parser(self):
+        ''' Чай Ahmad tea «Англійський» №1 чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-50g--00054881005999/',
+            'https://varus.ua/chaj-ahmad-english-tea-1-chornij-25-paketiv-po-2-g',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-1-z-nytkoiu-33196',
+            'https://novus.online/product/caj-cornij-ahmad-anglijskij-no1-paket-za-2g25st',
+            'https://fozzyshop.ua/chaj-v-paketikakh/3867-chaj-ahmad-tea-anglijskij-1-s-nitkoj-0054881005999.html'
+        ])
+
+    def ahmad_tea_graf_grey_black_pack_25pk_parser(self):
+        ''' Чай Ahmad tea «Граф Грей» чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-ahmad-tea-graf-grei-27857',
+            'https://fozzyshop.ua/chaj-v-paketikakh/3862-chaj-ahmad-tea-graf-grej-0054881009690.html'
+        ])
+
+    def ahmad_tea_london_black_pack_40pk_parser(self):
+        ''' Чай чорний Ahmad Tea «Лондон» пакетований 40 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-80g-ukrayina--00054881024976/',
+            'https://shop.silpo.ua/product/chai-chornyi-ahmad-tea-london-baikhovyi-879804',
+            'https://fozzyshop.ua/chaj-rassypnoj/95814-chaj-chernyj-ahmad-tea-london-bajkhovyj-0250014448552.html'
+        ])
 
 
 

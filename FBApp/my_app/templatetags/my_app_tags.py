@@ -1905,6 +1905,49 @@ get_davidoff_rich_aroma_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet,
 '''Тэг,возвращающий информацию о "Кава Davidoff Fine Aroma, 100г"'''
 get_davidoff_fine_aroma_rozch_glass_jar_100gr = tag.create_tag(ItemsPicsFromNet, 631)
 
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Англійський до сніданку» чорний 100 г"'''
+get_ahmad_tea_eng_breakf_black_pack_100gr = tag.create_tag(ItemsPicsFromNet, 632)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Граф Грей» чорний лістовий 100 г"'''
+get_ahmad_tea_graf_grey_black_pack_100gr = tag.create_tag(ItemsPicsFromNet, 633)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Лондон» чорний лістовий 100 г"'''
+get_ahmad_tea_london_black_pack_100gr = tag.create_tag(ItemsPicsFromNet, 634)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Англійський» №1 чорний листовой 100 г"'''
+get_ahmad_tea_eng_n1_black_pack_100gr = tag.create_tag(ItemsPicsFromNet, 635)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Англійський до сніданку» чорний 200 г"'''
+get_ahmad_tea_eng_breakf_black_pack_200gr = tag.create_tag(ItemsPicsFromNet, 636)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Граф Грей» 200 г чорний листовий"'''
+get_ahmad_tea_graf_grey_black_pack_200gr = tag.create_tag(ItemsPicsFromNet, 637)
+
+'''Тэг,возвращающий информацию о "Чай чорний Ahmad Tea «Лондон» байховий пакетований 100 шт"'''
+get_ahmad_tea_london_black_pack_100pk = tag.create_tag(ItemsPicsFromNet, 638)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Граф Грей» чорний пакетований 40 шт"'''
+get_ahmad_tea_graf_grey_black_pack_40pk = tag.create_tag(ItemsPicsFromNet, 639)
+
+'''Тэг,возвращающий информацию о "Чай чорний Ahmad Tea «Лондон» байховий чорний пакетований 25 шт"'''
+get_ahmad_tea_london_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 640)
+
+'''Тэг,возвращающий информацию о "	Чай чорний Ahmad tea з лавандою і бергамотом пакетований 20 шт"'''
+get_ahmad_tea_lavanda_bergamot_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 641)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea Англійський сніданок чорний пакетований 25 шт"'''
+get_ahmad_tea_eng_breakf_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 642)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Англійський» №1 чорний пакетований 25 шт"'''
+get_ahmad_tea_english_n1_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 643)
+
+'''Тэг,возвращающий информацию о "Чай Ahmad tea «Граф Грей» чорний пакетований 25 шт"'''
+get_ahmad_tea_graf_grey_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 644)
+
+'''Тэг,возвращающий информацию о "Чай чорний Ahmad Tea «Лондон» байховий чорний пакетований 40 шт"'''
+get_ahmad_tea_london_black_pack_40pk = tag.create_tag(ItemsPicsFromNet, 645)
+
+
 # @register.simple_tag()
 # def get_obolon_premium():
 #     '''Тэг, возвращающий информацию о пиве "Оболонь Прмиум 1,1 л из БД"'''

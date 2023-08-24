@@ -1589,6 +1589,34 @@ class ContextSupervisor:
             result = self.getting_prices('davidoff_rich_aroma_rozch_glass_jar_100gr', get_davidoff_rich_aroma_rozch_glass_jar_100gr)
         elif nn_respond == DAVIDOFF_FINE_AROMA_ROZCH_GLASS_JAR_100GR:
             result = self.getting_prices('davidoff_fine_aroma_rozch_glass_jar_100gr',get_davidoff_fine_aroma_rozch_glass_jar_100gr)
+        elif nn_respond == AHMAD_TEA_ENG_BREAKF_BLACK_PACK_100GR:
+            result = self.getting_prices('ahmad_tea_eng_breakf_black_pack_100gr',get_ahmad_tea_eng_breakf_black_pack_100gr)
+        elif nn_respond == AHMAD_TEA_GRAF_GREY_BLACK_PACK_100GR:
+            result = self.getting_prices('ahmad_tea_graf_grey_black_pack_100gr',get_ahmad_tea_graf_grey_black_pack_100gr)
+        elif nn_respond == AHMAD_TEA_LONDON_BLACK_PACK_100GR:
+            result = self.getting_prices('ahmad_tea_london_black_pack_100gr',get_ahmad_tea_london_black_pack_100gr)
+        elif nn_respond == AHMAD_TEA_ENG_N1_BLACK_PACK_100GR:
+            result = self.getting_prices('ahmad_tea_english_n1_black_pack_100gr',get_ahmad_tea_eng_n1_black_pack_100gr)
+        elif nn_respond == AHMAD_TEA_ENG_BREAKF_BLACK_PACK_200GR:
+            result = self.getting_prices('ahmad_tea_eng_breakf_black_pack_200gr',get_ahmad_tea_eng_breakf_black_pack_200gr)
+        elif nn_respond == AHMAD_TEA_GRAF_GREY_BLACK_PACK_200GR:
+            result = self.getting_prices('ahmad_tea_graf_grey_black_pack_200gr',get_ahmad_tea_graf_grey_black_pack_200gr)
+        elif nn_respond == AHMAD_TEA_LONDON_BLACK_PACK_100PK:
+            result = self.getting_prices('ahmad_tea_london_black_pack_100pk',get_ahmad_tea_london_black_pack_100pk)
+        elif nn_respond == AHMAD_TEA_GRAF_GREY_BLACK_PACK_40PK:
+            result = self.getting_prices('ahmad_tea_graf_grey_black_pack_40pk',get_ahmad_tea_graf_grey_black_pack_40pk)
+        elif nn_respond == AHMAD_TEA_LONDON_BLACK_PACK_25PK:
+            result = self.getting_prices('ahmad_tea_london_black_pack_25pk',get_ahmad_tea_london_black_pack_25pk)
+        elif nn_respond == AHMAD_TEA_LAVANDA_BERGAMOT_BLACK_PACK_20PK:
+            result = self.getting_prices('ahmad_tea_lavanda_bergamot_black_pack_20pk',get_ahmad_tea_lavanda_bergamot_black_pack_20pk)
+        elif nn_respond == AHMAD_TEA_ENG_BREAKF_BLACK_PACK_25PK:
+            result = self.getting_prices('ahmad_tea_eng_breakf_black_pack_25pk',get_ahmad_tea_eng_breakf_black_pack_25pk)
+        elif nn_respond == AHMAD_TEA_ENG_N1_BLACK_PACK_25PK:
+            result = self.getting_prices('ahmad_tea_english_n1_black_pack_25pk',get_ahmad_tea_english_n1_black_pack_25pk)
+        elif nn_respond == AHMAD_TEA_GRAF_GREY_BLACK_PACK_25PK:
+            result = self.getting_prices('ahmad_tea_graf_grey_black_pack_25pk',get_ahmad_tea_graf_grey_black_pack_25pk)
+        elif nn_respond == AHMAD_TEA_LONDON_BLACK_PACK_40PK:
+            result = self.getting_prices('ahmad_tea_london_black_pack_40pk',get_ahmad_tea_london_black_pack_40pk)
 
 
         # тут подключаются блюда
