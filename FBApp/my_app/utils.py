@@ -1617,6 +1617,30 @@ class ContextSupervisor:
             result = self.getting_prices('ahmad_tea_graf_grey_black_pack_25pk',get_ahmad_tea_graf_grey_black_pack_25pk)
         elif nn_respond == AHMAD_TEA_LONDON_BLACK_PACK_40PK:
             result = self.getting_prices('ahmad_tea_london_black_pack_40pk',get_ahmad_tea_london_black_pack_40pk)
+        elif nn_respond == AHMAD_TEA_ENG_BREAKF_BLACK_PACK_40PK:
+            result = self.getting_prices('ahmad_tea_eng_breakf_black_pack_40pk',get_ahmad_tea_eng_breakf_black_pack_40pk)
+        elif nn_respond == AHMAD_TEA_ENG_N1_BLACK_PACK_40PK:
+            result = self.getting_prices('ahmad_tea_english_n1_black_pack_40pk',get_ahmad_tea_english_n1_black_pack_40pk)
+        elif nn_respond == AHMAD_TEA_ENG_BREAKF_BLACK_PACK_100PK:
+            result = self.getting_prices('ahmad_tea_eng_breakf_black_pack_100pk',get_ahmad_tea_eng_breakf_black_pack_100pk)
+        elif nn_respond == AHMAD_TEA_GRAF_GREY_BLACK_PACK_100PK:
+            result = self.getting_prices('ahmad_tea_graf_grey_black_pack_100pk',get_ahmad_tea_graf_grey_black_pack_100pk)
+        elif nn_respond == LIPTON_YELLOW_LABEL_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_yellow_label_black_pack_25pk',get_lipton_yellow_label_black_pack_25pk)
+        elif nn_respond == LIPTON_EARL_GRAY_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_earl_gray_black_pack_25pk',get_lipton_earl_gray_black_pack_25pk)
+        elif nn_respond == LIPTON_ENG_BREAKFAST_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_eng_breakf_black_pack_25pk',get_lipton_engl_breakfast_black_pack_25pk)
+        elif nn_respond == LIPTON_GOLD_TEA_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_gold_tea_black_pack_25pk', get_lipton_gold_tea_black_pack_25pk)
+        elif nn_respond == LIPTON_EARL_GREY_ORANGE_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_earl_grey_orange_black_pack_25pk', get_lipton_earl_grey_orange_black_pack_25pk)
+        elif nn_respond == LIPTON_FOREST_FRUITS_BLACK_PACK_20PK:
+            result = self.getting_prices('lipton_forest_fruits_black_pack_20pk', get_lipton_forest_fruit_black_pack_20pk)
+        elif nn_respond == LIPTON_INTENSE_BLACK_BLACK_PACK_25PK:
+            result = self.getting_prices('lipton_intense_black_black_pack_25pk', get_lipton_intense_black_black_pack_25pk)
+        elif nn_respond == LIPTON_PEACH_MANGO_BLACK_PACK_20PK:
+            result = self.getting_prices('lipton_peach_mango_black_black_pack_20pk', get_lipton_peach_mango_black_black_pack_20pk)
 
 
         # тут подключаются блюда

@@ -1351,3 +1351,27 @@ class TesterForGroceryAppText:
             return AHMAD_TEA_GRAF_GREY_BLACK_PACK_25PK
         elif np.argmax(result) == 641:
             return AHMAD_TEA_LONDON_BLACK_PACK_40PK
+        elif np.argmax(result) == 642:
+            return AHMAD_TEA_ENG_BREAKF_BLACK_PACK_40PK
+        elif np.argmax(result) == 643:
+            return AHMAD_TEA_ENG_N1_BLACK_PACK_40PK
+        elif np.argmax(result) == 644:
+            return AHMAD_TEA_ENG_BREAKF_BLACK_PACK_100PK
+        elif np.argmax(result) == 645:
+            return AHMAD_TEA_GRAF_GREY_BLACK_PACK_100PK
+        elif np.argmax(result) == 646:
+            return LIPTON_YELLOW_LABEL_BLACK_PACK_25PK
+        elif np.argmax(result) == 647:
+            return LIPTON_EARL_GRAY_BLACK_PACK_25PK
+        elif np.argmax(result) == 648:
+            return LIPTON_ENG_BREAKFAST_BLACK_PACK_25PK
+        elif np.argmax(result) == 649:
+            return LIPTON_GOLD_TEA_BLACK_PACK_25PK
+        elif np.argmax(result) == 650:
+            return LIPTON_EARL_GREY_ORANGE_BLACK_PACK_25PK
+        elif np.argmax(result) == 651:
+            return LIPTON_FOREST_FRUITS_BLACK_PACK_20PK
+        elif np.argmax(result) == 652:
+            return LIPTON_INTENSE_BLACK_BLACK_PACK_25PK
+        elif np.argmax(result) == 653:
+            return LIPTON_PEACH_MANGO_BLACK_PACK_20PK

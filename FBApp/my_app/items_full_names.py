@@ -640,6 +640,18 @@ AHMAD_TEA_ENG_BREAKF_BLACK_PACK_25PK = 'Чай Ahmad tea Англійський 
 AHMAD_TEA_ENG_N1_BLACK_PACK_25PK = 'Чай Ahmad tea «Англійський» №1 чорний пакетований 25 шт'
 AHMAD_TEA_GRAF_GREY_BLACK_PACK_25PK = 'Чай Ahmad tea «Граф Грей» чорний пакетований 25 шт'
 AHMAD_TEA_LONDON_BLACK_PACK_40PK = 'Чай чорний Ahmad Tea «Лондон» байховий чорний пакетований 40 шт'
+AHMAD_TEA_ENG_BREAKF_BLACK_PACK_40PK = 'Чай Ahmad tea Англійський сніданок чорний пакетований 40 шт'
+AHMAD_TEA_ENG_N1_BLACK_PACK_40PK = 'Чай Ahmad tea «Англійський» №1 чорний пакетований 40 шт'
+AHMAD_TEA_ENG_BREAKF_BLACK_PACK_100PK = 'Чай Ahmad tea Англійський сніданок чорний пакетований 100 шт'
+AHMAD_TEA_GRAF_GREY_BLACK_PACK_100PK = 'Чай Ahmad tea «Граф Грей» чорний пакетований 100 шт'
+LIPTON_YELLOW_LABEL_BLACK_PACK_25PK = 'Чай чорний Lipton Yellow Label чорний пакетований 25 шт'
+LIPTON_EARL_GRAY_BLACK_PACK_25PK = 'Чай чорний Lipton Earl Gray чорний пакетований 25 шт'
+LIPTON_ENG_BREAKFAST_BLACK_PACK_25PK = 'Чай чорний Lipton English Breakfast чорний пакетований 25 шт'
+LIPTON_GOLD_TEA_BLACK_PACK_25PK = '	Чай чорний Lipton Gold Tea чорний пакетований 25 шт'
+LIPTON_EARL_GREY_ORANGE_BLACK_PACK_25PK = 'Чай чорний Lipton Earl Grey Orange чорний пакетований 25 шт'
+LIPTON_FOREST_FRUITS_BLACK_PACK_20PK = 'Чай чорний Lipton Forest Fruit з ароматом лісових ягід чорний пакетований 20 шт'
+LIPTON_INTENSE_BLACK_BLACK_PACK_25PK = 'Чай чорний Lipton Intense Black чорний пакетований 25 шт'
+LIPTON_PEACH_MANGO_BLACK_PACK_20PK = 'Чай чорний Lipton Peach & Mango пакетований 20 шт'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

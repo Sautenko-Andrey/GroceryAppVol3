@@ -6172,6 +6172,95 @@ class ProductParserVol2:
             'https://fozzyshop.ua/chaj-rassypnoj/95814-chaj-chernyj-ahmad-tea-london-bajkhovyj-0250014448552.html'
         ])
 
+    def ahmad_tea_eng_breakf_black_pack_40pk_parser(self):
+        ''' Чай Ahmad tea Англійський сніданок чорний пакетований 40 шт '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/caj-42-fp-h-2-g-ahmad-tea-english-breakfast-cornij',
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-80g--00054881009188/',
+            'https://varus.ua/chay-ahmad-tea-english-breakfast-chorniy-40-paketik-v-po-2g',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-do-snidanku-31339',
+            'https://auchan.ua/ua/chaj-chernyj-ahmad-tea-english-breakfast-40-sht-516850/',
+            'https://novus.online/product/caj-cornij-ahmad-anglijskij-do-snidanku-paket-ba-2g40st'
+        ])
+
+    def ahmad_tea_english_n1_black_pack_40pk_parser(self):
+        ''' Чай Ahmad tea «Англійський» №1 чорний пакетований 40 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-80g--00054881006316/',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-1-32332',
+            'https://fozzyshop.ua/ru/chaj-v-paketikakh/3836-chaj-ahmad-tea-anglijskij-1-0054881006316.html'
+        ])
+
+    def ahmad_tea_eng_breakf_black_pack_100pk_parser(self):
+        ''' Чай Ahmad tea Англійський сніданок чорний пакетований 100 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-akhmad-200g--00054881006002/',
+            'https://shop.silpo.ua/product/chai-ahmad-tea-angliiskyi-do-snidanku-17531',
+            'https://novus.online/product/caj-cornij-ahmad-breakfast-paket-za-2g100st',
+            'https://fozzyshop.ua/ru/chaj-v-paketikakh/3835-chaj-ahmad-tea-anglijskij-k-zavtraku-0054881006002.html'
+        ])
+
+    def ahmad_tea_graf_grey_black_pack_100pk_parser(self):
+        ''' Чай Ahmad tea «Граф Грей» чорний пакетований 100 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-ahmad-tea-graf-grei-465970',
+            'https://fozzyshop.ua/ru/chaj-v-paketikakh/3832-chaj-ahmad-tea-graf-grej-0054881005951.html'
+        ])
+
+    def lipton_yellow_label_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton Yellow Label чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-yellow-label-chornij-25-2-g',
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-yellow-label-35727',
+            'https://metro.zakaz.ua/ru/products/chai-lipton--08717163825976/'
+        ])
+
+    def lipton_earl_gray_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton Earl Gray чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-earl-grey-chornij-z-aromatom-bergamota-25-1-5-g',
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-earl-gray-37911',
+            'https://metro.zakaz.ua/ru/products/chai-lipton--08720608016242/'
+        ])
+
+    def lipton_eng_breakf_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton English Breakfast чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-english-breakfast-683762'
+        ])
+
+    def lipton_gold_tea_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton Gold Tea чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-gold-tea-917450'
+        ])
+
+    def lipton_earl_grey_orange_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton Earl Grey Orange чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-earl-grey-orange-917462'
+        ])
+
+    def lipton_forest_fruits_black_pack_20pk_parser(self):
+        ''' Чай чорний Lipton Forest Fruit з ароматом лісових ягід чорний пакетований 20 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-forest-fruit-chornij-20-1-7-g',
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-forest-fruit-z-aromatom-lisovykh-iagid-594013'
+        ])
+
+    def lipton_intense_black_black_pack_25pk_parser(self):
+        ''' Чай чорний Lipton Intense Black чорний пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-intense-black-917479',
+            'https://metro.zakaz.ua/ru/products/chai-lipton--08720608011971/'
+        ])
+
+    def lipton_peach_mango_black_black_pack_20pk_parser(self):
+        ''' Чай чорний Lipton Peach & Mango пакетований 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-peach-mango-734512'
+        ])
+
 
 
 
