@@ -1641,6 +1641,18 @@ class ContextSupervisor:
             result = self.getting_prices('lipton_intense_black_black_pack_25pk', get_lipton_intense_black_black_pack_25pk)
         elif nn_respond == LIPTON_PEACH_MANGO_BLACK_PACK_20PK:
             result = self.getting_prices('lipton_peach_mango_black_black_pack_20pk', get_lipton_peach_mango_black_black_pack_20pk)
+        elif nn_respond == LIPTON_YELLOW_LABEL_BLACK_PACK_50PK:
+            result = self.getting_prices('lipton_yellow_label_black_pack_50pk',get_lipton_yellow_label_black_pack_50pk)
+        elif nn_respond == LIPTON_INTENSE_BLACK_BLACK_PACK_92PK:
+            result = self.getting_prices('lipton_intense_black_black_pack_50pk', get_lipton_intense_black_black_pack_92pk)
+        elif nn_respond == LIPTON_GOLD_TEA_BLACK_PACK_92PK:
+            result = self.getting_prices('lipton_gold_tea_black_pack_92pk', get_lipton_gold_tea_black_pack_92pk)
+        elif nn_respond == LIPTON_YELLOW_LABEL_BLACK_PACK_100PK:
+            result = self.getting_prices('lipton_yellow_label_black_pack_100pk',get_lipton_yellow_label_black_pack_100pk)
+        elif nn_respond == LIPTON_EARL_GREY_BLACK_PACK_50PK:
+            result = self.getting_prices('lipton_earl_gray_black_pack_50pk', get_lipton_earl_grey_black_pack_50pk)
+        elif nn_respond == LIPTON_INTENSE_MINT_GREEN_PACK_20PK:
+            result = self.getting_prices('lipton_intense_mint_green_pack_20pk', get_lipton_intense_mint_green_pack_20pk)
 
 
         # тут подключаются блюда

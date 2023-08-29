@@ -6208,7 +6208,7 @@ class ProductParserVol2:
         ])
 
     def lipton_yellow_label_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton Yellow Label чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton Yellow Label пакетований 25 шт '''
         return self.prices_parsing([
             'https://varus.ua/chaj-lipton-yellow-label-chornij-25-2-g',
             'https://shop.silpo.ua/product/chai-chornyi-lipton-yellow-label-35727',
@@ -6216,7 +6216,7 @@ class ProductParserVol2:
         ])
 
     def lipton_earl_gray_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton Earl Gray чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton Earl Gray пакетований 25 шт '''
         return self.prices_parsing([
             'https://varus.ua/chaj-lipton-earl-grey-chornij-z-aromatom-bergamota-25-1-5-g',
             'https://shop.silpo.ua/product/chai-chornyi-lipton-earl-gray-37911',
@@ -6224,32 +6224,32 @@ class ProductParserVol2:
         ])
 
     def lipton_eng_breakf_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton English Breakfast чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton English Breakfast пакетований 25 шт '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/chai-chornyi-lipton-english-breakfast-683762'
         ])
 
     def lipton_gold_tea_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton Gold Tea чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton Gold Tea пакетований 25 шт '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/chai-chornyi-lipton-gold-tea-917450'
         ])
 
     def lipton_earl_grey_orange_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton Earl Grey Orange чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton Earl Grey Orange пакетований 25 шт '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/chai-chornyi-lipton-earl-grey-orange-917462'
         ])
 
     def lipton_forest_fruits_black_pack_20pk_parser(self):
-        ''' Чай чорний Lipton Forest Fruit з ароматом лісових ягід чорний пакетований 20 шт '''
+        ''' Чай чорний Lipton Forest Fruit з ароматом лісових ягід пакетований 20 шт '''
         return self.prices_parsing([
             'https://varus.ua/chaj-lipton-forest-fruit-chornij-20-1-7-g',
             'https://shop.silpo.ua/product/chai-chornyi-lipton-forest-fruit-z-aromatom-lisovykh-iagid-594013'
         ])
 
     def lipton_intense_black_black_pack_25pk_parser(self):
-        ''' Чай чорний Lipton Intense Black чорний пакетований 25 шт '''
+        ''' Чай чорний Lipton Intense Black пакетований 25 шт '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/chai-chornyi-lipton-intense-black-917479',
             'https://metro.zakaz.ua/ru/products/chai-lipton--08720608011971/'
@@ -6260,6 +6260,44 @@ class ProductParserVol2:
         return self.prices_parsing([
             'https://shop.silpo.ua/product/chai-chornyi-lipton-peach-mango-734512'
         ])
+
+    def lipton_yellow_label_black_pack_50pk_parser(self):
+        ''' Чай чорний Lipton Yellow Label пакетований 50 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chail-chornyi-lipton-yellow-labe-37915',
+            'https://metro.zakaz.ua/ru/products/chai-lipton--08711200461646/'
+        ])
+
+    def lipton_intense_black_black_pack_92pk_parser(self):
+        ''' Чай чорний Lipton Intense Black пакетований 92 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-intense-black-919782'
+        ])
+
+    def lipton_gold_tea_black_pack_92pk_parser(self):
+        ''' Чай чорний Lipton Gold Tea пакетований 92 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-lipton-gold-tea-919783'
+        ])
+
+    def lipton_yellow_label_black_pack_100pk_parser(self):
+        ''' Чай чорний Lipton Yellow Label пакетований 100 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-yellow-label-chornij-100-2-g'
+        ])
+
+    def lipton_earl_gray_black_pack_50pk_parser(self):
+        ''' Чай чорний Lipton Earl Gray пакетований 50 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-earl-grey-chornij-z-aromatom-bergamota-50-1-5-g'
+        ])
+
+    def lipton_intense_mint_green_pack_20pk_parser(self):
+        ''' Чай зелений Lipton Intense Mint пакетований 50 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-zelenyi-lipton-intense-mint-917454'
+        ])
+
 
 
 

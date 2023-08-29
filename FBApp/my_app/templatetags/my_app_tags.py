@@ -1983,6 +1983,24 @@ get_lipton_intense_black_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 656)
 '''Тэг,возвращающий информацию о "Чай чорний Lipton Peach & Mango пакетований 20 шт"'''
 get_lipton_peach_mango_black_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 657)
 
+'''Тэг,возвращающий информацию о "Чай чорний Lipton Yellow Label чорний пакетований 50 шт"'''
+get_lipton_yellow_label_black_pack_50pk = tag.create_tag(ItemsPicsFromNet, 658)
+
+'''Тэг,возвращающий информацию о "Чай чорний Lipton Intense Black чорний пакетований 92 шт"'''
+get_lipton_intense_black_black_pack_92pk = tag.create_tag(ItemsPicsFromNet, 659)
+
+'''Тэг,возвращающий информацию о "Чай чорний Lipton Gold Tea чорний пакетований 92 шт"'''
+get_lipton_gold_tea_black_pack_92pk = tag.create_tag(ItemsPicsFromNet, 660)
+
+'''Тэг,возвращающий информацию о "Чай чорний Lipton Yellow Label чорний пакетований 100 шт"'''
+get_lipton_yellow_label_black_pack_100pk = tag.create_tag(ItemsPicsFromNet, 661)
+
+'''Тэг,возвращающий информацию о "Чай чорний Lipton Earl Grey Orange чорний пакетований 50 шт"'''
+get_lipton_earl_grey_black_pack_50pk = tag.create_tag(ItemsPicsFromNet, 662)
+
+'''Тэг,возвращающий информацию о "Чай зелений Lipton Intense Mint пакетований 20 шт"'''
+get_lipton_intense_mint_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 663)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

@@ -4881,6 +4881,31 @@ def price_parcing(batch_name: str):
                 "silpo": parser.lipton_peach_mango_black_black_pack_20pk_parser()[3]
             }},
 
+            {'lipton_yellow_label_black_pack_50pk': {
+                "silpo": parser.lipton_yellow_label_black_pack_50pk_parser()[3],
+                "metro": parser.lipton_yellow_label_black_pack_50pk_parser()[6]
+            }},
+
+            {'lipton_intense_black_black_pack_92pk': {
+                "silpo": parser.lipton_intense_black_black_pack_92pk_parser()[3]
+            }},
+
+            {'lipton_gold_tea_black_pack_92pk': {
+                "silpo": parser.lipton_gold_tea_black_pack_92pk_parser()[3]
+            }},
+
+            {'lipton_yellow_label_black_pack_100pk': {
+                "varus": parser.lipton_yellow_label_black_pack_100pk_parser()[2]
+            }},
+
+            {'lipton_earl_gray_black_pack_50pk': {
+                "varus": parser.lipton_earl_gray_black_pack_50pk_parser()[2]
+            }},
+
+            {'lipton_intense_mint_green_pack_20pk': {
+                "silpo": parser.lipton_intense_mint_green_pack_20pk_parser()[3]
+            }},
+
         ]
 
         # далее записываем цены в json-файл

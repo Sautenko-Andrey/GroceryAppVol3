@@ -1375,3 +1375,15 @@ class TesterForGroceryAppText:
             return LIPTON_INTENSE_BLACK_BLACK_PACK_25PK
         elif np.argmax(result) == 653:
             return LIPTON_PEACH_MANGO_BLACK_PACK_20PK
+        elif np.argmax(result) == 654:
+            return LIPTON_YELLOW_LABEL_BLACK_PACK_50PK
+        elif np.argmax(result) == 655:
+            return LIPTON_INTENSE_BLACK_BLACK_PACK_92PK
+        elif np.argmax(result) == 656:
+            return LIPTON_GOLD_TEA_BLACK_PACK_92PK
+        elif np.argmax(result) == 657:
+            return LIPTON_YELLOW_LABEL_BLACK_PACK_100PK
+        elif np.argmax(result) == 658:
+            return LIPTON_EARL_GREY_BLACK_PACK_50PK
+        elif np.argmax(result) == 659:
+            return LIPTON_INTENSE_MINT_GREEN_PACK_20PK
