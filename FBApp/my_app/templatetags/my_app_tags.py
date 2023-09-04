@@ -2001,6 +2001,30 @@ get_lipton_earl_grey_black_pack_50pk = tag.create_tag(ItemsPicsFromNet, 662)
 '''Тэг,возвращающий информацию о "Чай зелений Lipton Intense Mint пакетований 20 шт"'''
 get_lipton_intense_mint_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 663)
 
+'''Тэг,возвращающий информацию о "Чай зелений Lipton Raspberry&Pomegranate пакетований 20 шт"'''
+get_lipton_raspberry_pomegranate_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 664)
+
+'''Тэг,возвращающий информацию о "Чай зелений Lipton Classic пакетований 25 шт"'''
+get_lipton_classic_green_pack_25pk = tag.create_tag(ItemsPicsFromNet, 665)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Королівський стандарт ф/п 25 шт"'''
+get_batik_korol_std_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 666)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Gold Ерл Грей з аромат бергамота пакетований 25 шт"'''
+get_batik_gold_earl_grey_bergamot_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 667)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Чорний бархат купажований дрібний 25 шт"'''
+get_batik_chorniy_barhat_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 668)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Ягідний цілунок купажований дрібн 25 шт"'''
+get_batik_jagidniy_cilynok_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 669)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Бадьорий лимон купажований дрібн 25 шт"'''
+get_batik_badyoriy_limon_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 670)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Gold цейлон високогірний дрібний 25 шт"'''
+get_batik_gold_ceylon_visokogir_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 671)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

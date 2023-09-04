@@ -1387,3 +1387,19 @@ class TesterForGroceryAppText:
             return LIPTON_EARL_GREY_BLACK_PACK_50PK
         elif np.argmax(result) == 659:
             return LIPTON_INTENSE_MINT_GREEN_PACK_20PK
+        elif np.argmax(result) == 660:
+            return LIPTON_RASPBERRY_POMEGRANATE_GREEN_PACK_20PK
+        elif np.argmax(result) == 661:
+            return LIPTON_CLASSIC_GREEN_PACK_25PK
+        elif np.argmax(result) == 662:
+            return BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_25PK
+        elif np.argmax(result) == 663:
+            return BATIK_GOLD_EARL_GREY_BLACK_PACK_25PK
+        elif np.argmax(result) == 664:
+            return BATIK_CHORNIY_BARHAT_BLACK_PACK_25PK
+        elif np.argmax(result) == 665:
+            return BATIK_JAGIDNIY_CILYNOK_BLACK_PACK_25PK
+        elif np.argmax(result) == 666:
+            return BATIK_BADYORIY_LIMON_BLACK_PACK_25PK
+        elif np.argmax(result) == 667:
+            return BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK

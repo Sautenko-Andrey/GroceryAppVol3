@@ -658,6 +658,14 @@ LIPTON_GOLD_TEA_BLACK_PACK_92PK = '	Чай чорний Lipton Gold Tea чорн
 LIPTON_YELLOW_LABEL_BLACK_PACK_100PK = 'Чай чорний Lipton Yellow Label  пакетований 100 шт'
 LIPTON_EARL_GREY_BLACK_PACK_50PK = 'Чай чорний Lipton Earl Grey пакетований 50 шт'
 LIPTON_INTENSE_MINT_GREEN_PACK_20PK = 'Чай зелений Lipton Intense Mint пакетований 20 шт'
+LIPTON_RASPBERRY_POMEGRANATE_GREEN_PACK_20PK = 'Чай зелений Lipton Raspberry&Pomegranate пакетований 20 шт'
+LIPTON_CLASSIC_GREEN_PACK_25PK = 'Чай зелений Lipton Classic пакетований 25 шт'
+BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_25PK = 'Чай чорний Batik Королівський стандарт ф/п 25 шт'
+BATIK_GOLD_EARL_GREY_BLACK_PACK_25PK = 'Чай чорний Batik Gold Ерл Грей з аромат бергамота пакетований 25 шт'
+BATIK_CHORNIY_BARHAT_BLACK_PACK_25PK = 'Чай чорний Batik Чорний бархат купажований дрібний 25 шт'
+BATIK_JAGIDNIY_CILYNOK_BLACK_PACK_25PK = 'Чай чорний Batik Ягідний цілунок купажований дрібн 25 шт'
+BATIK_BADYORIY_LIMON_BLACK_PACK_25PK = 'Чай чорний Batik Бадьорий лимон купажований дрібн 25 шт'
+BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK = 'Чай чорний Batik Gold цейлон високогірний дрібний 25 шт'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

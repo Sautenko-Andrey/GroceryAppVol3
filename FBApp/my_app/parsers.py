@@ -6298,6 +6298,64 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/chai-zelenyi-lipton-intense-mint-917454'
         ])
 
+    def lipton_raspberry_pomegranate_green_pack_20pk_parser(self):
+        ''' Чай зелений Lipton Raspberry&Pomegranate пакетований 50 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-zelenyi-lipton-raspberry-pomegranate-917455'
+        ])
+
+    def lipton_classic_green_pack_25pk_parser(self):
+        ''' Чай зелений Lipton Classic пакетований 50 шт '''
+        return self.prices_parsing([
+            'https://varus.ua/chaj-lipton-green-classic-zelenij-25-1-3-g',
+            'https://shop.silpo.ua/product/chai-zelenyi-lipton-classic-917461'
+        ])
+
+    def batik_korol_std_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Королівський стандарт ф/п 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-50g--04820015833204/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-korolivskyi-standart-f-p-360214'
+        ])
+
+    def batik_gold_earl_grey_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Gold Ерл Грей з ароматом бергамота пакетований 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-50g-polshcha--04820171919569/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-gold-erl-grei-z-aromat-bergamota-926085'
+        ])
+
+    def batik_chorniy_barhat_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Чорний бархат купажований дрібний 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-50g--04820015837141/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-chornyi-barkhat-kupazhovanyi-dribnyi-926082'
+        ])
+
+    def batik_jagidniy_cilynok_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Ягідний цілунок купажований дрібн 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-37-5g--04820171916537/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-yagidnyi-tsilunok-kupazhovanyi-dribn-926086',
+            'https://auchan.ua/ua/chaj-chernyj-batik-jagodnyj-poceluj-25-sht-515933/'
+        ])
+
+    def batik_badyoriy_limon_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Бадьорий лимон купажований дрібн 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-37-5g--04820171916612/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-badoryi-lymon-kupazhovanyi-dribn-926083',
+            'https://auchan.ua/ua/chaj-chernyj-batik-bodryj-limon-25-sht-515940/'
+        ])
+
+    def batik_gold_ceylon_visokogir_black_pack_25pk_parser(self):
+        ''' Чай чорний Batik Gold цейлон високогірний дрібний 25 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-50g-polshcha--04820171919552/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-gold-tseilon-vysokogirnyi-dribnyi-926084'
+        ])
+
+
 
 
 

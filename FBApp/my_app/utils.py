@@ -1653,6 +1653,22 @@ class ContextSupervisor:
             result = self.getting_prices('lipton_earl_gray_black_pack_50pk', get_lipton_earl_grey_black_pack_50pk)
         elif nn_respond == LIPTON_INTENSE_MINT_GREEN_PACK_20PK:
             result = self.getting_prices('lipton_intense_mint_green_pack_20pk', get_lipton_intense_mint_green_pack_20pk)
+        elif nn_respond == LIPTON_RASPBERRY_POMEGRANATE_GREEN_PACK_20PK:
+            result = self.getting_prices('lipton_intense_raspb_pomegran_pack_20pk', get_lipton_raspberry_pomegranate_green_pack_20pk)
+        elif nn_respond == LIPTON_CLASSIC_GREEN_PACK_25PK:
+            result = self.getting_prices('lipton_classic_green_pack_25pk',get_lipton_classic_green_pack_25pk)
+        elif nn_respond == BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_korol_std_black_pack_25pk',get_batik_korol_std_black_pack_25pk)
+        elif nn_respond == BATIK_GOLD_EARL_GREY_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_gold_earl_grey_black_pack_25pk',get_batik_gold_earl_grey_bergamot_black_pack_25pk)
+        elif nn_respond == BATIK_CHORNIY_BARHAT_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_chorniy_barhat_black_pack_25pk',get_batik_chorniy_barhat_black_pack_25pk)
+        elif nn_respond == BATIK_JAGIDNIY_CILYNOK_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_jagidniy_cilynok_black_pack_25pk',get_batik_jagidniy_cilynok_black_pack_25pk)
+        elif nn_respond == BATIK_BADYORIY_LIMON_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_badyoriy_limon_black_pack_25pk',get_batik_badyoriy_limon_black_pack_25pk)
+        elif nn_respond == BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK:
+            result = self.getting_prices('batik_gold_ceylon_visokogir_black_pack_25pk',get_batik_gold_ceylon_visokogir_black_pack_25pk)
 
 
         # тут подключаются блюда

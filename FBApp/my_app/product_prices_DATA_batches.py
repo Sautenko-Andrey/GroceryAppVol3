@@ -4906,6 +4906,47 @@ def price_parcing(batch_name: str):
                 "silpo": parser.lipton_intense_mint_green_pack_20pk_parser()[3]
             }},
 
+            {'lipton_intense_raspb_pomegran_pack_20pk': {
+                "silpo": parser.lipton_raspberry_pomegranate_green_pack_20pk_parser()[3]
+            }},
+
+            {'lipton_classic_green_pack_25pk': {
+                "varus": parser.lipton_classic_green_pack_25pk_parser()[2],
+                "silpo": parser.lipton_classic_green_pack_25pk_parser()[3]
+            }},
+
+            {'batik_korol_std_black_pack_25pk': {
+                "eko": parser.batik_korol_std_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_korol_std_black_pack_25pk_parser()[3]
+            }},
+
+            {'batik_gold_earl_grey_black_pack_25pk': {
+                "eko": parser.batik_gold_earl_grey_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_gold_earl_grey_black_pack_25pk_parser()[3]
+            }},
+
+            {'batik_chorniy_barhat_black_pack_25pk': {
+                "eko": parser.batik_chorniy_barhat_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_chorniy_barhat_black_pack_25pk_parser()[3]
+            }},
+
+            {'batik_jagidniy_cilynok_black_pack_25pk': {
+                "eko": parser.batik_jagidniy_cilynok_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_jagidniy_cilynok_black_pack_25pk_parser()[3],
+                "ashan": parser.batik_jagidniy_cilynok_black_pack_25pk_parser()[4]
+            }},
+
+            {'batik_badyoriy_limon_black_pack_25pk': {
+                "eko": parser.batik_badyoriy_limon_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_badyoriy_limon_black_pack_25pk_parser()[3],
+                "ashan": parser.batik_badyoriy_limon_black_pack_25pk_parser()[4]
+            }},
+
+            {'batik_gold_ceylon_visokogir_black_pack_25pk': {
+                "eko": parser.batik_gold_ceylon_visokogir_black_pack_25pk_parser()[1],
+                "silpo": parser.batik_gold_ceylon_visokogir_black_pack_25pk_parser()[3]
+            }},
+
         ]
 
         # далее записываем цены в json-файл
