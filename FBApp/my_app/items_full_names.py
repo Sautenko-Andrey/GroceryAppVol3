@@ -666,6 +666,14 @@ BATIK_CHORNIY_BARHAT_BLACK_PACK_25PK = 'Чай чорний Batik Чорний �
 BATIK_JAGIDNIY_CILYNOK_BLACK_PACK_25PK = 'Чай чорний Batik Ягідний цілунок купажований дрібн 25 шт'
 BATIK_BADYORIY_LIMON_BLACK_PACK_25PK = 'Чай чорний Batik Бадьорий лимон купажований дрібн 25 шт'
 BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK = 'Чай чорний Batik Gold цейлон високогірний дрібний 25 шт'
+BATIK_BLACK_GRANUL_STANDART_STS_100GR = 'Чай чорний Batik гранули С.Т.С. 100 грам'
+BATIK_KOROL_STD_BLACK_100GR = 'Чай чорний Batik Королівський стандарт 100 г'
+BATIK_CHORNIY_BARHAT_BLACK_PACK_60PK = 'Чай чорний Batik Чорний бархат купажований дрібний 60 шт'
+BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_100PK = 'Чай чорний Batik Королівський стандарт ф/п 100 шт'
+AKBAR_GOLD_BLACK_25PK = 'Чай чорний Akbar Gold, пакет 25 шт'
+AKBAR_LIMON_LIME_TWIST_BLACK_20PK = 'Чай чорний Akbar Lemon&Lime Twist 20 шт'
+AKBAR_PEACH_PASSION_PUNCH_BLACK_20PK = 'Чай чорний Akbar Peach&Passion Punch 20 шт'
+AKBAR_STRAWBERRY_KIWI_BLACK_20PK = 'Чай зелений китайський Akbar Strawberry Kiwi, 20х1.5 г'
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

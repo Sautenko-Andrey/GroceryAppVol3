@@ -4947,6 +4947,46 @@ def price_parcing(batch_name: str):
                 "silpo": parser.batik_gold_ceylon_visokogir_black_pack_25pk_parser()[3]
             }},
 
+            {'batik_black_granul_standart_sts_100gr': {
+                "eko": parser.batik_black_granul_standart_sts_100gr_parser()[1],
+                "silpo": parser.batik_black_granul_standart_sts_100gr_parser()[3]
+            }},
+
+            {'batik_korol_std_black_100gr': {
+                "eko": parser.batik_korol_std_black_100gr_parser()[1],
+                "silpo": parser.batik_korol_std_black_100gr_parser()[3]
+            }},
+
+            {'batik_chorniy_barhat_black_pack_60pk': {
+                "silpo": parser.batik_chorniy_barhat_black_pack_60pk_parser()[3]
+            }},
+
+            {'batik_korol_std_black_pack_100pk': {
+                "eko": parser.batik_korol_std_black_pack_100pk_parser()[1],
+                "silpo": parser.batik_korol_std_black_pack_100pk_parser()[3],
+                "ashan": parser.batik_korol_std_black_pack_100pk_parser()[4]
+            }},
+
+            {'akbar_gold_black_25pk': {
+                "silpo": parser.akbar_gold_black_25pk_parser()[3],
+                "ashan": parser.akbar_gold_black_25pk_parser()[4],
+                "metro": parser.akbar_gold_black_25pk_parser()[6]
+            }},
+
+            {'akbar_limon_lime_twist_black_pack_20pk': {
+                "silpo": parser.akbar_limon_lime_twist_black_pack_20pk_parser()[3],
+                "ashan": parser.akbar_limon_lime_twist_black_pack_20pk_parser()[4]
+            }},
+
+            {'akbar_peach_passion_punch_black_pack_20pk': {
+                "silpo": parser.akbar_peach_passion_punch_black_pack_20pk_parser()[3],
+                "ashan": parser.akbar_peach_passion_punch_black_pack_20pk_parser()[4]
+            }},
+
+            {'akbar_strawberry_kiwi_black_pack_20pk': {
+                "ashan": parser.akbar_strawberry_kiwi_black_pack_20pk_parser()[4]
+            }},
+
         ]
 
         # далее записываем цены в json-файл

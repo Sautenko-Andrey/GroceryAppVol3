@@ -2025,6 +2025,30 @@ get_batik_badyoriy_limon_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 670)
 '''Тэг,возвращающий информацию о "Чай чорний Batik Gold цейлон високогірний дрібний 25 шт"'''
 get_batik_gold_ceylon_visokogir_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 671)
 
+'''Тэг,возвращающий информацию о "Чай чорний Batik гранули С.Т.С. 100 грам"'''
+get_batik_black_granul_standart_sts_100gr = tag.create_tag(ItemsPicsFromNet, 672)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Королівський стандарт 100 г"'''
+get_batik_korol_std_black_100gr = tag.create_tag(ItemsPicsFromNet, 673)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Чорний бархат купажований дрібний 60 шт"'''
+get_batik_chorniy_barhat_black_pack_60pk = tag.create_tag(ItemsPicsFromNet, 674)
+
+'''Тэг,возвращающий информацию о "Чай чорний Batik Королівський стандарт ф/п 100 шт"'''
+get_batik_korol_std_black_pack_100pk = tag.create_tag(ItemsPicsFromNet, 675)
+
+'''Тэг,возвращающий информацию о "Чай чорний Akbar Gold, пакет 25 шт"'''
+get_akbar_gold_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 676)
+
+'''Тэг,возвращающий информацию о "Чай чорний Akbar Lemon&Lime Twist 20 шт"'''
+get_akbar_limon_lime_twist_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 677)
+
+'''Тэг,возвращающий информацию о "Чай чорний Akbar Peach&Passion Punch 20 шт"'''
+get_akbar_peach_passion_punch_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 678)
+
+'''Тэг,возвращающий информацию о "Чай зелений китайський Akbar Strawberry Kiwi, 20х1.5 г"'''
+get_akbar_strawberry_kiwi_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 679)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

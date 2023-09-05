@@ -6355,6 +6355,63 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/chai-chornyi-batik-gold-tseilon-vysokogirnyi-dribnyi-926084'
         ])
 
+    def batik_black_granul_standart_sts_100gr_parser(self):
+        ''' Чай чорний Batik гранули С.Т.С. 100 грам '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-100g-ukrayina--04820015831279/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-granuly-s-t-s-1799'
+        ])
+
+    def batik_korol_std_black_100gr_parser(self):
+        ''' Чай чорний Batik Королівський стандарт 100 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-85g--04820015833228/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-korolivskyi-standart-360213'
+        ])
+
+    def batik_chorniy_barhat_black_pack_60pk_parser(self):
+        ''' Чай чорний Batik Чорний бархат купажований дрібний 60 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-batik-chornyi-barkhat-kupazhovanyi-50-10-926087'
+        ])
+
+    def batik_korol_std_black_pack_100pk_parser(self):
+        ''' Чай чорний Batik Королівський стандарт ф/п 100 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-batik-200g--04820015833785/',
+            'https://shop.silpo.ua/product/chai-chornyi-batik-korolivskyi-standart-f-p-441018',
+            'https://auchan.ua/ua/chaj-chernyj-batik-royal-standart-100-sht-516892/'
+        ])
+
+    def akbar_gold_black_25pk_parser(self):
+        ''' Чай чорний Akbar Gold, пакет 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-akbar-gold-paket-649675',
+            'https://auchan.ua/ua/chaj-chernyj-akbar-gold-25-sht-516829/',
+            'https://metro.zakaz.ua/ru/products/chai-akbar-50g--05014176014575/'
+        ])
+
+    def akbar_limon_lime_twist_black_pack_20pk_parser(self):
+        ''' Чай чорний Akbar Lemon&Lime Twist 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-akbar-lemon-lime-twist-885017',
+            'https://auchan.ua/ua/chaj-chernyj-cejlonskij-bajhovyj-akbar-lemon-lime-twist-20h2-g-1098615/'
+        ])
+
+    def akbar_peach_passion_punch_black_pack_20pk_parser(self):
+        ''' Чай чорний Akbar Peach&Passion Punch 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-akbar-peach-passion-punch-885019',
+            'https://auchan.ua/ua/chaj-chernyj-cejlonskij-akbar-peach-passion-punch-20h2-g-1098629/'
+        ])
+
+    def akbar_strawberry_kiwi_black_pack_20pk_parser(self):
+        ''' Чай зелений китайський Akbar Strawberry Kiwi, 20х1.5 г '''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/chaj-zelenyj-kitajskij-akbar-strawberry-kiwi-20h1-5-g-1098622/'
+        ])
+
+
 
 
 

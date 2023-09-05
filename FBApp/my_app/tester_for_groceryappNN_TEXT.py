@@ -1403,3 +1403,19 @@ class TesterForGroceryAppText:
             return BATIK_BADYORIY_LIMON_BLACK_PACK_25PK
         elif np.argmax(result) == 667:
             return BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK
+        elif np.argmax(result) == 668:
+            return BATIK_BLACK_GRANUL_STANDART_STS_100GR
+        elif np.argmax(result) == 669:
+            return BATIK_KOROL_STD_BLACK_100GR
+        elif np.argmax(result) == 670:
+            return BATIK_CHORNIY_BARHAT_BLACK_PACK_60PK
+        elif np.argmax(result) == 671:
+            return BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_100PK
+        elif np.argmax(result) == 672:
+            return AKBAR_GOLD_BLACK_25PK
+        elif np.argmax(result) == 673:
+            return AKBAR_LIMON_LIME_TWIST_BLACK_20PK
+        elif np.argmax(result) == 674:
+            return AKBAR_PEACH_PASSION_PUNCH_BLACK_20PK
+        elif np.argmax(result) == 675:
+            return AKBAR_STRAWBERRY_KIWI_BLACK_20PK

@@ -1669,6 +1669,22 @@ class ContextSupervisor:
             result = self.getting_prices('batik_badyoriy_limon_black_pack_25pk',get_batik_badyoriy_limon_black_pack_25pk)
         elif nn_respond == BATIK_GOLD_CEYLON_VISOKOGIR_BLACK_PACK_25PK:
             result = self.getting_prices('batik_gold_ceylon_visokogir_black_pack_25pk',get_batik_gold_ceylon_visokogir_black_pack_25pk)
+        elif nn_respond == BATIK_BLACK_GRANUL_STANDART_STS_100GR:
+            result = self.getting_prices('batik_black_granul_standart_sts_100gr',get_batik_black_granul_standart_sts_100gr)
+        elif nn_respond == BATIK_KOROL_STD_BLACK_100GR:
+            result = self.getting_prices('batik_korol_std_black_100gr',get_batik_korol_std_black_100gr)
+        elif nn_respond == BATIK_CHORNIY_BARHAT_BLACK_PACK_60PK:
+            result = self.getting_prices('batik_chorniy_barhat_black_pack_60pk',get_batik_chorniy_barhat_black_pack_60pk)
+        elif nn_respond == BATIK_KOROLIVSKIY_STANDART_BLACK_PACK_100PK:
+            result = self.getting_prices('batik_korol_std_black_pack_100pk', get_batik_korol_std_black_pack_100pk)
+        elif nn_respond == AKBAR_GOLD_BLACK_25PK:
+            result = self.getting_prices('akbar_gold_black_25pk', get_akbar_gold_black_pack_25pk)
+        elif nn_respond == AKBAR_LIMON_LIME_TWIST_BLACK_20PK:
+            result = self.getting_prices('akbar_limon_lime_twist_black_pack_20pk', get_akbar_limon_lime_twist_black_pack_20pk)
+        elif nn_respond == AKBAR_PEACH_PASSION_PUNCH_BLACK_20PK:
+            result = self.getting_prices('akbar_peach_passion_punch_black_pack_20pk', get_akbar_peach_passion_punch_black_pack_20pk)
+        elif nn_respond == AKBAR_STRAWBERRY_KIWI_BLACK_20PK:
+            result = self.getting_prices('akbar_strawberry_kiwi_black_pack_20pk', get_akbar_strawberry_kiwi_black_pack_20pk)
 
 
         # тут подключаются блюда
