@@ -4,7 +4,6 @@ from my_app.utils import price_updating_data
 
 
 
-
 class ProductParserVol2:
     '''Класс для парсинга цен с сайтов с приминением Selenium'''
 
@@ -43,6 +42,9 @@ class ProductParserVol2:
     def __init__(self):
         '''Инииализация драйвера Chrome со всеми нужными параметрами,
         а именно включение режима работы браузера в фоновом режиме'''
+        #new
+        self.service = Service()
+        #end new
         self.options = undetected_chromedriver.ChromeOptions()
         # self.options.add_argument('enable-features=NetworkServiceInProcess')
         self.options.add_argument("disable-features=NetworkService")  # если верхнее не работает,то включаем это
@@ -6409,6 +6411,77 @@ class ProductParserVol2:
         ''' Чай зелений китайський Akbar Strawberry Kiwi, 20х1.5 г '''
         return self.prices_parsing([
             'https://auchan.ua/ua/chaj-zelenyj-kitajskij-akbar-strawberry-kiwi-20h1-5-g-1098622/'
+        ])
+
+    def pickwick_english_black_pack_20pk_parser(self):
+        ''' Чай чорний Pickwick English 20 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000008102/',
+            'https://shop.silpo.ua/product/chai-chornyi-pickwick-english-907475',
+            'https://auchan.ua/ua/chaj-chernyj-bajhovyj-pickwick-english-20h2-g-1098342/',
+            'https://novus.online/ru/product/chay-chornyy-pickwick-english-202h'
+        ])
+
+    def pickwick_mango_black_pack_20pk_parser(self):
+        ''' Чай чорний Pickwick Mango 20 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000296493/',
+            'https://shop.silpo.ua/product/chai-chornyi-pickwick-aromatyzovanyi-zi-shmatochkamy-mango-907482',
+            'https://auchan.ua/ua/chaj-chernyj-pickwick-mango-aromatizirovannyj-20h1-5-g-1098377/',
+            'https://novus.online/ru/product/chay-chornyy-pickwick-mango-2015h',
+            'https://metro.zakaz.ua/ru/products/chai-pikvik--08711000296493/'
+        ])
+
+    def pickwick_forest_fruit_black_pack_20pk_parser(self):
+        ''' Чай чорний Pickwick Forest Fruit 20 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik-30g--08711000278468/',
+            'https://shop.silpo.ua/product/chai-chornyi-pickwick-aromatyzovanyi-zi-shmatochkamy-lisovykh-iagid-907480',
+            'https://auchan.ua/ua/chaj-chernyj-pickwick-s-kusochkami-lesnyh-jagod-20h1-5-g-1098601/',
+            'https://novus.online/ru/product/chay-pickwick-lisovi-yahody-2015h'
+        ])
+
+    def pickwick_earl_grey_black_pack_20pk_parser(self):
+        ''' Чай чорний Pickwick Earl Grey 20 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000008416/',
+            'https://shop.silpo.ua/product/chai-chornyi-pickwick-earl-grey-z-aromatom-bergamota-907477',
+            'https://auchan.ua/ua/chaj-chernyj-pickwick-earl-grey-s-aromatom-bergamota-20h2-g-1098356/',
+            'https://novus.online/ru/product/chay-pickwick-earl-grey-z-berhamotom-202h'
+        ])
+
+    def pickwick_strawberry_black_pack_20pk_parser(self):
+        ''' Чай чорний Pickwick Strawberry 20 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik-30g-niderlandi--08711000278703/',
+            'https://varus.ua/chaj-pickwick-strawberry-chernyj-20-15-g',
+            'https://shop.silpo.ua/product/chai-chornyi-pickwick-aromatyzovanyi-zi-shmatochkamy-polunytsi-907481',
+            'https://auchan.ua/ua/chaj-chernyj-bajhovyj-pickwick-s-kusochkami-klubniki-20h1-5-g-1098608/',
+            'https://novus.online/ru/product/chay-chornyy-pickwick-polunytsya-2015h'
+        ])
+
+    def pickwick_green_pure_green_pack_20pk_parser(self):
+        ''' Чай зелений Pickwick Green 20 шт '''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/chaj-zelenyj-bajhovyj-pickwick-pure-20h1-5-g-1098349/',
+            'https://novus.online/ru/product/chay-zelenyy-pickwick-2015h',
+            'https://metro.zakaz.ua/ru/products/chai-pikvik-30g--08711000294215/'
+        ])
+
+    def pickwick_mint_green_pack_20pk_parser(self):
+        ''' Чай зелений Pickwick Mint 20 шт '''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/chaj-mjatnyj-pickwick-herbal-20h1-5-g-1098370/',
+            'https://novus.online/ru/product/chay-pickwick-myata-2015h',
+            'https://metro.zakaz.ua/ru/products/chai-pikvik-30g--08711000336434/'
+        ])
+
+    def pickwick_romashka_green_pack_20pk_parser(self):
+        ''' Чай зелений Pickwick ромашковий 20 шт '''
+        return self.prices_parsing([
+            'https://auchan.ua/ua/chaj-romashkovyj-pickwick-herbal-20h1-5-g-1098363/',
+            'https://novus.online/ru/product/chay-pickwick-romashka-2015h',
+            'https://metro.zakaz.ua/ru/products/chai-pikvik-30g--08711000336342/'
         ])
 
 

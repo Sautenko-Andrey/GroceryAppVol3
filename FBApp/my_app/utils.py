@@ -1685,6 +1685,22 @@ class ContextSupervisor:
             result = self.getting_prices('akbar_peach_passion_punch_black_pack_20pk', get_akbar_peach_passion_punch_black_pack_20pk)
         elif nn_respond == AKBAR_STRAWBERRY_KIWI_BLACK_20PK:
             result = self.getting_prices('akbar_strawberry_kiwi_black_pack_20pk', get_akbar_strawberry_kiwi_black_pack_20pk)
+        elif nn_respond == PICKWICK_ENGLISH_BLACK_20PK:
+            result = self.getting_prices('pickwick_english_black_pack_20pk', get_pickwick_english_black_pack_20pk)
+        elif nn_respond == PICKWICK_MANGO_BLACK_20PK:
+            result = self.getting_prices('pickwick_mango_black_pack_20pk', get_pickwick_mango_black_pack_20pk)
+        elif nn_respond == PICKWICK_FOREST_FRUIT_BLACK_20PK:
+            result = self.getting_prices('pickwick_forest_fruit_black_pack_20pk', get_pickwick_forest_fruit_black_pack_20pk)
+        elif nn_respond == PICKWICK_EARL_GREY_BLACK_20PK:
+            result = self.getting_prices('pickwick_earl_grey_black_pack_20pk', get_pickwick_earl_grey_black_pack_20pk)
+        elif nn_respond == PICKWICK_STRAWBERRY_BLACK_20PK:
+            result = self.getting_prices('pickwick_strawberry_black_pack_20pk', get_pickwick_strawberry_black_pack_20pk)
+        elif nn_respond == PICKWICK_GREEN_PURE_GREEN_20PK:
+            result = self.getting_prices('pickwick_green_pure_green_pack_20pk', get_pickwick_green_pure_green_pack_20pk)
+        elif nn_respond == PICKWICK_MINT_GREEN_20PK:
+            result = self.getting_prices('pickwick_mint_green_pack_20pk', get_pickwick_mint_green_pack_20pk)
+        elif nn_respond == PICKWICK_ROMASHKA_GREEN_20PK:
+            result = self.getting_prices('pickwick_romashka_green_pack_20pk', get_pickwick_romashka_green_pack_20pk)
 
 
         # тут подключаются блюда

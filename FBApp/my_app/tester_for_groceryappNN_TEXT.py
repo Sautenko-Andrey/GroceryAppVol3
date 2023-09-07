@@ -1419,3 +1419,19 @@ class TesterForGroceryAppText:
             return AKBAR_PEACH_PASSION_PUNCH_BLACK_20PK
         elif np.argmax(result) == 675:
             return AKBAR_STRAWBERRY_KIWI_BLACK_20PK
+        elif np.argmax(result) == 676:
+            return PICKWICK_ENGLISH_BLACK_20PK
+        elif np.argmax(result) == 677:
+            return PICKWICK_MANGO_BLACK_20PK
+        elif np.argmax(result) == 678:
+            return PICKWICK_FOREST_FRUIT_BLACK_20PK
+        elif np.argmax(result) == 679:
+            return PICKWICK_EARL_GREY_BLACK_20PK
+        elif np.argmax(result) == 680:
+            return PICKWICK_STRAWBERRY_BLACK_20PK
+        elif np.argmax(result) == 681:
+            return PICKWICK_GREEN_PURE_GREEN_20PK
+        elif np.argmax(result) == 682:
+            return PICKWICK_MINT_GREEN_20PK
+        elif np.argmax(result) == 683:
+            return PICKWICK_ROMASHKA_GREEN_20PK

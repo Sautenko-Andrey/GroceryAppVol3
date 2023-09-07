@@ -4987,6 +4987,61 @@ def price_parcing(batch_name: str):
                 "ashan": parser.akbar_strawberry_kiwi_black_pack_20pk_parser()[4]
             }},
 
+            {'pickwick_english_black_pack_20pk': {
+                "eko": parser.pickwick_english_black_pack_20pk_parser()[1],
+                "silpo": parser.pickwick_english_black_pack_20pk_parser()[3],
+                "ashan": parser.pickwick_english_black_pack_20pk_parser()[4],
+                "novus": parser.pickwick_english_black_pack_20pk_parser()[5]
+            }},
+
+            {'pickwick_mango_black_pack_20pk': {
+                "eko": parser.pickwick_mango_black_pack_20pk_parser()[1],
+                "silpo": parser.pickwick_mango_black_pack_20pk_parser()[3],
+                "ashan": parser.pickwick_mango_black_pack_20pk_parser()[4],
+                "novus": parser.pickwick_mango_black_pack_20pk_parser()[5],
+                "metro": parser.pickwick_mango_black_pack_20pk_parser()[6]
+            }},
+
+            {'pickwick_forest_fruit_black_pack_20pk': {
+                "eko": parser.pickwick_forest_fruit_black_pack_20pk_parser()[1],
+                "silpo": parser.pickwick_forest_fruit_black_pack_20pk_parser()[3],
+                "ashan": parser.pickwick_forest_fruit_black_pack_20pk_parser()[4],
+                "novus": parser.pickwick_forest_fruit_black_pack_20pk_parser()[5]
+            }},
+
+            {'pickwick_earl_grey_black_pack_20pk': {
+                "eko": parser.pickwick_earl_grey_black_pack_20pk_parser()[1],
+                "silpo": parser.pickwick_earl_grey_black_pack_20pk_parser()[3],
+                "ashan": parser.pickwick_earl_grey_black_pack_20pk_parser()[4],
+                "novus": parser.pickwick_earl_grey_black_pack_20pk_parser()[5]
+            }},
+
+            {'pickwick_strawberry_black_pack_20pk': {
+                "eko": parser.pickwick_strawberry_black_pack_20pk_parser()[1],
+                "varus": parser.pickwick_strawberry_black_pack_20pk_parser()[2],
+                "silpo": parser.pickwick_strawberry_black_pack_20pk_parser()[3],
+                "ashan": parser.pickwick_strawberry_black_pack_20pk_parser()[4],
+                "novus": parser.pickwick_strawberry_black_pack_20pk_parser()[5]
+            }},
+
+            {'pickwick_green_pure_green_pack_20pk': {
+                "ashan": parser.pickwick_green_pure_green_pack_20pk_parser()[4],
+                "novus": parser.pickwick_green_pure_green_pack_20pk_parser()[5],
+                "metro": parser.pickwick_green_pure_green_pack_20pk_parser()[6]
+            }},
+
+            {'pickwick_mint_green_pack_20pk': {
+                "ashan": parser.pickwick_mint_green_pack_20pk_parser()[4],
+                "novus": parser.pickwick_mint_green_pack_20pk_parser()[5],
+                "metro": parser.pickwick_mint_green_pack_20pk_parser()[6]
+            }},
+
+            {'pickwick_romashka_green_pack_20pk': {
+                "ashan": parser.pickwick_romashka_green_pack_20pk_parser()[4],
+                "novus": parser.pickwick_romashka_green_pack_20pk_parser()[5],
+                "metro": parser.pickwick_romashka_green_pack_20pk_parser()[6]
+            }},
+
         ]
 
         # далее записываем цены в json-файл
@@ -4996,14 +5051,14 @@ def price_parcing(batch_name: str):
         print("Нет такого батча!")
 
 
-# price_parcing("all_products_names_batch_1")
+price_parcing("all_products_names_batch_1")
 # price_parcing("all_products_names_batch_2")
 # price_parcing("all_products_names_batch_3")
 # price_parcing("all_products_names_batch_4")
 # price_parcing("all_products_names_batch_5")
 # price_parcing("all_products_names_batch_6")
 #price_parcing("all_products_names_batch_7")
-price_parcing("all_products_names_batch_8")
+#price_parcing("all_products_names_batch_8")
 
 
 def prepeare_json_data(path:str):

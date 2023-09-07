@@ -2049,6 +2049,30 @@ get_akbar_peach_passion_punch_black_pack_20pk = tag.create_tag(ItemsPicsFromNet,
 '''Тэг,возвращающий информацию о "Чай зелений китайський Akbar Strawberry Kiwi, 20х1.5 г"'''
 get_akbar_strawberry_kiwi_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 679)
 
+'''Тэг,возвращающий информацию о "Чай чорний Pickwick English 20 шт"'''
+get_pickwick_english_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 680)
+
+'''Тэг,возвращающий информацию о "Чай чорний Pickwick ароматизований зі шматочками манго 20 шт"'''
+get_pickwick_mango_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 681)
+
+'''Тэг,возвращающий информацию о "Чай чорний Pickwick ароматизований зі шматочками лісових ягід 20 шт"'''
+get_pickwick_forest_fruit_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 682)
+
+'''Тэг,возвращающий информацию о "Чай чорний Pickwick Earl Grey з ароматом бергамота 20 шт"'''
+get_pickwick_earl_grey_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 683)
+
+'''Тэг,возвращающий информацию о "Чай чорний Pickwick ароматизований зі шматочками полуниці 20 шт"'''
+get_pickwick_strawberry_black_pack_20pk = tag.create_tag(ItemsPicsFromNet, 684)
+
+'''Тэг,возвращающий информацию о "Чай зеленый Pickwick green 20*1,5г"'''
+get_pickwick_green_pure_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 685)
+
+'''Тэг,возвращающий информацию о "Чай зеленый Pickwick mint 20*1,5г"'''
+get_pickwick_mint_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 686)
+
+'''Тэг,возвращающий информацию о "Чай ромашковий Pickwick Herbal, 20х1.5 г"'''
+get_pickwick_romashka_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 687)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():
