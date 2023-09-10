@@ -1,0 +1,451 @@
+{
+  "ambassador_premium_rozch_pack_250gr": {
+    "varus": 293.0,
+    "silpo": 249.0,
+    "novus": 279.0,
+    "metro": 387.6
+  },
+  "ambassador_premium_rozch_pack_170gr": {
+    "silpo": 169.0,
+    "ashan": 278.9,
+    "metro": 293.6
+  },
+  "ambassador_premium_rozch_pack_400gr": {
+    "silpo": 384.0,
+    "ashan": 399.0,
+    "metro": 511.8
+  },
+  "ambassador_premium_rozch_pack_500gr": {
+    "ashan": 553.0,
+    "metro": 582.1
+  },
+  "chorna_carta_gold_rozch_pack_200gr": {
+    "silpo": 264.0,
+    "ashan": 285.0,
+    "metro": 266.6
+  },
+  "chorna_carta_gold_rozch_pack_100gr": {
+    "eko": 119.9,
+    "silpo": 159.0,
+    "ashan": 119.0,
+    "novus": 0
+  },
+  "tchibo_gold_selection_rozch_glass_jar_50gr": {
+    "silpo": 169.0,
+    "ashan": 153.0,
+    "novus": 164.0
+  },
+  "tchibo_gold_selection_rozch_glass_jar_100gr": {
+    "varus": 258.7,
+    "silpo": 204.0,
+    "ashan": 199.5,
+    "novus": 289.0,
+    "metro": 272.0
+  },
+  "tchibo_gold_selection_rozch_glass_jar_200gr": {
+    "silpo": 499.0,
+    "ashan": 466.7,
+    "metro": 491.2
+  },
+  "tchibo_exclusive_rozch_glass_jar_200gr": {
+    "silpo": 539.0,
+    "ashan": 539.0
+  },
+  "aroma_gold_decaff_rozch_glass_jar_100gr": {
+    "silpo": 179.0,
+    "fozzy": 199.0
+  },
+  "aroma_gold_freeze_dried_rozch_glass_jar_100gr": {
+    "silpo": 139.0,
+    "novus": 264.0,
+    "nash_kray": 17.0,
+    "fozzy": 189.0
+  },
+  "aroma_gold_freeze_dried_rozch_glass_jar_200gr": {
+    "silpo": 234.0
+  },
+  "maccoffee_arabica_rozch_glass_jar_120gr": {
+    "silpo": 144.0,
+    "ashan": 132.2,
+    "novus": 134.0,
+    "metro": 144.6
+  },
+  "maxwell_house_instant_mild_blend_rozch_glass_jar_100gr": {
+    "silpo": 99.0,
+    "fozzy": 159.0
+  },
+  "maxwell_house_instant_mild_blend_rozch_glass_jar_200gr": {
+    "silpo": 169.0,
+    "fozzy": 299.0
+  },
+  "dallmayr_gold_rozch_glass_jar_100gr": {
+    "silpo": 249.0
+  },
+  "dallmayr_gold_rozch_glass_jar_200gr": {
+    "metro": 330.3
+  },
+  "aroma_platinum_fr_dr_rozch_glass_jar_200gr": {
+    "fozzy": 299.0
+  },
+  "aroma_platinum_fr_dr_rozch_glass_jar_100gr": {
+    "fozzy": 164.0
+  },
+  "beanies_mince_pie_rozch_glass_jar_50gr": {
+    "fozzy": 154.0
+  },
+  "beanies_cristmas_pudding_rozch_glass_jar_50gr": {
+    "fozzy": 154.0
+  },
+  "beanies_double_chocolate_rozch_glass_jar_50gr": {
+    "fozzy": 159.0
+  },
+  "beanies_cinder_toffee_rozch_glass_jar_50gr": {
+    "fozzy": 159.0
+  },
+  "bushido_kodo_rozch_glass_jar_95gr": {
+    "fozzy": 442.0
+  },
+  "davidoff_rich_aroma_rozch_glass_jar_100gr": {
+    "ashan": 355.6,
+    "novus": 449.0,
+    "fozzy": 357.7
+  },
+  "davidoff_fine_aroma_rozch_glass_jar_100gr": {
+    "ashan": 449.5
+  },
+  "ahmad_tea_eng_breakf_black_pack_100gr": {
+    "silpo": 99.0
+  },
+  "ahmad_tea_graf_grey_black_pack_100gr": {
+    "silpo": 107.0
+  },
+  "ahmad_tea_london_black_pack_100gr": {
+    "eko": 95.89,
+    "varus": 101.9,
+    "silpo": 103.0
+  },
+  "ahmad_tea_english_n1_black_pack_100gr": {
+    "eko": 282.6,
+    "varus": 113.7,
+    "silpo": 116.0
+  },
+  "ahmad_tea_eng_breakf_black_pack_200gr": {
+    "eko": 222.6,
+    "silpo": 224.0,
+    "fozzy": 198.9
+  },
+  "ahmad_tea_graf_grey_black_pack_200gr": {
+    "eko": 222.6,
+    "silpo": 224.0,
+    "novus": 219.0,
+    "fozzy": 199.4
+  },
+  "ahmad_tea_london_black_pack_100pk": {
+    "eko": 211.1,
+    "varus": 4.9,
+    "silpo": 204.0,
+    "fozzy": 170.4
+  },
+  "ahmad_tea_graf_grey_black_pack_40pk": {
+    "silpo": 85.99
+  },
+  "ahmad_tea_london_black_pack_25pk": {
+    "eko": 62.45,
+    "varus": 60.8,
+    "silpo": 63.99
+  },
+  "ahmad_tea_lavanda_bergamot_black_pack_20pk": {
+    "silpo": 55.99
+  },
+  "ahmad_tea_eng_breakf_black_pack_25pk": {
+    "eko": 75.25,
+    "varus": 72.3,
+    "silpo": 75.49,
+    "ashan": 63.9,
+    "novus": 73.99,
+    "fozzy": 67.3
+  },
+  "ahmad_tea_english_n1_black_pack_25pk": {
+    "eko": 69.69,
+    "varus": 71.7,
+    "silpo": 75.49,
+    "novus": 73.99,
+    "fozzy": 67.3
+  },
+  "ahmad_tea_graf_grey_black_pack_25pk": {
+    "silpo": 75.49,
+    "fozzy": 67.3
+  },
+  "ahmad_tea_london_black_pack_40pk": {
+    "eko": 80.35,
+    "silpo": 77.49,
+    "fozzy": 72.3
+  },
+  "ahmad_tea_eng_breakf_black_pack_40pk": {
+    "atb": 70.3,
+    "eko": 86.09,
+    "varus": 71.3,
+    "silpo": 81.99,
+    "ashan": 85.9,
+    "novus": 83.99
+  },
+  "ahmad_tea_english_n1_black_pack_40pk": {
+    "eko": 79.69,
+    "silpo": 85.99,
+    "fozzy": 77.0
+  },
+  "ahmad_tea_eng_breakf_black_pack_100pk": {
+    "eko": 235.6,
+    "silpo": 254.0,
+    "novus": 0,
+    "fozzy": 227.9
+  },
+  "ahmad_tea_graf_grey_black_pack_100pk": {
+    "silpo": 254.0,
+    "fozzy": 227.9
+  },
+  "lipton_yellow_label_black_pack_25pk": {
+    "varus": 69.8,
+    "silpo": 70.49,
+    "metro": 71.87
+  },
+  "lipton_earl_gray_black_pack_25pk": {
+    "varus": 85.3,
+    "silpo": 85.49,
+    "metro": 83.21
+  },
+  "lipton_eng_breakf_black_pack_25pk": {
+    "silpo": 77.49
+  },
+  "lipton_gold_tea_black_pack_25pk": {
+    "silpo": 77.49
+  },
+  "lipton_earl_grey_orange_black_pack_25pk": {
+    "silpo": 77.99
+  },
+  "lipton_forest_fruits_black_pack_20pk": {
+    "varus": 6.6,
+    "silpo": 83.99
+  },
+  "lipton_intense_black_black_pack_25pk": {
+    "silpo": 84.99,
+    "metro": 83.21
+  },
+  "lipton_peach_mango_black_black_pack_20pk": {
+    "silpo": 91.99
+  },
+  "lipton_yellow_label_black_pack_50pk": {
+    "silpo": 149.0,
+    "metro": 148.2
+  },
+  "lipton_intense_black_black_pack_92pk": {
+    "silpo": 199.0
+  },
+  "lipton_gold_tea_black_pack_92pk": {
+    "silpo": 209.0
+  },
+  "lipton_yellow_label_black_pack_100pk": {
+    "varus": 212.7
+  },
+  "lipton_earl_gray_black_pack_50pk": {
+    "varus": 152.5
+  },
+  "lipton_intense_mint_green_pack_20pk": {
+    "silpo": 91.99
+  },
+  "lipton_intense_raspb_pomegran_pack_20pk": {
+    "silpo": 91.99
+  },
+  "lipton_classic_green_pack_25pk": {
+    "varus": 4.1,
+    "silpo": 84.99
+  },
+  "batik_korol_std_black_pack_25pk": {
+    "eko": 42.35,
+    "silpo": 33.49
+  },
+  "batik_gold_earl_grey_black_pack_25pk": {
+    "eko": 52.95,
+    "silpo": 54.99
+  },
+  "batik_chorniy_barhat_black_pack_25pk": {
+    "eko": 42.35,
+    "silpo": 33.49
+  },
+  "batik_jagidniy_cilynok_black_pack_25pk": {
+    "eko": 43.95,
+    "silpo": 33.49,
+    "ashan": 39.8
+  },
+  "batik_badyoriy_limon_black_pack_25pk": {
+    "eko": 43.95,
+    "silpo": 33.49,
+    "ashan": 37.8
+  },
+  "batik_gold_ceylon_visokogir_black_pack_25pk": {
+    "eko": 52.95,
+    "silpo": 54.99
+  },
+  "batik_black_granul_standart_sts_100gr": {
+    "eko": 59.15,
+    "silpo": 65.99
+  },
+  "batik_korol_std_black_100gr": {
+    "eko": 70.65,
+    "silpo": 74.99
+  },
+  "batik_chorniy_barhat_black_pack_60pk": {
+    "silpo": 107.0
+  },
+  "batik_korol_std_black_pack_100pk": {
+    "eko": 146.9,
+    "silpo": 164.0,
+    "ashan": 164.0
+  },
+  "akbar_gold_black_25pk": {
+    "silpo": 86.49,
+    "ashan": 80.4,
+    "metro": 84.69
+  },
+  "akbar_limon_lime_twist_black_pack_20pk": {
+    "silpo": 125.0,
+    "ashan": 102.8
+  },
+  "akbar_peach_passion_punch_black_pack_20pk": {
+    "silpo": 125.0,
+    "ashan": 102.8
+  },
+  "akbar_strawberry_kiwi_black_pack_20pk": {
+    "ashan": 99.0
+  },
+  "pickwick_english_black_pack_20pk": {
+    "eko": 34.9,
+    "silpo": 34.99,
+    "ashan": 66.4,
+    "novus": 51.99
+  },
+  "pickwick_mango_black_pack_20pk": {
+    "eko": 44.9,
+    "silpo": 44.9,
+    "ashan": 44.9,
+    "novus": 69.99,
+    "metro": 66.67
+  },
+  "pickwick_forest_fruit_black_pack_20pk": {
+    "eko": 66.35,
+    "silpo": 44.9,
+    "ashan": 44.9,
+    "novus": 62.99
+  },
+  "pickwick_earl_grey_black_pack_20pk": {
+    "eko": 66.35,
+    "silpo": 35.4,
+    "ashan": 64.4,
+    "novus": 62.99
+  },
+  "pickwick_strawberry_black_pack_20pk": {
+    "eko": 66.35,
+    "varus": 54.4,
+    "silpo": 44.9,
+    "ashan": 44.9,
+    "novus": 62.99
+  },
+  "pickwick_green_pure_green_pack_20pk": {
+    "ashan": 55.4,
+    "novus": 51.99,
+    "metro": 52.89
+  },
+  "pickwick_mint_green_pack_20pk": {
+    "ashan": 44.9,
+    "novus": 72.99,
+    "metro": 77.27
+  },
+  "pickwick_romashka_green_pack_20pk": {
+    "ashan": 44.9,
+    "novus": 72.99,
+    "metro": 77.27
+  },
+  "pickwick_spicy_chai_trav_pack_15pk": {
+    "eko": 59.9,
+    "silpo": 59.99,
+    "ashan": 84.4
+  },
+  "pickwick_romashka_trav_pack_15pk": {
+    "eko": 77.29,
+    "silpo": 59.99,
+    "ashan": 80.4,
+    "novus": 91.99
+  },
+  "pickwick_imbir_pryan_trav_pack_15pk": {
+    "eko": 59.9,
+    "silpo": 59.99,
+    "ashan": 84.4
+  },
+  "pickwick_energy_trav_pack_15pk": {
+    "eko": 77.29,
+    "silpo": 59.99,
+    "ashan": 84.4,
+    "novus": 91.99
+  },
+  "pickwick_immunity_trav_pack_15pk": {
+    "eko": 77.29,
+    "silpo": 59.99,
+    "ashan": 84.4,
+    "novus": 91.99
+  },
+  "pickwick_earl_grey_citrus_trav_pack_15pk": {
+    "eko": 77.29,
+    "novus": 0
+  },
+  "pickwick_citrus_buzina_trav_pack_20pk": {
+    "silpo": 44.9,
+    "novus": 62.99
+  },
+  "pickwick_imbir_lemon_citrus_trav_pack_20pk": {
+    "silpo": 44.9
+  },
+  "azerchay_bergamot_black_pack_25pk": {
+    "silpo": 79.99,
+    "ashan": 74.4,
+    "novus": 79.99,
+    "metro": 78.33
+  },
+  "azerchay_buket_black_pack_25pk": {
+    "silpo": 79.49,
+    "ashan": 62.9,
+    "novus": 79.99,
+    "fozzy": 66.5
+  },
+  "azerchay_chebrec_black_pack_30pk": {
+    "atb": 62.2
+  },
+  "sir_plav_komo_druzba_40_75gr": {
+    "varus": 8.6,
+    "silpo": 15.59,
+    "novus": 21.99,
+    "metro": 19.66,
+    "nash_kray": 22.4,
+    "fozzy": 18.9
+  },
+  "sir_plav_komo_vershk_40_75gr": {
+    "eko": 21.99,
+    "silpo": 17.39,
+    "novus": 21.99,
+    "metro": 19.66,
+    "nash_kray": 22.4,
+    "fozzy": 18.9
+  },
+  "sir_plav_komo_zelen_chasnik_40_75gr": {
+    "varus": 8.6,
+    "silpo": 15.59,
+    "nash_kray": 22.4,
+    "fozzy": 17.9
+  },
+  "sir_plav_komo_crab_pal_40_75gr": {
+    "nash_kray": 22.4
+  },
+  "sir_plav_komo_grib_40_75gr": {
+    "nash_kray": 22.4,
+    "fozzy": 18.9
+  }
+}

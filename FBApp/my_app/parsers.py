@@ -42,9 +42,7 @@ class ProductParserVol2:
     def __init__(self):
         '''Инииализация драйвера Chrome со всеми нужными параметрами,
         а именно включение режима работы браузера в фоновом режиме'''
-        #new
-        self.service = Service()
-        #end new
+
         self.options = undetected_chromedriver.ChromeOptions()
         # self.options.add_argument('enable-features=NetworkServiceInProcess')
         self.options.add_argument("disable-features=NetworkService")  # если верхнее не работает,то включаем это
@@ -6482,6 +6480,137 @@ class ProductParserVol2:
             'https://auchan.ua/ua/chaj-romashkovyj-pickwick-herbal-20h1-5-g-1098363/',
             'https://novus.online/ru/product/chay-pickwick-romashka-2015h',
             'https://metro.zakaz.ua/ru/products/chai-pikvik-30g--08711000336342/'
+        ])
+
+    def pickwick_spicy_chai_trav_pack_15pk_parser(self):
+        ''' Чай зелений Pickwick Spicy Chai 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000483251/',
+            'https://shop.silpo.ua/product/chai-pickwick-roibush-z-prianoshchamy-907486',
+            'https://auchan.ua/ua/chaj-s-prjanostjami-pickwick-spicy-chai-joy-of-tea-rojbush-aromatizirovannyj-15h1-75-g-1098405/'
+        ])
+
+    def pickwick_romashka_trav_pack_15pk_parser(self):
+        ''' Чай трав'яний Pickwick Ромашка 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000484241/',
+            'https://shop.silpo.ua/product/chai-trav-ianyi-pickwick-vitaminnyi-romashka-907488',
+            'https://auchan.ua/ua/chaj-fruktovo-travjanoj-aromatizirovannyj-pickwick-super-blends-shine-camomile-peach-liquorice-biotin-15h1-5-g-1098419/',
+            'https://novus.online/ru/product/chay-travyanyy-pickwick-blysk-syayannya-1515h'
+        ])
+
+    def pickwick_imbir_pryan_trav_pack_15pk_parser(self):
+        ''' Чай трав'яний Pickwick Імбірь 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000483190/',
+            'https://shop.silpo.ua/product/chai-trav-ianyi-pickwick-imbirno-prianyi-907485',
+            'https://auchan.ua/ua/chaj-travjanoj-pickwick-ginger-spices-joy-of-tea-aromatizirovannyj-15h1-75-g-1098398/'
+        ])
+
+    def pickwick_energy_trav_pack_15pk_parser(self):
+        ''' Чай трав'яний Pickwick Energy 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000484272/',
+            'https://shop.silpo.ua/product/chai-trav-ianyi-pickwick-vitaminnyi-lemongras-907489',
+            'https://auchan.ua/ua/chaj-travjanoj-pickwick-super-blends-energy-curcuma-sea-buckthorn-berry-lemongrass-vitamin-b6-15h1-5-g-1098426/',
+            'https://novus.online/ru/product/chay-travyanyy-pickwick-enerhiya-1515h'
+        ])
+
+    def pickwick_immunity_trav_pack_15pk_parser(self):
+        ''' Чай трав'яний Pickwick Immunity 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000484302/',
+            'https://shop.silpo.ua/product/chai-trav-ianyi-pickwick-vitaminnyi-verbena-ekhinatseia-907490',
+            'https://auchan.ua/ua/chaj-travjanoj-aromatizirovannyj-pickwick-super-blends-immunity-ginger-echinacea-lemon-verbena-vitamin-c-15h1-5-g-1098433/',
+            'https://novus.online/ru/product/chay-travyanyy-pickwick-imunitet-1515h'
+        ])
+
+    def pickwick_earl_grey_citrus_trav_pack_15pk_parser(self):
+        ''' Чай трав'яний Pickwick Earl Grey Citrus 15 шт '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/chai-pikvik--08711000483312/',
+            'https://novus.online/ru/product/chay-chornyy-pickwick-erl-hrey-tsytrus-15175'
+        ])
+
+    def pickwick_citrus_buzina_trav_pack_20pk_parser(self):
+        ''' Чай трав'яний Pickwick Citrus-Buzina 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-fruktovo-trav-ianyi-pickwick-tsytrus-buzyna-907483',
+            'https://novus.online/ru/product/chay-pickwick-tsytrus-ta-buzyna-202h'
+        ])
+
+    def pickwick_imbir_lemon_citrus_trav_pack_20pk_parser(self):
+        ''' Чай трав'яний Pickwick ginger-lemon-lemongrass 20 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-fruktovo-trav-ianyi-pickwick-imbyr-lemongras-907484'
+        ])
+
+    def azerchay_bergamot_black_pack_25pk_parser(self):
+        ''' Чай чорний Azercay з ароматом бергамота середньолистовий 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-azercay-z-aromatom-bergamota-serednolystovyi-580329',
+            'https://auchan.ua/ua/chaj-chernyj-azercay-s-bergamotom-25-sht-516213/',
+            'https://novus.online/ru/product/caj-cornij-azercay-z-bergamotom-2g25st',
+            'https://metro.zakaz.ua/ru/products/chai-azerkai-50g--04760062100938/'
+        ])
+
+    def azerchay_buket_black_pack_25pk_parser(self):
+        ''' Чай чорний Azercay Buket 25 шт '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/chai-chornyi-azercay-buket-krupnolystovyi-580328',
+            'https://auchan.ua/ua/chaj-chernyj-azercay-buket-25-sht-516178/',
+            'https://novus.online/ru/product/caj-cornij-azercay-extra-2g25st',
+            'https://fozzyshop.ua/ru/chaj-v-paketikakh/61152-chaj-chernyj-azercay-buket-krupnolistovoj-4760062101805.html'
+        ])
+
+    def azerchay_chebrec_black_pack_30pk_parser(self):
+        ''' Чай (30 ф/п х 2 г) Azercay чорний з чебрецем '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/caj-30-fp-h-2-g-azercay-cornij-z-cebrecem'
+        ])
+
+    def sir_plav_komo_druzba_40_75gr_parser(self):
+        ''' Сир плавлений «Комо» «Дружба» 40%'''
+        return self.prices_parsing([
+            'https://varus.ua/sir-plavlenij-komo-druzhba-40-75-g',
+            'https://shop.silpo.ua/product/syr-plavlenyi-komo-druzhba-40-883982',
+            'https://novus.online/ru/product/sir-plavlenij-55-druzba-komo-75g',
+            'https://metro.zakaz.ua/ru/products/sir-komo-75g-ukrayina--04820039807861/',
+            'https://shop.nashkraj.ua/kovel/product/455677-sir-komo-pl-40-75g-druzhba',
+            'https://fozzyshop.ua/ru/plavlenyj/96447-syr-plavlenyj-komo-druzhba-40-4820039807878.html'
+        ])
+
+    def sir_plav_komo_vershk_40_75gr_parser(self):
+        ''' Сир плавлений «Комо» Вершковий 40%'''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/sir-komo-75g-ukrayina--04820039807915/',
+            'https://shop.silpo.ua/product/syr-plavlenyi-komo-vershkovyi-40-883980',
+            'https://novus.online/ru/product/sir-plavlenij-55-verskovij-komo-75g',
+            'https://metro.zakaz.ua/ru/products/sir-komo-75g-ukrayina--04820039807915/',
+            'https://shop.nashkraj.ua/kovel/product/455675-sir-komo-pl-40-75g-vershkoviy',
+            'https://fozzyshop.ua/ru/plavlenyj/96448-syr-plavlenyj-komo-slivochnyj-40-4820039807922.html'
+        ])
+
+    def sir_plav_komo_zelen_chasnik_40_75gr_parser(self):
+        ''' Сир плавлений «Комо» з часником та зеленню 40%'''
+        return self.prices_parsing([
+            'https://varus.ua/sir-plavlenij-komo-z-zelennyu-ta-chasnikom-40-75-g',
+            'https://shop.silpo.ua/product/syr-plavlenyi-komo-z-zelenniu-ta-chasnykom-40-883981',
+            'https://shop.nashkraj.ua/kovel/product/455680-sir-komo-pl-40-75g-z-zelennyu-i-chasnikom',
+            'https://fozzyshop.ua/ru/plavlenyj/96449-syr-plavlenyj-komo-s-zelenyu-i-chesnokom-40-4820039807977.html'
+        ])
+
+    def sir_plav_komo_crab_pal_40_75gr_parser(self):
+        ''' Сир плавлений «Комо» з крабовими паличками 40%'''
+        return self.prices_parsing([
+            'https://shop.nashkraj.ua/kovel/product/455684-sir-komo-pl-40-75g-z-krabovimi-palichkami'
+        ])
+
+    def sir_plav_komo_grib_40_75gr_parser(self):
+        ''' Сир плавлений «Комо» з грибами 40%'''
+        return self.prices_parsing([
+            'https://shop.nashkraj.ua/kovel/product/455678-sir-komo-pl-40-75g-z-gribami',
+            'https://fozzyshop.ua/ru/plavlenyj/98307-syr-plavlenyj-komo-s-gribami-40-4820039807991.html'
         ])
 
 

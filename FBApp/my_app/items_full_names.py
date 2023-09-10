@@ -682,6 +682,22 @@ PICKWICK_STRAWBERRY_BLACK_20PK = 'Чай чорний Pickwick Strawberry 20 ш�
 PICKWICK_GREEN_PURE_GREEN_20PK = 'Чай зеленый Pickwick green 20 шт'
 PICKWICK_MINT_GREEN_20PK = 'Чай зеленый Pickwick mint 20 шт'
 PICKWICK_ROMASHKA_GREEN_20PK = 'Чай зеленый Pickwick ромашковий 20 шт'
+PICKWICK_SPICY_CHAI_TRAV_15PK = "Чай трав'яний Pickwick Joy of Tea Ройбуш з прянощами 1,75г*15шт"
+PICKWICK_ROMASHKA_TRAV_15PK = "Чай трав'яний Pickwick вітамінний ромашка 15 шт"
+PICKWICK_IMBIR_PRYAN_TRAV_15PK = "Чай трав'яний Pickwick імбірно-пряний 15 шт"
+PICKWICK_ENERGY_TRAV_15PK = "Чай трав'яний Pickwick energy 15 шт"
+PICKWICK_IMMUNITY_TRAV_15PK = "Чай трав'яний Pickwick immunity 15 шт"
+PICKWICK_EARL_GREY_CITRUS_TRAV_15PK = "Чай трав'яний Pickwick Earl Grey Citrus 15 шт"
+PICKWICK_CITRUS_BUZINA_TRAV_20PK = "Чай фруктово-трав'яний Pickwick цитрус-бузина 20 шт"
+PICKWICK_IMBIR_LEMON_LEMONGRASS_TRAV_20PK = "Чай фруктово-трав'яний Pickwick імбир-лемонграс 20 шт"
+AZERCHAY_BERGAMOT_BLACK_25PK = "Чай чорний Azercay з ароматом бергамота середньолистовий 25 шт"
+AZERCHAY_BUKET_BLACK_25PK = "Чай чорний Azercay Buket 25 шт"
+AZERCHAY_CHEBREC_BLACK_30PK = "Чай чорний Azercay Chebrec 30 шт"
+SIR_PLAV_KOMO_DRUZBA_40_75GR = "Сир плавлений «Комо» «Дружба» 40%"
+SIR_PLAV_KOMO_VERSHKOVIY_40_75GR = "Сир плавлений «Комо» Вершковий 40%"
+SIR_PLAV_KOMO_ZELEN_CHASNIK_40_75GR = "Сир плавлений «Комо» з зеленню та часником 40% 75 г"
+SIR_PLAV_KOMO_CRAB_PAL_40_75GR = "Сир плавлений «Комо» з крабовими паличками 40% 75 г"
+SIR_PLAV_KOMO_GRIB_40_75GR = "Сир плавлений «Комо» з грибами 40% 75 г"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

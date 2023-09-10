@@ -14,7 +14,7 @@ from my_app.utils import RefersForRNN
 
 class TesterForGroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2500
+    MAX_WORDS = 2600
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
@@ -1435,3 +1435,37 @@ class TesterForGroceryAppText:
             return PICKWICK_MINT_GREEN_20PK
         elif np.argmax(result) == 683:
             return PICKWICK_ROMASHKA_GREEN_20PK
+        elif np.argmax(result) == 684:
+            return PICKWICK_SPICY_CHAI_TRAV_15PK
+        elif np.argmax(result) == 685:
+            return PICKWICK_ROMASHKA_TRAV_15PK
+        elif np.argmax(result) == 686:
+            return PICKWICK_IMBIR_PRYAN_TRAV_15PK
+        elif np.argmax(result) == 687:
+            return PICKWICK_ENERGY_TRAV_15PK
+        elif np.argmax(result) == 688:
+            return PICKWICK_IMMUNITY_TRAV_15PK
+        elif np.argmax(result) == 689:
+            return PICKWICK_EARL_GREY_CITRUS_TRAV_15PK
+        elif np.argmax(result) == 690:
+            return PICKWICK_CITRUS_BUZINA_TRAV_20PK
+        elif np.argmax(result) == 691:
+            return PICKWICK_IMBIR_LEMON_LEMONGRASS_TRAV_20PK
+        elif np.argmax(result) == 692:
+            return AZERCHAY_BERGAMOT_BLACK_25PK
+        elif np.argmax(result) == 693:
+            return AZERCHAY_BUKET_BLACK_25PK
+        elif np.argmax(result) == 694:
+            return AZERCHAY_CHEBREC_BLACK_30PK
+        elif np.argmax(result) == 695:
+            return SIR_PLAV_KOMO_DRUZBA_40_75GR
+        elif np.argmax(result) == 696:
+            return SIR_PLAV_KOMO_VERSHKOVIY_40_75GR
+        elif np.argmax(result) == 697:
+            return SIR_PLAV_KOMO_ZELEN_CHASNIK_40_75GR
+        elif np.argmax(result) == 698:
+            return SIR_PLAV_KOMO_CRAB_PAL_40_75GR
+        elif np.argmax(result) == 699:
+            return SIR_PLAV_KOMO_GRIB_40_75GR
+
+

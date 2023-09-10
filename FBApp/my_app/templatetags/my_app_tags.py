@@ -2073,6 +2073,54 @@ get_pickwick_mint_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 686)
 '''Тэг,возвращающий информацию о "Чай ромашковий Pickwick Herbal, 20х1.5 г"'''
 get_pickwick_romashka_green_pack_20pk = tag.create_tag(ItemsPicsFromNet, 687)
 
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick Joy of Tea Ройбуш з прянощами 1,75г*15шт"'''
+get_pickwick_spicy_chai_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 688)
+
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick вітамінний ромашка 15 шт"'''
+get_pickwick_romashka_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 689)
+
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick імбірно-пряний 15 шт"'''
+get_pickwick_imbir_pryan_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 690)
+
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick вітамінний лемонграс 15 шт"'''
+get_pickwick_energy_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 691)
+
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick вітамінний вербена-ехінацея 15 шт"'''
+get_pickwick_immunity_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 692)
+
+'''Тэг,возвращающий информацию о "Чай трав'яний Pickwick Earl grey citrus 15 шт"'''
+get_pickwick_earl_frey_citrus_trav_pack_15pk = tag.create_tag(ItemsPicsFromNet, 693)
+
+'''Тэг,возвращающий информацию о "Чай фруктово-трав'яний Pickwick цитрус-бузина 20 шт"'''
+get_pickwick_citrus_buzina_citrus_trav_pack_20pk = tag.create_tag(ItemsPicsFromNet, 694)
+
+'''Тэг,возвращающий информацию о "Чай фруктово-трав'яний Pickwick імбир-лемонграс 20 шт"'''
+get_pickwick_imbir_lemon_citrus_trav_pack_20pk = tag.create_tag(ItemsPicsFromNet, 695)
+
+'''Тэг,возвращающий информацию о "Чай чорний Azercay з ароматом бергамота середньолистовий 25 шт"'''
+get_azerchay_bergamot_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 696)
+
+'''Тэг,возвращающий информацию о "Чай чорний Azercay Buket крупнолистовий 25 шт"'''
+get_azerchay_buket_black_pack_25pk = tag.create_tag(ItemsPicsFromNet, 697)
+
+'''Тэг,возвращающий информацию о "Чай (30 ф/п х 2 г) Azercay чорний з чебрецем"'''
+get_azerchay_chebrec_black_pack_30pk = tag.create_tag(ItemsPicsFromNet, 698)
+
+'''Тэг,возвращающий информацию о "Сир плавлений «Комо» «Дружба» 40%"'''
+get_sir_plav_komo_druzba_40_75gr = tag.create_tag(ItemsPicsFromNet, 699)
+
+'''Тэг,возвращающий информацию о "Сир плавлений «Комо» вершковий 40% 75 г"'''
+get_sir_plav_komo_vershk_40_75gr = tag.create_tag(ItemsPicsFromNet, 700)
+
+'''Тэг,возвращающий информацию о "Сир плавлений «Комо» з зеленню та часником 40% 75 г"'''
+get_sir_plav_komo_zelen_chasnik_40_75gr = tag.create_tag(ItemsPicsFromNet, 701)
+
+'''Тэг,возвращающий информацию о "Сир Комо пл 40% 75г з крабовими паличками"'''
+get_sir_plav_crab_pal_40_75gr = tag.create_tag(ItemsPicsFromNet, 702)
+
+'''Тэг,возвращающий информацию о "Сир Комо пл 40% 75г з грибами"'''
+get_sir_plav_grib_40_75gr = tag.create_tag(ItemsPicsFromNet, 703)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

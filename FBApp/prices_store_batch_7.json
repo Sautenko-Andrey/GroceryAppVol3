@@ -1,45 +1,45 @@
 {
   "bon_boisson_mult_sok_1l": {
-    "varus": 24.9,
+    "varus": 19.8,
     "silpo": 30.9,
     "nash_kray": 28.9,
     "fozzy": 24.0
   },
   "bon_boisson_mango_2l": {
-    "varus": 37.3,
+    "varus": 37.4,
     "silpo": 39.08,
     "novus": 42.99,
-    "metro": 37.84,
+    "metro": 0,
     "fozzy": 37.7
   },
   "bon_boisson_mohito_2l": {
     "varus": 36.9,
-    "silpo": 38.07,
-    "metro": 37.84,
-    "nash_kray": 41.8,
+    "silpo": 39.08,
+    "metro": 0,
+    "nash_kray": 30.99,
     "fozzy": 37.7
   },
   "bon_boisson_sitro_2l": {
     "varus": 37.9,
-    "novus": 45.99,
-    "metro": 0,
+    "novus": 0,
+    "metro": 37.84,
     "nash_kray": 41.8,
     "fozzy": 37.7
   },
   "bon_boisson_krem_soda_2l": {
-    "silpo": 38.59,
+    "silpo": 38.69,
     "ashan": 35.7,
     "novus": 42.99,
-    "metro": 0,
+    "metro": 37.84,
     "nash_kray": 41.8,
-    "fozzy": 35.6
+    "fozzy": 0
   },
   "bon_boisson_mult_sok_2l": {
     "eko": 46.09,
     "novus": 42.99,
-    "metro": 0,
-    "nash_kray": 41.8,
-    "fozzy": 27.9
+    "metro": 37.84,
+    "nash_kray": 30.99,
+    "fozzy": 37.7
   },
   "mirinda_orange_033jb": {
     "atb": 17.9,
@@ -48,113 +48,113 @@
     "fozzy": 22.2
   },
   "mirinda_orange_05l": {
-    "eko": 25.39,
+    "eko": 25.59,
     "varus": 23.9,
     "novus": 25.99,
-    "fozzy": 23.1
+    "fozzy": 0
   },
   "schweppes_granat_1l": {
     "silpo": 43.42
   },
   "schweppes_indian_tonic_033jb": {
-    "eko": 21.9,
-    "varus": 23.9,
-    "silpo": 23.72,
+    "eko": 22.9,
+    "varus": 24.9,
+    "silpo": 25.04,
     "ashan": 22.0,
-    "novus": 23.99,
+    "novus": 24.99,
     "nash_kray": 25.4,
     "fozzy": 22.0
   },
   "schweppes_original_bitter_lemon_033jb": {
-    "eko": 26.39,
-    "silpo": 23.72,
-    "novus": 22.99
+    "eko": 22.9,
+    "silpo": 24.73,
+    "novus": 24.99
   },
   "schweppes_original_bitter_lemon_075l": {
     "atb": 30.8,
-    "eko": 32.9,
+    "eko": 37.69,
     "silpo": 32.01,
     "novus": 34.99,
     "metro": 380.4,
-    "fozzy": 32.3
+    "fozzy": 0
   },
   "schweppes_original_bitter_lemon_1l": {
     "silpo": 43.42
   },
   "schweppes_classic_mojito_033jb": {
-    "eko": 26.39,
-    "varus": 25.0,
-    "silpo": 24.73,
+    "eko": 22.9,
+    "varus": 25.9,
+    "silpo": 25.04,
     "ashan": 22.0,
-    "novus": 24.99,
-    "metro": 23.21,
+    "novus": 26.99,
+    "metro": 24.27,
     "nash_kray": 25.4,
     "fozzy": 22.0
   },
   "farsh_govyajiy": {
-    "atb": 206.8,
-    "varus": 125.5,
-    "ashan": 208.4,
+    "atb": 196.6,
+    "varus": 101.9,
+    "ashan": 24.6,
     "novus": 259.0,
-    "metro": 222.2,
+    "metro": 243.4,
     "fozzy": 162.9
   },
   "rice_extra_krugliy_1kg": {
-    "fozzy": 49.9
+    "fozzy": 54.9
   },
   "golubci": {
-    "fozzy": 24.521333333333335
+    "fozzy": 26.768666666666665
   },
   "classic_plov_v_kazane_na_plite_svinina": {
-    "fozzy": 18.392
+    "fozzy": 19.586
   },
   "maslo_ferma_selyanske_73jir_180gr": {
-    "atb": 67.6,
-    "eko": 56.99,
-    "varus": 69.3,
+    "atb": 70.4,
+    "eko": 67.99,
+    "varus": 4.39,
     "silpo": 67.99,
-    "novus": 71.99,
+    "novus": 67.99,
     "metro": 70.3,
-    "nash_kray": 62.5,
-    "fozzy": 69.3
+    "nash_kray": 73.6,
+    "fozzy": 67.9
   },
   "classic_cotleti_po_kievski": {
-    "fozzy": 25.5312
+    "fozzy": 27.5362
   },
   "maslo_sliv_ferma_chocolat_62jir_180gr": {
-    "varus": 77.9,
-    "silpo": 65.99,
+    "varus": 78.4,
+    "silpo": 79.49,
     "nash_kray": 77.0,
     "fozzy": 75.9
   },
   "maslo_sliv_ferma_extra_82_5jir_180gr": {
-    "eko": 86.05,
-    "varus": 39.8,
+    "eko": 65.99,
+    "varus": 78.6,
     "silpo": 98.49,
-    "metro": 98.7,
+    "metro": 98.6,
     "fozzy": 88.9
   },
   "maslo_sliv_ferma_buter_63jir_180gr": {
-    "atb": 44.9,
+    "atb": 63.9,
     "varus": 62.9,
     "silpo": 64.49,
     "nash_kray": 67.1
   },
   "maslo_ferma_selyanske_73jir_400gr": {
-    "atb": 101.9,
+    "atb": 145.2,
     "eko": 149.9,
-    "silpo": 144.0,
+    "silpo": 149.0,
     "nash_kray": 151.9
   },
   "maslo_sliv_jagotinske_extra_82_5_180gr": {
     "atb": 79.9,
-    "eko": 69.99,
+    "eko": 79.99,
     "varus": 78.6,
-    "silpo": 74.99,
-    "novus": 78.59,
+    "silpo": 86.69,
+    "novus": 0,
     "metro": 77.9,
     "nash_kray": 87.2,
-    "fozzy": 74.99
+    "fozzy": 74.8
   },
   "maslo_sliv_jagotinske_buter_69_2_200gr": {
     "eko": 75.49,
@@ -162,11 +162,11 @@
     "fozzy": 79.99
   },
   "maslo_sliv_selyanske_extra_82_180gr": {
-    "varus": 76.9,
-    "silpo": 77.25,
+    "varus": 78.4,
+    "silpo": 79.27,
     "novus": 83.99,
-    "metro": 79.87,
-    "fozzy": 76.8
+    "metro": 78.83,
+    "fozzy": 75.7
   },
   "maslo_sliv_selyanske_buter_63_180gr": {
     "silpo": 69.17,
@@ -175,7 +175,7 @@
   "maslo_sliv_selyanske_72_5_180gr": {
     "eko": 70.99,
     "varus": 65.1,
-    "metro": 73.42
+    "metro": 70.62
   },
   "maslo_sliv_globino_extra_82_500gr": {
     "fozzy": 234.0
@@ -201,25 +201,25 @@
     "nash_kray": 72.7
   },
   "maslo_sliv_malokiya_82_180gr": {
-    "atb": 64.9,
-    "eko": 75.89,
+    "atb": 72.4,
+    "eko": 59.99,
     "silpo": 69.68,
-    "novus": 72.69,
-    "metro": 0,
-    "nash_kray": 77.9,
-    "fozzy": 52.9
+    "novus": 69.69,
+    "metro": 67.5,
+    "nash_kray": 81.8,
+    "fozzy": 68.5
   },
   "maslo_sliv_farm_fresh_extra_82_180gr": {
-    "fozzy": 74.5
+    "fozzy": 57.9
   },
   "maslo_sliv_farm_fresh_selyanske_73_180gr": {
     "fozzy": 66.9
   },
   "maslo_sliv_president_82_200gr": {
     "varus": 155.9,
-    "silpo": 134.0,
+    "silpo": 154.0,
     "novus": 149.0,
-    "metro": 145.5,
+    "metro": 0,
     "fozzy": 140.0
   },
   "maslo_sliv_president_82_400gr": {
@@ -234,21 +234,21 @@
   "jacobs_monarch_banka_95gr": {
     "atb": 214.7,
     "eko": 154.0,
-    "varus": 49.8,
-    "silpo": 229.0,
-    "ashan": 203.8,
-    "novus": 179.0,
-    "metro": 0,
-    "nash_kray": 153.9,
+    "varus": 25.3,
+    "silpo": 159.0,
+    "ashan": 159.0,
+    "novus": 239.0,
+    "metro": 245.0,
+    "nash_kray": 291.9,
     "fozzy": 152.9
   },
   "jacobs_monarch_banka_190gr": {
-    "atb": 289.5,
+    "atb": 379.3,
     "eko": 486.0,
-    "varus": 100.9,
+    "varus": 379.3,
     "silpo": 269.0,
-    "novus": 339.0,
-    "nash_kray": 482.6
+    "novus": 0,
+    "nash_kray": 269.9
   },
   "jacobs_monarch_banka_200gr": {
     "atb": 357.2,
@@ -257,150 +257,150 @@
   },
   "jacobs_monarch_banka_100gr": {
     "eko": 255.8,
-    "ashan": 140.0
+    "ashan": 162.8
   },
   "jacobs_monarch_banka_50gr": {
     "ashan": 151.6,
     "novus": 139.0,
-    "nash_kray": 153.4
+    "nash_kray": 16.0
   },
   "jacobs_monarch_classico_pack_225gr": {
-    "silpo": 165.0,
+    "silpo": 124.0,
     "ashan": 154.0
   },
   "jacobs_barista_strong_pack_225gr": {
-    "silpo": 204.0,
+    "silpo": 139.0,
     "ashan": 203.0,
-    "nash_kray": 216.8
+    "nash_kray": 139.9
   },
   "jacobs_kronung_500gr": {
     "silpo": 394.0
   },
   "jacobs_monarch_classico_pack_70gr": {
     "eko": 49.9,
-    "varus": 49.8,
+    "varus": 44.5,
     "silpo": 65.69,
     "novus": 65.99
   },
   "jacobs_monarch_intense_200gr": {
-    "eko": 114.9,
-    "silpo": 169.0,
+    "eko": 178.8,
+    "silpo": 114.0,
     "novus": 164.0,
-    "metro": 161.8,
+    "metro": 175.9,
     "nash_kray": 114.9
   },
   "jacobs_espresso_230gr": {
     "atb": 100.9,
     "eko": 99.9,
-    "varus": 100.9,
-    "silpo": 120.9,
-    "metro": 111.1,
-    "nash_kray": 84.99
+    "varus": 95.9,
+    "silpo": 125.9,
+    "metro": 129.4,
+    "nash_kray": 156.3
   },
   "jacobs_barista_classic_pack_225gr": {
-    "silpo": 204.0,
-    "ashan": 189.0,
-    "novus": 204.0,
+    "silpo": 139.0,
+    "ashan": 204.0,
+    "novus": 209.0,
     "metro": 187.8
   },
   "jacobs_monarch_intense_400gr": {
     "eko": 344.5,
-    "silpo": 234.0,
-    "ashan": 247.0,
-    "novus": 259.0,
+    "silpo": 214.9,
+    "ashan": 249.0,
+    "novus": 319.0,
     "metro": 398.4
   },
   "jacobs_monarch_classico_pack_400gr": {
     "eko": 376.0,
-    "silpo": 234.0,
-    "ashan": 269.0,
+    "silpo": 234.9,
+    "ashan": 229.0,
     "novus": 349.0,
     "metro": 398.4
   },
   "jacobs_monarch_rozch_60gr": {
-    "atb": 77.8
+    "atb": 89.5
   },
   "jacobs_monarch_rozch_425gr": {
-    "atb": 484.3
+    "atb": 503.5
   },
   "nescafe_gold_rozch_pack_165gr": {
-    "eko": 344.5,
-    "varus": 269.0,
-    "silpo": 294.0,
-    "ashan": 248.9,
-    "novus": 299.0,
+    "eko": 338.5,
+    "varus": 292.5,
+    "silpo": 199.0,
+    "ashan": 259.0,
+    "novus": 294.0,
     "fozzy": 258.9
   },
   "nescafe_gold_rozch_pack_310gr": {
     "varus": 549.0,
-    "silpo": 549.0,
-    "novus": 379.0
+    "silpo": 329.0,
+    "novus": 0
   },
   "nescafe_classic_rozch_pack_170gr": {
-    "silpo": 169.0
+    "silpo": 159.0
   },
   "nescafe_gold_rozch_pack_360gr": {
-    "eko": 547.8,
-    "silpo": 469.0
+    "eko": 538.2,
+    "silpo": 549.0
   },
   "nescafe_classic_rozch_pack_30gr": {
     "silpo": 51.99
   },
   "nescafe_gold_rozch_pack_30gr": {
-    "eko": 72.25,
-    "varus": 64.5,
-    "silpo": 65.99,
+    "eko": 70.99,
+    "varus": 62.9,
+    "silpo": 64.49,
     "ashan": 59.3,
     "nash_kray": 74.0,
     "fozzy": 62.5
   },
   "nescafe_gold_rozch_pack_60gr": {
-    "eko": 114.6,
-    "varus": 85.2,
+    "eko": 112.6,
+    "varus": 84.4,
     "silpo": 94.99,
-    "ashan": 78.5,
+    "ashan": 82.8,
     "novus": 94.99,
     "nash_kray": 117.4,
     "fozzy": 82.7
   },
   "nescafe_classic_rozch_pack_300gr": {
-    "silpo": 279.0
+    "silpo": 289.0
   },
   "nescafe_gold_rozch_pack_260gr": {
-    "eko": 419.7,
-    "varus": 337.4,
-    "silpo": 344.0,
-    "ashan": 303.3,
+    "eko": 412.4,
+    "varus": 359.0,
+    "silpo": 369.0,
+    "ashan": 337.3,
     "fozzy": 355.1
   },
   "carte_noire_pack_rozch_140gr": {
     "atb": 291.8,
     "eko": 352.7,
-    "varus": 25.8,
-    "silpo": 326.9,
-    "ashan": 299.4,
-    "novus": 324.0,
-    "metro": 315.2
+    "varus": 297.9,
+    "silpo": 219.0,
+    "ashan": 225.0,
+    "novus": 309.0,
+    "metro": 336.8
   },
   "carte_noire_pack_rozch_70gr": {
     "atb": 110.3,
     "eko": 199.9,
-    "silpo": 194.0,
-    "novus": 154.0,
+    "silpo": 199.0,
+    "novus": 194.0,
     "metro": 191.0
   },
   "carte_noire_caramel_pack_rozch_120gr": {
     "atb": 318.5,
-    "eko": 219.0,
-    "silpo": 324.0,
+    "eko": 352.7,
+    "silpo": 329.0,
     "novus": 329.0,
-    "metro": 356.2
+    "metro": 339.0
   },
   "carte_noire_rozch_pack_210gr": {
-    "varus": 349.9,
+    "varus": 40.9,
     "silpo": 329.0,
-    "ashan": 329.0,
-    "novus": 369.0
+    "ashan": 559.0,
+    "novus": 0
   },
   "carte_noire_rozch_pack_280gr": {
     "silpo": 499.0,
@@ -408,16 +408,16 @@
     "metro": 507.4
   },
   "ambassador_premium_rozch_pack_50gr": {
-    "varus": 38.8,
-    "silpo": 69.99,
+    "varus": 69.9,
+    "silpo": 55.99,
     "ashan": 91.1,
-    "novus": 89.99
+    "novus": 69.99
   },
   "ambassador_premium_rozch_pack_100gr": {
-    "eko": 189.4,
-    "varus": 182.4,
-    "silpo": 189.0,
-    "ashan": 189.7,
+    "eko": 186.1,
+    "varus": 107.6,
+    "silpo": 109.0,
+    "ashan": 199.6,
     "metro": 199.6
   }
 }

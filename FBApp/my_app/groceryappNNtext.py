@@ -20,16 +20,17 @@ from keras_preprocessing.sequence import pad_sequences
 
 from my_app.utils import make_list
 from my_app.utils import RefersForRNN
+import matplotlib.pyplot as plt
 
 class GroceryAppText:
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2500
+    MAX_WORDS = 2600
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
 
     #количество продуктов
-    ITEMS_AMOUNT = 684
+    ITEMS_AMOUNT = 700
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -38,7 +39,6 @@ class GroceryAppText:
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),
             LSTM(self.ITEMS_AMOUNT),
-            #LSTM(250),
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 
@@ -52,7 +52,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=18, batch_size=100)
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=10, batch_size=128)   #6 єпох достаточно
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 
@@ -60,7 +60,11 @@ class GroceryAppText:
         self.model.save('my_model_text')
         print('Обучение нейронной сети успешно завершено.')
 
+        #printing grafics
+        self.get_grafic(history.history)
+
         return history, reverse_word_map
+
 
 
     def upload_data(self):
@@ -148,6 +152,26 @@ class GroceryAppText:
 
         result = self.model.predict(data_pad)
         print(result, np.argmax(result), sep='\n')
+
+    def get_grafic(self, history_dict:dict):
+        accuracy = history_dict["accuracy"]
+        loss = history_dict["loss"]
+        epochs = range(1, len(accuracy) + 1)
+
+        fig = plt.figure(figsize=(8,6))
+        plt.plot(epochs, accuracy, color = "red", marker = "o", label = "Accuracy")
+        plt.plot(epochs, loss, color="blue", marker="o", label="Loss")
+        plt.title("Accuracy and losses during training")
+        plt.xlabel("Epochs")
+        plt.ylabel("Accuracy/Loss")
+        plt.grid()
+        plt.legend()
+        plt.show()
+
+
+
+
+
 
 
 

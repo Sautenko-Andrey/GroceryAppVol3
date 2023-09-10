@@ -5042,6 +5042,105 @@ def price_parcing(batch_name: str):
                 "metro": parser.pickwick_romashka_green_pack_20pk_parser()[6]
             }},
 
+            {'pickwick_spicy_chai_trav_pack_15pk': {
+                "eko": parser.pickwick_spicy_chai_trav_pack_15pk_parser()[1],
+                "silpo": parser.pickwick_spicy_chai_trav_pack_15pk_parser()[3],
+                "ashan": parser.pickwick_spicy_chai_trav_pack_15pk_parser()[4]
+            }},
+
+            {'pickwick_romashka_trav_pack_15pk': {
+                "eko": parser.pickwick_romashka_trav_pack_15pk_parser()[1],
+                "silpo": parser.pickwick_romashka_trav_pack_15pk_parser()[3],
+                "ashan": parser.pickwick_romashka_trav_pack_15pk_parser()[4],
+                "novus": parser.pickwick_romashka_trav_pack_15pk_parser()[5]
+            }},
+
+            {'pickwick_imbir_pryan_trav_pack_15pk': {
+                "eko": parser.pickwick_imbir_pryan_trav_pack_15pk_parser()[1],
+                "silpo": parser.pickwick_imbir_pryan_trav_pack_15pk_parser()[3],
+                "ashan": parser.pickwick_imbir_pryan_trav_pack_15pk_parser()[4]
+            }},
+
+            {'pickwick_energy_trav_pack_15pk': {
+                "eko": parser.pickwick_energy_trav_pack_15pk_parser()[1],
+                "silpo": parser.pickwick_energy_trav_pack_15pk_parser()[3],
+                "ashan": parser.pickwick_energy_trav_pack_15pk_parser()[4],
+                "novus": parser.pickwick_energy_trav_pack_15pk_parser()[5]
+            }},
+
+            {'pickwick_immunity_trav_pack_15pk': {
+                "eko": parser.pickwick_immunity_trav_pack_15pk_parser()[1],
+                "silpo": parser.pickwick_immunity_trav_pack_15pk_parser()[3],
+                "ashan": parser.pickwick_immunity_trav_pack_15pk_parser()[4],
+                "novus": parser.pickwick_immunity_trav_pack_15pk_parser()[5]
+            }},
+
+            {'pickwick_earl_grey_citrus_trav_pack_15pk': {
+                "eko": parser.pickwick_earl_grey_citrus_trav_pack_15pk_parser()[1],
+                "novus": parser.pickwick_earl_grey_citrus_trav_pack_15pk_parser()[5]
+            }},
+
+            {'pickwick_citrus_buzina_trav_pack_20pk': {
+                "silpo": parser.pickwick_citrus_buzina_trav_pack_20pk_parser()[3],
+                "novus": parser.pickwick_citrus_buzina_trav_pack_20pk_parser()[5]
+            }},
+
+            {'pickwick_imbir_lemon_citrus_trav_pack_20pk': {
+                "silpo": parser.pickwick_imbir_lemon_citrus_trav_pack_20pk_parser()[3]
+            }},
+
+            {'azerchay_bergamot_black_pack_25pk': {
+                "silpo": parser.azerchay_bergamot_black_pack_25pk_parser()[3],
+                "ashan": parser.azerchay_bergamot_black_pack_25pk_parser()[4],
+                "novus": parser.azerchay_bergamot_black_pack_25pk_parser()[5],
+                "metro": parser.azerchay_bergamot_black_pack_25pk_parser()[6]
+            }},
+
+            {'azerchay_buket_black_pack_25pk': {
+                "silpo": parser.azerchay_buket_black_pack_25pk_parser()[3],
+                "ashan": parser.azerchay_buket_black_pack_25pk_parser()[4],
+                "novus": parser.azerchay_buket_black_pack_25pk_parser()[5],
+                "fozzy": parser.azerchay_buket_black_pack_25pk_parser()[8]
+            }},
+
+            {'azerchay_chebrec_black_pack_30pk': {
+                "atb": parser.azerchay_chebrec_black_pack_30pk_parser()[0]
+            }},
+
+            {'sir_plav_komo_druzba_40_75gr': {
+                "varus": parser.sir_plav_komo_druzba_40_75gr_parser()[2],
+                "silpo": parser.sir_plav_komo_druzba_40_75gr_parser()[3],
+                "novus": parser.sir_plav_komo_druzba_40_75gr_parser()[5],
+                "metro": parser.sir_plav_komo_druzba_40_75gr_parser()[6],
+                "nash_kray": parser.sir_plav_komo_druzba_40_75gr_parser()[7],
+                "fozzy": parser.sir_plav_komo_druzba_40_75gr_parser()[8]
+            }},
+
+            {'sir_plav_komo_vershk_40_75gr': {
+                "eko": parser.sir_plav_komo_vershk_40_75gr_parser()[1],
+                "silpo": parser.sir_plav_komo_vershk_40_75gr_parser()[3],
+                "novus": parser.sir_plav_komo_vershk_40_75gr_parser()[5],
+                "metro": parser.sir_plav_komo_vershk_40_75gr_parser()[6],
+                "nash_kray": parser.sir_plav_komo_vershk_40_75gr_parser()[7],
+                "fozzy": parser.sir_plav_komo_vershk_40_75gr_parser()[8]
+            }},
+
+            {'sir_plav_komo_zelen_chasnik_40_75gr': {
+                "varus": parser.sir_plav_komo_zelen_chasnik_40_75gr_parser()[2],
+                "silpo": parser.sir_plav_komo_zelen_chasnik_40_75gr_parser()[3],
+                "nash_kray": parser.sir_plav_komo_zelen_chasnik_40_75gr_parser()[7],
+                "fozzy": parser.sir_plav_komo_zelen_chasnik_40_75gr_parser()[8]
+            }},
+
+            {'sir_plav_komo_crab_pal_40_75gr': {
+                "nash_kray": parser.sir_plav_komo_crab_pal_40_75gr_parser()[7],
+            }},
+
+            {'sir_plav_komo_grib_40_75gr': {
+                "nash_kray": parser.sir_plav_komo_grib_40_75gr_parser()[7],
+                "fozzy": parser.sir_plav_komo_grib_40_75gr_parser()[8]
+            }},
+
         ]
 
         # далее записываем цены в json-файл
@@ -5051,12 +5150,12 @@ def price_parcing(batch_name: str):
         print("Нет такого батча!")
 
 
-price_parcing("all_products_names_batch_1")
-# price_parcing("all_products_names_batch_2")
-# price_parcing("all_products_names_batch_3")
-# price_parcing("all_products_names_batch_4")
-# price_parcing("all_products_names_batch_5")
-# price_parcing("all_products_names_batch_6")
+#price_parcing("all_products_names_batch_1")
+#price_parcing("all_products_names_batch_2")
+#price_parcing("all_products_names_batch_3")
+#price_parcing("all_products_names_batch_4")
+#price_parcing("all_products_names_batch_5")
+#price_parcing("all_products_names_batch_6")
 #price_parcing("all_products_names_batch_7")
 #price_parcing("all_products_names_batch_8")
 

@@ -1701,6 +1701,39 @@ class ContextSupervisor:
             result = self.getting_prices('pickwick_mint_green_pack_20pk', get_pickwick_mint_green_pack_20pk)
         elif nn_respond == PICKWICK_ROMASHKA_GREEN_20PK:
             result = self.getting_prices('pickwick_romashka_green_pack_20pk', get_pickwick_romashka_green_pack_20pk)
+        elif nn_respond == PICKWICK_SPICY_CHAI_TRAV_15PK:
+            result = self.getting_prices('pickwick_spicy_chai_trav_pack_15pk', get_pickwick_spicy_chai_trav_pack_15pk)
+        elif nn_respond == PICKWICK_ROMASHKA_TRAV_15PK:
+            result = self.getting_prices('pickwick_romashka_trav_pack_15pk', get_pickwick_romashka_trav_pack_15pk)
+        elif nn_respond == PICKWICK_IMBIR_PRYAN_TRAV_15PK:
+            result = self.getting_prices('pickwick_imbir_pryan_trav_pack_15pk', get_pickwick_imbir_pryan_trav_pack_15pk)
+        elif nn_respond == PICKWICK_ENERGY_TRAV_15PK:
+            result = self.getting_prices('pickwick_energy_trav_pack_15pk', get_pickwick_energy_trav_pack_15pk)
+        elif nn_respond == PICKWICK_IMMUNITY_TRAV_15PK:
+            result = self.getting_prices('pickwick_immunity_trav_pack_15pk', get_pickwick_immunity_trav_pack_15pk)
+        elif nn_respond == PICKWICK_EARL_GREY_CITRUS_TRAV_15PK:
+            result = self.getting_prices('pickwick_earl_grey_citrus_trav_pack_15pk', get_pickwick_earl_frey_citrus_trav_pack_15pk)
+        elif nn_respond == PICKWICK_CITRUS_BUZINA_TRAV_20PK:
+            result = self.getting_prices('pickwick_citrus_buzina_trav_pack_20pk', get_pickwick_citrus_buzina_citrus_trav_pack_20pk)
+        elif nn_respond == PICKWICK_IMBIR_LEMON_LEMONGRASS_TRAV_20PK:
+            result = self.getting_prices('pickwick_imbir_lemon_citrus_trav_pack_20pk', get_pickwick_imbir_lemon_citrus_trav_pack_20pk)
+        elif nn_respond == AZERCHAY_BERGAMOT_BLACK_25PK:
+            result = self.getting_prices('azerchay_bergamot_black_pack_25pk', get_azerchay_bergamot_black_pack_25pk)
+        elif nn_respond == AZERCHAY_BUKET_BLACK_25PK:
+            result = self.getting_prices('azerchay_buket_black_pack_25pk', get_azerchay_buket_black_pack_25pk)
+        elif nn_respond == AZERCHAY_CHEBREC_BLACK_30PK:
+            result = self.getting_prices('azerchay_chebrec_black_pack_30pk', get_azerchay_chebrec_black_pack_30pk)
+        elif nn_respond == SIR_PLAV_KOMO_DRUZBA_40_75GR:
+            result = self.getting_prices('sir_plav_komo_druzba_40_75gr', get_sir_plav_komo_druzba_40_75gr)
+        elif nn_respond == SIR_PLAV_KOMO_VERSHKOVIY_40_75GR:
+            result = self.getting_prices('sir_plav_komo_vershk_40_75gr', get_sir_plav_komo_vershk_40_75gr)
+        elif nn_respond == SIR_PLAV_KOMO_ZELEN_CHASNIK_40_75GR:
+            result = self.getting_prices('sir_plav_komo_zelen_chasnik_40_75gr', get_sir_plav_komo_zelen_chasnik_40_75gr)
+        elif nn_respond == SIR_PLAV_KOMO_CRAB_PAL_40_75GR:
+            result = self.getting_prices('sir_plav_komo_crab_pal_40_75gr', get_sir_plav_crab_pal_40_75gr)
+        elif nn_respond == SIR_PLAV_KOMO_GRIB_40_75GR:
+            result = self.getting_prices('sir_plav_komo_grib_40_75gr', get_sir_plav_crab_pal_40_75gr)
+
 
 
         # тут подключаются блюда
