@@ -39,6 +39,10 @@ class ProductParserVol2:
     NASH_KRAY_DIV_CLASS='[class="nice_price"]'
     FOZZY_REGULAR_DIV_CLASS='[class="current-price"]'
 
+    __slots__ = ("options", "driver", "atb_price", "eko_price", "varus_price",
+                 "silpo_price", "ashan_price","novus_price", "metro_price",
+                 "nash_kray_price", "fozzy_price")
+
     def __init__(self):
         '''Инииализация драйвера Chrome со всеми нужными параметрами,
         а именно включение режима работы браузера в фоновом режиме'''
@@ -6611,6 +6615,24 @@ class ProductParserVol2:
         return self.prices_parsing([
             'https://shop.nashkraj.ua/kovel/product/455678-sir-komo-pl-40-75g-z-gribami',
             'https://fozzyshop.ua/ru/plavlenyj/98307-syr-plavlenyj-komo-s-gribami-40-4820039807991.html'
+        ])
+
+    def milk_jagot_2_6_pl_870gr_parser(self):
+        ''' Молоко пастеризоване «Яготинське» 2,6% 870 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-087-kg-agotinske-26-pbut',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-yagotynske-2-6-866829',
+            'https://novus.online/ru/product/moloko-26-agotin-plas-900g',
+            'https://metro.zakaz.ua/ru/products/moloko-iagotin-900g-ukrayina--04823005203865/',
+            'https://fozzyshop.ua/ru/moloko/90997-moloko-pasterizovannoe-yagotinske-26-but-4823005209379.html'
+        ])
+
+    def milk_jagot_3_2_pl_870gr_parser(self):
+        ''' Молоко пастеризоване «Яготинське» 3_2% 870 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-870g-ukrayina--04823005209386/',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-yagotynske-3-2-872536',
+            'https://novus.online/ru/product/moloko-pasteryzovane-32-yahotyn-plyashka-870h'
         ])
 
 

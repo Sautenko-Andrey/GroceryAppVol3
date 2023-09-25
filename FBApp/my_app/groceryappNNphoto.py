@@ -65,6 +65,8 @@ class GroceryAppPhoto:
 
         return train_generator, validation_generator, test_generator
 
+    __slots__ = ("conv_base", "model", "history")
+
     def __init__(self):
         '''Инициализация НС, ее компиляция и обучение.'''
 

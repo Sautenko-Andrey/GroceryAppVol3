@@ -3,9 +3,11 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "FBApp.settings")
 
 import django
+
 django.setup()
 
 from django.core.management import call_command
+
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 import numpy as np
@@ -22,15 +24,20 @@ from my_app.utils import make_list
 from my_app.utils import RefersForRNN
 import matplotlib.pyplot as plt
 
+
 class GroceryAppText:
+
+    #addding slots for memory safe and get more speed
+    __slots__ = ("model")
+
     # опредедяем количество наиболее употребляемых слов в тексте запроса пользователя
-    MAX_WORDS = 2600
+    MAX_WORDS = 4000
 
     # определяем количество слов, к которому дуте приведен каждый запрос от пользователя
     MAX_LENGTH_TEXT = 10
 
-    #количество продуктов
-    ITEMS_AMOUNT = 700
+    # количество продуктов
+    ITEMS_AMOUNT = 702
 
     def __init__(self):
         '''Инициализация модели НС и ее подготовка к обучению'''
@@ -38,11 +45,12 @@ class GroceryAppText:
         self.model = keras.Sequential([
             Embedding(self.MAX_WORDS, self.ITEMS_AMOUNT, input_length=self.MAX_LENGTH_TEXT),
             LSTM(self.ITEMS_AMOUNT, return_sequences=True),
+            LSTM(self.ITEMS_AMOUNT,return_sequences=True),   #new
             LSTM(self.ITEMS_AMOUNT),
             Dense(self.ITEMS_AMOUNT, activation='softmax')
         ])
 
-        self.model.compile(optimizer=Adam(0.0001), loss='categorical_crossentropy',
+        self.model.compile(optimizer=Adam(0.0001), loss='categorical_crossentropy',  #adam(0.0001)
                            metrics=['accuracy'])
 
     def training_NN(self):
@@ -52,7 +60,7 @@ class GroceryAppText:
         TRAIN_DATA, TARGET_DATA, tokenizer = self.converted_data()
 
         # запускаем тренировку:
-        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=10, batch_size=128)   #6 єпох достаточно
+        history = self.model.fit(TRAIN_DATA, TARGET_DATA, epochs=3, batch_size=64)  # 8 єпох достаточно
 
         reverse_word_map = dict(map(reversed, self.converted_data()[2].word_index.items()))
 
@@ -60,20 +68,17 @@ class GroceryAppText:
         self.model.save('my_model_text')
         print('Обучение нейронной сети успешно завершено.')
 
-        #printing grafics
+        # printing grafics
         self.get_grafic(history.history)
 
         return history, reverse_word_map
 
-
-
     def upload_data(self):
         """Функция загрузки обучающей выборки для каждой позиции товара"""
-        #создаем єкземпляр класса RefersForRNN:
+        # создаем єкземпляр класса RefersForRNN:
         all_text_data = RefersForRNN()
-        #return all_text_data.get_text()
+        # return all_text_data.get_text()
         return all_text_data.get_text_from_DB()
-
 
     def converted_data(self):
         '''Подготовка обучающих данных'''
@@ -100,9 +105,9 @@ class GroceryAppText:
         TRAIN_SAMPLE = data_pad
         items = self.ITEMS_AMOUNT
 
-        result= []
+        result = []
         for i in range(items):
-            #data_list = [make_list(items, i) * self.upload_data()[i + 1] for x in range(1)]
+            # data_list = [make_list(items, i) * self.upload_data()[i + 1] for x in range(1)]
             data_list = [make_list(items, i) * self.upload_data()[1][i] for x in range(1)]
             for j in data_list:
                 for k in j:
@@ -153,13 +158,13 @@ class GroceryAppText:
         result = self.model.predict(data_pad)
         print(result, np.argmax(result), sep='\n')
 
-    def get_grafic(self, history_dict:dict):
+    def get_grafic(self, history_dict: dict):
         accuracy = history_dict["accuracy"]
         loss = history_dict["loss"]
         epochs = range(1, len(accuracy) + 1)
 
-        fig = plt.figure(figsize=(8,6))
-        plt.plot(epochs, accuracy, color = "red", marker = "o", label = "Accuracy")
+        fig = plt.figure(figsize=(8, 6))
+        plt.plot(epochs, accuracy, color="red", marker="o", label="Accuracy")
         plt.plot(epochs, loss, color="blue", marker="o", label="Loss")
         plt.title("Accuracy and losses during training")
         plt.xlabel("Epochs")
@@ -167,12 +172,6 @@ class GroceryAppText:
         plt.grid()
         plt.legend()
         plt.show()
-
-
-
-
-
-
 
 
 user = GroceryAppText()

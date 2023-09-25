@@ -2121,6 +2121,12 @@ get_sir_plav_crab_pal_40_75gr = tag.create_tag(ItemsPicsFromNet, 702)
 '''Тэг,возвращающий информацию о "Сир Комо пл 40% 75г з грибами"'''
 get_sir_plav_grib_40_75gr = tag.create_tag(ItemsPicsFromNet, 703)
 
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Яготинське» 2,6% 870 г"'''
+get_milk_jagot_2_6_pl_870gr = tag.create_tag(ItemsPicsFromNet, 704)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Яготинське» 3.2% 870 г"'''
+get_milk_jagot_3_2_pl_870gr = tag.create_tag(ItemsPicsFromNet, 705)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

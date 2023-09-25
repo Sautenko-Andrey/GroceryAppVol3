@@ -2,6 +2,7 @@ import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "FBApp.settings")
 
+
 import django
 
 django.setup()
@@ -43,6 +44,7 @@ batch_5_path = "../prices_store_batch_5.json"
 batch_6_path = "../prices_store_batch_6.json"
 batch_7_path = "../prices_store_batch_7.json"
 batch_8_path = "../prices_store_batch_8.json"
+batch_9_path = "../prices_store_batch_9.json"
 
 parser = ProductParserVol2()
 
@@ -77,6 +79,7 @@ def price_parcing(batch_name: str):
     batch_name_6 = "all_products_names_batch_6"
     batch_name_7 = "all_products_names_batch_7"
     batch_name_8 = "all_products_names_batch_8"
+    batch_name_9 = "all_products_names_batch_9"
 
     mode_type_first_write = "w"
 
@@ -5146,6 +5149,28 @@ def price_parcing(batch_name: str):
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_8, batch_8_path, mode_type_first_write)
 
+        # для 9 батча
+    elif batch_name == batch_name_9:
+        all_products_names_batch_9 = [
+
+            {'milk_jagot_2_6_pl_870gr': {
+                "atb": parser.milk_jagot_2_6_pl_870gr_parser()[0],
+                "silpo": parser.milk_jagot_2_6_pl_870gr_parser()[3],
+                "novus": parser.milk_jagot_2_6_pl_870gr_parser()[5],
+                "metro": parser.milk_jagot_2_6_pl_870gr_parser()[6],
+                "fozzy": parser.milk_jagot_2_6_pl_870gr_parser()[8]
+            }},
+
+            {'milk_jagot_3_2_pl_870gr': {
+                "eko": parser.milk_jagot_3_2_pl_870gr_parser()[1],
+                "silpo": parser.milk_jagot_3_2_pl_870gr_parser()[3],
+                "novus": parser.milk_jagot_3_2_pl_870gr_parser()[5]
+            }},
+        ]
+
+        # далее записываем цены в json-файл
+        write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)
+
     else:
         print("Нет такого батча!")
 
@@ -5158,6 +5183,7 @@ def price_parcing(batch_name: str):
 #price_parcing("all_products_names_batch_6")
 #price_parcing("all_products_names_batch_7")
 #price_parcing("all_products_names_batch_8")
+price_parcing("all_products_names_batch_9")
 
 
 def prepeare_json_data(path:str):
@@ -5179,6 +5205,7 @@ def merging_jsons():
     data_6 = prepeare_json_data(batch_6_path)
     data_7 = prepeare_json_data(batch_7_path)
     data_8 = prepeare_json_data(batch_8_path)
+    data_9 = prepeare_json_data(batch_9_path)
 
     df1 = pd.DataFrame([data_1])
     df2 = pd.DataFrame([data_2])
@@ -5188,8 +5215,9 @@ def merging_jsons():
     df6 = pd.DataFrame([data_6])
     df7 = pd.DataFrame([data_7])
     df8 = pd.DataFrame([data_8])
+    df9 = pd.DataFrame([data_9])
 
-    merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8], axis=1)
+    merged_contents = pd.concat([df1, df2, df3, df4, df5, df6, df7, df8, df9], axis=1)
 
     merged_contents.to_json('../overall_prices.json', orient='records')
 

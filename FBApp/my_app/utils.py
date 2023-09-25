@@ -103,6 +103,10 @@ class ContextSupervisor:
     '''Класс, благодаря которму убирается дублирование кода в context_dict
     для отвтеов по фото и тексту.'''
 
+    __slots__ = ("atb_price", "eko_price", "varus_price",
+        "silpo_price", "ashan_price", "novus_price",
+        "metro_price", "nk_price", "fozzy_price","info")
+
     # сообщения об отсутствии цены в БД.
     ATB_WARNING_MESSAGE = 'Цена в АТБ отсутствует в БД.'
     EKO_WARNING_MESSAGE = 'Цена в EKO отсутствует в БД.'
@@ -1733,6 +1737,10 @@ class ContextSupervisor:
             result = self.getting_prices('sir_plav_komo_crab_pal_40_75gr', get_sir_plav_crab_pal_40_75gr)
         elif nn_respond == SIR_PLAV_KOMO_GRIB_40_75GR:
             result = self.getting_prices('sir_plav_komo_grib_40_75gr', get_sir_plav_crab_pal_40_75gr)
+        elif nn_respond == MILK_JAGOTINSKE_2_6_PL_870GR:
+            result = self.getting_prices('milk_jagot_2_6_pl_870gr', get_milk_jagot_2_6_pl_870gr)
+        elif nn_respond == MILK_JAGOTINSKE_3_2_PL_870GR:
+            result = self.getting_prices('milk_jagot_3_2_pl_870gr', get_milk_jagot_3_2_pl_870gr)
 
 
 
@@ -1814,6 +1822,8 @@ def get_dishes_prices(ingredients_prices:tuple, devider:int) -> list:
 class UserAmountConverter:
     '''Класс фомирующий величину (количество) продукто(продуктов)
     для формирования точной цены для пользователе в "Продуктовых наборах"'''
+
+    __slots__ = ("user_request",)
 
     __KILOGRAMS_SYMB = 'кКkK'
     __GRAMMS_SYMB = 'гГgG'
