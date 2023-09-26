@@ -2127,6 +2127,21 @@ get_milk_jagot_2_6_pl_870gr = tag.create_tag(ItemsPicsFromNet, 704)
 '''Тэг,возвращающий информацию о "Молоко пастеризоване «Яготинське» 3.2% 870 г"'''
 get_milk_jagot_3_2_pl_870gr = tag.create_tag(ItemsPicsFromNet, 705)
 
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Яготинське» 1% 870 г"'''
+get_milk_jagot_1_pl_870gr = tag.create_tag(ItemsPicsFromNet, 706)
+
+'''Тэг,возвращающий информацию о "Молоко пряжене «Яготинське» 2,6% 870 г"'''
+get_milk_jagot_pryaj_2_6_pl_870gr = tag.create_tag(ItemsPicsFromNet, 707)
+
+'''Тэг,возвращающий информацию о "Молоко «Галичина» «Українське» 2,5% 870 г"'''
+get_milk_galichina_ukr_2_5_pl_870gr = tag.create_tag(ItemsPicsFromNet, 708)
+
+'''Тэг,возвращающий информацию о "Молоко «Премія»® питне пастеризоване 2,5% 900 г"'''
+get_milk_premiya_pitne_2_5_pl_900gr = tag.create_tag(ItemsPicsFromNet, 709)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Премія LOKO питне 2,5% пл900 г"'''
+get_milk_premiya_loko_pitne_2_5_pl_900gr = tag.create_tag(ItemsPicsFromNet, 710)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

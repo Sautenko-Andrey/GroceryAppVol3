@@ -1471,6 +1471,16 @@ class TesterForGroceryAppText:
             return MILK_JAGOTINSKE_2_6_PL_870GR
         elif np.argmax(result) == 701:
             return MILK_JAGOTINSKE_3_2_PL_870GR
+        elif np.argmax(result) == 702:
+            return MILK_JAGOTINSKE_1_PL_870GR
+        elif np.argmax(result) == 703:
+            return MILK_JAGOTINSKE_PRYAJ_2_6_PL_870GR
+        elif np.argmax(result) == 704:
+            return MILK_GALICHINA_UKR_2_5_PL_870GR
+        elif np.argmax(result) == 705:
+            return MILK_PREMIYA_PITNE_2_5_PL_900GR
+        elif np.argmax(result) == 706:
+            return MILK_PREMIYA_LOKO_PITNE_2_5_PL_900GR
 
 
 

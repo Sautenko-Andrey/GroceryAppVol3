@@ -1741,6 +1741,16 @@ class ContextSupervisor:
             result = self.getting_prices('milk_jagot_2_6_pl_870gr', get_milk_jagot_2_6_pl_870gr)
         elif nn_respond == MILK_JAGOTINSKE_3_2_PL_870GR:
             result = self.getting_prices('milk_jagot_3_2_pl_870gr', get_milk_jagot_3_2_pl_870gr)
+        elif nn_respond == MILK_JAGOTINSKE_1_PL_870GR:
+            result = self.getting_prices('milk_jagot_1_pl_870gr', get_milk_jagot_1_pl_870gr)
+        elif nn_respond == MILK_JAGOTINSKE_PRYAJ_2_6_PL_870GR:
+            result = self.getting_prices('milk_jagot_pryaj_2_6_pl_870gr', get_milk_jagot_pryaj_2_6_pl_870gr)
+        elif nn_respond == MILK_GALICHINA_UKR_2_5_PL_870GR:
+            result = self.getting_prices('milk_galichina_ukr_2_5_pl_870gr', get_milk_galichina_ukr_2_5_pl_870gr)
+        elif nn_respond == MILK_PREMIYA_PITNE_2_5_PL_900GR:
+            result = self.getting_prices('milk_premiya_pitne_2_5_pl_900gr', get_milk_premiya_pitne_2_5_pl_900gr)
+        elif nn_respond == MILK_PREMIYA_LOKO_PITNE_2_5_PL_900GR:
+            result = self.getting_prices('milk_premiya_loko_pitne_2_5_pl_900gr', get_milk_premiya_loko_pitne_2_5_pl_900gr)
 
 
 

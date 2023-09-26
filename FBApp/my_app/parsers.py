@@ -6635,6 +6635,44 @@ class ProductParserVol2:
             'https://novus.online/ru/product/moloko-pasteryzovane-32-yahotyn-plyashka-870h'
         ])
 
+    def milk_jagot_1_pl_870gr_parser(self):
+        ''' Молоко пастеризоване «Яготинське» 1% 870 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-yagotinskoe-1-pasterizovannoe-870-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-yagotynske-1-876400'
+        ])
+
+    def milk_jagot_pryaj_2_6_pl_870gr_parser(self):
+        ''' Молоко пряжене «Яготинське» 2,6% 870 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-870g--04823005209362/',
+            'https://varus.ua/moloko-yagotinskoe-2-6-toplenoe-870-g',
+            'https://shop.silpo.ua/product/moloko-yagotynske-priazhene-2-6-880464',
+            'https://metro.zakaz.ua/ru/products/moloko-iagotin-900g--04823005203933/'
+        ])
+
+    def milk_galichina_ukr_2_5_pl_870gr_parser(self):
+        ''' Молоко «Галичина» «Українське» 2,5% 870 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-galichina-2-5-pasterizovane-870-g',
+            'https://shop.silpo.ua/product/moloko-galychyna-ukrainske-2-5-682859',
+            'https://novus.online/ru/product/moloko-pasterizovane-25-galicina-pet-870g',
+            'https://metro.zakaz.ua/ru/products/moloko-galichina-870g-ukrayina--04820038493829/',
+            'https://fozzyshop.ua/ru/moloko/40751-moloko-galichina-ukrainskoe-25-but-4820038493829.html'
+        ])
+
+    def milk_premiya_pitne_2_5_pl_900gr_parser(self):
+        ''' Молоко «Премія»® питне пастеризоване 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-premiia-pytne-pasteryzovane-2-5-815586'
+        ])
+
+    def milk_premiya_loko_pitne_2_5_pl_900gr_parser(self):
+        ''' Молоко «Премія»® LOKO питне пастеризоване 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-premiia-loko-pytne-2-5-pl-935136'
+        ])
+
 
 
 

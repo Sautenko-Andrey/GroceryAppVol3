@@ -5166,6 +5166,34 @@ def price_parcing(batch_name: str):
                 "silpo": parser.milk_jagot_3_2_pl_870gr_parser()[3],
                 "novus": parser.milk_jagot_3_2_pl_870gr_parser()[5]
             }},
+
+            {'milk_jagot_1_pl_870gr': {
+                "varus": parser.milk_jagot_1_pl_870gr_parser()[2],
+                "silpo": parser.milk_jagot_1_pl_870gr_parser()[3]
+            }},
+
+            {'milk_jagot_pryaj_2_6_pl_870gr': {
+                "eko": parser.milk_jagot_pryaj_2_6_pl_870gr_parser()[1],
+                "varus": parser.milk_jagot_pryaj_2_6_pl_870gr_parser()[2],
+                "silpo": parser.milk_jagot_pryaj_2_6_pl_870gr_parser()[3],
+                "metro": parser.milk_jagot_pryaj_2_6_pl_870gr_parser()[6]
+            }},
+
+            {'milk_galichina_ukr_2_5_pl_870gr': {
+                "varus": parser.milk_galichina_ukr_2_5_pl_870gr_parser()[2],
+                "silpo": parser.milk_galichina_ukr_2_5_pl_870gr_parser()[3],
+                "novus": parser.milk_galichina_ukr_2_5_pl_870gr_parser()[5],
+                "metro": parser.milk_galichina_ukr_2_5_pl_870gr_parser()[6],
+                "fozzy": parser.milk_galichina_ukr_2_5_pl_870gr_parser()[8]
+            }},
+
+            {'milk_premiya_pitne_2_5_pl_900gr': {
+                "silpo": parser.milk_premiya_pitne_2_5_pl_900gr_parser()[3]
+            }},
+
+            {'milk_premiya_loko_pitne_2_5_pl_900gr': {
+                "silpo": parser.milk_premiya_loko_pitne_2_5_pl_900gr_parser()[3]
+            }},
         ]
 
         # далее записываем цены в json-файл
