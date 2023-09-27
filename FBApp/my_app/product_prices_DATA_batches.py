@@ -5191,8 +5191,30 @@ def price_parcing(batch_name: str):
                 "silpo": parser.milk_premiya_pitne_2_5_pl_900gr_parser()[3]
             }},
 
-            {'milk_premiya_loko_pitne_2_5_pl_900gr': {
-                "silpo": parser.milk_premiya_loko_pitne_2_5_pl_900gr_parser()[3]
+            {'milk_premiya_loko_pitne_2_5_pl_2l': {
+                "silpo": parser.milk_premiya_loko_pitne_2_5_pl_2l_parser()[3]
+            }},
+
+            {'milk_premiya_loko_pitne_3_2_pl_2l': {
+                "silpo": parser.milk_premiya_loko_pitne_3_2_pl_2l_parser()[3]
+            }},
+
+            {'milk_organic_milk_3_5_1l': {
+                "silpo": parser.milk_organic_milk_3_5_1l_parser()[3],
+                "novus": parser.milk_organic_milk_3_5_1l_parser()[5],
+                "metro": parser.milk_organic_milk_3_5_1l_parser()[6],
+                "fozzy": parser.milk_organic_milk_3_5_1l_parser()[8]
+            }},
+
+            {'milk_organic_milk_2_5_470gr': {
+                "silpo": parser.milk_organic_milk_2_5_470gr_parser()[3]
+            }},
+
+            {'milk_organic_milk_2_5_1l': {
+                "silpo": parser.milk_organic_milk_2_5_1l_parser()[3],
+                "novus": parser.milk_organic_milk_2_5_1l_parser()[5],
+                "metro": parser.milk_organic_milk_2_5_1l_parser()[6],
+                "fozzy": parser.milk_organic_milk_2_5_1l_parser()[8]
             }},
         ]
 

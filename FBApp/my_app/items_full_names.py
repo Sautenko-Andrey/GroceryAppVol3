@@ -705,6 +705,11 @@ MILK_JAGOTINSKE_PRYAJ_2_6_PL_870GR = "Молоко пряжене «Яготин
 MILK_GALICHINA_UKR_2_5_PL_870GR = "Молоко «Галичина» «Українське» 2,5% 870 г"
 MILK_PREMIYA_PITNE_2_5_PL_900GR = "Молоко «Премія»® питне пастеризоване 2,5% 900 г"
 MILK_PREMIYA_LOKO_PITNE_2_5_PL_900GR = "Молоко «Премія»® LOKO питне пастеризоване 2,5% 900 г"
+MILK_PREMIYA_LOKO_PITNE_2_5_PL_2L = "Молоко «Премія»® LOKO питне пастеризоване 2,5% 2 л"
+MILK_PREMIYA_LOKO_PITNE_3_2_PL_2L = "Молоко «Премія»® LOKO питне пастеризоване 3.2% 2 л"
+MILK_ORGANIC_MILK_3_5_1L = "Молоко пастеризоване Organic Milk органічне 3,5% 1 л"
+MILK_ORGANIC_MILK_2_5_470GR = "Молоко пастеризоване Organic Milk органічне 2,5% 470 г"
+MILK_ORGANIC_MILK_2_5_1L = "Молоко пастеризоване Organic Milk органічне 2,5% 1 л"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

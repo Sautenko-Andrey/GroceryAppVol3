@@ -2139,8 +2139,23 @@ get_milk_galichina_ukr_2_5_pl_870gr = tag.create_tag(ItemsPicsFromNet, 708)
 '''Тэг,возвращающий информацию о "Молоко «Премія»® питне пастеризоване 2,5% 900 г"'''
 get_milk_premiya_pitne_2_5_pl_900gr = tag.create_tag(ItemsPicsFromNet, 709)
 
-'''Тэг,возвращающий информацию о "Молоко пастеризоване Премія LOKO питне 2,5% пл900 г"'''
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Премія LOKO питне 2,5% пл 900 г"'''
 get_milk_premiya_loko_pitne_2_5_pl_900gr = tag.create_tag(ItemsPicsFromNet, 710)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Премія LOKO питне 2,5% пл 2 л"'''
+get_milk_premiya_loko_pitne_2_5_pl_2l = tag.create_tag(ItemsPicsFromNet, 711)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Премія LOKO питне 3.2% пл 2 л"'''
+get_milk_premiya_loko_pitne_3_2_pl_2l = tag.create_tag(ItemsPicsFromNet, 712)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk органічне 3,5% 1 л"'''
+get_milk_organic_milk_3_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 713)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk органічне 2,5% пляшка 470 г"'''
+get_milk_organic_milk_2_5_pl_470gr = tag.create_tag(ItemsPicsFromNet, 714)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk органічне 2,5% 1 л"'''
+get_milk_organic_milk_2_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 715)
 
 
 # @register.simple_tag()

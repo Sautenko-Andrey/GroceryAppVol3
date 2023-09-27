@@ -6673,6 +6673,43 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/moloko-pasteryzovane-premiia-loko-pytne-2-5-pl-935136'
         ])
 
+    def milk_premiya_loko_pitne_2_5_pl_2l_parser(self):
+        ''' Молоко «Премія»® питне пастеризоване 2,5% 2 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-premiia-loko-pytne-2-5-but-935137'
+        ])
+
+    def milk_premiya_loko_pitne_3_2_pl_2l_parser(self):
+        ''' Молоко «Премія»® питне пастеризоване 3.2% 2 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-premiia-loko-pytne-3-2-pl-935138'
+        ])
+
+    def milk_organic_milk_3_5_1l_parser(self):
+        ''' Молоко пастеризоване Organic Milk органічне 3,5% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-organic-milk-organichne-3-5-576679',
+            'https://novus.online/ru/product/moloko-organicne-35-organic-milk-pl1000g',
+            'https://metro.zakaz.ua/ru/products/moloko-organik-milk-1000g--04820178810043/',
+            'https://fozzyshop.ua/ru/moloko/43952-moloko-organic-milk-pasterizovannoe-35-but-4820178810043.html'
+        ])
+
+    def milk_organic_milk_2_5_470gr_parser(self):
+        ''' Молоко пастеризоване Organic Milk органічне 2,5% пляшка 470 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-organic-milk-organichne-2-5-pliashka-786251'
+        ])
+
+    def milk_organic_milk_2_5_1l_parser(self):
+        ''' Молоко пастеризоване Organic Milk органічне 2,5% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-organic-milk-organichne-2-5-576680',
+            'https://novus.online/ru/product/moloko-organicne-25-organic-milk-pl1000g',
+            'https://metro.zakaz.ua/ru/products/moloko-organik-milk-1000g--04820178810050/',
+            'https://fozzyshop.ua/ru/moloko/32637-moloko-pasterizovan-organic-milk-organicheskoe-25-butylka-4820178810050.html'
+        ])
+
+
 
 
 

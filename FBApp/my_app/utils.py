@@ -1751,6 +1751,16 @@ class ContextSupervisor:
             result = self.getting_prices('milk_premiya_pitne_2_5_pl_900gr', get_milk_premiya_pitne_2_5_pl_900gr)
         elif nn_respond == MILK_PREMIYA_LOKO_PITNE_2_5_PL_900GR:
             result = self.getting_prices('milk_premiya_loko_pitne_2_5_pl_900gr', get_milk_premiya_loko_pitne_2_5_pl_900gr)
+        elif nn_respond == MILK_PREMIYA_LOKO_PITNE_2_5_PL_2L:
+            result = self.getting_prices('milk_premiya_loko_pitne_2_5_pl_2l', get_milk_premiya_loko_pitne_2_5_pl_2l)
+        elif nn_respond == MILK_PREMIYA_LOKO_PITNE_3_2_PL_2L:
+            result = self.getting_prices('milk_premiya_loko_pitne_3_2_pl_2l', get_milk_premiya_loko_pitne_3_2_pl_2l)
+        elif nn_respond == MILK_ORGANIC_MILK_3_5_1L:
+            result = self.getting_prices('milk_organic_milk_3_5_1l', get_milk_organic_milk_3_5_pl_1l)
+        elif nn_respond == MILK_ORGANIC_MILK_2_5_470GR:
+            result = self.getting_prices('milk_organic_milk_2_5_470gr', get_milk_organic_milk_2_5_pl_470gr)
+        elif nn_respond == MILK_ORGANIC_MILK_2_5_1L:
+            result = self.getting_prices('milk_organic_milk_2_5_1l', get_milk_organic_milk_2_5_pl_1l)
 
 
 
