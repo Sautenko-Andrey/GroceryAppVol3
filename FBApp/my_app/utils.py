@@ -1761,7 +1761,16 @@ class ContextSupervisor:
             result = self.getting_prices('milk_organic_milk_2_5_470gr', get_milk_organic_milk_2_5_pl_470gr)
         elif nn_respond == MILK_ORGANIC_MILK_2_5_1L:
             result = self.getting_prices('milk_organic_milk_2_5_1l', get_milk_organic_milk_2_5_pl_1l)
-
+        elif nn_respond == MILK_ORGANIC_MILK_BEZLAKTOZ_2_5_1L:
+            result = self.getting_prices('milk_organic_milk_bezlatoz_2_5_1l', get_milk_organic_milk_bezlactoz_2_5_pl_1l)
+        elif nn_respond == MILK_ORGANIC_MILK_0_5_1L:
+            result = self.getting_prices('milk_organic_milk_0_5_1l', get_milk_organic_milk_0_5_pl_1l)
+        elif nn_respond == MILK_PROSTONASHE_2_5_870GR:
+            result = self.getting_prices('milk_prostonashe_2_5_870gr', get_milk_prostonashe_2_5_pl_870gr)
+        elif nn_respond == MILK_PROSTONASHE_PRYAJ_2_5_870GR:
+            result = self.getting_prices('milk_prostonashe_pryaj_2_5_870gr', get_milk_prostonashe_pryaj_2_5_pl_870gr)
+        elif nn_respond == MILK_PROSTONASHE_1_870GR:
+            result = self.getting_prices('milk_prostonashe_1_870gr', get_milk_prostonashe_1_pl_870gr)
 
 
         # тут подключаются блюда

@@ -710,6 +710,11 @@ MILK_PREMIYA_LOKO_PITNE_3_2_PL_2L = "Молоко «Премія»® LOKO пит
 MILK_ORGANIC_MILK_3_5_1L = "Молоко пастеризоване Organic Milk органічне 3,5% 1 л"
 MILK_ORGANIC_MILK_2_5_470GR = "Молоко пастеризоване Organic Milk органічне 2,5% 470 г"
 MILK_ORGANIC_MILK_2_5_1L = "Молоко пастеризоване Organic Milk органічне 2,5% 1 л"
+MILK_ORGANIC_MILK_BEZLAKTOZ_2_5_1L = "Молоко пастеризоване Organic Milk безлактозне органічне 2,5% 1 л"
+MILK_ORGANIC_MILK_0_5_1L = "Молоко пастеризоване Organic Milk органічне 0,5% 1 л"
+MILK_PROSTONASHE_2_5_870GR = "Молоко пастеризоване Простонаше 2,5% пл 870 г"
+MILK_PROSTONASHE_PRYAJ_2_5_870GR = "Молоко пастеризоване Простонаше пряжене 2,5% пл 870 г"
+MILK_PROSTONASHE_1_870GR = "Молоко пастеризоване Простонаше 1 % пл 870 г"
 
 #НАЗВАНИЯ БЛЮД
 RED_BORSH = 'борщ украинский'

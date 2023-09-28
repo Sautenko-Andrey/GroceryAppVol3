@@ -2157,6 +2157,21 @@ get_milk_organic_milk_2_5_pl_470gr = tag.create_tag(ItemsPicsFromNet, 714)
 '''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk органічне 2,5% 1 л"'''
 get_milk_organic_milk_2_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 715)
 
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk безлактозне органічне 2,5% 1 л"'''
+get_milk_organic_milk_bezlactoz_2_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 716)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Organic Milk органічне 0,5% 1 л"'''
+get_milk_organic_milk_0_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 717)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Простонаше 2,5% пл 870 г"'''
+get_milk_prostonashe_2_5_pl_870gr = tag.create_tag(ItemsPicsFromNet, 718)
+
+'''Тэг,возвращающий информацию о "Молоко Простонаше пряжене 2,5% пл 870 г"'''
+get_milk_prostonashe_pryaj_2_5_pl_870gr = tag.create_tag(ItemsPicsFromNet, 719)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Простонаше 1 % пл 870 г"'''
+get_milk_prostonashe_1_pl_870gr = tag.create_tag(ItemsPicsFromNet, 720)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

@@ -6709,6 +6709,48 @@ class ProductParserVol2:
             'https://fozzyshop.ua/ru/moloko/32637-moloko-pasterizovan-organic-milk-organicheskoe-25-butylka-4820178810050.html'
         ])
 
+    def milk_organic_milk_bezlaktoz_2_5_1l_parser(self):
+        ''' Молоко пастеризоване Organic Milk органічне безлактозне 2,5% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-organic-milk-bezlaktozne-organichne-2-5-844117'
+        ])
+
+    def milk_organic_milk_0_5_1l_parser(self):
+        ''' Молоко пастеризоване Organic Milk органічне 0,5% 1 л '''
+        return self.prices_parsing([
+            'https://metro.zakaz.ua/ru/products/moloko-organik-milk-1000ml--04820178810654/',
+            'https://fozzyshop.ua/ru/moloko/63171-moloko-pasterizovanoe-organicmilk-organ-n-zh05but-4820178810654.html',
+        ])
+
+    def milk_prostonashe_2_5_870gr_parser(self):
+        ''' Молоко пастеризоване Простонаше 2,5% пл 870 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-prostonashe-870g--04820226167716/',
+            'https://varus.ua/moloko-prostokvashino-2-5-pasterizovane-870-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-prostonashe-2-5-pl-935139',
+            'https://metro.zakaz.ua/ru/products/moloko-prostonashe-870g--04820226167716/'
+        ])
+
+    def milk_prostonashe_pryaj__2_5_870gr_parser(self):
+        ''' Молоко пастеризоване Простонаше пряжене 2,5% пл 870 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-087-kg-prostonase-prazene-25-pbut',
+            'https://eko.zakaz.ua/uk/products/ukrayina--04820226167754/',
+            'https://varus.ua/moloko-prostokvashino-2-5-pryazhene-870-g',
+            'https://shop.silpo.ua/product/moloko-prostonashe-priazhene-2-5-pl-935141',
+            'https://metro.zakaz.ua/ru/products/ukrayina--04820226167754/'
+        ])
+
+    def milk_prostonashe_1_870gr_parser(self):
+        ''' Молоко пастеризоване Простонаше 1% пл 870 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-087-kg-prostonase-1-pbut',
+            'https://varus.ua/moloko-1-prostokvashino-870g-plyashka',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-prostonashe-1-pl-935140',
+            'https://metro.zakaz.ua/ru/products/moloko-prostonashe-870g-ukrayina--04820226167730/'
+        ])
+
+
 
 
 

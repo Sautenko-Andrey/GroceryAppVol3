@@ -5216,6 +5216,37 @@ def price_parcing(batch_name: str):
                 "metro": parser.milk_organic_milk_2_5_1l_parser()[6],
                 "fozzy": parser.milk_organic_milk_2_5_1l_parser()[8]
             }},
+
+            {'milk_organic_milk_bezlatoz_2_5_1l': {
+                "silpo": parser.milk_organic_milk_bezlaktoz_2_5_1l_parser()[3]
+            }},
+
+            {'milk_organic_milk_0_5_1l': {
+                "metro": parser.milk_organic_milk_0_5_1l_parser()[6],
+                "fozzy": parser.milk_organic_milk_0_5_1l_parser()[8]
+            }},
+
+            {'milk_prostonashe_2_5_870gr': {
+                "eko": parser.milk_prostonashe_2_5_870gr_parser()[1],
+                "varus": parser.milk_prostonashe_2_5_870gr_parser()[2],
+                "silpo": parser.milk_prostonashe_2_5_870gr_parser()[3],
+                "metro": parser.milk_prostonashe_2_5_870gr_parser()[6]
+            }},
+
+            {'milk_prostonashe_pryaj_2_5_870gr': {
+                "atb": parser.milk_prostonashe_pryaj__2_5_870gr_parser()[0],
+                "eko": parser.milk_prostonashe_pryaj__2_5_870gr_parser()[1],
+                "varus": parser.milk_prostonashe_pryaj__2_5_870gr_parser()[2],
+                "silpo": parser.milk_prostonashe_pryaj__2_5_870gr_parser()[3],
+                "metro": parser.milk_prostonashe_pryaj__2_5_870gr_parser()[6]
+            }},
+
+            {'milk_prostonashe_1_870gr': {
+                "atb": parser.milk_prostonashe_1_870gr_parser()[0],
+                "varus": parser.milk_prostonashe_1_870gr_parser()[2],
+                "silpo": parser.milk_prostonashe_1_870gr_parser()[3],
+                "metro": parser.milk_prostonashe_1_870gr_parser()[6]
+            }},
         ]
 
         # далее записываем цены в json-файл

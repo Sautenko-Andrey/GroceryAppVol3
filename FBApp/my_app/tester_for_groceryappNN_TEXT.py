@@ -1491,6 +1491,16 @@ class TesterForGroceryAppText:
             return MILK_ORGANIC_MILK_2_5_470GR
         elif np.argmax(result) == 711:
             return MILK_ORGANIC_MILK_2_5_1L
+        elif np.argmax(result) == 712:
+            return MILK_ORGANIC_MILK_BEZLAKTOZ_2_5_1L
+        elif np.argmax(result) == 713:
+            return MILK_ORGANIC_MILK_0_5_1L
+        elif np.argmax(result) == 714:
+            return MILK_PROSTONASHE_2_5_870GR
+        elif np.argmax(result) == 715:
+            return MILK_PROSTONASHE_PRYAJ_2_5_870GR
+        elif np.argmax(result) == 716:
+            return MILK_PROSTONASHE_1_870GR
 
 
 
