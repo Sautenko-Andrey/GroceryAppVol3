@@ -6750,6 +6750,47 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/ru/products/moloko-prostonashe-870g-ukrayina--04820226167730/'
         ])
 
+    def milk_ferma_2_5_pl_840gr_parser(self):
+        ''' Молоко пастеризоване «Ферма» 2,5% 840 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-084-kg-ferma-25',
+            'https://eko.zakaz.ua/uk/products/moloko-ferma-840g-ukrayina--04820272180196/',
+            'https://varus.ua/moloko-ferma-2-5-pasterizovane-840-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-ferma-2-5-837449',
+            'https://novus.online/ru/product/moloko-pasterizovane-25-ferma-pet-840g',
+            'https://metro.zakaz.ua/ru/products/moloko-ferma-840g-ukrayina--04820234020805/',
+            'https://fozzyshop.ua/ru/moloko/90111-moloko-pasterizovannoe-ferma-25-4820239241137.html'
+        ])
+
+    def milk_ferma_3_2_pl_840gr_parser(self):
+        ''' Молоко пастеризоване «Ферма» 3.2% 840 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-084-kg-ferma-32',
+            'https://varus.ua/moloko-ferma-3-2-pasterizovane-840-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-ferma-3-2-837450',
+            'https://novus.online/ru/product/moloko-pasterizovane-32-ferma-pet-840g',
+            'https://metro.zakaz.ua/ru/products/moloko-ferma-840g-ukrayina--04820239241175/',
+            'https://metro.zakaz.ua/ru/products/moloko-ferma-840g-ukrayina--04820239241175/'
+        ])
+
+    def milk_stariy_porick_3_6_pl_1l_parser(self):
+        ''' Молоко пастеризоване «Лавка Традицій» «Старий Порицьк» органічне 3,6% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-lavka-tradytsii-staryi-porytsk-organichne-3-6-711180'
+        ])
+
+    def milk_stariy_porick_pryaj_4_pl_1l_parser(self):
+        ''' Молоко «Лавка традицій» «Старий Порицьк» пряжене з незбираного молока 4% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-lavka-tradytsii-staryi-porytsk-priazhene-z-nezbyranogo-moloka-4-869921'
+        ])
+
+    def milk_stariy_porick_2_5_pl_1l_parser(self):
+        ''' Молоко пастеризоване «Лавка Традицій» «Старий Порицьк» органічне 2.5% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-lavka-tradytsii-staryi-porytsk-organichne-2-5-711179'
+        ])
+
 
 
 

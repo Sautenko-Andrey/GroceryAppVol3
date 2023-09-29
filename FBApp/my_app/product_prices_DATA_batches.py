@@ -5247,6 +5247,24 @@ def price_parcing(batch_name: str):
                 "silpo": parser.milk_prostonashe_1_870gr_parser()[3],
                 "metro": parser.milk_prostonashe_1_870gr_parser()[6]
             }},
+
+            {'milk_ferma_2_5_pl_840gr': {
+                "atb": parser.milk_ferma_2_5_pl_840gr_parser()[0],
+                "eko": parser.milk_ferma_2_5_pl_840gr_parser()[1],
+                "varus": parser.milk_ferma_2_5_pl_840gr_parser()[2],
+                "silpo": parser.milk_ferma_2_5_pl_840gr_parser()[3],
+                "novus": parser.milk_ferma_2_5_pl_840gr_parser()[5],
+                "metro": parser.milk_ferma_2_5_pl_840gr_parser()[6],
+                "fozzy": parser.milk_ferma_2_5_pl_840gr_parser()[8]
+            }},
+
+            {'milk_stariy_porick_3_6_pl_1l': {
+                "silpo": parser.milk_stariy_porick_3_6_pl_1l_parser()[3]
+            }},
+
+            {'milk_stariy_porick_pryaj_4_pl_1l': {
+                "silpo": parser.milk_stariy_porick_pryaj_4_pl_1l_parser()[3]
+            }},
         ]
 
         # далее записываем цены в json-файл

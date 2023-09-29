@@ -1771,6 +1771,16 @@ class ContextSupervisor:
             result = self.getting_prices('milk_prostonashe_pryaj_2_5_870gr', get_milk_prostonashe_pryaj_2_5_pl_870gr)
         elif nn_respond == MILK_PROSTONASHE_1_870GR:
             result = self.getting_prices('milk_prostonashe_1_870gr', get_milk_prostonashe_1_pl_870gr)
+        elif nn_respond == MILK_FERMA_2_5_PL_840GR:
+            result = self.getting_prices('milk_ferma_2_5_pl_840gr', get_milk_ferma_2_5_pl_840gr)
+        elif nn_respond == MILK_FERMA_3_2_PL_840GR:
+            result = self.getting_prices('milk_ferma_3_2_pl_840gr', get_milk_ferma_3_2_pl_840gr)
+        elif nn_respond == MILK_STRIY_PORICK_3_6_PL_1L:
+            result = self.getting_prices('milk_stariy_porick_3_6_pl_1l', get_milk_stariy_porick_3_6_pl_1l)
+        elif nn_respond == MILK_STRIY_PORICK_PRYAJ_4_PL_1L:
+            result = self.getting_prices('milk_stariy_porick_pryaj_4_pl_1l', get_milk_stariy_porick_pryaj_4_pl_1l)
+        elif nn_respond == MILK_STRIY_PORICK_2_5_PL_1L:
+            result = self.getting_prices('milk_stariy_porick_2_5_pl_1l', get_milk_stariy_porick_2_5_pl_1l)
 
 
         # тут подключаются блюда

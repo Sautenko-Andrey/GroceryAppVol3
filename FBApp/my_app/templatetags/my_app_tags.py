@@ -2172,6 +2172,21 @@ get_milk_prostonashe_pryaj_2_5_pl_870gr = tag.create_tag(ItemsPicsFromNet, 719)
 '''Тэг,возвращающий информацию о "Молоко пастеризоване Простонаше 1 % пл 870 г"'''
 get_milk_prostonashe_1_pl_870gr = tag.create_tag(ItemsPicsFromNet, 720)
 
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Ферма» 2,5% 840 г"'''
+get_milk_ferma_2_5_pl_840gr = tag.create_tag(ItemsPicsFromNet, 721)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Ферма» 3.2% 840 г"'''
+get_milk_ferma_3_2_pl_840gr = tag.create_tag(ItemsPicsFromNet, 722)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Лавка Традицій» «Старий Порицьк» органічне 3,6% 1 л"'''
+get_milk_stariy_porick_3_6_pl_1l = tag.create_tag(ItemsPicsFromNet, 723)
+
+'''Тэг,возвращающий информацию о "Молоко пряжене «Лавка Традицій» «Старий Порицьк» органічне 4% 1 л"'''
+get_milk_stariy_porick_pryaj_4_pl_1l = tag.create_tag(ItemsPicsFromNet, 724)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Лавка Традицій» «Старий Порицьк» органічне 2.5% 1 л"'''
+get_milk_stariy_porick_2_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 725)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():
