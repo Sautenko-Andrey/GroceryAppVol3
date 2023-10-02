@@ -6791,6 +6791,175 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/moloko-pasteryzovane-lavka-tradytsii-staryi-porytsk-organichne-2-5-711179'
         ])
 
+    def milk_molkiya_2_5_pl_870gr_parser(self):
+        ''' Молоко пастеризоване Молокія 2,5% пл 870 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-molokiya-pasterizovannoe-2-5-870-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-molokiia-2-5-pl-917218',
+            'https://novus.online/ru/product/moloko-25-molokiya-870h-plyashka',
+            'https://fozzyshop.ua/ru/moloko/99677-moloko-pasterizovannoe-molokiya-25-0250015105256.html'
+        ])
+
+    def milk_voloshkove_pole_2_5_pl_900gr_parser(self):
+        ''' Молоко пастеризоване «Волошкове поле» 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-voloshkove-pole-2-5-pasterizovane-u-plyashci-900-g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-voloshkove-pole-2-5-755012'
+        ])
+
+    def milk_gmz_n1_pl_2_5_1l_parser(self):
+        ''' Молоко пастеризоване ГМЗ №1 2,6% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-gmz-1-2-6-602380'
+        ])
+
+    def milk_gmz_pryaj_n1_pl_4_1l_parser(self):
+        ''' Молоко «ГМЗ №1» пряжене 4% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-gmz-1-priazhene-4-641986'
+        ])
+
+    def koz_milk_zolota_koza_3_8_pl_500gr_parser(self):
+        ''' Молоко козяче пастеризоване «Лавка традицій» «Золота Коза» 3,8% 0.5 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-koziache-pasteryzovane-lavka-tradytsii-koza-3-8-758134'
+        ])
+
+    def koz_milk_virtuoso_by_lukachivka_3_pl_500gr_parser(self):
+        ''' Молоко козине Virtuoso by Lukachivka незбиране 3% 0.5 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-kozyne-virtuoso-by-lukachivka-nezbyrane-3-766726'
+        ])
+
+    def milk_svoe_3_4_pl_1l_parser(self):
+        ''' Молоко коров'яче «Своє», 3,4% 1 л '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-korov-iache-svoie-3-4-784582',
+            'https://novus.online/ru/product/moloko-svoye-34-1l-petplyashka'
+        ])
+
+    def milk_ovec_soloviov_lakon_3_8_6_250gr_parser(self):
+        ''' Молоко «Лавка традицій» Soloviov овець породи Лакон 3,8-6% 250 гр '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-lavka-tradytsii-soloviov-ovets-porody-lakon-3-8-6-890843'
+        ])
+
+    def milk_selyanske_osobl_2_5_pap_pak_950gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» особливе 2,5% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-selianske-950g-ukrayina--04820003482407/',
+            'https://varus.ua/moloko-selyanske-osoblive-2-5-ultrapasterizovane-950-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-osoblyve-2-5-716079',
+            'https://novus.online/ru/product/moloko-ultrapasterizovane-25-osoblive-selanske-950g',
+            'https://metro.zakaz.ua/ru/products/moloko-selianske-950g-ukrayina--04820003482407/',
+            'https://shop.nashkraj.ua/kovel/product/12319-moloko-selyanske-2-5-950g-osoblive-t-p',
+            'https://fozzyshop.ua/ru/moloko/42124-moloko-selyanske-osobennoe-ultrapasterizovannoe-25-t-d-4820003482407.html'
+        ])
+
+    def milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser(self):
+        ''' Молоко пастеризоване «Селянське» мікрофільтроване питне 2.5% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko--04820254400236/',
+            'https://varus.ua/moloko-krestyanskoe-mikrofiltrovannoe-25-950g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-selianske-mikrofiltrovane-pytne-2-5-917294',
+            'https://novus.online/ru/product/moloko-pytne-mikrofiltrovane-pasteryzovane-25-zhyru-selyanske-950h',
+            'https://metro.zakaz.ua/ru/products/moloko--04820254400236/',
+            'https://fozzyshop.ua/ru/moloko/99717-moloko-pasteriz-selyanske-pitevoe-25-0250015069510.html'
+        ])
+
+    def milk_selyanske_3_2_tp_950gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» 3,2 % т/п 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-3-2-t-p-705768',
+            'https://novus.online/ru/product/moloko-ultrapasterizovane-32-osoblive-selanske-tetrapak-950g',
+            'https://metro.zakaz.ua/ru/products/moloko-selianske-950g-ukrayina--04820003482414/',
+            'https://shop.nashkraj.ua/kovel/product/243089-moloko-selyanske-3-2-950g-osoblive-t-p',
+            'https://fozzyshop.ua/ru/moloko/36776-moloko-ultrapasterizovan-selyanske-32-t-p-4820003486085.html'
+        ])
+
+    def milk_selyanske_rodinne_2_5_tp_1500gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» «Родинне» 2,5% 1.5 л '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-selianske-1500g-ukrayina--04820003486221/',
+            'https://varus.ua/moloko-selyanske-rodinne-2-5-ultrapasterizovane-1-5-l',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-rodynne-2-5-724312',
+            'https://novus.online/ru/product/moloko-25-osoblive-selanske-1500g',
+            'https://metro.zakaz.ua/ru/products/moloko-selianske-1500g-ukrayina--04820003484760/',
+            'https://fozzyshop.ua/ru/moloko/44079-moloko-ultrapasterizovannoe-selyanske-rodinne-25-t-p-4820003486221.html'
+        ])
+
+    def milk_selyanske_rodinne_2_5_tp_2000gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» «Родинне» 2,5% 2 л '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-selyanske-semejnoe-ultrapasterizovannoe-2000ml',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-simeine-osoblyve-2-5-726270',
+            'https://metro.zakaz.ua/ru/products/moloko-selianske-2000g-ukrayina--04820003486115/',
+            'https://fozzyshop.ua/ru/moloko/48533-moloko-ultrapaster-selyanske-semejnoe-osoboe-25-4820003486115.html'
+        ])
+
+    def milk_selyanske_osobl_1_5_t_p_950gr_parser(self):
+        ''' Молоко «Селянське» особливе 1,5% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-selianske-osoblyve-1-5-705675',
+            'https://novus.online/ru/product/moloko-ultrapasterizovane-15-osoblive-selanske-tetrapak-950g',
+            'https://shop.nashkraj.ua/kovel/product/241161-moloko-selyanske-1-5-950g-osobl-pas-t-p'
+        ])
+
+    def milk_selyanske_osoblive_2_5_tp_500gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» 2,5% 500 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-2-5-885638'
+        ])
+
+    def milk_selyanske_osoblive_kids_3_2_tp_950gr_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» «Малюкам» для дітей 3,2% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-maliukam-dlia-ditei-3-2-846423',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-dlja-detej-seljans-ke-malysham-3-2-9m-950-g-907042/',
+            'https://novus.online/product/moloko-selyanske-malyukam-dytyache-ultrapasteryzovane-32-950h'
+        ])
+
+    def milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser(self):
+        ''' Молоко пастеризоване «Селянське» мікрофільтроване незбиране 3.4-3.8% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-selianske-950g--04820254400496/',
+            'https://varus.ua/moloko-krestyanskoe-mikrofiltrovannoe-34-38-950g',
+            'https://shop.silpo.ua/product/moloko-pasteryzovane-selianske-mikrofiltrovane-nezbyrane-3-4-3-8-917293',
+            'https://novus.online/product/moloko-pytne-mikrofiltrovane-pasteryzovane-nezbyrane-34-38-selyanske-950h',
+            'https://metro.zakaz.ua/uk/products/moloko-selianske-950g--04820254400496/',
+            'https://fozzyshop.ua/moloko/99716-moloko-pasterizovane-selyanske-34-38-0250015069503.html'
+        ])
+
+    def milk_jagot_ultra_2_6_tp_950gr_parser(self):
+        ''' Молоко «Яготинське» ультрапастеризоване 2,6% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-950g--04823005205234/',
+            'https://shop.silpo.ua/product/moloko-yagotynske-ultrapasteryzovane-2-6-646104',
+            'https://auchan.ua/ua/moloko-jagotins-ke-2-6-950-g-238916/',
+            'https://novus.online/product/moloko-ultrapostarizovane-26-agotin-tetra-pak-0950kg'
+        ])
+
+    def milk_jagot_velik_2_6_tp_2000gr_parser(self):
+        ''' Молоко «Яготинське» «Велике» 2,6% жиру 2 л '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-2000g--04823005204459/',
+            'https://shop.silpo.ua/product/moloko-yagotynske-velyke-2-6-zhyru-547009',
+            'https://novus.online/product/moloko-26-agotin-2kg',
+            'https://metro.zakaz.ua/uk/products/moloko-iagotin-2000g--04823005204459/'
+        ])
+
+    def milk_jagot_velik_2_6_tp_1500gr_parser(self):
+        ''' Молоко «Яготинське» «Велике» 2,6% жиру 1.5 л '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-1500g-ukrayina--04823005204442/',
+            'https://shop.silpo.ua/product/moloko-yagotynske-velyke-2-6-547004',
+            'https://novus.online/product/moloko-26-agotin-15l',
+            'https://fozzyshop.ua/moloko/10019-moloko-yagotinske-bolshoe-26-p-p-4820006531607.html'
+        ])
+
+
+
+
 
 
 

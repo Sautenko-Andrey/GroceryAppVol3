@@ -1781,6 +1781,46 @@ class ContextSupervisor:
             result = self.getting_prices('milk_stariy_porick_pryaj_4_pl_1l', get_milk_stariy_porick_pryaj_4_pl_1l)
         elif nn_respond == MILK_STRIY_PORICK_2_5_PL_1L:
             result = self.getting_prices('milk_stariy_porick_2_5_pl_1l', get_milk_stariy_porick_2_5_pl_1l)
+        elif nn_respond == MILK_MOLOKIYA_2_5_PL_870GR:
+            result = self.getting_prices('milk_molkiya_2_5_pl_870gr', get_milk_molkiya_pl_2_5_870gr)
+        elif nn_respond == MILK_VOLOSHKOVE_POLE_2_5_PL_900GR:
+            result = self.getting_prices('milk_voloshkove_pole_2_5_pl_900gr', get_milk_voloshkove_pole_2_5_pl_900gr)
+        elif nn_respond == MILK_GMZ_2_5_PL_1L:
+            result = self.getting_prices('milk_gmz_n1_pl_2_5_1l', get_milk_gmz_n1_pl_2_5_1l)
+        elif nn_respond == MILK_GMZ_4_pryaj_PL_1L:
+            result = self.getting_prices('milk_gmz_pryaj_n1_pl_4_1l', get_milk_gmz_pryaj_n1_pl_4_1l)
+        elif nn_respond == MILK_KOZ_ZOLOTA_KOZA_3_8_PL_500GR:
+            result = self.getting_prices('koz_milk_zolota_koza_3_8_pl_500g', get_koz_milk_zolota_koza_3_8_pl_500gr)
+        elif nn_respond == MILK_KOZ_VIRTUOSO_BY_LUK_3_8_PL_500GR:
+            result = self.getting_prices('koz_milk_virtuoso_by_lukachivka_3_pl_500gr', get_koz_milk_virtuoso_by_lukachivka_3_pl_500gr)
+        elif nn_respond == MILK_SVOE_3_4_PL_1L:
+            result = self.getting_prices('milk_svoe_3_4_pl_1l', get_milk_svoe_3_4_pl_1l)
+        elif nn_respond == MILK_OVEC_SOLOVIOV_LAKON_3_8_6_250GR:
+            result = self.getting_prices('milk_ovec_soloviov_lakon_3_8_6_250gr', get_milk_ovec_soloviov_lakon_3_8_6_250gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_2_5_PAP_PAK_950GR:
+            result = self.getting_prices('milk_selyanske_osobl_2_5_pap_pak_950gr', get_milk_selyanske_osobl_2_5_pap_pak_950gr)
+        elif nn_respond == MILK_SELYANSKE_MICROF_PITNE_2_5_PAP_PAK_950GR:
+            result = self.getting_prices('milk_selyanske_microfil_pitne_2_5_pap_pak_950gr', get_milk_selyanske_microf_pit_2_5_pap_pak_950gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_3_2_TP_950GR:
+            result = self.getting_prices('milk_selyanske_3_2_tp_950gr', get_milk_selyanske_3_2_tp_950gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_RODINNE_2_5_TP_1500GR:
+            result = self.getting_prices('milk_selyanske_rodinne_2_5_tp_1500gr', get_milk_selyanske_rodinne_2_5_tp_1500gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_RODINNE_2_5_TP_2000GR:
+            result = self.getting_prices('milk_selyanske_rodinne_2_5_tp_2000gr', get_milk_selyanske_rodinne_2_5_tp_2000gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_1_5_TP_950GR:
+            result = self.getting_prices('milk_selyanske_osobl_1_5_t_p_950gr', get_milk_selyanske_osobl_1_5_t_p_950gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_2_5_TP_500GR:
+            result = self.getting_prices('milk_selyanske_osoblive_2_5_tp_500gr', get_milk_selyanske_osobl_2_5_tp_500gr)
+        elif nn_respond == MILK_SELYANSKE_OSOBL_KIDS_3_2_TP_950GR:
+            result = self.getting_prices('milk_selyanske_osoblive_kids_3_2_tp_950gr', get_milk_selyanske_osobl_kids_3_2_tp_950gr)
+        elif nn_respond == MILK_SELYANSKE_MICROF_PITNE_3_4_3_8_TP_950GR:
+            result = self.getting_prices('milk_selyanske_osobl_micro_f_3_4_3_8_tp_950grmilk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr', get_milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr)
+        elif nn_respond == MILK_JAGOTINSKE_ULTRA_2_6_TP_950GR:
+            result = self.getting_prices('milk_jagot_ultra_2_6_tp_950gr', get_milk_jagot_ultra_2_6_tp_950gr)
+        elif nn_respond == MILK_JAGOTINSKE_VELIK_2_6_TP_2000GR:
+            result = self.getting_prices('milk_jagot_velik_2_6_tp_2000gr', get_milk_jagot_velik_2_6_tp_2000gr)
+        elif nn_respond == MILK_JAGOTINSKE_VELIK_2_6_TP_1500GR:
+            result = self.getting_prices('milk_jagot_velik_2_6_tp_1500gr', get_milk_jagot_velik_2_6_tp_1500gr)
 
 
         # тут подключаются блюда
@@ -1931,4 +1971,6 @@ class UserAmountConverter:
                 return res
             else:
                 print("Conversion amount error. Check user's amount request in set feature.")
+
+
 

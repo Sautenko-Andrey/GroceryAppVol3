@@ -5265,6 +5265,133 @@ def price_parcing(batch_name: str):
             {'milk_stariy_porick_pryaj_4_pl_1l': {
                 "silpo": parser.milk_stariy_porick_pryaj_4_pl_1l_parser()[3]
             }},
+
+            {'milk_molkiya_2_5_pl_870gr': {
+                "varus": parser.milk_molkiya_2_5_pl_870gr_parser()[2],
+                "silpo": parser.milk_molkiya_2_5_pl_870gr_parser()[3],
+                "novus": parser.milk_molkiya_2_5_pl_870gr_parser()[5],
+                "fozzy": parser.milk_molkiya_2_5_pl_870gr_parser()[8]
+            }},
+
+            {'milk_voloshkove_pole_2_5_pl_900gr': {
+                "varus": parser.milk_voloshkove_pole_2_5_pl_900gr_parser()[2],
+                "silpo": parser.milk_voloshkove_pole_2_5_pl_900gr_parser()[3]
+            }},
+
+            {'milk_gmz_n1_pl_2_5_1l': {
+                "silpo": parser.milk_gmz_n1_pl_2_5_1l_parser()[3]
+            }},
+
+            {'milk_gmz_pryaj_n1_pl_4_1l': {
+                "silpo": parser.milk_gmz_pryaj_n1_pl_4_1l_parser()[3]
+            }},
+
+            {'koz_milk_zolota_koza_3_8_pl_500g': {
+                "silpo": parser.koz_milk_zolota_koza_3_8_pl_500gr_parser()[3]
+            }},
+
+            {'koz_milk_virtuoso_by_lukachivka_3_pl_500gr': {
+                "silpo": parser.koz_milk_virtuoso_by_lukachivka_3_pl_500gr_parser()[3]
+            }},
+
+            {'milk_svoe_3_4_pl_1l': {
+                "silpo": parser.milk_svoe_3_4_pl_1l_parser()[3],
+                "novus": parser.milk_svoe_3_4_pl_1l_parser()[5]
+            }},
+
+            {'milk_ovec_soloviov_lakon_3_8_6_250gr': {
+                "silpo": parser.milk_ovec_soloviov_lakon_3_8_6_250gr_parser()[3]
+            }},
+
+            {'milk_selyanske_osobl_2_5_pap_pak_950gr': {
+                "eko": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[1],
+                "varus": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[2],
+                "silpo": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[3],
+                "novus": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[5],
+                "metro": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[6],
+                "nash_kray": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[7],
+                "fozzy": parser.milk_selyanske_osobl_2_5_pap_pak_950gr_parser()[8]
+            }},
+
+            {'milk_selyanske_microfil_pitne_2_5_pap_pak_950gr': {
+                "eko": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[1],
+                "varus": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[2],
+                "silpo": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[3],
+                "novus": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[5],
+                "metro": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[6],
+                "fozzy": parser.milk_selyanske_microfil_pitne_2_5_pap_pak_950gr_parser()[8]
+            }},
+
+            {'milk_selyanske_3_2_tp_950gr': {
+                "silpo": parser.milk_selyanske_3_2_tp_950gr_parser()[3],
+                "novus": parser.milk_selyanske_3_2_tp_950gr_parser()[5],
+                "metro": parser.milk_selyanske_3_2_tp_950gr_parser()[6],
+                "nash_kray": parser.milk_selyanske_3_2_tp_950gr_parser()[7],
+                "fozzy": parser.milk_selyanske_3_2_tp_950gr_parser()[8]
+            }},
+
+            {'milk_selyanske_rodinne_2_5_tp_1500gr': {
+                "eko": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[1],
+                "varus": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[2],
+                "silpo": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[3],
+                "novus": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[5],
+                "metro": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[6],
+                "fozzy": parser.milk_selyanske_rodinne_2_5_tp_1500gr_parser()[8]
+            }},
+
+            {'milk_selyanske_rodinne_2_5_tp_2000gr': {
+                "varus": parser.milk_selyanske_rodinne_2_5_tp_2000gr_parser()[2],
+                "silpo": parser.milk_selyanske_rodinne_2_5_tp_2000gr_parser()[3],
+                "metro": parser.milk_selyanske_rodinne_2_5_tp_2000gr_parser()[6],
+                "fozzy": parser.milk_selyanske_rodinne_2_5_tp_2000gr_parser()[8]
+            }},
+
+            {'milk_selyanske_osobl_1_5_t_p_950gr': {
+                "silpo": parser.milk_selyanske_osobl_1_5_t_p_950gr_parser()[3],
+                "novus": parser.milk_selyanske_osobl_1_5_t_p_950gr_parser()[5],
+                "nash_kray": parser.milk_selyanske_osobl_1_5_t_p_950gr_parser()[7]
+            }},
+
+            {'milk_selyanske_osoblive_2_5_tp_500gr': {
+                "silpo": parser.milk_selyanske_osoblive_2_5_tp_500gr_parser()[3]
+            }},
+
+            {'milk_selyanske_osoblive_kids_3_2_tp_950gr': {
+                "silpo": parser.milk_selyanske_osoblive_kids_3_2_tp_950gr_parser()[3],
+                "ashan": parser.milk_selyanske_osoblive_kids_3_2_tp_950gr_parser()[4],
+                "novus": parser.milk_selyanske_osoblive_kids_3_2_tp_950gr_parser()[5]
+            }},
+
+            {'milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr': {
+                "eko": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[1],
+                "varus": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[2],
+                "silpo": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[3],
+                "novus": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[5],
+                "metro": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[6],
+                "fozzy": parser.milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr_parser()[8]
+            }},
+
+            {'milk_jagot_ultra_2_6_tp_950gr': {
+                "eko": parser.milk_jagot_ultra_2_6_tp_950gr_parser()[1],
+                "silpo": parser.milk_jagot_ultra_2_6_tp_950gr_parser()[3],
+                "ashan": parser.milk_jagot_ultra_2_6_tp_950gr_parser()[4],
+                "novus": parser.milk_jagot_ultra_2_6_tp_950gr_parser()[5]
+            }},
+
+            {'milk_jagot_velik_2_6_tp_2000gr': {
+                "eko": parser.milk_jagot_velik_2_6_tp_2000gr_parser()[1],
+                "silpo": parser.milk_jagot_velik_2_6_tp_2000gr_parser()[3],
+                "novus": parser.milk_jagot_velik_2_6_tp_2000gr_parser()[5],
+                "metro": parser.milk_jagot_velik_2_6_tp_2000gr_parser()[6]
+            }},
+
+            {'milk_jagot_velik_2_6_tp_1500gr': {
+                "eko": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[1],
+                "silpo": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[3],
+                "novus": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[5],
+                "fozzy": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[8]
+            }},
+
         ]
 
         # далее записываем цены в json-файл

@@ -2187,6 +2187,66 @@ get_milk_stariy_porick_pryaj_4_pl_1l = tag.create_tag(ItemsPicsFromNet, 724)
 '''Тэг,возвращающий информацию о "Молоко пастеризоване «Лавка Традицій» «Старий Порицьк» органічне 2.5% 1 л"'''
 get_milk_stariy_porick_2_5_pl_1l = tag.create_tag(ItemsPicsFromNet, 725)
 
+'''Тэг,возвращающий информацию о "Молоко пастеризоване Молокія 2,5% пл 870 г"'''
+get_milk_molkiya_pl_2_5_870gr = tag.create_tag(ItemsPicsFromNet, 726)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Волошкове поле» 2,5% 900 г"'''
+get_milk_voloshkove_pole_2_5_pl_900gr = tag.create_tag(ItemsPicsFromNet, 727)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване ГМЗ №1 2,6% 1 л"'''
+get_milk_gmz_n1_pl_2_5_1l = tag.create_tag(ItemsPicsFromNet, 728)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване пряжене ГМЗ №1 4% 1 л"'''
+get_milk_gmz_pryaj_n1_pl_4_1l = tag.create_tag(ItemsPicsFromNet, 729)
+
+'''Тэг,возвращающий информацию о "Молоко козяче пастеризоване «Лавка традицій» «Золота Коза» 3,8% 0.5 л"'''
+get_koz_milk_zolota_koza_3_8_pl_500gr = tag.create_tag(ItemsPicsFromNet, 730)
+
+'''Тэг,возвращающий информацию о "Молоко козине Virtuoso by Lukachivka незбиране 3% 0.5 л"'''
+get_koz_milk_virtuoso_by_lukachivka_3_pl_500gr = tag.create_tag(ItemsPicsFromNet, 731)
+
+'''Тэг,возвращающий информацию о "Молоко коров'яче «Своє», 3,4% 1 л"'''
+get_milk_svoe_3_4_pl_1l = tag.create_tag(ItemsPicsFromNet, 732)
+
+'''Тэг,возвращающий информацию о "Молоко «Лавка традицій» Soloviov овець породи Лакон 3,8-6% 250 гр"'''
+get_milk_ovec_soloviov_lakon_3_8_6_250gr = tag.create_tag(ItemsPicsFromNet, 733)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» особливе 2,5% 950 г"'''
+get_milk_selyanske_osobl_2_5_pap_pak_950gr = tag.create_tag(ItemsPicsFromNet, 734)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Селянське» мікрофільтроване питне 2.5% 950 г"'''
+get_milk_selyanske_microf_pit_2_5_pap_pak_950gr = tag.create_tag(ItemsPicsFromNet, 735)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» 3,2 % т/п 950 г"'''
+get_milk_selyanske_3_2_tp_950gr = tag.create_tag(ItemsPicsFromNet, 736)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» «Родинне» 2,5% 1.5 л"'''
+get_milk_selyanske_rodinne_2_5_tp_1500gr = tag.create_tag(ItemsPicsFromNet, 737)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» «Родинне» 2,5% 2 л"'''
+get_milk_selyanske_rodinne_2_5_tp_2000gr = tag.create_tag(ItemsPicsFromNet, 738)
+
+'''Тэг,возвращающий информацию о "Молоко «Селянське» особливе 1,5% 950 г"'''
+get_milk_selyanske_osobl_1_5_t_p_950gr = tag.create_tag(ItemsPicsFromNet, 739)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» особливе 2,5% 500 г"'''
+get_milk_selyanske_osobl_2_5_tp_500gr = tag.create_tag(ItemsPicsFromNet, 740)
+
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» «Малюкам» для дітей 3,2% 950 г"'''
+get_milk_selyanske_osobl_kids_3_2_tp_950gr = tag.create_tag(ItemsPicsFromNet, 741)
+
+'''Тэг,возвращающий информацию о "Молоко пастеризоване «Селянське» мікрофільтроване незбиране 3.4-3.8% 950 г"'''
+get_milk_selyanske_osobl_micro_f_3_4_3_8_tp_950gr = tag.create_tag(ItemsPicsFromNet, 742)
+
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» ультрапастеризоване 2,6% 950 г"'''
+get_milk_jagot_ultra_2_6_tp_950gr = tag.create_tag(ItemsPicsFromNet, 743)
+
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» Велике 2,6% 2000 г"'''
+get_milk_jagot_velik_2_6_tp_2000gr = tag.create_tag(ItemsPicsFromNet, 744)
+
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» Велике 2,6% 1500 г"'''
+get_milk_jagot_velik_2_6_tp_1500gr = tag.create_tag(ItemsPicsFromNet, 745)
+
 
 # @register.simple_tag()
 # def get_obolon_premium():

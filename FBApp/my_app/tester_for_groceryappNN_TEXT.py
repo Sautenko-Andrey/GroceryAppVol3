@@ -1511,6 +1511,46 @@ class TesterForGroceryAppText:
             return MILK_STRIY_PORICK_PRYAJ_4_PL_1L
         elif np.argmax(result) == 721:
             return MILK_STRIY_PORICK_2_5_PL_1L
+        elif np.argmax(result) == 722:
+            return MILK_MOLOKIYA_2_5_PL_870GR
+        elif np.argmax(result) == 723:
+            return MILK_VOLOSHKOVE_POLE_2_5_PL_900GR
+        elif np.argmax(result) == 724:
+            return MILK_GMZ_2_5_PL_1L
+        elif np.argmax(result) == 725:
+            return MILK_GMZ_4_pryaj_PL_1L
+        elif np.argmax(result) == 726:
+            return MILK_KOZ_ZOLOTA_KOZA_3_8_PL_500GR
+        elif np.argmax(result) == 727:
+            return MILK_KOZ_VIRTUOSO_BY_LUK_3_8_PL_500GR
+        elif np.argmax(result) == 728:
+            return MILK_SVOE_3_4_PL_1L
+        elif np.argmax(result) == 729:
+            return MILK_OVEC_SOLOVIOV_LAKON_3_8_6_250GR
+        elif np.argmax(result) == 730:
+            return MILK_SELYANSKE_OSOBL_2_5_PAP_PAK_950GR
+        elif np.argmax(result) == 731:
+            return MILK_SELYANSKE_MICROF_PITNE_2_5_PAP_PAK_950GR
+        elif np.argmax(result) == 732:
+            return MILK_SELYANSKE_OSOBL_3_2_TP_950GR
+        elif np.argmax(result) == 733:
+            return MILK_SELYANSKE_OSOBL_RODINNE_2_5_TP_1500GR
+        elif np.argmax(result) == 734:
+            return MILK_SELYANSKE_OSOBL_RODINNE_2_5_TP_2000GR
+        elif np.argmax(result) == 735:
+            return MILK_SELYANSKE_OSOBL_1_5_TP_950GR
+        elif np.argmax(result) == 736:
+            return MILK_SELYANSKE_OSOBL_2_5_TP_500GR
+        elif np.argmax(result) == 737:
+            return MILK_SELYANSKE_OSOBL_KIDS_3_2_TP_950GR
+        elif np.argmax(result) == 738:
+            return MILK_SELYANSKE_MICROF_PITNE_3_4_3_8_TP_950GR
+        elif np.argmax(result) == 739:
+            return MILK_JAGOTINSKE_ULTRA_2_6_TP_950GR
+        elif np.argmax(result) == 740:
+            return MILK_JAGOTINSKE_VELIK_2_6_TP_2000GR
+        elif np.argmax(result) == 741:
+            return MILK_JAGOTINSKE_VELIK_2_6_TP_1500GR
 
 
 
