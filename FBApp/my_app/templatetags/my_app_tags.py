@@ -15,9 +15,79 @@ class SimpleTagMakerOneItem:
         '''Формирование самой функции для тега'''
         return data_base.objects.get(pk=pk)
 
+#new
+#----------------------------------------------------------------------------------------------------------
+# @register.simple_tag()
+# def get_obolon_premium():
+#     '''Тэг, возвращающий информацию о пиве "Оболонь Прмиум 1,1 л из БД"'''
+#     return ItemsPicsFromNet.objects.get(pk=2)
+
+
+
+
+
+# ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА
+class SimpleTagMakerAllItems:
+    '''Класс для формирования шаблонных тегов для множества объектов из БД'''
+
+    @register.simple_tag()
+    def create_tag(self, data_base: object):
+        '''Формирование самой функции для тега'''
+        return data_base.objects.all()
+
+
+mul_tag = SimpleTagMakerAllItems()
+
+'''Возьмем все продукты,что есть в наборе пользователя'''
+#get_product_set_from_data_base = mul_tag.create_tag(SetOfProducts)
+@register.simple_tag()
+def get_product_set_from_data_base():
+    '''Возьмем все продукты,что есть в наборе пользователя'''
+    return SetOfProducts.objects.all()
+
+
+# ТЕГ ДЛЯ ДОСУТПА КО ВСЕМ СУПЕРМАРКЕТАМ
+'''С помощью этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
+get_all_markets = mul_tag.create_tag(RelevantMarkets)
+# @register.simple_tag()
+# def get_all_markets():
+#     '''С помощбю этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
+#     return RelevantMarkets.objects.all()
+
+
+#ТЕГ для доступа ко всем ссылкам на файлы для обучения RNN
+@register.simple_tag()
+def get_texts_refers_from_DB():
+    '''Сбор всех ссылок на текстовые файлы для обучения RNN'''
+    return AllTextsStorage.objects.all()
+#end
+#----------------------------------------------------------------------------------------------------------
 
 # создаем объект класса для создания тегов для продуктов
 tag = SimpleTagMakerOneItem()
+
+# ТЕГИ ДЛЯ БЛЮД
+'''Тег , возвращающий информацю о борще украинском'''
+get_borsh_ukr_info = tag.create_tag(AvailableDishes, 1)
+
+'''Тег , возвращающий информацю о варениках с картошкой'''
+get_vareniki_s_kartoshkoy_info = tag.create_tag(AvailableDishes, 2)
+
+'''Тег , возвращающий информацю о варениках с капустой'''
+get_vareniki_s_kapustoy_info = tag.create_tag(AvailableDishes, 3)
+
+'''Тег , возвращающий информацю о гречеськом салаті'''
+get_grecheskiy_salat_info = tag.create_tag(AvailableDishes, 4)
+
+'''Тег , возвращающий информацю о голубцах'''
+get_golubci_info = tag.create_tag(AvailableDishes, 5)
+
+'''Тег , возвращающий информацю о Классический плов в казане на плите со свининой'''
+get_classik_plov_v_kazane_na_plite_svinina_info = tag.create_tag(AvailableDishes, 6)
+
+'''Тег , возвращающий информацю о классические котлеты по-киевски из куринного филе на сковороде'''
+get_classik_kotleti_po_kievski_info = tag.create_tag(AvailableDishes, 7)
+#конец тэгов для блюд
 
 # создадим тэги:
 
@@ -2247,70 +2317,30 @@ get_milk_jagot_velik_2_6_tp_2000gr = tag.create_tag(ItemsPicsFromNet, 744)
 '''Тэг,возвращающий информацию о "Молоко «Яготинське» Велике 2,6% 1500 г"'''
 get_milk_jagot_velik_2_6_tp_1500gr = tag.create_tag(ItemsPicsFromNet, 745)
 
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Яготинське» 3,2% т/б 950 г"'''
+get_Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g = tag.create_tag(ItemsPicsFromNet,746)
 
-# @register.simple_tag()
-# def get_obolon_premium():
-#     '''Тэг, возвращающий информацию о пиве "Оболонь Прмиум 1,1 л из БД"'''
-#     return ItemsPicsFromNet.objects.get(pk=2)
+'''Тэг,возвращающий информацию о "Молоко «Галичина» ультрапастеризоване 2,5% 950 г"'''
+get_Moloko_Galichina_ultrapasterizovane_2_5__950_g = tag.create_tag(ItemsPicsFromNet,747)
 
-
-# ТЕГИ ДЛЯ БЛЮД
-'''Тег , возвращающий информацю о борще украинском'''
-get_borsh_ukr_info = tag.create_tag(AvailableDishes, 1)
-
-'''Тег , возвращающий информацю о варениках с картошкой'''
-get_vareniki_s_kartoshkoy_info = tag.create_tag(AvailableDishes, 2)
-
-'''Тег , возвращающий информацю о варениках с капустой'''
-get_vareniki_s_kapustoy_info = tag.create_tag(AvailableDishes, 3)
-
-'''Тег , возвращающий информацю о гречеськом салаті'''
-get_grecheskiy_salat_info = tag.create_tag(AvailableDishes, 4)
-
-'''Тег , возвращающий информацю о голубцах'''
-get_golubci_info = tag.create_tag(AvailableDishes, 5)
-
-'''Тег , возвращающий информацю о Классический плов в казане на плите со свининой'''
-get_classik_plov_v_kazane_na_plite_svinina_info = tag.create_tag(AvailableDishes, 6)
-
-'''Тег , возвращающий информацю о классические котлеты по-киевски из куринного филе на сковороде'''
-get_classik_kotleti_po_kievski_info = tag.create_tag(AvailableDishes, 7)
+'''Тэг,возвращающий информацию о "Молоко «Галичина» ультрапастеризоване 3,2% 950 г"'''
+get_Moloko_Galichina_ultrapasterizovane_3_2__950_g = tag.create_tag(ItemsPicsFromNet,748)
 
 
-# ТЕГ ДЛЯ ПРОДУКТОВОГО НАБОРА
-class SimpleTagMakerAllItems:
-    '''Класс для формирования шаблонных тегов для множества объектов из БД'''
+'''Тэг,возвращающий информацию о "Молоко «Галичина» ультрапастеризоване 1% т/п 950 г"'''
+get_Moloko_Galichina_ultrapasterizovane_1__t_p_950_g = tag.create_tag(ItemsPicsFromNet,749)
 
-    @register.simple_tag()
-    def create_tag(self, data_base: object):
-        '''Формирование самой функции для тега'''
-        return data_base.objects.all()
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» безлактозне 0,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g = tag.create_tag(ItemsPicsFromNet,750)
 
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» 0,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g = tag.create_tag(ItemsPicsFromNet,751)
 
-mul_tag = SimpleTagMakerAllItems()
-
-'''Возьмем все продукты,что есть в наборе пользователя'''
-#get_product_set_from_data_base = mul_tag.create_tag(SetOfProducts)
-@register.simple_tag()
-def get_product_set_from_data_base():
-    '''Возьмем все продукты,что есть в наборе пользователя'''
-    return SetOfProducts.objects.all()
-
-
-# ТЕГ ДЛЯ ДОСУТПА КО ВСЕМ СУПЕРМАРКЕТАМ
-'''С помощью этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
-get_all_markets = mul_tag.create_tag(RelevantMarkets)
-# @register.simple_tag()
-# def get_all_markets():
-#     '''С помощбю этого тега получаем доступ ко всем названиям досутпных супермаркетов'''
-#     return RelevantMarkets.objects.all()
-
-
-#ТЕГ для доступа ко всем ссылкам на файлы для обучения RNN
-@register.simple_tag()
-def get_texts_refers_from_DB():
-    '''Сбор всех ссылок на текстовые файлы для обучения RNN'''
-    return AllTextsStorage.objects.all()
-
-
-
+'''Тэг,возвращающий информацию о "Молоко дитяче «На здоров'я» 3,2% 500 г"'''
+get_Moloko_ditjache_Na_zdorovja_3_2__500_g = tag.create_tag(ItemsPicsFromNet,752)
+'''Тэг,возвращающий информацию о "Молоко «На здоров'я» ультрапастеризоване 2,5% 950 г"'''
+get_Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g = tag.create_tag(ItemsPicsFromNet,753)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» безлактозне 2,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g = tag.create_tag(ItemsPicsFromNet,754)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» дитяче 3,2% 950 г"'''
+get_Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g = tag.create_tag(ItemsPicsFromNet,755)

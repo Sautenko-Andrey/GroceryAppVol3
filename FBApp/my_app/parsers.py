@@ -6958,90 +6958,177 @@ class ProductParserVol2:
         ])
 
 
+    def Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser(self):
+        ''' Молоко ультрапастеризоване «Яготинське» 3,2% т/б 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-3-2-t-b-646105',
+            'https://fozzyshop.ua/moloko/38833-moloko-ultrapasterizirovannoe-yagotinske-32t-b-4823005205227.html'
+        ])
+
+    def Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser(self):
+        ''' Молоко «Галичина» ультрапастеризоване 2,5% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-galichina-950ml-ukrayina--04820222760249/',
+            'https://varus.ua/moloko-tga-25-950g-galichina',
+            'https://shop.silpo.ua/product/moloko-galychyna-ultrapasteryzovane-2-5-815590',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-galichina-2-5-950-g-906986/',
+            'https://novus.online/product/moloko-ultrapasterizovane-25-galicina-tga-950g',
+            'https://metro.zakaz.ua/uk/products/moloko-galichina-950ml-ukrayina--04820222760249/',
+            'https://shop.nashkraj.ua/lutsk/product/350392-moloko-galichina-2-5-950g-t-p',
+            'https://fozzyshop.ua/moloko/76612-moloko-galichina-ultrapasterizovannoe-25-t-p-4820222760249.html'
+        ])
+
+    def Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser(self):
+        ''' Молоко «Галичина» ультрапастеризоване 3,2% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-galichina-950ml-ukrayina--04820222760225/',
+            'https://varus.ua/moloko-tga-32-950g-galichina',
+            'https://shop.silpo.ua/product/moloko-galychyna-ultrapasteryzovane-3-2-815591',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-galichina-3-2-950-g-906993/',
+            'https://novus.online/product/moloko-32-halychyna-tga-950h',
+            'https://metro.zakaz.ua/uk/products/moloko-galichina-950ml-ukrayina--04820222760225/',
+            'https://shop.nashkraj.ua/lutsk/product/350393-moloko-galichina-3-2-950g-t-p',
+            'https://fozzyshop.ua/moloko/76613-moloko-galichina-ultrapasterizovannoe-32-t-p-4820222760225.html'
+        ])
+
+    def Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser(self):
+        ''' Молоко «Галичина» ультрапастеризоване 1% т/п 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-galichina-950g-ukrayina--04820222760232/',
+            'https://varus.ua/moloko-tga-1-950g-galichina',
+            'https://shop.silpo.ua/product/moloko-galychyna-ultrapasteryzovane-1-t-p-815589',
+            'https://novus.online/product/moloko-1-halychyna-tga-950h',
+            'https://shop.nashkraj.ua/lutsk/product/350391-moloko-galichina-1-950g-t-p'
+        ])
+
+    def Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване «На здоров'я» безлактозне 0,5% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-na-zdorov-ia-bezlaktozne-0-5-873839',
+            'https://novus.online/product/moloko-05-ultrapasteryzovane-bezlaktozne-na-zdorovya-950hr',
+            'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g--04820003486634/',
+        ])
+
+
+    def Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване «На здоров'я» 0,5% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-na-zdorov-ia-0-5-863530',
+            'https://novus.online/product/moloko-05-ultrapasteryzovane-na-zdorovya-950hr',
+            'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g--04820003480977/'
+        ])
+
+
+    def Moloko_ditjache_Na_zdorovja_3_2__500_g_parser(self):
+        ''' Молоко дитяче «На здоров'я» 3,2% 500 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-na-zdorov-ya-3-2-ultrapasterizovane-dlya-ditey-500-g',
+            'https://shop.silpo.ua/product/moloko-dytiache-na-zdorov-ia-3-2-527083',
+            'https://novus.online/product/moloko-sterilizovane-32-na-zdorova-ditace-05l'
+        ])
+
+
+    def Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser(self):
+        ''' Молоко «На здоров'я» ультрапастеризоване 2,5% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-na-zdorov-ia-ultrapasteryzovane-2-5-852602',
+            'https://novus.online/product/moloko-na-zdorovya-vitaminizovane-ultrapasteryzovane-25-950h'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване «На здоров'я» безлактозне 2,5% 950 г '''
+        return self.prices_parsing([
+            "https://eko.zakaz.ua/uk/products/moloko-na-zdorov-ia--04820003488522/",
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-na-zdorov-ia-bezlaktozne-2-5-857563',
+            'https://novus.online/product/moloko-25-ultrapasteryzovane-bezlaktozne-na-zdorovya-950h',
+            'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g-ukrayina--04820003483305/',
+            'https://fozzyshop.ua/kislomolochnye-napitki/69568-kefir-na-zdorovya-bezlaktoznyj-25-tetra-top-4820003487310.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser(self):
+        ''' Молоко ультрапастеризоване «На здоров'я» дитяче 3,2% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-na-zdorov-ia-dytiache-3-2-854265',
+            'https://novus.online/product/moloko-ultrapasteryzovane-na-zdorovya-dytyache-32-zhyru-tga-950h',
+            'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g--04820003481134/',
+            'https://fozzyshop.ua/moloko/93812-moloko-ultrapasterizovan-na-zdorovya-detskoe-32-4820003489277.html'
+        ])
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-class AllDishParsersVol2(ProductParserVol2):
-    '''Класс в котором собраны парсеры для блюд'''
-    # количество доступных маркетов
-
-    # добавочные ингридиенты
-    TOMAT_PASTE_VALUE, OIL_VALUE, LIMON_ACID_VALUE, SOLT_VALUE, LAVR_LIST_VALUE = 1, 1, 1, 1, 1
-    def dish_red_borsh_parser(self):
-        '''Парсинг цены красного борща в доступных супермаркетах'''
-        # соберем все цены ингридиентов для приготовления борща
-        water = self.water_in_6l_bottle_parser()
-        pork = self.pork_lopatka_parser()
-        potato = self.potato_parser()
-        beet = self.beet_parser()
-        carrot = self.carrot_parcer()
-        onion = self.onion_parcer()
-        cabbage = self.cabbage_parcer()
-
-        results = []
-        for i in range(self.COUNT_MARKETS):
-            result = round((float(water[i]) / 3 + float(pork[i]) * 0.8 +
-                            float(potato[i]) / 2 + float(beet[i]) / 10 +
-                            float(carrot[i]) / 10 + float(onion[i]) * 0.2 +
-                            float(cabbage[i]) * 0.4 + self.TOMAT_PASTE_VALUE +
-                            self.OIL_VALUE + self.LIMON_ACID_VALUE +
-                            self.SOLT_VALUE + self.LAVR_LIST_VALUE) / 6, 2)
-            results.append(result)
-        return results
-
-    def dish_vareniki_s_kartoshkoy_parser(self):
-        '''Парсинг цены вареников с картошкой в доступных супермаркетах'''
-        # соберем все цены ингридиентов для приготовления вареников с картошкой
-        flour = self.four_parser()
-        water = self.water_in_6l_bottle_parser()
-        eggs = self.egg_parcer()
-        eggs[0] = eggs[0] / 10  # атб яйца разделить на 10
-        oil = self.oil_for_dishes_parser()
-        onion = self.onion_parcer()
-        smetana = self.sour_cream_for_dishes_parser()
-        potato = self.potato_parser()
-
-        results = []
-        for i in range(self.COUNT_MARKETS):
-            result = round((float(flour[i]) * 0.4 + float(water[i]) * 0.033 +
-                            float(eggs[i]) + float(oil[i]) * 0.05 +
-                            float(onion[i]) * 0.2 + float(smetana[i]) +
-                            float(potato[i]) * 0.6 + self.SOLT_VALUE) / 5, 2)
-            results.append(result)
-        return results
-
-    def dish_vareniki_s_kapustoy_parser(self):
-        '''Парсер для вареников с капустой'''
-        # соберем все цены ингридиентов для приготовления вареников с капустой
-        flour = self.four_parser()
-        water = self.water_in_6l_bottle_parser()
-        eggs = self.egg_parcer()
-        eggs[0] = eggs[0] / 10  # атб яйца разделить на 10
-        oil = self.oil_for_dishes_parser()
-        onion = self.onion_parcer()
-        smetana = self.sour_cream_for_dishes_parser()
-        cabbage = self.cabbage_parcer()
-
-        results = []
-        for i in range(self.COUNT_MARKETS):
-            result = round((float(flour[i]) * 0.4 + float(water[i]) * 0.033 +
-                            float(eggs[i]) + float(oil[i]) * 0.05 +
-                            float(onion[i]) * 0.2 + float(smetana[i]) +
-                            float(cabbage[i]) * 0.6 + self.SOLT_VALUE) / 5, 2)
-            results.append(result)
-        return results
+#
+# class Dishes:
+#     '''Класс в котором собраны парсеры для блюд'''
+#     # количество доступных маркетов
+#
+#     # добавочные ингридиенты
+#     TOMAT_PASTE_VALUE, OIL_VALUE, LIMON_ACID_VALUE, SOLT_VALUE, LAVR_LIST_VALUE = 1, 1, 1, 1, 1
+#     def dish_red_borsh_parser(self):
+#         '''Парсинг цены красного борща в доступных супермаркетах'''
+#         # соберем все цены ингридиентов для приготовления борща
+#         water = self.water_in_6l_bottle_parser()
+#         pork = self.pork_lopatka_parser()
+#         potato = self.potato_parser()
+#         beet = self.beet_parser()
+#         carrot = self.carrot_parcer()
+#         onion = self.onion_parcer()
+#         cabbage = self.cabbage_parcer()
+#
+#         results = []
+#         for i in range(self.COUNT_MARKETS):
+#             result = round((float(water[i]) / 3 + float(pork[i]) * 0.8 +
+#                             float(potato[i]) / 2 + float(beet[i]) / 10 +
+#                             float(carrot[i]) / 10 + float(onion[i]) * 0.2 +
+#                             float(cabbage[i]) * 0.4 + self.TOMAT_PASTE_VALUE +
+#                             self.OIL_VALUE + self.LIMON_ACID_VALUE +
+#                             self.SOLT_VALUE + self.LAVR_LIST_VALUE) / 6, 2)
+#             results.append(result)
+#         return results
+#
+#     def dish_vareniki_s_kartoshkoy_parser(self):
+#         '''Парсинг цены вареников с картошкой в доступных супермаркетах'''
+#         # соберем все цены ингридиентов для приготовления вареников с картошкой
+#         flour = self.four_parser()
+#         water = self.water_in_6l_bottle_parser()
+#         eggs = self.egg_parcer()
+#         eggs[0] = eggs[0] / 10  # атб яйца разделить на 10
+#         oil = self.oil_for_dishes_parser()
+#         onion = self.onion_parcer()
+#         smetana = self.sour_cream_for_dishes_parser()
+#         potato = self.potato_parser()
+#
+#         results = []
+#         for i in range(self.COUNT_MARKETS):
+#             result = round((float(flour[i]) * 0.4 + float(water[i]) * 0.033 +
+#                             float(eggs[i]) + float(oil[i]) * 0.05 +
+#                             float(onion[i]) * 0.2 + float(smetana[i]) +
+#                             float(potato[i]) * 0.6 + self.SOLT_VALUE) / 5, 2)
+#             results.append(result)
+#         return results
+#
+#     def dish_vareniki_s_kapustoy_parser(self):
+#         '''Парсер для вареников с капустой'''
+#         # соберем все цены ингридиентов для приготовления вареников с капустой
+#         flour = self.four_parser()
+#         water = self.water_in_6l_bottle_parser()
+#         eggs = self.egg_parcer()
+#         eggs[0] = eggs[0] / 10  # атб яйца разделить на 10
+#         oil = self.oil_for_dishes_parser()
+#         onion = self.onion_parcer()
+#         smetana = self.sour_cream_for_dishes_parser()
+#         cabbage = self.cabbage_parcer()
+#
+#         results = []
+#         for i in range(self.COUNT_MARKETS):
+#             result = round((float(flour[i]) * 0.4 + float(water[i]) * 0.033 +
+#                             float(eggs[i]) + float(oil[i]) * 0.05 +
+#                             float(onion[i]) * 0.2 + float(smetana[i]) +
+#                             float(cabbage[i]) * 0.6 + self.SOLT_VALUE) / 5, 2)
+#             results.append(result)
+#         return results
 
 
 

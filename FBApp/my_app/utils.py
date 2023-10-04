@@ -1821,9 +1821,35 @@ class ContextSupervisor:
             result = self.getting_prices('milk_jagot_velik_2_6_tp_2000gr', get_milk_jagot_velik_2_6_tp_2000gr)
         elif nn_respond == MILK_JAGOTINSKE_VELIK_2_6_TP_1500GR:
             result = self.getting_prices('milk_jagot_velik_2_6_tp_1500gr', get_milk_jagot_velik_2_6_tp_1500gr)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE__JAGOTINSKE__3_2__T_B_950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane__Jagotinske__3_2__t/b_950_g', get_Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g)
+
+        elif nn_respond == MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_2_5__950_G:
+            result = self.getting_prices('Moloko_Galichina_ultrapasterizovane_2_5__950_g', get_Moloko_Galichina_ultrapasterizovane_2_5__950_g)
+        elif nn_respond == MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_3_2__950_G:
+            result = self.getting_prices('Moloko_Galichina_ultrapasterizovane_3_2__950_g', get_Moloko_Galichina_ultrapasterizovane_3_2__950_g)
+        elif nn_respond == MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_1__T_P_950_G:
+            result = self.getting_prices('Moloko_Galichina_ultrapasterizovane_1__t_p_950_g', get_Moloko_Galichina_ultrapasterizovane_1__t_p_950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_BEZLAKTOZNE_0_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_0_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g)
+        elif nn_respond == MOLOKO_DITJACHE_NA_ZDOROVJA_3_2__500_G:
+            result = self.getting_prices('Moloko_ditjache_Na_zdorovja_3_2__500_g', get_Moloko_ditjache_Na_zdorovja_3_2__500_g)
+        elif nn_respond == MOLOKO_NA_ZDOROVJA_ULTRAPASTERIZOVANE_2_5__950_G:
+            result = self.getting_prices('Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g', get_Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_BEZLAKTOZNE_2_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_DITJACHE_3_2__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g)
 
 
-        # тут подключаются блюда
+
+
+
+
+
+        #БЛЮДА
         elif nn_respond == RED_BORSH:
             result = self.getting_prices('borsh_red', get_borsh_ukr_info)
         elif nn_respond == VARENIKI_KARTOSHKA:

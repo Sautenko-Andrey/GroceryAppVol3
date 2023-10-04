@@ -1551,6 +1551,23 @@ class TesterForGroceryAppText:
             return MILK_JAGOTINSKE_VELIK_2_6_TP_2000GR
         elif np.argmax(result) == 741:
             return MILK_JAGOTINSKE_VELIK_2_6_TP_1500GR
-
-
-
+        elif np.argmax(result) == 742:
+            return MOLOKO_ULTRAPASTERIZOVANE__JAGOTINSKE__3_2__T_B_950_G
+        elif np.argmax(result) == 743:
+            return MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_2_5__950_G
+        elif np.argmax(result) == 744:
+            return MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_3_2__950_G
+        elif np.argmax(result) == 745:
+            return MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_1__T_P_950_G
+        elif np.argmax(result) == 746:
+            return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_BEZLAKTOZNE_0_5__950_G
+        elif np.argmax(result) == 747:
+            return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_0_5__950_G
+        elif np.argmax(result) == 748:
+            return MOLOKO_DITJACHE_NA_ZDOROVJA_3_2__500_G
+        elif np.argmax(result) == 749:
+            return MOLOKO_NA_ZDOROVJA_ULTRAPASTERIZOVANE_2_5__950_G
+        elif np.argmax(result) == 750:
+            return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_BEZLAKTOZNE_2_5__950_G
+        elif np.argmax(result) == 751:
+            return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_DITJACHE_3_2__950_G

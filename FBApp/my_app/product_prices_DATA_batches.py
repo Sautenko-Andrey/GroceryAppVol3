@@ -5392,14 +5392,94 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[8]
             }},
 
-        ]
+            {'Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g':{
+                "silpo": parser.Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser()[3],
+                "fozzy": parser.Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser()[8]
+            }},
 
+
+            {'Moloko_Galichina_ultrapasterizovane_2_5__950_g':{
+                "eko": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[1],
+                "varus": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[2],
+                "silpo": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[3],
+                "ashan": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[4],
+                "novus": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[5],
+                "metro": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[6],
+                "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[7],
+                "fozzy": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[8]
+            }},
+
+            {'Moloko_Galichina_ultrapasterizovane_3_2__950_g': {
+                "eko": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[1],
+                "varus": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[2],
+                "silpo": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[3],
+                "ashan": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[4],
+                "novus": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[5],
+                "metro": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[6],
+                "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[7],
+                "fozzy": parser.Moloko_Galichina_ultrapasterizovane_3_2__950_g_parser()[8]
+            }},
+
+            {'Moloko_Galichina_ultrapasterizovane_1__t_p_950_g': {
+                "eko": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[1],
+                "varus": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[2],
+                "silpo": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[3],
+                "novus": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[5],
+                "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[7]
+            }},
+
+
+            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g':{
+                "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[3],
+                "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[6]
+            }},
+
+
+            {'Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g':{
+                "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[3],
+                "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[6]
+            }},
+
+
+            {'Moloko_ditjache_Na_zdorovja_3_2__500_g':{
+                "varus": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[2],
+                "silpo": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[3],
+                "novus": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[5]
+            }},
+
+            {'Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g':{
+                "silpo": parser.Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser()[3],
+                "novus": parser.Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser()[5]
+            }},
+
+
+            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g':{
+                "eko": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[1],
+                "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[3],
+                "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[6],
+                "fozzy": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[8]
+            }},
+
+
+            {'Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g':{
+                "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[3],
+                "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[6],
+                "fozzy": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[8]
+            }},
+
+
+
+
+        ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)
 
     else:
         print("Нет такого батча!")
-
 
 #price_parcing("all_products_names_batch_1")
 #price_parcing("all_products_names_batch_2")
