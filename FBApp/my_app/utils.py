@@ -1842,6 +1842,24 @@ class ContextSupervisor:
             result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g)
         elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_DITJACHE_3_2__950_G:
             result = self.getting_prices('Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g', get_Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LACTEL_BEZLAKTOZ_0_2__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Lactel_bezlak_0_2__950_g', get_Moloko_ultrapasterizovane_Lactel_bezlakt_0_2__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_Z_VITAMINOM_D_3_2__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_3_2__950_g', get_Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_BEZLAKTOZNE_1_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g', get_Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_Z_VІTAMІNOM_D_0_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g', get_Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LACTEL_BEZLAKTOZNE_2_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g', get_Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g)
+        elif nn_respond == MOLOKO_SUPERPASTERIZOVANE_BURONKA_3_2__1000_G:
+            result = self.getting_prices('Moloko_superpasterizovane_Buronka_3_2__1000_g', get_Moloko_superpasterizovane_Buronka_3_2__1000_g)
+        elif nn_respond == MOLOKO_PITNE_ULTRAPASTERIZOVANE_BURONKA_2_5__1000_G:
+            result = self.getting_prices('Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g', get_Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g)
+        elif nn_respond == 	MOLOKO_BURONKA_ULTRAPASTERIZOVANE_3_2__1500_G:
+            result = self.getting_prices('Moloko_Buronka_ultrapasterizovane_3_2__1500_g', get_Moloko_Buronka_ultrapasterizovane_3_2__1500_g)
+        elif nn_respond == MOLOKO_BURONKA_PITNE_ULTRAPASTERIZOVANE_2_5__1500_G:
+            result = self.getting_prices('Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g', get_Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g)
 
 
 
@@ -1849,7 +1867,64 @@ class ContextSupervisor:
 
 
 
-        #БЛЮДА
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        # БЛЮДА
         elif nn_respond == RED_BORSH:
             result = self.getting_prices('borsh_red', get_borsh_ukr_info)
         elif nn_respond == VARENIKI_KARTOSHKA:

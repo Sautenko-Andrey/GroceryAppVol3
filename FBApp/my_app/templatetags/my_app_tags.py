@@ -2344,3 +2344,21 @@ get_Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g = tag.create_tag(ItemsPicsF
 get_Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g = tag.create_tag(ItemsPicsFromNet,754)
 '''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» дитяче 3,2% 950 г"'''
 get_Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g = tag.create_tag(ItemsPicsFromNet,755)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «На здоров'я» дитяче 3,2% 950 г"'''
+get_Moloko_ultrapasterizovane_Lactel_bezlakt_0_2__950_g = tag.create_tag(ItemsPicsFromNet,756)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване Lactel питне з вітаміном D 3,2% 950 г"'''
+get_Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g = tag.create_tag(ItemsPicsFromNet,757)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване Lactel питне безлактозне 1,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g = tag.create_tag(ItemsPicsFromNet,758)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване Lactel питне з вітаміном D 0,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g = tag.create_tag(ItemsPicsFromNet,759)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване Lactel безлактозне 2,5% 950 г"'''
+get_Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g = tag.create_tag(ItemsPicsFromNet,760)
+'''Тэг,возвращающий информацию о "Молоко суперпастеризоване «Бурьонка» 3,2% 1000 г"'''
+get_Moloko_superpasterizovane_Buronka_3_2__1000_g = tag.create_tag(ItemsPicsFromNet,761)
+'''Тэг,возвращающий информацию о "Молоко питне ультрапастеризоване «Бурьонка» 2,5% 1000 г"'''
+get_Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g = tag.create_tag(ItemsPicsFromNet,762)
+'''Тэг,возвращающий информацию о "	Молоко «Бурьонка» ультрапастеризоване 3,2% 1500 г"'''
+get_Moloko_Buronka_ultrapasterizovane_3_2__1500_g = tag.create_tag(ItemsPicsFromNet,763)
+'''Тэг,возвращающий информацию о "Молоко «Бурьонка» питне ультрапастеризоване 2,5% 1500 г"'''
+get_Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g = tag.create_tag(ItemsPicsFromNet,764)

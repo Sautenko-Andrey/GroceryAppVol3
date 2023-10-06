@@ -1571,3 +1571,21 @@ class TesterForGroceryAppText:
             return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_BEZLAKTOZNE_2_5__950_G
         elif np.argmax(result) == 751:
             return MOLOKO_ULTRAPASTERIZOVANE_NA_ZDOROVJA_DITJACHE_3_2__950_G
+        elif np.argmax(result) == 752:
+            return MOLOKO_ULTRAPASTERIZOVANE_LACTEL_BEZLAKTOZ_0_2__950_G
+        elif np.argmax(result) == 753:
+            return MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_Z_VITAMINOM_D_3_2__950_G
+        elif np.argmax(result) == 754:
+            return MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_BEZLAKTOZNE_1_5__950_G
+        elif np.argmax(result) == 755:
+            return MOLOKO_ULTRAPASTERIZOVANE_LACTEL_PITNE_Z_VІTAMІNOM_D_0_5__950_G
+        elif np.argmax(result) == 756:
+            return MOLOKO_ULTRAPASTERIZOVANE_LACTEL_BEZLAKTOZNE_2_5__950_G
+        elif np.argmax(result) == 757:
+            return MOLOKO_SUPERPASTERIZOVANE_BURONKA_3_2__1000_G
+        elif np.argmax(result) == 758:
+            return MOLOKO_PITNE_ULTRAPASTERIZOVANE_BURONKA_2_5__1000_G
+        elif np.argmax(result) == 759:
+            return 	MOLOKO_BURONKA_ULTRAPASTERIZOVANE_3_2__1500_G
+        elif np.argmax(result) == 760:
+            return MOLOKO_BURONKA_PITNE_ULTRAPASTERIZOVANE_2_5__1500_G

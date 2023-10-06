@@ -2,7 +2,6 @@ import os
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "FBApp.settings")
 
-
 import django
 
 django.setup()
@@ -11,7 +10,7 @@ import json
 import pandas as pd
 from parsers import ProductParserVol2
 
-#вспомагательные коэффициенты, благодаря которым корректируется цена продукта
+# вспомагательные коэффициенты, благодаря которым корректируется цена продукта
 water_var = 0.033
 oliv_var = 0.27
 addition_ingredients = 5
@@ -47,6 +46,7 @@ batch_8_path = "../prices_store_batch_8.json"
 batch_9_path = "../prices_store_batch_9.json"
 
 parser = ProductParserVol2()
+
 
 def write_prices_to_json(batch: list, json_data: str, mode: str):
     '''Функция записи цен в json для batch '''
@@ -3950,19 +3950,22 @@ def price_parcing(batch_name: str):
                 "atb": ((parser.water_in_6l_bottle_parser()[0] / rate_3) + (
                         parser.pork_lopatka_parser()[0] * eighty_percent_price)
                         + (parser.potato_parser()[0] / double_price) + (parser.beet_parser()[0] / mul_price_by_10)
-                        + (parser.carrot_parcer()[0] / mul_price_by_10) + (parser.onion_parcer()[0] * twenty_percent_price)
+                        + (parser.carrot_parcer()[0] / mul_price_by_10) + (
+                                parser.onion_parcer()[0] * twenty_percent_price)
                         + (parser.cabbage_parcer()[0] * fourty_percent_rate)) / devide_by_6,
 
                 "eko": ((parser.water_in_6l_bottle_parser()[1] / rate_3) + (
                         parser.pork_lopatka_parser()[1] * eighty_percent_price)
                         + (parser.potato_parser()[1] / double_price) + (parser.beet_parser()[1] / mul_price_by_10)
-                        + (parser.carrot_parcer()[1] / mul_price_by_10) + (parser.onion_parcer()[1] * twenty_percent_price)
+                        + (parser.carrot_parcer()[1] / mul_price_by_10) + (
+                                parser.onion_parcer()[1] * twenty_percent_price)
                         + (parser.cabbage_parcer()[1] * fourty_percent_rate)) / devide_by_6,
 
                 "varus": ((parser.water_in_6l_bottle_parser()[2] / rate_3) + (
                         parser.pork_lopatka_parser()[2] * eighty_percent_price)
                           + (parser.potato_parser()[2] / double_price) + (parser.beet_parser()[2] / mul_price_by_10)
-                          + (parser.carrot_parcer()[2] / mul_price_by_10) + (parser.onion_parcer()[2] * twenty_percent_price)
+                          + (parser.carrot_parcer()[2] / mul_price_by_10) + (
+                                  parser.onion_parcer()[2] * twenty_percent_price)
                           + (parser.cabbage_parcer()[2] * fourty_percent_rate)) / devide_by_6,
 
                 "silpo": ((parser.water_in_6l_bottle_parser()[3] / rate_3)
@@ -3976,111 +3979,147 @@ def price_parcing(batch_name: str):
                 "novus": ((parser.water_in_6l_bottle_parser()[5] / rate_3) + (
                         parser.pork_lopatka_parser()[5] * eighty_percent_price)
                           + (parser.potato_parser()[5] / double_price) + (parser.beet_parser()[5] / mul_price_by_10)
-                          + (parser.carrot_parcer()[5] / mul_price_by_10) + (parser.onion_parcer()[5] * twenty_percent_price)
+                          + (parser.carrot_parcer()[5] / mul_price_by_10) + (
+                                  parser.onion_parcer()[5] * twenty_percent_price)
                           + (parser.cabbage_parcer()[5] * fourty_percent_rate)) / devide_by_6,
 
                 "metro": ((parser.water_in_6l_bottle_parser()[6] / rate_3) + (
                         parser.pork_lopatka_parser()[6] * eighty_percent_price)
                           + (parser.potato_parser()[6] / double_price) + (parser.beet_parser()[6] / mul_price_by_10)
-                          + (parser.carrot_parcer()[6] / mul_price_by_10) + (parser.onion_parcer()[6] * twenty_percent_price)
+                          + (parser.carrot_parcer()[6] / mul_price_by_10) + (
+                                  parser.onion_parcer()[6] * twenty_percent_price)
                           + (parser.cabbage_parcer()[6] * fourty_percent_rate)) / devide_by_6,
 
                 "fozzy": ((parser.water_in_6l_bottle_parser()[8] / rate_3) + (
                         parser.pork_lopatka_parser()[8] * eighty_percent_price)
                           + (parser.potato_parser()[8] / double_price) + (parser.beet_parser()[8] / mul_price_by_10)
-                          + (parser.carrot_parcer()[8] / mul_price_by_10) + (parser.onion_parcer()[8] * twenty_percent_price)
+                          + (parser.carrot_parcer()[8] / mul_price_by_10) + (
+                                  parser.onion_parcer()[8] * twenty_percent_price)
                           + (parser.cabbage_parcer()[8] * fourty_percent_rate)) / devide_by_6
             }},
 
             {'veriniki_potato': {
-                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[0] * water_var)
-                        + (parser.egg_parcer()[0] * ten_percent_price) + (parser.oil_for_dishes_parser()[0] * five_percent_price)
+                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[0] * water_var)
+                        + (parser.egg_parcer()[0] * ten_percent_price) + (
+                                parser.oil_for_dishes_parser()[0] * five_percent_price)
                         + (parser.onion_parcer()[0] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[0])
                         + (parser.potato_parser()[0] * sixty_percent_price)) / devide_by_5,
 
-                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[1] * water_var)
+                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[1] * water_var)
                         + ((parser.egg_parcer()[1] * mul_price_by_10) * ten_percent_price) + (
                                 parser.oil_for_dishes_parser()[1] * five_percent_price)
                         + (parser.onion_parcer()[1] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[1])
                         + (parser.potato_parser()[1] * sixty_percent_price)) / devide_by_5,
 
-                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[2] * water_var)
-                          + (parser.egg_parcer()[2] * ten_percent_price) + (parser.oil_for_dishes_parser()[2] * five_percent_price)
-                          + (parser.onion_parcer()[2] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[2])
+                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[2] * water_var)
+                          + (parser.egg_parcer()[2] * ten_percent_price) + (
+                                  parser.oil_for_dishes_parser()[2] * five_percent_price)
+                          + (parser.onion_parcer()[2] * twenty_percent_price) + (
+                              parser.sour_cream_for_dishes_parser()[2])
                           + (parser.potato_parser()[2] * sixty_percent_price)) / devide_by_5,
 
-                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[3] * water_var)
-                          + (parser.egg_parcer()[3] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
+                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[3] * water_var)
+                          + (parser.egg_parcer()[3] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
                           + ((parser.onion_parcer()[3]) * twenty_percent_price) + (
                               parser.sour_cream_for_dishes_parser()[3])
                           + (parser.potato_parser()[3] * sixty_percent_price)) / devide_by_5,
 
-                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[5] * water_var)
-                          + (parser.egg_parcer()[5] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
-                          + (parser.onion_parcer()[5] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[5])
+                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[5] * water_var)
+                          + (parser.egg_parcer()[5] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
+                          + (parser.onion_parcer()[5] * twenty_percent_price) + (
+                              parser.sour_cream_for_dishes_parser()[5])
                           + (parser.potato_parser()[5] * sixty_percent_price)) / devide_by_5,
 
-                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[6] * water_var)
-                          + (parser.egg_parcer()[6] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
-                          + (parser.onion_parcer()[6] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[6])
+                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[6] * water_var)
+                          + (parser.egg_parcer()[6] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
+                          + (parser.onion_parcer()[6] * twenty_percent_price) + (
+                              parser.sour_cream_for_dishes_parser()[6])
                           + (parser.potato_parser()[6] * sixty_percent_price)) / devide_by_5,
 
-                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[8] * water_var)
+                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[8] * water_var)
                           + ((parser.egg_parcer()[8] * mul_price_by_10) * ten_percent_price) + (
                                   parser.oil_shedriy_dar_850_parcer()[8] * five_percent_price)
-                          + (parser.onion_parcer()[8] * twenty_percent_price) + (parser.sour_cream_for_dishes_parser()[8])
+                          + (parser.onion_parcer()[8] * twenty_percent_price) + (
+                              parser.sour_cream_for_dishes_parser()[8])
                           + (parser.potato_parser()[8] * sixty_percent_price)) / devide_by_5
             }},
 
             {'veriniki_kapusta': {
-                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[0] * water_var)
-                        + (parser.egg_parcer()[0] * ten_percent_price) + (parser.oil_for_dishes_parser()[0] * five_percent_price)
+                "atb": ((parser.four_parser()[0] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[0] * water_var)
+                        + (parser.egg_parcer()[0] * ten_percent_price) + (
+                                parser.oil_for_dishes_parser()[0] * five_percent_price)
                         + (parser.onion_parcer()[0] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[0])
                         + (parser.cabbage_parcer()[0] * sixty_percent_price) + parser.carrot_parcer()[
                             0] * five_percent_price) / devide_by_5,
 
-                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[1] * water_var)
+                "eko": ((parser.four_parser()[1] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[1] * water_var)
                         + ((parser.egg_parcer()[1] * mul_price_by_10) * ten_percent_price) + (
                                 parser.oil_for_dishes_parser()[1] * five_percent_price)
                         + (parser.onion_parcer()[1] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[1])
                         + (parser.cabbage_parcer()[1] * sixty_percent_price) + parser.carrot_parcer()[
                             1] * five_percent_price) / devide_by_5,
 
-                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[2] * water_var)
-                          + (parser.egg_parcer()[2] * ten_percent_price) + (parser.oil_for_dishes_parser()[2] * five_percent_price)
-                          + (parser.onion_parcer()[2] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[2])
+                "varus": ((parser.four_parser()[2] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[2] * water_var)
+                          + (parser.egg_parcer()[2] * ten_percent_price) + (
+                                  parser.oil_for_dishes_parser()[2] * five_percent_price)
+                          + (parser.onion_parcer()[2] * fourty_percent_rate) + (
+                              parser.sour_cream_for_dishes_parser()[2])
                           + (parser.cabbage_parcer()[2] * sixty_percent_price) + parser.carrot_parcer()[
                               2] * five_percent_price) / devide_by_5,
 
-                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[3] * water_var)
-                          + (parser.egg_parcer()[3] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
+                "silpo": ((parser.four_parser()[3] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[3] * water_var)
+                          + (parser.egg_parcer()[3] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[3] * five_percent_price)
                           + ((parser.onion_parcer()[3]) * fourty_percent_rate) + (
                               parser.sour_cream_for_dishes_parser()[3])
                           + (parser.cabbage_parcer()[3] * sixty_percent_price) + parser.carrot_parcer()[
                               3] * five_percent_price) / devide_by_5,
 
-                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[5] * water_var)
-                          + (parser.egg_parcer()[5] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
-                          + (parser.onion_parcer()[5] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[5])
+                "novus": ((parser.four_parser()[5] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[5] * water_var)
+                          + (parser.egg_parcer()[5] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[5] * five_percent_price)
+                          + (parser.onion_parcer()[5] * fourty_percent_rate) + (
+                              parser.sour_cream_for_dishes_parser()[5])
                           + (parser.cabbage_parcer()[5] * sixty_percent_price) + parser.carrot_parcer()[
                               5] * five_percent_price) / devide_by_5,
 
-                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[6] * water_var)
-                          + (parser.egg_parcer()[6] * ten_percent_price) + (parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
-                          + (parser.onion_parcer()[6] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[6])
+                "metro": ((parser.four_parser()[6] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[6] * water_var)
+                          + (parser.egg_parcer()[6] * ten_percent_price) + (
+                                  parser.oil_shedriy_dar_850_parcer()[6] * five_percent_price)
+                          + (parser.onion_parcer()[6] * fourty_percent_rate) + (
+                              parser.sour_cream_for_dishes_parser()[6])
                           + (parser.cabbage_parcer()[6] * sixty_percent_price) + parser.carrot_parcer()[
                               6] * five_percent_price) / devide_by_5,
 
-                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (parser.water_in_6l_bottle_parser()[8] * water_var)
+                "fozzy": ((parser.four_parser()[8] * fourty_percent_rate) + (
+                        parser.water_in_6l_bottle_parser()[8] * water_var)
                           + ((parser.egg_parcer()[8] * mul_price_by_10) * ten_percent_price) + (
                                   parser.oil_shedriy_dar_850_parcer()[8] * five_percent_price)
-                          + (parser.onion_parcer()[8] * fourty_percent_rate) + (parser.sour_cream_for_dishes_parser()[8])
+                          + (parser.onion_parcer()[8] * fourty_percent_rate) + (
+                              parser.sour_cream_for_dishes_parser()[8])
                           + (parser.cabbage_parcer()[8] * sixty_percent_price) + parser.carrot_parcer()[
                               8] * five_percent_price) / devide_by_5
             }},
 
             {'grecheskiy_salat': {
-                "fozzy": ((parser.tomato_parser()[8] * twenty_five_percent_price) + (parser.cucumber_parser()[8] * fifteen_percent_price)
+                "fozzy": ((parser.tomato_parser()[8] * twenty_five_percent_price) + (
+                        parser.cucumber_parser()[8] * fifteen_percent_price)
                           + (parser.red_bolg_papper_parser()[8] * fifteen_percent_price) + (
                                   parser.onion_parcer()[8] * five_percent_price)
                           + (parser.onion_parcer()[8] * ninety_percent_price) + (
@@ -4217,11 +4256,11 @@ def price_parcing(batch_name: str):
             {'golubci': {
                 "fozzy": ((parser.cabbage_parcer()[8] * half_price) + (parser.sour_cream_for_dishes_parser()[8])
                           + (parser.farsh_govyajiy_parser()[8] * ten_percent_price) + (
-                                      parser.svin_farsh_parser()[8] * ten_percent_price)
+                                  parser.svin_farsh_parser()[8] * ten_percent_price)
                           + (parser.tomato_parser()[8] * ten_percent_price) + (
-                                      parser.rice_extra_krugl_1kg_parser()[8] * six_percent_price)
+                                  parser.rice_extra_krugl_1kg_parser()[8] * six_percent_price)
                           + (parser.carrot_parcer()[8] * five_percent_price) + (
-                                      parser.onion_parcer()[8] * three_percent_price)) / devide_by_3
+                                  parser.onion_parcer()[8] * three_percent_price)) / devide_by_3
             }},
 
             {'classic_plov_v_kazane_na_plite_svinina': {
@@ -4242,10 +4281,10 @@ def price_parcing(batch_name: str):
             }},
 
             {'classic_cotleti_po_kievski': {
-                "fozzy": ( (parser.kuryache_file_parser()[8] * 0.125)
-                           + (parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[8] * 0.025)
-                           + (parser.egg_parcer()[8] * 0.08)
-                           + (parser.oil_for_dishes_parser()[8] * 0.03) + 6)
+                "fozzy": ((parser.kuryache_file_parser()[8] * 0.125)
+                          + (parser.maslo_sliv_ferma_selyanske_73jir_180gr_parser()[8] * 0.025)
+                          + (parser.egg_parcer()[8] * 0.08)
+                          + (parser.oil_for_dishes_parser()[8] * 0.03) + 6)
             }},
 
             {'maslo_sliv_ferma_chocolat_62jir_180gr': {
@@ -4269,7 +4308,7 @@ def price_parcing(batch_name: str):
                 "silpo": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[3],
                 "nash_kray": parser.maslo_sliv_ferma_buter_63jir_180gr_parser()[7]
             }},
-             {'maslo_ferma_selyanske_73jir_400gr': {
+            {'maslo_ferma_selyanske_73jir_400gr': {
                 "atb": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[0],
                 "eko": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[1],
                 "silpo": parser.maslo_sliv_ferma_selyanske_73jir_400gr_parser()[3],
@@ -4352,22 +4391,22 @@ def price_parcing(batch_name: str):
             {'maslo_sliv_farm_fresh_extra_82_180gr': {
                 "fozzy": parser.maslo_sliv_farm_fresh_extra_82_180gr_parser()[8]
             }},
-             {'maslo_sliv_farm_fresh_selyanske_73_180gr': {
+            {'maslo_sliv_farm_fresh_selyanske_73_180gr': {
                 "fozzy": parser.maslo_sliv_farm_fresh_selyanske_73_180gr_parser()[8]
             }},
-             {'maslo_sliv_president_82_200gr': {
+            {'maslo_sliv_president_82_200gr': {
                 "varus": parser.maslo_sliv_president_82_200gr_parser()[2],
                 "silpo": parser.maslo_sliv_president_82_200gr_parser()[3],
                 "novus": parser.maslo_sliv_president_82_200gr_parser()[5],
                 "metro": parser.maslo_sliv_president_82_200gr_parser()[6],
                 "fozzy": parser.maslo_sliv_president_82_200gr_parser()[8]
             }},
-             {'maslo_sliv_president_82_400gr': {
+            {'maslo_sliv_president_82_400gr': {
                 "silpo": parser.maslo_sliv_president_82_400gr_parser()[3],
                 "metro": parser.maslo_sliv_president_82_400gr_parser()[6],
                 "fozzy": parser.maslo_sliv_president_82_400gr_parser()[8]
             }},
-             {'maslo_sliv_president_solone_80_200gr': {
+            {'maslo_sliv_president_solone_80_200gr': {
                 "silpo": parser.maslo_sliv_president_solone_80_200gr_parser()[3],
                 "fozzy": parser.maslo_sliv_president_solone_80_200gr_parser()[8]
             }},
@@ -4398,11 +4437,11 @@ def price_parcing(batch_name: str):
                 "eko": parser.jacobs_monarch_banka_200gr_parser()[1],
                 "ashan": parser.jacobs_monarch_banka_200gr_parser()[4]
             }},
-             {'jacobs_monarch_banka_100gr': {
+            {'jacobs_monarch_banka_100gr': {
                 "eko": parser.jacobs_monarch_banka_100gr_parser()[1],
                 "ashan": parser.jacobs_monarch_banka_100gr_parser()[4]
             }},
-             {'jacobs_monarch_banka_50gr': {
+            {'jacobs_monarch_banka_50gr': {
                 "ashan": parser.jacobs_monarch_banka_50gr_parser()[4],
                 "novus": parser.jacobs_monarch_banka_50gr_parser()[5],
                 "nash_kray": parser.jacobs_monarch_banka_50gr_parser()[7]
@@ -4430,7 +4469,7 @@ def price_parcing(batch_name: str):
                 "novus": parser.jacobs_monarch_classico_pack_70gr_parser()[5]
             }},
 
-             {'jacobs_monarch_intense_200gr': {
+            {'jacobs_monarch_intense_200gr': {
                 "eko": parser.jacobs_monarch_intense_200gr_parser()[1],
                 "silpo": parser.jacobs_monarch_intense_200gr_parser()[3],
                 "novus": parser.jacobs_monarch_intense_200gr_parser()[5],
@@ -4447,20 +4486,20 @@ def price_parcing(batch_name: str):
                 "nash_kray": parser.jacobs_espresso_230gr_parser()[7]
             }},
 
-             {'jacobs_barista_classic_pack_225gr': {
+            {'jacobs_barista_classic_pack_225gr': {
                 "silpo": parser.jacobs_barista_classic_pack_225gr_parser()[3],
                 "ashan": parser.jacobs_barista_classic_pack_225gr_parser()[4],
                 "novus": parser.jacobs_barista_classic_pack_225gr_parser()[5],
                 "metro": parser.jacobs_barista_classic_pack_225gr_parser()[6]
             }},
-             {'jacobs_monarch_intense_400gr': {
+            {'jacobs_monarch_intense_400gr': {
                 "eko": parser.jacobs_monarch_intense_400gr_parser()[1],
                 "silpo": parser.jacobs_monarch_intense_400gr_parser()[3],
                 "ashan": parser.jacobs_monarch_intense_400gr_parser()[4],
                 "novus": parser.jacobs_monarch_intense_400gr_parser()[5],
                 "metro": parser.jacobs_monarch_intense_400gr_parser()[6]
             }},
-             {'jacobs_monarch_classico_pack_400gr': {
+            {'jacobs_monarch_classico_pack_400gr': {
                 "eko": parser.jacobs_monarch_classico_pack_400gr_parser()[1],
                 "silpo": parser.jacobs_monarch_classico_pack_400gr_parser()[3],
                 "ashan": parser.jacobs_monarch_classico_pack_400gr_parser()[4],
@@ -4468,7 +4507,7 @@ def price_parcing(batch_name: str):
                 "metro": parser.jacobs_monarch_classico_pack_400gr_parser()[6]
             }},
 
-             {'jacobs_monarch_rozch_60gr': {
+            {'jacobs_monarch_rozch_60gr': {
                 "atb": parser.jacobs_monarch_rozch_60gr_parser()[0]
             }},
 
@@ -4476,7 +4515,7 @@ def price_parcing(batch_name: str):
                 "atb": parser.jacobs_monarch_rozch_425gr_parser()[0]
             }},
 
-             {'nescafe_gold_rozch_pack_165gr': {
+            {'nescafe_gold_rozch_pack_165gr': {
                 "eko": parser.nescafe_gold_rozch_pack_165gr_parser()[1],
                 "varus": parser.nescafe_gold_rozch_pack_165gr_parser()[2],
                 "silpo": parser.nescafe_gold_rozch_pack_165gr_parser()[3],
@@ -4500,11 +4539,11 @@ def price_parcing(batch_name: str):
                 "silpo": parser.nescafe_gold_rozch_pack_360gr_parser()[3]
             }},
 
-             {'nescafe_classic_rozch_pack_30gr': {
+            {'nescafe_classic_rozch_pack_30gr': {
                 "silpo": parser.nescafe_classic_rozch_pack_30gr_parser()[3]
             }},
 
-             {'nescafe_gold_rozch_pack_30gr': {
+            {'nescafe_gold_rozch_pack_30gr': {
                 "eko": parser.nescafe_gold_rozch_pack_30gr_parser()[1],
                 "varus": parser.nescafe_gold_rozch_pack_30gr_parser()[2],
                 "silpo": parser.nescafe_gold_rozch_pack_30gr_parser()[3],
@@ -4513,7 +4552,7 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.nescafe_gold_rozch_pack_30gr_parser()[8]
             }},
 
-             {'nescafe_gold_rozch_pack_60gr': {
+            {'nescafe_gold_rozch_pack_60gr': {
                 "eko": parser.nescafe_gold_rozch_pack_60gr_parser()[1],
                 "varus": parser.nescafe_gold_rozch_pack_60gr_parser()[2],
                 "silpo": parser.nescafe_gold_rozch_pack_60gr_parser()[3],
@@ -4573,20 +4612,19 @@ def price_parcing(batch_name: str):
                 "ashan": parser.carte_noire_rozch_pack_280gr_parser()[4],
                 "metro": parser.carte_noire_rozch_pack_280gr_parser()[6]
             }},
-             {'ambassador_premium_rozch_pack_50gr': {
+            {'ambassador_premium_rozch_pack_50gr': {
                 "varus": parser.ambassador_premium_rozch_pack_50gr_parser()[2],
                 "silpo": parser.ambassador_premium_rozch_pack_50gr_parser()[3],
                 "ashan": parser.ambassador_premium_rozch_pack_50gr_parser()[4],
                 "novus": parser.ambassador_premium_rozch_pack_50gr_parser()[5]
             }},
-             {'ambassador_premium_rozch_pack_100gr': {
+            {'ambassador_premium_rozch_pack_100gr': {
                 "eko": parser.ambassador_premium_rozch_pack_100gr_parser()[1],
                 "varus": parser.ambassador_premium_rozch_pack_100gr_parser()[2],
                 "silpo": parser.ambassador_premium_rozch_pack_100gr_parser()[3],
                 "ashan": parser.ambassador_premium_rozch_pack_100gr_parser()[4],
                 "metro": parser.ambassador_premium_rozch_pack_100gr_parser()[6]
             }},
-
 
         ]
         # далее записываем цены в json-файл
@@ -4626,8 +4664,8 @@ def price_parcing(batch_name: str):
                 "metro": parser.chorna_carta_gold_rozch_pack_200gr_parser()[6]
             }},
 
-             {'chorna_carta_gold_rozch_pack_100gr': {
-                 "eko": parser.chorna_carta_gold_rozch_pack_100gr_parser()[1],
+            {'chorna_carta_gold_rozch_pack_100gr': {
+                "eko": parser.chorna_carta_gold_rozch_pack_100gr_parser()[1],
                 "silpo": parser.chorna_carta_gold_rozch_pack_100gr_parser()[3],
                 "ashan": parser.chorna_carta_gold_rozch_pack_100gr_parser()[4],
                 "novus": parser.chorna_carta_gold_rozch_pack_100gr_parser()[5]
@@ -5392,13 +5430,12 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.milk_jagot_velik_2_6_tp_1500gr_parser()[8]
             }},
 
-            {'Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g':{
+            {'Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g': {
                 "silpo": parser.Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser()[3],
                 "fozzy": parser.Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser()[8]
             }},
 
-
-            {'Moloko_Galichina_ultrapasterizovane_2_5__950_g':{
+            {'Moloko_Galichina_ultrapasterizovane_2_5__950_g': {
                 "eko": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[1],
                 "varus": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[2],
                 "silpo": parser.Moloko_Galichina_ultrapasterizovane_2_5__950_g_parser()[3],
@@ -5428,34 +5465,30 @@ def price_parcing(batch_name: str):
                 "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_1__t_p_950_g_parser()[7]
             }},
 
-
-            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g':{
+            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g': {
                 "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[3],
                 "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[5],
                 "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_0_5__950_g_parser()[6]
             }},
 
-
-            {'Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g':{
+            {'Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g': {
                 "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[3],
                 "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[5],
                 "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser()[6]
             }},
 
-
-            {'Moloko_ditjache_Na_zdorovja_3_2__500_g':{
+            {'Moloko_ditjache_Na_zdorovja_3_2__500_g': {
                 "varus": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[2],
                 "silpo": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[3],
                 "novus": parser.Moloko_ditjache_Na_zdorovja_3_2__500_g_parser()[5]
             }},
 
-            {'Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g':{
+            {'Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g': {
                 "silpo": parser.Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser()[3],
                 "novus": parser.Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser()[5]
             }},
 
-
-            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g':{
+            {'Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g': {
                 "eko": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[1],
                 "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[3],
                 "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[5],
@@ -5463,17 +5496,87 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser()[8]
             }},
 
-
-            {'Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g':{
+            {'Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g': {
                 "silpo": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[3],
                 "novus": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[5],
                 "metro": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[6],
                 "fozzy": parser.Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser()[8]
             }},
 
+            {'Moloko_ultrapasterizovane_Lactel_bezlak_0_2__950_g': {
+                "silpo": parser.Moloko_ultrapasterizovane_Lactel_bezlact_0_2__950_g_parser()[3],
+                "fozzy": parser.Moloko_ultrapasterizovane_Lactel_bezlact_0_2__950_g_parser()[8]
+            }},
 
+            {'Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_3_2__950_g': {
+                "eko": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[1],
+                "varus": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[4],
+                "metro": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[6],
+                "nash_kray": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[7],
+                "fozzy": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser()[8]
+            }},
 
+            {'Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g': {
+                "varus": parser.Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser()[5]
+            }},
 
+            {'Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g': {
+                "eko": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[1],
+                "varus": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[6],
+                "nash_kray": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[7],
+                "fozzy": parser.Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser()[8]
+            }},
+
+            {'Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g': {
+                "silpo": parser.Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser()[5],
+                "nash_kray": parser.Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser()[7],
+                "fozzy": parser.Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser()[8]
+            }},
+
+            {'Moloko_superpasterizovane_Buronka_3_2__1000_g': {
+                "silpo": parser.Moloko_superpasterizovane_Buronka_3_2__1000_g_parser()[3],
+                "ashan": parser.Moloko_superpasterizovane_Buronka_3_2__1000_g_parser()[4],
+                "novus": parser.Moloko_superpasterizovane_Buronka_3_2__1000_g_parser()[5],
+                "metro": parser.Moloko_superpasterizovane_Buronka_3_2__1000_g_parser()[6],
+                "fozzy": parser.Moloko_superpasterizovane_Buronka_3_2__1000_g_parser()[8]
+            }},
+
+            {'Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g': {
+                "silpo": parser.Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser()[3],
+                "ashan": parser.Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser()[4],
+                "novus": parser.Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser()[5],
+                "metro": parser.Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser()[6],
+                "fozzy": parser.Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser()[8]
+            }},
+
+            {'Moloko_Buronka_ultrapasterizovane_3_2__1500_g': {
+                "varus": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[2],
+                "silpo": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[3],
+                "ashan": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[4],
+                "novus": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[5],
+                "metro": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[6],
+                "fozzy": parser.Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser()[8]
+            }},
+
+            {'Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g': {
+                "varus": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[2],
+                "silpo": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[3],
+                "ashan": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[4],
+                "novus": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[5],
+                "metro": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[6],
+                "fozzy": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[8]
+            }},
         ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)
@@ -5481,26 +5584,27 @@ def price_parcing(batch_name: str):
     else:
         print("Нет такого батча!")
 
-#price_parcing("all_products_names_batch_1")
-#price_parcing("all_products_names_batch_2")
-#price_parcing("all_products_names_batch_3")
-#price_parcing("all_products_names_batch_4")
-#price_parcing("all_products_names_batch_5")
-#price_parcing("all_products_names_batch_6")
-#price_parcing("all_products_names_batch_7")
-#price_parcing("all_products_names_batch_8")
+
+# price_parcing("all_products_names_batch_1")
+# price_parcing("all_products_names_batch_2")
+# price_parcing("all_products_names_batch_3")
+# price_parcing("all_products_names_batch_4")
+# price_parcing("all_products_names_batch_5")
+# price_parcing("all_products_names_batch_6")
+# price_parcing("all_products_names_batch_7")
+# price_parcing("all_products_names_batch_8")
 price_parcing("all_products_names_batch_9")
 
 
-def prepeare_json_data(path:str):
+def prepeare_json_data(path: str):
     '''Открытие и загрузка json-файлов'''
 
     with open(path, 'r', encoding='utf-8') as file:
         data = json.load(file)
     return data
 
-def merging_jsons():
 
+def merging_jsons():
     '''Метод, объединяющий json - файлы в один общий.'''
 
     data_1 = prepeare_json_data(batch_1_path)
@@ -5527,5 +5631,5 @@ def merging_jsons():
 
     merged_contents.to_json('../overall_prices.json', orient='records')
 
-merging_jsons()
 
+merging_jsons()

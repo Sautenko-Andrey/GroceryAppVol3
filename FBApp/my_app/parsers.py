@@ -7057,6 +7057,106 @@ class ProductParserVol2:
         ])
 
 
+    def Moloko_ultrapasterizovane_Lactel_bezlact_0_2__950_g_parser(self):
+        ''' Молоко ультрапастеризоване Lactel безлактозне 0,2% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-bezlaktozne-0-2-878541',
+            'https://fozzyshop.ua/moloko/99541-moloko-ultrapast-lactel-bezlaktoznoe-02-0250014427908.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser(self):
+        ''' Молоко ультрапастеризоване Lactel питне з вітаміном D 3,2% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-laktel-950g-ukrayina--04823065727530/',
+            'https://varus.ua/moloko-lactel-s-vitaminom-d-32-950-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-pytne-z-vitaminom-d-3-2-871984',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-lactel-3-2-950-g-907154/',
+            'https://metro.zakaz.ua/uk/products/moloko-laktel-1000g--04823065702360/',
+            'https://shop.nashkraj.ua/lutsk/product/446720-moloko-lactel-3-2-950g-z-vitaminom-d3',
+            'https://fozzyshop.ua/moloko/87961-moloko-ultrapasterizovannoe-lactel-s-vitaminom-d-32-4823065727530.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване Lactel питне безлактозне 1,5% 950 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-lactel-1-5-bezlaktozne-ultrapasterizovane-1-l',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-pytne-bezlaktozne-1-5-892639',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-bezlaktoznoe-lactel-1-5-950-g-907182/',
+            'https://novus.online/product/moloko-pytne-bezlaktozne-ultrapasteryzovane-15-lactel-950h'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване Lactel питне з вітаміном D 0,5% 950 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-laktel-950g-ukrayina--04823065727516/',
+            'https://varus.ua/moloko-lactel-s-vitaminom-d-05-950-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-pytne-z-vitaminom-d-0-5-871982',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-lactel-0-5-950-g-907140/',
+            'https://novus.online/product/moloko-05-pytne-ultrapasteryzovane-z-vitaminom-d3-laktel-sih-kombiblok-0950h',
+            'https://metro.zakaz.ua/uk/products/moloko-laktel-1000g--04823065702322/',
+            'https://shop.nashkraj.ua/lutsk/product/446718-moloko-lactel-0-5-950g-z-vitaminom-d3',
+            'https://fozzyshop.ua/moloko/87959-moloko-ultrapasterizovannoe-lactel-s-vitaminom-d-05-4823065727516.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване Lactel безлактозне 2,5% 950 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-bezlaktozne-2-5-878542',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-bezlaktoznoe-lactel-2-5-950-g-907189/',
+            'https://novus.online/product/moloko-25-bezlaktozne-ultrapasterizovane-laktel-950g',
+            'https://shop.nashkraj.ua/lutsk/product/460098-moloko-lactel-2-5-950g-bezlaktozne-t-p',
+            'https://fozzyshop.ua/moloko/96473-moloko-ultrapasterizovannoe-lactel-bezlaktoznoe-25-4823065728827.html'
+        ])
+
+
+    def Moloko_superpasterizovane_Buronka_3_2__1000_g_parser(self):
+        ''' Молоко суперпастеризоване «Бурьонка» 3,2% 1000 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-superpasteryzovane-buronka-3-2-539325',
+            'https://auchan.ua/ua/moloko-bur-onka-ul-trapasterizovannoe-3-2-1-l-906576/',
+            'https://novus.online/product/moloko-ultrapasterizovane-32-burenka-1l',
+            'https://metro.zakaz.ua/uk/products/moloko-burenka-1000g--04820003481783/',
+            'https://fozzyshop.ua/moloko/10003-moloko-burenka-superpasterizovannoe-32-4820003483763.html'
+        ])
+
+
+    def Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser(self):
+        ''' Молоко питне ультрапастеризоване «Бурьонка» 2,5% 1000 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pytne-ultrapasteryzovane-buronka-2-5-70262',
+            'https://auchan.ua/ua/moloko-bur-onka-ul-trapasterizovannoe-2-5-1-5-l-906548/',
+            'https://novus.online/product/moloko-ultrapasterizovane-25-burenka-1000g',
+            'https://metro.zakaz.ua/uk/products/moloko-burenka-1000g-ukrayina--04820003480717/',
+            'https://fozzyshop.ua/moloko/43996-moloko-buronka-ultrapasterizovane-25-4820003480717.html'
+        ])
+
+
+    def Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser(self):
+        ''' 	Молоко «Бурьонка» ультрапастеризоване 3,2% 1500 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-buronka-3-2-ultrapasterizovane-1-5-l',
+            'https://shop.silpo.ua/product/moloko-buronka-ultrapasteryzovane-3-2-255332',
+            'https://auchan.ua/ua/moloko-bur-onka-ul-trapasterizovannoe-3-2-1-5-l-906555/',
+            'https://novus.online/product/moloko-ultrapasterizovane-32-burenka-15l',
+            'https://metro.zakaz.ua/uk/products/moloko-burenka-1500g--04820003481332/',
+            'https://fozzyshop.ua/moloko/91001-moloko-ultrapasterizovannoe-buronka-32-4820003481332.html'
+        ])
+
+
+    def Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser(self):
+        ''' Молоко «Бурьонка» питне ультрапастеризоване 2,5% 1500 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-buronka-2-5-ultrapasterizovane-1-5-l',
+            'https://shop.silpo.ua/product/moloko-buronka-pytne-ultrapasteryzovane-2-5-255333',
+            'https://auchan.ua/ua/moloko-bur-onka-ul-trapasterizovannoe-2-5-1-5-l-906548/',
+            'https://novus.online/product/moloko-ultrapasterizovane-25-burenka-15l',
+            'https://metro.zakaz.ua/uk/products/moloko-burenka-1500ml--04820003481349/',
+            'https://fozzyshop.ua/moloko/71522-moloko-burenka-pitevoe-ultrapasterizovannoe-25-4820003481349.html'
+        ])
 
 
 #
