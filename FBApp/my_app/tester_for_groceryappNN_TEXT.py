@@ -1589,3 +1589,51 @@ class TesterForGroceryAppText:
             return 	MOLOKO_BURONKA_ULTRAPASTERIZOVANE_3_2__1500_G
         elif np.argmax(result) == 760:
             return MOLOKO_BURONKA_PITNE_ULTRAPASTERIZOVANE_2_5__1500_G
+        elif np.argmax(result) == 761:
+            return MOLOKO_ULTRAPASTERIZOVANE_ORGANIC_MILK_ORGANІCHNE_2_5__1000_G
+        elif np.argmax(result) == 762:
+            return MOLOKO_ULTRAPASTERIZOVANE_SLOVJANOCHKA_3_2__1000_G
+        elif np.argmax(result) == 763:
+            return MOLOKO_ULTRAPASTERIZOVANE_SLOVJANOCHKA_2_5__1000_G
+        elif np.argmax(result) == 764:
+            return MOLOKO_SLOVJANOCHKA_DLJA_ІDEALNOI_PІNKI_2_5__1000_G
+        elif np.argmax(result) == 765:
+            return MOLOKO_ULTRAPASTERIZOVANE_FERMA_2_5__T_P_980_G
+        elif np.argmax(result) == 766:
+            return MOLOKO_ULTRAPASTERIZOVANE_OKZDH_NASHE_MOLOKO_2_5__950_G
+        elif np.argmax(result) == 767:
+            return MOLOKO_ULTRAPASTERIZOVANE_OKZDH_NASHE_MOLOKO_3_2__950_G
+        elif np.argmax(result) == 768:
+            return MOLOKO_ULTRAPASTERIZOVANE_LOKO_MOKO_VІD_3_ROKІV_2_5__1000_G
+        elif np.argmax(result) == 769:
+            return MOLOKO_SELJANSKE_PITNE_ULTRAPASTERIZOVANE_2_5__900_G
+        elif np.argmax(result) == 770:
+            return MOLOKO_SELJANSKE_ULTRAPASTERIZOVANE_0_5__900_G
+        elif np.argmax(result) == 771:
+            return MOLOKO_ULTRAPASTERIZOVANE_SELJANSKE_1__900_G
+        elif np.argmax(result) == 772:
+            return MOLOKO_SELJANSKE_ULTRAPASTERIZOVANE_3_2__900_G
+        elif np.argmax(result) == 773:
+            return MOLOKO_SELJANSKE_MALJUKAM_VІD_3_ROKІV_2_5__900_G
+        elif np.argmax(result) == 774:
+            return MOLOKO_ULTRAPASTERIZOVANE_JAGOTINSKE_2_6__900_G
+        elif np.argmax(result) == 775:
+            return MOLOKO_JAGOTINSKE_2_6__P_E_900_G
+        elif np.argmax(result) == 776:
+            return MOLOKO_JAGOTINSKE_3_2__P_E_900_G
+        elif np.argmax(result) == 777:
+            return MOLOKO_ULTRAPASTERIZOVANE_JAGOTINSKE_3_2__900_G
+        elif np.argmax(result) == 778:
+            return MOLOKO_JAGOTINSKE_PRJAZHENE_2_6__P_E_900_G
+        elif np.argmax(result) == 779:
+            return MOLOKO_GALICHINA_Z_CHISTIH_KARPAT_2_5__900_G
+        elif np.argmax(result) == 780:
+            return MOLOKO_GALICHINA_ІZ_CHISTIH_KARPAT_1__900_G
+        elif np.argmax(result) == 781:
+            return MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_3_2___T_F_900_G
+        elif np.argmax(result) == 782:
+            return MOLOKO_PREMІJA_ULTRAPASTERIZOVANE_1__900_G
+        elif np.argmax(result) == 783:
+            return MOLOKO_PREMІJA_ULTRAPASTERIZOVANE_2_5__900_G
+        elif np.argmax(result) == 784:
+            return MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__900_G

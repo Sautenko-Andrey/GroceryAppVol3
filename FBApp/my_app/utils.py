@@ -1860,6 +1860,144 @@ class ContextSupervisor:
             result = self.getting_prices('Moloko_Buronka_ultrapasterizovane_3_2__1500_g', get_Moloko_Buronka_ultrapasterizovane_3_2__1500_g)
         elif nn_respond == MOLOKO_BURONKA_PITNE_ULTRAPASTERIZOVANE_2_5__1500_G:
             result = self.getting_prices('Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g', get_Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_ORGANIC_MILK_ORGANІCHNE_2_5__1000_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g', get_Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_SLOVJANOCHKA_3_2__1000_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g', get_Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_SLOVJANOCHKA_2_5__1000_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g', get_Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g)
+        elif nn_respond == MOLOKO_SLOVJANOCHKA_DLJA_ІDEALNOI_PІNKI_2_5__1000_G:
+            result = self.getting_prices('Moloko_Slovjanochka_Dlja_іdealnoї_pіnki_2_5__1000_g', get_Moloko_Slovjanochka_Dlja_іdealnoi_pіnki_2_5__1000_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_FERMA_2_5__T_P_980_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g', get_Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_OKZDH_NASHE_MOLOKO_2_5__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g', get_Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_OKZDH_NASHE_MOLOKO_3_2__950_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g', get_Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_LOKO_MOKO_VІD_3_ROKІV_2_5__1000_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g', get_Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g)
+        elif nn_respond == MOLOKO_SELJANSKE_PITNE_ULTRAPASTERIZOVANE_2_5__900_G:
+            result = self.getting_prices('Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g', get_Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g)
+        elif nn_respond == MOLOKO_SELJANSKE_ULTRAPASTERIZOVANE_0_5__900_G:
+            result = self.getting_prices('Moloko_Seljanske_ultrapasterizovane_0_5__900_g', get_Moloko_Seljanske_ultrapasterizovane_0_5__900_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_SELJANSKE_1__900_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Seljanske_1__900_g', get_Moloko_ultrapasterizovane_Seljanske_1__900_g)
+        elif nn_respond == MOLOKO_SELJANSKE_ULTRAPASTERIZOVANE_3_2__900_G:
+            result = self.getting_prices('Moloko_Seljanske_ultrapasterizovane_3_2__900_g', get_Moloko_Seljanske_ultrapasterizovane_3_2__900_g)
+        elif nn_respond == MOLOKO_SELJANSKE_MALJUKAM_VІD_3_ROKІV_2_5__900_G:
+            result = self.getting_prices('Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g', get_Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_JAGOTINSKE_2_6__900_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Jagotinske_2_6__900_g', get_Moloko_ultrapasterizovane_Jagotinske_2_6__900_g)
+        elif nn_respond == MOLOKO_JAGOTINSKE_2_6__P_E_900_G:
+            result = self.getting_prices('Moloko_Jagotinske_2_6__p_e_900_g', get_Moloko_Jagotinske_2_6__p_e_900_g)
+        elif nn_respond == MOLOKO_JAGOTINSKE_3_2__P_E_900_G:
+            result = self.getting_prices('Moloko_Jagotinske_3_2__p_e_900_g', get_Moloko_Jagotinske_3_2__p_e_900_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_JAGOTINSKE_3_2__900_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Jagotinske_3_2__900_g', get_Moloko_ultrapasterizovane_Jagotinske_3_2__900_g)
+        elif nn_respond == MOLOKO_JAGOTINSKE_PRJAZHENE_2_6__P_E_900_G:
+            result = self.getting_prices('Moloko_Jagotinske_prjazhene_2_6__p_e_900_g', get_Moloko_Jagotinske_prjazhene_2_6__p_e_900_g)
+        elif nn_respond == MOLOKO_GALICHINA_Z_CHISTIH_KARPAT_2_5__900_G:
+            result = self.getting_prices('Moloko_Galichina_Z_chistih_Karpat_2_5__900_g', get_Moloko_Galichina_Z_chistih_Karpat_2_5__900_g)
+        elif nn_respond == MOLOKO_GALICHINA_ІZ_CHISTIH_KARPAT_1__900_G:
+            result = self.getting_prices('Moloko_Galichina_Іz_chistih_Karpat_1__900_g', get_Moloko_Galichina_Іz_chistih_Karpat_1__900_g)
+        elif nn_respond == MOLOKO_GALICHINA_ULTRAPASTERIZOVANE_3_2___T_F_900_G:
+            result = self.getting_prices('Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g', get_Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g)
+        elif nn_respond == MOLOKO_PREMІJA_ULTRAPASTERIZOVANE_1__900_G:
+            result = self.getting_prices('Moloko_Premіja_ultrapasterizovane_1__900_g', get_Moloko_Premіja_ultrapasterizovane_1__900_g)
+        elif nn_respond == MOLOKO_PREMІJA_ULTRAPASTERIZOVANE_2_5__900_G:
+            result = self.getting_prices('Moloko_Premіja_ultrapasterizovane_2_5__900_g', get_Moloko_Premіja_ultrapasterizovane_2_5__900_g)
+        elif nn_respond == MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__900_G:
+            result = self.getting_prices('Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g', get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

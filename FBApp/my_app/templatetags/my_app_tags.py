@@ -2362,3 +2362,51 @@ get_Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g = tag.create_tag(ItemsPi
 get_Moloko_Buronka_ultrapasterizovane_3_2__1500_g = tag.create_tag(ItemsPicsFromNet,763)
 '''Тэг,возвращающий информацию о "Молоко «Бурьонка» питне ультрапастеризоване 2,5% 1500 г"'''
 get_Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g = tag.create_tag(ItemsPicsFromNet,764)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване Organic Milk органічне 2,5% 1000 г"'''
+get_Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g = tag.create_tag(ItemsPicsFromNet,765)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Слов'яночка» 3,2% 1000 г"'''
+get_Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g = tag.create_tag(ItemsPicsFromNet,766)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Слов'яночка» 2,5% 1000 г"'''
+get_Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g = tag.create_tag(ItemsPicsFromNet,767)
+'''Тэг,возвращающий информацию о "Молоко «Слов’яночка» «Для ідеальної пінки» 2,5% 1000 г"'''
+get_Moloko_Slovjanochka_Dlja_idealnoi_pinki_2_5__1000_g = tag.create_tag(ItemsPicsFromNet,768)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Ферма» 2,5% т/п 980 г"'''
+get_Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g = tag.create_tag(ItemsPicsFromNet,769)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване ОКЗДХ Наше молоко 2,5% 950 г"'''
+get_Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g = tag.create_tag(ItemsPicsFromNet,770)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване ОКЗДХ Наше молоко 3,2% 950 г"'''
+get_Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g = tag.create_tag(ItemsPicsFromNet,771)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Локо Моко» від 3 років 2,5% 1000 г"'''
+get_Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g = tag.create_tag(ItemsPicsFromNet,772)
+'''Тэг,возвращающий информацию о "Молоко «Селянське» питне ультрапастеризоване 2,5% 900 г"'''
+get_Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g = tag.create_tag(ItemsPicsFromNet,773)
+'''Тэг,возвращающий информацию о "Молоко «Селянське» ультрапастеризоване 0,5% 900 г"'''
+get_Moloko_Seljanske_ultrapasterizovane_0_5__900_g = tag.create_tag(ItemsPicsFromNet,774)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Селянське» 1% 900 г"'''
+get_Moloko_ultrapasterizovane_Seljanske_1__900_g = tag.create_tag(ItemsPicsFromNet,775)
+'''Тэг,возвращающий информацию о "Молоко «Селянське» ультрапастеризоване 3,2% 900 г"'''
+get_Moloko_Seljanske_ultrapasterizovane_3_2__900_g = tag.create_tag(ItemsPicsFromNet,776)
+'''Тэг,возвращающий информацию о "Молоко «Селянське» малюкам від 3 років 2,5% 900 г"'''
+get_Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g = tag.create_tag(ItemsPicsFromNet,777)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Яготинське» 2,6% 900 г"'''
+get_Moloko_ultrapasterizovane_Jagotinske_2_6__900_g = tag.create_tag(ItemsPicsFromNet,778)
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» 2,6% п/е 900 г"'''
+get_Moloko_Jagotinske_2_6__p_e_900_g = tag.create_tag(ItemsPicsFromNet,779)
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» 3,2% п/е 900 г"'''
+get_Moloko_Jagotinske_3_2__p_e_900_g = tag.create_tag(ItemsPicsFromNet,780)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Яготинське» 3,2% 900 г"'''
+get_Moloko_ultrapasterizovane_Jagotinske_3_2__900_g = tag.create_tag(ItemsPicsFromNet,781)
+'''Тэг,возвращающий информацию о "Молоко «Яготинське» пряжене 2,6% п/е 900 г"'''
+get_Moloko_Jagotinske_prjazhene_2_6__p_e_900_g = tag.create_tag(ItemsPicsFromNet,782)
+'''Тэг,возвращающий информацию о "Молоко «Галичина» «З чистих Карпат» 2,5% 900 г"'''
+get_Moloko_Galichina_Z_chistih_Karpat_2_5__900_g = tag.create_tag(ItemsPicsFromNet,783)
+'''Тэг,возвращающий информацию о "Молоко «Галичина» «Із чистих Карпат» 1% 900 г"'''
+get_Moloko_Galichina_Іz_chistih_Karpat_1__900_g = tag.create_tag(ItemsPicsFromNet,784)
+'''Тэг,возвращающий информацию о "Молоко «Галичина» ультрапастеризоване 3,2%, т/ф 900 г"'''
+get_Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g = tag.create_tag(ItemsPicsFromNet,785)
+'''Тэг,возвращающий информацию о "Молоко «Премія» ультрапастеризоване 1% 900 г"'''
+get_Moloko_Premіja_ultrapasterizovane_1__900_g = tag.create_tag(ItemsPicsFromNet,786)
+'''Тэг,возвращающий информацию о "Молоко «Премія» ультрапастеризоване 2,5% 900 г"'''
+get_Moloko_Premіja_ultrapasterizovane_2_5__900_g = tag.create_tag(ItemsPicsFromNet,787)
+'''Тэг,возвращающий информацию о "Молоко питне «Повна Чаша» пастеризоване 2,5% 900 г"'''
+get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g = tag.create_tag(ItemsPicsFromNet,788)

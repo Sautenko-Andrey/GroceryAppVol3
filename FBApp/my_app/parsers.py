@@ -7159,7 +7159,314 @@ class ProductParserVol2:
         ])
 
 
-#
+    def Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g_parser(self):
+        ''' Молоко ультрапастеризоване Organic Milk органічне 2,5% 1000 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-organic-milk-organichne-2-5-923745',
+            'https://novus.online/product/moloko-korovyache-orhanichne-ultrapasteryzovane-organic-milk-25-tp-1000h',
+            'https://metro.zakaz.ua/uk/products/moloko-organik-milk-1000g--04820178810968/'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g_parser(self):
+        ''' Молоко ультрапастеризоване «Слов'яночка» 3,2% 1000 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-pitne-ultra-pasterizovane-3-2-slovyanochka-1000g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-slov-ianochka-3-2-677647',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-slov-janochka-3-2-1-kg-906646/'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser(self):
+        ''' Молоко ультрапастеризоване «Слов'яночка» 2,5% 1000 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-slov-ianochka-1000g-ukrayina--04823061319937/',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-slov-ianochka-2-5-677646',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-slov-janochka-2-5-1-kg-906639/',
+            'https://novus.online/product/moloko-slovyanochka-ultrapasteryzovane-25-1000h',
+            'https://shop.nashkraj.ua/lutsk/product/233835-moloko-slovyanochka-2-5-1000ml-t-p'
+        ])
+
+
+    def Moloko_Slovjanochka_Dlja_idealnoi_pinki_2_5__1000_g_parser(self):
+        ''' Молоко «Слов’яночка» «Для ідеальної пінки» 2,5% 1000 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-slovianochka-ukrayina--04823061322838/',
+            'https://shop.silpo.ua/product/moloko-slov-ianochka-dlia-idealnoi-pinky-2-5-824909'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser(self):
+        ''' Молоко ультрапастеризоване «Ферма» 2,5% т/п 980 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-ferma-ukrayina--04820239247757/',
+            'https://varus.ua/moloko-ferma-2-5-ultrapasterizovane-980-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-ferma-2-5-t-p-859171',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-ferma-2-5-980-g-907112/',
+            'https://novus.online/product/moloko-ferma-ultrapasteryzovane-25-980h',
+            'https://metro.zakaz.ua/uk/products/moloko-ferma-ukrayina--04820239247757/',
+            'https://fozzyshop.ua/moloko/99720-moloko-ultrapasterizovannoe-ferma-25-0250014657695.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g_parser(self):
+        ''' Молоко ультрапастеризоване ОКЗДХ Наше молоко 2,5% 950 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-nashe-moloko-ultrapasterizovannoe-dlya-detej-ot-3-h-let-25-950g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-okzdkh-nashe-moloko-dlia-ditei-vid-3-rokiv-2-5-933069',
+        ])
+
+
+    def Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g_parser(self):
+        ''' Молоко ультрапастеризоване ОКЗДХ Наше молоко 3,2% 950 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-nashe-moloko-ultrapasterizovannoe-dlya-detej-ot-3-h-let-32-950g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-okzdkh-nashe-moloko-3-2-933067'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g_parser(self):
+        ''' Молоко ультрапастеризоване «Локо Моко» від 3 років 2,5% 1000 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-loko-moko-25-z-vitaminami-dlya-ditej-vid-3-h-rokiv-1000-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-loko-moko-vid-3-rokiv-2-5-777584',
+            'https://shop.nashkraj.ua/lutsk/product/284863-moloko-loko-moko-2-5-1l-t-p'
+        ])
+
+
+    def Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser(self):
+        ''' Молоко «Селянське» питне ультрапастеризоване 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003481547/',
+            'https://varus.ua/moloko-selyanske-2-6-ultrapasterizovane-900-g',
+            'https://shop.silpo.ua/product/moloko-selianske-pytne-ultrapasteryzovane-2-5-28734',
+            'https://novus.online/product/moloko-25-selanske-900g',
+            'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003481547/',
+            'https://shop.nashkraj.ua/lutsk/product/38505-moloko-selyanske-2-5-900g-superp-t-f',
+            'https://fozzyshop.ua/moloko/42123-moloko-selyanske-pitevoe-ultrapasterizovannoe-25-4820003480113.html'
+        ])
+
+
+    def Moloko_Seljanske_ultrapasterizovane_0_5__900_g_parser(self):
+        ''' Молоко «Селянське» ультрапастеризоване 0,5% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-selianske-ultrapasteryzovane-0-5-774674',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-seljans-ke-0-5-900-g-906937/',
+            'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003486610/'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Seljanske_1__900_g_parser(self):
+        ''' Молоко ультрапастеризоване «Селянське» 1% 900 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-selyanske-1-ultrapasterizovane-900-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-selianske-1-827093',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovanoe-seljans-ke-1-900-g-910773/',
+            'https://novus.online/product/moloko-10-ultrapasteryzovane-selyanske-tfa-900h',
+            'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003488409/',
+            'https://fozzyshop.ua/moloko/93099-moloko-ultrapasterizovannoe-selyanske-1-4820003488409.html'
+        ])
+
+
+    def Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser(self):
+        ''' Молоко «Селянське» ультрапастеризоване 3,2% 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003481554/',
+            'https://varus.ua/moloko-selyanske-3-2-ultrapasterizovane-900-g-1',
+            'https://shop.silpo.ua/product/moloko-selianske-ultrapasteryzovane-3-2-857479',
+            'https://auchan.ua/ua/moloko-seljans-ke-ul-trapasterizovannoe-3-2-900-g-906569/',
+            'https://novus.online/product/moloko-superpasterizovane-32-selanske-09l',
+            'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003481554/',
+            'https://shop.nashkraj.ua/lutsk/product/38506-moloko-selyanske-3-2-900g-ult-past-t-f'
+        ])
+
+
+    def Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser(self):
+        ''' Молоко «Селянське» малюкам від 3 років 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-selyanske-malyukam-2-5-ultrapasterizovane-900-g',
+            'https://shop.silpo.ua/product/moloko-selianske-maliukam-vid-3-rokiv-2-5-719167',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-seljans-ke-dlja-detej-2-5-900-g-906688/',
+            'https://novus.online/product/moloko-ultrapasterizovane-ditace-malukam-selanske-25-900g',
+            'https://shop.nashkraj.ua/lutsk/product/232848-moloko-selyanske-2-5-900g-dityache-t-f',
+            'https://fozzyshop.ua/moloko/44077-moloko-selyanske-malyukam-vid-3-rokiv-ultrapasterizovane-25-4820003486160.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser(self):
+        ''' Молоко ультрапастеризоване «Яготинське» 2,6% 900 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-09-kg-agotinske-ultrapasterizovane-26',
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-900g--04823005208259/',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-2-6-848613',
+            'https://auchan.ua/ua/moloko-jagotins-ke-2-6-900-g-1378503/',
+            'https://novus.online/product/moloko-ultrapasteryzovane-26-yahotyn-900-h-tetrafino',
+            'https://fozzyshop.ua/moloko/86228-moloko-ultrapasterizovannoe-yagotinske-26-4823005208259.html'
+        ])
+
+
+    def Moloko_Jagotinske_2_6__p_e_900_g_parser(self):
+        ''' Молоко «Яготинське» 2,6% п/е 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-900g--04823005203889/',
+            'https://shop.silpo.ua/product/moloko-yagotynske-2-6-p-e-548446',
+            'https://auchan.ua/ua/moloko-jagotins-ke-2-6-900-g-1378503/',
+            'https://novus.online/product/moloko-26-agotin-pl-900g',
+            'https://metro.zakaz.ua/uk/products/moloko-iagotin-900g--04823005203889/',
+            'https://fozzyshop.ua/moloko/10016-moloko-yagotinske-26-p-e-4823005203889.html'
+        ])
+
+
+    def Moloko_Jagotinske_3_2__p_e_900_g_parser(self):
+        ''' Молоко «Яготинське» 3,2% п/е 900 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-09-kg-agotinske-32',
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-900g--04823005203919/',
+            'https://shop.silpo.ua/product/moloko-yagotynske-3-2-p-e-548448',
+            'https://metro.zakaz.ua/uk/products/moloko-iagotin-900g--04823005203919/',
+            'https://fozzyshop.ua/moloko/10018-moloko-yagotinske-32-p-e-4823005203919.html'
+        ])
+
+
+    def Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser(self):
+        ''' Молоко ультрапастеризоване «Яготинське» 3,2% 900 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/moloko-09-kg-agotinske-ultrapasterizovane-32-tetra-fino',
+            'https://eko.zakaz.ua/uk/products/moloko-iagotin-900g--04823005208266/',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-yagotynske-3-2-848614',
+            'https://fozzyshop.ua/moloko/86229-moloko-ultrapasterizovannoe-yagotinske-32-4823005208266.html'
+        ])
+
+
+    def Moloko_Jagotinske_prjazhene_2_6__p_e_900_g_parser(self):
+        ''' Молоко «Яготинське» пряжене 2,6% п/е 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-yagotynske-priazhene-2-6-p-e-647784',
+            'https://auchan.ua/ua/moloko-prjazhene-jagotins-ke-2-6-900-g-1378587/',
+            'https://novus.online/product/moloko-prazene-26-agotin-plivka-900g'
+        ])
+
+
+    def Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser(self):
+        ''' Молоко «Галичина» «З чистих Карпат» 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-galichina-900g-ukrayina--04820038493812/',
+            'https://shop.silpo.ua/product/moloko-galychyna-z-chystykh-karpat-2-5-716286',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-galichina-2-5-900-g-906653/',
+            'https://novus.online/product/moloko-tf-25-galicina-900g',
+            'https://shop.nashkraj.ua/lutsk/product/179024-moloko-galichina-2-5-900g-karpat-t-f'
+        ])
+
+
+    def Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser(self):
+        ''' Молоко «Галичина» «Із чистих Карпат» 1% 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-galichina-900g-ukrayina--04820038494123/',
+            'https://varus.ua/moloko-galichina-1-900g',
+            'https://shop.silpo.ua/product/moloko-galychyna-iz-chystykh-karpat-1-716285',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-galichina-1-900-g-906695/',
+            'https://shop.nashkraj.ua/lutsk/product/272470-moloko-galichina-1-900ml-t-f',
+            'https://fozzyshop.ua/moloko/44030-moloko-galichina-iz-chistykh-karpat-1-tetra-fina-4820038494123.html'
+        ])
+
+
+    def Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser(self):
+        ''' Молоко «Галичина» ультрапастеризоване 3,2%, т/ф 900 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-galichina-900g',
+            'https://shop.silpo.ua/product/moloko-galychyna-ultrapasteryzovane-3-2-t-f-771997',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-galichina-3-2-900-g-906923/',
+            'https://shop.nashkraj.ua/lutsk/product/248398-moloko-galichina-3-2-900g-t-f'
+        ])
+
+
+    def Moloko_Premіja_ultrapasterizovane_1__900_g_parser(self):
+        ''' Молоко «Премія» ультрапастеризоване 1% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-premiia-ultrapasteryzovane-1-799507',
+            'https://fozzyshop.ua/moloko/85033-moloko-ultrapasterizovannoe-premiya-1-t-f-4823096414584.html'
+        ])
+
+
+    def Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser(self):
+        ''' Молоко «Премія» ультрапастеризоване 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-premiia-ultrapasteryzovane-2-5-799508',
+            'https://fozzyshop.ua/moloko/85034-moloko-ultrapasterizovannoe-premiya-25-t-f-4823096414591.html'
+        ])
+
+
+    def Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g_parser(self):
+        ''' Молоко питне «Повна Чаша» пастеризоване 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-pytne-povna-chasha-pasteryzovane-2-5-541677'
+        ])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Dishes:
 #     '''Класс в котором собраны парсеры для блюд'''
 #     # количество доступных маркетов

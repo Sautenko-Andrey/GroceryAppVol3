@@ -5577,7 +5577,186 @@ def price_parcing(batch_name: str):
                 "metro": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[6],
                 "fozzy": parser.Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser()[8]
             }},
-        ]
+
+            {'Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g': {
+                "silpo": parser.Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g_parser()[3],
+                "novus": parser.Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g_parser()[6]
+            }},
+
+            {'Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g': {
+                "varus": parser.Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g_parser()[4]
+            }},
+
+            {'Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g': {
+                "eko": parser.Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser()[1],
+                "silpo": parser.Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser()[5],
+                "nash_kray": parser.Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser()[7]
+            }},
+
+            {'Moloko_Slovjanochka_Dlja_іdealnoi_pіnki_2_5__1000_g': {
+                "eko": parser.Moloko_Slovjanochka_Dlja_idealnoi_pinki_2_5__1000_g_parser[1],
+                "silpo": parser.Moloko_Slovjanochka_Dlja_idealnoi_pinki_2_5__1000_g_parser()[3]
+            }},
+
+            {'Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g': {
+                "eko": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[1],
+                "varus": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[6],
+                "fozzy": parser.Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser()[8]
+            }},
+
+            {'Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g': {
+                "varus": parser.Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g_parser[2],
+                "silpo": parser.Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g_parser()[3]
+            }},
+
+            {'Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g': {
+                "varus": parser.Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g_parser()[3]
+            }},
+
+            {'Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g': {
+                "varus": parser.Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g_parser()[3],
+                "nash_kray": parser.Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g_parser()[7]
+            }},
+
+            {'Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g': {
+                "eko": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[1],
+                "varus": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[2],
+                "silpo": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[3],
+                "novus": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[5],
+                "metro": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[6],
+                "nash_kray": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[7],
+                "fozzy": parser.Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser()[8]
+            }},
+
+            {'Moloko_Seljanske_ultrapasterizovane_0_5__900_g': {
+                "silpo": parser.Moloko_Seljanske_ultrapasterizovane_0_5__900_g_parser()[3],
+                "ashan": parser.Moloko_Seljanske_ultrapasterizovane_0_5__900_g_parser()[4],
+                "metro": parser.Moloko_Seljanske_ultrapasterizovane_0_5__900_g_parser()[6]
+            }},
+
+            {'Moloko_ultrapasterizovane_Seljanske_1__900_g': {
+                "varus": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[5],
+                "metro": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[6],
+                "fozzy": parser.Moloko_ultrapasterizovane_Seljanske_1__900_g_parser()[8]
+            }},
+
+            {'Moloko_Seljanske_ultrapasterizovane_3_2__900_g': {
+                "eko": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[1],
+                "varus": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[2],
+                "silpo": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[3],
+                "ashan": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[4],
+                "novus": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[5],
+                "metro": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[6],
+                "nash_kray": parser.Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser()[7]
+            }},
+
+            {'Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g': {
+                "varus": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[2],
+                "silpo": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[3],
+                "ashan": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[4],
+                "novus": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[5],
+                "nash_kray": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[7],
+                "fozzy": parser.Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser()[8]
+            }},
+
+            {'Moloko_ultrapasterizovane_Jagotinske_2_6__900_g': {
+                "atb": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[0],
+                "eko": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[1],
+                "silpo": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[4],
+                "novus": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[5],
+                "fozzy": parser.Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser()[8]
+            }},
+
+            {'Moloko_Jagotinske_2_6__p_e_900_g': {
+                "eko": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[1],
+                "silpo": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[3],
+                "ashan": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[4],
+                "novus": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[5],
+                "metro": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[6],
+                "fozzy": parser.Moloko_Jagotinske_2_6__p_e_900_g_parser()[8]
+            }},
+
+            {'Moloko_Jagotinske_3_2__p_e_900_g': {
+                "atb": parser.Moloko_Jagotinske_3_2__p_e_900_g_parser()[0],
+                "eko": parser.Moloko_Jagotinske_3_2__p_e_900_g_parser()[1],
+                "silpo": parser.Moloko_Jagotinske_3_2__p_e_900_g_parser()[3],
+                "metro": parser.Moloko_Jagotinske_3_2__p_e_900_g_parser()[6],
+                "fozzy": parser.Moloko_Jagotinske_3_2__p_e_900_g_parser()[8]
+            }},
+
+            {'Moloko_ultrapasterizovane_Jagotinske_3_2__900_g': {
+                "atb": parser.Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser()[0],
+                "eko": parser.Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser()[1],
+                "silpo": parser.Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser()[3],
+                "fozzy": parser.Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser()[8]
+            }},
+
+            {'Moloko_Jagotinske_prjazhene_2_6__p_e_900_g': {
+                "silpo": parser.Moloko_Jagotinske_prjazhene_2_6__p_e_900_g_parser()[3],
+                "ashan": parser.Moloko_Jagotinske_prjazhene_2_6__p_e_900_g_parser()[4],
+                "novus": parser.Moloko_Jagotinske_prjazhene_2_6__p_e_900_g_parser()[5]
+            }},
+
+            {'Moloko_Galichina_Z_chistih_Karpat_2_5__900_g': {
+                "eko": parser.Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser()[1],
+                "silpo": parser.Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser()[3],
+                "ashan": parser.Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser()[4],
+                "novus": parser.Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser()[5],
+                "nash_kray": parser.Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser()[7]
+            }},
+
+            {'Moloko_Galichina_Іz_chistih_Karpat_1__900_g': {
+                "eko": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[1],
+                "varus": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[2],
+                "silpo": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[3],
+                "ashan": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[4],
+                "nash_kray": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[7],
+                "fozzy": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[8]
+            }},
+
+
+            {'Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g':{
+                "varus": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[2],
+                "silpo": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[3],
+                "ashan": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[4],
+                "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[7]
+}},
+
+
+            {'Moloko_Premіja_ultrapasterizovane_1__900_g':{
+                "silpo": parser.Moloko_Premіja_ultrapasterizovane_1__900_g_parser()[3],
+                "fozzy": parser.Moloko_Premіja_ultrapasterizovane_1__900_g_parser()[8]
+}},
+
+
+            {'Moloko_Premіja_ultrapasterizovane_2_5__900_g':{
+                "silpo": parser.Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser()[3],
+                "fozzy": parser.Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser()[8]
+}},
+
+
+            {'Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g':{
+                "silpo": parser.Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g_parser()[3],
+}},
+
+
+
+   ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)
 
