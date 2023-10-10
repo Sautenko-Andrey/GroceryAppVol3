@@ -1908,16 +1908,16 @@ class ContextSupervisor:
             result = self.getting_prices('Moloko_Premіja_ultrapasterizovane_2_5__900_g', get_Moloko_Premіja_ultrapasterizovane_2_5__900_g)
         elif nn_respond == MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__900_G:
             result = self.getting_prices('Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g', get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g)
-
-
-
-
-
-
-
-
-
-
+        elif nn_respond == MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__450_G:
+            result = self.getting_prices('Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g', get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g)
+        elif nn_respond == MOLOKO_ULTRAPASTERIZOVANE_VOLOSHKOVE_POLE_2_5__900_G:
+            result = self.getting_prices('Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g', get_Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g)
+        elif nn_respond == MOLOKO_ZLAGODA_DITJACHE_3_2___P_E_400_G:
+            result = self.getting_prices('Moloko_Zlagoda_ditjache_3_2___p_e_400_g', get_Moloko_Zlagoda_ditjache_3_2___p_e_400_g)
+        elif nn_respond == JOGURT_GALICHINA_ZLAKI_2_2__ZHIRU_300_G_PET:
+            result = self.getting_prices('Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET', get_Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET)
+        elif nn_respond == JOGURT_GALICHINA_MALINA_2_2__300_G_PET:
+            result = self.getting_prices('Jogurt_Galichina_malina_2_2__300_g_PET', get_Jogurt_Galichina_malina_2_2__300_g_PET)
 
 
 

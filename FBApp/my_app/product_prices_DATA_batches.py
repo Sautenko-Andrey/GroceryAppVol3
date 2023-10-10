@@ -5729,34 +5729,56 @@ def price_parcing(batch_name: str):
                 "fozzy": parser.Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser()[8]
             }},
 
-
-            {'Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g':{
+            {'Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g': {
                 "varus": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[2],
                 "silpo": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[3],
                 "ashan": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[4],
                 "nash_kray": parser.Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser()[7]
-}},
+            }},
 
-
-            {'Moloko_Premіja_ultrapasterizovane_1__900_g':{
+            {'Moloko_Premіja_ultrapasterizovane_1__900_g': {
                 "silpo": parser.Moloko_Premіja_ultrapasterizovane_1__900_g_parser()[3],
                 "fozzy": parser.Moloko_Premіja_ultrapasterizovane_1__900_g_parser()[8]
-}},
+            }},
 
-
-            {'Moloko_Premіja_ultrapasterizovane_2_5__900_g':{
+            {'Moloko_Premіja_ultrapasterizovane_2_5__900_g': {
                 "silpo": parser.Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser()[3],
                 "fozzy": parser.Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser()[8]
-}},
+            }},
 
-
-            {'Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g':{
+            {'Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g': {
                 "silpo": parser.Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g_parser()[3],
-}},
+            }},
 
+            {'Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g': {
+                "silpo": parser.Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g_parser()[3]
+            }},
 
+            {'Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g': {
+                "eko": parser.Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g_parser()[1],
+                "varus": parser.Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g_parser()[2],
+                "silpo": parser.Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g_parser()[3],
+                "ashan": parser.Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g_parser()[4]
+            }},
 
-   ]
+            {'Moloko_Zlagoda_ditjache_3_2___p_e_400_g': {
+                "varus": parser.Moloko_Zlagoda_ditjache_3_2___p_e_400_g_parser()[2],
+                "silpo": parser.Moloko_Zlagoda_ditjache_3_2___p_e_400_g_parser()[3]
+            }},
+
+            {'Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET': {
+                "atb": parser.Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser()[0],
+                "varus": parser.Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser()[2],
+                "silpo": parser.Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser()[3],
+                "novus": parser.Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser()[5],
+                "metro": parser.Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser()[6]
+            }},
+
+            {'Jogurt_Galichina_malina_2_2__300_g_PET': {
+                "silpo": parser.Jogurt_Galichina_malina_2_2__300_g_PET_parser()[3]
+            }},
+
+        ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)
 

@@ -1637,3 +1637,13 @@ class TesterForGroceryAppText:
             return MOLOKO_PREMІJA_ULTRAPASTERIZOVANE_2_5__900_G
         elif np.argmax(result) == 784:
             return MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__900_G
+        elif np.argmax(result) == 785:
+            return MOLOKO_PITNE_POVNA_CHASHA_PASTERIZOVANE_2_5__450_G
+        elif np.argmax(result) == 786:
+            return MOLOKO_ULTRAPASTERIZOVANE_VOLOSHKOVE_POLE_2_5__900_G
+        elif np.argmax(result) == 787:
+            return MOLOKO_ZLAGODA_DITJACHE_3_2___P_E_400_G
+        elif np.argmax(result) == 788:
+            return JOGURT_GALICHINA_ZLAKI_2_2__ZHIRU_300_G_PET
+        elif np.argmax(result) == 789:
+            return JOGURT_GALICHINA_MALINA_2_2__300_G_PET

@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from my_app.utils import price_updating_data
 
 
-
 class ProductParserVol2:
     '''Класс для парсинга цен с сайтов с приминением Selenium'''
 
@@ -13,34 +12,33 @@ class ProductParserVol2:
     SELECTOR = By.CSS_SELECTOR
     ATB_REGULAR_DIV_CLASS = '[class="product-price__top"]'
 
-    #старые div у эко
-    #EKO_REGULAR_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
-    #EKO_DISCOUNT_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title Price__value_discount"]'
+    # старые div у эко
+    # EKO_REGULAR_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+    # EKO_DISCOUNT_DIV_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title Price__value_discount"]'
 
-    #новые div у эко
+    # новые div у эко
     EKO_NEW_REGULAR_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
     EKO_NEW_DISCOUNT_DIV = '[class="jsx-906554f8658dceda Price__value_title Price__value_discount"]'
-
 
     VARUS_REGULAR_DIV_CLASS = '[class="sf-price__regular"]'
     VARUS_SPECIAL_DIV_CLASS = '[class="sf-price__special"]'
     VARUS_DISCOUNT_DIV_CLASS = '[class="jsx-161433026 Price__value_title Price__value_discount"]'
-    VARUS_REGULAR_SPAN_CLASS ='[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
-    SILPO_REGULAR_DIV_CLASS='[class="current-integer"]'
-    ASHAN_DIV_CLASS='[class="productDetails_price_actual__12u8E"]'
-    NOVUS_DIV_CLASS='[class="product-card__price-current h4"]'
-    NOVUS_SPECIAL_DIV_CLASS='[class="product-card__price-current h4 product-card__price-current_red"]'
+    VARUS_REGULAR_SPAN_CLASS = '[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+    SILPO_REGULAR_DIV_CLASS = '[class="current-integer"]'
+    ASHAN_DIV_CLASS = '[class="productDetails_price_actual__12u8E"]'
+    NOVUS_DIV_CLASS = '[class="product-card__price-current h4"]'
+    NOVUS_SPECIAL_DIV_CLASS = '[class="product-card__price-current h4 product-card__price-current_red"]'
 
-    #старый div метро
-    #METRO_REGULAR_DIV_CLASS='[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
-    #новый div метро
+    # старый div метро
+    # METRO_REGULAR_DIV_CLASS='[class="jsx-2be52a4b5bdfcc8a Price__value_title"]'
+    # новый div метро
     NEW_METRO_REGULEAR_DIV = '[class="jsx-906554f8658dceda Price__value_title"]'
 
-    NASH_KRAY_DIV_CLASS='[class="nice_price"]'
-    FOZZY_REGULAR_DIV_CLASS='[class="current-price"]'
+    NASH_KRAY_DIV_CLASS = '[class="nice_price"]'
+    FOZZY_REGULAR_DIV_CLASS = '[class="current-price"]'
 
     __slots__ = ("options", "driver", "atb_price", "eko_price", "varus_price",
-                 "silpo_price", "ashan_price","novus_price", "metro_price",
+                 "silpo_price", "ashan_price", "novus_price", "metro_price",
                  "nash_kray_price", "fozzy_price")
 
     def __init__(self):
@@ -50,57 +48,57 @@ class ProductParserVol2:
         self.options = undetected_chromedriver.ChromeOptions()
         # self.options.add_argument('enable-features=NetworkServiceInProcess')
         self.options.add_argument("disable-features=NetworkService")  # если верхнее не работает,то включаем это
-        #last arguments
+        # last arguments
         self.options.add_argument("--disable-gpu")
         self.options.add_argument("--no-sandbox")
         self.options.add_argument("--disable-extensions")
         self.options.add_argument("--dns-prefetch-disable")
-        #end last arguments
+        # end last arguments
         self.options.add_argument('--headless')
-        #новая опция из-за ошибки при парсинге
+        # новая опция из-за ошибки при парсинге
         self.options.add_argument("--disable-site-isolation-trials")
-        #конец новой опции
+        # конец новой опции
         self.driver = undetected_chromedriver.Chrome(options=self.options)
 
-    def check_comma(self,text:str):
-        price=text[:5]
+    def check_comma(self, text: str):
+        price = text[:5]
         price = float(price.replace(',', '.'))
         return price
 
     def prices_parsing(self, urls: list) -> list:
 
-        #задаем изначальный список с ценами во всех маркетах по нулям
+        # задаем изначальный список с ценами во всех маркетах по нулям
         results = [0, 0, 0, 0, 0, 0, 0, 0, 0]
 
-        #части(начала) адресов страниц магазинов (url)
+        # части(начала) адресов страниц магазинов (url)
         atb_url_name_short = 'https://www.atb'
         atb_url_name_long = 'https://atbmarket'
         eko_url_name = 'https://eko'
         varus_url_name = 'https://varus'
-        silpo_url_name='https://shop.silpo'
+        silpo_url_name = 'https://shop.silpo'
         ashan_url_name = 'https://auchan'
         novus_url_name = 'https://novus.online'
         metro_url_name = 'https://metro.zakaz.ua'
         nk_url_name = 'https://shop.nashkraj.ua'
-        fozzy_url_name= 'https://fozzyshop.ua'
+        fozzy_url_name = 'https://fozzyshop.ua'
 
-        #срезы для адресов магазинов
-        atb_url_slice_short = slice(0,15)   # ранвосильно срезу[:15]
-        atb_url_slice_long = slice(0,17)    # ранвосильно срезу[:17]
-        eko_url_slice = slice(0,11)
-        varus_url_slice = slice(0,13)
-        silpo_url_slice = slice(0,18)
-        ashan_url_slice = slice(0,14)
-        novus_url_slice = slice(0,20)
-        metro_url_slice = slice(0,22)
-        nk_url_slice = slice(0,24)
-        fozzy_url_slice = slice(0,20)
+        # срезы для адресов магазинов
+        atb_url_slice_short = slice(0, 15)  # ранвосильно срезу[:15]
+        atb_url_slice_long = slice(0, 17)  # ранвосильно срезу[:17]
+        eko_url_slice = slice(0, 11)
+        varus_url_slice = slice(0, 13)
+        silpo_url_slice = slice(0, 18)
+        ashan_url_slice = slice(0, 14)
+        novus_url_slice = slice(0, 20)
+        metro_url_slice = slice(0, 22)
+        nk_url_slice = slice(0, 24)
+        fozzy_url_slice = slice(0, 20)
 
-        #время задержки при парсинге 5 секунд
+        # время задержки при парсинге 5 секунд
         waiting_time = 5
         long_waiting_time = 15
 
-        #номера индексов магазинов в списке с ценами по порядку
+        # номера индексов магазинов в списке с ценами по порядку
         atb_index = 0
         eko_index = 1
         varus_index = 2
@@ -129,14 +127,15 @@ class ProductParserVol2:
                 try:
                     self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_NEW_REGULAR_DIV).text
                     # self.driver.implicitly_wait(5)
-                    results[eko_index] = float(self.eko_price[:5])   #берем только первые 5 символов включая точку
+                    results[eko_index] = float(self.eko_price[:5])  # берем только первые 5 символов включая точку
                 except Exception as ex:
                     print(ex)
                     if ex:
                         try:
                             self.eko_price = self.driver.find_element(self.SELECTOR, self.EKO_NEW_DISCOUNT_DIV).text
                             self.driver.implicitly_wait(waiting_time)
-                            results[eko_index] = float(self.eko_price[:5]) #берем только первые 5 символов включая точку
+                            results[eko_index] = float(
+                                self.eko_price[:5])  # берем только первые 5 символов включая точку
                         except Exception as ex:
                             print(ex)
             elif url[varus_url_slice] == varus_url_name:
@@ -145,7 +144,7 @@ class ProductParserVol2:
                 try:
                     self.varus_price = self.driver.find_element(self.SELECTOR, self.VARUS_REGULAR_DIV_CLASS).text
                     self.driver.implicitly_wait(waiting_time)
-                    results[varus_index] = float(self.varus_price[:5]) #берем только первые 5 символов включая точку
+                    results[varus_index] = float(self.varus_price[:5])  # берем только первые 5 символов включая точку
                 except Exception as ex:
                     print(ex)
                     if ex:
@@ -153,7 +152,8 @@ class ProductParserVol2:
                             self.varus_price = self.driver.find_element(self.SELECTOR,
                                                                         self.VARUS_SPECIAL_DIV_CLASS).text
                             self.driver.implicitly_wait(waiting_time)
-                            results[varus_index] = float(self.varus_price[:5]) #берем только первые 5 символов включая точку
+                            results[varus_index] = float(
+                                self.varus_price[:5])  # берем только первые 5 символов включая точку
                         except Exception as ex:
                             print(ex)
                             if ex:
@@ -178,7 +178,7 @@ class ProductParserVol2:
                 try:
                     self.silpo_price = self.driver.find_element(self.SELECTOR, self.SILPO_REGULAR_DIV_CLASS).text
                     self.driver.implicitly_wait(waiting_time)
-                    results[silpo_index] = float(self.silpo_price[:5])#берем только первые 5 символов включая точку
+                    results[silpo_index] = float(self.silpo_price[:5])  # берем только первые 5 символов включая точку
                 except Exception as ex:
                     print(ex)
             elif url[ashan_url_slice] == ashan_url_name:
@@ -195,7 +195,7 @@ class ProductParserVol2:
                 # парсим цену Novus
                 self.driver.get(url)
                 try:
-                    self.novus_price = self.driver.find_element(self.SELECTOR,self.NOVUS_DIV_CLASS).text
+                    self.novus_price = self.driver.find_element(self.SELECTOR, self.NOVUS_DIV_CLASS).text
                     self.driver.implicitly_wait(waiting_time)
                     results[novus_index] = float(self.novus_price[:5])
                 except Exception as ex:
@@ -208,30 +208,30 @@ class ProductParserVol2:
                             results[novus_index] = float(self.novus_price[:5])
                         except Exception as ex:
                             print(ex)
-            elif url[metro_url_slice]== metro_url_name:
-                #парсим цену Метро
+            elif url[metro_url_slice] == metro_url_name:
+                # парсим цену Метро
                 self.driver.get(url)
                 try:
-                    self.metro_price = self.driver.find_element(self.SELECTOR,self.NEW_METRO_REGULEAR_DIV).text
+                    self.metro_price = self.driver.find_element(self.SELECTOR, self.NEW_METRO_REGULEAR_DIV).text
                     self.driver.implicitly_wait(waiting_time)
                     results[metro_index] = float(self.metro_price[:5])
                 except Exception as ex:
                     print(ex)
-            elif url[nk_url_slice]== nk_url_name:
-                #парсим цену Наш Край
+            elif url[nk_url_slice] == nk_url_name:
+                # парсим цену Наш Край
                 self.driver.get(url)
                 try:
-                    self.nash_kray_price = self.driver.find_element(self.SELECTOR,self.NASH_KRAY_DIV_CLASS).text
+                    self.nash_kray_price = self.driver.find_element(self.SELECTOR, self.NASH_KRAY_DIV_CLASS).text
                     self.driver.implicitly_wait(waiting_time)
                     self.nash_kray_price = price_updating_data(self.nash_kray_price)
                     results[nk_index] = self.nash_kray_price
                 except Exception as ex:
                     print(ex)
-            elif url[fozzy_url_slice]== fozzy_url_name:
-                #парсим цену Fozzy
+            elif url[fozzy_url_slice] == fozzy_url_name:
+                # парсим цену Fozzy
                 self.driver.get(url)
                 try:
-                    self.fozzy_price = self.driver.find_element(self.SELECTOR,self.FOZZY_REGULAR_DIV_CLASS).text
+                    self.fozzy_price = self.driver.find_element(self.SELECTOR, self.FOZZY_REGULAR_DIV_CLASS).text
                     self.driver.implicitly_wait(waiting_time)
                     self.fozzy_price = price_updating_data(self.fozzy_price)
                     results[fozzy_index] = self.fozzy_price
@@ -240,11 +240,11 @@ class ProductParserVol2:
 
         return results
 
-
     def obolon_premium_parser(self):
         '''Парсер для сбора данных о цене продукта "Оболонь Премиум Экстра 1.1 л"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/pivo-11l-obolon-premium-extra-brew-svitle-alk-46',
-                'https://eko.zakaz.ua/uk/products/pivo-obolon-1100ml-ukrayina--04820000190008/'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/pivo-11l-obolon-premium-extra-brew-svitle-alk-46',
+             'https://eko.zakaz.ua/uk/products/pivo-obolon-1100ml-ukrayina--04820000190008/'])
 
     def vodka_getman_ICE_parcer(self):
         '''Парсер для сбора данных о цене продукта "Водка Гетьман ICE 0,7 л"'''
@@ -252,51 +252,53 @@ class ProductParserVol2:
 
     def coca_cola_2l_parcer(self):
         '''Парсер для сбора данных о цене продукта "напиток Coca-Cola 2 л"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/napij-225-l-coca-cola-bezalkogolnij-silnogazovanij',
-                'https://eko.zakaz.ua/uk/products/napii-koka-kola-2000ml--05449000009067/',
-                'https://varus.ua/napiy-coca-cola-silnogazovaniy-2-l',
-                'https://shop.silpo.ua/product/napii-coca-cola-117',
-                'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-coca-cola-p-but-2l-688465/',
-                'https://novus.online/product/napij-gazovanij-coca-cola-2l',
-                'https://metro.zakaz.ua/uk/products/napii-koka-kola-2000ml--05449000009067/',
-                'https://shop.nashkraj.ua/kovel/product/7588-napiy-koka-kola-2l',
-                'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12865-napitok-coca-cola-5449000009067.html'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/napij-225-l-coca-cola-bezalkogolnij-silnogazovanij',
+             'https://eko.zakaz.ua/uk/products/napii-koka-kola-2000ml--05449000009067/',
+             'https://varus.ua/napiy-coca-cola-silnogazovaniy-2-l',
+             'https://shop.silpo.ua/product/napii-coca-cola-117',
+             'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-coca-cola-p-but-2l-688465/',
+             'https://novus.online/product/napij-gazovanij-coca-cola-2l',
+             'https://metro.zakaz.ua/uk/products/napii-koka-kola-2000ml--05449000009067/',
+             'https://shop.nashkraj.ua/kovel/product/7588-napiy-koka-kola-2l',
+             'https://fozzyshop.ua/ru/voda-sladkaya-gazirovannaya/12865-napitok-coca-cola-5449000009067.html'])
 
     def garlik_parcer(self):
         '''Парсер для сбора данных о цене продукта "Чеснок, кг" '''
         return self.prices_parsing(['https://www.atbmarket.com/product/casnik-import-1-gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-chasnik--ekomarket00000000640012/',
-                'https://varus.ua/chasnik-vag',
-                'https://shop.silpo.ua/product/chasnyk-32595',
-                'https://novus.online/product/casnik-vag',
-                'https://shop.nashkraj.ua/kovel/product/40072-chasnik-vag',
-                'https://fozzyshop.ua/ru/ovoshhi/11587-chesnok-6925307588881.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-chasnik--ekomarket00000000640012/',
+                                    'https://varus.ua/chasnik-vag',
+                                    'https://shop.silpo.ua/product/chasnyk-32595',
+                                    'https://novus.online/product/casnik-vag',
+                                    'https://shop.nashkraj.ua/kovel/product/40072-chasnik-vag',
+                                    'https://fozzyshop.ua/ru/ovoshhi/11587-chesnok-6925307588881.html'])
 
     def tea_minutka_black_40_b_parcer(self):
         '''Парсер для сбора данных о цене продукта "Чай Минутка, 40 п, черный"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/caj-40-fp-h-14-g-minutka-black-tea-cornij-z-bergamotom-polsa',
-                'https://eko.zakaz.ua/uk/products/chai-56g--05900396000972/',
-                'https://metro.zakaz.ua/uk/products/chai-56g--05900396000972/'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/caj-40-fp-h-14-g-minutka-black-tea-cornij-z-bergamotom-polsa',
+             'https://eko.zakaz.ua/uk/products/chai-56g--05900396000972/',
+             'https://metro.zakaz.ua/uk/products/chai-56g--05900396000972/'])
 
     def apple_golden_parcer(self):
         '''Парсер для сбора данных о цене продукта яблоко Голден'''
         return self.prices_parsing(['https://www.atbmarket.com/product/abluko-golden-1-gat',
-                'https://eko.zakaz.ua/uk/products/frukt-iabluka--ekomarket00000000641182/',
-                'https://varus.ua/yabluko-golden-1-gatunok-vag',
-                'https://shop.silpo.ua/product/yabluko-golden-zakarpattia-516860',
-                'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28417100000000/',
-                'https://shop.nashkraj.ua/kovel/product/170200-yabluka-golden-vag',
-                'https://fozzyshop.ua/ru/frukty-i-yagody/11814-yabloko-golden-0250005543877.html'])
+                                    'https://eko.zakaz.ua/uk/products/frukt-iabluka--ekomarket00000000641182/',
+                                    'https://varus.ua/yabluko-golden-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/yabluko-golden-zakarpattia-516860',
+                                    'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28417100000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/170200-yabluka-golden-vag',
+                                    'https://fozzyshop.ua/ru/frukty-i-yagody/11814-yabloko-golden-0250005543877.html'])
 
     def kent_8_parcer(self):
         '''Парсер для сбора данных о цене продукта сигареты Кент 8'''
         return self.prices_parsing(['https://www.atbmarket.com/product/sigareti-kent-silver-25',
-                'https://eko.zakaz.ua/uk/products/tsigarki-kent--04820192683371/',
-                'https://varus.ua/cigarki-kent-navy-blue-4-0-8-08',
-                'https://shop.silpo.ua/product/tsygarky-kent-nd-navy-blue-907151',
-                'https://auchan.ua/ua/sigarety-kent-blue-20-sht-917269/',
-                'https://novus.online/product/cigarki-kent-blue-futura-8',
-                'https://fozzyshop.ua/ru/sigarety/98899-sigarety-kent-navy-blue-0250014852113.html'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-kent--04820192683371/',
+                                    'https://varus.ua/cigarki-kent-navy-blue-4-0-8-08',
+                                    'https://shop.silpo.ua/product/tsygarky-kent-nd-navy-blue-907151',
+                                    'https://auchan.ua/ua/sigarety-kent-blue-20-sht-917269/',
+                                    'https://novus.online/product/cigarki-kent-blue-futura-8',
+                                    'https://fozzyshop.ua/ru/sigarety/98899-sigarety-kent-navy-blue-0250014852113.html'])
 
     def coffee_aroma_gold_parcer(self):
         '''Парсер для сбора данных о цене продукта кофе растовримый Арома Голд'''
@@ -306,42 +308,43 @@ class ProductParserVol2:
         '''Парсер для сбора данных о цене продукта
          "Масло подсолнечное рафинированное Щедрый Дар 850 мл"'''
         return self.prices_parsing(['https://www.atbmarket.com/product/olia-085l-sedrij-dar-sonasnikova-rafinovana',
-                'https://eko.zakaz.ua/uk/products/oliia-shchedrii-dar-850ml--04820078575769/',
-                'https://shop.silpo.ua/product/oliia-soniashnykova-shchedryi-dar-rafinovana-dezodorovana-890082',
-                'https://auchan.ua/ua/maslo-podsolnechnoe-schedrij-dar-rafinirovannoe-850-ml-934363/',
-                'https://novus.online/product/olia-sonasnikova-rafinovana-dezodarovana-sedrij-dar-087l-pet',
-                'https://metro.zakaz.ua/uk/products/oliia-shchedrii-dar-850ml--04820078575769/',
-                'https://fozzyshop.ua/ru/maslo-podsolnechnoe/94784-maslo-podsolnechnoe-shhedrij-dar-rafinirovannoe-dezodorirovannoe-4820078575776.html'])
+                                    'https://eko.zakaz.ua/uk/products/oliia-shchedrii-dar-850ml--04820078575769/',
+                                    'https://shop.silpo.ua/product/oliia-soniashnykova-shchedryi-dar-rafinovana-dezodorovana-890082',
+                                    'https://auchan.ua/ua/maslo-podsolnechnoe-schedrij-dar-rafinirovannoe-850-ml-934363/',
+                                    'https://novus.online/product/olia-sonasnikova-rafinovana-dezodarovana-sedrij-dar-087l-pet',
+                                    'https://metro.zakaz.ua/uk/products/oliia-shchedrii-dar-850ml--04820078575769/',
+                                    'https://fozzyshop.ua/ru/maslo-podsolnechnoe/94784-maslo-podsolnechnoe-shhedrij-dar-rafinirovannoe-dezodorirovannoe-4820078575776.html'])
 
     def fairy_limon_500_parcer(self):
         '''Парсер для сбора данных о цене продукта "Fairy лимон, 500 млг"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/zasib-miucij-dla-posudu-05l-fairy-sokovitij-limon',
-                'https://eko.zakaz.ua/uk/products/zasib-feiri-500ml-ukrayina--05413149313842/',
-                'https://varus.ua/zasib-d-posudu-sokovit-limon-fairy-500ml',
-                'https://shop.silpo.ua/product/zasib-dlia-myttia-posudu-fairy-sokovytyi-lymon-48923',
-                'https://novus.online/product/zasib-dla-mitta-posudu-fairy-plus-limon-500ml',
-                'https://metro.zakaz.ua/uk/products/zasib-feiri-500ml-ukrayina--05413149313842/',
-                'https://fozzyshop.ua/ru/dlya-ruchnogo-mytya-posudy/15384-sredstvo-dlya-mytya-posudy-fairy-plus-limon-5413149313842.html'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/zasib-miucij-dla-posudu-05l-fairy-sokovitij-limon',
+             'https://eko.zakaz.ua/uk/products/zasib-feiri-500ml-ukrayina--05413149313842/',
+             'https://varus.ua/zasib-d-posudu-sokovit-limon-fairy-500ml',
+             'https://shop.silpo.ua/product/zasib-dlia-myttia-posudu-fairy-sokovytyi-lymon-48923',
+             'https://novus.online/product/zasib-dla-mitta-posudu-fairy-plus-limon-500ml',
+             'https://metro.zakaz.ua/uk/products/zasib-feiri-500ml-ukrayina--05413149313842/',
+             'https://fozzyshop.ua/ru/dlya-ruchnogo-mytya-posudy/15384-sredstvo-dlya-mytya-posudy-fairy-plus-limon-5413149313842.html'])
 
     def onion_parcer(self):
         '''Парсер для сбора данных о цене продукта лук'''
         return self.prices_parsing(['https://www.atbmarket.com/product/cibula-ripcasta-1-gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-tsibulia--ekomarket00000000647281/',
-                'https://varus.ua/cibulya-ripchasta-1-gatunok-vag',
-                'https://shop.silpo.ua/product/tsybulia-ripchasta-zhovta-32573',
-                'https://novus.online/product/cibula-vag',
-                'https://metro.zakaz.ua/uk/products/ovochi-tsibulia--metro28960000000000/',
-                'https://shop.nashkraj.ua/kovel/product/13435-tsibulya-ripchasta-vag',
-                'https://fozzyshop.ua/ru/ovoshhi/11520-luk-repchatyj-zheltyj-2732573.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-tsibulia--ekomarket00000000647281/',
+                                    'https://varus.ua/cibulya-ripchasta-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/tsybulia-ripchasta-zhovta-32573',
+                                    'https://novus.online/product/cibula-vag',
+                                    'https://metro.zakaz.ua/uk/products/ovochi-tsibulia--metro28960000000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/13435-tsibulya-ripchasta-vag',
+                                    'https://fozzyshop.ua/ru/ovoshhi/11520-luk-repchatyj-zheltyj-2732573.html'])
 
     def apple_black_prince_parcer(self):
         '''Парсер для сбора данных о цене продукта "Яблоко Черный Принц"'''
         return self.prices_parsing(['https://www.atbmarket.com/product/abluko-red-princ-1gat',
-                'https://eko.zakaz.ua/uk/products/frukt-iabluka-bez-tm--ekomarket00000000645795/',
-                'https://varus.ua/yabloko-princ-vag',
-                'https://shop.silpo.ua/product/yabluko-red-prynts-523750',
-                'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28632200000000/',
-                'https://fozzyshop.ua/ru/frukty-i-yagody/22864-yabloko-red-princ-2778989.html'])
+                                    'https://eko.zakaz.ua/uk/products/frukt-iabluka-bez-tm--ekomarket00000000645795/',
+                                    'https://varus.ua/yabloko-princ-vag',
+                                    'https://shop.silpo.ua/product/yabluko-red-prynts-523750',
+                                    'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28632200000000/',
+                                    'https://fozzyshop.ua/ru/frukty-i-yagody/22864-yabloko-red-princ-2778989.html'])
 
     def smetana_stolica_smaky_400_20(self):
         '''Парсер для сбора данных о цене продукта "Сметана Столиця Смаку 400 гр 20% жирности"'''
@@ -350,19 +353,19 @@ class ProductParserVol2:
     def limon_parcer(self):
         '''Парсер для сбора данных о цене продукта лимон'''
         return self.prices_parsing(['https://atbmarket.com/product/limon-1-gat',
-                'https://eko.zakaz.ua/uk/products/frukt-tsitrus--ekomarket00000000650210/',
-                'https://varus.ua/limon-vag',
-                'https://shop.silpo.ua/product/lymon-32550',
-                'https://novus.online/product/limon-majer-vag',
-                'https://metro.zakaz.ua/uk/products/frukt-tsitrus--metro28255100000000/',
-                'https://shop.nashkraj.ua/kovel/product/20991-limon-vag',
-                'https://fozzyshop.ua/ru/frukty-i-yagody/11775-limon-2732550.html'])
+                                    'https://eko.zakaz.ua/uk/products/frukt-tsitrus--ekomarket00000000650210/',
+                                    'https://varus.ua/limon-vag',
+                                    'https://shop.silpo.ua/product/lymon-32550',
+                                    'https://novus.online/product/limon-majer-vag',
+                                    'https://metro.zakaz.ua/uk/products/frukt-tsitrus--metro28255100000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/20991-limon-vag',
+                                    'https://fozzyshop.ua/ru/frukty-i-yagody/11775-limon-2732550.html'])
 
     def oil_oleyna_neraf_850_parcer(self):
         '''Парсер для сбора данных о цене продукта
         "Масло подсолнечное Олейна нерафинированное 850 гр"'''
         return self.prices_parsing(['https://eko.zakaz.ua/uk/products/oliia-oleina-900ml--04820077083500/',
-                'https://auchan.ua/ua/maslo-podsolnechnoe-olejna-dushistoe-850-ml-665297/'])
+                                    'https://auchan.ua/ua/maslo-podsolnechnoe-olejna-dushistoe-850-ml-665297/'])
 
     def tea_monomah_black_kenya_90_parcer(self):
         '''Парсер для сбора данных о цене продукта
@@ -373,84 +376,86 @@ class ProductParserVol2:
         '''Парсер для сбора данных о цене продукта
         "Пена для бритья ARKO Cool 300 млг+100млг бонус"'''
         return self.prices_parsing(['https://atbmarket.com/product/pina-dla-golinna-200100-ml-arko-men-cool',
-                'https://eko.zakaz.ua/uk/products/pina-arko-200ml--08690506090029/',
-                'https://varus.ua/pina-dlya-golinnya-kul-arko-200ml',
-                'https://shop.silpo.ua/product/pina-dlia-golinnia-arko-prokholoda-166950',
-                'https://auchan.ua/ua/pena-dlja-brit-ja-arko-men-cool-200-ml-253128/',
-                'https://novus.online/product/pina-dla-golinna-arco-proholoda-200ml',
-                'https://metro.zakaz.ua/uk/products/pina-arko-200ml--08690506090029/',
-                'https://fozzyshop.ua/ru/muzhskie-sredstva-dlya-britya-i-kosmetika/39096-pena-dlya-britya-arko-prokhlada-8690506090029.html'])
+                                    'https://eko.zakaz.ua/uk/products/pina-arko-200ml--08690506090029/',
+                                    'https://varus.ua/pina-dlya-golinnya-kul-arko-200ml',
+                                    'https://shop.silpo.ua/product/pina-dlia-golinnia-arko-prokholoda-166950',
+                                    'https://auchan.ua/ua/pena-dlja-brit-ja-arko-men-cool-200-ml-253128/',
+                                    'https://novus.online/product/pina-dla-golinna-arco-proholoda-200ml',
+                                    'https://metro.zakaz.ua/uk/products/pina-arko-200ml--08690506090029/',
+                                    'https://fozzyshop.ua/ru/muzhskie-sredstva-dlya-britya-i-kosmetika/39096-pena-dlya-britya-arko-prokhlada-8690506090029.html'])
 
     def arko_sensitive_200_bonus100_parcer(self):
         '''Парсер для сбора данных о цене продукта
         "Пена для бритья ARKO Cool 300 млг+100млг бонус"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/pina-dla-golinna-200100-ml-arko-men-sensitive-promo',
-                'https://eko.zakaz.ua/uk/products/pina-arko-200ml--08690506090043/',
-                'https://varus.ua/pina-dlya-golinnya-ekstra-sensitiv-arko-200ml',
-                'https://shop.silpo.ua/product/pina-dlia-golinnia-arko-dlia-chutlyvoi-shkiry-44192',
-                'https://auchan.ua/ua/pena-dlja-brit-ja-arko-sensitive-200-ml-253127/',
-                'https://novus.online/product/pina-dla-golinna-arco-dla-cutlivoi-skiri-200ml',
-                'https://metro.zakaz.ua/uk/products/pina-arko-200ml--08690506090043/',
-                'https://shop.nashkraj.ua/kovel/product/3475-pina-arko-d-g-200ml-ekstra-sensetiv',
-                'https://fozzyshop.ua/ru/muzhskie-sredstva-dlya-britya-i-kosmetika/39097-pena-dlya-britya-arko-dlya-chuvstvitelnoj-kozhi-8690506090043.html'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/pina-dla-golinna-200100-ml-arko-men-sensitive-promo',
+             'https://eko.zakaz.ua/uk/products/pina-arko-200ml--08690506090043/',
+             'https://varus.ua/pina-dlya-golinnya-ekstra-sensitiv-arko-200ml',
+             'https://shop.silpo.ua/product/pina-dlia-golinnia-arko-dlia-chutlyvoi-shkiry-44192',
+             'https://auchan.ua/ua/pena-dlja-brit-ja-arko-sensitive-200-ml-253127/',
+             'https://novus.online/product/pina-dla-golinna-arco-dla-cutlivoi-skiri-200ml',
+             'https://metro.zakaz.ua/uk/products/pina-arko-200ml--08690506090043/',
+             'https://shop.nashkraj.ua/kovel/product/3475-pina-arko-d-g-200ml-ekstra-sensetiv',
+             'https://fozzyshop.ua/ru/muzhskie-sredstva-dlya-britya-i-kosmetika/39097-pena-dlya-britya-arko-dlya-chuvstvitelnoj-kozhi-8690506090043.html'])
 
     def carrot_parcer(self):
         '''Парсер для сбора данных о цене продукта морковь'''
         return self.prices_parsing(['https://www.atbmarket.com/product/morkva-1gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-morkva--ekomarket00000000640007/',
-                'https://varus.ua/morkva-1-gatunok-vag',
-                'https://shop.silpo.ua/product/morkva-myta-367056',
-                'https://novus.online/product/morkva-vag',
-                'https://metro.zakaz.ua/uk/products/ovochi-morkva--metro28941500000000/',
-                'https://shop.nashkraj.ua/kovel/product/12819-morkva-vag',
-                'https://fozzyshop.ua/ru/ovoshhi/11524-morkov-2736546.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-morkva--ekomarket00000000640007/',
+                                    'https://varus.ua/morkva-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/morkva-myta-367056',
+                                    'https://novus.online/product/morkva-vag',
+                                    'https://metro.zakaz.ua/uk/products/ovochi-morkva--metro28941500000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/12819-morkva-vag',
+                                    'https://fozzyshop.ua/ru/ovoshhi/11524-morkov-2736546.html'])
 
     def cabbage_parcer(self):
         '''Парсер для сбора данных о цене продукта капуста'''
         return self.prices_parsing(['https://www.atbmarket.com/product/kapusta-1-gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-kapusta--ekomarket00000000667930/',
-                'https://varus.ua/kapusta-1-gatunok-vag',
-                'https://shop.silpo.ua/product/kapusta-bilogolova-32572',
-                'https://novus.online/product/kapusta-vag',
-                'https://metro.zakaz.ua/uk/products/ovochi-kapusta--metro28284700000000/',
-                'https://shop.nashkraj.ua/kovel/product/869-kapusta-bilokachanna-vag',
-                'https://fozzyshop.ua/ru/ovoshhi/11498-kapusta-belokachannaya-2732572.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-kapusta--ekomarket00000000667930/',
+                                    'https://varus.ua/kapusta-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/kapusta-bilogolova-32572',
+                                    'https://novus.online/product/kapusta-vag',
+                                    'https://metro.zakaz.ua/uk/products/ovochi-kapusta--metro28284700000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/869-kapusta-bilokachanna-vag',
+                                    'https://fozzyshop.ua/ru/ovoshhi/11498-kapusta-belokachannaya-2732572.html'])
 
     def egg_parcer(self):
         '''Парсер для сбора данных о цене продукта яйца куринные'''
         return self.prices_parsing(['https://www.atbmarket.com/product/ajce-kurace-10-st-ukraina-1-kategoria-fas',
-                'https://eko.zakaz.ua/uk/products/iaitse--ekomarket00000026102825/',
-                'https://varus.ua/yayce-kuryache-1sht',
-                'https://shop.silpo.ua/product/yaitsia-kuriachi-povna-chasha-1-kategoriia-435227',
-                'https://auchan.ua/ua/jajca-kurinye-organicheskie-organic-eggs-s-1-10-sht-971455/',
-                'https://novus.online/product/ajce-kurace-s1-harcove-marka-promo-10st',
-                'https://metro.zakaz.ua/uk/products/iaitse-iasensvit-530g-ukrayina--04820147580830/',
-                'https://shop.nashkraj.ua/kovel/product/301886-yaytse-kvochka-10sht-xl',
-                'https://fozzyshop.ua/ru/yajca-kurinye/87720-yajco-kurinoe-s1-s0-4820215480079.html'])
+                                    'https://eko.zakaz.ua/uk/products/iaitse--ekomarket00000026102825/',
+                                    'https://varus.ua/yayce-kuryache-1sht',
+                                    'https://shop.silpo.ua/product/yaitsia-kuriachi-povna-chasha-1-kategoriia-435227',
+                                    'https://auchan.ua/ua/jajca-kurinye-organicheskie-organic-eggs-s-1-10-sht-971455/',
+                                    'https://novus.online/product/ajce-kurace-s1-harcove-marka-promo-10st',
+                                    'https://metro.zakaz.ua/uk/products/iaitse-iasensvit-530g-ukrayina--04820147580830/',
+                                    'https://shop.nashkraj.ua/kovel/product/301886-yaytse-kvochka-10sht-xl',
+                                    'https://fozzyshop.ua/ru/yajca-kurinye/87720-yajco-kurinoe-s1-s0-4820215480079.html'])
 
     def mayonez_detsk_shedro_67_parcer(self):
         '''Парсер для сбора данных о цене продукта "Майонез детский Щедро 67%"'''
         return self.prices_parsing(['https://www.atbmarket.com/product/majonez-190g-sedro-domasnij-dla-ditej-67',
-                'https://eko.zakaz.ua/uk/products/maionez-shchedro-190g--04820184020054/',
-                'https://varus.ua/mayonez-domashniy-dlya-ditey-67-schedro-190g-d-p-ukraina',
-                'https://shop.silpo.ua/product/maionez-shchedro-domashnii-dlia-ditei-67-685628',
-                'https://metro.zakaz.ua/uk/products/maionez-shchedro-190g--04820184020054/',
-                'https://fozzyshop.ua/ru/majonez/52017-majonez-shhedro-domashnij-dlya-detej-67-d-p-4823097402375.html'])
+                                    'https://eko.zakaz.ua/uk/products/maionez-shchedro-190g--04820184020054/',
+                                    'https://varus.ua/mayonez-domashniy-dlya-ditey-67-schedro-190g-d-p-ukraina',
+                                    'https://shop.silpo.ua/product/maionez-shchedro-domashnii-dlia-ditei-67-685628',
+                                    'https://metro.zakaz.ua/uk/products/maionez-shchedro-190g--04820184020054/',
+                                    'https://fozzyshop.ua/ru/majonez/52017-majonez-shhedro-domashnij-dlya-detej-67-d-p-4823097402375.html'])
 
     def rexona_aloe_vera_w_parcer(self):
         '''Парсер для сбора данных о цене продукта "Дезодорант Rexona Aloe Vera женский"'''
-        return self.prices_parsing(['https://eko.zakaz.ua/uk/products/dezodorant-reksona-150ml-velikobritaniia--08712561844338/',
-                                    'https://auchan.ua/ua/dezodorant-sprej-rexona-motionsense-aloe-vera-150-ml-256005/'])
+        return self.prices_parsing(
+            ['https://eko.zakaz.ua/uk/products/dezodorant-reksona-150ml-velikobritaniia--08712561844338/',
+             'https://auchan.ua/ua/dezodorant-sprej-rexona-motionsense-aloe-vera-150-ml-256005/'])
 
     def marloboro_red_parcer(self):
         '''Парсер для сбора данных о цене продукта сигареты Мальборо красные'''
         return self.prices_parsing(['https://www.atbmarket.com/product/sigareti-marlboro-27',
-                'https://eko.zakaz.ua/uk/products/tsigarki-malboro-25g--04823003205557/',
-                'https://varus.ua/cigarki-marlboro',
-                'https://shop.silpo.ua/product/sygarety-marlboro-red-911500',
-                'https://auchan.ua/ua/sigarety-marlboro-20-sht-916786/',
-                'https://novus.online/product/cigarki-marlboro-red',
-                'https://fozzyshop.ua/ru/sigarety/98990-sigarety-marlboro-red-4823003205557.html'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-malboro-25g--04823003205557/',
+                                    'https://varus.ua/cigarki-marlboro',
+                                    'https://shop.silpo.ua/product/sygarety-marlboro-red-911500',
+                                    'https://auchan.ua/ua/sigarety-marlboro-20-sht-916786/',
+                                    'https://novus.online/product/cigarki-marlboro-red',
+                                    'https://fozzyshop.ua/ru/sigarety/98990-sigarety-marlboro-red-4823003205557.html'])
 
     def beer_lvivske_svitle_24l(self):
         '''Парсер для сбора данных о цене продукта "Пиво ЛЬвовское светлое 2,4 литра"'''
@@ -467,214 +472,217 @@ class ProductParserVol2:
     def water_in_6l_bottle_parser(self):
         '''Парсер для сбора данных о цене продукта вода питьевая в 6 литровой бутылке'''
         return self.prices_parsing(['https://www.atbmarket.com/product/voda-6-l-karpatska-dzerelna-negazovana',
-                'https://eko.zakaz.ua/uk/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
-                'https://varus.ua/voda-vygoda-negazirovannaya-vygoda-6-l',
-                'https://shop.silpo.ua/product/voda-mineralna-karpatska-dzherelna-negazovana-440815',
-                'https://auchan.ua/ua/voda-karpats-ka-dzherel-na-6-l-775207/',
-                'https://novus.online/product/voda-pitna-dzerelna-negazovana-marka-promo-6l',
-                'https://metro.zakaz.ua/ru/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
-                'https://shop.nashkraj.ua/kovel/product/19345-min-voda-prozora-6l-vershina-yakosti',
-                'https://fozzyshop.ua/ru/voda-mineralnaya-negazirovannaya/12847-voda-pitevaya-prozora-artezianskaya-n-gaz-4820029431014.html'])
+                                    'https://eko.zakaz.ua/uk/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
+                                    'https://varus.ua/voda-vygoda-negazirovannaya-vygoda-6-l',
+                                    'https://shop.silpo.ua/product/voda-mineralna-karpatska-dzherelna-negazovana-440815',
+                                    'https://auchan.ua/ua/voda-karpats-ka-dzherel-na-6-l-775207/',
+                                    'https://novus.online/product/voda-pitna-dzerelna-negazovana-marka-promo-6l',
+                                    'https://metro.zakaz.ua/ru/products/voda-karpatska-dzherelna-6000ml--04820051240240/',
+                                    'https://shop.nashkraj.ua/kovel/product/19345-min-voda-prozora-6l-vershina-yakosti',
+                                    'https://fozzyshop.ua/ru/voda-mineralnaya-negazirovannaya/12847-voda-pitevaya-prozora-artezianskaya-n-gaz-4820029431014.html'])
 
     def pork_lopatka_parser(self):
         '''Парсер для сбора данных о цене продукта свинина лопатка/на кости, кг'''
         return self.prices_parsing(['https://www.atbmarket.com/product/okist-lembergmit-svinacij-oholodzenij-vakupak',
-                'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000535086/',
-                'https://varus.ua/lopatka-svinaya-vesovaya',
-                'https://shop.silpo.ua/product/svyniacha-lopatka-fermerska-757767',
-                'https://novus.online/product/lopatka-svinna-na-kistocci-vag',
-                'https://metro.zakaz.ua/uk/products/m-iaso--metro28500400000000/',
-                'https://shop.nashkraj.ua/kovel/product/28508-svinina-okholodzhena-lopatka',
-                'https://fozzyshop.ua/ru/svinina/11242-svinaya-lopatka-bez-kosti-2732700.html'])
+                                    'https://eko.zakaz.ua/uk/products/m-iaso--ekomarket00000000535086/',
+                                    'https://varus.ua/lopatka-svinaya-vesovaya',
+                                    'https://shop.silpo.ua/product/svyniacha-lopatka-fermerska-757767',
+                                    'https://novus.online/product/lopatka-svinna-na-kistocci-vag',
+                                    'https://metro.zakaz.ua/uk/products/m-iaso--metro28500400000000/',
+                                    'https://shop.nashkraj.ua/kovel/product/28508-svinina-okholodzhena-lopatka',
+                                    'https://fozzyshop.ua/ru/svinina/11242-svinaya-lopatka-bez-kosti-2732700.html'])
 
     def potato_parser(self):
         '''Парсер для сбора данных о цене продукта картошка обыкновенная, кг'''
         return self.prices_parsing(['https://www.atbmarket.com/product/kartopla-1-gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-kartoplia--ekomarket00000000667970/',
-                'https://varus.ua/kartoplya-1-gatunok-vag',
-                'https://shop.silpo.ua/product/kartoplia-bila-myta-460748',
-                'https://novus.online/product/kartopla-rozeva-vag',
-                'https://metro.zakaz.ua/uk/products/ovochi-kartoplia--metro28013500000000/',
-                'https://fozzyshop.ua/ru/ovoshhi/64754-kartoshka-belaya-2782970.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-kartoplia--ekomarket00000000667970/',
+                                    'https://varus.ua/kartoplya-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/kartoplia-bila-myta-460748',
+                                    'https://novus.online/product/kartopla-rozeva-vag',
+                                    'https://metro.zakaz.ua/uk/products/ovochi-kartoplia--metro28013500000000/',
+                                    'https://fozzyshop.ua/ru/ovoshhi/64754-kartoshka-belaya-2782970.html'])
 
     def beet_parser(self):
         '''Парсер для сбора данных о цене продукта буряк обыкновенный, кг'''
         return self.prices_parsing(['https://www.atbmarket.com/product/burak-1-gat',
-                'https://eko.zakaz.ua/uk/products/ovochi-buriak--ekomarket00000000646097/',
-                'https://varus.ua/buryak-1-gatunok-vag',
-                'https://shop.silpo.ua/product/buriak-32570',
-                'https://novus.online/product/burak-vag',
-                'https://metro.zakaz.ua/uk/products/ovochi-buriak--metro28165800000000/',
-                'https://fozzyshop.ua/ru/ovoshhi/11573-svekla-0101190394549.html'])
+                                    'https://eko.zakaz.ua/uk/products/ovochi-buriak--ekomarket00000000646097/',
+                                    'https://varus.ua/buryak-1-gatunok-vag',
+                                    'https://shop.silpo.ua/product/buriak-32570',
+                                    'https://novus.online/product/burak-vag',
+                                    'https://metro.zakaz.ua/uk/products/ovochi-buriak--metro28165800000000/',
+                                    'https://fozzyshop.ua/ru/ovoshhi/11573-svekla-0101190394549.html'])
 
     def four_parser(self):
         '''Парсер для сбора данных о цене продукта муки, кг'''
         return self.prices_parsing(['https://www.atbmarket.com/product/borosno-1-kg-hutorok-psenicne-visij-gatunok',
-                'https://eko.zakaz.ua/uk/products/boroshno-khutorok-1000g-ukrayina--04820101710204/',
-                'https://varus.ua/boroshno-pshenichne-vigoda-1-kg',
-                'https://shop.silpo.ua/product/boroshno-kyivmlyn-v-g-210259',
-                'https://novus.online/product/borosno-psenicne-marka-promo-1kg',
-                'https://metro.zakaz.ua/uk/products/boroshno-metro-shef-1000g--04820019601656/',
-                'https://shop.nashkraj.ua/kovel/product/57341-boroshno-pshenichne-v-g',
-                'https://fozzyshop.ua/ru/muka-pshenichnaya/19053-muka-pshenichnaya-extra-v-s-4824034039036.html'])
+                                    'https://eko.zakaz.ua/uk/products/boroshno-khutorok-1000g-ukrayina--04820101710204/',
+                                    'https://varus.ua/boroshno-pshenichne-vigoda-1-kg',
+                                    'https://shop.silpo.ua/product/boroshno-kyivmlyn-v-g-210259',
+                                    'https://novus.online/product/borosno-psenicne-marka-promo-1kg',
+                                    'https://metro.zakaz.ua/uk/products/boroshno-metro-shef-1000g--04820019601656/',
+                                    'https://shop.nashkraj.ua/kovel/product/57341-boroshno-pshenichne-v-g',
+                                    'https://fozzyshop.ua/ru/muka-pshenichnaya/19053-muka-pshenichnaya-extra-v-s-4824034039036.html'])
 
     def oil_for_dishes_parser(self):
         '''Парсер масла для приготовки блюд(самое популярное) '''
-        return self.prices_parsing(['https://www.atbmarket.com/product/olia-085l-olejna-tradicijna-sonasnikova-rafinovana',
-                'https://eko.zakaz.ua/uk/products/oliia-oleina-850ml--04820001115567/',
-                'https://varus.ua/maslo-podsolnechnoe-oleyna-tradicionnaya-rafinirovannoe-850-ml',
-                'https://novus.online/product/olia-sonasna-rafinovana-dezodorovana-vimorozena-marki-p-olejnatradicijna-0850l',
-                'https://metro.zakaz.ua/uk/products/oliia-aro-870ml--04820060041050/',
-                'https://shop.nashkraj.ua/kovel/product/253258-oliya-oleyna-850ml-rafinovana',
-                'https://fozzyshop.ua/ru/maslo-podsolnechnoe/56884-maslo-podsolnechnoe-shhedrij-dar-pervyj-otzhim-4820078575745.html'])
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/olia-085l-olejna-tradicijna-sonasnikova-rafinovana',
+             'https://eko.zakaz.ua/uk/products/oliia-oleina-850ml--04820001115567/',
+             'https://varus.ua/maslo-podsolnechnoe-oleyna-tradicionnaya-rafinirovannoe-850-ml',
+             'https://novus.online/product/olia-sonasna-rafinovana-dezodorovana-vimorozena-marki-p-olejnatradicijna-0850l',
+             'https://metro.zakaz.ua/uk/products/oliia-aro-870ml--04820060041050/',
+             'https://shop.nashkraj.ua/kovel/product/253258-oliya-oleyna-850ml-rafinovana',
+             'https://fozzyshop.ua/ru/maslo-podsolnechnoe/56884-maslo-podsolnechnoe-shhedrij-dar-pervyj-otzhim-4820078575745.html'])
 
     def sour_cream_for_dishes_parser(self):
         '''Парсер для самой популярной сметаны к блюдам (вареники, борщ, т.д.)'''
         return self.prices_parsing(['https://www.atbmarket.com/product/smetana-300-g-agotinska-15-pstakan',
-                'https://eko.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
-                'https://varus.ua/smetana-yagotinska-15-450g',
-                'https://shop.silpo.ua/product/smetana-yagotynska-15-908738',
-                'https://novus.online/product/smetana-15-yahotyn-stakan-300h',
-                'https://metro.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
-                'https://fozzyshop.ua/ru/smetana/98665-smetana-yagotinske-15-stakan-0250014899583.html'])
+                                    'https://eko.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
+                                    'https://varus.ua/smetana-yagotinska-15-450g',
+                                    'https://shop.silpo.ua/product/smetana-yagotynska-15-908738',
+                                    'https://novus.online/product/smetana-15-yahotyn-stakan-300h',
+                                    'https://metro.zakaz.ua/uk/products/smetana-iagotin-300g--04823005209584/',
+                                    'https://fozzyshop.ua/ru/smetana/98665-smetana-yagotinske-15-stakan-0250014899583.html'])
 
     def desodorant_garnier_magniy_man_parser(self):
         '''Парсер для дезодоранта "Garnier Магний мужской"'''
-        return self.prices_parsing(['https://shop.silpo.ua/product/dezodorant-sprei-garnier-men-magnii-ultrasukhist-813133',
-        'https://fozzyshop.ua/ru/dezodoranty/84270-dezodorant-sprej-garnier-men-magnij-ultrasukhost-3600542310369.html'])
+        return self.prices_parsing(
+            ['https://shop.silpo.ua/product/dezodorant-sprei-garnier-men-magnii-ultrasukhist-813133',
+             'https://fozzyshop.ua/ru/dezodoranty/84270-dezodorant-sprej-garnier-men-magnij-ultrasukhost-3600542310369.html'])
 
     def coffee_aroma_gold_freeze_dried_70g_parser(self):
         '''Парсер для растворимого кофе "Арома Голд freeze dried 70 грамм"'''
         return self.prices_parsing(['https://eko.zakaz.ua/uk/products/kava-aroma-gold-70g--04771632088167/',
-                'https://shop.silpo.ua/product/kava-aroma-gold-rozchynna-895284',
-                'https://shop.nashkraj.ua/kovel/product/494322-kava-aroma-gold-70g-natur-rozch-subl-gran'])
+                                    'https://shop.silpo.ua/product/kava-aroma-gold-rozchynna-895284',
+                                    'https://shop.nashkraj.ua/kovel/product/494322-kava-aroma-gold-70g-natur-rozch-subl-gran'])
 
     def gorchica_veres_ukrainska_micna_120g_parser(self):
         '''Парсер для горчицы "Верес украинская крепкая 120 грамм"'''
         return self.prices_parsing(['https://shop.silpo.ua/product/girchytsia-veres-ukrainska-mitsna-d-p-722177',
-                'https://novus.online/product/gircica-ukrainska-micna-veres-120g-dp',
-                'https://metro.zakaz.ua/uk/products/girchitsia-veres-120g-ukrayina--04823084600661/'])
+                                    'https://novus.online/product/gircica-ukrainska-micna-veres-120g-dp',
+                                    'https://metro.zakaz.ua/uk/products/girchitsia-veres-120g-ukrayina--04823084600661/'])
 
     def tea_monomah_100_ceylon_original_black_krupn_list_90g_parser(self):
         '''Парсер для чая "Мономах 100% оригинал цейлонский черный крупнолистовой"'''
-        pass   #нет нигде этого чая
+        pass  # нет нигде этого чая
 
     def tea_monomah_ceylon_black_parser(self):
         '''Парсер для чая "Мономах Цейлон черный 90 гр"'''
-        pass #нет нигде этого чая
+        pass  # нет нигде этого чая
 
     def sir_plavlenniy_komo_paprikash_parser(self):
         '''Парсер для сырка плавленного "Комо Паприкаш"'''
         return self.prices_parsing(['https://novus.online/product/sir-plavlenij-55-paprikas-komo-75g',
-        'https://metro.zakaz.ua/uk/products/sir-komo-75g-ukrayina--04820039807908/',
-        'https://shop.nashkraj.ua/kovel/product/455686-sir-komo-pl-40-75g-paprikash',
-        'https://fozzyshop.ua/plavlenyj/98306-syr-plavlenyj-komo-paprikash-40-4820039807908.html'])
+                                    'https://metro.zakaz.ua/uk/products/sir-komo-75g-ukrayina--04820039807908/',
+                                    'https://shop.nashkraj.ua/kovel/product/455686-sir-komo-pl-40-75g-paprikash',
+                                    'https://fozzyshop.ua/plavlenyj/98306-syr-plavlenyj-komo-paprikash-40-4820039807908.html'])
 
     def apple_gala_parser(self):
         '''Парсер для яблока сорта Гала'''
         return self.prices_parsing(['https://www.atbmarket.com/product/abluko-gala-1-gat',
-        'https://eko.zakaz.ua/uk/products/frukt-iabluka--ekomarket00000000648329/',
-        'https://varus.ua/yabluko-gala-premium-vag',
-        'https://shop.silpo.ua/product/yabluko-gala-142571',
-        'https://novus.online/product/abluko-ukraina-60-70-vag',
-        'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28034800000000/',
-        'https://fozzyshop.ua/frukty-i-yagody/23103-yabloko-gala.html'])
+                                    'https://eko.zakaz.ua/uk/products/frukt-iabluka--ekomarket00000000648329/',
+                                    'https://varus.ua/yabluko-gala-premium-vag',
+                                    'https://shop.silpo.ua/product/yabluko-gala-142571',
+                                    'https://novus.online/product/abluko-ukraina-60-70-vag',
+                                    'https://metro.zakaz.ua/uk/products/frukt-iabluka--metro28034800000000/',
+                                    'https://fozzyshop.ua/frukty-i-yagody/23103-yabloko-gala.html'])
 
     def smetana_galichanska_15_370g_parser(self):
         '''Прасер для сметаны "Галичанська 15% 370 грамм"'''
         return self.prices_parsing(['https://www.atbmarket.com/product/smetana-400g-galicanska-15',
-        'https://eko.zakaz.ua/uk/products/smetana-galichanska-400g--04820038494246/',
-        'https://novus.online/product/smetana-15-halychanska-pe-370h',
-        'https://metro.zakaz.ua/uk/products/smetana-galichanska-400g--04820038494246/',
-        'https://fozzyshop.ua/smetana/90114-smetana-galichanska-15-p-e-4820038494246.html'])
+                                    'https://eko.zakaz.ua/uk/products/smetana-galichanska-400g--04820038494246/',
+                                    'https://novus.online/product/smetana-15-halychanska-pe-370h',
+                                    'https://metro.zakaz.ua/uk/products/smetana-galichanska-400g--04820038494246/',
+                                    'https://fozzyshop.ua/smetana/90114-smetana-galichanska-15-p-e-4820038494246.html'])
 
     def desodorant_garnier_spring_spirit_parser(self):
         '''Парсер для дезодоранта "Garnier весенняя свежесть"'''
         return self.prices_parsing(['https://shop.silpo.ua/product/dezodorant-sprei-garnier-vesniana-svizhist-569230',
-        'https://novus.online/product/dezodorant-antiperspirant-dla-tila-zahist-5-vesnana-svizist-garnier-150ml',
-        'https://metro.zakaz.ua/uk/products/dezodorant-garner-150ml--03600541466180/',
-        'https://fozzyshop.ua/ru/dezodoranty/23572-dezodorant-sprej-garnier-mineral-vesennyaya-svezhest-3600541466180.html'])
+                                    'https://novus.online/product/dezodorant-antiperspirant-dla-tila-zahist-5-vesnana-svizist-garnier-150ml',
+                                    'https://metro.zakaz.ua/uk/products/dezodorant-garner-150ml--03600541466180/',
+                                    'https://fozzyshop.ua/ru/dezodoranty/23572-dezodorant-sprej-garnier-mineral-vesennyaya-svezhest-3600541466180.html'])
 
     def chips_lays_with_salt_parser(self):
         '''Парсер для чипсов "Lays с солью " большая пачка 30 грамм'''
         return self.prices_parsing(['https://eko.zakaz.ua/uk/products/chipsi-leiz-140g--05941000025639/',
-        'https://metro.zakaz.ua/uk/products/dezodorant-garner-150ml--03600541466180/',
-        'https://fozzyshop.ua/dezodoranty/23572-dezodorant-sprej-garnier-mineral-vesennyaya-svezhest-3600541466180.html'])
+                                    'https://metro.zakaz.ua/uk/products/dezodorant-garner-150ml--03600541466180/',
+                                    'https://fozzyshop.ua/dezodoranty/23572-dezodorant-sprej-garnier-mineral-vesennyaya-svezhest-3600541466180.html'])
 
     def sprite_2l_parser(self):
         '''Парсер для "Sprite 2 литра"'''
         return self.prices_parsing(['https://eko.zakaz.ua/uk/products/napii-sprait-2000ml--05449000004864/',
-        'https://varus.ua/napiy-sprite-silnogazovaniy-2-l',
-        'https://shop.silpo.ua/product/napii-sprite-119',
-        'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-na-aromatizatorah-sprite-p-but-2l-688892/',
-        'https://novus.online/product/napij-gazovanij-sprite-2l',
-        'https://metro.zakaz.ua/uk/products/napii-sprait-2000ml--05449000004864/',
-        'https://shop.nashkraj.ua/kovel/product/7677-napiy-sprayt-2l',
-        'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12914-napitok-sprite-5449000004864.html'])
+                                    'https://varus.ua/napiy-sprite-silnogazovaniy-2-l',
+                                    'https://shop.silpo.ua/product/napii-sprite-119',
+                                    'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovanyj-na-aromatizatorah-sprite-p-but-2l-688892/',
+                                    'https://novus.online/product/napij-gazovanij-sprite-2l',
+                                    'https://metro.zakaz.ua/uk/products/napii-sprait-2000ml--05449000004864/',
+                                    'https://shop.nashkraj.ua/kovel/product/7677-napiy-sprayt-2l',
+                                    'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12914-napitok-sprite-5449000004864.html'])
 
     def fanta_2l_parser(self):
         '''Парсер для "Fanta 2 литра"'''
         return self.prices_parsing(['https://eko.zakaz.ua/uk/products/napii-fanta-2000ml--05449000004840/',
-        'https://varus.ua/napiy-fanta-apelsin-silnogazovaniy-sokovmisniy-2-l',
-        'https://shop.silpo.ua/product/napii-fanta-orange-118',
-        'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-s-apel-sinovym-sokom-fanta-p-but-2l-688689/',
-        'https://novus.online/product/napij-gazovanij-fanta-apelsin-2l',
-        'https://metro.zakaz.ua/uk/products/napii-fanta-2000ml--05449000004840/',
-        'https://shop.nashkraj.ua/kovel/product/7697-napiy-fanta-2l-apelsin',
-        'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12851-napitok-fanta-orange-5449000004840.html'])
+                                    'https://varus.ua/napiy-fanta-apelsin-silnogazovaniy-sokovmisniy-2-l',
+                                    'https://shop.silpo.ua/product/napii-fanta-orange-118',
+                                    'https://auchan.ua/ua/napitok-bezalkogol-nyj-sil-nogazirovannyj-s-apel-sinovym-sokom-fanta-p-but-2l-688689/',
+                                    'https://novus.online/product/napij-gazovanij-fanta-apelsin-2l',
+                                    'https://metro.zakaz.ua/uk/products/napii-fanta-2000ml--05449000004840/',
+                                    'https://shop.nashkraj.ua/kovel/product/7697-napiy-fanta-2l-apelsin',
+                                    'https://fozzyshop.ua/voda-sladkaya-gazirovannaya/12851-napitok-fanta-orange-5449000004840.html'])
 
     def bond_street_blue_selection_parser(self):
         '''Парсер для сигарет "Bond Street Blue Selection"'''
-        return self.prices_parsing(['https://www.atbmarket.com/product/sigareti-bond-street-blue-selection-24?search=bond',
-        'https://eko.zakaz.ua/uk/products/tsigarki-bond-25g--04823003208107/',
-        'https://varus.ua/cigarki-bond-street-blue-selection',
-        'https://shop.silpo.ua/product/tsygarky-bond-street-blue-selection-908565',
-        'https://auchan.ua/ua/sigarety-bond-street-blue-selection-20-sht-916723/',
-        'https://novus.online/product/cigarki-bond-street-blue',
-        'https://fozzyshop.ua/ru/sigarety/98982-sigarety-bond-street-blue-selection-0250014886927.html'])
-
+        return self.prices_parsing(
+            ['https://www.atbmarket.com/product/sigareti-bond-street-blue-selection-24?search=bond',
+             'https://eko.zakaz.ua/uk/products/tsigarki-bond-25g--04823003208107/',
+             'https://varus.ua/cigarki-bond-street-blue-selection',
+             'https://shop.silpo.ua/product/tsygarky-bond-street-blue-selection-908565',
+             'https://auchan.ua/ua/sigarety-bond-street-blue-selection-20-sht-916723/',
+             'https://novus.online/product/cigarki-bond-street-blue',
+             'https://fozzyshop.ua/ru/sigarety/98982-sigarety-bond-street-blue-selection-0250014886927.html'])
 
     def camel_blue_parser(self):
         '''Парсер для сигарет "Camel Blue"'''
         return self.prices_parsing(['https://atbmarket.com/product/sigareti-camel-blue-30',
-        'https://eko.zakaz.ua/uk/products/tsigarki-kemel-25g--04820000531733/',
-        'https://varus.ua/cigarki-camel-blue-20-sht',
-        'https://shop.silpo.ua/product/tsygarky-camel-blue-907446',
-        'https://auchan.ua/ua/sigarety-camel-blue-20-sht-1029520/',
-        'https://novus.online/product/cigarki-camel-sf-blue',
-        'https://fozzyshop.ua/ru/sigarety/98925-sigarety-camel-blue-0250014861030.html'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-kemel-25g--04820000531733/',
+                                    'https://varus.ua/cigarki-camel-blue-20-sht',
+                                    'https://shop.silpo.ua/product/tsygarky-camel-blue-907446',
+                                    'https://auchan.ua/ua/sigarety-camel-blue-20-sht-1029520/',
+                                    'https://novus.online/product/cigarki-camel-sf-blue',
+                                    'https://fozzyshop.ua/ru/sigarety/98925-sigarety-camel-blue-0250014861030.html'])
 
     def ld_red_parser(self):
         '''Парсер для сигарет "LD RED"'''
         return self.prices_parsing(['https://atbmarket.com/product/sigareti-ld-red-26',
-        'https://eko.zakaz.ua/uk/products/tsigarki-ld--04820000535243/',
-        'https://shop.silpo.ua/product/tsygarky-ld-red-907420',
-        'https://fozzyshop.ua/ru/sigarety/38439-sigarety-ld-red-4820000534628.html'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-ld--04820000535243/',
+                                    'https://shop.silpo.ua/product/tsygarky-ld-red-907420',
+                                    'https://fozzyshop.ua/ru/sigarety/38439-sigarety-ld-red-4820000534628.html'])
 
     def marlboro_gold_parser(self):
         '''Парсер для сигарет "Marlboro Gold"'''
         return self.prices_parsing(['https://atbmarket.com/product/sigareti-marlboro-gold-28?search=marlboro',
-        'https://eko.zakaz.ua/uk/products/tsigarki-malboro-25g--04823003210070/',
-        'https://varus.ua/cigarki-marlboro-gold-z-filtrom-20-sht',
-        'https://shop.silpo.ua/product/sygarety-marlboro-gold-908561',
-        'https://auchan.ua/ua/sigarety-marlboro-gold-20-sht-916800/',
-        'https://novus.online/product/cigarki-marlboro-gold-original',
-        'https://fozzyshop.ua/ru/sigarety/98980-sigarety-marlboro-gold-0250014886880.html'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-malboro-25g--04823003210070/',
+                                    'https://varus.ua/cigarki-marlboro-gold-z-filtrom-20-sht',
+                                    'https://shop.silpo.ua/product/sygarety-marlboro-gold-908561',
+                                    'https://auchan.ua/ua/sigarety-marlboro-gold-20-sht-916800/',
+                                    'https://novus.online/product/cigarki-marlboro-gold-original',
+                                    'https://fozzyshop.ua/ru/sigarety/98980-sigarety-marlboro-gold-0250014886880.html'])
 
     def rothmans_demi_blue_exclusive_parser(self):
         '''Парсер для сигарет "Rothmans Demi Blue Exclusive"'''
-        return self.prices_parsing(['https://atbmarket.com/product/sigareti-rothmans-demi-blue-exclusive-8?search=rothmans%20demi%20blue',
-        'https://eko.zakaz.ua/uk/products/tsigarki-rotmans--04820192681995/',
-        'https://varus.ua/cigarki-rothmans-royals-blue',
-        'https://shop.silpo.ua/product/tsygarky-rothmans-royals-blue-907160',
-        'https://auchan.ua/ua/sigarety-rothmans-royals-blue-exclusive-20-sht-917101/',
-        'https://novus.online/product/cigarki-rothmans-royals-blue-exclusive'])
+        return self.prices_parsing(
+            ['https://atbmarket.com/product/sigareti-rothmans-demi-blue-exclusive-8?search=rothmans%20demi%20blue',
+             'https://eko.zakaz.ua/uk/products/tsigarki-rotmans--04820192681995/',
+             'https://varus.ua/cigarki-rothmans-royals-blue',
+             'https://shop.silpo.ua/product/tsygarky-rothmans-royals-blue-907160',
+             'https://auchan.ua/ua/sigarety-rothmans-royals-blue-exclusive-20-sht-917101/',
+             'https://novus.online/product/cigarki-rothmans-royals-blue-exclusive'])
 
     def rothmans_demi_click_purple_parser(self):
         '''Парсер для сигарет "Rothmans Demi Click Purple"'''
         return self.prices_parsing(['https://atbmarket.com/product/sigareti-rothmans-demi-click-purple-28',
-        'https://eko.zakaz.ua/uk/products/tsigarki-rotmans--00000048210218/',
-        'https://auchan.ua/ua/sigarety-rothmans-demi-click-purple-20-sht-917136/'])
+                                    'https://eko.zakaz.ua/uk/products/tsigarki-rotmans--00000048210218/',
+                                    'https://auchan.ua/ua/sigarety-rothmans-demi-click-purple-20-sht-917136/'])
 
     def winston_caster_parser(self):
         '''Парсер для сигарет "Winston Caster"'''
@@ -735,7 +743,7 @@ class ProductParserVol2:
     def kent_navy_blue_new_parser(self):
         ''' Парсер для сигарет "KENT Navy Blue"'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/sigareti-kent-navy-blue-new-23',
+            'https://atbmarket.com/product/sigareti-kent-navy-blue-new-23',
             'https://eko.zakaz.ua/uk/products/tsigarki-kent--04820192683364/',
             'https://varus.ua/cigarki-kent-navy-blue-4-0-8-08',
             'https://shop.silpo.ua/product/tsygarky-kent-nd-navy-blue-907151',
@@ -747,7 +755,7 @@ class ProductParserVol2:
     def beer_chernigivske_svitle_05_l_glass_parser(self):
         ''' Парсер для пива "Черниговское светлое" 0,5 л в стекле'''
         return self.prices_parsing([
-           'https://www.atbmarket.com/product/pivo-05l-cernigivske-svitle',
+            'https://www.atbmarket.com/product/pivo-05l-cernigivske-svitle',
             'https://shop.silpo.ua/product/pyvo-chernigivske-svitle-10503',
             'https://auchan.ua/ua/pivo-chernigivs-ke-svetloe-4-8-500-ml-1021029/',
             'https://novus.online/product/pivo-svitle-cernigivske-48-05l-sklpl',
@@ -759,7 +767,7 @@ class ProductParserVol2:
     def beer_stella_artois_05_l_glass_parser(self):
         ''' Парсер для пива "Stella Artois" 0,5 л в стекле'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05l-stella-artoisut',
+            'https://atbmarket.com/product/pivo-05l-stella-artoisut',
             'https://shop.silpo.ua/product/pyvo-stella-artois-17332',
             'https://auchan.ua/ua/pivo-stella-artois-svetloe-5-500-ml-1021059/',
             'https://novus.online/product/pivo-svitle-stella-artois-50-05l-sklpl',
@@ -770,7 +778,7 @@ class ProductParserVol2:
     def beer_obolon_svitle_05_l_glass_parser(self):
         ''' Парсер для пива "Оболонь Светлое" 0,5 л в стекле'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05-l-obolon-svitle',
+            'https://atbmarket.com/product/pivo-05-l-obolon-svitle',
             'https://eko.zakaz.ua/uk/products/pivo-obolon-500ml-ukrayina--04670001497428/',
             'https://varus.ua/pivo-0-5l-svitle-obolon-sb',
             'https://novus.online/product/pivo-svitle-obolon-45-05l-sklpl',
@@ -782,7 +790,7 @@ class ProductParserVol2:
     def beer_jugulivske_svitle_05_l_glass_parser(self):
         ''' Парсер для пива "Жигулевское светлое" 0,5 л в стекле'''
         return self.prices_parsing([
-           'https://www.atbmarket.com/product/pivo-05-l-zigulivske-svitle',
+            'https://www.atbmarket.com/product/pivo-05-l-zigulivske-svitle',
             'https://eko.zakaz.ua/uk/products/pivo-obolon-500ml-ukrayina--04820000195843/',
             'https://varus.ua/pivo-0-5l-4-2-svitle-zhigulivske-pl',
             'https://novus.online/product/pivo-svitle-obolon-zigulivske-42-05l-sklpl',
@@ -1279,7 +1287,7 @@ class ProductParserVol2:
     def beer_ppb_zakarpatske_svitle_2l_plastic_parser(self):
         ''' Парсер для пива ППБ Закарпатське свитле 2 литра в пластике'''
         return self.prices_parsing([
-           'https://shop.silpo.ua/product/pyvo-persha-pryvatna-brovarnia-zakarpatske-oryginalne-svitle-660939',
+            'https://shop.silpo.ua/product/pyvo-persha-pryvatna-brovarnia-zakarpatske-oryginalne-svitle-660939',
             'https://novus.online/product/pivo-2l-zakarpatskoe-ppb-pet',
             'https://metro.zakaz.ua/uk/products/pivo-persha-privatna-brovarnia-2000ml--04820046961266/'
         ])
@@ -1454,19 +1462,19 @@ class ProductParserVol2:
     def beer_edelmeister_weizenbier_svitle_nefilter_05_l_jb_parser(self):
         ''' Парсер для Пиво Edelmeister Weizenbier нефильтрованное светлое 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05-l-edelmeister-weizenbier-svitle-nefiltrovane-52-polsa'
+            'https://atbmarket.com/product/pivo-05-l-edelmeister-weizenbier-svitle-nefiltrovane-52-polsa'
         ])
 
     def beer_edelmeister_schwarzbier_temne_05_l_jb_parser(self):
         ''' Парсер для Пиво Edelmeister schwarzbier темное 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05-l-edelmeister-schwarzbier-temne-filtrovane-42-polsa'
+            'https://atbmarket.com/product/pivo-05-l-edelmeister-schwarzbier-temne-filtrovane-42-polsa'
         ])
 
     def beer_hike_blanche_nefilter_05_l_jb_parser(self):
         ''' Парсер для Пиво Hike Blanche нефильтрованное 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05l-hike-blanche-svitle-nefiltpovane',
+            'https://atbmarket.com/product/pivo-05l-hike-blanche-svitle-nefiltpovane',
             'https://eko.zakaz.ua/uk/products/pivo-khaik-500ml-ukrayina--04820193032314/',
             'https://varus.ua/pivo-blansh-4-9-hayk-0-5l-z-b-ukraina',
             'https://auchan.ua/ua/pivo-hike-blanche-svetloe-nefil-trovannoe-4-9-zh-b-0-5-l-1031618/',
@@ -1477,7 +1485,7 @@ class ProductParserVol2:
     def beer_zlata_praha_svitle_05_l_jb_parser(self):
         ''' Парсер для Пиво Zlata Praha светлое 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05l-zlata-praha-svitle',
+            'https://atbmarket.com/product/pivo-05l-zlata-praha-svitle',
             'https://varus.ua/pivo-0-5l-5-svitle-pasterizovane-zlata-praha-zb',
             'https://auchan.ua/ua/pivo-zlata-praha-svetloe-fil-trovannoe-5-0-0-5-l-1032028/'
         ])
@@ -1485,19 +1493,19 @@ class ProductParserVol2:
     def beer_thuringer_premium_beer_svitle_05_l_jb_parser(self):
         ''' Парсер для Пиво Thuringer premium beer светлое 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05l-thuringer-premium-beer-svitle-filtrovane-nimeccina'
+            'https://atbmarket.com/product/pivo-05l-thuringer-premium-beer-svitle-filtrovane-nimeccina'
         ])
 
     def beer_livu_sencu_beer_svitle_05_l_jb_parser(self):
         ''' Парсер для Пиво Livu Sencu светлое 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05l-livu-sencu-svitle-filtrovane-52-litva'
+            'https://atbmarket.com/product/pivo-05l-livu-sencu-svitle-filtrovane-52-litva'
         ])
 
     def beer_germanarich_svitle_05_l_jb_parser(self):
         ''' Парсер для Пиво Germanarich светлое 0,5 л жб'''
         return self.prices_parsing([
-           'https://atbmarket.com/product/pivo-05-l-germanarich-svetloe'
+            'https://atbmarket.com/product/pivo-05-l-germanarich-svetloe'
         ])
 
     def beer_hike_premium_svitle_05_l_jb_parser(self):
@@ -3680,7 +3688,7 @@ class ProductParserVol2:
             'https://novus.online/product/brendi-koblevo-rezerv-ekstra-old-marochnyy-8-rokiv-40-05l',
             'https://fozzyshop.ua/konyak-brendi-armanyak/93442-brendi-koblevo-reserve-extra-old-8-let-4820182221095.html'
         ])
-    
+
     def shabo_vsop_5_parser(self):
         ''' Парсер для коньяк Shabo VSOP 5*'''
         return self.prices_parsing([
@@ -3692,7 +3700,7 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/53042-konyak-shabo-0-5l-5-vsop-40',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2160-konyak-shabo-vsop-5-zvezd-4820070400809.html'
         ])
-    
+
     def shabo_vs_3_parser(self):
         ''' Парсер для коньяк Shabo VS 3*'''
         return self.prices_parsing([
@@ -3705,7 +3713,7 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/53037-konyak-shabo-0-5l-3-vs-40',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2427-konyak-shabo-vs-3-zvezdy-4820070400816.html'
         ])
-    
+
     def shabo_1788_4_parser(self):
         ''' Парсер для коньяк Shabo 1788 4*'''
         return self.prices_parsing([
@@ -3717,13 +3725,13 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070400793/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2159-konyak-shabo-1788-4-zvezdy-4820070400793.html'
         ])
-    
+
     def shabo_1788_reserv_parser(self):
         ''' Парсер для коньяк Shabo 1788 reserv'''
         return self.prices_parsing([
             'https://fozzyshop.ua/konyak-brendi-armanyak/36521-konyak-shabo-rezerv-1788-4820070404364.html'
         ])
-    
+
     def shabo_vs_reserv_parser(self):
         ''' Парсер для коньяк Shabo VS reserv'''
         return self.prices_parsing([
@@ -3733,7 +3741,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404340/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/36520-konyak-shabo-rezerv-vs-4820070404340.html'
         ])
-    
+
     def shabo_vsop_reserv_parser(self):
         ''' Парсер для коньяк Shabo VSOP reserv'''
         return self.prices_parsing([
@@ -3744,7 +3752,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-shabo-500ml-ukrayina--04820070404388/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/36522-konyak-shabo-rezerv-vsop-4820070404388.html'
         ])
-    
+
     def aznauri_3_parser(self):
         ''' Парсер для коньяк Aznauri 3*'''
         return self.prices_parsing([
@@ -3758,7 +3766,7 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/230802-konyak-aznauri-0-5l-3-40',
             'https://fozzyshop.ua/konyak-brendi-armanyak/42983-konyak-ukrainy-aznauri-05-3-goda-4820189290094.html'
         ])
-    
+
     def aznauri_5_parser(self):
         ''' Парсер для коньяк Aznauri 5*'''
         return self.prices_parsing([
@@ -3771,7 +3779,7 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/230377-konyak-aznauri-0-5l-5-40',
             'https://fozzyshop.ua/konyak-brendi-armanyak/42985-konyak-ukrainy-aznauri-05-5-let-4820189290117.html'
         ])
-    
+
     def aznauri_4_parser(self):
         ''' Парсер для коньяк Aznauri 4*'''
         return self.prices_parsing([
@@ -3781,7 +3789,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-aznauri-500ml--04820189290100/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/42984-konyak-ukrainy-aznauri-05-4-goda-4820189290100.html'
         ])
-    
+
     def aznauri_black_barrel_5_parser(self):
         ''' Парсер для коньяк Aznauri Black Barrel 5*'''
         return self.prices_parsing([
@@ -3793,7 +3801,7 @@ class ProductParserVol2:
             'https://novus.online/product/konyak-aznauri-black-barrel-5-rokiv-40-05l',
             'https://fozzyshop.ua/konyak-brendi-armanyak/83144-konyak-aznauri-black-barrel-5-let-4820189292258.html'
         ])
-    
+
     def adjari_3_parser(self):
         ''' Парсер для коньяк Adjari 3*'''
         return self.prices_parsing([
@@ -3803,7 +3811,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-adzhari-500ml-ukrayina--04820235321406/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/45574-konyak-adjari-3-4820183101631.html'
         ])
-    
+
     def adjari_5_parser(self):
         ''' Парсер для коньяк Adjari 5*'''
         return self.prices_parsing([
@@ -3814,14 +3822,14 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-adzhari-500ml-ukrayina--04820235321482/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/45575-konyak-adjari-5-4820183101594.html'
         ])
-    
+
     def adjari_4_parser(self):
         ''' Парсер для коньяк Adjari 4*'''
         return self.prices_parsing([
             'https://auchan.ua/ua/kon-jak-adjari-kvarteli-4-goda-vyderzhki-40-500-ml-957981/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/73458-konyak-adjari-kvarteli-4-4820183102942.html'
         ])
-    
+
     def hennesy_vs_parser(self):
         ''' Парсер для коньяк Hennesy VS'''
         return self.prices_parsing([
@@ -3831,7 +3839,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-khennessi-500ml-frantsiia--03245990287407/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/17705-konyak-hennessy-vs-v-podarochnoj-upakovke-3245995817111.html'
         ])
-    
+
     def hennesy_vsop_parser(self):
         ''' Парсер для коньяк Hennesy VSOP'''
         return self.prices_parsing([
@@ -3839,7 +3847,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-khennessi-500ml-frantsiia--03245990018308/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/17707-konyak-hennessy-vsop-v-podarochnoj-upakovke-3245996122511.html'
         ])
-    
+
     def alexx_gold_vsop_parser(self):
         ''' Парсер для коньяк Alexx Gold VSOP'''
         return self.prices_parsing([
@@ -3849,7 +3857,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/ukrayina--04823093700437/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2165-konyak-alexx-gold-vsop-v-tubuse-4820000621182.html'
         ])
-    
+
     def alexx_silver_vs_parser(self):
         ''' Парсер для коньяк Alexx Silver VS'''
         return self.prices_parsing([
@@ -3858,7 +3866,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/ukrayina--04823093700352/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/17704-konyak-alexx-silver-vs-4820000621175.html'
         ])
-    
+
     def ararat_5_parser(self):
         ''' Парсер для коньяк Ararat 5*'''
         return self.prices_parsing([
@@ -3868,7 +3876,7 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/koniak-ararat-500ml-virmeniia--04850001000037/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2277-konyak-ararat-5-4850001001935.html'
         ])
-    
+
     def ararat_ahtamar_10_parser(self):
         ''' Парсер для коньяк Ararat Ahtamar 10*'''
         return self.prices_parsing([
@@ -3876,7 +3884,7 @@ class ProductParserVol2:
             'https://auchan.ua/ua/brendi-ararat-ahtamar-10-let-vyderzhki-40-v-podarochnoj-upakovke-0-5-l-1077192/',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2263-konyak-ararat-akhtamar-10-let-podarochnaya-korobka-4850001002024.html'
         ])
-    
+
     def ararat_3_parser(self):
         ''' Парсер для коньяк Ararat 3*'''
         return self.prices_parsing([
@@ -3887,7 +3895,7 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/kovel/product/23756-brendi-ararat-0-5l-3r-40',
             'https://fozzyshop.ua/konyak-brendi-armanyak/2256-konyak-ararat-3-4850001001904.html'
         ])
-    
+
     def ararat_nairi_20_parser(self):
         ''' Парсер для коньяк Ararat Nairi 20*'''
         return self.prices_parsing([
@@ -6957,7 +6965,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/10019-moloko-yagotinske-bolshoe-26-p-p-4820006531607.html'
         ])
 
-
     def Moloko_ultrapasterizovane__Jagotinske__3_2__t_b_950_g_parser(self):
         ''' Молоко ультрапастеризоване «Яготинське» 3,2% т/б 950 г '''
         return self.prices_parsing([
@@ -7009,7 +7016,6 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g--04820003486634/',
         ])
 
-
     def Moloko_ultrapasterizovane_Na_zdorovja_0_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване «На здоров'я» 0,5% 950 г '''
         return self.prices_parsing([
@@ -7017,7 +7023,6 @@ class ProductParserVol2:
             'https://novus.online/product/moloko-05-ultrapasteryzovane-na-zdorovya-950hr',
             'https://metro.zakaz.ua/uk/products/moloko-na-zdorov-ia-1000g--04820003480977/'
         ])
-
 
     def Moloko_ditjache_Na_zdorovja_3_2__500_g_parser(self):
         ''' Молоко дитяче «На здоров'я» 3,2% 500 г '''
@@ -7027,14 +7032,12 @@ class ProductParserVol2:
             'https://novus.online/product/moloko-sterilizovane-32-na-zdorova-ditace-05l'
         ])
 
-
     def Moloko_Na_zdorovja_ultrapasterizovane_2_5__950_g_parser(self):
         ''' Молоко «На здоров'я» ультрапастеризоване 2,5% 950 г '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/moloko-na-zdorov-ia-ultrapasteryzovane-2-5-852602',
             'https://novus.online/product/moloko-na-zdorovya-vitaminizovane-ultrapasteryzovane-25-950h'
         ])
-
 
     def Moloko_ultrapasterizovane_Na_zdorovja_bezlaktozne_2_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване «На здоров'я» безлактозне 2,5% 950 г '''
@@ -7046,7 +7049,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/kislomolochnye-napitki/69568-kefir-na-zdorovya-bezlaktoznyj-25-tetra-top-4820003487310.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Na_zdorovja_ditjache_3_2__950_g_parser(self):
         ''' Молоко ультрапастеризоване «На здоров'я» дитяче 3,2% 950 г '''
         return self.prices_parsing([
@@ -7056,14 +7058,12 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/93812-moloko-ultrapasterizovan-na-zdorovya-detskoe-32-4820003489277.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Lactel_bezlact_0_2__950_g_parser(self):
         ''' Молоко ультрапастеризоване Lactel безлактозне 0,2% 950 г '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-lactel-bezlaktozne-0-2-878541',
             'https://fozzyshop.ua/moloko/99541-moloko-ultrapast-lactel-bezlaktoznoe-02-0250014427908.html'
         ])
-
 
     def Moloko_ultrapasterizovane_Lactel_pitne_z_vitaminom_D_3_2__950_g_parser(self):
         ''' Молоко ультрапастеризоване Lactel питне з вітаміном D 3,2% 950 г '''
@@ -7077,7 +7077,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/87961-moloko-ultrapasterizovannoe-lactel-s-vitaminom-d-32-4823065727530.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Lactel_pitne_bezlaktozne_1_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване Lactel питне безлактозне 1,5% 950 г '''
         return self.prices_parsing([
@@ -7086,7 +7085,6 @@ class ProductParserVol2:
             'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-bezlaktoznoe-lactel-1-5-950-g-907182/',
             'https://novus.online/product/moloko-pytne-bezlaktozne-ultrapasteryzovane-15-lactel-950h'
         ])
-
 
     def Moloko_ultrapasterizovane_Lactel_pitne_z_vіtamіnom_D_0_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване Lactel питне з вітаміном D 0,5% 950 г '''
@@ -7101,7 +7099,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/87959-moloko-ultrapasterizovannoe-lactel-s-vitaminom-d-05-4823065727516.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Lactel_bezlaktozne_2_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване Lactel безлактозне 2,5% 950 г '''
         return self.prices_parsing([
@@ -7111,7 +7108,6 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/lutsk/product/460098-moloko-lactel-2-5-950g-bezlaktozne-t-p',
             'https://fozzyshop.ua/moloko/96473-moloko-ultrapasterizovannoe-lactel-bezlaktoznoe-25-4823065728827.html'
         ])
-
 
     def Moloko_superpasterizovane_Buronka_3_2__1000_g_parser(self):
         ''' Молоко суперпастеризоване «Бурьонка» 3,2% 1000 г '''
@@ -7123,7 +7119,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/10003-moloko-burenka-superpasterizovannoe-32-4820003483763.html'
         ])
 
-
     def Moloko_pitne_ultrapasterizovane_Buronka_2_5__1000_g_parser(self):
         ''' Молоко питне ультрапастеризоване «Бурьонка» 2,5% 1000 г '''
         return self.prices_parsing([
@@ -7133,7 +7128,6 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/moloko-burenka-1000g-ukrayina--04820003480717/',
             'https://fozzyshop.ua/moloko/43996-moloko-buronka-ultrapasterizovane-25-4820003480717.html'
         ])
-
 
     def Moloko_Buronka_ultrapasterizovane_3_2__1500_g_parser(self):
         ''' 	Молоко «Бурьонка» ультрапастеризоване 3,2% 1500 г '''
@@ -7146,7 +7140,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/91001-moloko-ultrapasterizovannoe-buronka-32-4820003481332.html'
         ])
 
-
     def Moloko_Buronka_pitne_ultrapasterizovane_2_5__1500_g_parser(self):
         ''' Молоко «Бурьонка» питне ультрапастеризоване 2,5% 1500 г '''
         return self.prices_parsing([
@@ -7158,7 +7151,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/71522-moloko-burenka-pitevoe-ultrapasterizovannoe-25-4820003481349.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Organic_Milk_organіchne_2_5__1000_g_parser(self):
         ''' Молоко ультрапастеризоване Organic Milk органічне 2,5% 1000 г '''
         return self.prices_parsing([
@@ -7167,7 +7159,6 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/moloko-organik-milk-1000g--04820178810968/'
         ])
 
-
     def Moloko_ultrapasterizovane_Slovjanochka_3_2__1000_g_parser(self):
         ''' Молоко ультрапастеризоване «Слов'яночка» 3,2% 1000 г '''
         return self.prices_parsing([
@@ -7175,7 +7166,6 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-slov-ianochka-3-2-677647',
             'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-slov-janochka-3-2-1-kg-906646/'
         ])
-
 
     def Moloko_ultrapasterizovane_Slovjanochka_2_5__1000_g_parser(self):
         ''' Молоко ультрапастеризоване «Слов'яночка» 2,5% 1000 г '''
@@ -7187,14 +7177,12 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/lutsk/product/233835-moloko-slovyanochka-2-5-1000ml-t-p'
         ])
 
-
     def Moloko_Slovjanochka_Dlja_idealnoi_pinki_2_5__1000_g_parser(self):
         ''' Молоко «Слов’яночка» «Для ідеальної пінки» 2,5% 1000 г '''
         return self.prices_parsing([
             'https://eko.zakaz.ua/uk/products/moloko-slovianochka-ukrayina--04823061322838/',
             'https://shop.silpo.ua/product/moloko-slov-ianochka-dlia-idealnoi-pinky-2-5-824909'
         ])
-
 
     def Moloko_ultrapasterizovane_Ferma_2_5__t_p_980_g_parser(self):
         ''' Молоко ультрапастеризоване «Ферма» 2,5% т/п 980 г '''
@@ -7208,14 +7196,12 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/99720-moloko-ultrapasterizovannoe-ferma-25-0250014657695.html'
         ])
 
-
     def Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_2_5__950_g_parser(self):
         ''' Молоко ультрапастеризоване ОКЗДХ Наше молоко 2,5% 950 г '''
         return self.prices_parsing([
             'https://varus.ua/moloko-nashe-moloko-ultrapasterizovannoe-dlya-detej-ot-3-h-let-25-950g',
             'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-okzdkh-nashe-moloko-dlia-ditei-vid-3-rokiv-2-5-933069',
         ])
-
 
     def Moloko_ultrapasterizovane_OKZDH_Nashe_moloko_3_2__950_g_parser(self):
         ''' Молоко ультрапастеризоване ОКЗДХ Наше молоко 3,2% 950 г '''
@@ -7224,7 +7210,6 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-okzdkh-nashe-moloko-3-2-933067'
         ])
 
-
     def Moloko_ultrapasterizovane_Loko_Moko_vіd_3_rokіv_2_5__1000_g_parser(self):
         ''' Молоко ультрапастеризоване «Локо Моко» від 3 років 2,5% 1000 г '''
         return self.prices_parsing([
@@ -7232,7 +7217,6 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-loko-moko-vid-3-rokiv-2-5-777584',
             'https://shop.nashkraj.ua/lutsk/product/284863-moloko-loko-moko-2-5-1l-t-p'
         ])
-
 
     def Moloko_Seljanske_pitne_ultrapasterizovane_2_5__900_g_parser(self):
         ''' Молоко «Селянське» питне ультрапастеризоване 2,5% 900 г '''
@@ -7246,7 +7230,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/42123-moloko-selyanske-pitevoe-ultrapasterizovannoe-25-4820003480113.html'
         ])
 
-
     def Moloko_Seljanske_ultrapasterizovane_0_5__900_g_parser(self):
         ''' Молоко «Селянське» ультрапастеризоване 0,5% 900 г '''
         return self.prices_parsing([
@@ -7254,7 +7237,6 @@ class ProductParserVol2:
             'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-seljans-ke-0-5-900-g-906937/',
             'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003486610/'
         ])
-
 
     def Moloko_ultrapasterizovane_Seljanske_1__900_g_parser(self):
         ''' Молоко ультрапастеризоване «Селянське» 1% 900 г '''
@@ -7266,7 +7248,6 @@ class ProductParserVol2:
             'https://metro.zakaz.ua/uk/products/moloko-selianske-900g-ukrayina--04820003488409/',
             'https://fozzyshop.ua/moloko/93099-moloko-ultrapasterizovannoe-selyanske-1-4820003488409.html'
         ])
-
 
     def Moloko_Seljanske_ultrapasterizovane_3_2__900_g_parser(self):
         ''' Молоко «Селянське» ультрапастеризоване 3,2% 900 г '''
@@ -7280,7 +7261,6 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/lutsk/product/38506-moloko-selyanske-3-2-900g-ult-past-t-f'
         ])
 
-
     def Moloko_Seljanske_maljukam_vіd_3_rokіv_2_5__900_g_parser(self):
         ''' Молоко «Селянське» малюкам від 3 років 2,5% 900 г '''
         return self.prices_parsing([
@@ -7291,7 +7271,6 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/lutsk/product/232848-moloko-selyanske-2-5-900g-dityache-t-f',
             'https://fozzyshop.ua/moloko/44077-moloko-selyanske-malyukam-vid-3-rokiv-ultrapasterizovane-25-4820003486160.html'
         ])
-
 
     def Moloko_ultrapasterizovane_Jagotinske_2_6__900_g_parser(self):
         ''' Молоко ультрапастеризоване «Яготинське» 2,6% 900 г '''
@@ -7304,7 +7283,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/86228-moloko-ultrapasterizovannoe-yagotinske-26-4823005208259.html'
         ])
 
-
     def Moloko_Jagotinske_2_6__p_e_900_g_parser(self):
         ''' Молоко «Яготинське» 2,6% п/е 900 г '''
         return self.prices_parsing([
@@ -7316,7 +7294,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/10016-moloko-yagotinske-26-p-e-4823005203889.html'
         ])
 
-
     def Moloko_Jagotinske_3_2__p_e_900_g_parser(self):
         ''' Молоко «Яготинське» 3,2% п/е 900 г '''
         return self.prices_parsing([
@@ -7327,7 +7304,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/10018-moloko-yagotinske-32-p-e-4823005203919.html'
         ])
 
-
     def Moloko_ultrapasterizovane_Jagotinske_3_2__900_g_parser(self):
         ''' Молоко ультрапастеризоване «Яготинське» 3,2% 900 г '''
         return self.prices_parsing([
@@ -7337,7 +7313,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/86229-moloko-ultrapasterizovannoe-yagotinske-32-4823005208266.html'
         ])
 
-
     def Moloko_Jagotinske_prjazhene_2_6__p_e_900_g_parser(self):
         ''' Молоко «Яготинське» пряжене 2,6% п/е 900 г '''
         return self.prices_parsing([
@@ -7345,7 +7320,6 @@ class ProductParserVol2:
             'https://auchan.ua/ua/moloko-prjazhene-jagotins-ke-2-6-900-g-1378587/',
             'https://novus.online/product/moloko-prazene-26-agotin-plivka-900g'
         ])
-
 
     def Moloko_Galichina_Z_chistih_Karpat_2_5__900_g_parser(self):
         ''' Молоко «Галичина» «З чистих Карпат» 2,5% 900 г '''
@@ -7356,7 +7330,6 @@ class ProductParserVol2:
             'https://novus.online/product/moloko-tf-25-galicina-900g',
             'https://shop.nashkraj.ua/lutsk/product/179024-moloko-galichina-2-5-900g-karpat-t-f'
         ])
-
 
     def Moloko_Galichina_Іz_chistih_Karpat_1__900_g_parser(self):
         ''' Молоко «Галичина» «Із чистих Карпат» 1% 900 г '''
@@ -7369,7 +7342,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/44030-moloko-galichina-iz-chistykh-karpat-1-tetra-fina-4820038494123.html'
         ])
 
-
     def Moloko_Galichina_ultrapasterizovane_3_2___t_f_900_g_parser(self):
         ''' Молоко «Галичина» ультрапастеризоване 3,2%, т/ф 900 г '''
         return self.prices_parsing([
@@ -7379,14 +7351,12 @@ class ProductParserVol2:
             'https://shop.nashkraj.ua/lutsk/product/248398-moloko-galichina-3-2-900g-t-f'
         ])
 
-
     def Moloko_Premіja_ultrapasterizovane_1__900_g_parser(self):
         ''' Молоко «Премія» ультрапастеризоване 1% 900 г '''
         return self.prices_parsing([
             'https://shop.silpo.ua/product/moloko-premiia-ultrapasteryzovane-1-799507',
             'https://fozzyshop.ua/moloko/85033-moloko-ultrapasterizovannoe-premiya-1-t-f-4823096414584.html'
         ])
-
 
     def Moloko_Premіja_ultrapasterizovane_2_5__900_g_parser(self):
         ''' Молоко «Премія» ультрапастеризоване 2,5% 900 г '''
@@ -7395,7 +7365,6 @@ class ProductParserVol2:
             'https://fozzyshop.ua/moloko/85034-moloko-ultrapasterizovannoe-premiya-25-t-f-4823096414591.html'
         ])
 
-
     def Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g_parser(self):
         ''' Молоко питне «Повна Чаша» пастеризоване 2,5% 900 г '''
         return self.prices_parsing([
@@ -7403,69 +7372,47 @@ class ProductParserVol2:
         ])
 
 
+    def Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g_parser(self):
+        ''' Молоко питне «Повна Чаша» пастеризоване 2,5% 450 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/moloko-povna-chasha-pasteryzovane-pytne-2-5-793005'
+        ])
 
 
+    def Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g_parser(self):
+        ''' Молоко ультрапастеризоване «Волошкове поле» 2,5% 900 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/moloko-voloshkove-pole-900g-ukrayina--04820004237846/',
+            'https://varus.ua/moloko-voloshkove-pole-2-5-ultrapasterizovane-v-paketi-900-g',
+            'https://shop.silpo.ua/product/moloko-ultrapasteryzovane-voloshkove-pole-2-5-777178',
+            'https://auchan.ua/ua/moloko-ul-trapasterizovannoe-voloshkove-pole-2-5-900-g-906972/'
+        ])
 
 
+    def Moloko_Zlagoda_ditjache_3_2___p_e_400_g_parser(self):
+        ''' Молоко «Злагода» дитяче 3,2%, п/е 400 г '''
+        return self.prices_parsing([
+            'https://varus.ua/moloko-zlagoda-malyatko-3-2-sterilizovane-400-g',
+            'https://shop.silpo.ua/product/moloko-zlagoda-dytiache-kharchuvannia-vid-9-misiatsiv-3-2-p-e-785544'
+        ])
 
 
+    def Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET_parser(self):
+        ''' Йогурт «Галичина» злаки 2,2% жиру 300 г ПЕТ '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/jogurt-300g-galicina-zlaki-22',
+            'https://varus.ua/yogurt-karpatskiy-z-zlakami-2-2-galichina-300g-plyashka',
+            'https://shop.silpo.ua/product/yogurt-galychyna-z-napovniuvachem-zlaky-2-2-zhyru-709896',
+            'https://novus.online/product/jogurt-22-zlaki-galicina-pet-300g',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-350g-ukrayina--04820038493287/'
+        ])
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    def Jogurt_Galichina_malina_2_2__300_g_PET_parser(self):
+        ''' Йогурт «Галичина» малина 2,2% 300 г ПЕТ '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/yogurt-galychyna-malyna-2-2-709898'
+        ])
 
 # class Dishes:
 #     '''Класс в котором собраны парсеры для блюд'''
@@ -7536,9 +7483,6 @@ class ProductParserVol2:
 #                             float(cabbage[i]) * 0.6 + self.SOLT_VALUE) / 5, 2)
 #             results.append(result)
 #         return results
-
-
-
 
 
 # class ProductParsers:
@@ -8412,48 +8356,48 @@ class ProductParserVol2:
 #
 #         return total_sum
 
-    # def best_price_parcer(self):
-    #     '''Парсер для сбора данных о акционной цене на некий товар'''
-    #
-    #     # прописываем адресс страницы с пивом Оболонь Премиум Экстра 1.1 л
-    #     url_1 = 'https://www.atbmarket.com/product/sokolad-90g-millennium-poristij-bilij'
-    #     url_2='https://www.atbmarket.com/product/vinograd-susenij-150g-svoa-linia-kismis-zolotistij'
-    #     url_3='https://www.atbmarket.com/product/vino-075l-igriste-asti-salute-bile-solodke-9-12'
-    #
-    #
-    #
-    #     # создадим заголовки
-    #     headers={
-    #          'Accept':'*/*',
-    #          'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0'
-    #     }
-    #
-    #     # переменная req будет нам возвращать результат работы метода get библиотеки requests.
-    #     # В аргументах указываем url сайта и наши заголовки:
-    #     req_1=requests.get(url_1,headers=headers)
-    #     req_2=requests.get(url_2,headers=headers)
-    #     req_3 = requests.get(url_3, headers=headers)
-    #
-    #     #сохраним в переменную src полученный объект и вызовем у него метод text:
-    #     src_1=req_1.text
-    #     soup_1=BeautifulSoup(src_1,'html.parser')
-    #
-    #     src_2 = req_2.text
-    #     soup_2 = BeautifulSoup(src_2, 'html.parser')
-    #
-    #     src_3 = req_3.text
-    #     soup_3 = BeautifulSoup(src_3, 'html.parser')
-    #
-    #     #получаем цену товара:
-    #     product_1_price=soup_1.find(class_='product-price__top').find_next().text
-    #     product_2_price = soup_2.find(class_='product-price__top').find_next().text
-    #     product_3_price = soup_3.find(class_='product-price__top').find_next().text
-    #
-    #     #получем название товара:
-    #     product_1_name=soup_1.find(class_='page-title product-page__title').text
-    #     product_2_name = soup_2.find(class_='page-title product-page__title').text
-    #     product_3_name = soup_3.find(class_='page-title product-page__title').text
-    #
-    #     return product_1_price, product_1_name,\
-    #         product_2_price, product_2_name,\
-    #         product_3_price, product_3_name
+# def best_price_parcer(self):
+#     '''Парсер для сбора данных о акционной цене на некий товар'''
+#
+#     # прописываем адресс страницы с пивом Оболонь Премиум Экстра 1.1 л
+#     url_1 = 'https://www.atbmarket.com/product/sokolad-90g-millennium-poristij-bilij'
+#     url_2='https://www.atbmarket.com/product/vinograd-susenij-150g-svoa-linia-kismis-zolotistij'
+#     url_3='https://www.atbmarket.com/product/vino-075l-igriste-asti-salute-bile-solodke-9-12'
+#
+#
+#
+#     # создадим заголовки
+#     headers={
+#          'Accept':'*/*',
+#          'User-Agent':'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:108.0) Gecko/20100101 Firefox/108.0'
+#     }
+#
+#     # переменная req будет нам возвращать результат работы метода get библиотеки requests.
+#     # В аргументах указываем url сайта и наши заголовки:
+#     req_1=requests.get(url_1,headers=headers)
+#     req_2=requests.get(url_2,headers=headers)
+#     req_3 = requests.get(url_3, headers=headers)
+#
+#     #сохраним в переменную src полученный объект и вызовем у него метод text:
+#     src_1=req_1.text
+#     soup_1=BeautifulSoup(src_1,'html.parser')
+#
+#     src_2 = req_2.text
+#     soup_2 = BeautifulSoup(src_2, 'html.parser')
+#
+#     src_3 = req_3.text
+#     soup_3 = BeautifulSoup(src_3, 'html.parser')
+#
+#     #получаем цену товара:
+#     product_1_price=soup_1.find(class_='product-price__top').find_next().text
+#     product_2_price = soup_2.find(class_='product-price__top').find_next().text
+#     product_3_price = soup_3.find(class_='product-price__top').find_next().text
+#
+#     #получем название товара:
+#     product_1_name=soup_1.find(class_='page-title product-page__title').text
+#     product_2_name = soup_2.find(class_='page-title product-page__title').text
+#     product_3_name = soup_3.find(class_='page-title product-page__title').text
+#
+#     return product_1_price, product_1_name,\
+#         product_2_price, product_2_name,\
+#         product_3_price, product_3_name

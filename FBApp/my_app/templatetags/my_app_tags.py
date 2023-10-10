@@ -2410,3 +2410,13 @@ get_Moloko_Premіja_ultrapasterizovane_1__900_g = tag.create_tag(ItemsPicsFromNe
 get_Moloko_Premіja_ultrapasterizovane_2_5__900_g = tag.create_tag(ItemsPicsFromNet,787)
 '''Тэг,возвращающий информацию о "Молоко питне «Повна Чаша» пастеризоване 2,5% 900 г"'''
 get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__900_g = tag.create_tag(ItemsPicsFromNet,788)
+'''Тэг,возвращающий информацию о "Молоко питне «Повна Чаша» пастеризоване 2,5% 450 г"'''
+get_Moloko_pitne_Povna_Chasha_pasterizovane_2_5__450_g = tag.create_tag(ItemsPicsFromNet,789)
+'''Тэг,возвращающий информацию о "Молоко ультрапастеризоване «Волошкове поле» 2,5% 900 г"'''
+get_Moloko_ultrapasterizovane_Voloshkove_pole_2_5__900_g = tag.create_tag(ItemsPicsFromNet,790)
+'''Тэг,возвращающий информацию о "Молоко «Злагода» дитяче 3,2%, п/е 400 г"'''
+get_Moloko_Zlagoda_ditjache_3_2___p_e_400_g = tag.create_tag(ItemsPicsFromNet,791)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» злаки 2,2% жиру 300 г ПЕТ"'''
+get_Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET = tag.create_tag(ItemsPicsFromNet,792)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» малина 2,2% 300 г ПЕТ"'''
+get_Jogurt_Galichina_malina_2_2__300_g_PET = tag.create_tag(ItemsPicsFromNet,793)
