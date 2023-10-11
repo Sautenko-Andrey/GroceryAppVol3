@@ -2420,3 +2420,13 @@ get_Moloko_Zlagoda_ditjache_3_2___p_e_400_g = tag.create_tag(ItemsPicsFromNet,79
 get_Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET = tag.create_tag(ItemsPicsFromNet,792)
 '''Тэг,возвращающий информацию о "Йогурт «Галичина» малина 2,2% 300 г ПЕТ"'''
 get_Jogurt_Galichina_malina_2_2__300_g_PET = tag.create_tag(ItemsPicsFromNet,793)
+'''Тэг,возвращающий информацию о "	Йогурт «Галичина» лісова ягода 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,794)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» полуниця 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_polunitsja_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,795)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» абрикос 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_abrikos_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,796)
+'''Тэг,возвращающий информацию о "Йогурт ««Галичина»» «Карпатський» без цукру 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,797)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» «Карпатський» вишня 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,798)

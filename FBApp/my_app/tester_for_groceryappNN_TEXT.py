@@ -1647,3 +1647,13 @@ class TesterForGroceryAppText:
             return JOGURT_GALICHINA_ZLAKI_2_2__ZHIRU_300_G_PET
         elif np.argmax(result) == 789:
             return JOGURT_GALICHINA_MALINA_2_2__300_G_PET
+        elif np.argmax(result) == 790:
+            return JOGURT_GALICHINA_LІSOVA_JAGODA_2_2__PET_300_G
+        elif np.argmax(result) == 791:
+            return JOGURT_GALICHINA_POLUNITSJA_2_2__PET_300_G
+        elif np.argmax(result) == 792:
+            return JOGURT_GALICHINA_ABRIKOS_2_2__PET_300_G
+        elif np.argmax(result) == 793:
+            return JOGURT_GALICHINA_KARPATSKIJ_BEZ_TSUKRU_2_2__PET_300_G
+        elif np.argmax(result) == 794:
+            return JOGURT_GALICHINA_KARPATSKIJ_VISHNJA_2_2__PET_300_G

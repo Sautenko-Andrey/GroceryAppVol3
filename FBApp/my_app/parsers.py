@@ -7414,6 +7414,70 @@ class ProductParserVol2:
             'https://shop.silpo.ua/product/yogurt-galychyna-malyna-2-2-709898'
         ])
 
+
+    def Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser(self):
+        ''' Йогурт «Галичина» лісова ягода 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820038493997/',
+            'https://shop.silpo.ua/product/yogurt-galychyna-lisova-iagoda-2-2-709897',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-350g-ukrayina--04820038493263/',
+            'https://shop.nashkraj.ua/lutsk/product/241140-yogurt-galichina-2-2-300g-lis-yag-pet',
+            'https://fozzyshop.ua/deserty-i-jogurty/40687-jogurt-galichina-lesnaya-yagoda-22-but-4820038493997.html'
+        ])
+
+
+    def Jogurt_Galichina_polunitsja_2_2__PET_300_g_parser(self):
+        ''' Йогурт «Галичина» полуниця 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/jogurt-300g-galicina-polunica-22',
+            'https://shop.silpo.ua/product/yogurt-galychyna-polunytsia-2-2-709900',
+            'https://shop.nashkraj.ua/lutsk/product/240989-yogurt-galichina-2-2-300g-polunits-pl'
+        ])
+
+
+    def Jogurt_Galichina_abrikos_2_2__PET_300_g_parser(self):
+        ''' Йогурт «Галичина» абрикос 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://shop.silpo.ua/product/yogurt-galychyna-abrykos-2-2-709895',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-350g-ukrayina--04820038493294/'
+        ])
+
+
+    def Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser(self):
+        ''' Йогурт ««Галичина»» «Карпатський» без цукру 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820038494444/',
+            'https://varus.ua/yogurt-karpatskiy-bez-cukru-2-2-galichina-300g-plyashka',
+            'https://shop.silpo.ua/product/yogurt-galychyna-karpatskyi-bez-tsukru-2-2-758546',
+            'https://novus.online/product/jogurt-22-karpatskij-bez-cukru-galicina-pet-300g',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-420g-ukrayina--04820038491146/',
+            'https://shop.nashkraj.ua/lutsk/product/268832-yogurt-galichina-2-2-300g-karp-b-tsuk',
+            'https://fozzyshop.ua/deserty-i-jogurty/54136-jogurt-galichina-karpatskij-bez-sakhara-22-but-4820038494444.html'
+        ])
+
+
+    def Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser(self):
+        ''' Йогурт «Галичина» «Карпатський» вишня 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://varus.ua/yogurt-vishnya-2-2-galichina-300g-pet',
+            'https://shop.silpo.ua/product/yogurt-galychyna-karpatskyi-vyshnia-2-2-802294',
+            'https://novus.online/product/jogurt-22-visna-galicina-pet-300g',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820222760164/',
+            'https://shop.nashkraj.ua/lutsk/product/331539-yogurt-galichina-2-2-300g-vishnya-pl'
+        ])
+
+
+
+
+
+
+
+
+
+
+
+
+
 # class Dishes:
 #     '''Класс в котором собраны парсеры для блюд'''
 #     # количество доступных маркетов

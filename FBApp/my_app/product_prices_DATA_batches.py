@@ -5778,6 +5778,47 @@ def price_parcing(batch_name: str):
                 "silpo": parser.Jogurt_Galichina_malina_2_2__300_g_PET_parser()[3]
             }},
 
+
+            {'	Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g':{
+                "eko": parser.Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser()[1],
+                "silpo": parser.Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser()[3],
+                "metro": parser.Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser()[6],
+                "nash_kray": parser.Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser()[7],
+                "fozzy": parser.Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g_parser()[8]
+}},
+
+
+            {'Jogurt_Galichina_polunitsja_2_2__PET_300_g':{
+                "atb": parser.Jogurt_Galichina_polunitsja_2_2__PET_300_g_parser()[0],
+                "silpo": parser.Jogurt_Galichina_polunitsja_2_2__PET_300_g_parser()[3],
+                "nash_kray": parser.Jogurt_Galichina_polunitsja_2_2__PET_300_g_parser()[7],
+}},
+
+
+            {'Jogurt_Galichina_abrikos_2_2__PET_300_g':{
+                "silpo": parser.Jogurt_Galichina_abrikos_2_2__PET_300_g_parser()[3],
+                "metro": parser.Jogurt_Galichina_abrikos_2_2__PET_300_g_parser()[6],
+}},
+
+
+            {'Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g':{
+                "eko": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[1],
+                "varus": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[2],
+                "silpo": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[3],
+                "novus": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[5],
+                "metro": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[6],
+                "nash_kray": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[7],
+                "fozzy": parser.Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g_parser()[8]
+}},
+
+
+            {'Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g':{
+                "varus": parser.Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser()[2],
+                "silpo": parser.Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser()[3],
+                "novus": parser.Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser()[5],
+                "metro": parser.Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser()[6],
+                "nash_kray": parser.Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g_parser()[7]
+}},
         ]
         # далее записываем цены в json-файл
         write_prices_to_json(all_products_names_batch_9, batch_9_path, mode_type_first_write)

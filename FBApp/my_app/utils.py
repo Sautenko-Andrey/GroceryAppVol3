@@ -1918,16 +1918,16 @@ class ContextSupervisor:
             result = self.getting_prices('Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET', get_Jogurt_Galichina_zlaki_2_2__zhiru_300_g_PET)
         elif nn_respond == JOGURT_GALICHINA_MALINA_2_2__300_G_PET:
             result = self.getting_prices('Jogurt_Galichina_malina_2_2__300_g_PET', get_Jogurt_Galichina_malina_2_2__300_g_PET)
-
-
-
-
-
-
-
-
-
-
+        elif nn_respond == 	JOGURT_GALICHINA_LІSOVA_JAGODA_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g', get_Jogurt_Galichina_lіsova_jagoda_2_2__PET_300_g)
+        elif nn_respond == JOGURT_GALICHINA_POLUNITSJA_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_polunitsja_2_2__PET_300_g', get_Jogurt_Galichina_polunitsja_2_2__PET_300_g)
+        elif nn_respond == JOGURT_GALICHINA_ABRIKOS_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_abrikos_2_2__PET_300_g', get_Jogurt_Galichina_abrikos_2_2__PET_300_g)
+        elif nn_respond == JOGURT_GALICHINA_KARPATSKIJ_BEZ_TSUKRU_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g', get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g)
+        elif nn_respond == JOGURT_GALICHINA_KARPATSKIJ_VISHNJA_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g', get_Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g)
 
 
 
