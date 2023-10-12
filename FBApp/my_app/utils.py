@@ -1928,16 +1928,16 @@ class ContextSupervisor:
             result = self.getting_prices('Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g', get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g)
         elif nn_respond == JOGURT_GALICHINA_KARPATSKIJ_VISHNJA_2_2__PET_300_G:
             result = self.getting_prices('Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g', get_Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g)
-
-
-
-
-
-
-
-
-
-
+        elif nn_respond == JOGURT_GALICHINA_CHORNITSJA_2_2__PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_chornitsja_2_2__PET_300_g', get_Jogurt_Galichina_chornitsja_2_2__PET_300_g)
+        elif nn_respond == JOGURT_GALICHINA_CHORNITSJA_ZLAKI_2_2__ZHIRU_PET_300_G:
+            result = self.getting_prices('Jogurt_Galichina_chornitsja_zlaki_2_2__zhiru_PET_300_g', get_Jogurt_Galichina_chornitsja_zlaki_2_2__zhiru_PET_300_g)
+        elif nn_respond == JOGUR_GALICHINA_KARPATSKIJ_BEZ_TSUKRU_BEZLAKTOZNIJ_2_2__PET_300G:
+            result = self.getting_prices('Jogur_Galichina_Karpatskij_bez_tsukru_bezlaktoznij_2_2__PET_300g', get_Jogur_Galichina_Karpatskij_bez_tsukru_bezlaktoznij_2_2__PET_300g)
+        elif nn_respond == JOGURT_GALICHINA_CHORNITSJA_ZLAKI_2_2__PET__550G:
+            result = self.getting_prices('Jogurt_Galichina_chornitsja_zlaki_2_2__pet__550g', get_Jogurt_Galichina_chornitsja_zlaki_2_2__pet__550g)
+        elif nn_respond == JOGURT_GALICHINA_KARPATSKIJ_BEZ_TSUKRU_2_2__PET__550G:
+            result = self.getting_prices('Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__pet__550g', get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__pet__550g)
 
 
 

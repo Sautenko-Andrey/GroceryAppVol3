@@ -2430,3 +2430,13 @@ get_Jogurt_Galichina_abrikos_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,79
 get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,797)
 '''Тэг,возвращающий информацию о "Йогурт «Галичина» «Карпатський» вишня 2,2% ПЕТ 300 г"'''
 get_Jogurt_Galichina_Karpatskij_vishnja_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,798)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» чорниця 2,2% ПЕТ 300 г"'''
+get_Jogurt_Galichina_chornitsja_2_2__PET_300_g = tag.create_tag(ItemsPicsFromNet,799)
+'''Тэг,возвращающий информацию о "Йогурт «Галичина» чорниця-злаки 2,2% жиру ПЕТ 300 г"'''
+get_Jogurt_Galichina_chornitsja_zlaki_2_2__zhiru_PET_300_g = tag.create_tag(ItemsPicsFromNet,800)
+'''Тэг,возвращающий информацию о "Йогур Галичина Карпатський без цукру безлактозний 2,2% ПЕТ 300г"'''
+get_Jogur_Galichina_Karpatskij_bez_tsukru_bezlaktoznij_2_2__PET_300g = tag.create_tag(ItemsPicsFromNet,801)
+'''Тэг,возвращающий информацию о "Йогурт Галичина чорниця злаки 2,2% пет, 550г"'''
+get_Jogurt_Galichina_chornitsja_zlaki_2_2__pet__550g = tag.create_tag(ItemsPicsFromNet,802)
+'''Тэг,возвращающий информацию о "Йогурт Галичина Карпатський без цукру 2,2% пет, 550г"'''
+get_Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__pet__550g = tag.create_tag(ItemsPicsFromNet,803)

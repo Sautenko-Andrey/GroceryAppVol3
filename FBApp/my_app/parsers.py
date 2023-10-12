@@ -7467,12 +7467,58 @@ class ProductParserVol2:
         ])
 
 
+    def Jogurt_Galichina_chornitsja_2_2__PET_300_g_parser(self):
+        ''' Йогурт «Галичина» чорниця 2,2% ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://eko.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820038494017/',
+            'https://varus.ua/yogurt-karpatskiy-z-chorniceyu-2-2-galichina-300g-plyashka',
+            'https://shop.silpo.ua/product/yogurt-galychyna-chornytsia-2-2-709899',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-350g-ukrayina--04820038493362/',
+            'https://shop.nashkraj.ua/lutsk/product/242370-yogurt-galichina-2-2-300g-chornits-pet'
+        ])
 
 
+    def Jogurt_Galichina_chornitsja_zlaki_2_2__zhiru_PET_300_g_parser(self):
+        ''' Йогурт «Галичина» чорниця-злаки 2,2% жиру ПЕТ 300 г '''
+        return self.prices_parsing([
+            'https://varus.ua/yogurt-chornicya-zlaki-2-2-galichina-300g-plyashka',
+            'https://shop.silpo.ua/product/yogurt-galychyna-chornytsia-zlaky-2-2-zhyru-709893',
+            'https://novus.online/product/jogurt-22-zlaki-cornica-galicina-pet-300g',
+            'https://shop.nashkraj.ua/lutsk/product/241613-yogurt-galichina-2-2-300g-chornzl-pl',
+            'https://fozzyshop.ua/deserty-i-jogurty/40692-jogurt-galichina-chernika-zlaki-22-but-4820038494055.html'
+        ])
 
 
+    def Jogur_Galichina_Karpatskij_bez_tsukru_bezlaktoznij_2_2__PET_300g_parser(self):
+        ''' Йогур Галичина Карпатський без цукру безлактозний 2,2% ПЕТ 300г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/jogurt-300-g-galicina-bezlaktoznij-bez-cukru-22-pbut',
+            'https://eko.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820222760447/',
+            'https://varus.ua/yogurt-2-2-bezlaktozniy-karpatskiy-galichina-ppl-300g',
+            'https://novus.online/product/jogurt-22-bezlaktoznij-bez-cukru-karpatskij-galicina-petplaska-300g',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-300g-ukrayina--04820222760447/',
+            'https://fozzyshop.ua/deserty-i-jogurty/92982-jogurt-galichina-karpatskij-bez-sakhara-bezlaktoznyj-22-pet-4820222760447.html'
+        ])
 
 
+    def Jogurt_Galichina_chornitsja_zlaki_2_2__pet__550g_parser(self):
+        ''' Йогурт Галичина чорниця злаки 2,2% пет, 550г '''
+        return self.prices_parsing([
+            'https://varus.ua/yogurt-2-2-chornicya-zlaki-galichina-ppl-550g',
+            'https://novus.online/product/jogurt-22-cornica-zlaki-galicina-pet-600g',
+            'https://fozzyshop.ua/deserty-i-jogurty/88607-jogurt-galichina-chernika-zlaki-22-pet-4820038494079.html'
+        ])
+
+
+    def Jogurt_Galichina_Karpatskij_bez_tsukru_2_2__pet__550g_parser(self):
+        ''' Йогурт Галичина Карпатський без цукру 2,2% пет, 550г '''
+        return self.prices_parsing([
+            'https://www.atbmarket.com/product/jogurt-055-kg-galicina-karpatskij-bez-cukru-22',
+            'https://varus.ua/yogurt-karpatskiy-bez-cukru-2-2-galichina-550g-plyashka',
+            'https://novus.online/product/jogurt-karpatskij-bez-cukru-22-galicina-pet-550g',
+            'https://metro.zakaz.ua/uk/products/iogurt-galichina-600g-ukrayina--04820038494437/',
+            'https://fozzyshop.ua/deserty-i-jogurty/88605-jogurt-galichina-karpatskij-bez-sakhara-22-pet-4820038494437.html'
+        ])
 
 
 
